@@ -37,10 +37,8 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v1.0.0
        with:
-         # Artifact name
-         name: docs # optional
-         # Destination path
-         path: docs # optional
+         name: docs # Artifact name # optional
+         path: docs # Destination path # optional
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:
