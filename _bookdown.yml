@@ -1,7 +1,4 @@
 book_filename: "dataprivacyhandbook"
-output:
-  html_document:
-    number_sections: false
 output_dir: "docs"
 delete_merged_file: true
 language:
