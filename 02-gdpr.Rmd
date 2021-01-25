@@ -1,0 +1,4 @@
+# The GDPR & Research Data {-}
+
+This chapter may include sections on the legal basis for processing research data, reusing privacy-sensitive data (further processing), and data subject's rights.
+
