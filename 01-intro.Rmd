@@ -1,5 +1,5 @@
 # (PART) Knowledge Base {-} 
 
-# Introduction {-} 
+# Introduction {-#intro} 
 
-## What is Data Privacy?
+## What is Data Privacy? {-}
