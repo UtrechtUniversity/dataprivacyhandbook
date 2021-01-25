@@ -1,9 +1,7 @@
 # (PART) Knowledge Base {-} 
 
-# Introduction {-#intro} 
+# Introduction {#intro} 
 
-## What is Data Privacy? {-#introtodataprivacy}
-
-## Header 2 {-}
+## What is Data Privacy? 
 
 ### Header 3
