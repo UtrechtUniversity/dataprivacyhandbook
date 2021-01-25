@@ -21,8 +21,8 @@ jobs:
         run: Rscript -e 'bookdown::render_book("index.Rmd")
       - uses: actions/upload-artifact@v1
         with:
-          name: _docs
-          path: _docs/
+          name: docs
+          path: docs/
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
