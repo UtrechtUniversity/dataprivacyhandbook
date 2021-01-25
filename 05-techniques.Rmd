@@ -1,2 +1,3 @@
 # Techniques for Privacy Compliance {-}
 
+This can include anonmyization, pseudonymization, encryption, federated analyses.
