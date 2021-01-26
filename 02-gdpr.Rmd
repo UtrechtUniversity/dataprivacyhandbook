@@ -11,3 +11,5 @@ This chapter may include sections on the legal basis for processing research dat
 ### Right to be Informed
 
 ### Right to Access
+
+### Right to Erasure
