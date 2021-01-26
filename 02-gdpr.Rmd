@@ -13,3 +13,5 @@ This chapter may include sections on the legal basis for processing research dat
 ### Right to Access
 
 ### Right to Erasure
+
+### Right to Rectification
