@@ -4,7 +4,7 @@
 
 ## Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-This is a human-readable summary of (and not a substitute for) the [license](https://creativecommons.org/licenses/by/4.0/legalcode). 
+This is a human-readable summary of (and not a substitute for) the [full legal text of the CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode). 
 
 ### You are free to:
 
@@ -20,7 +20,7 @@ _The licensor cannot revoke these freedoms as long as you follow the license ter
 
 - **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-### Notices:
+### With the understanding that:
 
 You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
 
