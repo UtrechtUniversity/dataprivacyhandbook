@@ -7,6 +7,15 @@ This Code of Conduct relies heavily on the following sources:
 
 The current Code of Conduct is a supplement to Utrecht University’s [university-wide Code of Conduct](https://www.uu.nl/en/organisation/about-us/codes-of-conduct).
 
+**Document content**
+ * [Pledge](#pledge)
+ * [Expected behavior](#expected-behavior)
+ * [Unacceptable behavior](#unacceptable-behavior)
+ * [Scope](#scope)
+ * [Responsibilities](#responsibilities)
+ * [Enforcement](#enforcement)
+ * [Feedback](#feedback)
+
 ## Pledge
 We value the participation of every member of our project and community and want to ensure that every contributor has an enjoyable and fulfilling experience. Accordingly, everyone who participates in the Data privacy project is expected to show respect and courtesy to other community members at all times.
 
