@@ -1,8 +1,8 @@
 # Contributing guidelines
-**🥳 Welcome to the Data privacy project! 🥳**
+**🥳 Welcome to the Data privacy handbook! 🥳**
 
 We invite everyone who is interested to get involved. Even if you just want to correct a typo, your contribution is very much appreciated! The guidelines below should help you navigate the practical steps to contribute to this project. You can currently contribute in the following way:
-- Come up with ideas for the project or let us know about errors or bugs
+- Come up with ideas for the handbook or let us know about errors or bugs
 - Join the discussion
 - Contribute or edit handbook content
 
@@ -22,8 +22,8 @@ We invite everyone who is interested to get involved. Even if you just want to c
 
 ## First things first
 Before you contribute, the following points are important to take into accoutn:
-1. Please read through our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and make sure you familiarize yourself with its contents. We expect everyone in our community, including our contributors, to comply with the terms specified there.
-2. At the moment, all contributions go through our GitHub repository, https://github.com/UtrechtUniversity/dataprivacyhandbook/. So, in order for you to be able to contribute, you first have to [create a GitHub account](https://github.com/join).
+1. Please read through our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and make sure you familiarize yourself with its contents. We expect all of our contributors to comply with the terms specified there.
+2. At the moment, all contributions go through our GitHub repository, https://github.com/UtrechtUniversity/dataprivacyhandbook/. So, in order for you to be able to contribute, you first have to [create a GitHub account](https://github.com/join). Additionally, if you want to be able to work locally, you should have `git` installed or a user interface (e.g., Rstudio, GitKraken, etc.) that can work with git.
 3. Throughout this project, we write in Markdown. This is a way of formatting text to add, for example, numbering, headers, bold text, hyperlinks, etc. to plain text. See [this link](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for some basic syntax to get you started.
 
 ## Using Issues to contribute practical ideas or bug reports
@@ -38,12 +38,13 @@ Before you contribute, the following points are important to take into accoutn:
 2. On the right part of your screen, click the green button that says "New issue"
 3. Choose the issue template that fits your situation best. For example, if you signalled an error, typo or bug, click the "Bug report" issue template. If none of the templates fit your situation, choose "Open a blank issue"
 4. Fill out the issue template as completely as possible. Provide all necessary details for others to reproduce your results or understand what you are talking about. In case of a bug report, please also let us know what you have already tried and what machine you are using, as this will speed up the debugging process.
-5. All done drafting your Issue? On the right of your Issue, please add a **label**, for example: `bug` or `enhancement` so that we know what kind of Issue you wrote. If you want, you can also assign a person to review your Issue or link the issue to a Pull Request. However, these are not at all necessary.
-6. All done? Click "Submit". Congrafulations, you have now opened an issue! 🎉
+5. All done drafting your Issue? On the right of your Issue, please add a **label**, for example: `bug` or `enhancement` so that we know what kind of Issue you wrote. If you want, you can also assign a person to review your Issue or link the issue to a Pull Request. However, these are not at all necessary!
+6. All done? Click "Submit". 
 
+Congrafulations, you have now opened an issue! 🎉
 
 ## Joining the discussion
-Do you want some feedback from others on your idea before you propose it as an Issue? Do you want to discuss some of the content of the project with others? Is there news that other community members should be aware of? Or do you have a question about any part of the project? Then GitHub discussions is a great place to go! 
+Do you want some feedback from others on your idea before you propose it as an Issue? Do you want to discuss some of the content of the handbook with others? Is there news that other contributors should be aware of? Or do you have a question about any part of the project? Then GitHub discussions is a great place to go! 
 
 1. Go to the Discussions tab in this repository, https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions
 2. Have a look at the existing discussions in the different sections (General, Idea, Q&A, etc.). Does your question or comment already relate to an open discussion? If so, see if you can find an answer to your question or comment. You can add to an existing discussion by simply commenting there!
