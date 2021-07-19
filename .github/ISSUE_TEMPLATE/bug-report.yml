@@ -2,7 +2,7 @@ name: 🐛 Bug Report yml version
 description: Create a report to help us repair something broken
 title: "[Bug]: "
 labels: [bug]
-assignees: ''
+#assignees: ''
 body:
   - type: markdown
     attributes:
