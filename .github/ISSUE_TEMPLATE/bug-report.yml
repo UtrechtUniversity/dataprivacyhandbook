@@ -39,7 +39,13 @@ body:
     id: steps-reproduce
     attributes:
       label: Steps to reproduce the bug
-      description: For example: <br>1. Go to ... <br>2. Click on... <br>3. Scroll down to... <br>4. See error.<br>If relevant, provide screenshots or log snippets to help explain your problem.
+      description: | 
+        For example:
+        1. Go to ..
+        2. Click on...
+        3. Scroll down to... 
+        4. See error...
+        If relevant, provide screenshots or log snippets to help explain your problem.
       placeholder: These steps resulted in the bug.
       value: "I followed these steps that resulted in the bug"
     validations:
