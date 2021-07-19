@@ -1,4 +1,4 @@
-name: 🐛 Bug Report yml version
+name: 🐛 Bug Report
 description: Create a report to help us repair something broken
 title: "[Bug]: "
 labels: [bug]
