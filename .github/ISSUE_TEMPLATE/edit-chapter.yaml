@@ -2,7 +2,6 @@ name: ✏️ Edit a handbook chapter
 description: Propose to edit a chapter in the Data Privacy Handbook
 title: "[Edit]: "
 labels: [enhancement]
-assignees: ~
 body:
   - type: markdown
     attributes:
