@@ -8,15 +8,7 @@ body:
     attributes:
       value: |
         Use this template to propose to edit a chapter in the Data Privacy Handbook. This can range from signalling a typo or a broken link, to adding or editing entire sections.
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-   - type: textarea
+  - type: textarea
     id: summary
     attributes:
       label: Summary
@@ -43,7 +35,7 @@ body:
       value: "This is what needs to be done:"
     validations:
       required: false
-    - type: textarea
+  - type: textarea
     id: who-help
     attributes:
       label: Who can help?
