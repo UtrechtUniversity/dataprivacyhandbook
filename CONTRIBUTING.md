@@ -21,9 +21,9 @@ We invite everyone who is interested to get involved. Even if you just want to c
  * [Recognition for your contribution](#recognition-for-your-contribution)
 
 ## First things first
-Before you contribute, the following points are important to take into accoutn:
+Before you contribute, the following points are important to take into account:
 1. Please read through our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and make sure you familiarize yourself with its contents. We expect all of our contributors to comply with the terms specified there.
-2. At the moment, all contributions go through our GitHub repository, https://github.com/UtrechtUniversity/dataprivacyhandbook/. So, in order for you to be able to contribute, you first have to [create a GitHub account](https://github.com/join). Additionally, if you want to be able to work locally, you should have `git` installed or a user interface (e.g., Rstudio, GitKraken, etc.) that can work with git.
+2. At the moment, all contributions go through our GitHub repository, https://github.com/UtrechtUniversity/dataprivacyhandbook/. So, in order for you to be able to contribute, you first have to [create a GitHub account](https://github.com/join). If you want to be able to work on your local PC, you should additionally have [`git`](https://git-scm.com/downloads) installed (the version control software underlying GitHub) and optionally a user interface (e.g., [Rstudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN), [GitKraken](https://www.gitkraken.com/download), etc.) that can work with git.
 3. Throughout this project, we write in Markdown. This is a way of formatting text to add, for example, numbering, headers, bold text, hyperlinks, etc. to plain text. See [this link](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for some basic syntax to get you started.
 
 ## Using Issues to contribute practical ideas or bug reports
@@ -31,22 +31,21 @@ Before you contribute, the following points are important to take into accoutn:
  - You have an idea for an extension of the content
  - You signalled an error or bug and don't have time to fix it yourself
  - You signalled an error or bug and don't know how to fix it yourself 
- - You do not consider yourself familiar enough with the GitHub interface
 
 ### How to open an issue?
 1. Go to the Issues tab in this repository: https://github.com/UtrechtUniversity/dataprivacyhandbook/issues
 2. On the right part of your screen, click the green button that says "New issue"
 3. Choose the issue template that fits your situation best. For example, if you signalled an error, typo or bug, click the "Bug report" issue template. If none of the templates fit your situation, choose "Open a blank issue"
 4. Fill out the issue template as completely as possible. Provide all necessary details for others to reproduce your results or understand what you are talking about. In case of a bug report, please also let us know what you have already tried and what machine you are using, as this will speed up the debugging process.
-5. All done drafting your Issue? On the right of your Issue, please add a **label**, for example: `bug` or `enhancement` so that we know what kind of Issue you wrote. If you want, you can also assign a person to review your Issue or link the issue to a Pull Request. However, these are not at all necessary!
+5. All done drafting your Issue? On the right of your Issue, please add a **label**, for example: `bug` or `enhancement` so that we know what kind of Issue you wrote (a label is added automatically if you choose an Issue template). If you want, you can also assign a person to review your Issue or link the issue to a Pull Request. However, these are not at all necessary!
 6. All done? Click "Submit". 
 
-Congrafulations, you have now opened an issue! 🎉
+Congratulations, you have now opened an issue! 🎉
 
 ## Joining the discussion
 Do you want some feedback from others on your idea before you propose it as an Issue? Do you want to discuss some of the content of the handbook with others? Is there news that other contributors should be aware of? Or do you have a question about any part of the project? Then GitHub discussions is a great place to go! 
 
-1. Go to the Discussions tab in this repository, https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions
+1. Go to the Discussions tab in this repository: https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions
 2. Have a look at the existing discussions in the different sections (General, Idea, Q&A, etc.). Does your question or comment already relate to an open discussion? If so, see if you can find an answer to your question or comment. You can add to an existing discussion by simply commenting there!
 3. Is your question or comment (relatively) new? [Open a New discussion](https://docs.github.com/en/discussions/quickstart#welcoming-contributions-to-your-discussions) (right corner of the screen), select under which category your question or comment fits and write it. For searchability purposes, please also include a Label to your discussion. Click "Start discussion" to publish your message.
 
@@ -56,7 +55,7 @@ First of all, how awesome that you want to contribute actual content, thank you!
 The workflow on GitHub is as follows:
 1. Copy the repository and all the files in it to your own account (a "fork")
 2. Edit the content in your own copy of the repository (edit > "stage" > "commit")
-3. Ask the original repository maintainers to merge your edits with the original repository (through a "pull request")
+3. Ask the original repository maintainers to merge your edits with the original files (through a "pull request")
 
 ### 1. Fork the repository: Copy the repository to your own account
 1. To [fork](https://help.github.com/articles/fork-a-repo) the repository, click the `fork` button on the upper right of the repository homepage. This is now your own unique copy of the repository and all the files in it. Changes you make here will not affect anyone else's work, so it is a safe place to try things out!
@@ -73,30 +72,30 @@ Here we come to the core of how git and GitHub work. Don't worry, there are mult
 - Do not re-write history: don't edit previous commit messages or delete/revert commits, unless explicitly necessary.
 
 #### A. Easiest way: Editing files on GitHub
-1. In your fork (the copy of the repository on your own account), [create a new branch](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch). A branch is a version of the files _within_ the repository. We want to create a new branch, so that we still always have the clean `main` branch of the repository that has no edits. In the new brach, we can start editing and experimenting. Read more about branches [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches).
-2. When you have switched to your newly created branch, navigate to the file you want to edit. In our repository, all editable handbook chapters can be found in the base of the repository, so you don't have to search in folders. You should only ever edit the `.Rmd` files!
+1. In your fork (the copy of the repository on your own account), [create a new branch](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch) or switch to the branch **belonging to the chapter you are going to make edits in**. A branch is a version of the files _within_ the repository. We want to create a new branch, so that we still always have the clean `main` branch of the repository that has no edits. In the new branch, we can start editing and experimenting. Read more about branches [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches). <br> <img src="img/gh-switch-branch.png" width=30%/>
+2. When you have switched to your newly created branch, navigate to the file you want to edit. In our repository, all editable handbook chapters can be found in the root of the repository, so you don't have to search in folders. You should only ever edit the `.Rmd` files!
 3. Click the pencil icon ✏️ on the top left of the document and start editing the document.
-4. Once finished editing the document, scroll down to the "Commit changes" section. Here, please type a commit message. This is simply a line that briefly, but explicitly, describes what changes you made, so that humans reviewing your changes can easily see what you've done. Example: "add example on data security"
-5. Select "Commit directly to the [branch-you-created-in-step-1]" and click "Commit changes"
+4. Once finished editing the document, scroll down to the "Commit changes" section and type a commit message. This is simply a line that briefly, but explicitly, describes what changes you made, so that humans reviewing your changes can easily see what you've done.<br> <img src="img/gh-commit.png" width=30%/>
+5. Select "Commit directly to the [branch-you-are-working-on]" and click "Commit changes"
 6. Go through steps 2-5 for every edit you want to make.
 
 You have now made (a) change(s) in your copy of the repository, congratulations!
 
 #### B. More advanced way: Editing files locally
-1. In your fork (the copy of the repository on your own account), [create a new branch](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch). A branch is a version of the files _within_ the repository. We want to create a new branch, so that we still always have the clean `main` branch of the repository that has no edits. In the new brach, we can start editing and experimenting. Read more about branches [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches).
+1. In your fork (the copy of the repository on your own account), [create a new branch](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch) or switch to the branch **belonging to the chapter you are going to make edits in**. A branch is a version of the files _within_ the repository. We want to create a new branch, so that we still always have the clean `main` branch of the repository that has no edits. In the new branch, we can start editing and experimenting. Read more about branches [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches). <br> <img src="img/gh-switch-branch.png" width=30%/>
 2. Assuming you have cloned your forked repository to your local PC ([commandline](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository), [Rstudio](https://happygitwithr.com/rstudio-git-github.html#clone-the-new-github-repository-to-your-computer-via-rstudio)), you can see the files on your local machine now. Be sure to update your clone with the lastest changes made in the parent repository (commandline: `git pull upstream [branchname]` or `git pull origin [branchname]`, [Rstudio](https://happygitwithr.com/upstream-changes.html)).
-3. Switch to your newly created branch: `git checkout [branchname]` (in Rstudio, simply click on the branch name to select which one you want)
+3. Switch to the branch you are going to work on (preferably the one matching the chapter you are going to edit): `git checkout [branchname]` (in Rstudio, simply click on the branch name to select which one you want)
 4. Make local changes. You can open a `.Rmd` file with multiple text editors such as [Visual studio code](https://code.visualstudio.com/), [Atom](https://atom.io/), [Zettlr](https://www.zettlr.com/), [Rstudio](https://www.rstudio.com/), etc.) and, after saving each change, commit it (command-line: `git commit -a -m "commit message"`, [RStudio](https://cfss.uchicago.edu/setup/git-with-rstudio/)). Your changes are now saved locally.
 5. Push your commits to the online version of your repository (command-line: `git push origin [branchname]`, [Rstudio](https://happygitwithr.com/rstudio-git-github.html#make-local-changes-save-commit))
 
 ### 3. Open a pull request: ask the maintainers to merge your edits
 1. In GitHub, navigate to your fork (copy) of the repository
 2. Go to the tab "Pull requests" > "New pull request"
-3. Make sure the base repository is `UtrechtUniversity/dataprivacyhandbook main` and the head repository is your own repository, e.g., `DorienHuijser/dataprivacyhandbook branchinwhichyoumadechanges`.
+3. Make sure the base repository is `UtrechtUniversity/dataprivacyhandbook [chapter-branch]` (make sure you are not creating a PR with the `main` branch) and the head repository is your own repository, e.g., `DorienHuijser/dataprivacyhandbook [branch-in-which-you-made-changes]`.
 4. Describe your edits, e.g., what has been fixed, what has been added, which of the Issues has been addressed, etc. When you're done describing, click "Create pull request"
 5. Your pull request will now appear in the [list of pull requests](https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls). If you want, you can assign someone to review your pull request. 
 
-Well done, you have opened a PR! One of the owners of the repository will review your commits, may request changes and will finally approve the pull request and merge your changes into the UtrechtUniversity/dataprivacyhandbook main branch. After merging, your edits will become visible in the online handbook! Thank you so much for your contribution! 🙏🙏🙏
+Well done, you have opened a PR! One of the owners of the repository will review your commits, may request changes and will finally approve the pull request and merge your changes into the UtrechtUniversity/dataprivacyhandbook repository. After merging with the `main` branch, your edits will become visible in the online handbook! Thank you so much for your contribution! 🙏🙏🙏
 
 ## Recognition for your contribution
 We want to recognize each and every kind of contribution that was made to our project. Therefore, we use the [all-contributors specification](https://allcontributors.org/docs/en/emoji-key). After you have made a contribution, please head over to our [Add contributors issue](https://github.com/UtrechtUniversity/dataprivacyhandbook/issues/6) to add yourself as a contributor. After merging, you will appear as a contributor in the repository [README](https://github.com/UtrechtUniversity/dataprivacyhandbook#readme)!
