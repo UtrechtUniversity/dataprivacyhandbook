@@ -1,0 +1,53 @@
+name: ✏️ Edit a handbook chapter
+description: Propose to edit a chapter in the Data Privacy Handbook
+title: "[Edit]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose to edit a chapter in the Data Privacy Handbook. This can range from signalling a typo or a broken link, to adding or editing entire sections.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: In 1 line, summarize your idea and why you are proposing it.
+      placeholder: Summary
+      value: "I propose to..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the part of the Data Privacy Handbook that you would like to edit, add or restructure. Please provide as much context as possible and link to relating Issues, Discussions and content.
+      placeholder: Write your idea(s) here
+      value: "I propose to..."
+    validations:
+      required: true
+  - type: textarea
+    id: action-required
+    attributes:
+      label: Action required
+      description: What needs to be done to realize your proposal? Try to be concise and if possible, use bullet points.
+      placeholder: Actions
+      value: "This is what needs to be done:"
+    validations:
+      required: false
+  - type: textarea
+    id: who-help
+    attributes:
+      label: Who can help?
+      description: Is there someone/are they persons that can help realize your proposal? E.g., the project maintainers or someone you know who has relevant expertise? Please note that if you input personal data here (e.g., names, email addresses, even GitHub tags), make sure you have their permission to post them here.
+      placeholder: Persons who can help
+      value: "These persons can help:"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

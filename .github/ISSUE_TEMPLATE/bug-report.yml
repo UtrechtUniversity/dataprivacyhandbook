@@ -1,0 +1,69 @@
+name: 🐛 Bug Report
+description: Create a report to help us repair something broken
+title: "[Bug]: "
+labels: [bug]
+#assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Summary
+      description: Summarize the bug clearly and concisely.
+      placeholder: What happened?
+      value: "This is what happened:"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect would happen?
+      placeholder: What should have happened?
+      value: "This is what should have happened:"
+    validations:
+      required: false
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+      placeholder: What happened instead?
+      value: "This is what happened:"
+    validations:
+      required: false
+  - type: textarea
+    id: steps-reproduce
+    attributes:
+      label: Steps to reproduce the bug
+      description: | 
+        For example:
+        1. Go to ..
+        2. Click on...
+        3. Scroll down to... 
+        4. See error...
+        If relevant, provide screenshots or log snippets to help explain your problem.
+      placeholder: These steps resulted in the bug.
+      value: "I followed these steps that resulted in the bug"
+    validations:
+      required: false
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your set-up
+      description: Provide some details on your setup, if relevant
+      placeholder: Operating system, browser, dependencies, etc.
+      value: "Operating sytem, browser, dependencies, etc."
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

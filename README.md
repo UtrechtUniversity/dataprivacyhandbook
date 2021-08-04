@@ -1,4 +1,7 @@
 # Data Privacy Handbook
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![read the book](https://img.shields.io/badge/read-the%20book-yellow)](https://utrechtuniversity.github.io/dataprivacyhandbook/)
 [![i want to contribute!](https://img.shields.io/badge/i%20want%20to-contribute!-brightgreen)](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md)
@@ -117,3 +120,25 @@ You're more than welcome to check it out if you're curious about the technical s
 ## History & Acknowledgements
 
 This project was initiated by Menno Rasch in early 2020, along with colleagues from UU RDM Support. It is currently supported with funding from UU's Research IT program & a grant from the NWO-DCC funding instrument.
+=======
+Repository for the Data Privacy Handbook @UtrechtUniversity
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/nehamoopen"><img src="https://avatars.githubusercontent.com/u/37183829?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Neha Moopen</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=nehamoopen" title="Tests">⚠️</a> <a href="#projectManagement-nehamoopen" title="Project Management">📆</a> <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=nehamoopen" title="Documentation">📖</a> <a href="#infra-nehamoopen" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-nehamoopen" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
