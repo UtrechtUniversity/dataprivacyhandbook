@@ -1,13 +1,11 @@
 # Data Privacy Handbook
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![read the book](https://img.shields.io/badge/read-the%20book-yellow)](https://utrechtuniversity.github.io/dataprivacyhandbook/)
 [![i want to contribute!](https://img.shields.io/badge/i%20want%20to-contribute!-brightgreen)](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+![issues](https://img.shields.io/github/issues/utrechtuniversity/dataprivacyhandbook?color=red)  
 [![start/join a discussion](https://img.shields.io/badge/start%2Fjoin%20a-GitHub%20Discussion-blue)](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
 [![chat on Slack](https://img.shields.io/badge/chat%20on-Slack-blueviolet)](https://join.slack.com/t/dtl-dsig/shared_invite/zt-krwq991u-6PczI7~fxokJuLOpnI3u0A)
-![issues](https://img.shields.io/github/issues/utrechtuniversity/dataprivacyhandbook?color=red)  
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
 
 ## ✨Welcome!✨
@@ -120,8 +118,6 @@ You're more than welcome to check it out if you're curious about the technical s
 ## History & Acknowledgements
 
 This project was initiated by Menno Rasch in early 2020, along with colleagues from UU RDM Support. It is currently supported with funding from UU's Research IT program & a grant from the NWO-DCC funding instrument.
-=======
-Repository for the Data Privacy Handbook @UtrechtUniversity
 
 ## Contributors ✨
 
