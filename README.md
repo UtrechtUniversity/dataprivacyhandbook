@@ -96,7 +96,7 @@ When participating in this project, we expect you to abide by our [Code of Condu
 
 - **Email**: You can always contact the project coordinators - [Neha Moopen](https://www.uu.nl/medewerkers/NMoopen) & [Dorien Huijser](https://www.uu.nl/medewerkers/DCHuijser) - by email.
 
-- **Newsletter**: coming soon!
+- **Newsletter**: You can subscribe to UU's [Research Data Management Support newsletter](https://mailings.uu.nl/hp/gKQRpokhPxN6bw8NlPTr8g/subscribe_newsletter_research_data_management_support) for periodic updates on our project.
 
 ## Citing the Handbook
 
