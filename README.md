@@ -1,6 +1,6 @@
 # Data Privacy Handbook
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![read the book](https://img.shields.io/badge/read-the%20book-yellow)](https://utrechtuniversity.github.io/dataprivacyhandbook/)
@@ -133,6 +133,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/nehamoopen"><img src="https://avatars.githubusercontent.com/u/37183829?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Neha Moopen</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=nehamoopen" title="Tests">⚠️</a> <a href="#projectManagement-nehamoopen" title="Project Management">📆</a> <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=nehamoopen" title="Documentation">📖</a> <a href="#infra-nehamoopen" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-nehamoopen" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://www.dorienhuijser.com"><img src="https://avatars.githubusercontent.com/u/58177697?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dorien Huijser</b></sub></a><br /><a href="#projectManagement-DorienHuijser" title="Project Management">📆</a> <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=DorienHuijser" title="Documentation">📖</a> <a href="#infra-DorienHuijser" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-DorienHuijser" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
