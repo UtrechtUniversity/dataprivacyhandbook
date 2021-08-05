@@ -1,7 +1,9 @@
-# (PART) Knowledge Base {-} 
+# Introduction {-#intro} 
 
-# Introduction {#intro} 
+## What is (research) data privacy? 
 
-## What is Data Privacy? 
+# How To Use This HandBook
 
-### Header 3
+## Flowchart/Decision Tree
+
+## Navigation based on data types/techniques or tools needed.
