@@ -1,9 +1,0 @@
-intro
-what-is-data-privacy
-header-3
-gdpr
-legal-basis-for-processing-data
-reusing-privacy-sensitive-data
-data-subjects-rights
-right-to-be-informed
-right-to-access

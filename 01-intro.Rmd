@@ -2,8 +2,8 @@
 
 ## What is (research) data privacy? 
 
-# How To Use This HandBook
+## How To Use This HandBook
 
-## Flowchart/Decision Tree
+### Flowchart/Decision Tree
 
-## Navigation based on data types/techniques or tools needed.
+### Navigation based on data types/techniques or tools needed.
