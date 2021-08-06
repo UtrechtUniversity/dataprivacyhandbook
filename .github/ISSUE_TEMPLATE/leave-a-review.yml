@@ -13,7 +13,7 @@ body:
       label: Part
       description: "What part of the handbook does your review/feedback concern?"
       placeholder: part
-      value: ""
+      value: "For example: "What is data privacy?", see: https://utrechtuniversity.github.io/dataprivacyhandbook/what-is-research-data-privacy.html"
     validations:
       required: true
   - type: textarea
@@ -22,7 +22,6 @@ body:
       label: Description
       description: Describe your review/feedback here. 
       placeholder: Describe your review/feedback.
-      value: ""
     validations:
       required: true
   - type: textarea
@@ -31,7 +30,6 @@ body:
       label: Suggested course of action (optional)
       description: If you have a course of action in mind, please let us know! This may make it faster to incorporate your feedback into the Handbook.
       placeholder: Suggested course of action
-      value: ""
     validations:
       required: false
   - type: checkboxes
