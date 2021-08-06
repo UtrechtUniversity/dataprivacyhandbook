@@ -90,9 +90,7 @@ When participating in this project, we expect you to abide by our [Code of Condu
 
 ## Citing the Handbook
 
-**coming soon!**
-
-We'll be archiving this repository in Zenodo and obtaining a DOI that can be used for citations.
+To cite the Data Privacy Handbook, click `Cite this repository` at the [repository homepage](https://github.com/UtrechtUniversity/dataprivacyhandbook), under the header `About` (at top right of the screen).
 
 ## License 
 
