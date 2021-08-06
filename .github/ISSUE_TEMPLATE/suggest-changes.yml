@@ -1,21 +1,12 @@
-name: ✏️ Edit a handbook chapter
-description: Propose to edit a chapter in the Data Privacy Handbook
-title: "[Edit]: "
+name: ✏️ Suggest changes
+description: Suggest changes to the Data Privacy Handbook
+title: "[Changes]: "
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
       value: |
-        Use this template to propose to edit a chapter in the Data Privacy Handbook. This can range from signalling a typo or a broken link, to adding or editing entire sections.
-  - type: textarea
-    id: summary
-    attributes:
-      label: Summary
-      description: In 1 line, summarize your idea and why you are proposing it.
-      placeholder: Summary
-      value: "I propose to..."
-    validations:
-      required: true
+        Use this template to suggest concrete changes to the Data Privacy Handbook. This can range from signalling a typo or a broken link, to adding, editing or removing entire sections.
   - type: textarea
     id: description
     attributes:
