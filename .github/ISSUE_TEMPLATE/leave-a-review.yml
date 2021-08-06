@@ -13,7 +13,8 @@ body:
       label: Part
       description: "What part of the handbook does your review/feedback concern?"
       placeholder: part
-      value: "For example: "What is data privacy?", see: https://utrechtuniversity.github.io/dataprivacyhandbook/what-is-research-data-privacy.html"
+      value: |
+        For example: "What is data privacy?", see: https://utrechtuniversity.github.io/dataprivacyhandbook/what-is-research-data-privacy.html
     validations:
       required: true
   - type: textarea
