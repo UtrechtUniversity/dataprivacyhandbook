@@ -10,9 +10,63 @@ link-citations: yes
 description: "The Data Privacy Handbook is being developed as a readable and practical resource for researchers and research support staff to address data privacy-related issues that come up during the research cycle."
 ---
 
-# Preface {-}
+# Welcome {-}
 
-Disclaimer: This is work in progress!
+* insert image similar to R for humanities * 
 
-The Data Privacy Handbook is being developed as a readable and practical resource for researchers and research support staff to address data privacy-related issues that come up during the research cycle.
+The Data Privacy Handbook is a living guide to handling personal data in scientific research, in line with European data protection and privacy regulations. It is a creation of Utrecht University Research Data Management Support in collaboration with central and faculty data support professionals, and with input from researchers at Utrecht University. 
+The Data Privacy Handbook consists of:
+•	a **knowledge base**, which serves to introduce readers to the EU General Data Protection Regulation (GDPR), explain how it applies to scientific research, and describe how scientific research can be carried out in a GDPR-compliant manner;
+•	an overview of privacy-enhancing **techniques & tools**, which introduces readers to privacy-enchancing techniques such as anonymization and pseudonymization, and illustrates how these techniques can be implemented with available developed tools;
+•	**use cases**, which are featured as practical examples to draw inspiration from.
+The Data Privacy Handbook is part of a larger Data Privacy Project, that aims to develop knowledge, tools, and experience of how researchers can and should deal with personal data. You can read more about the project <a href=”https://utrechtuniversity.github.io/dataprivacyproject” target="_blank">here</a>.
 
+## How to use this Handbook
+
+The Data Privacy Handbook is not meant to be read like a textbook. Our goal is to make knowledge and solutions surrounding this topic FAIR (Findable, Accessible, Interoperable, Reusable) and present them in a practical format. The chapters therefore do not need be read in a linear fashion. You are encouraged to navigate to the chapter you need at a given moment.
+
+### What are you looking for?
+
+Flow chart / embedded decision tree to direct users to the correct chapters.
+For example:
+I want to...:
+•	Before research: Plan for GDPR compliant research
+o	Obtaining informed consent (legal-documents#consent)
+o	DPIA
+o	Collaboration with others outside of the university (legal-documents#consortium)
+•	During research: Know how to work compliantly with personal data
+o	Where to store data (data-storage)
+o	Which tools to use during data collection and data analysis
+o	Enhance the privacy of my data (PET)
+o	Work on data with others (data-sharing)
+•	After research: Share my data with others
+o	Work on data with others (data-sharing)
+o	Publish personal data (data-publishing)
+o	Publish personal data (legal-documents#dta)
+•	Information: Know more about the GDPR
+o	Gdpr chapter
+o	Glossary
+•	Inspiration: Get inspired by others
+o	Use-cases
+•	Support: Get help
+o	Getting-help
+Code
+•	Decision tree https://thecodeplayer.com/index.php/walkthrough/css3-family-tree 
+•	Decision tree http://philogb.github.io/jit/static/v20/Jit/Examples/Spacetree/example1.code.html
+•	We can also use Twine (text-based story, like the MRI data sharing guide) and copy or embed the html file created there, we just need to test whether hyperlinks to chapters works
+
+## License and Citation
+
+The Data Privacy Handbook is licensed under a <a href=” https://creativecommons.org/licenses/by/4.0/” target=”_blank”>Creative Commons Attribution 4.0 International License</a>. You can view the license <a href=” https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md” target=”_blank”>here</a>.
+When referring to the Data Privacy Handbook, please use the following citation:
+Utrecht University RDM Support (2021). Data Privacy Handbook. Retrieved via https://utrechtuniversity.github.io/dataprivacyhandbook/ on [YYYY-MM-DD].
+## Disclaimer
+The content presented in the Data Privacy Handbook is carefully curated by Research Data Management Support at Utrecht University, in collaboration with university-wide support staff. Therefore, its contents may reflect decisions or approved tools that apply solely to Utrecht University. As this Handbook is meant as an online resource for anyone to use, we may not be held accountable for any negative consequences arising from incorrect use of the information presented here.
+
+## Contributions
+
+You can find a list of contributors in our <a href=” https://github.com/UtrechtUniversity/dataprivacyhandbook” target=”_blank”>GitHub repository</a>.
+Would you like to contribute to this Handbook yourself? Please read our <a href=” https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md” target=”_blank”>Contributing Guidelines</a>.
+
+
+ 
