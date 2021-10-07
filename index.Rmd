@@ -10,7 +10,11 @@ link-citations: yes
 description: "The Data Privacy Handbook is being developed as a readable and practical resource for researchers and research support staff to address data privacy-related issues that come up during the research cycle."
 ---
 
-# Preface {-}
+# Welcome! {-}
+
+```{r echo=FALSE}
+knitr::include_graphics("img/cover-image-dph.png")
+```
 
 Disclaimer: This is work in progress!
 
