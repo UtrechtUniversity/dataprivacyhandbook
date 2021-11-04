@@ -1,0 +1,10 @@
+# Data Publishing {-#data-publishing}
+
+## Publishing Personal Data
+
+## Data vs. Metadata
+
+## Repositories
+
+## Licenses
+
