@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2021-11-04
+
+### Added
+
+- Homepage contents
+- Glossary and getting help chapters
+
+### Changed
+
+- Sections in the handbook
+- Chapter file numbering
+- Bib file reference
+
 ## 2021-07-19
 
 ### Added
