@@ -59,15 +59,13 @@ topic you need based on the table of contents, or use the guide below.
 
 I want to...:
 
-<!-- These internal links don't currently work yet! -->
-
 <ul>
     <li>
         <details>
             <summary>Learn about the GDPR in the context of scientific research</summary>
             <ul>
-                <li><a href="01-gdpr.html">Introduction to the GDPR</a></li>
-                <li><a href="11-glossary.html">Definitions</a></li>
+                <li><a href="#gdpr">Introduction to the GDPR</a></li>
+                <li><a href="#glossary">Definitions</a></li>
             </ul>
         </details>
     </li>
@@ -75,10 +73,10 @@ I want to...:
         <details>
             <summary>Plan a GDPR-compliant research project</summary>
             <ul>
-                <li><a href="02-privacy-and-security-assessment.html">Assessing your design</a></li>
-                <li><a href="03-legal_documents.html">Informing participants</a></li> <!-- link to privacy notices subsection -->
-                <li><a href="03-legal_documents.html">Obtaining consent</a></li><!-- link to ICsubsection -->
-                <li><a href="03-legal_documents.html">Collaborating on personal data</a></li>
+                <li><a href="#privacy-and-security-assessment">Assessing your design</a></li>
+                <li><a href="#privacy-notices">Informing participants</a></li>
+                <li><a href="#informed-consent-forms">Obtaining consent</a></li>
+                <li><a href="#legal-documents">Collaborating on personal data</a></li>
             </ul>
         </details>
     </li>
@@ -86,10 +84,10 @@ I want to...:
         <details>
             <summary>Work safely with personal data</summary>
             <ul>
-                <li><a href="06-data_storage.html">Storing personal data</a></li>
-                <li><a href="05-tools-and-services.html">Using GDPR-compliant tools and services</a></li>
-                <li><a href="04-privacy-enhancing-techniques.html">Reducing the sensitivity of personal data</a></li>
-                <li><a href="07-data_sharing.html">Sharing personal data during research</a></li>
+                <li><a href="#data-storage">Storing personal data</a></li>
+                <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
+                <li><a href="#privacy-enchancing-techniques">Reducing the sensitivity of personal data</a></li>
+                <li><a href="#data-sharing">Sharing personal data during research</a></li>
             </ul>
         </details>
     </li>
@@ -97,12 +95,12 @@ I want to...:
         <details>
             <summary>Share personal data with others</summary>
             <ul>
-                <li><a href="01-gdpr.html#legal-basis">Sharing data legally</a></li>
-                <li><a href="07-data_sharing.html">Sharing personal data during research</a></li>
-                <li><a href="04-privacy-enhancing-techniques.html">Reducing the sensitivity of personal data</a></li>
-                <li><a href="05-tools-and-services.html">Using GDPR-compliant tools and services</a></li>
-                <li><a href="08-data_publishing.html">Publishing personal data</a></li>
-                <li><a href="03-legal_documents.html#data-transfer-agreement">Sharing personal data case by case</a></li>
+                <li><a href="#legal-basis">Sharing data legally</a></li>
+                <li><a href="#data-sharing">Sharing personal data during research</a></li>
+                <li><a href="#privacy-enchancing-techniques">Reducing the sensitivity of personal data</a></li>
+                <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
+                <li><a href="#data-publishing">Publishing personal data</a></li>
+                <li><a href="#data-transfer-agreement">Sharing personal data case by case</a></li>
             </ul>
         </details>
     </li>
@@ -110,19 +108,20 @@ I want to...:
         <details>
             <summary>Learn from other projects</summary>
             <ul>
-                <li><a href="09-use_cases.html#open-science-questionnaire">Publishing metadata only</a></li>
-                <li><a href="09-use_cases.html#youth">Pseudonymizing different types of data</a></li>
-                <li><a href="09-use_cases.html#youth">Sharing personal data outside of the EEA</a></li>
-                <li><a href="09-use_cases.html#uu-employee-data">Creating fake data to test analysis scripts</a></li>
+                <li><a href="#open-science-questionnaire">Publishing metadata only</a></li>
+                <li><a href="#youth-pseudonymisation">Pseudonymising different types of data</a></li>
+                <li><a href="#youth-sharing-eea">Sharing personal data outside of the EEA</a></li>
+                <li><a href="#uu-employee">Creating fake data to test analysis scripts</a></li>
             </ul>
         </details>
     </li>
     <li>
         <details>
-            <summary>Get help</summary>
+            <summary>Get help or information</summary>
             <ul>
-                <li><a href="10-seeking-help.html">Getting help at Utrecht University</a></li>
-                <li><a href="11-glossary.html#youth">Definitions</a></li>
+                <li><a href="#seeking-help">Getting help at Utrecht University</a></li>
+                <li><a href="#glossary">Definitions</a></li>
+                <li><a href="#references">References</a></li>
             </ul>
         </details>
     </li>
@@ -175,7 +174,7 @@ in our <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target
 
 Neha  Moopen, Dorien Huijser, Jacques Flores, Saskia van den Hout, Frans Huigen, Sanne Kleerebezem, Annemiek van der Kuil, 
 Danny de Koning-van Nieuwamerongen, Frans de Liagre Böhl, Francisco Romero Pastrana, Ron Scholten, Garrett Speed, Robert 
-Steeman, Liliana Vargas Meleza, and others.
+Steeman, Liliana Vargas Meleza, Martine de Vos, and others.
   
 Would you like to contribute to this Handbook yourself? Please read our 
 <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">Contributing Guidelines</a>.
