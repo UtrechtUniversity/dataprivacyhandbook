@@ -4,7 +4,7 @@
 
 This chapter may include sections on the legal basis for processing research data, reusing privacy-sensitive data (further processing), and data subject's rights.
 
-## Legal Basis for Processing Data
+## Legal Basis for Processing Data {-#legal-basis}
 
 ## Reusing Privacy-Sensitive Data
 

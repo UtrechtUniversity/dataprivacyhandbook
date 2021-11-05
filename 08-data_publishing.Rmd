@@ -1,4 +1,4 @@
-# Data Publishing {-#data-publishing}
+# Data Publishing {#data-publishing}
 
 ## Publishing Personal Data
 

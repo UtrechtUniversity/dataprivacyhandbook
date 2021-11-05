@@ -1,4 +1,4 @@
-# Data Sharing {-#data-sharing}
+# Data Sharing {#data-sharing}
 
 ## Can I Share Personal Data?
 

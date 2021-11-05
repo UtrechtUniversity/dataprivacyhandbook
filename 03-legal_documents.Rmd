@@ -1,13 +1,13 @@
-# Legal Documents & Agreements {-#legal-documents}
+# Legal Documents & Agreements {#legal-documents}
 
 
-## Privacy Notices
+## Privacy Notices {#privacy-notices}
 
-## Informed Consent Forms
+## Informed Consent Forms {#informed-consent-forms}
 
 ## Data Use Agreement/Confidentiality Agreement/Non-Disclosure Agreement
 
-## Data Transfer Agreement
+## Data Transfer Agreement {#data-transfer-agreement}
 
 ## Consortium Agreement and/or Joint Controller Agreement
 
