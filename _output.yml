@@ -8,7 +8,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Data Privacy Handbook</a></li>
       after: |
-        <li><a href="https://github.com/nehamoopen/dataprivacyhandbook" target="blank">Visit the GitHub repository</a></li>
+        <li><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="blank">Visit the GitHub repository</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   number_sections: true

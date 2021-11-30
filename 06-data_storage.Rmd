@@ -1,6 +1,6 @@
 # (PART) Storage, Sharing, Publication {-} 
 
-# Data Storage {-#data-storage}
+# Data Storage {#data-storage}
 
 ## Network Drives
 

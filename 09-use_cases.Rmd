@@ -1,0 +1,12 @@
+# (PART) Use Cases
+
+
+# Open Science Questionnaire: publishing metadata {#open-science-questionnaire}
+
+# YOUth Cohort Study: Data pseudonymisation {#youth-pseudonymisation}
+
+# YOUth Cohort Study: Data sharing outside of EEA {#youth-sharing-eea}
+
+# UU Employee study: Creating fake data to safely test analysis scripts {#uu-employee}
+
+

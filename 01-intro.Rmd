@@ -1,9 +1,0 @@
-# Introduction {-#intro} 
-
-## What is (research) data privacy? 
-
-## How To Use This HandBook
-
-### Flowchart/Decision Tree
-
-### Navigation based on data types/techniques or tools needed.
