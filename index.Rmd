@@ -59,7 +59,7 @@ topic you need based on the table of contents, or use the guide below.
 
 I want to...:
 
-<ul>
+<ul style="list-style: none;">
     <li>
         <details>
             <summary>Learn about the GDPR in the context of scientific research</summary>
@@ -110,8 +110,7 @@ I want to...:
             <ul>
                 <li><a href="#open-science-questionnaire">Publishing metadata only</a></li>
                 <li><a href="#youth-pseudonymisation">Pseudonymising different types of data</a></li>
-                <li><a href="#youth-sharing-eea">Sharing personal data outside of the EEA</a></li>
-                <li><a href="#uu-employee">Creating fake data to test analysis scripts</a></li>
+                <li><a href="#pet-survey">Minimising personal data processing in a survey</a></li>
             </ul>
         </details>
     </li>
@@ -131,10 +130,6 @@ I want to...:
 ## License and Citation
 
 The Data Privacy Handbook is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>. You can view the license <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md" target="_blank">here</a>.
-
-### Citing the Data Privacy Handbook
-
-To be announced.
 
 
 ## Disclaimer
