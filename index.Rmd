@@ -73,7 +73,7 @@ I want to...:
         <details>
             <summary>Plan a GDPR-compliant research project</summary>
             <ul>
-                <li><a href="#privacy-and-security-assessment">Assessing your design</a></li>
+                <li><a href="#privacy-by-design">Assessing your design</a></li>
                 <li><a href="#privacy-notices">Informing participants</a></li>
                 <li><a href="#informed-consent-forms">Obtaining consent</a></li>
                 <li><a href="#legal-documents">Collaborating on personal data</a></li>
