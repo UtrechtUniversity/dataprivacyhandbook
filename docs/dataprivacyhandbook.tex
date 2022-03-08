@@ -77,7 +77,7 @@
 
 \title{Data Privacy Handbook}
 \author{Utrecht University}
-\date{2021-11-05}
+\date{2022-03-08}
 
 \begin{document}
 \maketitle
@@ -187,9 +187,7 @@ Publishing metadata only
 
 Pseudonymising different types of data
 
-Sharing personal data outside of the EEA
-
-Creating fake data to test analysis scripts
+Minimising personal data processing in a survey
 
 Get help or information
 
@@ -203,11 +201,6 @@ References
 \section{License and Citation}\label{license-and-citation}}
 
 The Data Privacy Handbook is licensed under a Creative Commons Attribution 4.0 International License. You can view the license here.
-
-\hypertarget{citing-the-data-privacy-handbook}{%
-\subsection{Citing the Data Privacy Handbook}\label{citing-the-data-privacy-handbook}}
-
-To be announced.
 
 \hypertarget{disclaimer}{%
 \section{Disclaimer}\label{disclaimer}}
@@ -256,35 +249,298 @@ Contributing Guidelines.
 \part{Knowledge Base}\label{part-knowledge-base}}
 
 \hypertarget{gdpr}{%
-\chapter*{The GDPR \& Research Data}\label{gdpr}}
-\addcontentsline{toc}{chapter}{The GDPR \& Research Data}
+\chapter*{The GDPR}\label{gdpr}}
+\addcontentsline{toc}{chapter}{The GDPR}
 
-This chapter may include sections on the legal basis for processing research data, reusing privacy-sensitive data (further processing), and data subject's rights.
+\textbf{This chapter will present the most important definitions, principles and rights of data subjects under the GDPR and how you can apply them in your research. Most of the practical advice that we provide in this Handbook is rooted in and builds on the concepts presented here.}
+
+\hypertarget{what-is-the-gdpr}{%
+\subsubsection{What is the GDPR?}\label{what-is-the-gdpr}}
+
+The General Data Protection Regulation (GDPR, Dutch: \emph{Algemene Verordening Gegevensbescherming} {[}AVG{]}) is an EU-wide regulation meant to protect the privacy of individuals within a rapidly growing technological society. The GDPR facilitates the free movement of personal data within the European Economic Area (EEA). Its data processing principles are meant to ensure a fair balance between competing interests -- for example, the right to conduct research vs.~the right to protect personal data (Art 13 and 8, from the Charter of Fundamental right of the EU).
+
+\hypertarget{the-gdpr-in-a-nutshell}{%
+\subsubsection{The GDPR in a nutshell}\label{the-gdpr-in-a-nutshell}}
+
+All articles and recitals of the GDPR can be found online via \url{https://gdpr-info.eu/}. The video below highlights some important aspects of the GDPR:
+
+Click to read the English transcript
+
+The General Data Protection Regulation (GDPR) regulates what we can and cannot do with personal data such as a person's name, sexual orientation, home address and health. This also applies to personal data used in research and education. The regulation consists of 88 pages. Fortunately, the basics are easy to remember in 3 steps:
+
+First, there must be a clear legal basis for processing personal data, for instance, because you have consent, because there is a legal obligation, or because the processing is necessary for the public interest.
+
+Second, appropriate technical and organisational measures must be taken while processing personal data to ensure maximum privacy.
+
+Lastly, the persons whose data you have collected must always have the option of inspecting, changing, or removing their personal data.
+
+That is the GDPR in a nutshell.
+
+\hypertarget{when-does-the-gdpr-apply}{%
+\subsubsection{When does the GDPR apply?}\label{when-does-the-gdpr-apply}}
+
+The GDPR has been applicable from May 2018 onwards and applies when:
+
+\begin{itemize}
+\tightlist
+\item
+  you are processing personal data (material scope, art. 2).
+\item
+  the controller or processor of the data resides in the EEA (territorial scope, art. 3). This is independent of whether the actual processing takes place there. In some cases, the GDPR also applies when the controller or processor is not established in the EEA, but is processing data from EU citizens.
+\end{itemize}
+
+\textbf{If you are collecting or using data that originated from individuals (or is related to individuals), it is very likely that the GDPR applies to your project.}
+
+\hypertarget{implementation}{%
+\subsubsection{Implementation}\label{implementation}}
+
+Whereas the GDPR is a regulation for the entire EEA, each EEA country can additionally implement further restrictions and guidelines in national implementation laws. The Dutch implementation law is called ``Uitvoeringswet AVG (UAVG)'' (most recent version). The UAVG determines, for example, that it is forbidden to process Citizen Service Number (BSN), unless for purposes determined by a law or a General Administrative Order (AMvB).
+
+\hypertarget{definitions}{%
+\section*{Definitions in the GDPR}\label{definitions}}
+\addcontentsline{toc}{section}{Definitions in the GDPR}
+
+Below, you can find a selection of important terms in the GDPR that you should be familiar with when working with personal data (also included in the Definitions). Click a term to see the definition.
+
+Data subject
+
+A living individual who can be identified directly or indirectly through personal data. In a research setting, this would be the individual whose personal data is being processed (see below for the definition of processing).
+
+Personal data
+
+Any information related to an identified or identifiable (living) natural person, for example identifiers (name, identification number, location data, online identifier or a combination of identifiers) or factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of the person. Moreover, IP address, opinions, tweets, answers to questionnaires, etc. may also be personal data, either by itself or through a combination of one another.
+
+Of note: as soon as you process data related to a person that is identifiable, you are processing personal data. Additionally, pseudonymised data is still considered personal data. Read more in Designing a GDPR-compliant research project.
+
+Special categories of personal data
+
+Any information pertaining to the data subject which reveals any of the below categories:
+
+racial or ethnic origin
+
+political opinions
+
+religious or philosophical beliefs
+
+trade union membership
+
+genetic and biometric data when meant to uniquely identify someone
+
+physical or mental health conditions
+
+an individual's sex life or sexual orientation
+
+The processing of these categories of data is prohibited, unless one of the exceptions of art. 9 applies. For example, an exception applies when:
+
+the data subject has provided explicit consent to process these data for a specific purpose
+
+the data subject has made the data publicly available themselves
+
+processing is necessary for scientific archiving purposes
+
+Contact your privacy officer if you wish to process special categories of personal data.
+
+Processing
+
+Any operation performed on personal data, including collection, storage, organisation, alteration, analysis, transcription, sharing, publishing, deletion, etc.
+
+Controller
+
+The natural or legal entity that, alone or with others, determines or has an influence on why and how personal data are processed. On an organisational level, Utrecht University (UU) is the controller of personal data collected by UU researchers and will be held responsible in case of GDPR infringement. On a practical level, however, researchers (e.g., Principal Investigators) often determine why and how data are processed, and are thus fulfilling the role of controller themselves.
+
+Processor
+
+A natural or legal entity that processes personal data on behalf of the controller. For example, when using a cloud transcription service, you often need to send personal data (e.g., an audio recording) to the transcription service for the purpose of your research, which is then fulfilling the role of processor. When using such a third party, you must have a data processing agreement in place.
+
+Legal basis
+
+Any processing of personal data should have a valid legal basis. Without it, you are now allowed to process personal data at all. The GDPR provides 6 legal bases which are explained further in this chapter.
+
+Anonymous data
+
+Any data where an individual is irreversibly de-identified, both directly (e.g., through names and email addresses) and indirectly. The latter means that you cannot identify someone:
+
+by combining variables or datasets (e.g., a combination of date of birth, gender and birthplace, or the combination of a dataset with its name-number key)
+
+via inference, i.e., when you can deduce who the data are about (e.g., when profession is Dutch prime minister, it is clear who the data is about)
+
+by singling out a single subject, such as through unique data points (e.g., someone who is 210 cm tall is relatively easy to identify)
+
+Anonymous data are no longer personal data and thus not subject to GDPR compliance. In practice, anonymous data may be difficult to attain and care must be given that the data legitimately cannot be traced to an individual in any way. The document Opinion 05/2014 on Anonymisation Techniques explains the criteria that must be met for data to be considered anonymous.
+
+Pseudonymous data
+
+Personal data that cannot lead to identification without additional information, such as a key file linking pseudonyms to names. This additional information should be kept separately and securely and makes for deidentification that is reversible. Data are sometimes pseudonymised by replacing direct identifiers (e.g., names) with a participant code (e.g., number). However, this may not always suffice, as sometimes it is still possible to identify participants indirectly (e.g., through linkage, inference or singling out). Importantly, pseudonymous data are still personal data and therefore must be handled in accordance with the GDPR.
+
+\hypertarget{gdpr-principles}{%
+\section*{Principles in the GDPR}\label{gdpr-principles}}
+\addcontentsline{toc}{section}{Principles in the GDPR}
+
+The GDPR has a number of principles at its core which dictate the (method of) data processing. Every type of processing has to comply with these principles. Understanding these principles is the first step to determining what type of personal data can be collected and how they can processed.
+
+\textbf{The principles of the GDPR are explained further below the image}.
+
+The next chapter will describe how to implement these principles in your research. You can also always contact your privacy officer for help.
+
+\hypertarget{lawful-fair-and-transparent}{%
+\subsubsection{1. Lawful, fair and transparent}\label{lawful-fair-and-transparent}}
+
+When working with personal data, your processing should be:
+
+LawfulMake sure all your processing activities (e.g., data collection, storage, analysis, sharing) have a legal basis. Ideally, you should have determined your processing purposes (e.g., research questions) in advance.
+
+Fair
+
+Consider the broad effects of your processing on the rights and dignity of the data subject.
+
+Give data subjects the possibility to exercise their rights.
+
+Avoid deception in the communication with data subjects: processing of personal data should be in line with what they can expect.
+
+o The processing of personal data should not have a disproportionate negative, unlawful, discriminating or misleading effect on data subjects.
+
+Transparent
+Be transparent in the communication to your data subjects about who is processing the personal data (controllers, processors), which personal data is processed, as well as why and for how long, and how data subjects can exercise their rights (see the Legal documents chapter). The information provided should be unambiguous, concise, easily accessible and relevant and shared with data subjects before the start of your research.
+
+\hypertarget{purpose-limitation-for-data-processing}{%
+\subsubsection{2. Purpose limitation for data processing}\label{purpose-limitation-for-data-processing}}
+
+You can only process (i.e., collect, analyse, store, share, etc.) personal data for a specific purpose and only for as long as necessary to complete that purpose. For example, if you only specified that you would use the personal data to answer your specific research question, you cannot also share the personal data for reuse purposes, as this is an additional processing purpose. This means that you need to \textbf{plan what you will do with the (collected) personal data in advance and stick to that plan in order to be GDPR-compliant}.
+
+In some cases (e.g., for cohort studies), it may not be possible to communicate a specific research purpose in advance. In those cases, you may be able to use ``broad consent'' when possible. For more information on broad consent and which conditions must be met in that case see the Legal Documents chapter.
+
+\hypertarget{further-processing-for-compatible-purposes}{%
+\paragraph{Further processing for compatible purposes}\label{further-processing-for-compatible-purposes}}
+
+It may happen that you want to process personal data for similar, but other purposes than previously specified, for example because you formulated a research question that was not communicated with the data subjects. In these cases, the GDPR provides some leeway: you can still process the personal data if the new processing (e.g., the new research question) is \textbf{compatible} with the original purpose. Your privacy officer can help you assess whether this is the case. Of note, \textbf{archiving} personal research data after your research is finished is allowed in a research context (art. 5.1(b)), but provided that you still apply the GDPR's principles and put in place appropriate safeguards (rec. 156).
+
+\hypertarget{data-minimisation}{%
+\subsubsection{3. Data minimisation}\label{data-minimisation}}
+
+You can only process the personal data you need to achieve your predefined purpose(s), and not more just because they may ``come in handy later''. This principle makes sure that, for example, in the event of a data breach, the amount of data exposed is kept to a minimum.
+
+\hypertarget{accuracy}{%
+\subsubsection{4. Accuracy}\label{accuracy}}
+
+The accuracy of personal data is integral to data protection. Inaccurate data can be a risk for data subjects, for example when they lead to a wrong treatment in a medical trial. You therefore need to take every reasonable step to remove or rectify data that is inaccurate or incomplete. Moreover, data subjects have the right to request that inaccurate or incomplete data be removed or rectified within 30 days.
+
+\hypertarget{storage-limitation}{%
+\subsubsection{5. Storage limitation}\label{storage-limitation}}
+
+You can only store personal data for as long as is necessary to achieve your (research) purpose. Afterwards, they need to be removed. If the personal data are part of your research data (and not, for example, to simply contact data subjects), you are allowed to store (archive) them for a longer period of time, provided the necessary safeguards are in place. This is an exemption that applies to data storage for scientific archiving purposes. You need to inform the data subjects on this storage duration beforehand.
+
+N.B.: If identification of the data subject is no longer needed for your (research) purposes, you do not need to keep storing the personal data just to comply with the GDPR, even if it means your data subjects cannot exercise their rights (art. 11).
+
+\hypertarget{integrity-and-confidentiality}{%
+\subsubsection{6. Integrity and confidentiality}\label{integrity-and-confidentiality}}
+
+You are obliged to process personal data securely and protect against unauthorised processing or access, loss or damage. To this end, you should put in place appropriate organisational and technical measures. The next chapter will go into such measures in more depth.
+
+\hypertarget{accountability}{%
+\subsubsection{7. Accountability}\label{accountability}}
+
+The controller is ultimately responsible for demonstrating GDPR-compliance. As a researcher working with personal data, you are representing your institution (e.g., Utrecht University) and you should therefore be able to demonstrate that you process personal data in a compliant manner. Additionally, you should also have some knowledge of data protection so that you can implement the right measures into your research project.
 
 \hypertarget{legal-basis}{%
-\section*{Legal Basis for Processing Data}\label{legal-basis}}
-\addcontentsline{toc}{section}{Legal Basis for Processing Data}
+\section*{When can I work with personal data?}\label{legal-basis}}
+\addcontentsline{toc}{section}{When can I work with personal data?}
 
-\hypertarget{reusing-privacy-sensitive-data}{%
-\section{Reusing Privacy-Sensitive Data}\label{reusing-privacy-sensitive-data}}
+You can only process personal data if you have a \textbf{legal basis} to do so, which should be registered, among other information, in the processing register and communicated to data subjects. There are 6 possible legal bases which are outlined below. In research, the legal bases `informed consent', `legitimate interests of the controller' and `public interest' are most often used.
 
-\hypertarget{data-subjects-rights}{%
-\section{Data Subject's Rights}\label{data-subjects-rights}}
+Please note that for different purposes in your research project, a different legal basis may apply. For example, you may contact data subjects before they start participating based on a legitimate interest and use informed consent for collecting, storing, analysing and publishing the data.
 
-\hypertarget{right-to-be-informed}{%
-\subsection{Right to be Informed}\label{right-to-be-informed}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Informed consent}Informed consent is the most used legal basis in research and is often not only a legal (GDPR-consent), but also an ethical consideration (e.g., METC informed consent). When using informed consent, you should be able to demonstrate that the data subject was informed and has given consent, and for which purpose(s) they gave their consent. In all cases, consent has to be freely given, specific, informed and unambiguous. Please refer to the Informed consent section for guidance on applying informed consent in your research.
+\item
+  \textbf{Legitimate interests of the controller}You can use this legal basis when processing personal data is necessary for the legitimate interests of the controller (e.g., Utrecht University). For example, this can be the case when you need to process contact information to approach data subjects to participate, and you can only obtain their consent after contacting them. Since contacting data subjects is a prerequisite to perform your research, it can be in the university's legitimate research interest to process their contact information. To evaluate whether you can use legitimate interest as a legal basis, you always need to weigh the interests of the controller (e.g., Utrecht University) and the data subjects in a Legitimate interest assessment. Please contact your privacy officer to assess whether you can use this legal basis in your research.
+\item
+  \textbf{Public interest}This legal basis can only be used if it can be demonstrated that there is an urgent social necessity for the processing of personal data. This means that there must be an explicit increase in knowledge in the interest of society. There is currently some disagreement as to when this legal basis can be applied in research. Therefore, please contact your privacy officer to assess whether you can use this legal basis in your research.
+\item
+  \textbf{Processing is necessary because of a legal obligation of the controller}This basis is not suitable for research. As an example, Utrecht University has to share tax data with the Dutch tax administration to comply with tax legislation.
+\item
+  \textbf{Processing is necessary for the performance of a contract}This basis is not suitable for research. As an example, Utrecht University has contracts with its employees, which require it to manage the employees' financial data.
+\item
+  \textbf{Processing is necessary to protect the vital interests of the data subject or someone else}This basis is not suitable for research. If processing someone's personal data is crucial to their health or even life, that processing is allowed under the GDPR.
+\end{enumerate}
 
-\hypertarget{right-to-access}{%
-\subsection{Right to Access}\label{right-to-access}}
+\hypertarget{data-subject-rights}{%
+\section*{Data Subject's Rights}\label{data-subject-rights}}
+\addcontentsline{toc}{section}{Data Subject's Rights}
 
-\hypertarget{right-to-erasure}{%
-\subsection{Right to Erasure}\label{right-to-erasure}}
+The GDPR provides data subjects with several rights that gives them a relatively high degree of control over their own personal data. Below, we list these rights and how you can apply them in your research:
 
-\hypertarget{right-to-rectification}{%
-\subsection{Right to Rectification}\label{right-to-rectification}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Right to be informed}:Data subjects need to be informed clearly about what you are doing with their personal data (a.o. art. 12). This usually happens via a privacy notice or information letter. This right does not apply if your research will be seriously harmed by meeting it and if you haven't obtained the personal data from the data subjects themselves.
+\item
+  \textbf{Right of access}:Data subjects have the right to access a copy of the personal data you have of them and to know what you are doing with that personal data and why (art. 15).
+\item
+  \textbf{Right to rectification}:Data subjects have the right to correct and complement the personal data that you have of them (art. 16).
+\item
+  \textbf{Right to erasure/Right to be forgotten}:Data subjects have the right to have their personal data removed (i.e., equivalent to the right to withdraw consent, art. 17). This right does \textbf{not} need to be granted if:
+\end{enumerate}
 
-\hypertarget{privacy-and-security-assessment}{%
-\chapter{Privacy \& Security Assessment}\label{privacy-and-security-assessment}}
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  the personal data are published about and need to be archived for validation purposes
+\item
+  it would seriously obstruct the research purpose(s)
+\item
+  it would hinder complying with a legal obligation or carrying out a task in the public interest
+  If the personal data have already been made public or shared, you need to take reasonable measures to inform other users of the data of the erasure request. A privacy officer can help you with this.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \textbf{Right to restriction of processing}:Data subjects have the right to have you process less of their personal data (art. 18), for example if their personal data are inaccurate or your processing of it is unlawful or no longer needed.
+\item
+  \textbf{Right to data portability}:Data subjects have the right to have their personal data transferred to another party (art. 20).
+\item
+  \textbf{Right to object}:Data subjects have the right to object to what you are doing with their personal data. This right applies when the processing is based on legitimate or public interest (art. 21). In case of objection, you have to stop your processing activities, unless you can demonstrate grounds for overriding the data subject's rights.
+\end{enumerate}
+
+\hypertarget{how-can-data-subjects-exercise-their-rights}{%
+\subsubsection{How can data subjects exercise their rights?}\label{how-can-data-subjects-exercise-their-rights}}
+
+Data subjects need to be informed about their rights and who to contact to exercise them, including when you use a legal basis other than informed consent. In research, this is usually done via a privacy notice or information letter, which states a contact person responsible for handling questions and requests. Requests coming in this way need to be coordinated with a privacy officer, so that the request can be picked up in accordance with the GDPR. Additionally, at Utrecht University, data subjects can always contact \href{mailto:privacy@uu.nl}{\nolinkurl{privacy@uu.nl}} (the Data Protection Officer) for requests or complaints.
+
+\hypertarget{what-to-do-when-receiving-a-request-concerning-data-subjects-rights}{%
+\subsubsection{What to do when receiving a request concerning data subjects' rights?}\label{what-to-do-when-receiving-a-request-concerning-data-subjects-rights}}
+
+You are obliged to provide a substantive response to the data subject within 30 days, in the same way as you received the request. Depending on the complexity and number of requests, the response period may be extended by 2 months. In that case, you must inform the data subject about this extension (including the motivation) within one month. If needed, you can (and sometimes should) ask for additional information to confirm the data subject's identity.
+
+For granting requests about data subjects' rights, there should be a procedure in place, in which you should at least consider:
+
+\begin{itemize}
+\tightlist
+\item
+  how you are going to retrieve the data (e.g., using a name-number key)
+\item
+  who is responsible for granting the request and informing the data subject about it (e.g., a data manager)
+\item
+  how the request is going to be granted, for example how they will be sent securely (access, portability), removed (forgotten, object, restriction) or corrected (rectification)
+\end{itemize}
+
+For larger projects, it may be wise to put a Standard Operating Practice in place (example will be added).
+
+\hypertarget{what-if-the-data-have-already-been-anonymised}{%
+\subsubsection{What if the data have already been anonymised?}\label{what-if-the-data-have-already-been-anonymised}}
+
+The principles of data minimisation and storage limitation are considered more important than keeping personal data just for the sake of identification (art. 11). Therefore, when receiving a request about anonymised data, you can make clear that you cannot retrieve the data subject's personal data, because they have been anonymised. In this case, the data subject cannot exercise their rights anymore.
+If you can still retrieve the data subject's personal data in some way (i.e., when data are pseudonymised), you are obliged to retrieve them. In order to do so, you can (and sometimes should) ask for additional information that can confirm the data subject's identity.
+
+\hypertarget{privacy-by-design}{%
+\chapter{Privacy \& Security Assessment}\label{privacy-by-design}}
 
 \hypertarget{legal-documents}{%
 \chapter{Legal Documents \& Agreements}\label{legal-documents}}
@@ -305,7 +561,8 @@ This chapter may include sections on the legal basis for processing research dat
 \section{Consortium Agreement and/or Joint Controller Agreement}\label{consortium-agreement-andor-joint-controller-agreement}}
 
 \hypertarget{data-processing-agreement}{%
-\section{Data Processing Agreement}\label{data-processing-agreement}}
+\section*{Data Processing Agreement}\label{data-processing-agreement}}
+\addcontentsline{toc}{section}{Data Processing Agreement}
 
 \hypertarget{part-techniques-tools}{%
 \part{Techniques \& Tools}\label{part-techniques-tools}}
@@ -389,16 +646,13 @@ This chapter may include sections on the legal basis for processing research dat
 \chapter{(PART) Use Cases}\label{part-use-cases}}
 
 \hypertarget{open-science-questionnaire}{%
-\chapter{Open Science Questionnaire: publishing metadata}\label{open-science-questionnaire}}
+\chapter{Publishing metadata}\label{open-science-questionnaire}}
 
 \hypertarget{youth-pseudonymisation}{%
-\chapter{YOUth Cohort Study: Data pseudonymisation}\label{youth-pseudonymisation}}
+\chapter{Data pseudonymisation}\label{youth-pseudonymisation}}
 
-\hypertarget{youth-sharing-eea}{%
-\chapter{YOUth Cohort Study: Data sharing outside of EEA}\label{youth-sharing-eea}}
-
-\hypertarget{uu-employee}{%
-\chapter{UU Employee study: Creating fake data to safely test analysis scripts}\label{uu-employee}}
+\hypertarget{pet-survey}{%
+\chapter{Data minimisation in a survey}\label{pet-survey}}
 
 The glossary will consist of frequently used jargon concerning the GDPR and research data.
 
