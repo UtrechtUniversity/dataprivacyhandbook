@@ -1,0 +1,43 @@
+name: 👀 Leave a review
+description: Leave a review or provide feedback to (part of) the Data Privacy Handbook
+title: "[Feedback]: "
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to leave non-concrete comments, feedback, etc. about (part of) the Data Privacy Handbook. If you have concrete changes to suggest, please use the "Suggest changes" template instead!
+  - type: input
+    id: summary
+    attributes:
+      label: Part
+      description: "What part of the handbook does your review/feedback concern?"
+      placeholder: part
+      value: |
+        For example: "What is data privacy?", see: https://utrechtuniversity.github.io/dataprivacyhandbook/what-is-research-data-privacy.html
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe your review/feedback here. 
+      placeholder: Describe your review/feedback.
+    validations:
+      required: true
+  - type: textarea
+    id: action
+    attributes:
+      label: Suggested course of action (optional)
+      description: If you have a course of action in mind, please let us know! This may make it faster to incorporate your feedback into the Handbook.
+      placeholder: Suggested course of action
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

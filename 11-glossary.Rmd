@@ -1,0 +1,4 @@
+`r if (knitr::is_html_output()) '
+# Glossary {#glossary}
+'`
+The glossary will consist of frequently used jargon concerning the GDPR and research data. 

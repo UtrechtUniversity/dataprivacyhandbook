@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use the Data Privacy Handbook, please cite it as below."
+authors:
+- family-names: "Moopen"
+  given-names: "Neha"
+  orcid: "https://orcid.org/0000-0003-1412-4402"
+- family-names: "Huijser"
+  given-names: "Dorien"
+  orcid: "https://orcid.org/0000-0003-3282-8083"
+- family-names: "Flores"
+  given-names: "Jacques"
+  orcid: "https://orcid.org/0000-0002-4123-6111"
+- family-names: "van den Hout"
+  given-names: "Saskia"
+- family-names: "Kleerebezem"
+  given-names: "Sanne"
+- family-names: "Romero Pastrana"
+  given-names: "Francisco"
+  orcid: "https://orcid.org/0000-0002-5943-882X"
+- family-names: "Scholten"
+  given-names: "Ron"
+  orcid: "https://orcid.org/0000-0002-4571-8855"
+- family-names: "de Koning-van Nieuwamerongen"
+  given-names: "Danny"
+title: "Data Privacy Handbook"
+version: 0.0.1
+doi: ~
+date-released: ~
+url: "https://utrechtuniversity.github.io/dataprivacyhandbook/"

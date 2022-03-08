@@ -1,0 +1,13 @@
+# (PART) Techniques & Tools {-} 
+
+# Privacy-Enhancing Techniques in Working With Personal Data {#privacy-enchancing-techniques}
+
+## Anonymization
+
+## Pseudonymization
+
+## Encryption
+
+## Synthetic Data
+
+## Federated Analysis

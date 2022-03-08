@@ -1,7 +1,0 @@
-# (PART) Knowledge Base {-} 
-
-# Introduction {#intro} 
-
-## What is Data Privacy? 
-
-### Header 3
