@@ -8,6 +8,11 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "The Data Privacy Handbook is being developed as a readable and practical resource for researchers and research support staff to address data privacy-related issues that come up during the research cycle."
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
 ---
 
 # Welcome! {-}
