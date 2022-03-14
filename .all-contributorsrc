@@ -29,6 +29,15 @@
         "infra",
         "maintenance"
       ]
+    },
+    {
+      "login": "MartineDeVos",
+      "name": "Martine de Vos",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1482239?v=4",
+      "profile": "https://www.uu.nl/staff/MGdeVos",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
