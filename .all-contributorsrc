@@ -29,6 +29,15 @@
         "infra",
         "maintenance"
       ]
+    },
+    {
+      "login": "gspeed0689",
+      "name": "Garrett Speed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6378547?v=4",
+      "profile": "http://garrettspeed.com",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
