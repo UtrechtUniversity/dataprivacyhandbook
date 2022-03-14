@@ -29,6 +29,16 @@
         "infra",
         "maintenance"
       ]
+    },
+    {
+      "login": "RonScholten",
+      "name": "Ron Scholten",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54577946?v=4",
+      "profile": "https://github.com/RonScholten",
+      "contributions": [
+        "content",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
