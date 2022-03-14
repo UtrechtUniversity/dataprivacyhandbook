@@ -37,6 +37,27 @@
       "profile": "https://www.uu.nl/staff/MGdeVos",
       "contributions": [
         "review"
+        ]
+       },
+    {
+      "login": "Mish-JPFD",
+      "name": "Jacques Flores",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22911522?v=4",
+      "profile": "https://github.com/Mish-JPFD",
+      "contributions": [
+        "ideas",
+        "content",
+        "review"
+        ]
+    },
+    {
+      "login": "RonScholten",
+      "name": "Ron Scholten",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54577946?v=4",
+      "profile": "https://github.com/RonScholten",
+      "contributions": [
+        "content",
+        "review"
       ]
     }
   ],
