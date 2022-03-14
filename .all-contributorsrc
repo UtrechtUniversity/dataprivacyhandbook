@@ -29,6 +29,15 @@
         "infra",
         "maintenance"
       ]
+    },
+    {
+      "login": "Danny-dK",
+      "name": "Danny-dK",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45395070?v=4",
+      "profile": "https://github.com/Danny-dK",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
