@@ -10,7 +10,11 @@ This chapter may include sections on the legal basis for processing research dat
 
 ## Data Subject's Rights
 
+Here want to talk about the data subject's rights.
+
 ### Right to be Informed
+
+Here we want to talk about the data subject's right to be informed.
 
 ### Right to Access
 
