@@ -1,10 +1,190 @@
 # (PART) Storage, Sharing, Publication {-} 
 
-# Data Storage {#data-storage}
+# Storing personal data {#data-storage}
 
-## Network Drives
+In research, storage of personal data is one of the most common processing 
+activities. Assuming that you have a legal basis  to store personal data, you 
+then need to:
 
-## Cloud Drives
+- Choose a storage medium that is GDPR-compliant and that provides a sufficient 
+level of data protection;
+- Take into account procedural and legal aspects, e.g., how will you handle the 
+data once they are stored, and for how long will you store the data? 
 
-## Hard Drives
+These aspects of personal data storage are discussed in this chapter. 
 
+### Chapter summary
+
+**Where should I store personal data?**
+
+- Use a medium that has been approved by your institution (UU: use the
+<a href="https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a>).
+- Is your preferred storage medium not included in the storage finder? Contact 
+<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>
+or your <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>
+to find an alternative solution.
+
+**How to store personal data?**
+
+- Apply organisational and technical <a href="#privacy-by-design">safeguards</a>, 
+e.g., restrict access, encrypt data, specify responsibilities, etc.
+- Store (personal) data preferably in a machine-readable format.
+
+**For how long should I store personal data?**
+
+- Delete or fully anonymise personal data when they are no longer necessary, 
+and preferably determine when to do so in advance.
+- In research, you can archive personal data for valid ation purposes for a 
+longer period of time, e.g., 10 years or longer.
+
+
+## Where should I store personal data?
+### Storage media at UU
+
+If you work at Utrecht University (UU), you can find a suitable storage medium for 
+digital research data via the <a href="https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a>
+(also embedded below). For personal data, select Basic, Sensitive or Critical 
+(depending on the sensitivity of your data) under question 4 about Confidentiality.
+
+Most storage media in this overview are suitable for storing personal data, either 
+because they are controlled by UU (e.g., U- and O-drive, Beta File System) or 
+because UU has a Data Processing Agreement in place with the storage supplier
+(e.g., Microsoft Office 365, Yoda, SURFdrive).
+
+Please note:
+
+- **Do not store personal research data on public cloud services**, e.g., Google 
+Drive, Dropbox, OneDrive, Box, Mega, iDrive, iCloud, NextCloud, etc. These services 
+are not (always) GDPR-compliant and/or may not offer sufficient data security.
+Moreover, UU does not have any formal agreements with these services, enabling 
+them to use the data stored on their platforms for their own purposes.
+- Only store data on personal or portable devices in an encrypted form.
+- When storing physical personal data (e.g., paper questionnaires, informed 
+consent forms), you should lock the storage area (e.g., room, cabinet, drawer) 
+and not leave unsecured copies of the data lying around (e.g., on a desk or printer).   
+- Is your preferred storage medium not included in the storage finder? Contact 
+<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>
+to find an alternative solution.
+
+**If you work at UU, please find a suitable storage medium below:**
+```{r embedstoragefinder, echo=FALSE}
+knitr::include_url("https://tools.uu.nl/storagefinder/",
+  height = "800px")
+```
+
+## Requirements for a suitable storage medium
+
+**Whether a storage medium is suitable for storing personal data depends on 1) who
+is controlling the personal data, and 2) the security measures of the storage 
+medium. If you want to use a storage medium not recommended/offered by UU, 
+please consult with 
+<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>, 
+your data steward, or your 
+<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>.**
+
+### 1. Who is storing the personal data: arrange an agreement
+
+When you use an external storage provider, the data is not under the (full) 
+control of your employer. In this case, it is required to ensure GDPR compliance 
+of the storage provider using 
+(<a href = "https://gdpr-info.eu/art-46-gdpr/" target = "_blank">art. 46</a>):
+
+- A <a href="#data-processing-agreement">Data Processing Agreement</a> - 
+when storing personal data within the European Economic Area (EEA) or a 
+country with an adequate level of data protection.
+- <a href = "https://gdpr-info.eu/recitals/no-109/" target = "_blank">Standard 
+contractual clauses</a> (SCCs) - when storing personal data with a 
+supplier outside of the EEA. These make sure the storage medium will use 
+sufficient measures to protect the personal data and enable data subjects to 
+exercise their rights.
+- Explicit consent of data subjects who have been informed on the risks 
+involved - in  the absence of an agreement. Please contact your 
+<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
+if you are considering this option.
+
+You can assume agreements are in place for the storage media recommended by UU. 
+If there is no agreement in place between UU and the storage provider, using 
+this storage provider is **not allowed**, even if they are located within the EEA, 
+have an adequate level of data protection, or have high security standards. The 
+only exception is when data are always end-to-end encrypted, because then the 
+storage provider cannot learn anything from the data.
+
+### 2. Security of the storage medium
+
+The storage medium should employ good security practices, such as regular back-up 
+in distinct geographical areas (preferably in replication rather than on tape), 
+regular integrity checks, encryption at rest, multi-factor authentication, etc. 
+Most of these aspects will likely be covered in the agreement. Information 
+security can help determine all necessary security requirements. 
+
+## How should I store personal data?
+
+**Once you have chosen a suitable storage medium, you should act in accordance 
+with the nature of your data as well**, for example through:
+
+- Controlling access: make sure that only the necessary people have the right 
+kind of access (e.g. read/write) to the personal data, and remove their access 
+when they do not longer need it (e.g. when someone leaves the research project).   
+- Specifying responsibilities, e.g. who is responsible for guarding access to the 
+data on both the short and the long term? Make people aware of the confidential 
+nature of the data. Tell them what to do in case of a 
+<a href="https://intranet.uu.nl/en/knowledgebase/what-is-a-personal-data-breach" target="_blank">data breach</a>.
+- Procedural arrangements, e.g. capture access conditions in 
+<a href="#legal-documents">agreements</a> like the consortium agreement, 
+data processing agreement or non-disclosure agreement.
+- Applying other safeguards where appropriate. For example, you can separate 
+different types of personal data, encrypt, anonymise or pseudonymise the data, etc.
+
+See <a href="#privacy-by-design">Designing a GDPR-compliant research project</a> for more tips.
+
+Personal data should be stored in a **“structured, commonly used, machine-readable 
+and interoperable format”** (<a href = "https://gdpr.eu/Recital-68-Right-of-data-portability/" target = "_blank">rec. 68</a>). 
+In practice, this means that you should consider whether your files are 
+structured and named in a logical way, use 
+<a href = "https://dans.knaw.nl/en/file-formats/" target = "_blank">sustainable file formats</a>, 
+and provide understandable metadata so that others can interpret the data. 
+You can read more about this in the RDM guide 
+“<a href = "https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data" target = "_blank">Storing and preserving data</a>”.
+
+
+## For how long should I store personal data?
+
+**You can only store personal data for as long as is necessary for your 
+prespecified (research) purposes. Afterwards, you have to fully anonymise or 
+delete the data. For all types of data in your project, it is wise to 
+formulate such a data retention policy in advance and communicate it to data 
+subjects, so that it is clear for you, your collaborators, and your data subjects 
+how long each type of data will be retained.**
+
+In practice, in research we often see a division in two types of retention periods:
+
+- If the personal data underpin a scientific publication, it is usually necessary 
+to archive some personal data for **integrity and validation purposes** 
+(<a href = "https://gdpr-info.eu/art-5-gdpr/" target = "_blank">art. 5(e)</a>). 
+At UU, any research data necessary for validation should be archived for at least 
+10 years (<a href = "https://www.uu.nl/sites/default/files/university_policy_framework_for_research_data_utrecht_university_-_january_2016.pdf" target = "_blank">UU research data policy</a>). 
+If this includes personal data, they too should be archived. Importantly, this 
+still means that you need to **protect** the personal data, and **limit** the personal 
+data stored to the amount necessary for validation 
+(<a href = "https://gdpr-info.eu/art-89-gdpr/" target = "_blank">art. 89</a>)! 
+This also implies that documentation about the legal basis used (e.g., consent forms) 
+should be kept during that time, so that GDPR compliance can be demonstrated.
+- Personal data that were used for purposes other than answering your 
+research question (e.g. contact information) should have their own retention 
+policy: they should be removed or anonymised after the retention period 
+(e.g. the research project) has ended.
+
+If you want to change the storage term you initially set for your personal data, 
+please contact your 
+<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>.
+
+### Deleting personal data
+
+If you do not need personal data anymore, you must delete it. Data deletion 
+should be done in a reliable manner, for example to ensure that there are no 
+visible or hidden copies being left behind on any device. The 
+<a href = "https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a> 
+will soon include information on how to do this for each UU-approved storage medium. 
+Additionally, you can read more on how to safely delete data in the RDM guide 
+"<a href = "https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data" target = "_blank">Storing 
+and preserving data</a>".
