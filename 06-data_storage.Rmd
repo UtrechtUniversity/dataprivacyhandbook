@@ -3,7 +3,7 @@
 # Storing personal data {#data-storage}
 
 In research, storage of personal data is one of the most common processing 
-activities. Assuming that you have a legal basis  to store personal data, you 
+activities. If you have a legal basis to store personal data, you 
 then need to:
 
 - Choose a storage medium that is GDPR-compliant and that provides a sufficient 
