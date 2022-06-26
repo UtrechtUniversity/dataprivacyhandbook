@@ -3,7 +3,7 @@
 # Storing personal data {#data-storage}
 
 In research, storage of personal data is one of the most common processing 
-activities. If you have a legal basis to store personal data, you 
+activities. Assuming you have a legal basis to store personal data, you 
 then need to:
 
 - Choose a storage medium that is GDPR-compliant and that provides a sufficient 
@@ -33,8 +33,8 @@ e.g., restrict access, encrypt data, specify responsibilities, etc.
 **For how long should I store personal data?**
 
 - Delete or fully anonymise personal data when they are no longer necessary, 
-and preferably determine when to do so in advance.
-- In research, you can archive personal data for valid ation purposes for a 
+and preferably determine when you will do this in advance.
+- In research, you can archive personal data for validation purposes for a 
 longer period of time, e.g., 10 years or longer.
 
 
