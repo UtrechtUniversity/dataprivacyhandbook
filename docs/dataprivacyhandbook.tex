@@ -77,7 +77,7 @@
 
 \title{Data Privacy Handbook}
 \author{Utrecht University}
-\date{2022-06-02}
+\date{2022-07-01}
 
 \begin{document}
 \maketitle
@@ -242,6 +242,9 @@ Neha Moopen, Dorien Huijser, Jacques Flores, Wies Cipido, Joris de Graaf, Judith
 
 Would you like to contribute to this Handbook yourself? Please read our
 Contributing Guidelines.
+
+\hypertarget{faq}{%
+\chapter{What are you looking for?}\label{faq}}
 
 \hypertarget{part-knowledge-base}{%
 \part{Knowledge Base}\label{part-knowledge-base}}
@@ -809,8 +812,14 @@ way (i.e., when data are pseudonymised), you are \textbf{obliged to retrieve the
 In order to do so, you can (and sometimes should) ask for additional information
 that can confirm the data subject's identity.
 
+\hypertarget{personal-data}{%
+\chapter{What is personal data?}\label{personal-data}}
+
 \hypertarget{privacy-by-design}{%
-\chapter{Privacy \& Security Assessment}\label{privacy-by-design}}
+\chapter{Designing your project}\label{privacy-by-design}}
+
+\hypertarget{risk-assessment}{%
+\chapter{Privacy \& Security Assessment}\label{risk-assessment}}
 
 \hypertarget{legal-documents}{%
 \chapter*{Legal Documents \& Agreements}\label{legal-documents}}
@@ -882,7 +891,7 @@ that can confirm the data subject's identity.
 \chapter{Storing personal data}\label{data-storage}}
 
 In research, storage of personal data is one of the most common processing
-activities. Assuming that you have a legal basis to store personal data, you
+activities. Assuming you have a legal basis to store personal data, you
 then need to:
 
 \begin{itemize}
@@ -895,24 +904,20 @@ then need to:
   data once they are stored, and for how long will you store the data?
 \end{itemize}
 
-These aspects of personal data storage are discussed in this chapter.
+These aspects of storing personal data are discussed in this chapter.
 
 \hypertarget{chapter-summary-1}{%
 \subsection{Chapter summary}\label{chapter-summary-1}}
 
 \textbf{Where should I store personal data?}
 
-\begin{itemize}
-\tightlist
-\item
-  Use a medium that has been approved by your institution (UU: use the
-  Storage Finder).
-\item
-  Is your preferred storage medium not included in the storage finder? Contact
-  RDM Support
-  or your privacy officer
-  to find an alternative solution.
-\end{itemize}
+Use a medium that has been approved by your institution. If you work at Utrecht
+University, and your preferred storage medium is not included in the
+Storage Finder,
+then please contact
+RDM Support
+or your privacy officer
+to find an alternative solution.
 
 \textbf{How to store personal data?}
 
@@ -920,9 +925,11 @@ These aspects of personal data storage are discussed in this chapter.
 \tightlist
 \item
   Apply organisational and technical safeguards,
-  e.g., restrict access, encrypt data, specify responsibilities, etc.
+  e.g., restrict access, encrypt data, pseudonymise data, specify responsibilities, etc.
 \item
-  Store (personal) data preferably in a machine-readable format.
+  Store (personal) data preferably in a structured, commonly used, machine-readable
+  and interoperable format: others should be able to open, understand and work
+  with your data.
 \end{itemize}
 
 \textbf{For how long should I store personal data?}
@@ -931,14 +938,14 @@ These aspects of personal data storage are discussed in this chapter.
 \tightlist
 \item
   Delete or fully anonymise personal data when they are no longer necessary,
-  and preferably determine when to do so in advance.
+  and preferably determine when you will do this in advance.
 \item
-  In research, you can archive personal data for valid ation purposes for a
-  longer period of time, e.g., 10 years or longer.
+  In research, you can archive personal data that are necessary for validation
+  purposes for a longer period of time, e.g., 10 years or longer.
 \end{itemize}
 
-\hypertarget{where-should-i-store-personal-data}{%
-\section{Where should I store personal data?}\label{where-should-i-store-personal-data}}
+\hypertarget{data-storage-where}{%
+\section{Where should I store personal data?}\label{data-storage-where}}
 
 \hypertarget{storage-media-at-uu}{%
 \subsection{Storage media at UU}\label{storage-media-at-uu}}
@@ -971,14 +978,16 @@ Please note:
   and not leave unsecured copies of the data lying around (e.g., on a desk or printer).\\
 \item
   Is your preferred storage medium not included in the storage finder? Contact
-  RDM Support
+  RDM Support,
+  your data steward, or your
+  privacy officer
   to find an alternative solution.
 \end{itemize}
 
 \textbf{If you work at UU, please find a suitable storage medium below:}
 
-\hypertarget{requirements-for-a-suitable-storage-medium}{%
-\section{Requirements for a suitable storage medium}\label{requirements-for-a-suitable-storage-medium}}
+\hypertarget{data-storage-requirements}{%
+\section{Requirements for a suitable storage medium}\label{data-storage-requirements}}
 
 \textbf{Whether a storage medium is suitable for storing personal data depends on 1) who
 is controlling the personal data, and 2) the security measures of the storage
@@ -1001,7 +1010,8 @@ of the storage provider using
 \item
   A Data Processing Agreement -
   when storing personal data within the European Economic Area (EEA) or a
-  country with an adequate level of data protection.
+  country with an
+  adequate level of data protection.
 \item
   Standard
   contractual clauses (SCCs) - when storing personal data with a
@@ -1025,14 +1035,14 @@ storage provider cannot learn anything from the data.
 \hypertarget{security-of-the-storage-medium}{%
 \subsection{2. Security of the storage medium}\label{security-of-the-storage-medium}}
 
-The storage medium should employ good security practices, such as regular back-up
+The storage medium should employ good security practices, such as regular back-ups
 in distinct geographical areas (preferably in replication rather than on tape),
 regular integrity checks, encryption at rest, multi-factor authentication, etc.
 Most of these aspects will likely be covered in the agreement. Information
 security can help determine all necessary security requirements.
 
-\hypertarget{how-should-i-store-personal-data}{%
-\section{How should I store personal data?}\label{how-should-i-store-personal-data}}
+\hypertarget{data-storage-how}{%
+\section{How should I store personal data?}\label{data-storage-how}}
 
 \textbf{Once you have chosen a suitable storage medium, you should act in accordance
 with the nature of your data as well}, for example through:
@@ -1054,7 +1064,8 @@ with the nature of your data as well}, for example through:
   data processing agreement or non-disclosure agreement.
 \item
   Applying other safeguards where appropriate. For example, you can separate
-  different types of personal data, encrypt, anonymise or pseudonymise the data, etc.
+  different types of personal data, encrypt, anonymise or pseudonymise the data,
+  etc. (see chapter Privacy-enhancing techniques).
 \end{itemize}
 
 See Designing a GDPR-compliant research project for more tips.
@@ -1068,15 +1079,14 @@ and provide understandable metadata so that others can interpret the data.
 You can read more about this in the RDM guide
 ``Storing and preserving data''.
 
-\hypertarget{for-how-long-should-i-store-personal-data}{%
-\section{For how long should I store personal data?}\label{for-how-long-should-i-store-personal-data}}
+\hypertarget{data-storage-duration}{%
+\section{For how long should I store personal data?}\label{data-storage-duration}}
 
-\textbf{You can only store personal data for as long as is necessary for your
-prespecified (research) purposes. Afterwards, you have to fully anonymise or
-delete the data. For all types of data in your project, it is wise to
-formulate such a data retention policy in advance and communicate it to data
-subjects, so that it is clear for you, your collaborators, and your data subjects
-how long each type of data will be retained.}
+\textbf{As per the GDPR, anyone processing personal data can only store those for as
+long as is necessary for prespecified purposes
+(art. 5(e)).
+Afterwards, the personal data have to either be fully anonymised or deleted.
+However, there is an exemption for research data, as described below.}
 
 In practice, in research we often see a division in two types of retention periods:
 
@@ -1092,8 +1102,9 @@ In practice, in research we often see a division in two types of retention perio
   still means that you need to \textbf{protect} the personal data, and \textbf{limit} the personal
   data stored to the amount necessary for validation
   (art. 89)!
-  This also implies that documentation about the legal basis used (e.g., consent forms)
-  should be kept during that time, so that GDPR compliance can be demonstrated.
+  This also implies that you should keep the documentation about the legal basis
+  used (e.g., consent forms) during that time, so that you can demonstrate GDPR
+  compliance.
 \item
   Personal data that were used for purposes other than answering your
   research question (e.g.~contact information) should have their own retention
@@ -1101,8 +1112,11 @@ In practice, in research we often see a division in two types of retention perio
   (e.g.~the research project) has ended.
 \end{itemize}
 
-If you want to change the storage term you initially set for your personal data,
-please contact your
+For all types of data in your project (incl.~to be archived research data), we
+recommend to formulate which data you will retain and for how long (for example
+in your Data Management Plan), and communicate the (possibly different)
+retention period(s) to data subjects. If you want to change the storage term you
+initially set and communicated for your personal data, please contact your
 privacy officer.
 
 \hypertarget{deleting-personal-data}{%
