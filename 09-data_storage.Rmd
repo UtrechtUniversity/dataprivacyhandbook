@@ -11,15 +11,16 @@ level of data protection;
 - Take into account procedural and legal aspects, e.g., how will you handle the 
 data once they are stored, and for how long will you store the data? 
 
-These aspects of personal data storage are discussed in this chapter. 
+These aspects of storing personal data are discussed in this chapter. 
 
 ### Chapter summary
 
 **Where should I store personal data?**
 
-- Use a medium that has been approved by your institution (UU: use the
-<a href="https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a>).
-- Is your preferred storage medium not included in the storage finder? Contact 
+Use a medium that has been approved by your institution. If you work at Utrecht 
+University, and your preferred storage medium is not included in the 
+<a href = "https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a>, 
+then please contact 
 <a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>
 or your <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>
 to find an alternative solution.
@@ -27,18 +28,20 @@ to find an alternative solution.
 **How to store personal data?**
 
 - Apply organisational and technical <a href="#privacy-by-design">safeguards</a>, 
-e.g., restrict access, encrypt data, specify responsibilities, etc.
-- Store (personal) data preferably in a machine-readable format.
+e.g., restrict access, encrypt data, pseudonymise data, specify responsibilities, etc.
+- Store (personal) data preferably in a structured, commonly used, machine-readable
+and interoperable format: others should be able to open, understand and work 
+with your data.
 
 **For how long should I store personal data?**
 
 - Delete or fully anonymise personal data when they are no longer necessary, 
 and preferably determine when you will do this in advance.
-- In research, you can archive personal data for validation purposes for a 
-longer period of time, e.g., 10 years or longer.
+- In research, you can archive personal data that are necessary for validation 
+purposes for a longer period of time, e.g., 10 years or longer.
 
 
-## Where should I store personal data?
+## Where should I store personal data? {#data-storage-where}
 ### Storage media at UU
 
 If you work at Utrecht University (UU), you can find a suitable storage medium for 
@@ -63,16 +66,17 @@ them to use the data stored on their platforms for their own purposes.
 consent forms), you should lock the storage area (e.g., room, cabinet, drawer) 
 and not leave unsecured copies of the data lying around (e.g., on a desk or printer).   
 - Is your preferred storage medium not included in the storage finder? Contact 
-<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>
+<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>, 
+your data steward, or your 
+<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>
 to find an alternative solution.
 
 **If you work at UU, please find a suitable storage medium below:**
 ```{r embedstoragefinder, echo=FALSE}
-knitr::include_url("https://tools.uu.nl/storagefinder/",
-  height = "800px")
+knitr::include_url("https://tools.uu.nl/storagefinder/")
 ```
 
-## Requirements for a suitable storage medium
+## Requirements for a suitable storage medium {#data-storage-requirements}
 
 **Whether a storage medium is suitable for storing personal data depends on 1) who
 is controlling the personal data, and 2) the security measures of the storage 
@@ -91,7 +95,8 @@ of the storage provider using
 
 - A <a href="#data-processing-agreement">Data Processing Agreement</a> - 
 when storing personal data within the European Economic Area (EEA) or a 
-country with an adequate level of data protection.
+country with an 
+<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"  target="_blank">adequate level of data protection</a>.
 - <a href = "https://gdpr-info.eu/recitals/no-109/" target = "_blank">Standard 
 contractual clauses</a> (SCCs) - when storing personal data with a 
 supplier outside of the EEA. These make sure the storage medium will use 
@@ -111,13 +116,13 @@ storage provider cannot learn anything from the data.
 
 ### 2. Security of the storage medium
 
-The storage medium should employ good security practices, such as regular back-up 
+The storage medium should employ good security practices, such as regular back-ups 
 in distinct geographical areas (preferably in replication rather than on tape), 
 regular integrity checks, encryption at rest, multi-factor authentication, etc. 
 Most of these aspects will likely be covered in the agreement. Information 
 security can help determine all necessary security requirements. 
 
-## How should I store personal data?
+## How should I store personal data? {#data-storage-how}
 
 **Once you have chosen a suitable storage medium, you should act in accordance 
 with the nature of your data as well**, for example through:
@@ -133,7 +138,8 @@ nature of the data. Tell them what to do in case of a
 <a href="#legal-documents">agreements</a> like the consortium agreement, 
 data processing agreement or non-disclosure agreement.
 - Applying other safeguards where appropriate. For example, you can separate 
-different types of personal data, encrypt, anonymise or pseudonymise the data, etc.
+different types of personal data, encrypt, anonymise or pseudonymise the data, 
+etc. (see chapter <a href="#privacy-enchancing-techniques">Privacy-enhancing techniques</a>).
 
 See <a href="#privacy-by-design">Designing a GDPR-compliant research project</a> for more tips.
 
@@ -147,14 +153,13 @@ You can read more about this in the RDM guide
 “<a href = "https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data" target = "_blank">Storing and preserving data</a>”.
 
 
-## For how long should I store personal data?
+## For how long should I store personal data? {#data-storage-duration}
 
-**You can only store personal data for as long as is necessary for your 
-prespecified (research) purposes. Afterwards, you have to fully anonymise or 
-delete the data. For all types of data in your project, it is wise to 
-formulate such a data retention policy in advance and communicate it to data 
-subjects, so that it is clear for you, your collaborators, and your data subjects 
-how long each type of data will be retained.**
+**As per the GDPR, anyone processing personal data can only store those for as 
+long as is necessary for prespecified purposes 
+(<a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">art. 5(e)</a>). 
+Afterwards, the personal data have to either be fully anonymised or deleted. 
+However, there is an exemption for research data, as described below.**
 
 In practice, in research we often see a division in two types of retention periods:
 
@@ -167,15 +172,19 @@ If this includes personal data, they too should be archived. Importantly, this
 still means that you need to **protect** the personal data, and **limit** the personal 
 data stored to the amount necessary for validation 
 (<a href = "https://gdpr-info.eu/art-89-gdpr/" target = "_blank">art. 89</a>)! 
-This also implies that documentation about the legal basis used (e.g., consent forms) 
-should be kept during that time, so that GDPR compliance can be demonstrated.
+This also implies that you should keep the documentation about the legal basis 
+used (e.g., consent forms) during that time, so that you can demonstrate GDPR 
+compliance.
 - Personal data that were used for purposes other than answering your 
 research question (e.g. contact information) should have their own retention 
 policy: they should be removed or anonymised after the retention period 
 (e.g. the research project) has ended.
 
-If you want to change the storage term you initially set for your personal data, 
-please contact your 
+For all types of data in your project (incl. to be archived research data), we
+recommend to formulate which data you will retain and for how long (for example
+in your Data Management Plan), and communicate the (possibly different) 
+retention period(s) to data subjects. If you want to change the storage term you 
+initially set and communicated for your personal data, please contact your 
 <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>.
 
 ### Deleting personal data
