@@ -2,6 +2,9 @@ bookdown::gitbook:
   number_sections: false
   split_by: section
   css: style.css
+  includes:
+    #before_body: header.html
+    after_body: footer.html
   config:
     toc:
       collapse: section
