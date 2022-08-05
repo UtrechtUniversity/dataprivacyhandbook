@@ -1,4 +1,4 @@
-# (PART) Knowledge Base {.unnumbered}
+# (PART\*) Knowledge Base {-}
 
 # The GDPR {#gdpr .unnumbered}
 
@@ -79,8 +79,12 @@ This is independent of whether the actual processing takes place in the EEA.
 In some cases, the GDPR also applies when the controller or processor is not
 established in the EEA, but is processing data from EU citizens.
 
-**If you are collecting or using data that originated from individuals (or is 
-related to individuals), it is very likely that the GDPR applies to your project.**
+
+:::warning
+
+If you are collecting or using data that originated from individuals (or is 
+related to individuals), it is very likely that the GDPR applies to your project.
+:::
 
 #### Implementation
 
@@ -146,7 +150,7 @@ become familiar with when working with personal data (also included in the
     <li>the data subject has provided explicit consent to process these data for 
     a specific purpose,</li>
     <li>the data subject has made the data publicly available themselves,</li>
-    <li>processing is necessary for scientific archiving purposes.</li>
+    <li>processing is necessary for scientific research purposes.</li>
   </ul>
   <p>
   Contact your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy 
@@ -347,10 +351,12 @@ provided necessary safeguards are in place. This is an exemption that applies to
 data storage for scientific archiving purposes. You need to inform the data 
 subjects on this storage duration beforehand.
 
-N.B.: If identification of the data subject is no longer needed for your 
+:::fyi
+If identification of the data subject is no longer needed for your 
 (research) purposes, you do not need to keep storing the personal data just 
 to comply with the GDPR, even if it means your data subjects cannot exercise 
 their rights (<a href="https://gdpr-info.eu/art-11-gdpr/" target="_blank">art. 11</a>).
+:::
 
 #### 6. Integrity and confidentiality
 
@@ -378,10 +384,12 @@ legal bases which are outlined below. In research, the legal bases 'informed
 consent', 'legitimate interests of the controller' and 'public interest' are most 
 often used.
 
-Please note that **for different purposes in your research project, a different 
+:::fyi
+**For different purposes in your research project, a different 
 legal basis may apply**. For example, you may contact data subjects before they 
 start participating based on a legitimate interest and use informed consent for 
 collecting, storing, analysing and publishing the data.
+:::
 
 ### Legal bases suitable for research
 
