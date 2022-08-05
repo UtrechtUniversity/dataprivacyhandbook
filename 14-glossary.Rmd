@@ -133,7 +133,7 @@ The glossary consists of frequently used jargon concerning the GDPR and research
       <ul>
         <li>the data subject has provided explicit consent to process these data for a specific purpose</li>
         <li>the data subject has made the data publicly available themselves </li>
-        <li>processing is necessary for scientific archiving purposes</li>
+        <li>processing is necessary for scientific research purposes</li>
       </ul><p>Contact 
       your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a> 
       if you wish to process special categories of personal data.</p>
