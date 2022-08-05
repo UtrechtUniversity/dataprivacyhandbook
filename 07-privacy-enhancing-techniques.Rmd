@@ -1,4 +1,4 @@
-# (PART) Techniques & Tools {-} 
+# (PART\*) Techniques & Tools {-} 
 
 # Privacy-Enhancing Techniques in Working With Personal Data {#privacy-enchancing-techniques}
 
