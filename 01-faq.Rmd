@@ -1,0 +1,15 @@
+# Privacy FAQs {#faq}
+
+On this page you can find some often-heard questions about handling personal
+data in research. Click a question you have to read its answer.
+
+This is a first FAQ. More will follow!
+
+<details>
+  <summary><b>Am I a processor as employee of my university?</b></summary>
+  No. As an employee you are still determining your own why (research question) 
+  and how (methods) of personal data processing. This makes you a controller, 
+  acting as an "agent" of the legal controller (your university). Read more on the
+  difference between processors and controllers <a href = "#definitions">on the 
+  definitions page</a>.
+</details>

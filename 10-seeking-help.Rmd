@@ -1,6 +1,0 @@
-`r if (knitr::is_html_output()) '
-
-# (PART) Resources {-} 
-
-# Seeking help at Utrecht University {#seeking-help}
-'`
