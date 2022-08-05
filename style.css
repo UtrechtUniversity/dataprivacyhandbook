@@ -12,3 +12,29 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create columns */
+.column {
+  padding: 5px;
+  float: left;
+}
+
+/*old.column {
+  width: auto;
+  float: left;
+} */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
