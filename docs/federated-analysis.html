@@ -5,37 +5,37 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Federated Analysis | Data Privacy Handbook</title>
-  <meta name="description" content="<p>“The Data Privacy Handbook is being developed as a readable and practical
-resource for researchers and research support staff to address data
-privacy-related issues that come up during the research cycle.”</p>" />
+  <meta name="description" content="<p>“The Data Privacy Handbook is a practical guide on handling personal data in
+scientific research, created by Utrecht University’s Research Data Management
+Support”</p>" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Federated Analysis | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
-  
-  <meta property="og:description" content="<p>“The Data Privacy Handbook is being developed as a readable and practical
-resource for researchers and research support staff to address data
-privacy-related issues that come up during the research cycle.”</p>" />
-  
+  <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
+  <meta property="og:description" content="<p>“The Data Privacy Handbook is a practical guide on handling personal data in
+scientific research, created by Utrecht University’s Research Data Management
+Support”</p>" />
+  <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Federated Analysis | Data Privacy Handbook" />
   
-  <meta name="twitter:description" content="<p>“The Data Privacy Handbook is being developed as a readable and practical
-resource for researchers and research support staff to address data
-privacy-related issues that come up during the research cycle.”</p>" />
-  
+  <meta name="twitter:description" content="<p>“The Data Privacy Handbook is a practical guide on handling personal data in
+scientific research, created by Utrecht University’s Research Data Management
+Support”</p>" />
+  <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
 <meta name="author" content="Utrecht University" />
 
 
-<meta name="date" content="2022-07-01" />
+<meta name="date" content="2022-08-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="synthetic-data.html"/>
 <link rel="next" href="tools-and-services.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -58,11 +58,13 @@ privacy-related issues that come up during the research cycle.”</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="book.js"></script>
 
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
 
 <body>
@@ -75,9 +77,10 @@ privacy-related issues that come up during the research cycle.”</p>" />
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Data Privacy Handbook</a></li>
+<li class="toc-logo"><a href="./"><img src="img/dpp-logo.png"></a></li>
 
 <li class="divider"></li>
+<li class="part"><span><b>Intro</b></span></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a>
 <ul>
 <li class="chapter" data-level="" data-path="how-to-use-this-handbook.html"><a href="how-to-use-this-handbook.html"><i class="fa fa-check"></i>How to use this Handbook</a>
@@ -88,8 +91,8 @@ privacy-related issues that come up during the research cycle.”</p>" />
 <li class="chapter" data-level="" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i>Disclaimer</a></li>
 <li class="chapter" data-level="" data-path="contributions.html"><a href="contributions.html"><i class="fa fa-check"></i>Contributions</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>What are you looking for?</a></li>
-<li class="part"><span><b>I Knowledge Base</b></span></li>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Privacy FAQs</a></li>
+<li class="part"><span><b>Knowledge Base</b></span></li>
 <li class="chapter" data-level="" data-path="gdpr.html"><a href="gdpr.html"><i class="fa fa-check"></i>The GDPR</a>
 <ul>
 <li class="chapter" data-level="" data-path="gdpr.html"><a href="gdpr.html#chapter-summary"><i class="fa fa-check"></i>Chapter summary</a></li>
@@ -116,7 +119,7 @@ privacy-related issues that come up during the research cycle.”</p>" />
 <li class="chapter" data-level="" data-path="consortium-agreement-andor-joint-controller-agreement.html"><a href="consortium-agreement-andor-joint-controller-agreement.html"><i class="fa fa-check"></i>Consortium Agreement and/or Joint Controller Agreement</a></li>
 <li class="chapter" data-level="" data-path="data-processing-agreement.html"><a href="data-processing-agreement.html"><i class="fa fa-check"></i>Data Processing Agreement</a></li>
 </ul></li>
-<li class="part"><span><b>II Techniques &amp; Tools</b></span></li>
+<li class="part"><span><b>Techniques &amp; Tools</b></span></li>
 <li class="chapter" data-level="" data-path="privacy-enchancing-techniques.html"><a href="privacy-enchancing-techniques.html"><i class="fa fa-check"></i>Privacy-Enhancing Techniques in Working With Personal Data</a>
 <ul>
 <li class="chapter" data-level="" data-path="anonymization.html"><a href="anonymization.html"><i class="fa fa-check"></i>Anonymization</a></li>
@@ -131,7 +134,7 @@ privacy-related issues that come up during the research cycle.”</p>" />
 <li class="chapter" data-level="" data-path="survey-tools.html"><a href="survey-tools.html"><i class="fa fa-check"></i>Survey Tools</a></li>
 <li class="chapter" data-level="" data-path="transcription-tools.html"><a href="transcription-tools.html"><i class="fa fa-check"></i>Transcription Tools</a></li>
 </ul></li>
-<li class="part"><span><b>III Storage, Sharing, Publication</b></span></li>
+<li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
 <li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a>
 <ul>
 <li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
@@ -164,11 +167,11 @@ privacy-related issues that come up during the research cycle.”</p>" />
 <li class="chapter" data-level="" data-path="repositories.html"><a href="repositories.html"><i class="fa fa-check"></i>Repositories</a></li>
 <li class="chapter" data-level="" data-path="licenses.html"><a href="licenses.html"><i class="fa fa-check"></i>Licenses</a></li>
 </ul></li>
-<li class="part"><span><b>IV Use Cases</b></span></li>
+<li class="part"><span><b>Use Cases</b></span></li>
 <li class="chapter" data-level="" data-path="open-science-questionnaire.html"><a href="open-science-questionnaire.html"><i class="fa fa-check"></i>Publishing metadata</a></li>
 <li class="chapter" data-level="" data-path="youth-pseudonymisation.html"><a href="youth-pseudonymisation.html"><i class="fa fa-check"></i>Data pseudonymisation</a></li>
 <li class="chapter" data-level="" data-path="pet-survey.html"><a href="pet-survey.html"><i class="fa fa-check"></i>Data minimisation in a survey</a></li>
-<li class="part"><span><b>V Resources</b></span></li>
+<li class="part"><span><b>Resources</b></span></li>
 <li class="chapter" data-level="" data-path="seeking-help.html"><a href="seeking-help.html"><i class="fa fa-check"></i>Seeking help at Utrecht University</a></li>
 <li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Glossary</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -197,6 +200,8 @@ privacy-related issues that come up during the research cycle.”</p>" />
 
 </div>
 <!-- </div> -->
+<hr>
+<div class = "footer">
 <footer>
   <br><br>
   <div class="row">
@@ -207,25 +212,19 @@ privacy-related issues that come up during the research cycle.”</p>" />
     </div>
     <div class="column">
       <p><b>Data Privacy Handbook - Utrecht University</b></p>
-      <p><small>
-        <b>Dislaimer:</b> The information presented here is provided "as is", with no guarantees of 
+      <p style ="line-height:1; color:grey"><small>
+        The information presented here is provided as is, with no guarantees of 
         accuracy or completeness. For the most up-to-date information, please refer 
         to your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>, 
         the <a href="https://www.uu.nl/rdm" target="_blank">university website</a> or 
         <a href="https://intranet.uu.nl/en/knowledge-base/privacy-at-uu" target="_blank">intranet</a>. 
         We cannot be held responsible for any negative consequences due to incorrect interpretation or use, and
-        inconsistencies with policies/views of institutions other than Utrecht University.
+        inconsistencies with policies/views of other institutions.
       </small></p>
-      <small><p id="lastedited"></p></small>
     </div>
   </div> <!-- End div row-->
-  <script>
-  const date = new Date(document.lastModified);
-  document.getElementById("lastedited").innerHTML = date;
-  </script>
 </footer>
-
-
+</div>
             </section>
 
           </div>
@@ -247,24 +246,24 @@ privacy-related issues that come up during the research cycle.”</p>" />
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": true,
+"github": true,
+"facebook": false,
 "twitter": true,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
 "whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": false
 },
 "fontsettings": {
 "theme": "white",
 "family": "sans",
-"size": 2
+"size": 1.5
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/07-privacy-enhancing-techniques.Rmd",
+"text": "Suggest edits"
 },
 "history": {
 "link": null,
@@ -280,7 +279,8 @@ gitbook.start({
 "options": null
 },
 "toc": {
-"collapse": "section"
+"collapse": "section",
+"scroll_highlight": true
 }
 });
 });
