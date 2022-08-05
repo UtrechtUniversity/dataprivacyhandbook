@@ -1,18 +1,32 @@
 bookdown::gitbook:
   number_sections: false
   split_by: section
-  css: style.css
+  css: assets/style.css
   includes:
     #before_body: header.html
-    after_body: footer.html
+    in_header: assets/header.html
+    after_body: assets/footer.html
   config:
+    edit:
+      link: "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/%s"
+      text: "Suggest edits"
     toc:
       collapse: section
+      scroll_highlight: true
       before: |
-        <li><a href="./">Data Privacy Handbook</a></li>
+        <li class="toc-logo"><a href="./"><img src="img/dpp-logo.png"></a></li>
       after: |
         <li><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="blank">Visit the GitHub repository</a></li>
     download: ["pdf", "epub"]
+    sharing:
+      github: yes
+      facebook: no
+      twitter: yes
+      all: no
+    fontsettings:
+      theme: white
+      family: sans
+      size: 1.5
 bookdown::pdf_book:
   number_sections: true
   includes:
