@@ -8,9 +8,15 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: |
-  "The Data Privacy Handbook is being developed as a readable and practical 
-  resource for researchers and research support staff to address data 
-  privacy-related issues that come up during the research cycle."
+  "The Data Privacy Handbook is a practical guide on handling personal data in
+  scientific research, created by Utrecht University's Research Data Management 
+  Support"
+url: "https://utrechtuniversity.github.io/dataprivacyhandbook/"
+github-repo: "utrechtuniversity/dataprivacyhandbook"
+cover-image: "img/cover-image-dph.png"
+favicon: "img/favicon.ico"
+apple-touch-icon: "img/apple-touch-icon.png"
+apple-touch-icon-size: 180
 output:
   html_document:
     toc: true
@@ -18,6 +24,8 @@ output:
     toc_float: true
     #theme: bootstrap
 ---
+
+# (PART\*) Intro {-} 
 
 # Welcome! {-}
 
@@ -38,12 +46,6 @@ presents it a *practical* and *actionable* format. This includes workflows,
 tools, and practical translations of the GDPR , which could be used by researchers 
 and (data) support staff within Utrecht University and beyond. 
 
-This is an Utrecht University (UU) community-driven, open-source project. 
-You can visit our GitHub repository <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/" target="_blank">here</a>. 
-We welcome feedback and contributions of any type, please read our 
-<a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">contributing guidelines</a> 
-for more information.
-
 The Data Privacy Handbook is an initiative of 
 <a href="https://www.uu.nl/en/research/research-data-management" target="_blank">Research Data Management Support</a> 
 at the <a href="https://www.uu.nl/en/university-library"  target="_blank">Utrecht University Library</a>, 
@@ -53,6 +55,11 @@ should deal with personal data. This project is funded by the Utrecht University
 Research IT Program and an NWO Digital Competence Center grant. You can read more 
 about the Data Privacy Project <a href="https://utrechtuniversity.github.io/dataprivacyproject" target="_blank">here</a>.
 
+:::note
+This is an Utrecht University (UU) community-driven, 
+<a href= "https://github.com/UtrechtUniversity/dataprivacyhandbook" target = "_blank">open-source project</a>.
+We welcome feedback and contributions of any type, please read our <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">contributing guidelines</a> for more information.
+:::
 
 ## How to use this Handbook
 
