@@ -24,7 +24,7 @@ for that necessary amount of time.
 <a href="#data-subject-rights">data subjects' rights</a>, and they know how to 
 do so.
 
-## What is the GDPR?
+## What is the GDPR? {#what-is-the-gdpr}
 
 The General Data Protection Regulation (GDPR, Dutch: *Algemene Verordening 
 Gegevensbescherming* [AVG]) is an EU-wide regulation meant to protect the privacy 
@@ -34,7 +34,7 @@ data processing principles are meant to ensure a fair balance between competing
 interests -- for example, the right to conduct research vs. the right to protect 
 personal data (Articles 13 and 8, from the Charter of Fundamental right of the EU).
 
-#### The GDPR in a nutshell
+#### The GDPR in a nutshell {#the-gdpr-in-a-nutshell}
 
 All articles and recitals of the GDPR can be found online via <https://gdpr-info.eu/>. 
 The video below highlights some important aspects of the GDPR:
@@ -67,7 +67,7 @@ That is the GDPR in a nutshell.
 </small>
 </details>
 
-#### When does the GDPR apply?
+#### When does the GDPR apply? {#gdpr-scope}
 
 The GDPR has been applicable from May 2018 onward and applies when:
 
@@ -86,7 +86,7 @@ If you are collecting or using data that originated from individuals (or is
 related to individuals), it is very likely that the GDPR applies to your project.
 :::
 
-#### Implementation
+#### Implementation {#implementation}
 
 While the GDPR is a regulation for the entire EEA, each EEA country can additionally 
 implement further restrictions and guidelines in national implementation laws. The 
@@ -96,7 +96,7 @@ The UAVG determines, for example, that it is forbidden to process Citizen
 Service Numbers (BSN), unless it is for purposes determined by a law or a 
 General Administrative Order (AMvB).
 
-## Definitions in the GDPR {#definitions .unnumbered}
+## Definitions in the GDPR {#definitions}
 
 Below, you will find a selection of important terms in the GDPR that you should 
 become familiar with when working with personal data (also included in the 
@@ -237,7 +237,7 @@ become familiar with when working with personal data (also included in the
   </p>
 </details>
 
-## Principles in the GDPR {#gdpr-principles .unnumbered}
+## Principles in the GDPR {#gdpr-principles}
 
 **The GDPR has a number of principles at its core which dictate the (method of) 
 data processing. Every type of processing has to comply with these principles. 
@@ -374,7 +374,7 @@ you process personal data in a compliant manner. Additionally, you should also
 have some knowledge of data protection so that you can implement the right 
 measures into your research project.
 
-## When can I work with personal data? {#legal-basis .unnumbered}
+## When can I work with personal data? {#legal-basis}
 
 You can only process personal data if you have a **legal basis** to do so, which 
 should be registered, among other information, in the 
@@ -480,7 +480,7 @@ collecting, storing, analysing and publishing the data.
   </li>
 </ol>
 
-## Data Subject's Rights {#data-subject-rights .unnumbered}
+## Data Subject's Rights {#data-subject-rights}
 
 The GDPR provides data subjects with several rights that gives them a relatively 
 high degree of control over their own personal data. Below, we list these rights 
