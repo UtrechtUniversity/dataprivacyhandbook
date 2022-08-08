@@ -62,9 +62,10 @@ target = "_blank">RDM Support</a>, your data steward, or your
 target = "_blank">privacy officer</a> to find an alternative solution.
 
 :::note
-You should only store data on personal or portable devices in an **encrypted** form.
-
-Physical personal data (e.g., paper questionnaires, informed consent forms) 
+- Consider encrypting your data, especially when using **portable devices** 
+(e.g, memory sticks, phones). Portable devices are also not suitable as back-up, 
+due to bit rot and being easily lost.
+- Physical personal data (e.g., paper questionnaires, informed consent forms) 
 should be stored securely too, e.g. in a locked room, cabinet or drawer. You 
 should also avoid leaving unsecured copies lying around (e.g., on a desk or printer).
 :::
@@ -148,9 +149,11 @@ nature of the data. Tell them what to do in case of a
 - Procedural arrangements, e.g. capture access conditions in 
 <a href="#legal-documents">agreements</a> like the consortium agreement, 
 data processing agreement or non-disclosure agreement.
-- Applying other safeguards where appropriate. For example, you can separate 
-different types of personal data, encrypt, anonymise or pseudonymise the data, 
-etc. (see chapter <a href="#privacy-enchancing-techniques">Privacy-enhancing techniques</a>).
+- Storing different types of personal data in different places, e.g., research
+data should be stored separately from data subjects' contact details.
+- Applying other safeguards where appropriate, e.g., encryption, anonymisation,
+pseudonymisation, etc. (see chapter <a href="#privacy-enchancing-techniques">Privacy-enhancing 
+techniques</a>).
 
 See <a href="#privacy-by-design">Designing a GDPR-compliant research project</a> for more tips.
 
