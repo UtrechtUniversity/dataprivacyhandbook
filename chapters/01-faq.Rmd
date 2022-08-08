@@ -10,6 +10,6 @@ This is a first FAQ. More will follow!
   No. As an employee you are still determining your own why (research question) 
   and how (methods) of personal data processing. This makes you a controller, 
   acting as an "agent" of the legal controller (your university). Read more on the
-  difference between processors and controllers <a href = "#definitions">on the 
+  difference between processors and controllers <a href="#definitions">on the 
   definitions page</a>.
 </details>
