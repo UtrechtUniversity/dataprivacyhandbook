@@ -54,7 +54,7 @@ The Data Privacy Handbook is an initiative of
 <a href="https://www.uu.nl/en/research/research-data-management" target="_blank">Research 
 Data Management Support</a> at the <a href="https://www.uu.nl/en/university-library"  target="_blank">Utrecht University Library</a>, in collaboration with privacy and data experts at 
 Utrecht University. It is part of a larger project, 
-<a href = "https://utrechtuniversity.github.io/dataprivacyproject target = "_blank">the 
+<a href = "https://utrechtuniversity.github.io/dataprivacyproject" target = "_blank">the 
 Data Privacy Project</a>, which aims to develop knowledge, tools, and experience 
 on how researchers can and should deal with personal data. This project is 
 funded by the Utrecht University Research IT Program and an NWO Digital 
