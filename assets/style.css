@@ -176,23 +176,13 @@ li.appendix span, li.part span { /* for TOC part names */
   text-transform: uppercase;
 }
 
-/* From here onwards = own styling, perhaps unnecessary */
-/* Basic styling */
-/* p.caption {
-  color: #777;
-  margin-top: 10px;
+/* Do not display author, title and date on the front page
+Source: https://stackoverflow.com/questions/53399095/disable-title-author-in-the-html-output-of-bookdown */
+.author,.title, .date{
+  display: none;
 }
-p code {
-  white-space: inherit;
-}
-pre {
-  word-break: normal;
-  word-wrap: normal;
-}
-pre code {
-  white-space: inherit;
-}
-Test if necessary */
+
+/* Own styling for footer*/
 * {
   box-sizing: border-box;
 }
