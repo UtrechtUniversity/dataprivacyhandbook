@@ -1,4 +1,4 @@
-# Data Publishing {#data-publishing}
+# Sharing data for reuse {#data-sharing-reuse}
 
 ## Publishing Personal Data
 
