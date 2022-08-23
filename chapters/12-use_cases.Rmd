@@ -1,8 +1,65 @@
 # (PART\*) Use Cases
 
-
 # Publishing metadata {#open-science-questionnaire}
+
+In 2020, the 
+<a href = "https://www.uu.nl/en/research/open-science" target = "_blank">Open 
+Science Programme of Utrecht University</a> sent out the first 
+Open Science monitor. The aim was to gain insights into the awareness, 
+attitudes, practices, opportunities and barriers of employees of Utrecht 
+University and Utrecht University Medical Center regarding several Open 
+Science practices. As the dataset contained a lot of demographic information 
+(e.g., gender, age, nationality, position, type of contract, etc.), and all of 
+those variables combined could lead to identification, it could not be shared 
+publicly. For this particular dataset, full anonymisation was not desirable, 
+as that would greatly decrease its scientific value. Therefore, the Open Science 
+Programme chose to publish only the metadata and documentation, without sharing 
+the data, in order to protect participants’ data while still complying with the
+<a href = "https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair" target = "_blank">FAIR principles</a>. 
+
+Here’s the strategy they took:
+
+- They published the dataset under 
+<a href = "https://doi.org/10.24416/UU01-3L9K99" target = "_blank">restricted 
+access on Yoda</a>, so that the dataset was at least Findable and Accessible.
+- They shared other relevant documentation publicly:
+  - The <a href = "https://doi.org/10.5281/zenodo.5727106" target = "_blank">preregistration</a>.
+  - The <a href = "https://doi.org/10.5281/zenodo.5727057" target = "_blank">questionnaire itself</a>, 
+  including the information provided to participants.
+  - The <a href = "https://doi.org/10.5281/zenodo.5725177" target = "_blank">final report</a> 
+  written about the dataset.
+
+Note that in the metadata of all these publications, cross-references to the 
+other publications are included to allow for maximum findability of the 
+project’s outputs.
 
 # Data pseudonymisation {#youth-pseudonymisation}
 
 # Data minimisation in a survey {#pet-survey}
+
+For a course, a teacher at the faculty of Veterinary Medicine collected data on 
+the health of pets and the pets’ owners. The initial purpose of the survey was 
+to create simply datasets for students to learn about statistics. However, 
+besides for the course, the teacher also wanted to use the collected data for 
+research purposes and share the data with others. In order to do so, the teacher 
+created a new version of the survey that asked for less identifiable information 
+and could be more easily anonymised. Additionally, the new version of the survey 
+informed participants about the legal basis used to process their personal data. 
+
+Here, you can find the survey before and after data minimisation:
+
+<button class = "button" role = "button" name="Before" onclick="window.open('https://utrechtuniversity.github.io/dataprivacyhandbook/assets/Use-case-minimisation-Before.pdf','_blank');">Before minimisation</button>
+<button class = "button" role = "button" name="After" onclick="window.open('https://utrechtuniversity.github.io/dataprivacyhandbook/assets/Use-case-minimisation-After.pdf','_blank');">After minimisation</button>
+
+<br><br>
+  
+Note that the new version of the survey:
+
+- minimises the amount of personal data collected:
+  - Student number and pet names are not asked in the new version of the survey.
+  - Instead of Age, the new version asks the Age category of  the owner/caretaker.
+  - The survey includes questions on Weight and Height. For data publication, 
+  they are used to calculate the Body Mass Index (BMI) and deleted after this 
+  calculation.
+- contains information about the legal basis used to be able to use (legitimate 
+interest) and publish (consent) the data for purposes other than education.

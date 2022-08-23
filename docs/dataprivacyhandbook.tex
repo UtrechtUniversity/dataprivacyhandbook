@@ -77,7 +77,7 @@
 
 \title{Data Privacy Handbook}
 \author{Utrecht University}
-\date{2022-08-08}
+\date{r format(Sys.time(), ``\%d \%B \%Y'')}
 
 \begin{document}
 \maketitle
@@ -95,6 +95,8 @@
 \addcontentsline{toc}{chapter}{Data Privacy Handbook}
 
 \includegraphics{img/cover-image-dph.png}
+
+\emph{Utrecht University, 23 August 2022}
 
 The Data Privacy Handbook is a guide on handling personal data in scientific
 research, in line with European data protection and privacy regulations. It
@@ -115,7 +117,7 @@ consists of:
   for which a reusable solution (e.g., tool, workflow) has been developed.
 \end{itemize}
 
-The Data Privacy Handbook synthesizes information across various sources and
+The Data Privacy Handbook synthesises information across various sources and
 presents it a \emph{practical} format. This includes workflows, tools, and practical
 translations of the GDPR, which could be used by researchers and (data) support
 staff within Utrecht University and beyond.
@@ -124,7 +126,7 @@ The Data Privacy Handbook is an initiative of
 Research
 Data Management Support at the Utrecht University Library, in collaboration with privacy and data experts at
 Utrecht University. It is part of a larger project,
-\textless a href = ``\url{https://utrechtuniversity.github.io/dataprivacyproject} target =''\_blank''\textgreater the
+the
 Data Privacy Project, which aims to develop knowledge, tools, and experience
 on how researchers can and should deal with personal data. This project is
 funded by the Utrecht University Research IT Program and an NWO Digital
@@ -847,7 +849,196 @@ In order to do so, you can (and sometimes should) ask for additional information
 that can confirm the data subject's identity.
 
 \hypertarget{personal-data}{%
-\chapter{What is personal data?}\label{personal-data}}
+\chapter{What are personal data?}\label{personal-data}}
+
+In order to know whether you should comply with the GDPR in your research
+project, the first question to answer is: do you process personal data? To
+answer this question, we need to know: (1) What exactly are personal data,
+and (2) how do you know if you are working with personal data in your research?
+
+\hypertarget{definition-personal-data}{%
+\section{Definition of personal data}\label{definition-personal-data}}
+
+According to the GDPR, personal data are ``any information relating to an
+identified or identifiable natural person''
+(art.4(1)):
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Natural person}: Data by themselves (numbers, text, pictures, audio, etc.)
+  are not inherently personal. They only become personal when they refer to or
+  relate to a \textbf{living individual}. When data refer to an organisation,
+  deceased person, or group of individuals, they are not considered personal data
+  under the GDPR.
+\item
+  Data are personal if they \textbf{relate} to an individual. This means practically
+  anything that someone is, has said or done, owns, may think, etc.
+\item
+  The person should be \textbf{identified or identifiable}. This is the case not
+  only through \textbf{directly} identifying information, such as names and contact
+  information, but also through \textbf{indirectly} identifying information, for
+  example if you can single someone out or identify them by combining datasets
+  (see the next page).
+\end{itemize}
+
+\hypertarget{personal-data-assess}{%
+\section{How to assess whether data contain personal data?}\label{personal-data-assess}}
+
+Whether your data contains personal data depends on which data you are
+collecting (nature) and under which circumstances (context). A date like
+``12 December 1980'', is not personal data -- it is just a date. However, that
+date becomes personal data if it refers to someone's birthday.
+
+In assessing whether data are personal, you should take into account all the
+means that you and others may \textbf{reasonably likely} use to identify your data
+subjects, such as the required money, time, or (future) developments in
+technology (rec. 26).
+
+Data can be identifiable when:
+
+\begin{itemize}
+\tightlist
+\item
+  They contain \textbf{directly identifying information}.
+
+  Examples
+
+  name, image, video recording, audio recording, patient number, IP address,
+  email address, phone number, location data, social media data
+\item
+  It is possible to \textbf{single out} an individual, for example when there are
+  unique data points or unique behavioural patterns which can only apply to one
+  person.
+
+  Examples
+
+  You have a data subject who is 2.10 meters tall. If this is a unique
+  value in your dataset, this distinguishes this person from others and thus
+  can make them identifiable.
+
+  You have a data subject who only follows far-right accounts on Twitter.
+  If they are the only one in your dataset who do so, this distinguishes this
+  person from others and can make them identifiable.
+\item
+  It is possible to \textbf{link records} relating to an individual or to
+  \textbf{infer information} about an individual. This can happen when combining
+  multiple variables within your dataset (e.g., demographic information, indirect
+  identifiers). However, it can also happen when combining your dataset with other
+  datasets (the ``Mosaic effect''). In that case, your data still contain personal
+  data, even if the data in your dataset are not identifiable by themselves.
+
+  Examples
+
+  Inference or linkage are often possible with demographic information (age,
+  gender, country of origin, education, workplace information, etc.) and
+  indirect identifiers (pseudonyms, device ID, etc.), for example:
+
+  In the year 2000, 87\% of the United States population
+  was found to be identifiable using a combination of their ZIP code, gender
+  and date of birth.
+
+  An agricultural company's Uniek Bedrijfsnummer (UBN) can be used to
+  search for the address of the company in the
+  I\&R mobile app.
+  Often, this address is also the owner's home address.
+\item
+  De-identification is still \textbf{reversible}. This often happens when data are
+  pseudonymised, but there is still a way to link the pseudonymised data with
+  identifiable data, for example when a name-pseudonym key still exists.
+\end{itemize}
+
+In short, even if you cannot find out someone's real identity (name, address),
+the data you process can still contain personal data under the GDPR. Besides
+the examples mentioned here, there are many
+other examples of personal data. If you need help assessing whether or not your
+data contain personal data, please contact your
+privacy officer
+or data manager.
+
+\hypertarget{special-types-personal-data}{%
+\section{Special types of personal data}\label{special-types-personal-data}}
+
+There are a few special types of personal data that are worth taking note of:
+special categories of personal data, and otherwise sensitive personal data.
+These types of personal data have additional requirements. If you want to
+process them, please contact your
+privacy officer
+first.
+
+\hypertarget{special-categories-of-personal-data}{%
+\subsection{Special categories of personal data}\label{special-categories-of-personal-data}}
+
+The GDPR explicitly defines seven `special categories of personal data'. It is
+information that reveals:
+
+\begin{itemize}
+\tightlist
+\item
+  racial or ethnic origin
+\item
+  political opinions
+\item
+  religious or philosophical beliefs
+\item
+  trade union membership
+\item
+  genetic or biometric data when meant to uniquely identify someone
+\item
+  physical or mental health conditions
+\item
+  sex life or sexual orientation
+\end{itemize}
+
+It is in principle \textbf{prohibited} to process these types of personal data,
+unless an exception applies
+(art.9). For
+example, it is allowed to process these if:
+
+\begin{itemize}
+\tightlist
+\item
+  Data subjects have provided explicit consent to process these data for a
+  specific purpose
+\item
+  Data subjects have made the data publicly available themselves
+\item
+  Processing is necessary for scientific research purposes (incl.~historical
+  and statistical purposes)
+\end{itemize}
+
+Even if you can make use of one of these exemptions, special categories of
+personal data warrant additional security measures to make sure they are
+protected. Always contact your
+privacy officer
+if you intend on processing these types of data.
+
+\hypertarget{data-that-are-otherwise-sensitive}{%
+\subsection{Data that are otherwise sensitive}\label{data-that-are-otherwise-sensitive}}
+
+Other types of data can also be sensitive, because they can carry higher risks
+for the data subjects. These types of data can either not be processed at all,
+or only under certain circumstances. Either way, they require additional
+security measures. Always contact your
+privacy officer
+if you intend on using these types of data.
+
+Examples are:
+
+\begin{itemize}
+\tightlist
+\item
+  Financial data
+\item
+  Data about relationship problems
+\item
+  Data that can be misused for identity fraud, such as the Dutch Citizen
+  Service Number (BSN). In principle, the BSN cannot be used in research at all.
+\item
+  Criminal or justice-related data: they can only be processed under
+  governmental supervision or when a derogation exists in national legislation
+  (art. 10).
+\end{itemize}
 
 \hypertarget{privacy-by-design}{%
 \chapter{Designing your project}\label{privacy-by-design}}
@@ -1020,7 +1211,8 @@ services, enabling them to use the data stored on their platforms for their own
 purposes.
 
 \textbf{If you work at UU, please find a suitable storage medium below}
-\href{https://tools.uu.nl/storagefinder/}{\includegraphics{dataprivacyhandbook_files/figure-latex/embedstoragefinder-1.pdf}}
+
+\begin{center}\href{https://tools.uu.nl/storagefinder/}{\includegraphics{dataprivacyhandbook_files/figure-latex/embedstoragefinder-1} }\end{center}
 
 If the Storage Finder does not display correctly, you can also easily
 check it out
@@ -1173,8 +1365,8 @@ being left behind on any device. The Storage Finder will soon include informatio
 this for each UU-approved storage medium. Additionally, you can read more on
 how to safely delete data in the RDM guide ``Storing and preserving data''.
 
-\hypertarget{data-sharing}{%
-\chapter{Data Sharing}\label{data-sharing}}
+\hypertarget{data-sharing-collaboration}{%
+\chapter{Sharing data to collaborate}\label{data-sharing-collaboration}}
 
 \hypertarget{can-i-share-personal-data}{%
 \section{Can I Share Personal Data?}\label{can-i-share-personal-data}}
@@ -1188,8 +1380,8 @@ how to safely delete data in the RDM guide ``Storing and preserving data''.
 \hypertarget{data-pointsvirtual-research-environments}{%
 \section{Data Points/Virtual Research Environments}\label{data-pointsvirtual-research-environments}}
 
-\hypertarget{data-publishing}{%
-\chapter{Data Publishing}\label{data-publishing}}
+\hypertarget{data-sharing-reuse}{%
+\chapter{Sharing data for reuse}\label{data-sharing-reuse}}
 
 \hypertarget{publishing-personal-data}{%
 \section{Publishing Personal Data}\label{publishing-personal-data}}
@@ -1209,11 +1401,92 @@ how to safely delete data in the RDM guide ``Storing and preserving data''.
 \hypertarget{open-science-questionnaire}{%
 \chapter{Publishing metadata}\label{open-science-questionnaire}}
 
+In 2020, the
+Open
+Science Programme of Utrecht University sent out the first
+Open Science monitor. The aim was to gain insights into the awareness,
+attitudes, practices, opportunities and barriers of employees of Utrecht
+University and Utrecht University Medical Center regarding several Open
+Science practices. As the dataset contained a lot of demographic information
+(e.g., gender, age, nationality, position, type of contract, etc.), and all of
+those variables combined could lead to identification, it could not be shared
+publicly. For this particular dataset, full anonymisation was not desirable,
+as that would greatly decrease its scientific value. Therefore, the Open Science
+Programme chose to publish only the metadata and documentation, without sharing
+the data, in order to protect participants' data while still complying with the
+FAIR principles.
+
+Here's the strategy they took:
+
+\begin{itemize}
+\tightlist
+\item
+  They published the dataset under
+  restricted
+  access on Yoda, so that the dataset was at least Findable and Accessible.
+\item
+  They shared other relevant documentation publicly:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The preregistration.
+  \item
+    The questionnaire itself,
+    including the information provided to participants.
+  \item
+    The final report
+    written about the dataset.
+  \end{itemize}
+\end{itemize}
+
+Note that in the metadata of all these publications, cross-references to the
+other publications are included to allow for maximum findability of the
+project's outputs.
+
 \hypertarget{youth-pseudonymisation}{%
 \chapter{Data pseudonymisation}\label{youth-pseudonymisation}}
 
 \hypertarget{pet-survey}{%
 \chapter{Data minimisation in a survey}\label{pet-survey}}
+
+For a course, a teacher at the faculty of Veterinary Medicine collected data on
+the health of pets and the pets' owners. The initial purpose of the survey was
+to create simply datasets for students to learn about statistics. However,
+besides for the course, the teacher also wanted to use the collected data for
+research purposes and share the data with others. In order to do so, the teacher
+created a new version of the survey that asked for less identifiable information
+and could be more easily anonymised. Additionally, the new version of the survey
+informed participants about the legal basis used to process their personal data.
+
+Here, you can find the survey before and after data minimisation:
+
+Before minimisation
+
+After minimisation
+
+Note that the new version of the survey:
+
+\begin{itemize}
+\tightlist
+\item
+  minimises the amount of personal data collected:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Student number and pet names are not asked in the new version of the survey.
+  \item
+    Instead of Age, the new version asks the Age category of the owner/caretaker.
+  \item
+    The survey includes questions on Weight and Height. For data publication,
+    they are used to calculate the Body Mass Index (BMI) and deleted after this
+    calculation.
+  \end{itemize}
+\item
+  contains information about the legal basis used to be able to use (legitimate
+  interest) and publish (consent) the data for purposes other than education.
+\end{itemize}
 
 \hypertarget{part-resources}{%
 \part*{Resources}\label{part-resources}}

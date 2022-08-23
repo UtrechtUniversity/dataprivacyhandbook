@@ -178,8 +178,12 @@ li.appendix span, li.part span { /* for TOC part names */
 
 /* Do not display author, title and date on the front page
 Source: https://stackoverflow.com/questions/53399095/disable-title-author-in-the-html-output-of-bookdown */
-.author,.title, .date{
+.author, .date, .title{
   display: none;
+  /*line-height: 0.9;
+  white-space: nowrap;
+  font-style: normal;
+  font-size: 0.875em;*/
 }
 
 /* Own styling for footer*/
@@ -201,4 +205,53 @@ Source: https://stackoverflow.com/questions/53399095/disable-title-author-in-the
   content: "";
   display: table;
   clear: both;
+}
+
+/* BUTTON */
+/* CSS adapted from button 5 at https://getcssscan.com/css-buttons-examples */
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #FCD000;
+  border: none;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-right: 5px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #af9c3b;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #af9c3b;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  color: white;
+  transform: translateY(0);
 }
