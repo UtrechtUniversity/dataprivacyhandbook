@@ -1,7 +1,17 @@
-<hr>
 <div class = "footer">
 <footer>
-  <br><br>
+  <head>
+    <script>
+      // Commented lines all do not work //
+      //var date = document.getElementsByName('date')[0].getAttribute('content');
+      //var date = document.head.innerHTML.date;
+      //document.getElementById("date").innerHTML = date;
+      //var date = document.querySelector('meta[name="date"]').content;
+      //var date = document.getElementsByTag("date").getAttribute('content');
+      var author = document.querySelector('meta[name="author"]').content;
+    </script>
+  </head>
+  <hr>
   <div class="row">
     <div class="column">
       <p>
@@ -9,12 +19,28 @@
       </p>
     </div>
     <div class="column">
-      <b>Data Privacy Handbook - Utrecht University</b><br>
+      <b> <!-- Title and author -->
+        Data Privacy Handbook - 
+        <script type="text/javascript">document.write(author)</script>
+      </b>
+      <br>
       <p style ="line-height:1; color:grey">
-        <small>Last updated:
-          <script> document.write(new Date().toLocaleDateString('en-GB')); </script>
-        </small>
-        <br>
+        <!--<small>Last updated: </small>-->
+        <!-- Commented lines contain attempts to include the date -->
+        <!--<script type="text/javascript">document.write(date)</script> -->
+        <!--<meta name="date" content="$date-meta$" />-->
+        <!--<p class = "date" style="display:inline !important">${{ date-meta }}</p>-->
+        <!--<script type="text/javascript">document.write(date)</script>-->
+        <!--<script>document.querySelector('meta[name="description"]').content</script>-->
+        <!--<p class="date"><em>r format(Sys.time(), “%d %B %Y”)</em></p>-->
+        <!-- p>$date-meta$</p>-->
+        <!-- p style="margin-top: 6px; margin-left: -2px;">$date$</p>-->
+        <!--<date style="display:inline !important;"></date>-->
+        <!--<span id="meta_date"></span>-->
+        <!--<script> document.write(new Date().toLocaleDateString('en-GB')); </script>--><!-- this is just today's date-->
+        <!--<script> document.write(new Date().getElementsByTag("meta").getAttribute('content'); </script>-->
+        <!--<script type="text/javascript">document.write(date)</script> -->
+        <!--<br>-->
         <small>
           The information presented here is provided as is, with no guarantees of 
           accuracy or completeness. For the most up-to-date information, please refer 
@@ -25,7 +51,46 @@
           inconsistencies with policies/views of other institutions.
         </small>
       </p>
-    </div>
-  </div> <!-- End div row-->
+    </div><!-- End div column -->
+  </div> <!-- End div row -->
 </footer>
 </div>
+
+<!-- Does not work -->
+<!--<script>
+  var meta_content = document.getElementsByTag("meta").getAttribute('content');
+  document.getElementById("meta_content").innerHTML = meta_content;
+</script>-->
+
+<!--Does not work -->
+<!--<script>
+  import java.io.IOException;
+  import org.jsoup.Jsoup;
+  import org.jsoup.nodes.Document;
+ 
+/**
+ * This class is used get meta data from HTML using Jsoup. 
+ **/
+
+public class JsoupGetMetaData {
+  public static void main(String args[]){
+    Document document;
+    try {
+    	//Get Document object after parsing the html from given url.
+	document = Jsoup.connect("https://utrechtuniversity.github.io/dataprivacyhandbook/index.html").get();
+ 
+	//Get description from document object.
+	String date = 
+              document.select("meta[name=date]").get(0)
+              .attr("content");
+	//Print description.
+	System.out.println("Meta date: " + date);
+  var date = date;
+  document.getElementById("meta_date").innerHTML = date;
+
+    } catch (IOException e) {
+	e.printStackTrace();
+    }		
+  }
+}
+</script>-->
