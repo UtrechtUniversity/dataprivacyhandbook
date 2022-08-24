@@ -248,17 +248,14 @@ online</a>.</p>
 </div>
 <div class = "footer">
 <footer>
-  <head>
-    <script>
-      // Commented lines all do not work //
-      //var date = document.getElementsByName('date')[0].getAttribute('content');
-      //var date = document.head.innerHTML.date;
-      //document.getElementById("date").innerHTML = date;
-      //var date = document.querySelector('meta[name="date"]').content;
-      //var date = document.getElementsByTag("date").getAttribute('content');
-      var author = document.querySelector('meta[name="author"]').content;
-    </script>
-  </head>
+  <!--<script>
+    // Commented lines all do not work //
+    //var date = document.getElementsByName('date')[0].getAttribute('content');
+    //var date = document.head.innerHTML.date;
+    //document.getElementById("date").innerHTML = date;
+    //var date = document.querySelector('meta[name="date"]').content;
+    //var date = document.getElementsByTag("date").getAttribute('content');
+  </script>-->
   <hr>
   <div class="row">
     <div class="column">
@@ -269,7 +266,7 @@ online</a>.</p>
     <div class="column">
       <b> <!-- Title and author -->
         Data Privacy Handbook - 
-        <script type="text/javascript">document.write(author)</script>
+        <script type="text/javascript">document.write(document.querySelector('meta[name="author"]').content);</script>
       </b>
       <br>
       <p style ="line-height:1; color:grey">
@@ -303,45 +300,6 @@ online</a>.</p>
   </div> <!-- End div row -->
 </footer>
 </div>
-
-<!-- Does not work -->
-<!--<script>
-  var meta_content = document.getElementsByTag("meta").getAttribute('content');
-  document.getElementById("meta_content").innerHTML = meta_content;
-</script>-->
-
-<!--Does not work -->
-<!--<script>
-  import java.io.IOException;
-  import org.jsoup.Jsoup;
-  import org.jsoup.nodes.Document;
- 
-/**
- * This class is used get meta data from HTML using Jsoup. 
- **/
-
-public class JsoupGetMetaData {
-  public static void main(String args[]){
-    Document document;
-    try {
-    	//Get Document object after parsing the html from given url.
-	document = Jsoup.connect("https://utrechtuniversity.github.io/dataprivacyhandbook/index.html").get();
- 
-	//Get description from document object.
-	String date = 
-              document.select("meta[name=date]").get(0)
-              .attr("content");
-	//Print description.
-	System.out.println("Meta date: " + date);
-  var date = date;
-  document.getElementById("meta_date").innerHTML = date;
-
-    } catch (IOException e) {
-	e.printStackTrace();
-    }		
-  }
-}
-</script>-->
             </section>
 
           </div>
