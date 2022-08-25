@@ -48,11 +48,10 @@ informed participants about the legal basis used to process their personal data.
 
 Here, you can find the survey before and after data minimisation:
 
-<button class = "button" role = "button" name="Before" onclick="window.open('https://utrechtuniversity.github.io/dataprivacyhandbook/assets/Use-case-minimisation-Before.pdf','_blank');">Before minimisation</button>
-<button class = "button" role = "button" name="After" onclick="window.open('https://utrechtuniversity.github.io/dataprivacyhandbook/assets/Use-case-minimisation-After.pdf','_blank');">After minimisation</button>
+<a href="../assets/Use-case-minimisation-Before.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Before minimisation</button></a> 
+<a href="../assets/Use-case-minimisation-After.pdf" target = "_blank" style="text-decoration: none;"><button type="button">After minimisation</button></a>
 
-<br><br>
-  
+<br>
 Note that the new version of the survey:
 
 - minimises the amount of personal data collected:
