@@ -209,7 +209,7 @@ Source: https://stackoverflow.com/questions/53399095/disable-title-author-in-the
 
 /* BUTTON */
 /* CSS adapted from button 5 at https://getcssscan.com/css-buttons-examples */
-.button {
+button {
   align-items: center;
   background-clip: padding-box;
   background-color: #FCD000;
@@ -238,18 +238,18 @@ Source: https://stackoverflow.com/questions/53399095/disable-title-author-in-the
   margin-right: 5px;
 }
 
-.button:hover,
-.button:focus {
+button:hover,
+button:focus {
   background-color: #af9c3b;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.button:hover {
+button:hover {
   transform: translateY(-1px);
 }
 
-.button:active {
+button:active {
   background-color: #af9c3b;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   color: white;

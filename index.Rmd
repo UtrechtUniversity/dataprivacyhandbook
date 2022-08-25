@@ -1,7 +1,7 @@
 --- 
 title: "Data Privacy Handbook"
 author: "Utrecht University"
-date: 'r format(Sys.time(), "%d %B %Y")'
+date: '`r format(Sys.time(), "%d %B %Y")`'
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

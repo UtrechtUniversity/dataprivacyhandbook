@@ -39,14 +39,15 @@ technology (<a href = "https://gdpr-info.eu/recitals/no-26/" target = "_blank">r
 Data can be identifiable when:
 
 - They contain **directly identifying information**.<br>
-<details><summary><b>Examples</b></summary>
+<details><summary>Examples</summary>
   name, image, video recording, audio recording, patient number, IP address, 
-  email address, phone number, location data, social media data <br>
+  email address, phone number, location data, social media data
+  <br><br>
 </details>
 - It is possible to **single out** an individual, for example when there are 
 unique data points or unique behavioural patterns which can only apply to one 
 person.<br>
-<details><summary><b>Examples</b></summary>
+<details><summary>Examples</summary>
   <ol>
     <li>You have a data subject who is 2.10 meters tall. If this is a unique 
     value in your dataset, this distinguishes this person from others and thus 
@@ -63,7 +64,7 @@ multiple variables within your dataset (e.g., demographic information, indirect
 identifiers). However, it can also happen when combining your dataset with other 
 datasets (the “Mosaic effect”). In that case, your data still contain personal 
 data, even if the data in your dataset are not identifiable by themselves.<br>
-<details><summary><b>Examples</b></summary>
+<details><summary>Examples</summary>
   Inference or linkage are often possible with demographic information (age, 
   gender, country of origin, education, workplace information, etc.) and 
   indirect identifiers (pseudonyms, device ID, etc.), for example:

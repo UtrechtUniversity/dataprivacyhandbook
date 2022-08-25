@@ -206,12 +206,12 @@ Support</p>" />
 <div id="header">
 <h1 class="title">Data Privacy Handbook</h1>
 <p class="author"><em>Utrecht University</em></p>
-<p class="date"><em>r format(Sys.time(), “%d %B %Y”)</em></p>
+<p class="date"><em>25 augustus 2022</em></p>
 </div>
 <div id="data-privacy-handbook" class="section level1 unnumbered hasAnchor">
 <h1>Data Privacy Handbook<a href="index.html#data-privacy-handbook" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><img src="img/cover-image-dph.png" /><!-- --></p>
-<p><em>Utrecht University, 23 August 2022</em>
+<p><em>Utrecht University, 25 August 2022</em>
 <br><br></p>
 <p>The Data Privacy Handbook is a guide on handling personal data in scientific
 research, in line with European data protection and privacy regulations. It
@@ -247,17 +247,14 @@ We welcome feedback and contributions of any type, please read our <a href="http
 </div>
 <div class = "footer">
 <footer>
-  <head>
-    <script>
-      // Commented lines all do not work //
-      //var date = document.getElementsByName('date')[0].getAttribute('content');
-      //var date = document.head.innerHTML.date;
-      //document.getElementById("date").innerHTML = date;
-      //var date = document.querySelector('meta[name="date"]').content;
-      //var date = document.getElementsByTag("date").getAttribute('content');
-      var author = document.querySelector('meta[name="author"]').content;
-    </script>
-  </head>
+  <!--<script>
+    // Commented lines all do not work //
+    //var date = document.getElementsByName('date')[0].getAttribute('content');
+    //var date = document.head.innerHTML.date;
+    //document.getElementById("date").innerHTML = date;
+    //var date = document.querySelector('meta[name="date"]').content;
+    //var date = document.getElementsByTag("date").getAttribute('content');
+  </script>-->
   <hr>
   <div class="row">
     <div class="column">
@@ -268,7 +265,7 @@ We welcome feedback and contributions of any type, please read our <a href="http
     <div class="column">
       <b> <!-- Title and author -->
         Data Privacy Handbook - 
-        <script type="text/javascript">document.write(author)</script>
+        <script type="text/javascript">document.write(document.querySelector('meta[name="author"]').content);</script>
       </b>
       <br>
       <p style ="line-height:1; color:grey">
@@ -302,45 +299,6 @@ We welcome feedback and contributions of any type, please read our <a href="http
   </div> <!-- End div row -->
 </footer>
 </div>
-
-<!-- Does not work -->
-<!--<script>
-  var meta_content = document.getElementsByTag("meta").getAttribute('content');
-  document.getElementById("meta_content").innerHTML = meta_content;
-</script>-->
-
-<!--Does not work -->
-<!--<script>
-  import java.io.IOException;
-  import org.jsoup.Jsoup;
-  import org.jsoup.nodes.Document;
- 
-/**
- * This class is used get meta data from HTML using Jsoup. 
- **/
-
-public class JsoupGetMetaData {
-  public static void main(String args[]){
-    Document document;
-    try {
-    	//Get Document object after parsing the html from given url.
-	document = Jsoup.connect("https://utrechtuniversity.github.io/dataprivacyhandbook/index.html").get();
- 
-	//Get description from document object.
-	String date = 
-              document.select("meta[name=date]").get(0)
-              .attr("content");
-	//Print description.
-	System.out.println("Meta date: " + date);
-  var date = date;
-  document.getElementById("meta_date").innerHTML = date;
-
-    } catch (IOException e) {
-	e.printStackTrace();
-    }		
-  }
-}
-</script>-->
             </section>
 
           </div>
