@@ -48,8 +48,8 @@ informed participants about the legal basis used to process their personal data.
 
 Here, you can find the survey before and after data minimisation:
 
-<a href="../assets/Use-case-minimisation-Before.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Before minimisation</button></a> 
-<a href="../assets/Use-case-minimisation-After.pdf" target = "_blank" style="text-decoration: none;"><button type="button">After minimisation</button></a>
+<a href="assets/Use-case-minimisation-Before.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Before minimisation</button></a> 
+<a href="assets/Use-case-minimisation-After.pdf" target = "_blank" style="text-decoration: none;"><button type="button">After minimisation</button></a>
 
 <br>
 Note that the new version of the survey:
