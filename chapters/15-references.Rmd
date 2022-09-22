@@ -1,6 +1,7 @@
-`r if (knitr::is_html_output()) '
+<!--`r if (knitr::is_html_output()) '-->
 # References {#references}
-'`
+<!--'`-->
+
 For further reading, we prepared a Zotero library with additional resources, some
 of which are specific to Utrecht University, others more general. Below you can
 download the library (left image) or see the most recent version online (right 
