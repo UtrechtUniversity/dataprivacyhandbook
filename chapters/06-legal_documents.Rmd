@@ -1,16 +1,29 @@
-# Legal Documents & Agreements {-#legal-documents}
+# Documents & Agreements {#legal-documents}
 
+## Privacy notices {#privacy-notices}
 
-## Privacy Notices {-#privacy-notices}
+## Informed consent forms {#informed-consent-forms}
 
-## Informed Consent Forms {-#informed-consent-forms}
+## Privacy scan {#privacy-scan}
 
-## Legitimate Interest Assessment {-#legitimate-interest-assessment}
+## Data Protection Impact Assessment {#dpia}
 
-## Data Use Agreement/Confidentiality Agreement/Non-Disclosure Agreement
+## Data classification {#data-classification}
 
-## Data Transfer Agreement {-#data-transfer-agreement}
+## Legitimate interest assessment {#legitimate-interest-assessment}
 
-## Consortium Agreement and/or Joint Controller Agreement
+## Data Transfer Impact Assessment {#dtia}
 
-## Data Processing Agreement {-#data-processing-agreement}
+## Agreements {#agreements}
+
+### How to set up an agreement? {#set-up-agreements}
+
+### Non-disclosure agreement {#nda}
+
+### Data processing agreement {#data-processing-agreement}
+
+### Data Transfer Agreement {#data-transfer-agreement}
+
+### Joint controller agreement {#joint-controller-agreement}
+
+### Data Use Agreement {#user-agreement}
