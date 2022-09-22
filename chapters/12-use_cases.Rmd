@@ -1,6 +1,6 @@
 # (PART\*) Use Cases
 
-# Publishing metadata {#open-science-questionnaire}
+## Publishing metadata {#open-science-questionnaire}
 
 In 2020, the 
 <a href = "https://www.uu.nl/en/research/open-science" target = "_blank">Open 
@@ -33,9 +33,9 @@ Note that in the metadata of all these publications, cross-references to the
 other publications are included to allow for maximum findability of the 
 project’s outputs.
 
-# Data pseudonymisation {#youth-pseudonymisation}
+## Data pseudonymisation {#youth-pseudonymisation}
 
-# Data minimisation in a survey {#pet-survey}
+## Data minimisation in a survey {#pet-survey}
 
 For a course, a teacher at the faculty of Veterinary Medicine collected data on 
 the health of pets and the pets’ owners. The initial purpose of the survey was 
