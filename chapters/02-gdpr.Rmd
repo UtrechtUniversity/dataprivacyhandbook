@@ -79,11 +79,10 @@ This is independent of whether the actual processing takes place in the EEA.
 In some cases, the GDPR also applies when the controller or processor is not
 established in the EEA, but is processing data from EU citizens.
 
-
 :::warning
-
 If you are collecting or using data that originated from individuals (or is 
 related to individuals), it is very likely that the GDPR applies to your project.
+You can read more in the chapter <a href="#personal-data">What are personal data?</a>.
 :::
 
 #### Implementation {#implementation}
@@ -126,7 +125,7 @@ become familiar with when working with personal data (also included in the
   Of note: as soon as you collect data related to a person that is identifiable, 
   you are processing personal data. Additionally, pseudonymised data is still 
   considered personal data. Read more in 
-  <a href="#privacy-by-design">Designing a GDPR-compliant research project</a>.
+  <a href="#personal-data">What are personal data?</a>.
   </p>
 </details>
 
@@ -258,72 +257,41 @@ Integrity and Confidentiality, and Accountability" height="80%"/>
 When working with personal data, your processing should be:
 
 <ol>
-  <li><b>Lawful</b><br> 
+  <li><details><summary><b>Lawful</b></summary>
   Make sure all your processing activities (e.g., data collection, storage, 
   analysis, sharing) have a <a href="#legal-basis">legal basis</a>. Ideally, 
   you should have determined your processing purposes (e.g., research questions) 
-  in advance.
+  in advance.<br>
+  </details></li>
+  <li><details><summary><b>Fair</b></summary>
+  <ul>
+    <li>Consider the broad effects of your processing on the rights and dignity of the data subject.</li>
+    <li>Give data subjects the possibility to exercise <a href="#data-subject-rights">their rights</a>.</li>
+    <li>Avoid deception in the communication with data subjects: processing of personal data should be in line with what they can expect.</li>
+    <li>The processing of personal data should not have a disproportionate negative, unlawful, discriminating or misleading effect on data subjects.</li>
+  </ul><br>
+  </details>
   </li>
-  <li><b>Fair</b><br>
-    <ul>
-      <li>
-        Consider the broad effects of your processing on the rights and dignity 
-        of the data subject.
-      </li>
-      <li>
-        Give data subjects the possibility to exercise 
-        <a href="#data-subject-rights">their rights</a>.
-      </li>
-      <li>
-        Avoid deception in the communication with data subjects: processing of 
-        personal data should be in line with what they can expect.
-      </li>
-      <li>
-        The processing of personal data should not have a disproportionate 
-        negative, unlawful, discriminating or misleading effect on data subjects.
-      </li>
-    </ul>
-  </li>
-  <li><b>Transparent</b><br>
-  Be transparent in the communication to your data subjects about who is 
-  processing the personal data (controllers, processors), which personal data is
-  processed, as well as why and for how long, and how data subjects can exercise
-  their rights (see the <a href="#legal-documents">Legal documents</a> chapter).
-  The information provided should be unambiguous, concise, easily accessible and
-  relevant and shared with data subjects <i>before</i> the start of your research.
-  </li>
+  <li><details><summary><b>Transparent</b></summary>
+  Be transparent in the <a href="#privacy-notices">communication to your data subjects</a> 
+  about who is processing the personal data (controllers, processors), which 
+  personal data are  processed, as well as why and for how long, and how data 
+  subjects can exercise their rights. The information provided should be 
+  unambiguous, concise, easily accessible and relevant and shared with data 
+  subjects <i>before</i> the start of your research.
+  </details></li>
 </ol>
 
 #### 2. Purpose limitation
 
 You can only process (i.e., collect, analyse, store, share, etc.) personal data 
 for a specific purpose and only for as long as necessary to complete that purpose. 
-For example, if you specified that you would use the personal data only to answer 
-your specific research question, you cannot further share the personal data for 
-reuse purposes, as this would be an additional processing purpose. This means 
-that you need to **plan what you will do with the (collected) personal data in 
-advance and stick to that plan in order to be GDPR-compliant**.
-
-In some cases (e.g., for cohort studies), it may not be possible to communicate 
-a specific research purpose in advance. In those cases, you may be able to use 
-"broad consent" when possible. For more information on broad consent and which 
-conditions must be met in that case see the <a href="#legal-documents">Legal 
-Documents</a> chapter.
-
-##### Further processing
-
-It may happen that you want to process personal data for **similar, but other 
-purposes** than previously specified, for example because you formulated a research 
-question that was not communicated with the data subjects. In these cases, the 
-GDPR provides some leeway: you can still process the personal data if the new 
-processing (e.g., the new research question) is **compatible** with the original 
-purpose. Your 
-<a href="https://intranet.uu.nl/kennisbank/contactpersonen-privacy" target="_blank">privacy officer</a> 
-can help you assess whether this is the case. Of note, **archiving** personal 
-research data after your research is finished is allowed in a research context 
-(<a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">art. 5.1(b)</a>), 
-but provided that you still apply the GDPR's principles and put in place appropriate 
-safeguards (<a href="https://gdpr-info.eu/recitals/no-156/" target="_blank">rec. 156</a>).
+For example, if you communicated to data subjects that you would use their 
+personal data only to answer your specific research question, you cannot further 
+share the personal data for new research questions, as these would be additional 
+processing purposes. This means that you need to **plan what you will do with 
+the (collected) personal data in advance and stick to that plan in order to be 
+GDPR-compliant**.
 
 #### 3. Data minimisation
 
@@ -343,13 +311,13 @@ incomplete data be removed or rectified within 30 days.
 
 #### 5. Storage limitation
 
-You can only store personal data for as long as is necessary to achieve your 
-(research) purpose. Afterwards, they need to be removed. If the personal data 
-are part of your research data (and not, for example, to simply contact data 
-subjects), you are allowed to store (archive) them for a longer period of time, 
-provided necessary safeguards are in place. This is an exemption that applies to 
-data storage for scientific archiving purposes. You need to inform the data 
-subjects on this storage duration beforehand.
+You can only <a href="#data-storage">store personal data</a> for as long as is 
+necessary to achieve your (research) purpose. Afterwards, they need to be 
+removed. If the personal data are part of your research data (and not, for 
+example, to simply contact data subjects), you are allowed to store (archive) 
+them for a longer period of time, provided necessary safeguards are in place. 
+This is an exemption that applies to data storage for scientific archiving 
+purposes. You need to inform the data subjects on this storage duration beforehand.
 
 :::fyi
 If identification of the data subject is no longer needed for your 
@@ -362,8 +330,7 @@ their rights (<a href="https://gdpr-info.eu/art-11-gdpr/" target="_blank">art. 1
 
 You have to process personal data securely and protect against unauthorised 
 processing or access, loss or damage. To this end, you should put in place 
-apropriate organisational and technical measures. The <a href="#privacy-by-design">next chapter</a> 
-will go into such measures in more depth.
+apropriate <a href="#privacy-by-design">organisational and technical measures</a>.
 
 #### 7. Accountability
 
@@ -381,8 +348,8 @@ should be registered, among other information, in the
 <a href="#privacy-by-design">processing register</a> and 
 <a href="#privacy-notices">communicated to data subjects</a>. There are 6 possible 
 legal bases which are outlined below. In research, the legal bases 'informed 
-consent', 'legitimate interests of the controller' and 'public interest' are most 
-often used.
+consent', 'public interest' and to some extent 'legitimate interests of the 
+controller' are most often used.
 
 :::fyi
 **For different purposes in your research project, a different 
@@ -409,6 +376,32 @@ collecting, storing, analysing and publishing the data.
       </p>
     </details>
   </li>
+    <li>
+    <details>
+      <summary><b>Public interest</b></summary>
+      <p>
+        Public interest is sometimes used in research when the research is shown
+        to clearly benefit society or fulfills a public task. In essence, public 
+        interest can be used as a legal basis in research, because conducting 
+        research at the university has been officially recognised in the Higher 
+        Education and Scientific Research Act to be a public task. Public 
+        interest is often used when consent is not a good option. For example, 
+        it may be impossible or impractical to obtain consent when performing 
+        public observations or social media research. Or when participants 
+        actually do not have a free choice, such as in clinical trials when 
+        participants would experience significant disadvantages when not 
+        participating.
+      </p>
+      <p>
+        If you want to use public interest as a legal basis, you 
+        need to assess the necessity and proportionality of your processing. 
+        Additionally, you need to demonstrate that the interests of data 
+        subjects do not override your research interests. To do so, please contact your 
+        <a href="https://intranet.uu.nl/kennisbank/contactpersonen-privacy" target="_blank">privacy officer</a> 
+        to assess whether you can use this legal basis in your research.
+      </p>
+    </details>
+  </li>
   <li>
     <details>
       <summary><b>Legitimate interest of the controller</b></summary>
@@ -426,20 +419,6 @@ collecting, storing, analysing and publishing the data.
         <a href="#legitimate-interest-assessment">Legitimate interest assessment</a>. 
         Please contact your privacy officer to assess whether you can use this 
         legal basis in your research.
-      </p>
-    </details>
-  </li>
-  <li>
-    <details>
-      <summary><b>Public interest</b></summary>
-      <p>
-        This legal basis can only be used if it can be demonstrated that there 
-        is an urgent social necessity for the processing of personal data. This 
-        means that there must be an explicit increase in knowledge in the 
-        interest of society. There is currently some disagreement as to when this 
-        legal basis can be applied in research. Therefore, please contact your 
-        <a href="https://intranet.uu.nl/kennisbank/contactpersonen-privacy" target="_blank">privacy officer</a> 
-        to assess whether you can use this legal basis in your research.
       </p>
     </details>
   </li>
@@ -480,7 +459,24 @@ collecting, storing, analysing and publishing the data.
   </li>
 </ol>
 
-## Data Subject's Rights {#data-subject-rights}
+
+### Further processing for research purposes {#further-processing}
+It may happen that you want to process personal data for similar, but other 
+purposes than previously specified (e.g., because you formulated an additional
+research question), or you want to reuse personal data previously collected for
+other purposes in your research. In this case, it may be possible to make use of 
+<a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">article 5(1)(b)</a>,
+which states that "further processing for [...] scientific purposes shall [...] 
+not be considered to be incompabitle with the initial purposes". Basically, this 
+means that you can reuse personal data that were previously collected for other 
+purposes for scientific research purposes, but provided that you put in place 
+sufficient safeguards to protect the personal data 
+(<a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>). This 
+is not a legal basis, but can still function as a way to legitimise processing 
+personal data for research purposes. Always discuss with a privacy officer if
+this article can be applied to your project!
+
+## Data Subjects' Rights {#data-subject-rights}
 
 The GDPR provides data subjects with several rights that gives them a relatively 
 high degree of control over their own personal data. Below, we list these rights 
@@ -492,7 +488,7 @@ and how you can apply them in your research:
       <summary><b>Right to be informed</b></summary>
       Data subjects need to be clearly informed about what you are doing with their 
       personal data (a.o. <a href="https://gdpr-info.eu/art-12-gdpr/" target="_blank">art. 12</a>). 
-      This usually happens via a _privacy notice_ or _information letter_. This right 
+      This usually happens via a <a href="#privacy-notices">privacy notice or information letter</a>. This right 
       does not apply if your research will be seriously harmed by meeting it and if 
       you haven't obtained the personal data directly from the data subjects themselves.
     </details>
