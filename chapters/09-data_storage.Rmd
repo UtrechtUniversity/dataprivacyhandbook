@@ -176,7 +176,7 @@ long as is necessary for prespecified purposes
 Afterwards, the personal data have to either be fully anonymised or deleted. 
 However, there is an exemption for research data, as described below.**
 
-In research, we often see a division in two types of retention periods:
+In research, we often see a division in different types of retention periods:
 
 - If the personal data underpin a scientific publication, it is usually necessary 
 to archive some personal data for **integrity and validation purposes** 
@@ -191,6 +191,8 @@ data stored to the amount necessary for validation
 This also implies that you should keep the documentation about the legal basis 
 used (e.g., consent forms) during that time, so that you can demonstrate GDPR 
 compliance.
+- Specific retention periods may apply additionally to specific types of data. 
+For example, in the Netherlands there are specific <a href="https://english.ccmo.nl/investigators/data-retention-periods-for-medical-research" target="_blank">retention periods for medical data</a>.
 - Personal data that were used for purposes other than answering your 
 research question (e.g. contact information) should have their own retention 
 policy: they should be removed or anonymised after the retention period 
