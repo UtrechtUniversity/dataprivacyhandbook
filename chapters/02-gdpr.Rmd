@@ -461,20 +461,31 @@ collecting, storing, analysing and publishing the data.
 
 
 ### Further processing for research purposes {#further-processing}
-It may happen that you want to process personal data for similar, but other 
-purposes than previously specified (e.g., because you formulated an additional
-research question), or you want to reuse personal data previously collected for
-other purposes in your research. In this case, it may be possible to make use of 
-<a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">article 5(1)(b)</a>,
+
+It may happen that you want to process personal data for other purposes than 
+previously specified (e.g., because you formulated an additional research 
+question), or you want to reuse previously collected personal data in your 
+research. In these cases, it may be possible to make use of 
+<a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">article 5(1)(b)</a>, 
 which states that "further processing for [...] scientific purposes shall [...] 
-not be considered to be incompabitle with the initial purposes". Basically, this 
-means that you can reuse personal data that were previously collected for other 
-purposes for scientific research purposes, but provided that you put in place 
-sufficient safeguards to protect the personal data 
-(<a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>). This 
-is not a legal basis, but can still function as a way to legitimise processing 
-personal data for research purposes. Always discuss with a privacy officer if
-this article can be applied to your project!
+not be considered to be incompatible with the initial purposes". Basically, this 
+means that you can reuse personal data, that were previously collected for other 
+purposes, for scientific research purposes. This is only allowed if you put in 
+place sufficient safeguards to protect the personal data, inform data subjects, 
+and allow them to exercise their rights (<a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>). 
+Further processing is not a legal basis, but can still function as a way to 
+legitimise processing personal data for research purposes.
+
+:::note
+Public interest, legitimate interest, and relying on further processing are ways 
+to meet your *legal* requirements for processing personal data, but not 
+necessarily your *ethical* requirements: you may still need consent if demanded 
+so from an ethical perspective. Before you rely on any of these, you should 
+first assess whether they are indeed suitable with your faculty
+<a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>, 
+and determine whether your research interests outweigh the privacy rights of 
+the data subjects.
+:::
 
 ## Data Subjects' Rights {#data-subject-rights}
 
