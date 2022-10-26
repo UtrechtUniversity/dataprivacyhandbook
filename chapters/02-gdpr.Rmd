@@ -381,16 +381,18 @@ collecting, storing, analysing and publishing the data.
       <summary><b>Public interest</b></summary>
       <p>
         Public interest is sometimes used in research when the research is shown
-        to clearly benefit society or fulfills a public task. In essence, public 
-        interest can be used as a legal basis in research, because conducting 
-        research at the university has been officially recognised in the Higher 
-        Education and Scientific Research Act to be a public task. Public 
-        interest is often used when consent is not a good option. For example, 
-        it may be impossible or impractical to obtain consent when performing 
-        public observations or social media research. Or when participants 
-        actually do not have a free choice, such as in clinical trials when 
-        participants would experience significant disadvantages when not 
-        participating.
+        to clearly benefit the public good or fulfills a public task. In 
+        essence, public interest can be used for research that is conducted by 
+        employees of public institutions, when their research interest has been 
+        recognised by an official authority. For example, conducting research at 
+        Dutch universities has been officially recognised in the 
+        <a href="https://wetten.overheid.nl/BWBR0005682/2022-01-01" target="_blank">Higher Education and Scientific Research Act</a>
+        to be a public task. Public interest is often used when consent is not 
+        a good option. For example, it may be impossible or impractical to 
+        obtain consent when performing public observations or social media 
+        research. Or when participants actually do not have a free choice, such 
+        as in clinical trials when participants would experience significant 
+        disadvantages when not participating.
       </p>
       <p>
         If you want to use public interest as a legal basis, you 
@@ -406,14 +408,20 @@ collecting, storing, analysing and publishing the data.
     <details>
       <summary><b>Legitimate interest of the controller</b></summary>
       <p>
-        You can use this legal basis when processing personal data is necessary 
-        for the legitimate interests of the controller (e.g., Utrecht University). 
-        For example, this can be the case when you need to process contact 
+        Legitimate interest is often used by companies to process personal data 
+        necessary for the functioning of their own company, e.g., processing 
+        user data for fraud prevention, or keeping a registration system to 
+        provide better services. In research, legitimate interest is often used 
+        for processing activities that have no direct research purpose. For 
+        example, this can be the case when you need to collect contact 
         information to approach data subjects to participate, and you can only 
-        obtain their consent after contacting them. Since contacting data subjects 
-        is a prerequisite to perform your research, it can be in the university's 
-        legitimate (research) interest to process their contact information. To 
-        evaluate whether you can use legitimate interest as a legal basis, you 
+        obtain their consent for participating in your research after contacting 
+        them. Since contacting data subjects is a prerequisite to perform your 
+        research, it can be in the university's legitimate (research) interest 
+        to process their contact information.
+      </p>
+      <p>
+        To evaluate whether you can use legitimate interest as a legal basis, you 
         always need to weigh the interests of the controller (e.g., Utrecht 
         University) and the data subjects in a 
         <a href="#legitimate-interest-assessment">Legitimate interest assessment</a>. 
@@ -472,9 +480,12 @@ not be considered to be incompatible with the initial purposes". Basically, this
 means that you can reuse personal data, that were previously collected for other 
 purposes, for scientific research purposes. This is only allowed if you put in 
 place sufficient safeguards to protect the personal data, inform data subjects, 
-and allow them to exercise their rights (<a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>). 
-Further processing is not a legal basis, but can still function as a way to 
-legitimise processing personal data for research purposes.
+and allow them to exercise their rights 
+(<a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>). 
+"Further processing" is not strictly a legal basis. Instead, it functions as a 
+way to legitimise *further* processing of personal data (which was previously 
+collected for a different purpose, using one of the six legal bases) for research 
+purposes.
 
 :::note
 Public interest, legitimate interest, and relying on further processing are ways 
