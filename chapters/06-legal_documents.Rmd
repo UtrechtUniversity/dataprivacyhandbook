@@ -23,56 +23,11 @@ This chapter is a work in progress: sub-chapters are added continuously.
 ::::
 
 ## Privacy notices {#privacy-notices}
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-details {
-  width: 100% /*620px*/;
-}
-
-details > summary { /* Copy from button css */
-  list-style: none;
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #FCD000;
-  border: none;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-  margin-right: 5px;
-}
-
-details > div {
-  border-radius: 0 0 10px 10px;
-  padding: 12px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px grey;
-}
-
-details[open] > summary {
-  background-color: #FFCD00;
-}
-</style>
+<link rel="stylesheet" href="assets/details-button.css">
 </head>
+
 
 **A privacy notice is any information given to data subjects about what is 
 happening with their personal data. In research, a privacy notice is usually 
