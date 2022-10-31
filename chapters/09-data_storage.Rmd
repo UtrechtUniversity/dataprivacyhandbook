@@ -79,15 +79,6 @@ services, enabling them to use the data stored on their platforms for their own
 purposes.
 :::
 
-**If you work at UU, please find a suitable storage medium below**
-```{r embedstoragefinder, echo=FALSE}
-knitr::include_url("https://tools.uu.nl/storagefinder/")
-```
-
-If the Storage Finder does not display correctly, you can also easily 
-<a href="https://tools.uu.nl/storagefinder/" target = "_blank">check it out 
-online</a>.
-
 ## Requirements for a suitable storage medium {#data-storage-requirements}
 
 **Whether a storage medium is suitable for storing personal data depends on 1) who
