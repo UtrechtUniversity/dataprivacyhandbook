@@ -1,10 +1,2 @@
 # Sharing data for reuse {#data-sharing-reuse}
 
-## Publishing Personal Data
-
-## Data vs. Metadata
-
-## Repositories
-
-## Licenses
-
