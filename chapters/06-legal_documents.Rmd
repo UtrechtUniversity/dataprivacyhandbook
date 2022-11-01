@@ -43,7 +43,7 @@ Informing data subjects is always required, for **all [legal bases](#legal-basis
 (so not only when you use informed consent). Being properly informed is a data 
 subject’s right in itself (<a href="https://gdpr-info.eu/art-12-gdpr/" target = "_blank">art. 12</a>): 
 it is necessary so that data subjects can exercise their [other rights](#data-subject-rights)
-(e.g., right to be informed, right to object, etc.). 
+(e.g., right to be forgotten, right to object, etc.). 
 
 You need to inform data subjects **before** you start collecting or otherwise
 processing their personal data (so before the start of your research project). 
@@ -102,7 +102,7 @@ necessary components in your privacy notice, it will **not be GDPR-compliant**
 if you fail to provide the information in an appropriate form, shape and time.
 ::::
 
-The information you provide to data subjects should also be:
+The information you provide to data subjects should be:
 
 - **Clear and understandable**<br>
 A privacy notice is not a legal document, so do not write it like you would 
