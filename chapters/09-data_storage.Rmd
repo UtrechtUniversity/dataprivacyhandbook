@@ -79,52 +79,6 @@ services, enabling them to use the data stored on their platforms for their own
 purposes.
 :::
 
-## Requirements for a suitable storage medium {#data-storage-requirements}
-
-**Whether a storage medium is suitable for storing personal data depends on 1) who
-is controlling the personal data, and 2) the security measures of the storage 
-medium. If you want to use a storage medium not recommended/offered by UU, 
-please consult with 
-<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>, 
-your data steward, or your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>.**
-
-### 1. Who is storing the personal data: arrange an agreement
-
-When you use an external storage provider, the data is not under the (full) 
-control of your employer. In this case, it is required to ensure GDPR compliance 
-of the storage provider using 
-(<a href = "https://gdpr-info.eu/art-46-gdpr/" target = "_blank">art. 46</a>):
-
-- A <a href="#data-processing-agreement">Data Processing Agreement</a> - 
-when storing personal data within the European Economic Area (EEA) or a 
-country with an 
-<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"  target="_blank">adequate level of data protection</a>.
-- <a href = "https://gdpr-info.eu/recitals/no-109/" target = "_blank">Standard 
-contractual clauses</a> (SCCs) - when storing personal data with a 
-supplier outside of the EEA. These make sure the storage medium will use 
-sufficient measures to protect the personal data and enable data subjects to 
-exercise their rights.
-- Explicit consent of data subjects who have been informed on the risks 
-involved - in  the absence of an agreement. Please contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
-if you are considering this option.
-
-You can assume agreements are in place for the storage media recommended by UU. 
-If there is no agreement in place between UU and the storage provider, using 
-this storage provider is **not allowed**, even if they are located within the EEA, 
-have an adequate level of data protection, or have high security standards. The 
-only exception is when data are always end-to-end encrypted, because then the 
-storage provider cannot learn anything from the data.
-
-### 2. Security of the storage medium
-
-The storage medium should employ good security practices, such as regular back-ups 
-in distinct geographical areas (preferably in replication rather than on tape), 
-regular integrity checks, encryption at rest, multi-factor authentication, etc. 
-Most of these aspects will likely be covered in the agreement. Information 
-security can help determine all necessary security requirements. 
-
 ## How should I store personal data? {#data-storage-how}
 
 **Once you have chosen a suitable storage medium, you should act in accordance 
