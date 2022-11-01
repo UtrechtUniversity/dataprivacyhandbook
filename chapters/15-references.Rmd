@@ -1,18 +1,7 @@
-<!--`r if (knitr::is_html_output()) '-->
 # References {#references}
-<!--'`-->
 
 For further reading, we prepared a Zotero library with additional resources, some
-of which are specific to Utrecht University, others more general. Below you can
-download the library (left image) or see the most recent version online (right 
-image).
+of which are specific to Utrecht University, others more general. Click on the 
+image below to see the most recent version of the reference library online.
 
-<a href="../assets/Data_Privacy_UU_library" target = "_blank"><img src="img/folder.svg" 
-      style = "height:100px" alt="Click the image to download the library"></a>
-<a href="https://www.zotero.org/groups/2554340/data_privacy_uu/library" target = "_blank"><img src="img/externallink.svg" style = "height:100px" alt="See the library online"></a>
-
-<!-- This embedding does not render the Zotero library -->
-<!--```{r embedzotero, echo=FALSE}
-knitr::include_url("https://www.zotero.org/groups/2554340/data_privacy_uu/library",
-                   height = "600px")
-```-->
+<a href="https://www.zotero.org/groups/2554340/data_privacy_uu/library" target="_blank"><img src="img/zoterolibrary.png" alt="Screenshot of the Zotero library" height="80%"/></a>
