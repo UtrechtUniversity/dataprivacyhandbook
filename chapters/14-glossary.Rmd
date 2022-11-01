@@ -56,6 +56,24 @@ The glossary consists of frequently used jargon concerning the GDPR and research
     </p>
 </details>
 
+
+#### H
+
+<details>
+  <summary><b>Hashing</b></summary>
+    <p>
+    Hashing is a way of replacing one or multiple variables with a string of 
+    random characters with a fixed length. It can be used to create a “hashed” 
+    pseudonym, or to replace multiple variables with one unique value. It is 
+    usually quite difficult to reverse the hashing process, except if an attacker 
+    has knowledge about the type of information that was masked through hashing.
+    To prevent reversal, cryptographic hashing techniques add a “salt”, i.e., a 
+    random number or string, to the hash (the result is called a “digest”). If 
+    the “salt” is kept confidential or is removed (similar to a keyfile), it is 
+    almost impossible to reverse the hashing process.
+    </p>
+</details>
+
 #### L
 
 <details>
@@ -129,12 +147,5 @@ The glossary consists of frequently used jargon concerning the GDPR and research
       </ul><p>The processing of these categories of data is 
       <b>prohibited</b>, unless one of the exceptions of 
     <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">art. 9</a> applies. 
-    For example, an exception applies when:</p>
-      <ul>
-        <li>the data subject has provided explicit consent to process these data for a specific purpose</li>
-        <li>the data subject has made the data publicly available themselves </li>
-        <li>processing is necessary for scientific research purposes</li>
-      </ul><p>Contact 
-      your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a> 
-      if you wish to process special categories of personal data.</p>
+    For example, an exception applies when:</p><ul><li>the data subject has provided explicit consent to process these data for a specific purpose</li><li>the data subject has made the data publicly available themselves </li><li>processing is necessary for scientific research purposes</li></ul><p>Contact your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a> if you wish to process special categories of personal data.</p>
 </details>
