@@ -23,56 +23,11 @@ This chapter is a work in progress: sub-chapters are added continuously.
 ::::
 
 ## Privacy notices {#privacy-notices}
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-details {
-  width: 100% /*620px*/;
-}
-
-details > summary { /* Copy from button css */
-  list-style: none;
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #FCD000;
-  border: none;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-  margin-right: 5px;
-}
-
-details > div {
-  border-radius: 0 0 10px 10px;
-  padding: 12px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px grey;
-}
-
-details[open] > summary {
-  background-color: #FFCD00;
-}
-</style>
+<link rel="stylesheet" href="assets/details-button.css">
 </head>
+
 
 **A privacy notice is any information given to data subjects about what is 
 happening with their personal data. In research, a privacy notice is usually 
@@ -88,14 +43,19 @@ Informing data subjects is always required, for **all [legal bases](#legal-basis
 (so not only when you use informed consent). Being properly informed is a data 
 subject’s right in itself (<a href="https://gdpr-info.eu/art-12-gdpr/" target = "_blank">art. 12</a>): 
 it is necessary so that data subjects can exercise their [other rights](#data-subject-rights)
-(e.g., right to be informed, right to object, etc.). 
+(e.g., right to be forgotten, right to object, etc.). 
 
-You need to inform data subjects **before** you start processing their personal 
-data (so before the start of your research project). When you use data from 
-another source (<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14</a>), 
-you have to inform your data subjects within a month after obtaining their data. 
-If the data are shared with an external party, this can happen at the latest 
-when first sharing those data with that external party.
+You need to inform data subjects **before** you start collecting or otherwise
+processing their personal data (so before the start of your research project). 
+
+When you use personal data from another source, you have to inform your data 
+subjects within a month after obtaining their data
+(<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14</a>), except
+if this would involve a disproportionate effort, or would seriously impair your
+processing purposes (e.g., if you cannot answer your research question anymore,
+<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14(5)(b)</a>). 
+If you share personal data with an external party, you should inform data 
+subjects at the latest when first sharing those data with that external party.
 
 ### Content and examples of privacy notices
 Below you can find a list of items to include in your information to data 
@@ -113,24 +73,24 @@ target = "_blank" style="text-decoration: none;"><button type="button">Template 
     <th>Alternative</th>
   </tr>
   <tr>
-    <td>“After the project ends, we will delete all of your data, so that you will not be identifiable anymore.”</td>
-    <td>"After the end of the study, we will delete the code linking your data to your name. We will store your de-identified data for 10 years for integrity purposes.”</td>
+    <td>"After the project ends, we will delete all of your data, so that you will not be identifiable anymore."</td>
+    <td>"After the end of the study, we will delete the code linking your data to your name. We will store your de-identified data for 10 years for integrity purposes."</td>
   </tr>
   <tr>
-    <td>“Your data will be fully anonymised before they are shared with others.”</td>
-    <td>“We will remove personal information that could reasonably identify you before we share any files with other researchers."</td>
+    <td>"Your data will be fully anonymised before they are shared with others."</td>
+    <td>"We will remove personal information that could reasonably identify you before we share any files with other researchers."</td>
   </tr>
     <tr>
-    <td>“All data that you will provide will be kept strictly confidential and will not be shared further.”</td>
-    <td>“The main researcher will keep a link that identifies you to your coded information. They will keep this link secure and available only to the selected members of the research team.”</td>
+    <td>"All data that you will provide will be kept strictly confidential and will not be shared further."</td>
+    <td>"The main researcher will keep a link that identifies you to your coded information. They will keep this link secure and available only to the selected members of the research team."</td>
   </tr>
     <tr>
-    <td>“Your data will only be accessible by the research team, and no one else.”</td>
-    <td>“We will only share your de-identified data with other researchers if they agree to treat your data confidentially and only after approval from the original research team."</td>
+    <td>"Your data will only be accessible by the research team, and no one else."</td>
+    <td>"We will only share your de-identified data with other researchers if they agree to treat your data confidentially and only after approval from the original research team."</td>
   </tr>
     <tr>
-    <td>“You can withdraw your consent from this study at any time up until the end of the research project. If you withdraw your consent, we will delete all your data from our dataset immediately.”</td>
-    <td>“You can withdraw your consent from this study at any time, without stating a reason why and without any repercussions. Please inform the researcher about your decision. We will then delete any personal data referring to you that we still have. However, if we somehow processed your data before you withdrew your consent, such processing does not need to be undone.”</td>
+    <td>"You can withdraw your consent from this study at any time up until the end of the research project. If you withdraw your consent, we will delete all your data from our dataset immediately."</td>
+    <td>"You can withdraw your consent from this study at any time, without stating a reason why and without any repercussions. Please inform the researcher about your decision. We will then delete any personal data referring to you that we still have, where this is still possible."</td>
   </tr>
 </table>
 </details>
@@ -142,7 +102,7 @@ necessary components in your privacy notice, it will **not be GDPR-compliant**
 if you fail to provide the information in an appropriate form, shape and time.
 ::::
 
-The information you provide to data subjects should also be:
+The information you provide to data subjects should be:
 
 - **Clear and understandable**<br>
 A privacy notice is not a legal document, so do not write it like you would 

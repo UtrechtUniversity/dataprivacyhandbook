@@ -2,31 +2,7 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-details {
-  width: 100% /*620px*/;
-}
-
-details > summary {
-  padding: 2px 6px;
-  background-color: #FFCD00;
-  padding: 10px;
-  border: none;
-  box-shadow: 3px 3px 4px grey;
-  cursor: pointer;
-}
-
-details > div {
-  border-radius: 0 0 10px 10px;
-  padding: 12px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px grey;
-}
-
-details[open] > summary {
-  background-color: #FFCD00;
-}
-</style>
+<link rel="stylesheet" href="assets/yellow-details.css">
 </head>
 
 This chapter addresses guidelines to take into account when you want to share 

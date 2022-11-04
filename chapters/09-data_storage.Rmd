@@ -79,61 +79,6 @@ services, enabling them to use the data stored on their platforms for their own
 purposes.
 :::
 
-**If you work at UU, please find a suitable storage medium below**
-```{r embedstoragefinder, echo=FALSE}
-knitr::include_url("https://tools.uu.nl/storagefinder/")
-```
-
-If the Storage Finder does not display correctly, you can also easily 
-<a href="https://tools.uu.nl/storagefinder/" target = "_blank">check it out 
-online</a>.
-
-## Requirements for a suitable storage medium {#data-storage-requirements}
-
-**Whether a storage medium is suitable for storing personal data depends on 1) who
-is controlling the personal data, and 2) the security measures of the storage 
-medium. If you want to use a storage medium not recommended/offered by UU, 
-please consult with 
-<a href="https://www.uu.nl/en/research/research-data-management/contact-us" target = "_blank">RDM Support</a>, 
-your data steward, or your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>.**
-
-### 1. Who is storing the personal data: arrange an agreement
-
-When you use an external storage provider, the data is not under the (full) 
-control of your employer. In this case, it is required to ensure GDPR compliance 
-of the storage provider using 
-(<a href = "https://gdpr-info.eu/art-46-gdpr/" target = "_blank">art. 46</a>):
-
-- A <a href="#data-processing-agreement">Data Processing Agreement</a> - 
-when storing personal data within the European Economic Area (EEA) or a 
-country with an 
-<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"  target="_blank">adequate level of data protection</a>.
-- <a href = "https://gdpr-info.eu/recitals/no-109/" target = "_blank">Standard 
-contractual clauses</a> (SCCs) - when storing personal data with a 
-supplier outside of the EEA. These make sure the storage medium will use 
-sufficient measures to protect the personal data and enable data subjects to 
-exercise their rights.
-- Explicit consent of data subjects who have been informed on the risks 
-involved - in  the absence of an agreement. Please contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
-if you are considering this option.
-
-You can assume agreements are in place for the storage media recommended by UU. 
-If there is no agreement in place between UU and the storage provider, using 
-this storage provider is **not allowed**, even if they are located within the EEA, 
-have an adequate level of data protection, or have high security standards. The 
-only exception is when data are always end-to-end encrypted, because then the 
-storage provider cannot learn anything from the data.
-
-### 2. Security of the storage medium
-
-The storage medium should employ good security practices, such as regular back-ups 
-in distinct geographical areas (preferably in replication rather than on tape), 
-regular integrity checks, encryption at rest, multi-factor authentication, etc. 
-Most of these aspects will likely be covered in the agreement. Information 
-security can help determine all necessary security requirements. 
-
 ## How should I store personal data? {#data-storage-how}
 
 **Once you have chosen a suitable storage medium, you should act in accordance 
@@ -176,7 +121,7 @@ long as is necessary for prespecified purposes
 Afterwards, the personal data have to either be fully anonymised or deleted. 
 However, there is an exemption for research data, as described below.**
 
-In research, we often see a division in two types of retention periods:
+In research, we often see a division in different types of retention periods:
 
 - If the personal data underpin a scientific publication, it is usually necessary 
 to archive some personal data for **integrity and validation purposes** 
@@ -191,6 +136,8 @@ data stored to the amount necessary for validation
 This also implies that you should keep the documentation about the legal basis 
 used (e.g., consent forms) during that time, so that you can demonstrate GDPR 
 compliance.
+- Specific retention periods may apply additionally to specific types of data. 
+For example, in the Netherlands there are specific <a href="https://english.ccmo.nl/investigators/data-retention-periods-for-medical-research" target="_blank">retention periods for medical data</a>.
 - Personal data that were used for purposes other than answering your 
 research question (e.g. contact information) should have their own retention 
 policy: they should be removed or anonymised after the retention period 

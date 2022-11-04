@@ -104,10 +104,15 @@ I want to...:
         <details>
             <summary>Plan a GDPR-compliant research project</summary>
             <ul>
-                <li><a href="#privacy-by-design">Assessing your design</a></li>
+                <li><a href="#privacy-by-design">Designing your research project</a></li>
                 <li><a href="#privacy-notices">Informing participants</a></li>
                 <li><a href="#informed-consent-forms">Obtaining consent</a></li>
-                <li><a href="#legal-documents">Collaborating on personal data</a></li>
+                <li><a href="#data-sharing-collaboration">Collaborating on personal data</a></li>
+                <li><a href="#agreements">Setting up agreements</a></li>
+                <li>Planning documents, such as the 
+                    <a href="#privacy-scan">Privacy scan</a>,
+                    <a href="#dpia">Data Protection Impact Assessment</a>, or
+                    <a href="#data-classification">Data classification</a></li>
             </ul>
         </details>
     </li>
@@ -118,7 +123,7 @@ I want to...:
                 <li><a href="#data-storage">Storing personal data</a></li>
                 <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
                 <li><a href="#privacy-enchancing-techniques">Reducing the sensitivity of personal data</a></li>
-                <li><a href="#data-sharing">Sharing personal data during research</a></li>
+                <li><a href="#data-sharing-collaboration">Sharing personal data during research</a></li>
             </ul>
         </details>
     </li>
@@ -127,11 +132,11 @@ I want to...:
             <summary>Share personal data with others</summary>
             <ul>
                 <li><a href="#legal-basis">Sharing data legally</a></li>
-                <li><a href="#data-sharing">Sharing personal data during research</a></li>
+                <li><a href="#data-sharing-collaboration">Sharing personal data during research</a></li>
                 <li><a href="#privacy-enchancing-techniques">Reducing the sensitivity of personal data</a></li>
                 <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
-                <li><a href="#data-publishing">Publishing personal data</a></li>
-                <li><a href="#data-transfer-agreement">Sharing personal data case by case</a></li>
+                <li><a href="#data-sharing-reuse">Sharing personal data for reuse</a></li>
+                <li><a href="#agreements">Sharing personal data case by case</a></li>
             </ul>
         </details>
     </li>
@@ -211,10 +216,11 @@ number of contributors (also to be viewed in our
 <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="_blank">GitHub repository</a>):
 
 Neha  Moopen, Dorien Huijser, Jacques Flores, Wies Cipido, Joris de Graaf, 
-Judith de Haan, Saskia van den Hout, Frans Huigen, Artan Jacquet, Sanne Kleerebezem, 
-Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen, Frans de Liagre Böhl, 
-Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Ron Scholten, 
-Garrett Speed, Robert Steeman, Liliana Vargas Meleza, Martine de Vos, and others.
+Judith de Haan, Saskia van den Hout, Frans Huigen, Artan Jacquet, Rik Janssen,
+Sanne Kleerebezem, Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen, 
+Frans de Liagre Böhl, Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, 
+Ron Scholten, Garrett Speed, Robert Steeman, Liliana Vargas Meleza, Martine de 
+Vos, and others.
 
 Would you like to contribute to this Handbook yourself? Please read our 
 <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">Contributing Guidelines</a>.
