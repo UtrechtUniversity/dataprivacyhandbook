@@ -35,13 +35,13 @@ combined with general information about the research project and often with an
 informed consent form, to satisfy both privacy and ethical concerns. Generally, 
 the aim of a privacy notice is to inform data subjects on how and why their 
 data are being processed. Providing that information is the "cornerstone of 
-data subjects’ rights", as without it, data subjects cannot exercise their other 
+data subjects' rights", as without it, data subjects cannot exercise their other 
 privacy rights.**
 
 ### When to use a privacy notice?
 Informing data subjects is always required, for **all [legal bases](#legal-basis)** 
 (so not only when you use informed consent). Being properly informed is a data 
-subject’s right in itself (<a href="https://gdpr-info.eu/art-12-gdpr/" target = "_blank">art. 12</a>): 
+subject's right in itself (<a href="https://gdpr-info.eu/art-12-gdpr/" target = "_blank">art. 12</a>): 
 it is necessary so that data subjects can exercise their [other rights](#data-subject-rights)
 (e.g., right to be forgotten, right to object, etc.). 
 
@@ -108,7 +108,7 @@ The information you provide to data subjects should be:
 A privacy notice is not a legal document, so do not write it like you would 
 write a legal contract. The information should be understandable for data 
 subjects and it should have a clear and concrete meaning. For example, avoid 
-using words like “may”, “some”, “often” and write active and short sentences.
+using words like "may", "some", "often" and write active and short sentences.
 
 - **Easily accessible**<br>
 Data subjects should be able to find the information easily. For example, publish 
@@ -133,7 +133,254 @@ information, you can test these, for example through user panels, readability
 testing, or by interactions with data subjects themselves (or their 
 representatives).
 
-## Informed consent forms {#informed-consent-forms}
+## Informed consent {#informed-consent-forms}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/yellow-details.css">
+<style>
+details > summary {
+  padding: 1px 4px;
+}
+</style>
+</head>
+
+**Of the 6 possible legal bases to process personal data, informed consent is 
+currently the one most often used in research. With the term consent, we mean 
+the process of data subjects deciding whether or not to agree to specific 
+statements, such as a statement to participate in a research project.**
+
+### Consent step-by-step {#consent-step-by-step}
+
+1. <details open="true"><summary>Determine if consent if the legal basis you need</summary>
+<div><p>Determine if consent is the <a href="#legal-basis">legal basis</a> you need for your
+      research: there are other legal bases besides consent which can sometimes be 
+      more suitable in a research context.</p>
+      <p>In some situations, consent is likely the only way to process data, for 
+      example, if you want to process 
+      <a href="#special-types-personal-data">special categories of personal data</a>, 
+      or if you process personal data from children under 16 years old. In the latter 
+      case, the GDPR requires to obtain additional obtain consent from a legal 
+      representative (e.g., parent), and there are additional requirements when your 
+      research falls under the Dutch 
+      <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0009408&paragraaf=2&artikel=6&z=2022-03-15&g=2022-03-15" target="_blank">Medical Research Involving Human     Subjects Act</a>.</p>
+</div></details>
+2. <details><summary>Consider if you meet all requirements for consent</summary>
+  <div>If you need to use consent as a legal basis, consider if you meet 
+  <a href="#consent-requirements">all requirements listed below</a>. If you do not,
+  consent is not a valid legal basis, and you should consider another one.
+  </div></details>
+3. <details><summary>Determine what you will ask consent for</summary>
+  <div>Determine what specifically you are asking consent for. If you cannot 
+  determine a specific purpose, for instance because your research question is 
+  not yet entirely clear, contact 
+  <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">your privacy officer</a>
+  to consider <a href="#broad-consent">obtaining broad consent</a>.
+  </div></details>
+4. <details><summary>Prepare information for data subjects</summary>
+  <div>Prepare a 
+  <a href="#privacy-notices">privacy notice or information letter</a> 
+  for data subjects to inform them before asking for their consent.
+  </div></details>
+5. <details><summary>Obtain demonstrable consent</summary>
+  <div>Different <a href="#forms-consent">forms of consent</a> are valid. Note 
+  that often a <a href="#to-sign-or-not-to-sign">signature is not required</a>.
+  </div></details>
+6. <details><summary>Keep the consent forms available</summary>
+  <div>Treat the consent declarations as personal data: 
+  <a href="#demonstrate-consent">store them</a> separately and securely from the 
+  research data, and for as long as your research data contain personal data. 
+  </div></details>
+
+:::note
+Note that the term “consent” is used both in the GDPR as well as in an ethical 
+context. As a <a href="#legal-basis">legal basis</a>, data subjects give consent 
+to process their personal data (e.g., "I consent to my data a, b, c be used for 
+purpose x, y, z"). In an ethical context, consent is a 
+<a href="https://edps.europa.eu/sites/default/files/publication/20-01-06_opinion_research_en.pdf#page=20" target="_blank">safeguard</a> 
+to give data subjects more control over their personal data, and makes sure they 
+participate voluntarily in the research project (e.g.,  "I have read the 
+information and agree to participate under the conditions described"). Thus, it 
+can happen that consent is not be the best legal basis to use, but should still 
+be used as an ethical requirement.
+:::
+
+### Requirements for valid consent {#consent-requirements}
+
+Under the GDPR, consent is only valid when it is **all** of the below
+(<a href="https://gdpr-info.eu/art-4-gdpr/" target="_blank">art. 4</a>, 
+<a href="https://gdpr-info.eu/art-7-gdpr/" target="_blank">art. 7</a>, 
+<a href="https://gdpr-info.eu/recitals/no-32/" target="_blank">rec. 32</a>, 
+<a href="https://gdpr-info.eu/recitals/no-42/" target="_blank">rec. 42</a>, 
+<a href="https://gdpr-info.eu/recitals/no-43/" target="_blank">rec. 43</a>; 
+click to expand):
+
+<ul>
+  <li><details><summary>Freely given</summary>
+  <div>Data subjects should have an actual voluntary choice and should not experience 
+  negative consequences if they don’t consent or withdraw their consent. Moreover, 
+  they should not be pressured to provide consent, and so there cannot be a power 
+  imbalance between the controller (e.g., researcher) and data subjects 
+  (<a href="https://gdpr-info.eu/recitals/no-43/" target="_blank">rec. 43</a>).<br><br>
+  Some examples:
+    <ul>
+      <li>Consent is not valid when the researcher is also a teacher and asks their
+      students to participate, who depend on the teacher for a good grade. In this 
+      case, another legal basis such as public interest may be more appropriate.</li>
+      <li>Consent can still be used for children and persons legally incapable to 
+      provide consent when their legal representative(s) provide the consent.</li>
+    </ul>
+  </div></details></li>
+  <li><details><summary>Specific</summary>
+  <div>Data subjects should know as specifically as possible what they are asked to
+  consent to. Separate processing purposes therefore require explicitly separate 
+  consent (<a href="https://gdpr-info.eu/recitals/no-32/" target="_blank">rec. 32</a>, 
+  <a href="https://gdpr-info.eu/recitals/no-43/" target="_blank">rec. 43</a>), and 
+  accompanying specific information that will allow the data subjects to decide 
+  if they consent or not. If consents for multiple purposes are necessary for your 
+  research, you can combine those.<br><br>
+  Some examples:
+    <ul>
+      <li>Combined consent may be possible to collect, store, analyse, and share 
+     personal data with your collaborators – all actions are needed to answer your 
+     research question.</li>
+     <li>Separate consent is needed for conducting a survey vs. for conducting a 
+     subsequent interview, if participation in that interview is not required for 
+     your research project.</li>
+     <li>Separate consent is needed for the current research project vs. for contacting 
+     data subjects for future research projects.</li>
+    </ul>
+  </div></details></li>
+  <li><details><summary>Informed</summary>
+  <div>Data subjects need to be clearly and accessibly informed about which personal 
+  data are processed and why, and about their rights (see 
+  <a href="#privacy-notices">Privacy notices</a>). Data subjects should be 
+  able to access this information easily (also after they have provided 
+  consent).</div></details>
+  </li>
+  <li><details><summary>Unambiguous and affirmative</summary>
+  <div>It should be clear what data subjects are providing consent for, using 
+  a clear, affirmative statement. Importantly, "silence, pre-ticked boxes or 
+  inactivity" do not constitute valid consent 
+  (<a href="https://gdpr-info.eu/recitals/no-32/" target="_blank">rec. 32</a>): 
+  consent should be active.
+  </div></details>
+  </li>
+</ul>
+
+### What forms of consent are valid? {#forms-consent}
+
+The way you obtain consent may differ per research project and can depend on 
+how you interact with your data subjects. The only requirement is that it should 
+be demonstrable. Some examples:
+
+- Ticking a box (**not** pre-ticked!)
+- Writing or replying to an email (“I agree to be interviewed”)
+- Filling in an electronic form
+- Audio- or video-recorded consent (separate it from the research data!)
+- Signing a paper document (not usually necessary)
+
+#### To sign or not to sign?
+
+Signatures in consent forms are rarely needed. In fact, if you are only 
+processing *pseudonymised* research data, you will only collect unnecessary 
+personal data by obtaining a signature 
+(<a href="https://gdpr-info.eu/art-11-gdpr/" target="_blank">art. 11</a>), and a 
+checkbox should be sufficient. In order to link the consent form with the data 
+subject, you should include the pseudonym on the consent form (the identifier 
+you will use for the participant, e.g., “part-001”). Inform your participants 
+of this pseudonym; they can use it to exercise their rights under the GDPR, 
+such as for withdrawing their consent. 
+
+Only when the identity of the data subjects will be used in the process (e.g., 
+clinical trials), a signature may make sense or be required. For example, if 
+your research is <a href="https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not" target = "_blank">subject</a> 
+to the Dutch Medical Research Involving Human Subjects Act (WMO), 
+<a href="https://english.ccmo.nl/human-subjects/informed-consent" target="_blank">different requirements apply</a>, 
+e.g., consent needs to be provided in writing using a signature and date.
+
+### Demonstrating (valid) consent {#demonstrate-consent}
+
+As long as you process personal data, you should be able to demonstrate that the 
+data subjects consented to that processing 
+(<a href="https://gdpr-info.eu/recitals/no-42/" target="_blank">rec. 42</a>). 
+So as long as you analyse, use, store, archive, etc. the personal data, the 
+proof of consent needs to be retained. It is preferable to store the proofs 
+separately from the research data. If you collected consent on paper, it is 
+best practice to scan the consent forms and securely delete the paper version 
+after having made sure the scanning went well. Only after there is no personal 
+data anymore (e.g., after fully anonymising the dataset), you can remove the 
+proof of consent. 
+
+### Broad consent in research {#broad-consent}
+
+In research, it can sometimes be difficult to formulate very specific research 
+questions in advance. In this case, you may be able to formulate the research 
+purposes on a more general level and obtain consent for these more general 
+purposes 
+(<a href="https://edps.europa.eu/sites/default/files/publication/20-01-06_opinion_research_en.pdf" target="_blank">EDPS, 2020</a>; 
+<a href="https://www.datenschutzkonferenz-online.de/media/dskb/20190405_auslegung_bestimmte_bereiche_wiss_forschung.pdf" target="_blank">Deutsche Datenschutzkonferenz, 2019</a>). 
+However, you can do this only as long as:
+
+- data subjects can give consent to only part of the research and easily 
+withdraw consent 
+(<a href="https://gdpr-info.eu/recitals/no-33/" target="_blank">rec. 33</a>).
+- data subjects are kept informed as specifically as possible about what will 
+happen to their personal data. As soon as you know more, you should also inform 
+data subjects in more detail.
+- you use additional protection measures, for example:
+  - obtain ethical approval for using the data for new research questions.
+  - offer a consent withdrawal possibility before using the data for new research 
+ questions. This is especially relevant when it is still possible to reliably 
+ identify data subjects in the dataset.
+  - make sure the data are not transferred to countries outside of the EEA, 
+ unless one of the derogations from GDPR 
+ <a href="https://gdpr-info.eu/chapter-5/" target="_blank">Chapter V</a> 
+ applies (e.g., adequacy decision, standard contractual clauses, explicit 
+ consent for transfer).
+  - enforce specific requirements for access the data, e.g., "research in general" 
+ is not a sufficiently specific purpose for reuse of the personal data.
+- you document your considerations and ask for help from a 
+<a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>.
+
+### Examples and templates
+
+Note that all examples below assume that they are preceded by 
+<a href="#privacy-notices">sufficiently specified information</a>.
+
+<a href="https://survey.uu.nl/jfe/form/SV_8qpuudgm8Auktjn" target="_blank" 
+style="text-decoration: none;"><button type="button">Template in Qualtrics</button></a>
+<a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/5.-Protect/Informed-consent" 
+target="_blank" style="text-decoration: none;"><button type="button">Examples CESSDA</button></a> 
+
+<details><summary style="list-style: none; align-items: center; background-clip: padding-box; background-color: #FCD000; border: none; border-radius: .25rem; box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0; box-sizing: border-box; color: white; cursor: pointer; display: inline-flex; font-size: 16px; font-weight: 600; justify-content: center; line-height: 1.25; margin: 0; min-height: 3rem; padding: calc(.875rem - 1px) calc(1.5rem - 1px); position: relative; text-decoration: none;   transition: all 250ms; user-select: none; -webkit-user-select: none; touch-action: manipulation; vertical-align: baseline; width: auto; margin-right:5px;"><b>Example sentences</b></summary>
+<div style="border-radius: 0 0 10px 10px; padding: 12px 6px; margin: 0; box-shadow: 3px 3px 4px grey;">Good example sentences:
+<ul>
+  <li>"I consent to the collection and use of my personal data to answer the 
+  research question described in the information letter."</li>
+  <li>"I consent to linking the new research data to data previously collected 
+  about me in this research project."</li>
+  <li>"I agree that research data gathered for the study may be published or 
+  made available provided my name or other identifying information is not used."</li>
+  <li>"I understand that the research data, without any personal information 
+  that could identify me (not linked to me) may be shared with other researchers."</li>
+</ul>
+
+Bad example sentences:
+<ul>
+  <li>"Any information I give will be used for this research project only and 
+  will not be used for any other purpose": this restricts all future uses of 
+  the data, including sharing the data with your collaborators, performing 
+  analyses for new research questions, and sharing the data for reuse. It's 
+  preferred to tell data subjects how their data can be safely used in 
+  different ways.</li>
+  <li>"I do not give consent to share my data": this sentence is ambiguous and 
+  may confuse data subjects.</li>
+  <li>"I acknowledge that the personal data collected by the researcher belongs 
+  to the university and that I have no rights in the research performed on it": 
+  it is not allowed to deny data subjects their data subjects' rights.</li>
+</ul>
+</div>
+</details>
 
 ## Privacy scan {#privacy-scan}
 

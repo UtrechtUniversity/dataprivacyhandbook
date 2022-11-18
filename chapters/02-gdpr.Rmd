@@ -341,7 +341,16 @@ you process personal data in a compliant manner. Additionally, you should also
 have some knowledge of data protection so that you can implement the right 
 measures into your research project.
 
-## When can I work with personal data? {#legal-basis}
+## Legal bases for working with personal data {#legal-basis}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/yellow-details.css">
+<style>
+details > summary {
+  padding: 1px 4px;
+}
+</style>
+</head>
 
 You can only process personal data if you have a **legal basis** to do so, which 
 should be registered, among other information, in the 
@@ -377,7 +386,7 @@ collecting, storing, analysing and publishing the data.
     </details>
   </li>
     <li>
-    <details open="true">
+    <details>
       <summary><b>Public interest</b></summary>
       <p>
         Public interest is sometimes used in research when the research is shown
@@ -506,7 +515,7 @@ and how you can apply them in your research:
 
 <ol>
   <li>
-    <details>
+    <details open="true">
       <summary><b>Right to be informed</b></summary>
       Data subjects need to be clearly informed about what you are doing with their 
       personal data (a.o. <a href="https://gdpr-info.eu/art-12-gdpr/" target="_blank">art. 12</a>). 

@@ -39,7 +39,7 @@ technology (<a href = "https://gdpr-info.eu/recitals/no-26/" target = "_blank">r
 Data can be identifiable when:
 
 - They contain **directly identifying information**.<br>
-<details><summary><i>Examples</i></summary>
+<details><summary><i>Examples (click to expand)</i></summary>
   name, image, video recording, audio recording, patient number, IP address, 
   email address, phone number, location data, social media data
   <br><br>
