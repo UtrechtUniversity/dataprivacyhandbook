@@ -2,6 +2,7 @@
 /* Copy from current data sharing chapter */
 details {
   width: 100% /*620px*/;
+  padding: 6px;
 }
 
 details > summary {
