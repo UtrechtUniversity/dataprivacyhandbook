@@ -77,7 +77,7 @@
 
 \title{Data Privacy Handbook}
 \author{Utrecht University}
-\date{18 november 2022}
+\date{22 november 2022}
 
 \begin{document}
 \maketitle
@@ -96,7 +96,7 @@
 
 \includegraphics{img/cover-image-dph.png}
 
-\emph{Utrecht University, 18 November 2022}
+\emph{Utrecht University, 22 November 2022}
 
 The Data Privacy Handbook is a guide on handling personal data in scientific
 research, in line with European data protection and privacy regulations. It
@@ -2186,6 +2186,51 @@ with encryption.
 \hypertarget{part-use-cases}{%
 \chapter{(PART*) Use Cases}\label{part-use-cases}}
 
+\hypertarget{pet-survey}{%
+\chapter{Data minimisation in a survey}\label{pet-survey}}
+
+For a course, a teacher at the faculty of Veterinary Medicine collected data on
+the health of pets and the pets' owners. The initial purpose of the survey was
+to create simply datasets for students to learn about statistics. However,
+besides for the course, the teacher also wanted to use the collected data for
+research purposes and share the data with others. In order to do so, the teacher
+created a new version of the survey that asked for less identifiable information
+and could be more easily anonymised. Additionally, the new version of the survey
+informed participants about the legal basis used to process their personal data.
+
+Here, you can find the survey before and after data minimisation:
+
+Before minimisation
+After minimisation
+
+Note that the new version of the survey:
+
+\begin{itemize}
+\tightlist
+\item
+  minimises the amount of personal data collected:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Student number and pet names are not asked in the new version of the survey.
+  \item
+    Instead of Age, the new version asks the Age category of the owner/caretaker.
+  \item
+    The survey includes questions on Weight and Height. For data publication,
+    they are used to calculate the Body Mass Index (BMI) and deleted after this
+    calculation.
+  \end{itemize}
+\item
+  contains information about the legal basis used to be able to use (legitimate
+  interest) and publish (consent) the data for purposes other than education.
+\end{itemize}
+
+\hypertarget{youth-pseudonymisation}{%
+\chapter{Data pseudonymisation}\label{youth-pseudonymisation}}
+
+Coming soon!
+
 \hypertarget{open-science-questionnaire}{%
 \chapter{Publishing metadata}\label{open-science-questionnaire}}
 
@@ -2232,47 +2277,78 @@ Note that in the metadata of all these publications, cross-references to the
 other publications are included to allow for maximum findability of the
 project's outputs.
 
-\hypertarget{youth-pseudonymisation}{%
-\chapter{Data pseudonymisation}\label{youth-pseudonymisation}}
+\hypertarget{reuse-education-data}{%
+\chapter{Reusing education data for research}\label{reuse-education-data}}
 
-\hypertarget{pet-survey}{%
-\chapter{Data minimisation in a survey}\label{pet-survey}}
-
-For a course, a teacher at the faculty of Veterinary Medicine collected data on
-the health of pets and the pets' owners. The initial purpose of the survey was
-to create simply datasets for students to learn about statistics. However,
-besides for the course, the teacher also wanted to use the collected data for
-research purposes and share the data with others. In order to do so, the teacher
-created a new version of the survey that asked for less identifiable information
-and could be more easily anonymised. Additionally, the new version of the survey
-informed participants about the legal basis used to process their personal data.
-
-Here, you can find the survey before and after data minimisation:
-
-Before minimisation
-After minimisation
-
-Note that the new version of the survey:
+A research group at the Science faculty wanted to investigate the effects of the
+Covid-19 pandemic on students' motivation and study success in a specific course.
+To do so, they wanted to analyse:
 
 \begin{itemize}
 \tightlist
 \item
-  minimises the amount of personal data collected:
+  Students' evaluations of the course from both before and during the pandemic.
+\item
+  Students' test and final grades in the course from both before and during the pandemic.
+\end{itemize}
+
+The primary researchers already had access to the data for their educational
+activities, and so they wanted to use the data for research purposes. They went
+to their faculty privacy officer to find out how they could reuse these data in
+a responsible way.
+
+The following privacy issues are relevant in this use case:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The raw data were identifiable}
+  The student grades were linked to names, and both the grades and the evaluations
+  were linked to student IDs. Moreover, the evaluations could potentially contain
+  names of teachers and other personal information, as they consisted of partly
+  open-ended questions. To decrease identifiability, the principal investigator and
+  a second examiner, who already had access to the students' data, first removed or
+  replaced all names with pseudonyms (both names of student and teachers), and went
+  through the open-ended questions to remove potentially directly identifiable
+  information. Only after deidentification were the data shared with research
+  assistants who performed the main data and content analyses.
+\item
+  \textbf{Data subjects' rights}
+  Most students had already finished the course, and were not informed about the
+  use of their evaluations and grades for this research project. The researchers
+  argued that the majority of the students could not be traced anymore to provide
+  this information or to enable them to exercise their data subjects' rights
+  (art. 14(5)(b)).
+  Moreover, in case a student did want to exercise their rights, it would prove
+  difficult to retrieve the correct data, as the data were deidentified as soon as
+  possible.
+\item
+  \textbf{Legal basis}
+  Students did not provide explicit consent to process their grades and evaluations
+  for this research project. Moreover, if they had provided consent, it could be
+  argued that the consent was not freely given, as the primary researchers were
+  also involved as teachers, and therefore there was a hierarchical relationship
+  between the students and the teachers. For these reasons, consent was not a
+  suitable legal basis in this case. Instead, the researchers relied on:
 
   \begin{itemize}
   \tightlist
   \item
-    Student number and pet names are not asked in the new version of the survey.
+    \textbf{Public interest}: processing students' data for the course itself is a
+    public task, namely that of providing education. It was the legal basis for
+    the initial data collection.
   \item
-    Instead of Age, the new version asks the Age category of the owner/caretaker.
-  \item
-    The survey includes questions on Weight and Height. For data publication,
-    they are used to calculate the Body Mass Index (BMI) and deleted after this
-    calculation.
+    \textbf{Further processing for scientific research purposes}: processing data to
+    answer the research question can be considered as secondary use of the
+    students' personal data. The GDPR does not consider secondary use of personal
+    data for scientific research purposes incompatible with the original purpose
+    (i.e., the original purpose being to provide education and improving the
+    course, art. 5(1)(b)).
+    Thus, it was not necessary to rely on a new legal basis for this research
+    project, provided that the data were protected sufficiently: The researchers
+    made sure that the data were well-protected (i.e., minimised, pseudonymised,
+    and access controlled, art. 89).
   \end{itemize}
-\item
-  contains information about the legal basis used to be able to use (legitimate
-  interest) and publish (consent) the data for purposes other than education.
 \end{itemize}
 
 \hypertarget{part-resources}{%
