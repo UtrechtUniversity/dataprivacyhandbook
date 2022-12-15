@@ -416,7 +416,7 @@ with someone who wants to use your data for their own purposes, or when you use
 software that processes personal data for their own purposes. Finally, you need 
 a joint controllers agreement when you collaborate with an external institution or
 with a software provider who has an overlapping processing purpose, such as a 
-shared research question." height="80%"/>
+shared research question." height="100%"/>
 
 ### How to set up an agreement? {#set-up-agreements}
 
@@ -426,7 +426,6 @@ In order to set up an agreement, you should always get in touch with your
 to get the ball rolling!
 
 :::warning
-Take note:
 - Any agreement should be signed by someone who is authorised/mandated to do so. 
 Usually this is a research director or faculty dean, but rarely you yourself. 
 The RSO can tell you who in your case is mandated to sign the agreement.
@@ -548,9 +547,9 @@ if you have questions about them.
 
 <!--TODO: add buttons -->
 
-:::info
+::::note
 There are also SCCs for transfers to processors within the EEA 
 (<a href="https://gdpr-info.eu/art-28-gdpr/" target="_blank">art. 28(7)</a>), 
 which can be included in a 
 <a href="#data-processing-agreement">Data Processing Agreement</a>.
-:::
+::::
