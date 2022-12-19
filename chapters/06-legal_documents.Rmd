@@ -407,7 +407,7 @@ of agreement in research. Firstly, you do not need an agreement if you are
 collaborating with someone within your own institution, or if you use software of
 which the use is already covered by an existing agreement. Secondly, you need a 
 non-disclosure agreement if you collaborate with someone outside of your 
-institution who processes data outside of your institutional hardware. Thirdly,
+institution who processes data within your institutional hardware. Thirdly,
 you need a data processing agreement when you collaborate with someone who does
 not have their own processing purposes and is thus a processor. You also need a
 data processing agreement when you use software that processes personal data on
@@ -417,6 +417,14 @@ software that processes personal data for their own purposes. Finally, you need
 a joint controllers agreement when you collaborate with an external institution or
 with a software provider who has an overlapping processing purpose, such as a 
 shared research question." height="100%"/>
+
+Quick links to:
+<a href="#nda" style="text-decoration: none;"><button type="button">NDA</button></a>
+<a href="#data-processing-agreement" style="text-decoration: none;"><button type="button">DPA</button></a>
+<a href="#data-transfer-agreement" style="text-decoration: none;"><button type="button">DTA</button></a>
+<a href="#joint-controller-agreement" style="text-decoration: none;"><button type="button">Joint controllers agreement</button></a>
+<a href="#user-agreement" style="text-decoration: none;"><button type="button">DUA</button></a>
+<a href="#scc" style="text-decoration: none;"><button type="button">SCCs</button></a>
 
 ### How to set up an agreement? {#set-up-agreements}
 
@@ -446,7 +454,8 @@ necessary to use an NDA, because students are not (always) bound to
 confidentiality through a contract with the university, whereas the researchers 
 are. 
 
-<!--TODO: add template Jacqueline as button-->
+<a href="assets/Model_Confidentiality_Agreement_2021_en.odt" target = "_blank" style="text-decoration: none;"><button type="button">Model NDA Utrecht University (two-sided)</button></a>
+<a href="assets/One-sided_confidentiality_agreement_Dutch.odt" target = "_blank" style="text-decoration: none;"><button type="button">Example NDA (one-sided)</button></a>
 
 ### Data processing agreement {#data-processing-agreement}
 
@@ -468,7 +477,8 @@ such tools, there is already a processing agreement in place at the UU-level,
 and so they are already safe to use, see the 
 <a href="https://tools.uu.nl/" target="_blank">Tooladvisor</a>.
 
-<!--TODO: add buttons -->
+<a href="https://intranet.uu.nl/en/knowledgebase/data-processing-agreements" target = "_blank" style="text-decoration: none;"><button type="button">Utrecht University template (UU only)</button></a>
+<a href="https://www.surf.nl/files/2019-04/SURF-Model-Verwerkersovereenkomst-3.0.pdf" target = "_blank" style="text-decoration: none;"><button type="button">SURF template</button></a>
 
 ### Data Transfer Agreement {#data-transfer-agreement}
 
@@ -495,7 +505,8 @@ answering your research question). Note that you likely already have a
 <a href="#data-processing-agreement">Data Processing Agreement</a> with the 
 software provider, and thus a clause in that DPA can also suffice in such cases.
 
-<!--TODO: add buttons -->
+<a href="https://elsi.health-ri.nl/sites/elsi/files/2020-07/20.30815%20OenO%20Template%20-%20Data%20Sharing%20Agreement.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Health-RI template</button></a>
+<a href="https://www.uu.nl/sites/default/files/data_transfer_agreement_youth_template.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Example Utrecht University</button></a>
 
 ### Joint controllers agreement {#joint-controller-agreement}
 
@@ -511,10 +522,12 @@ often part of the consortium agreement, in which also topics other than the
 processing of personal data are formalised (e.g., intellectual property rights, 
 how data are shared, etc.).
 
-<!--TODO: add buttons -->
+<a href="https://www.era-learn.eu/documents/examples_jca/view" target = "_blank" style="text-decoration: none;"><button type="button">Examples</button></a>
+<a href="https://surfdrive.surf.nl/files/index.php/apps/richdocuments/public?fileId=4806036408&shareToken=9cWMy7XCvblsspi" target = "_blank" style="text-decoration: none;"><button type="button">Erasmus University Rotterdam template</button></a>
+<a href="https://www.surf.nl/files/2019-01/model-gezamenlijk-verantwoordelijkenovk-1.0.pdf" target = "_blank" style="text-decoration: none;"><button type="button">SURF template</button></a>
 
+<!-- This text on the DUA may be clarified -->
 ### Data Use Agreement {#user-agreement}
-<!-- Leave empty for now --><!--
 A data use agreement (DUA), or user agreement, is basically a custom license for 
 your dataset. It specifies the terms and conditions under which the receiver of 
 the data can (re)use the data and is therefore in many ways similar to a 
@@ -525,8 +538,8 @@ receiver must comply with the GDPR and cannot try to reidentify data subjects.
 DUAs are often used in data repositories (e.g., custom terms of use in 
 DataverseNL) or as part of a Data Transfer Agreement, and often (but not always) 
 when an open license is not suitable (e.g., with personal data).
--->
-<!--TODO: add buttons -->
+
+<a href="https://data.donders.ru.nl/doc/dua/RU-RA-DUA-1.0.html?8" target = "_blank" style="text-decoration: none;"><button type="button">Example Donders Institute</button></a>
 
 ### Standard Contractual Clauses for international transfers {#scc}
 
@@ -545,11 +558,12 @@ appropriate measure. Please contact your
 <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>
 if you have questions about them.
 
-<!--TODO: add buttons -->
+<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc/standard-contractual-clauses-international-transfers_en" target = "_blank" style="text-decoration: none;"><button type="button">SCCs for international transfers</button></a>
 
 ::::note
-There are also SCCs for transfers to processors within the EEA 
-(<a href="https://gdpr-info.eu/art-28-gdpr/" target="_blank">art. 28(7)</a>), 
-which can be included in a 
-<a href="#data-processing-agreement">Data Processing Agreement</a>.
+There are also SCCs for transfers to processors *within* the EEA 
+(<a href="https://gdpr-info.eu/art-28-gdpr/" target="_blank">art. 28(7)</a>). 
+These can be included in a 
+<a href="#data-processing-agreement">Data Processing Agreement</a>. Because they
+are standardised clauses, including these can make it easier to finalise a DPA.
 ::::
