@@ -156,10 +156,12 @@ target = "_blank">privacy officer</a>.
 ### Deleting personal data
 
 If you do not need personal data anymore, you must delete it, except when the data
-should be archived for validation purposes. Data deletion should be done in a 
-reliable manner, for example to ensure that there are no visible or hidden copies 
-being left behind on any device. The <a href = "https://tools.uu.nl/storagefinder/" 
-target = "_blank">Storage Finder</a> will soon include information on how to do 
-this for each UU-approved storage medium. Additionally, you can read more on 
-how to safely delete data in the RDM guide "<a href = "https://www.uu.nl/en/research/research-data-management/guides/storing-and-preserving-data" 
-target = "_blank">Storing and preserving data</a>".
+should be archived for validation purposes. When deleting data, it is important 
+to make sure that there are no visible or hidden copies being left behind and 
+that files cannot be recovered. The <a href = "https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a> 
+will soon include information on how to fully delete data on the UU-approved 
+storage media. For your own file system, you can use software like 
+<a href="https://www.bleachbit.org/" target="_blank">BleachBit</a>, 
+<a href="https://www.jetico.com/data-wiping/wipe-files-bcwipe" target="_blank">BCWipe</a>,
+<a href="https://www.2brightsparks.com/onclick/help/welcomedeleteonclick.htm" target="_blank">DeleteOnClick</a>, 
+and <a href="https://eraser.heidi.ie/" target="_blank">Eraser</a> to delete data.

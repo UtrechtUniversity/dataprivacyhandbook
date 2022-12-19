@@ -39,7 +39,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       fig.align = "center")
 Sys.setlocale("LC_TIME", "English")
 ```
-*Utrecht University, `r format(Sys.time(), "%d %B %Y")`*
+*Last updated: `r format(Sys.time(), "%d %B %Y")`*
 <br><br>  
 
 The Data Privacy Handbook is a guide on handling personal data in scientific 
@@ -216,9 +216,9 @@ number of contributors (also to be viewed in our
 <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="_blank">GitHub repository</a>):
 
 Neha  Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Wies Cipido, 
-Ruud Dielen, Joris de Graaf, Judith de Haan, Saskia van den Hout, Frans Huigen, 
+Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan, Saskia van den Hout, Frans Huigen, 
 Artan Jacquet, Rik Janssen, Sanne Kleerebezem, Annemiek van der Kuil, 
-Danny de Koning-van Nieuwamerongen, Frans de Liagre Böhl, Francisco Romero 
+Danny de Koning-van Nieuwamerongen, Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Francisco Romero 
 Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, Ron Scholten, 
 Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong, Liliana Vargas Meleza, 
 Martine de Vos, and others.
