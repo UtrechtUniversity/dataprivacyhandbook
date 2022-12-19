@@ -39,7 +39,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       fig.align = "center")
 Sys.setlocale("LC_TIME", "English")
 ```
-*Utrecht University, `r format(Sys.time(), "%d %B %Y")`*
+*Last updated: `r format(Sys.time(), "%d %B %Y")`*
 <br><br>  
 
 The Data Privacy Handbook is a guide on handling personal data in scientific 
