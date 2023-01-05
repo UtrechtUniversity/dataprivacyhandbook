@@ -71,13 +71,13 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Data Privacy Handbook},
-  pdfauthor={Utrecht University},
+  pdfauthor={Utrecht University \textbar{} Last updated: 2023-01-05},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Data Privacy Handbook}
-\author{Utrecht University}
-\date{19 december 2022}
+\author{Utrecht University \textbar{} Last updated: 2023-01-05}
+\date{05 januari 2023}
 
 \begin{document}
 \maketitle
@@ -96,7 +96,7 @@
 
 \includegraphics{img/cover-image-dph.png}
 
-\emph{Last updated: 19 December 2022}
+\emph{Last updated: 05 January 2023}
 
 The Data Privacy Handbook is a guide on handling personal data in scientific
 research, in line with European data protection and privacy regulations. It
@@ -477,13 +477,20 @@ infringement. On a practical level, however, researchers (e.g., Principal
 Investigators) often determine why and how data are processed, and are thus
 fulfilling the role of controller themselves.
 
+Note that it is possible to be a controller without having access to personal
+data, for example if you assign an external company to execute research for
+which you determined which data they should collect, among which data subjects,
+how, and for what purpose.
+
 Processor
 
 A natural or legal entity that processes personal data on behalf of the
 controller. For example, when using a cloud transcription service, you often
 need to send personal data (e.g., an audio recording) to the transcription
 service for the purpose of your research, which is then fulfilling the role
-of processor. When using such a third party, you must have a
+of processor. Other examples of processors are mailhouses used to send emails
+to data subjects, or Trusted Third Parties who hold the keyfile to link
+pseudonyms to personal data. When using such a third party, you must have a
 data processing agreement in place.
 
 Legal basis
@@ -813,15 +820,18 @@ is unlawful or no longer needed.
 Right to data portability
 
 Data subjects have the right to have their personal data transferred to
-another party (art. 20).
+another party in a ``structured, commonly used and machine-readable format''
+(art. 20).
 
 Right to object
 
 Data subjects have the right to object to what you are doing with their
 personal data. This right applies when the processing is based on legitimate
 or public interest (art. 21).
-In case of objection, you have to stop your processing activities, unless
-you can demonstrate grounds for overriding the data subject's rights.
+In case of objection, you have to stop your processing activities and thus
+delete any data you have from the particular data subject, unless you can
+demonstrate concrete grounds for overriding the data subject's rights
+(e.g., excluding the data subject would substantially bias your results).
 
 \hypertarget{how-can-data-subjects-exercise-their-rights}{%
 \subsubsection{How can data subjects exercise their rights?}\label{how-can-data-subjects-exercise-their-rights}}
@@ -961,13 +971,13 @@ Data can be identifiable when:
 
   Inferring a medical condition based on registered medications.
 
-  Guessing that someone lives in a certain neighborhood based on where they go to school.
+  Guessing that someone lives in a certain neighbourhood based on where they go to school.
 \item
   It is possible to \textbf{link records} relating to an individual. This can happen
   when combining multiple variables within your dataset (e.g., demographic
   information, indirect identifiers). However, it can also happen when combining
   your dataset with other datasets (the ``Mosaic effect''). In that case, your data
-  still contain personal data, even if the data in your dataset are not
+  still contain personal data, even if the data in your own dataset are not
   identifiable by themselves.
 
   Examples
@@ -978,12 +988,18 @@ Data can be identifiable when:
 
   In the year 2000, 87\% of the United States population
   was found to be identifiable using a combination of their ZIP code, gender
-  and date of birth.
+  and date of birth. You can see for yourself on
+  this website.
 
   An agricultural company's Uniek Bedrijfsnummer (UBN) can be used to
   search for the address of the company in the
   I\&R mobile app.
   Often, this address is also the owner's home address.
+
+  Geographical data tracking individuals are particularly sensitive
+  because of the multiplicity of data points.
+  This video
+  nicely explains why.
 \item
   De-identification is still \textbf{reversible}. This often happens when data are
   pseudonymised, but there is still a way to link the pseudonymised data with
@@ -1039,14 +1055,14 @@ information that reveals:
 
 It is in principle \textbf{prohibited} to process these types of personal data,
 unless an exception applies
-(art.9). For
-example, it is allowed to process these if:
+(art.9).
+For example, it is allowed to process these if:
 
 \begin{itemize}
 \tightlist
 \item
   Data subjects have provided explicit consent to process these data for a
-  specific purpose
+  specific purpose.
 \item
   Data subjects have made the data publicly available themselves
 \item
@@ -1059,6 +1075,11 @@ personal data warrant additional security measures to make sure they are
 protected. Always contact your
 privacy officer
 if you intend on processing these types of data.
+
+The
+Dutch Code of Conduct for Health Research
+(p.68) specifies a number of exceptions for health researchers in which explicit
+consent for processing special categories of personal data may not be necessary.
 
 \hypertarget{data-that-are-otherwise-sensitive}{%
 \subsection{Data that are otherwise sensitive}\label{data-that-are-otherwise-sensitive}}
@@ -1149,15 +1170,25 @@ Limit as much as possible the processing of personal data, for example by:
 \item
   Collecting as little data as possible to reach your research purpose.
 \item
+  Collecting only personal data from the amount of individuals necessary.
+\item
   Preferably not using tools that automatically collect unnecessary personal
   data. If possible, prevent tools you do use from doing so (Privacy by Default).
   For example, the survey tool Qualtrics can automatically register location data,
   which can be turned off by using the
-  ``Anonymize Responses'' option.
+  ``Anonymize Responses''
+  option.
 \item
   Removing personal data when you no longer need them. Remove them from
   repositories, data collection tools, sent emails, back-ups, etc. (see also the
-  Storage chapter).
+  Storage chapter). Use directly identifying
+  information only if you legitimately need them, for example to keep in touch
+  with data subjects or to answer your research question.
+\item
+  Pseudonymising or anonymising
+  personal data as early as possible.
+\item
+  Use portable storage media only temporarily.
 \end{itemize}
 
 \hypertarget{separate}{%
@@ -1169,12 +1200,12 @@ for example by:
 \begin{itemize}
 \tightlist
 \item
-  Pseudonymisation: Store directly
-  identifying personal data (e.g., contact information) separately from the
-  research data. Use identification keys to link both datasets, and store these
-  keys also separately from the research data.
+  Storing directly identifying personal data (e.g., contact information)
+  separately from the research data. Use identification keys to link both datasets,
+  and store these keys also separately from the research data.
 \item
-  Using different databases to separate datasets.
+  Separating access to different types of personal data. For example, separate
+  who has access to contact information vs.~to the research data.
 \item
   Applying secure computing techniques, where
   the data remain at a central location and do not have to be moved for the analysis.
@@ -1189,7 +1220,8 @@ are processed, for example by:
 \begin{itemize}
 \tightlist
 \item
-  Anonymising or pseudonymising the data.
+  Anonymising or pseudonymising
+  the data.
 \item
   Adding noise to the data, e.g., voice alteration in audio data.
 \item
@@ -1210,10 +1242,13 @@ do not become public or known. You can for example do so using a combination of:
 \tightlist
 \item
   Using encryption, hashing or
-  strong passwords to protect data. Keep in mind that you
-  should store passwords securely as well!
+  strong passwords
+  to protect data. Consider using a password manager to avoid losing access to the
+  data.
 \item
-  Using encrypted transport protocols (such as TLS, SFTP, HTTPS, etc.).
+  Using secure internet connections and encrypted transport protocols (such as
+  TLS, SFTP, HTTPS, etc.). Do not connect to public WiFi on devices containing
+  personal data.
 \item
   Applying privacy models like Differential Privacy,
   where noise is added to individual data points to hide their true identity.
@@ -1222,6 +1257,11 @@ do not become public or known. You can for example do so using a combination of:
   amount of time and with the necessary authorisations (e.g., read vs.~write
   access; only the relevant selection of personal data, etc.). Remove
   authorisations when access is no longer required.
+\item
+  Encrypting and regularly backing up data on portable storage media.
+\item
+  Keeping a clear desk policy: lock your screen and store paper behind lock and
+  key when you leave your desk.
 \end{itemize}
 
 \hypertarget{process-oriented-strategies}{%
@@ -1272,23 +1312,27 @@ enforce this, for example by:
 \item
   Using only
   Utrecht University-approved tools
-  to collect, store, analyse and share data.
+  to collect, store, analyse and share
+  personal data.
 \item
   Entering into agreements with third parties if they
   are working with UU-controlled personal data. Such agreements will make sure
   everyone will treat the data up to UU-standards.
 \item
-  Always keeping your software up-to-date.
+  Always keeping your software up-to-date and using a virus scanner on your devices.
 \item
   Appointing someone responsible for regulating access to the data.
 \item
-  Always reporting
+  Always reporting (suspicions of)
   data breaches.
   At UU, contact the Computer Emergency Response Team.
 \item
   If needed, drawing up a privacy and/or security policy that specify roles and
   responsibilities and best practices on how personal data are handled throughout
   a project.
+\item
+  Using a Trusted Third Party when linking individual data from different
+  sources together.
 \end{itemize}
 
 \hypertarget{demonstrate}{%
@@ -1328,7 +1372,7 @@ The following documents are addressed:
 \begin{itemize}
 \tightlist
 \item
-  \protect\hyperlink{privacy-notices}{Privacy notices}
+  \protect\hyperlink{privacy-notices}{Information to data subjects}
 \item
   \protect\hyperlink{informed-consent-forms}{Informed consent forms}
 \item
@@ -1342,6 +1386,8 @@ The following documents are addressed:
 \item
   \protect\hyperlink{dtia}{Data Transfer Impact Assessment}
 \item
+  The \protect\hyperlink{processing-register}{processing register}
+\item
   \protect\hyperlink{agreements}{Several agreements}, such as the non-disclosure agreement, data processing
   agreement, data transfer agreement, joint controller agreement, and data use
   agreement.
@@ -1350,7 +1396,7 @@ The following documents are addressed:
 This chapter is a work in progress: sub-chapters are added continuously.
 
 \hypertarget{privacy-notices}{%
-\section{Privacy notices}\label{privacy-notices}}
+\section{Information to data subjects}\label{privacy-notices}}
 
 \textbf{A privacy notice is any information given to data subjects about what is
 happening with their personal data. In research, a privacy notice is usually
@@ -1372,15 +1418,25 @@ it is necessary so that data subjects can exercise their \protect\hyperlink{data
 
 You need to inform data subjects \textbf{before} you start collecting or otherwise
 processing their personal data (so before the start of your research project).
+If you share personal data with an external party, you should inform data
+subjects at the latest when first sharing those data with that external party.
 
 When you use personal data from another source, you have to inform your data
 subjects within a month after obtaining their data
 (art. 14), except
-if this would involve a disproportionate effort, or would seriously impair your
-processing purposes (e.g., if you cannot answer your research question anymore,
-art. 14(5)(b)).
-If you share personal data with an external party, you should inform data
-subjects at the latest when first sharing those data with that external party.
+if:
+
+\begin{itemize}
+\tightlist
+\item
+  they have already been properly informed elsewhere
+\item
+  this would involve a disproportionate effort
+\item
+  this would seriously impair your processing purposes (e.g., if you cannot
+  answer your research question anymore,
+  art. 14(5)(b)).
+\end{itemize}
 
 \hypertarget{content-and-examples-of-privacy-notices}{%
 \subsection{Content and examples of privacy notices}\label{content-and-examples-of-privacy-notices}}
@@ -1389,7 +1445,8 @@ Below you can find a list of items to include in your information to data
 subjects (Template) and some example sentences to (not) include in your privacy
 notice (click to expand).
 
-Template privacy notices
+Template information letter UU
+Template information letter for WMO research
 
 Example sentences
 
@@ -1433,16 +1490,25 @@ The information you provide to data subjects should be:
   write a legal contract. The information should be understandable for data
   subjects and it should have a clear and concrete meaning. For example, avoid
   using words like ``may'', ``some'', ``often'' and write active and short sentences.
+  Tip: try these
+  writing tips,
+  this language tester,
+  or use this
+  simplified information sheet (all in Dutch).
 \item
   \textbf{Easily accessible}
   Data subjects should be able to find the information easily. For example, publish
   the privacy notice on your project website, give participants a copy, or provide
-  a QR-code or short URL.
+  a QR-code or short URL. Even if you cannot inform data subjects directly, you
+  should make an effort to inform them and put the information somewhere they will
+  likely come across (such as a website or on social media).
 \item
   \textbf{Via multiple channels (when appropriate)}
   Textual information sheets are by no means the only way to inform data subjects.
   If appropriate, you can provide the information via other channels too, e.g.,
-  oral statements, images, audio, video
+  oral statements, images
+  (example),
+  audio, video
   (example),
   etc. For some data subjects, such other channels of informing can lead to a better
   understanding of your processing activities.
@@ -1481,7 +1547,8 @@ statements, such as a statement to participate in a research project.}
   In some situations, consent is likely the only way to process data, for
   example, if you want to process
   special categories of personal data,
-  or if you process personal data from children under 16 years old. In the latter
+  or if you process personal data from people who are incapable of giving consent
+  or from children under 16 years old. In the latter
   case, the GDPR requires to obtain additional obtain consent from a legal
   representative (e.g., parent), and there are additional requirements when your
   research falls under the Dutch
@@ -1550,9 +1617,13 @@ imbalance between the controller (e.g., researcher) and data subjects
 (rec. 43).
 Some examples:
 
-Consent is not valid when the researcher is also a teacher and asks their
-students to participate, who depend on the teacher for a good grade. In this
-case, another legal basis such as public interest may be more appropriate.
+Consent is not a valid legal basis when the researcher is also a
+teacher and asks their students to participate, who depend on the teacher
+for a good grade.
+
+Consent in a clinical trial is not a valid legal basis when patients
+are asked to participate in the trial, but the choice to participate
+affects their treatment plan or treatment outcome.
 
 Consent can still be used for children and persons legally incapable to
 provide consent when their legal representative(s) provide the consent.
@@ -1579,11 +1650,19 @@ your research project.
 Separate consent is needed for the current research project vs.~for contacting
 data subjects for future research projects.
 
+Separate consent is needed to use personal data to answer a research question
+vs.~to link different sources of data together to do so
+(Gedragscode Gezondheidsonderzoek, 2022).
+
+Separate consent is recommended to make the personal data
+available for reuse (describe the
+conditions under which this will be allowed).
+
 Informed
 
 Data subjects need to be clearly and accessibly informed about which personal
 data are processed and why, and about their rights (see
-Privacy notices). Data subjects should be
+Information to data subjects). Data subjects should be
 able to access this information easily (also after they have provided
 consent).
 
@@ -1595,12 +1674,23 @@ inactivity'' do not constitute valid consent
 (rec. 32):
 consent should be active.
 
+Retractable
+
+Data subjects have the
+right to withdraw their consent, meaning
+their personal data cannot be used for the research purpose anymore and have to
+be removed where possible. Withdrawing consent should be as easy as providing
+consent. It is important to make the distinction with the right to stop
+participating at any time (usually an ethical obligation), because the latter
+implies that the data collected up until that point can still be used for the
+research project.
+
 \hypertarget{forms-consent}{%
 \subsection{What forms of consent are valid?}\label{forms-consent}}
 
 The way you obtain consent may differ per research project and can depend on
 how you interact with your data subjects. The only requirement is that it should
-be demonstrable. Some examples:
+be demonstrable and registered in a reliable manner. Some examples:
 
 \begin{itemize}
 \tightlist
@@ -1633,8 +1723,7 @@ Only when the identity of the data subjects will be used in the process (e.g.,
 clinical trials), a signature may make sense or be required. For example, if
 your research is subject
 to the Dutch Medical Research Involving Human Subjects Act (WMO),
-different requirements apply,
-e.g., consent needs to be provided in writing using a signature and date.
+different requirements may apply.
 
 \hypertarget{demonstrate-consent}{%
 \subsection{Demonstrating (valid) consent}\label{demonstrate-consent}}
@@ -1670,7 +1759,8 @@ However, you can do this only as long as:
 \item
   data subjects are kept informed as specifically as possible about what will
   happen to their personal data. As soon as you know more, you should also inform
-  data subjects in more detail.
+  data subjects in more detail. Your use of the personal data should fall within
+  the line of expectation from data subjects.
 \item
   you use additional protection measures, for example:
 
@@ -1696,6 +1786,11 @@ However, you can do this only as long as:
   you document your considerations and ask for help from a
   privacy officer.
 \end{itemize}
+
+Broad consent under the GDPR needs to be distinguished from ``General consent''
+as defined by
+COREON for Dutch health researchers, that is: for medical research, different requirements may
+(additionally) apply.
 
 \hypertarget{examples-and-templates}{%
 \subsection{Examples and templates}\label{examples-and-templates}}
@@ -1752,6 +1847,30 @@ it is not allowed to deny data subjects their data subjects' rights.
 
 \hypertarget{dtia}{%
 \section{Data Transfer Impact Assessment}\label{dtia}}
+
+\hypertarget{processing-register}{%
+\section{Processing register}\label{processing-register}}
+
+Any EU-based organisation is required to keep a registry of processing
+activities from within their organisation
+(art. 30).
+If you are performing research with human subjects, the odds are that your
+research project will have to be registered in such a register as well. Such a
+register should contain who are processing the personal data, for what purpose,
+which personal data are processed, with whom the data are shared, and how the
+data will be protected.
+
+Notably, the GDPR does not prescribe what such a register should look like
+exactly, and thus every institution has their own way in which the processing
+register is implemented and managed. Ask your local privacy officer how your
+institution registers research projects that process personal data.
+
+At Utrecht University, a university-wide processing register is currently being
+developed. For the time being, other administrative systems and documents such as
+the Data Management Plan, the privacy scan, the DPIA and/or the ethical
+application may function as a processing register. Please ask your
+privacy officer
+for more information about how your faculty handles this.
 
 \hypertarget{agreements}{%
 \section{Agreements}\label{agreements}}
@@ -2199,13 +2318,19 @@ In research, we often see a division in different types of retention periods:
   compliance.
 \item
   Specific retention periods may apply additionally to specific types of data.
-  For example, in the Netherlands there are specific retention periods for medical data.
+  For example, in the Netherlands there are specific retention periods for medical data that range between 10 and
+  30 years at minimum.
 \item
   Personal data that were used for purposes other than answering your
   research question (e.g.~contact information) should have their own retention
   policy: they should be removed or anonymised after the retention period
   (e.g.~the research project) has ended.
 \end{itemize}
+
+If identification of the data subject is no longer needed for your
+(research) purposes, you do not need to keep storing the personal data just
+to comply with the GDPR, even if it means your data subjects cannot exercise
+their rights (art. 11).
 
 For all types of data in your project (incl.~to be archived research data), we
 recommend to formulate which data you will retain and for how long (for example
@@ -2549,6 +2674,11 @@ collected by UU researchers and will be held responsible in case of GDPR infring
 researchers (e.g., Principal Investigators) often determine why and how data are processed, and are thus fulfilling the
 role of controller themselves.
 
+Note that it is possible to be a controller without having access to personal
+data, for example if you assign an external company to execute research for
+which you determined which data they should collect, among which data subjects,
+how, and for what purpose.
+
 \hypertarget{d}{%
 \subsubsection{D}\label{d}}
 
@@ -2611,10 +2741,14 @@ transcription, sharing, publishing, deletion, etc.
 
 Processor
 
-A natural or legal entity that processes personal data on behalf of the controller. For example, when using
-a cloud transcription service, you often need to send personal data (e.g., an audio recording) to the transcription
-service for the purpose of your research, which is then fulfilling the role of processor. When using such a third party,
-you must have a data processing agreement in place.
+A natural or legal entity that processes personal data on behalf of the
+controller. For example, when using a cloud transcription service, you often
+need to send personal data (e.g., an audio recording) to the transcription
+service for the purpose of your research, which is then fulfilling the role
+of processor. Other examples of processors are mailhouses used to send emails
+to data subjects, or Trusted Third Parties who hold the keyfile to link
+pseudonyms to personal data. When using such a third party, you must have a
+data processing agreement in place.
 
 Pseudonymous data
 
