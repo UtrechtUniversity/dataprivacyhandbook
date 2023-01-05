@@ -586,7 +586,8 @@ and how you can apply them in your research:
     <details>
       <summary><b>Right to data portability</b></summary>
       Data subjects have the right to have their personal data transferred to 
-      another party (<a href="https://gdpr-info.eu/art-20-gdpr/" target="_blank">art. 20</a>).
+      another party in a "structured, commonly used and machine-readable format" 
+      (<a href="https://gdpr-info.eu/art-20-gdpr/" target="_blank">art. 20</a>).
     </details>
   </li>
   <li>
@@ -595,8 +596,10 @@ and how you can apply them in your research:
       Data subjects have the right to object to what you are doing with their 
       personal data. This right applies when the processing is based on legitimate 
       or public interest (<a href="https://gdpr-info.eu/art-21-gdpr/" target="_blank">art. 21</a>). 
-      In case of objection, you have to stop your processing activities, unless 
-      you can demonstrate grounds for overriding the data subject's rights.
+      In case of objection, you have to stop your processing activities and thus
+      delete any data you have from the particular data subject, unless you can 
+      demonstrate concrete grounds for overriding the data subject's rights
+      (e.g., excluding the data subject would substantially bias your results).
     </details>
   </li>
 </ol>
