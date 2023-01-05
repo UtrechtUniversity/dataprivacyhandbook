@@ -137,13 +137,21 @@ This also implies that you should keep the documentation about the legal basis
 used (e.g., consent forms) during that time, so that you can demonstrate GDPR 
 compliance.
 - Specific retention periods may apply additionally to specific types of data. 
-For example, in the Netherlands there are specific <a href="https://english.ccmo.nl/investigators/data-retention-periods-for-medical-research" target="_blank">retention periods for medical data</a>.
+For example, in the Netherlands there are specific <a href="https://english.ccmo.nl/investigators/data-retention-periods-for-medical-research" target="_blank">retention periods for medical data</a> that range between 10 and
+30 years at minimum.
 - Personal data that were used for purposes other than answering your 
 research question (e.g. contact information) should have their own retention 
 policy: they should be removed or anonymised after the retention period 
 (e.g. the research project) has ended.
 
 :::fyi
+If identification of the data subject is no longer needed for your 
+(research) purposes, you do not need to keep storing the personal data just 
+to comply with the GDPR, even if it means your data subjects cannot exercise 
+their rights (<a href="https://gdpr-info.eu/art-11-gdpr/" target="_blank">art. 11</a>).
+:::
+
+:::note
 For all types of data in your project (incl. to be archived research data), we
 recommend to formulate which data you will retain and for how long (for example
 in your Data Management Plan), and communicate the (possibly different) 

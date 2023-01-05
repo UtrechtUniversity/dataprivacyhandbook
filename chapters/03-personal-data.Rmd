@@ -63,15 +63,15 @@ in your dataset.<br>
 <details><summary><i>Examples</i></summary>
 <ul>
   <li>Inferring a medical condition based on registered medications.</li>
-  <li>Guessing that someone lives in a certain neighborhood based on where they go to school.</li>
+  <li>Guessing that someone lives in a certain neighbourhood based on where they go to school.</li>
 </ul>
 <br>
 </details>
 - It is possible to **link records** relating to an individual. This can happen 
 when combining multiple variables within your dataset (e.g., demographic 
 information, indirect identifiers). However, it can also happen when combining 
-your dataset with other datasets (the “Mosaic effect”). In that case, your data 
-still contain personal data, even if the data in your dataset are not 
+your dataset with other datasets (the "Mosaic effect"). In that case, your data 
+still contain personal data, even if the data in your own dataset are not 
 identifiable by themselves.<br>
 <details><summary><i>Examples</i></summary>
   Linkage is often possible with demographic information (age, 
@@ -80,11 +80,16 @@ identifiable by themselves.<br>
   <ul>
     <li>In the year 2000, <a href = "https://dataprivacylab.org/projects/identifiability/paper1.pdf"target = "_blank">87% of the United States population</a> 
     was found to be identifiable using a combination of their ZIP code, gender 
-    and date of birth.</li>
+    and date of birth. You can see for yourself on
+    <a href="https://cpg.doc.ic.ac.uk/individual-risk/" target="_blank">this website</a>.</li>
     <li>An agricultural company’s Uniek Bedrijfsnummer (UBN) can be used to 
     search for the address of the company in the 
     <a href = "https://www.rvo.nl/onderwerpen/identificatie-en-registratie-dieren/app-ir-dieren" target = "_blank">I&R mobile app</a>. 
     Often, this address is also the owner’s home address.</li>
+    <li>Geographical data tracking individuals are particularly sensitive 
+    because of the multiplicity of data points. 
+    <a href="https://www.youtube.com/watch?v=Pivd71NYKDA" target="_blank">This video</a> 
+    nicely explains why.</li>
   </ul>
   <br>
 </details>
@@ -129,11 +134,11 @@ information that reveals:
 
 It is in principle **prohibited** to process these types of personal data, 
 unless an exception applies 
-(<a href = "https://gdpr-info.eu/art-9-gdpr/" target = "_blank">art.9</a>). For 
-example, it is allowed to process these if:
+(<a href = "https://gdpr-info.eu/art-9-gdpr/" target = "_blank">art.9</a>). 
+For example, it is allowed to process these if:
 
 - Data subjects have provided explicit consent to process these data for a 
-specific purpose
+specific purpose.
 - Data subjects have made the data publicly available themselves
 - Processing is necessary for scientific research purposes (incl. historical 
 and statistical purposes)
@@ -143,6 +148,14 @@ personal data warrant additional security measures to make sure they are
 protected. Always contact your 
 <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
 if you intend on processing these types of data.
+
+:::note
+The 
+<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf" target="_blank">Dutch Code of Conduct for Health Research</a> 
+(p.68) specifies a number of exceptions for health researchers in which explicit 
+consent for processing special categories of personal data may not be necessary.
+:::
+
 
 ### Data that are otherwise sensitive
 Other types of data can also be sensitive, because they can carry higher risks 
