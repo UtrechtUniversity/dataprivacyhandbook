@@ -175,11 +175,12 @@ statements, such as a statement to participate in a research project.**
       <p>In some situations, consent is likely the only way to process data, for 
       example, if you want to process 
       <a href="#special-types-personal-data">special categories of personal data</a>, 
-      or if you process personal data from children under 16 years old. In the latter 
+      or if you process personal data from people who are incapable of giving consent
+      or from children under 16 years old. In the latter 
       case, the GDPR requires to obtain additional obtain consent from a legal 
       representative (e.g., parent), and there are additional requirements when your 
       research falls under the Dutch 
-      <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0009408&paragraaf=2&artikel=6&z=2022-03-15&g=2022-03-15" target="_blank">Medical Research Involving Human     Subjects Act</a>.</p>
+      <a href="https://www.ccmo.nl/onderzoekers/aanvullende-informatie-over-bepaalde-soorten-onderzoek/onderzoek-bij-proefpersonen-jonger-dan-16-jaar-kinderen/toestemming" target="_blank">Medical Research Involving Human Subjects Act</a>.</p>
 </div></details>
 2. <details><summary>Consider if you meet all requirements for consent</summary>
   <div>If you need to use consent as a legal basis, consider if you meet 
@@ -240,9 +241,12 @@ click to expand):
   (<a href="https://gdpr-info.eu/recitals/no-43/" target="_blank">rec. 43</a>).<br><br>
   Some examples:
     <ul>
-      <li>Consent is not valid when the researcher is also a teacher and asks their
-      students to participate, who depend on the teacher for a good grade. In this 
-      case, another legal basis such as public interest may be more appropriate.</li>
+      <li>Consent is not a valid legal basis when the researcher is also a 
+      teacher and asks their students to participate, who depend on the teacher 
+      for a good grade.</li>
+      <li>Consent in a clinical trial is not a valid legal basis when patients 
+      are asked to participate in the trial, but the choice to participate 
+      affects their treatment plan or treatment outcome.</li>
       <li>Consent can still be used for children and persons legally incapable to 
       provide consent when their legal representative(s) provide the consent.</li>
     </ul>
@@ -265,6 +269,12 @@ click to expand):
      your research project.</li>
      <li>Separate consent is needed for the current research project vs. for contacting 
      data subjects for future research projects.</li>
+     <li>Separate consent is needed to use personal data to answer a research question 
+     vs. to link different sources of data together to do so 
+     (<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf" target="_blank">Gedragscode Gezondheidsonderzoek, 2022</a>.</li>
+     <li>Separate consent is recommended to make the personal data 
+     <a href="#data-sharing-reuse">available for reuse</a> (describe the 
+     conditions under which this will be allowed).</li>
     </ul>
   </div></details></li>
   <li><details><summary>Informed</summary>
@@ -282,13 +292,23 @@ click to expand):
   consent should be active.
   </div></details>
   </li>
+  <li><details><summary>Retractable</summary>
+  <div>Data subjects have the 
+  <a href="#data-subject-rights">right to withdraw their consent</a>, meaning 
+  their personal data cannot be used for the research purpose anymore and have to 
+  be removed where possible. Withdrawing consent should be as easy as providing 
+  consent. It is important to make the distinction with the right to stop 
+  participating at any time (usually an ethical obligation), because the latter 
+  implies that the data collected up until that point can still be used for the 
+  research project.</div></details>
+  </li>
 </ul>
 
 ### What forms of consent are valid? {#forms-consent}
 
 The way you obtain consent may differ per research project and can depend on 
 how you interact with your data subjects. The only requirement is that it should 
-be demonstrable. Some examples:
+be demonstrable and registered in a reliable manner. Some examples:
 
 - Ticking a box (**not** pre-ticked!)
 - Writing or replying to an email (“I agree to be interviewed”)
@@ -312,8 +332,7 @@ Only when the identity of the data subjects will be used in the process (e.g.,
 clinical trials), a signature may make sense or be required. For example, if 
 your research is <a href="https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not" target = "_blank">subject</a> 
 to the Dutch Medical Research Involving Human Subjects Act (WMO), 
-<a href="https://english.ccmo.nl/human-subjects/informed-consent" target="_blank">different requirements apply</a>, 
-e.g., consent needs to be provided in writing using a signature and date.
+<a href="https://www.ccmo.nl/onderzoekers/wet-en-regelgeving-voor-medisch-wetenschappelijk-onderzoek/de-wmo-in-een-notendop/toestemming/elektronische-toestemming" target="_blank">different requirements may apply</a>.
 
 ### Demonstrating (valid) consent {#demonstrate-consent}
 
@@ -343,7 +362,8 @@ withdraw consent
 (<a href="https://gdpr-info.eu/recitals/no-33/" target="_blank">rec. 33</a>).
 - data subjects are kept informed as specifically as possible about what will 
 happen to their personal data. As soon as you know more, you should also inform 
-data subjects in more detail.
+data subjects in more detail. Your use of the personal data should fall within
+the line of expectation from data subjects.
 - you use additional protection measures, for example:
   - obtain ethical approval for using the data for new research questions.
   - offer a consent withdrawal possibility before using the data for new research 
@@ -358,6 +378,13 @@ data subjects in more detail.
  is not a sufficiently specific purpose for reuse of the personal data.
 - you document your considerations and ask for help from a 
 <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>.
+
+:::note
+Broad consent under the GDPR needs to be distinguished from "General consent" 
+as defined by 
+<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf" target="_blank">COREON for Dutch health researchers</a>, that is: for medical research, different requirements may 
+(additionally) apply.
+:::
 
 ### Examples and templates
 
