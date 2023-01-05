@@ -271,7 +271,7 @@ click to expand):
      data subjects for future research projects.</li>
      <li>Separate consent is needed to use personal data to answer a research question 
      vs. to link different sources of data together to do so 
-     (<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf" target="_blank">Gedragscode Gezondheidsonderzoek, 2022</a>.</li>
+     (<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf" target="_blank">Gedragscode Gezondheidsonderzoek, 2022</a>).</li>
      <li>Separate consent is recommended to make the personal data 
      <a href="#data-sharing-reuse">available for reuse</a> (describe the 
      conditions under which this will be allowed).</li>
@@ -280,7 +280,7 @@ click to expand):
   <li><details><summary>Informed</summary>
   <div>Data subjects need to be clearly and accessibly informed about which personal 
   data are processed and why, and about their rights (see 
-  <a href="#privacy-notices">Privacy notices</a>). Data subjects should be 
+  <a href="#privacy-notices">Information to data subjects</a>). Data subjects should be 
   able to access this information easily (also after they have provided 
   consent).</div></details>
   </li>
@@ -448,7 +448,7 @@ which personal data are processed, with whom the data are shared, and how the
 data will be protected.
 
 Notably, the GDPR does not prescribe what such a register should look like 
-exactly, and thus every institution has their own way that the processing 
+exactly, and thus every institution has their own way in which the processing 
 register is implemented and managed. Ask your local privacy officer how your
 institution registers research projects that process personal data.
 
