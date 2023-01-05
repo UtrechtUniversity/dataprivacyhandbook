@@ -6,13 +6,14 @@ when to use it, and how.**
 
 The following documents are addressed:
 
-- [Privacy notices](#privacy-notices)
+- [Information to data subjects](#privacy-notices)
 - [Informed consent forms](#informed-consent-forms)
 - [Privacy scan](#privacy-scan)
 - [Data Protection Impact Assessment](#dpia)
 - [Data classification](#data-classification)
 - [Legitimate interest assessment](#legitimate-interest-assessment)
 - [Data Transfer Impact Assessment](#dtia)
+- The [processing register](#processing-register)
 - [Several agreements](#agreements), such as the non-disclosure agreement, data processing
 agreement, data transfer agreement, joint controller agreement, and data use 
 agreement.
@@ -22,7 +23,7 @@ agreement.
 This chapter is a work in progress: sub-chapters are added continuously.
 ::::
 
-## Privacy notices {#privacy-notices}
+## Information to data subjects {#privacy-notices}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/details-button.css">
@@ -47,15 +48,20 @@ it is necessary so that data subjects can exercise their [other rights](#data-su
 
 You need to inform data subjects **before** you start collecting or otherwise
 processing their personal data (so before the start of your research project). 
+If you share personal data with an external party, you should inform data 
+subjects at the latest when first sharing those data with that external party.
 
 When you use personal data from another source, you have to inform your data 
 subjects within a month after obtaining their data
 (<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14</a>), except
-if this would involve a disproportionate effort, or would seriously impair your
-processing purposes (e.g., if you cannot answer your research question anymore,
+if:
+
+- they have already been properly informed elsewhere
+- this would involve a disproportionate effort
+- this would seriously impair your processing purposes (e.g., if you cannot 
+answer your research question anymore,
 <a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14(5)(b)</a>). 
-If you share personal data with an external party, you should inform data 
-subjects at the latest when first sharing those data with that external party.
+
 
 ### Content and examples of privacy notices
 Below you can find a list of items to include in your information to data 
@@ -63,8 +69,10 @@ subjects (Template) and some example sentences to (not) include in your privacy
 notice (click to expand).
 
 <a href="https://www.uu.nl/sites/default/files/RDM_Support_Template_Information_letter.pdf" 
-target = "_blank" style="text-decoration: none;"><button type="button">Template privacy notices</button></a> 
-  
+target = "_blank" style="text-decoration: none;"><button type="button">Template information letter UU</button></a> 
+<a href="https://www.ccmo.nl/onderzoekers/standaardonderzoeksdossier/e-informatie-proefpersonen" 
+target = "_blank" style="text-decoration: none;"><button type="button">Template information letter for WMO research</button></a> 
+
 <details><summary><b>Example sentences</b></summary>
 
 <table style="width:100%">
@@ -109,16 +117,25 @@ A privacy notice is not a legal document, so do not write it like you would
 write a legal contract. The information should be understandable for data 
 subjects and it should have a clear and concrete meaning. For example, avoid 
 using words like "may", "some", "often" and write active and short sentences.
+Tip: try these 
+<a href="https://www.researchplatform-dorp.nl/wp-content/uploads/20220329-Handleiding-PIF-beperkte_gezondheidsvaardigheden.pdf" target="_blank">writing tips</a>, 
+this <a href="https://ishetb1.nl/" target="_blank">language tester</a>,
+or use this 
+<a href="https://www.pharos.nl/kennisbank/eenvoudige-en-begrijpelijke-onderzoeksformulieren-patientinformatieformulier-pif/" target="_blank">simplified information sheet</a> (all in Dutch).
 
 - **Easily accessible**<br>
 Data subjects should be able to find the information easily. For example, publish 
 the privacy notice on your project website, give participants a copy, or provide 
-a QR-code or short URL.
+a QR-code or short URL. Even if you cannot inform data subjects directly, you 
+should make an effort to inform them and put the information somewhere they will 
+likely come across (such as a website or on social media).
 
 - **Via multiple channels (when appropriate)**<br>
 Textual information sheets are by no means the only way to inform data subjects. 
 If appropriate, you can provide the information via other channels too, e.g., 
-oral statements, images, audio, video 
+oral statements, images 
+(<a href="https://irenececile.com/project/stripverhaal-wetenschappelijk-medicijnonderzoek-voor-kinderen-informed-consent/" target="_blank">example</a>), 
+audio, video 
 (<a href="https://www.youtube.com/watch?v=H5aMCfqw1Lw" target="_blank">example</a>), 
 etc. For some data subjects, such other channels of informing can lead to a better 
 understanding of your processing activities.
