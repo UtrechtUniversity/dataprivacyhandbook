@@ -145,6 +145,13 @@ policy: they should be removed or anonymised after the retention period
 (e.g. the research project) has ended.
 
 :::fyi
+If identification of the data subject is no longer needed for your 
+(research) purposes, you do not need to keep storing the personal data just 
+to comply with the GDPR, even if it means your data subjects cannot exercise 
+their rights (<a href="https://gdpr-info.eu/art-11-gdpr/" target="_blank">art. 11</a>).
+:::
+
+:::note
 For all types of data in your project (incl. to be archived research data), we
 recommend to formulate which data you will retain and for how long (for example
 in your Data Management Plan), and communicate the (possibly different) 
