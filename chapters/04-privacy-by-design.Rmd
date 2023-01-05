@@ -62,24 +62,31 @@ inform, control, enforce, and demonstrate" height="80%"/>
 Limit as much as possible the processing of personal data, for example by:
 
 - Collecting as little data as possible to reach your research purpose.
+- Collecting only personal data from the amount of individuals necessary.
 - Preferably not using tools that automatically collect unnecessary personal 
 data. If possible, prevent tools you do use from doing so (Privacy by Default).
 For example, the survey tool Qualtrics can automatically register location data,
 which can be turned off by using the
-"<a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/#AnonymizingResponses" target="_blank">Anonymize Responses</a>" option.
+"<a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/#AnonymizingResponses" target="_blank">Anonymize Responses</a>" 
+option.
 - Removing personal data when you no longer need them. Remove them from 
 repositories, data collection tools, sent emails, back-ups, etc. (see also the 
-<a href="#data-storage">Storage chapter</a>).
+<a href="#data-storage">Storage chapter</a>). Use directly identifying 
+information only if you legitimately need them, for example to keep in touch
+with data subjects or to answer your research question.
+- <a href="#pseudonymisation-anonymisation">Pseudonymising or anonymising</a> 
+personal data as early as possible.
+- Use portable storage media only temporarily.
 
 ### Separate
 Separate the processing of different types of personal data as much as possible, 
 for example by:
 
-- <a href="#pseudonymisation-anonymisation">Pseudonymisation</a>: Store directly 
-identifying personal data (e.g., contact information) separately from the 
-research data. Use identification keys to link both datasets, and store these 
-keys also separately from the research data.
-- Using different databases to separate datasets.
+- Storing directly identifying personal data (e.g., contact information) 
+separately from the research data. Use identification keys to link both datasets, 
+and store these keys also separately from the research data.
+- Separating access to different types of personal data. For example, separate
+who has access to contact information vs. to the research data.
 - Applying <a href="#secure-computing">secure computing</a> techniques, where 
 the data remain at a central location and do not have to be moved for the analysis.
 
@@ -87,7 +94,8 @@ the data remain at a central location and do not have to be moved for the analys
 Limit as much and as early on as possible the detail in which personal data 
 are processed, for example by:
 
-- <a href="#pseudonymisation-anonymisation">Anonymising or pseudonymising</a> the data.
+- <a href="#pseudonymisation-anonymisation">Anonymising or pseudonymising</a> 
+the data.
 - Adding noise to the data, e.g., voice alteration in audio data.
 - Summarising the data to simply describe general trends instead of individual 
 data points.
@@ -99,15 +107,21 @@ Protect personal data, or make them unlinkable or unobservable. Make sure they
 do not become public or known. You can for example do so using a combination of:
 
 - Using <a href="#encryption">encryption</a>, <a href="#pseudonymisation-anonymisation">hashing</a> or 
-<a href="https://students.uu.nl/en/practical-information/it-facilities/information-security/information-security-secure-access-choosing-a-secure-password" target="_blank">strong passwords</a> to protect data. Keep in mind that you 
-should store passwords securely as well!
-- Using encrypted transport protocols (such as TLS, SFTP, HTTPS, etc.).
+<a href="https://students.uu.nl/en/practical-information/it-facilities/information-security/information-security-secure-access-choosing-a-secure-password" target="_blank">strong passwords</a> 
+to protect data. Consider using a password manager to avoid losing access to the 
+data.
+- Using secure internet connections and encrypted transport protocols (such as 
+TLS, SFTP, HTTPS, etc.). Do not connect to public WiFi on devices containing 
+personal data.
 - Applying privacy models like <a href="#differential-privacy">Differential Privacy</a>,
 where noise is added to individual data points to hide their true identity.
 - Only providing access to people who really need it, and only for the necessary 
 amount of time and with the necessary authorisations (e.g., read vs. write 
 access; only the relevant selection of personal data, etc.). Remove 
 authorisations when access is no longer required.
+- Encrypting and regularly backing up data on portable storage media.
+- Keeping a clear desk policy: lock your screen and store paper behind lock and 
+key when you leave your desk.
 
 ## Process-oriented strategies {#process-oriented-strategies}
 ### Inform
@@ -135,18 +149,21 @@ enforce this, for example by:
 
 - Using only 
 <a href="https://tools.uu.nl/" target="_blank">Utrecht University-approved tools</a> 
-to collect, store, analyse and share data. 
+to collect, <a href="data-storage">store</a>, analyse and <a href="data-sharing-collaboration">share</a> 
+personal data. 
 - Entering into <a href="#agreements">agreements</a> with third parties if they 
 are working with UU-controlled personal data. Such agreements will make sure 
 everyone will treat the data up to UU-standards.
-- Always keeping your software up-to-date. 
+- Always keeping your software up-to-date and using a virus scanner on your devices. 
 - Appointing someone responsible for regulating access to the data.
-- Always reporting 
+- Always reporting (suspicions of) 
 <a href="https://intranet.uu.nl/en/knowledgebase/what-is-a-personal-data-breach" target="_blank">data breaches</a>. 
 At UU, contact the <a href="https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert" target="_blank">Computer Emergency Response Team</a>. 
 - If needed, drawing up a privacy and/or security policy that specify roles and 
 responsibilities and best practices on how personal data are handled throughout 
 a project. 
+- Using a Trusted Third Party when linking individual data from different 
+sources together.
 
 ### Demonstrate
 Demonstrate you are processing personal data in a privacy-friendly way, for 
