@@ -32,6 +32,12 @@ The glossary consists of frequently used jargon concerning the GDPR and research
       researchers (e.g., Principal Investigators) often determine why and how data are processed, and are thus fulfilling the 
       role of controller themselves.
     </p>
+    <p>
+    Note that it is possible to be a controller without having access to personal
+    data, for example if you assign an external company to execute research for 
+    which you determined which data they should collect, among which data subjects, 
+    how, and for what purpose.
+    </p>
 </details>
 
 #### D
@@ -112,10 +118,14 @@ The glossary consists of frequently used jargon concerning the GDPR and research
 <details>
   <summary><b>Processor</b></summary>
     <p>
-      A natural or legal entity that processes personal data on behalf of the controller. For example, when using
-      a cloud transcription service, you often need to send personal data (e.g., an audio recording) to the transcription 
-      service for the purpose of your research, which is then fulfilling the role of processor. When using such a third party, 
-      you must have a <a href="#data-processing-agreement">data processing agreement</a> in place.
+        A natural or legal entity that processes personal data on behalf of the 
+  controller. For example, when using a cloud transcription service, you often 
+  need to send personal data (e.g., an audio recording) to the transcription 
+  service for the purpose of your research, which is then fulfilling the role 
+  of processor. Other examples of processors are mailhouses used to send emails
+  to data subjects, or Trusted Third Parties who hold the keyfile to link 
+  pseudonyms to personal data. When using such a third party, you must have a 
+  <a href="#data-processing-agreement">data processing agreement</a> in place.
     </p>
 </details>
 
