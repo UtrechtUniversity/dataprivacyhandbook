@@ -392,6 +392,31 @@ Bad example sentences:
 
 ## Data Transfer Impact Assessment {#dtia}
 
+## Processing register {#processing-register}
+
+Any EU-based organisation is required to keep a registry of processing 
+activities from within their organisation 
+(<a href="https://gdpr-info.eu/art-30-gdpr/" target="_blank">art. 30</a>). 
+If you are performing research with human subjects, the odds are that your 
+research project will have to be registered in such a register as well. Such a
+register should contain who are processing the personal data, for what purpose,
+which personal data are processed, with whom the data are shared, and how the 
+data will be protected.
+
+Notably, the GDPR does not prescribe what such a register should look like 
+exactly, and thus every institution has their own way that the processing 
+register is implemented and managed. Ask your local privacy officer how your
+institution registers research projects that process personal data.
+
+:::note
+At Utrecht University, a university-wide processing register is currently being
+developed. For the time being, other administrative systems and documents such as
+the Data Management Plan, the privacy scan, the DPIA and/or the ethical 
+application may function as a processing register. Please ask your
+<a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a> 
+for more information about how your faculty handles this.
+:::
+
 ## Agreements {#agreements}
 
 **There are many types of agreements that can – and sometimes should – be set up 
