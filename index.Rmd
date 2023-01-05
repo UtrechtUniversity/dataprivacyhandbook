@@ -1,6 +1,6 @@
 --- 
 title: "Data Privacy Handbook"
-author: "Utrecht University"
+author: "Utrecht University | Last updated: `r Sys.Date()`"
 date: '`r format(Sys.time(), "%d %B %Y")`'
 site: bookdown::bookdown_site
 documentclass: book
@@ -10,7 +10,7 @@ link-citations: yes
 description: |
   The Data Privacy Handbook is a practical guide on handling personal data in
   scientific research, created by Utrecht University's Research Data Management 
-  Support
+  Support.
 url: "https://utrechtuniversity.github.io/dataprivacyhandbook/"
 github-repo: "utrechtuniversity/dataprivacyhandbook"
 cover-image: "img/cover-image-dph.png"
