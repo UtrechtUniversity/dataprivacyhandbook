@@ -13,3 +13,46 @@ This is a first FAQ. More will follow!
   difference between processors and controllers <a href="#definitions">on the 
   definitions page</a>.
 </details>
+
+```{r faqsformattingfunction, message=FALSE, warning=FALSE, echo=FALSE}
+# Install and load the readxl package if not already installed
+#install.packages("readxl")
+library(readxl)
+
+formatfaqs <- function(faqsheet){
+  #qanda <- readxl::read_excel("faqs.xlsx", sheet = faqsheet)
+  qanda <- readxl::read_excel("chapters/faqs.xlsx", sheet = faqsheet)
+
+  formattedtext <- list()
+  
+  # Format each question in html <details> tags
+  for(questionitem in 1:dim(qanda)[1]){
+    formattedtext[[questionitem]] <- paste0("<details><summary><b>",
+                                            qanda[questionitem,1],
+                                            "</b></summary><div>",
+                                            qanda[questionitem,2],
+                                            "</div></details>")
+  }
+  
+  # Concatenate the list of items into a single string
+  formattedtext_string <- paste(formattedtext, collapse="")
+  return(formattedtext_string)
+}
+```
+
+### General questions
+
+```{r faqs-general, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_general <- formatfaqs("faqs-general")
+```
+
+`r faqs_general`
+
+### Procedural questions
+
+```{r faqs-procedures, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_procedures <- formatfaqs("faqs-procedures")
+
+```
+
+`r faqs_procedures`
