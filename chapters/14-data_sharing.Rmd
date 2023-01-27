@@ -1,0 +1,111 @@
+# Sharing data with collaborators {#data-sharing-collaboration}
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/yellow-details.css">
+</head>
+
+This chapter addresses guidelines to take into account when you want to share 
+personal data with collaborators outside of your own institution **during** 
+your research project. For guidelines to share personal data after a research 
+project, please refer to the chapter on 
+<a href="#data-sharing-reuse">Data sharing for reuse</a>. 
+
+To be able to share personal data with external collaborators, you should:  
+
+
+<details open="true"><summary><b>1. Make sure you have a legal basis and 
+inform data subjects</b></summary>
+  <div><ul>
+      <li>Make sure data subjects are well-informed about your intentions to 
+      share the data with collaborators. Include information in your 
+      <a href="#privacy-notices">privacy notice</a> on the identity of your 
+      collaborators, which data are shared with them and why, how, and for how 
+      long. Avoid using statements that preclude sharing such as "Your data 
+      will not be shared with anyone else".</li>
+      <li>Make sure you have a <a href="#legal-basis">legal basis</a> to 
+      share the data, e.g., informed consent or public interest. If you use 
+      consent, make sure that data subjects are aware that they are also 
+      providing consent to share their data with your collaborators.</li>
+      <li>Inform data subjects timely - <b>before</b> you start processing 
+      their data - and <b>proactively</b> - directly if possible.</li>
+    </ul>
+  </div>
+</details>
+<br>
+<details><summary><b>2. Protect the personal data appropriately</b></summary>
+<div><ul>
+      <li><a href="#risk-assessment">Assess the risks</a> of sharing the 
+      data and the measures you will take to mitigate those in your 
+      <a href = "https://www.uu.nl/en/research/research-data-management/guides/data-management-planning" target = "_blank">Data Management Plan</a>, <a href="#privacy-scan">Privacy scan</a>, 
+      or if applicable, <a href="#dpia">Data Protection Impact Assessment</a>. 
+      This is especially important if you will share your data with 
+      collaborators outside of the European Economic Area.</li>
+      <li>Share only the data that the collaborator needs (data minimisation), 
+      for example by deleting unnecessary data, pseudonymising the data, and 
+      sharing only with those who need access to the data.</li>
+      <li>Make sure data subjects can still exercise their 
+      <a href="#data-subject-rights">data subjects' rights</a>. For example, 
+      if a data subject withdraws their consent, not only you, but also your 
+      collaborators will have to stop processing the data subject’s personal 
+      data. It is important to make clear how you and them will do so.</li>
+</ul></div>
+</details>
+<br>
+<details><summary><b>3. Come to agreements with collaborators</b></summary>
+<div><p>In order to protect the personal data effectively, it is important to 
+    determine which role every collaborator has: 
+    <a href="#definitions">controller or processor</a>? And if there are 
+    multiple controllers, are they separate or joint controllers? For example, 
+    in many collaborative research projects (e.g., in consortia), there are 
+    multiple controllers that collectively determine why (e.g., research 
+    question) and how (e.g., methods) to process personal data. These parties 
+    are then joint controllers, and agreements need to be made in a 
+    <a href="#joint-controllers-agreement">joint controllers agreement</a>.</p><p>In any collaboration in which data are shared, you need to (<a href = "https://gdpr-info.eu/art-26-gdpr/" target = "_blank">art. 26</a>):</p><ul><li>Come to a formal agreement on:
+        <ul><li>The role of each party in the research project</li><li>Respective responsibilities in terms of data protection, such as informing data subjects and handling requests relating to data subjects' rights</li><li>Who is the main point of contact for data subjects</li> </ul><li>Communicate (the essence of) the agreement to data subjects.</li></ul>
+  <p>Your 
+  <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
+  can help you draw up a valid agreement.</p>
+ </div>
+</details>
+<br>
+<details><summary><b>4. Pay special attention to third-country transfers</b></summary>
+<div><p>
+      If you share personal data with international collaborators (for example, 
+      with countries that have no 
+      <a href = "https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target = "_blank">adequacy decision</a>), 
+      you may need to take additional measures. Usually, these measures include 
+      drawing up an agreement to make sure the other party is GDPR-compliant and 
+      uses the necessary security measures (if you haven’t already done so). The 
+      exact type of agreement will depend on your specific situation: your 
+      <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
+      can help you choose and set up the right one.
+    </p><p>The flowchart below indicates conditions under which you can share data 
+      internationally. Note that they assume that you have taken sufficient 
+      safeguards to protect the personal data. To determine the possibilities 
+      of sharing data internationally in your project, we strongly advise you 
+      to consult with your <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>. In some cases a <a href="#dtia">Data Transfer Impact Assessment</a> may 
+      be required, which can take some effort.</p><img src="img/international-data-transfer.png" alt="Flowchart about 
+      international data transfers. If you are transfering data to countries 
+      within the European Economic Area, no additional measures are required. If 
+      you however transfer data outside of the European Economic Area, we 
+      recommend to contact your faculty privacy officer to take the proper 
+      measures.">
+   </div>
+</details>
+<br>
+<details><summary><b>5. Use a secure way to share the data</b></summary>
+<div><ul>
+  <li><b>Granting access</b>: It is preferable to grant a user access 
+          to an existing and safe infrastructure (e.g., add someone to a Yoda 
+          group or OneDrive folder), rather than physically sending the data 
+          elsewhere. This allows you to keep the data in one place, define 
+          specific access rights (read/write), have users authenticate, and 
+          easily revoke access to the data after your collaboration has ended. 
+          It is also a good idea to take measures to prevent the data from 
+          being copied elsewhere.</li><li><b>Transferring data</b>: When it is absolutely necessary to 
+          transfer the files to a different location, you must do so securely. 
+          Researchers at Utrecht University can use 
+          <a href = "https://filesender.surf.nl" target = "_blank">SURF Filesender</a> 
+          with encryption.</li></ul></div>
+</details>
