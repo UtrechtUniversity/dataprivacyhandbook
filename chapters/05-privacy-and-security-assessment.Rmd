@@ -1,8 +1,8 @@
 # Risk Assessment {#risk-assessment}
 
-## How to assess privacy risks? {risk-assessment-how}
+## How to assess privacy risks? {#risk-assessment-how}
 
-## What are high-risk operations? {high-risk-processing}
+## What are high-risk operations? {#high-risk-processing}
 
 ## Classifying personal data {#data-classification}
 
