@@ -215,13 +215,14 @@ The Data Privacy Handbook is a collaborative effort, made possible by a large
 number of contributors (also to be viewed in our 
 <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="_blank">GitHub repository</a>):
 
-Neha  Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Wies Cipido, 
-Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan, Saskia van den Hout, Frans Huigen, 
-Artan Jacquet, Rik Janssen, Sanne Kleerebezem, Annemiek van der Kuil, 
-Danny de Koning-van Nieuwamerongen, Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Francisco Romero 
-Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, Ron Scholten, 
-Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong, Liliana Vargas Meleza, 
-Martine de Vos, and others.
+Neha  Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Kasper de Bruijn, 
+Wies Cipido, Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan, 
+Saskia van den Hout, Frans Huigen, Artan Jacquet, Rik Janssen, Sanne Kleerebezem, 
+Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen, 
+Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Maisam Mohammadi Dadkan, 
+Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, 
+Ron Scholten, Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong, 
+Liliana Vargas Meleza, and Martine de Vos.
 
 Would you like to contribute to this Handbook yourself? Please read our 
 <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">Contributing Guidelines</a>.
