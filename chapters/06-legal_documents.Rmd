@@ -10,7 +10,6 @@ The following documents are addressed:
 - [Informed consent forms](#informed-consent-forms)
 - [Privacy scan](#privacy-scan)
 - [Data Protection Impact Assessment](#dpia)
-- [Data classification](#data-classification)
 - [Legitimate interest assessment](#legitimate-interest-assessment)
 - [Data Transfer Impact Assessment](#dtia)
 - The [processing register](#processing-register)
