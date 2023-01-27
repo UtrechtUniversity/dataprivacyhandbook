@@ -430,8 +430,6 @@ Bad example sentences:
 
 ## Data Protection Impact Assessment {#dpia}
 
-## Data classification {#data-classification}
-
 ## Legitimate interest assessment {#legitimate-interest-assessment}
 
 ## Data Transfer Impact Assessment {#dtia}
