@@ -1,4 +1,4 @@
-# References {#references}
+# Resources {#references}
 
 For further reading, we prepared a Zotero library with additional resources, some
 of which are specific to Utrecht University, others more general. Click on the 

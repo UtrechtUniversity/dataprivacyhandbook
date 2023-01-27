@@ -1,2 +1,0 @@
-# Sharing data for reuse {#data-sharing-reuse}
-

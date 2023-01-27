@@ -1,0 +1,7 @@
+# Sharing data for reuse {#data-sharing-reuse}
+
+## Publishing anonymised data {#publish-anonymous-data}
+
+## Sharing personal data with a legal basis {#share-reuse-legal-basis}
+
+## Alternatives to sharing personal data {#sharing-reuse-alternatives}

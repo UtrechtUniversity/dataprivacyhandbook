@@ -1,0 +1,31 @@
+# (PART\*) Resources {-} 
+
+# Seeking help at Utrecht University {#seeking-help}
+For Utrecht University researchers, the most relevant information and support 
+can be found here:
+
+<ul>
+  <li>[Workshop handling personal data](https://www.uu.nl/en/research/research-data-management/training-workshops/handling-personal-data-in-research){target="_blank"}</li>
+  <li>E-learning Privacy basics for researchers (coming soon)</li>
+  <li>[RDM Support website](https://www.uu.nl/rdm){target="_blank"}</li>
+  <li>Faculty-specific web pages:<ul>
+    <li>Geosciences: [RDM and privacy](https://geo-data-support.sites.uu.nl/){target="_blank"},
+    [ethics](https://sciencegeo-erb.sites.uu.nl/){target="_blank"}</li>
+    <li>Science: [RDM and privacy](https://science-data-support.sites.uu.nl/){target="_blank"},
+    [ethics](https://sciencegeo-erb.sites.uu.nl/){target="_blank"}</li>
+    <li>Social and Behavioural Sciences: [tech support](https://techsupport.fss.uu.nl/){target="_blank"},
+    [ethics](https://ferb.sites.uu.nl/){target="_blank"}</li>
+    <li>Humanities: [RDM and privacy](https://cdh.uu.nl/research/data-management-privacy/){target="_blank"},
+    [ethics](https://fetc-gw.wp.hum.uu.nl/){target="_blank"}</li>
+    <li>Law, Economics and Governance: [ethics](https://intranet.uu.nl/en/knowledgebase/facultys-ethical-review-committee){target="_blank"}</li>
+    <li>Veterinary medicine: [Research Support Office](https://www.uu.nl/en/node/589/onderzoeksbureauresearch-support-office){target="_blank"}</li>
+    <li>Medicine: [ethics](https://www.metc-utrecht.nl/en/){target="_blank"}</li>
+    </ul>
+  <li>Intranet pages on [privacy](https://intranet.uu.nl/en/knowledge-base/privacy-at-uu){target="_blank"} and
+  [research](https://intranet.uu.nl/en/knowledgebase/research){target="_blank"}</li>
+</ul>
+
+If you have a question about privacy, please feel free to contact 
+[Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}, 
+your [privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"} 
+or your local data steward/data manager for help.

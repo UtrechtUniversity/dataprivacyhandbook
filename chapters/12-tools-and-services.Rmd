@@ -16,6 +16,11 @@ of a <a href="#data-processing-agreement">Data Processing Agreement</a> between
 UU and the supplier of the tool, in which the supplier agreed to 
 sufficiently protect the data entered into their tool.
 
+We are also creating an overview of potential privacy-related tools for 
+deidentifying data, creating synthetic data, and analysing data in secure 
+environments in 
+[this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/){target="_blank"}.
+
 :::fyi
 Are you developing a website or application yourself that uses user data? Check 
 out the <a href="https://lincnil.github.io/GDPR-Developer-Guide/" target="_blank">CNIL GDPR Guide for Developers</a>
