@@ -167,8 +167,8 @@ If you do not need personal data anymore, you must delete it, except when the da
 should be archived for validation purposes. When deleting data, it is important 
 to make sure that there are no visible or hidden copies being left behind and 
 that files cannot be recovered. The <a href = "https://tools.uu.nl/storagefinder/" target = "_blank">Storage Finder</a> 
-will soon include information on how to fully delete data on the UU-approved 
-storage media. For your own file system, you can use software like 
+indicates how you can fully delete data on storage media within UU that are 
+suitable for personal data. For your own file system, you can use software like 
 <a href="https://www.bleachbit.org/" target="_blank">BleachBit</a>, 
 <a href="https://www.jetico.com/data-wiping/wipe-files-bcwipe" target="_blank">BCWipe</a>,
 <a href="https://www.2brightsparks.com/onclick/help/welcomedeleteonclick.htm" target="_blank">DeleteOnClick</a>, 
