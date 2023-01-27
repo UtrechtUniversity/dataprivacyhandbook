@@ -3,7 +3,7 @@
 On this page you can find Frequently Asked Questions (FAQs) about handling 
 personal data in research. Click a question you have to read its answer. 
 
-```{r faqsformattingfunction, message=FALSE, warning=FALSE, echo=FALSE}
+```{r faqsformattingfunction, message=FALSE, warning=FALSE, echo=FALSE,include=FALSE}
 # Install and load the readxl package
 install.packages("readxl")
 library(readxl)
