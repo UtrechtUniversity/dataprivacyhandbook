@@ -1,46 +1,45 @@
 # Privacy FAQs {#faq}
 
-On this page you can find some often-heard questions about handling personal
-data in research. Click a question you have to read its answer.
-
-This is a first FAQ. More will follow!
-
-<details>
-  <summary><b>Am I a processor as employee of my university?</b></summary>
-  No. As an employee you are still determining your own why (research question) 
-  and how (methods) of personal data processing. This makes you a controller, 
-  acting as an "agent" of the legal controller (your university). Read more on the
-  difference between processors and controllers <a href="#definitions">on the 
-  definitions page</a>.
-</details>
+On this page you can find Frequently Asked Questions (FAQs) about handling 
+personal data in research. Click a question you have to read its answer. 
 
 ```{r faqsformattingfunction, message=FALSE, warning=FALSE, echo=FALSE}
-# Install and load the readxl package if not already installed
+# Install and load the readxl package
 #install.packages("readxl")
 library(readxl)
 
 formatfaqs <- function(faqsheet){
-  #qanda <- readxl::read_excel("faqs.xlsx", sheet = faqsheet)
-  qanda <- readxl::read_excel("chapters/faqs.xlsx", sheet = faqsheet)
-
+  qanda <- readxl::read_excel("chapters/faqs.xlsx", 
+                              sheet = faqsheet)
+  
   formattedtext <- list()
   
   # Format each question in html <details> tags
   for(questionitem in 1:dim(qanda)[1]){
-    formattedtext[[questionitem]] <- paste0("<details><summary><b>",
-                                            qanda[questionitem,1],
-                                            "</b></summary><div>",
-                                            qanda[questionitem,2],
-                                            "</div></details>")
-  }
-  
+    
+    tryCatch( { 
+      if(qanda$Include[questionitem] == 1){
+        formattedtext[[questionitem]] <- paste0("<details><summary><b>",
+                                                qanda[questionitem,1],
+                                                "</b></summary><div>",
+                                                qanda[questionitem,2],
+                                                "</div><br></details>")
+      }
+    }, error = function(e){
+      cat("Error in row : ",questionitem,"\n")
+    }
+    )
+  } #endfor
+  # Remove empty list items (happens when Include == 0)
+  formattedtext <- formattedtext[!sapply(formattedtext,is.null)]
+
   # Concatenate the list of items into a single string
   formattedtext_string <- paste(formattedtext, collapse="")
   return(formattedtext_string)
 }
 ```
 
-### General questions
+### General questions {#general}
 
 ```{r faqs-general, message=FALSE,warning=FALSE,echo=FALSE}
 faqs_general <- formatfaqs("faqs-general")
@@ -48,11 +47,66 @@ faqs_general <- formatfaqs("faqs-general")
 
 `r faqs_general`
 
-### Procedural questions
+### Procedures and responsibilities {#procedures}
 
 ```{r faqs-procedures, message=FALSE,warning=FALSE,echo=FALSE}
 faqs_procedures <- formatfaqs("faqs-procedures")
-
 ```
 
 `r faqs_procedures`
+
+### Informed consent {#consent}
+
+```{r faqs-ic, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_ic <- formatfaqs("faqs-ic")
+```
+
+`r faqs_ic`
+
+### Legal questions {#legal}
+
+```{r faqs-legal, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_legal <- formatfaqs("faqs-legal")
+```
+
+`r faqs_legal`
+
+### Storing personal data {#storage}
+
+```{r faqs-storage, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_storage <- formatfaqs("faqs-storage")
+```
+
+`r faqs_storage`
+
+### Sharing, publishing and reusing personal data {#sharing}
+
+```{r faqs-share, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_share <- formatfaqs("faqs-share")
+```
+
+`r faqs_share`
+
+### Practical questions {#practical-questions}
+
+```{r faqs-practical, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_practical <- formatfaqs("faqs-practical")
+```
+
+`r faqs_practical`
+
+### Students and student data {#students}
+
+```{r faqs-student, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_student <- formatfaqs("faqs-student")
+```
+
+`r faqs_student`
+
+### Finding support {#support}
+
+```{r faqs-support, message=FALSE,warning=FALSE,echo=FALSE}
+faqs_support <- formatfaqs("faqs-support")
+```
+
+`r faqs_support`
