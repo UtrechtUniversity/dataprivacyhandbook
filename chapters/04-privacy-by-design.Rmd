@@ -37,7 +37,7 @@ height="80%"/>
 
 To incorporate the concepts of Privacy by Design and Privacy by Default into 
 your project, the approach of **privacy design strategies** 
-([Hoepman, 2022](https://www.cs.ru.nl/~jhh/publications/pds-booklet.pdf]{target="_blank"}) 
+([Hoepman, 2022](https://www.cs.ru.nl/~jhh/publications/pds-booklet.pdf){target="_blank"}) 
 offers a way to make the GDPR principles more concrete. Hoepman distinguishes 8 
 strategies that you can apply to protect the personal data in your research: 
 minimise, separate, abstract, hide, inform, control, enforce, and demonstrate. 
