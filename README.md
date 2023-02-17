@@ -10,15 +10,12 @@
 
 ## ✨Welcome!✨
 
-The Data Privacy Handbook is a guide to handling personal data in scientific research, in line with European data protection and privacy regulations.  
+The Data Privacy Handbook is a guide to handling personal data in scientific research, in line with European data protection and privacy regulations. 
 
 You can find the Handbook here: https://utrechtuniversity.github.io/dataprivacyhandbook/. You are currently viewing the GitHub repository that underlies the Handbook - this is where the Handbook is built and maintained. 
 
-Feel free to take a look around the repository! This README will give you an overview of the project. You can jump straight to one of the sections below, or just scroll down to find out more.
-
 ## Table of Contents
 - [About the Handbook](#about-the-handbook)
-- [A Little More Background](#a-little-more-background)
 - [Contribute](#contribute)
 - [Get or stay in touch](#get-or-stay-in-touch)
 - [Citing the Handbook](#citing-the-handbook)
@@ -29,25 +26,18 @@ Feel free to take a look around the repository! This README will give you an ove
 
 ## About the Handbook
 
-### This is an open-source, community-driven, _living_ Handbook.  
+The Data Privacy Handbook is an open-source, community-driven, _living_ Handbook.  
 
 - 🤝 As an _open-source_, _community-driven_ Handbook, anyone can get involved and contribute! You'd help us build something that is hopefully useful to many.  
 - 🌱 As a _living_ Handbook, the content can be continually edited and updated. 
 
-### Content
+The Data Privacy Handbook consists of: 
 
-The Data Privacy Handbook consists of: a knowledge base, an overview of privacy-enhancing techniques & tools, and use cases.  
+- 🧠 A _knowledge base_ that serves to introduce readers to the EU General Data Protection Regulation (GDPR), explain how it applies to scientific research, and describe how scientific research can be carried out in a GDPR-compliant manner.
+- 🛠️ An overview of _privacy-enchancing techniques & tools_ which introduces readers to privacy-enchancing techniques (PETs) such as pseudonymisation and anonymisation, and illustrates how these techniques can be implemented with available tools.
+- 👨🏽‍🤝‍👨🏻 _Use cases_: practical examples to draw inspiration from. 
 
-- 🧠 The _knowledge base_ serves to introduce readers to the EU General Data Protection Regulation (GDPR), explain how it applies to scientific research, and describe how scientific research can be carried out in a GDPR-compliant manner.
-- 🛠️ The overview of _privacy-enchancing techniques & tools_ will introduce readers to privacy-enchancing techniques (PETs) such as anonymization and pseudonymization, and illustrate how these techniques can be implemented with available developed tools.
-- 👨🏽‍🤝‍👨🏻 The _use cases_ will be featured as practical examples to draw inspiration from. 
-
-### Style / Approach
-
-While we call it a 'Handbook' - it's not meant to be written or read like a textbook. Our goal is to make knowledge and solutions surrounding this topic FAIR (Findable, Accessible, Interoperable, Reusable) and present them in a practical and actionable format. 
-
-- As far as possible, we'll keep the text short and sweet. We'd be delighted if we end up with entire 'chapters' presented in the form of an infographic or flowchart.
-- The 'chapters' will follow a linear structure, but they need not be read one by one. Readers can simply navigate to the chapter they need at a given moment.   
+While we call it a 'Handbook' - it's not meant to be written or read like a textbook. Our goal is to make knowledge and solutions surrounding this topic FAIR (Findable, Accessible, Interoperable, Reusable) and present them in a practical and actionable format. And readers can simply navigate to the chapter they need at a given moment.   
 
 ### Audience & Authors
 
@@ -56,51 +46,32 @@ That being said, **privacy professionals** and **research data management (RDM) 
 
 The Handbook is developed at Utrecht University (UU) in the Netherlands 🌷. In the interest of open science and FAIR principles, we'll be keeping the content insitution-agnostic as far as possible. Nonetheless, some sections or chapters might be opinionated towards UU policies and preferences.  
 
-## A Little More Background
+### History
 
-The Data Privacy Handbook is part of a larger project within UU: the _Data Privacy Project_. The aim of this project is to develop knowledge, tools, and experience of how researchers can and should deal with personal data, with an emphasis on pseudonymization and anonymization techniques and tools. Specifically, the project goals are as follows:  
-
-1. 🧠 Create a **knowledge base** and an overview of **available tools** for researchers to learn about handling personal data. The _Data Privacy Handbook_ forms the basis for this this deliverable.  
-2. 🛠️ Realize or expand a number of **tools** to solve concrete problems of research projects in this area. For this, we will take on **use cases** that are typical of various privacy-related questions.
-3. 🔍 Perform **qualitative and quantitative investigations** into the current practices and needs of UU research staff concerning the handling of privacy-sensitive data.
-4. 💪 Develop various **training materials** for researchers and support staff about dealing with personal data and the use of the available tools.  
-
-You can read more about the project on the <a href="https://utrechtuniversity.github.io/dataprivacyproject/" target="_blank">project website</a>.
+The Data Privacy Handbook is an initiative of Utrecht University's [Research Data Management Support](https://uu.nl/rdm) as part of the [Data Privacy Project](https://utrechtuniversity.github.io/dataprivacyproject). 
+This project  was initiated by Menno Rasch in early 2020, along with colleagues from UU RDM Support. It is currently supported with funding from UU's Research IT program and a grant from the NWO-DCC funding instrument (July 2021-May 2023).
 
 ## Contribute
 
 Want to get involved in this project? Awesome! You can find how to contribute in the [Contributing Guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md).
-
 In short, you can:
 - Open or comment on [Issues](https://github.com/UtrechtUniversity/dataprivacyhandbook/issues)
 - Start or join a [Discussion](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
-- Contribute direct Handbook content
+- Contribute direct Handbook content by opening a Pull Request
 
-When participating in this project, we expect you to abide by our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md).
+When contributing to this project, we expect you to abide by our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and [Style guide](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/styleguide.md).
 
-## Get or stay in touch
+## Contact
 
-- **GitHub Discussions**: You can use [GitHub Discussions](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions) to ask and answer questions, share ideas/updates/information, and conduct/participate in (open-ended or otherwise) conversations about the project.
-- **MS Teams**: Staff at UU can join the project's MS Team: _Data Privacy Project_. You can contact the project coordinator to add you to the Team.
-- **Slack**: For our collaborators outside UU, we have a dedicated `#sig-privacy channel` on the [DTL Data Stewards Interest Group](https://www.dtls.nl/community/interest-groups/data-stewards-interest-group/)'s [Slack community](https://join.slack.com/t/dtl-dsig/shared_invite/zt-krwq991u-6PczI7~fxokJuLOpnI3u0A)!
-- **Email**: You can always contact the project coordinators - [Neha Moopen](https://www.uu.nl/medewerkers/NMoopen) & [Dorien Huijser](https://www.uu.nl/medewerkers/DCHuijser) by email.
-- **Newsletter**: You can subscribe to UU's [Research Data Management Support newsletter](https://mailings.uu.nl/hp/gKQRpokhPxN6bw8NlPTr8g/subscribe_newsletter_research_data_management_support) for periodic updates on our project.
+For any comments or suggestions about the Data Privacy Handbook, please contact [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us) or [Dorien Huijser](https://www.uu.nl/medewerkers/DCHuijser) (project coordinator) by email. You can also stay in touch via the dedicated `#sig-privacy channel` on the [DTL Data Stewards Interest Group](https://www.dtls.nl/community/interest-groups/data-stewards-interest-group/)'s [Slack community](https://join.slack.com/t/dtl-dsig/shared_invite/zt-krwq991u-6PczI7~fxokJuLOpnI3u0A), the _Data Privacy Project_ Teams environment, or the [Research Data Management Support newsletter](https://mailings.uu.nl/hp/gKQRpokhPxN6bw8NlPTr8g/subscribe_newsletter_research_data_management_support).
 
-## Citing the Handbook
+## License & Citation
 
-To cite the Data Privacy Handbook, click `Cite this repository` at the [repository homepage](https://github.com/UtrechtUniversity/dataprivacyhandbook), under the header `About` (at top right of the screen).
-
-## License 
-
-Non-software content in this project is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You can view the license [here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md).
+Non-software content in this project is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You can view the license [here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md). To cite the Data Privacy Handbook, click `Cite this repository` at the [repository homepage](https://github.com/UtrechtUniversity/dataprivacyhandbook), under the header `About` (at top right of the screen).
 
 ## Wiki
 
 The repository's [Wiki](https://github.com/UtrechtUniversity/dataprivacyhandbook/wiki) contains details about the tech stack for the Handbook. This documentation is relevant for current and future maintainers of the repository and/or Handbook. You're more than welcome to check it out if you're curious about the technical set-up of the Handbook or, for example, you want to reuse the Handbook - but adapt it to your own/insitution's needs. 
-
-## History and Acknowledgements
-
-This project was initiated by Menno Rasch in early 2020, along with colleagues from UU RDM Support. It is currently supported with funding from UU's Research IT program and a grant from the NWO-DCC funding instrument.
 
 ## Contributors ✨
 
