@@ -35,8 +35,11 @@ Besides this Handbook, you can find more information on the following websites:
 
 ## In-person support {#support}
 
-If you have a question about privacy or need help with your research project,
-please contact your [privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"}. 
-Besides the privacy officer,  
-[Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}
-or your local data steward can also help you out.
+The first point of contact about privacy is the [privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"}
+of your faculty. Besides the privacy officer, you can also ask for help from:
+
+- [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}
+or your local data steward.
+- [Information security](https://intranet.uu.nl/en/security/information-security-contact-who-are-we){target="_blank"}
+- In some faculties, the [Research Support Office](https://intranet.uu.nl/en/knowledgebase/research-support-offices){target="_blank"} 
+may be of help in drafting agreements.
