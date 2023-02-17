@@ -17,11 +17,9 @@ You can find the Handbook here: https://utrechtuniversity.github.io/dataprivacyh
 ## Table of Contents
 - [About the Handbook](#about-the-handbook)
 - [Contribute](#contribute)
-- [Get or stay in touch](#get-or-stay-in-touch)
-- [Citing the Handbook](#citing-the-handbook)
-- [License](#license)
+- [Contact](#contact)
+- [License & Citation](#license-and-citation)
 - [Wiki](#wiki)
-- [History and Acknowledgements](#history-and-acknowledgements)
 - [Contributors ✨](#contributors-)
 
 ## About the Handbook
@@ -65,7 +63,7 @@ When contributing to this project, we expect you to abide by our [Code of Conduc
 
 For any comments or suggestions about the Data Privacy Handbook, please contact [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us) or [Dorien Huijser](https://www.uu.nl/medewerkers/DCHuijser) (project coordinator) by email. You can also stay in touch via the dedicated `#sig-privacy channel` on the [DTL Data Stewards Interest Group](https://www.dtls.nl/community/interest-groups/data-stewards-interest-group/)'s [Slack community](https://join.slack.com/t/dtl-dsig/shared_invite/zt-krwq991u-6PczI7~fxokJuLOpnI3u0A), the _Data Privacy Project_ Teams environment, or the [Research Data Management Support newsletter](https://mailings.uu.nl/hp/gKQRpokhPxN6bw8NlPTr8g/subscribe_newsletter_research_data_management_support).
 
-## License & Citation
+## License and Citation
 
 Non-software content in this project is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You can view the license [here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md). To cite the Data Privacy Handbook, click `Cite this repository` at the [repository homepage](https://github.com/UtrechtUniversity/dataprivacyhandbook), under the header `About` (at top right of the screen).
 
