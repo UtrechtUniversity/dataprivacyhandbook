@@ -61,19 +61,21 @@ translations of the GDPR, which could be used by researchers and (data) support
 staff within Utrecht University and beyond.
 
 The Data Privacy Handbook is an initiative of 
-<a href="https://www.uu.nl/en/research/research-data-management" target="_blank">Research 
-Data Management Support</a> at the <a href="https://www.uu.nl/en/university-library"  target="_blank">Utrecht University Library</a>, in collaboration with privacy and data experts at 
-Utrecht University. It is part of a larger project, 
-<a href = "https://utrechtuniversity.github.io/dataprivacyproject" target = "_blank">the 
-Data Privacy Project</a>, which aims to develop knowledge, tools, and experience 
+[Research Data Management Support](https://www.uu.nl/en/research/research-data-management){target="_blank"}, 
+in collaboration with privacy and data experts at 
+Utrecht University. It is part of a larger project, the
+[Data Privacy Project](https://utrechtuniversity.github.io/dataprivacyproject){target="_blank"}, 
+which aims to develop knowledge, tools, and experience 
 on how researchers can and should deal with personal data. This project is 
 funded by the Utrecht University Research IT Program and an NWO Digital 
 Competence Center grant.
 
 :::note
 This is an Utrecht University (UU) community-driven, 
-<a href= "https://github.com/UtrechtUniversity/dataprivacyhandbook" target = "_blank">open-source project</a>.
-We welcome feedback and contributions of any type, please read our <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">contributing guidelines</a> for more information.
+[open source project](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}.
+We welcome feedback and contributions of any type, please read our 
+[contributing guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md){target="_blank"}
+for more information.
 :::
 
 ## How to use this Handbook
@@ -103,16 +105,16 @@ I want to...:
     <li>
         <details>
             <summary>Plan a GDPR-compliant research project</summary>
-            <ul>
                 <li><a href="#privacy-by-design">Designing your research project</a></li>
+                <li><a href="#legal-basis">Choosing a legal basis</a></li>
+                <li><a href="#risk-assessment">Assessing the risks in your project</a>, 
+                for example using a <a href="#privacy-scan">privacy scan</a>,
+                                    <a href="#dpia">Data Protection Impact Assessment</a>, or
+                                    <a href="#data-classification">Data classification</a></li>
                 <li><a href="#privacy-notices">Informing participants</a></li>
                 <li><a href="#informed-consent-forms">Obtaining consent</a></li>
                 <li><a href="#data-sharing-collaboration">Collaborating on personal data</a></li>
                 <li><a href="#agreements">Setting up agreements</a></li>
-                <li>Planning documents, such as the 
-                    <a href="#privacy-scan">Privacy scan</a>,
-                    <a href="#dpia">Data Protection Impact Assessment</a>, or
-                    <a href="#data-classification">Data classification</a></li>
             </ul>
         </details>
     </li>
@@ -122,8 +124,14 @@ I want to...:
             <ul>
                 <li><a href="#data-storage">Storing personal data</a></li>
                 <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
-                <li><a href="#privacy-enchancing-techniques">Reducing the sensitivity of personal data</a></li>
+                <li><a href="#pseudonymisation-anonymisation">De-identifying personal data</a></li>
+                <li><a href="#secure-computing">Securely computing personal data</a></li>
                 <li><a href="#data-sharing-collaboration">Sharing personal data during research</a></li>
+                <li>Using other approaches to protect personal data, such as 
+                <a href="#encryption">encryption</a>, 
+                <a href="#statistical-privacy">statistical privacy</a>,
+                <a href="synthetic-data">synthetic data</a>, or
+                <a href="data-donation">data donation</a></li>
             </ul>
         </details>
     </li>
@@ -133,7 +141,8 @@ I want to...:
             <ul>
                 <li><a href="#legal-basis">Sharing data legally</a></li>
                 <li><a href="#data-sharing-collaboration">Sharing personal data during research</a></li>
-                <li><a href="#privacy-enchancing-techniques">Reducing the sensitivity of personal data</a></li>
+                <li><a href="#pseudonymisation-anonymisation">De-identifying personal data</a></li>
+                <li><a href="#secure-computing">Securely computing personal data</a></li>
                 <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
                 <li><a href="#data-sharing-reuse">Sharing personal data for reuse</a></li>
                 <li><a href="#agreements">Sharing personal data case by case</a></li>
@@ -144,9 +153,10 @@ I want to...:
         <details>
             <summary>Learn from other projects</summary>
             <ul>
-                <li><a href="#open-science-questionnaire">Publishing metadata only</a></li>
+                <li><a href="#pet-survey">Minimising personal data in a survey</a></li>
                 <li><a href="#youth-pseudonymisation">Pseudonymising different types of data</a></li>
-                <li><a href="#pet-survey">Minimising personal data processing in a survey</a></li>
+                <li><a href="#open-science-questionnaire">Publishing metadata only</a></li>
+                <li><a href="#reuse-education-data">Reusing education data for research purposes</a></li>
             </ul>
         </details>
     </li>
@@ -165,9 +175,9 @@ I want to...:
 
 ## License and Citation
 
-The Data Privacy Handbook is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>. You can 
-<a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md" target="_blank">view 
-the license here</a>.
+The Data Privacy Handbook is licensed under a 
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target="_blank"}. 
+You can [view the license here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md){target="_blank}.
 
 
 ## Disclaimer
@@ -188,11 +198,11 @@ accountable** for any negative consequences arising from interpretation and use
 of the content of the Data Privacy Handbook.
 
 The Handbook is not endorsed by the Board of Utrecht University and does not 
-constitute a mandatory directive. <b>For the most up-to-date and official/
+constitute a mandatory directive. **For the most up-to-date and official/
 authoritative information, please refer to the 
-<a href="https://www.uu.nl/en/research/research-data-management" target="_blank">university 
-website</a> and <a href="https://intranet.uu.nl/en/knowledge-base/privacy-at-uu" target="_blank">intranet</a>, 
-to which this Handbook is a hands-on, practical supplement</b>. Moreover, before 
+[university website](https://www.uu.nl/en/research/research-data-management){target="_blank"}
+and [intranet](https://intranet.uu.nl/en/knowledge-base/privacy-at-uu){target="_blank"}, 
+to which this Handbook is a hands-on, practical supplement**. Moreover, before 
 implementing the guidance laid out in this Handbook, always seek the advice of 
 your privacy officer or RDM Support to confirm the suitability of any proposed 
 solution to your project.  
@@ -213,16 +223,16 @@ readers should refer to resources from their own institutions.
 
 The Data Privacy Handbook is a collaborative effort, made possible by a large 
 number of contributors (also to be viewed in our 
-<a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="_blank">GitHub repository</a>):
+[GitHub repository](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}):
 
 Neha  Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Kasper de Bruijn, 
 Wies Cipido, Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan, 
 Saskia van den Hout, Frans Huigen, Artan Jacquet, Rik Janssen, Sanne Kleerebezem, 
 Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen, 
 Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Maisam Mohammadi Dadkan, 
-Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, 
+Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, Raoul Schram,
 Ron Scholten, Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong, 
 Liliana Vargas Meleza, and Martine de Vos.
 
 Would you like to contribute to this Handbook yourself? Please read our 
-<a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">Contributing Guidelines</a>.
+[Contributing  guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md){target="_blank"}.
