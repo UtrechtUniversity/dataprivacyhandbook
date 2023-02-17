@@ -7,7 +7,7 @@ the tool you are looking for.
 
 In short:
 
-- If you work at Utrecht University, you can use https://tools.uu.nl 
+- If you work at Utrecht University, you can use https://tools.uu.nl to find UU-approved tools.
 - In [this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/){target="_blank"},
 you can find tools and packages to deidentify, encrypt, synthetise and otherwise
 work with personal data.
@@ -28,7 +28,7 @@ in compliance with the GDPR. If you work at Utrecht University (UU), you can use
 https://tools.uu.nl to find: 
 
 - tools that are safe to use in the [Tooladvisor](https://tools.uu.nl/tooladvisor){target="_blank"}. 
-These include tools for data collection, file sharing, audio transcription, and more.<br>
+These include tools for data collection, file sharing, audio transcription, and more.
 Most of the tools listed in the Tooladvisor are safe to use either because no (personal)
 data are being used by the tool, data are processed at UU premises, or because 
 of a [Data Processing Agreement](#data-processing-agreement) between 
@@ -38,6 +38,9 @@ sufficiently protect the data entered into their tool.
 provided by UU.
 - a selection of possible [data repositories](https://tools.uu.nl/repository-decision-tool/){target="_blank"}
 to publish (meta)data in.
+
+Additionally, you can find available software via 
+[this intranet page](https://intranet.uu.nl/en/knowledgebase/software-at-work-teaching-rooms-and-home){target="_blank"}
 
 
 ## Tools to deidentify, synthetise and work safely with personal data {#tool-repository}
