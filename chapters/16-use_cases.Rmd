@@ -34,9 +34,8 @@ Coming soon!
 
 # Publishing metadata {#open-science-questionnaire}
 
-In 2020, the 
-<a href = "https://www.uu.nl/en/research/open-science" target = "_blank">Open 
-Science Programme of Utrecht University</a> sent out the first 
+In 2020, the [Open Science Programme of Utrecht University](https://www.uu.nl/en/research/open-science){target="_blank"}
+sent out the first 
 Open Science monitor. The aim was to gain insights into the awareness, 
 attitudes, practices, opportunities and barriers of employees of Utrecht 
 University and Utrecht University Medical Center regarding several Open 
@@ -47,18 +46,18 @@ publicly. For this particular dataset, full anonymisation was not desirable,
 as that would greatly decrease its scientific value. Therefore, the Open Science 
 Programme chose to publish only the metadata and documentation, without sharing 
 the data, in order to protect participants’ data while still complying with the
-<a href = "https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair" target = "_blank">FAIR principles</a>. 
+[FAIR principles](https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair){target="_blank"}. 
 
 Here’s the strategy they took:
 
 - They published the dataset under 
-<a href = "https://doi.org/10.24416/UU01-3L9K99" target = "_blank">restricted 
-access on Yoda</a>, so that the dataset was at least Findable and Accessible.
+[restricted access on Yoda](https://doi.org/10.24416/UU01-3L9K99){target="_blank"}, 
+so that the dataset was at least Findable and Accessible.
 - They shared other relevant documentation publicly:
-  - The <a href = "https://doi.org/10.5281/zenodo.5727106" target = "_blank">preregistration</a>.
-  - The <a href = "https://doi.org/10.5281/zenodo.5727057" target = "_blank">questionnaire itself</a>, 
+  - The [preregistration](https://doi.org/10.5281/zenodo.5727106){target="_blank"}.
+  - The [questionnaire itself](https://doi.org/10.5281/zenodo.5727057){target="_blank"}, 
   including the information provided to participants.
-  - The <a href = "https://doi.org/10.5281/zenodo.5725177" target = "_blank">final report</a> 
+  - The [final report](https://doi.org/10.5281/zenodo.5725177){target="_blank"} 
   written about the dataset.
 
 Note that in the metadata of all these publications, cross-references to the 
@@ -96,7 +95,7 @@ Most students had already finished the course, and were not informed about the
 use of their evaluations and grades for this research project. The researchers 
 argued that the majority of the students could not be traced anymore to provide 
 this information or to enable them to exercise their data subjects’ rights 
-(<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14(5)(b)</a>). 
+([art. 14(5)(b)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}). 
 Moreover, in case a student did want to exercise their rights, it would prove 
 difficult to retrieve the correct data, as the data were deidentified as soon as 
 possible.<br><br>
@@ -115,8 +114,8 @@ suitable legal basis in this case. Instead, the researchers relied on:
   students’ personal data. The GDPR does not consider secondary use of personal 
   data for scientific research purposes incompatible with the original purpose 
   (i.e., the original purpose being to provide education and improving the 
-  course, <a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">art. 5(1)(b)</a>). 
+  course, [art. 5(1)(b)](https://gdpr-info.eu/art-5-gdpr/){target="_blank"}). 
   Thus, it was not necessary to rely on a new legal basis for this research 
   project, provided that the data were protected sufficiently: The researchers 
   made sure that the data were well-protected (i.e., minimised, pseudonymised, 
-  and access controlled, <a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>).
+  and access controlled, [art. 89](https://gdpr-info.eu/art-89-gdpr/){target="_blank"}).

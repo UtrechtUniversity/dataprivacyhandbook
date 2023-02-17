@@ -1,60 +1,89 @@
 # Tools & Services {#tools-and-services}
 
+There are many tools that you can use to work with personal data, such as tools
+to collect, store, and analyse personal data, but also to deidentify, encrypt
+and synthetise datasets. In this chapter, we provide resources to identify
+the tool you are looking for.
+
+In short:
+
+- If you work at Utrecht University, you can use https://tools.uu.nl to find UU-approved tools.
+- In [this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/){target="_blank"},
+you can find tools and packages to deidentify, encrypt, synthetise and otherwise
+work with personal data.
+- If you are in doubt whether you can use a specific tool, please contact your
+[privacy officer, data manager or information security](#support) for help.
+
+:::fyi
+Are you developing a website or application yourself that uses user data? Check 
+out the [CNIL GDPR Guide for Developers](https://lincnil.github.io/GDPR-Developer-Guide/){target="_blank"}
+for step-by-step guidance on how to develop your software in compliance with the GDPR.
+:::
+
+
+## Utrecht University tool finders {#uu-tools}
+
 When you are using a tool that processes personal data, that tool should do so
 in compliance with the GDPR. If you work at Utrecht University (UU), you can use 
-https://tools.uu.nl to find not only suitable
-<a href="https://tools.uu.nl/storagefinder/" target="_blank">storage media</a> 
-and <a href="https://tools.uu.nl/repository-decision-tool/" target="_blank">data repositories</a>,
-but also an 
-<a href="https://tools.uu.nl/tooladvisor" target="_blank">overview of which tools are safe to use</a>.
-It contains for example tools for audio transcription, file sharing, and performing 
-surveys. 
+https://tools.uu.nl to find: 
 
-Most of the tools listed are safe to use either because no (personal)
+- tools that are safe to use in the [Tooladvisor](https://tools.uu.nl/tooladvisor){target="_blank"}. 
+These include tools for data collection, file sharing, audio transcription, and more.
+Most of the tools listed in the Tooladvisor are safe to use either because no (personal)
 data are being used by the tool, data are processed at UU premises, or because 
-of a <a href="#data-processing-agreement">Data Processing Agreement</a> between 
+of a [Data Processing Agreement](#data-processing-agreement) between 
 UU and the supplier of the tool, in which the supplier agreed to 
 sufficiently protect the data entered into their tool.
+- all [storage facilities](https://tools.uu.nl/storagefinder/){target="_blank"} 
+provided by UU.
+- a selection of possible [data repositories](https://tools.uu.nl/repository-decision-tool/){target="_blank"}
+to publish (meta)data in.
 
-We are also creating an overview of potential privacy-related tools for 
+Additionally, you can find available software via 
+[this intranet page](https://intranet.uu.nl/en/knowledgebase/software-at-work-teaching-rooms-and-home){target="_blank"}
+
+
+## Tools to deidentify, synthetise and work safely with personal data {#tool-repository}
+
+We are creating an overview of potential privacy-related tools for 
 deidentifying data, creating synthetic data, and analysing data in secure 
 environments in 
 [this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/){target="_blank"}.
 
-:::fyi
-Are you developing a website or application yourself that uses user data? Check 
-out the <a href="https://lincnil.github.io/GDPR-Developer-Guide/" target="_blank">CNIL GDPR Guide for Developers</a>
-for step-by-step guidance on how to develop your software in compliance with the GDPR.
-:::
+```{r github-repo, out.width='100%', dev='png', cache=TRUE, screenshot.opts=list(vwidth=992)}
+knitr::include_url("https://github.com/UtrechtUniversity/privacy-engineering-tools/")
+```
+
+Please feel free to open an Issue or a Pull Request if you wish to adjust the
+existing content or add new content in this repository.
+
 
 ## Requirements for a third-party tool {#tool-requirements}
 
-**If your tool of choice is not listed in https://tools.uu.nl, please contact 
-<a href="https://www.uu.nl/en/organisation/information-and-technology-services-its/i-want-to/get-help-and-advice" target="_blank">IT servicedesk</a>. They will help you assess 
-whether a tool is safe to use. If a tool is processing personal data, two aspects
-are important to consider: 1) who is controlling the personal data, and 2) the 
-security level of the tool.**
+**If your tool of choice is not listed in https://tools.uu.nl, but it does
+process personal data, please contact the 
+[IT servicedesk](https://www.uu.nl/en/organisation/information-and-technology-services-its/i-want-to/get-help-and-advice){target="_blank"}. 
+They will help you assess whether a tool is safe to use.** 
+
+If a tool is processing personal data, the following two aspects are important to consider:
 
 ### 1. Who is processing the personal data: arrange an agreement
 
 When you use a third-party tool that processes personal data, the data are not 
-under the (full) control of your employer. In this case, it is required to 
-ensure GDPR compliance of the tool provider using 
-(<a href = "https://gdpr-info.eu/art-46-gdpr/" target = "_blank">art. 46</a>):
+under your (full) control. In this case, you must ensure the GDPR compliance of 
+the tool provider using ([art.46](https://gdpr-info.eu/art-46-gdpr/){target="_blank"}):
 
-- A <a href="#data-processing-agreement">Data Processing Agreement</a> - 
+- A [Data processing agreement](#data-processing-agreement) - 
 when the provider processes (e.g., stores, analyses, collects) personal data 
 within the European Economic Area (EEA) or a country with an 
-<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"  target="_blank">adequate level of data protection</a>.
-- <a href="https://gdpr-info.eu/recitals/no-109/" target="_blank">Standard 
-contractual clauses</a> (SCCs) - when personal data are processed by a 
-supplier outside of the EEA. These make sure the provider will use 
-sufficient measures to protect the personal data and enable data subjects to 
-exercise their rights.
-- Explicit consent of data subjects who have been informed on the risks 
-involved - in the absence of an agreement. Please contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
-if you are considering this option.
+[adequate level of data protection](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}.
+- [Standard contractual clauses](#scc) (SCCs) - when personal data are processed 
+by a supplier outside of the EEA without an adequate level of data protection. 
+These make sure the provider will use sufficient measures to protect the personal 
+data and enable data subjects to exercise their rights.
+- [Explicit consent](#informed-consent-forms) of data subjects who have been 
+informed on the risks involved - in the absence of an agreement. Please contact your 
+[privacy officer](#support) if you are considering this option.
 
 You can assume agreements are in place for the tools recommended by UU. 
 If there is no agreement in place between UU and the tool provider, using 
@@ -69,6 +98,5 @@ The tool provider should employ good security practices, such as regular back-up
 in distinct geographical areas (preferably in replication rather than on tape), 
 regular integrity checks, encryption at rest, multi-factor authentication, etc. 
 Most of these aspects will likely be covered in the agreement, and sometimes a
-<a href="#data-classification">data classification</a> will need to be performed. 
-<a href="https://intranet.uu.nl/en/security/information-security-contact-who-are-we" target="_blank">Information security</a> can help you determine all 
-necessary security requirements. 
+[data classification](#data-classification) will need to be performed. 
+[Information security](#support) can help you determine all necessary security requirements. 

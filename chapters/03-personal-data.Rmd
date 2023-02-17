@@ -9,7 +9,7 @@ and (2) how do you know if you are working with personal data in your research?
 
 According to the GDPR, personal data are “any information relating to an 
 identified or identifiable natural person” 
-(<a href = "https://gdpr-info.eu/art-4-gdpr/" target = "_blank">art.4(1)</a>):
+([art. 4(1)](https://gdpr-info.eu/art-4-gdpr/){target="_blank"}):
 
 - **Natural person**: Data by themselves (numbers, text, pictures, audio, etc.) 
 are not inherently personal. They only become personal when they refer to or 
@@ -34,7 +34,7 @@ date becomes personal data if it refers to someone’s birthday.
 In assessing whether data are personal, you should take into account all the 
 means that you and others may **reasonably likely** use to identify your data 
 subjects, such as the required money, time, or (future) developments in 
-technology (<a href = "https://gdpr-info.eu/recitals/no-26/" target = "_blank">rec. 26</a>).  
+technology ([rec. 26](https://gdpr-info.eu/recitals/no-26/){target="_blank"}).  
 
 Data can be identifiable when:
 
@@ -78,17 +78,18 @@ identifiable by themselves.<br>
   gender, country of origin, education, workplace information, etc.) and 
   indirect identifiers (pseudonyms, device ID, etc.), for example:
   <ul>
-    <li>In the year 2000, <a href = "https://dataprivacylab.org/projects/identifiability/paper1.pdf"target = "_blank">87% of the United States population</a> 
+    <li>In the year 2000, 
+    [87% of the United States population](https://dataprivacylab.org/projects/identifiability/paper1.pdf){target="_blank"} 
     was found to be identifiable using a combination of their ZIP code, gender 
-    and date of birth. You can see for yourself on
-    <a href="https://cpg.doc.ic.ac.uk/individual-risk/" target="_blank">this website</a>.</li>
+    and date of birth. You can see for yourself on 
+    [this website](https://cpg.doc.ic.ac.uk/individual-risk/){target="_blank"}.</li>
     <li>An agricultural company’s Uniek Bedrijfsnummer (UBN) can be used to 
     search for the address of the company in the 
-    <a href = "https://www.rvo.nl/onderwerpen/identificatie-en-registratie-dieren/app-ir-dieren" target = "_blank">I&R mobile app</a>. 
+    [I&R mobile app](https://www.rvo.nl/onderwerpen/identificatie-en-registratie-dieren/app-ir-dieren){target="_blank"}. 
     Often, this address is also the owner’s home address.</li>
     <li>Geographical data tracking individuals are particularly sensitive 
     because of the multiplicity of data points. 
-    <a href="https://www.youtube.com/watch?v=Pivd71NYKDA" target="_blank">This video</a> 
+    [This video](https://www.youtube.com/watch?v=Pivd71NYKDA){target="_blank"} 
     nicely explains why.</li>
   </ul>
   <br>
@@ -107,18 +108,15 @@ data were previously collected, made public or used for non-research purposes.
 In short, even if you cannot find out someone’s real identity (name, address), 
 the data you process can still contain personal data under the GDPR. Besides 
 the examples mentioned here, there are many 
-<a href = "https://intranet.uu.nl/system/files/documenten/categories-of-personal-information-en.pdf" target = "_blank">other examples of personal data</a>. If you need help assessing whether or not your 
-data contain personal data, please contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
-or data manager.
+[other examples of personal data](https://intranet.uu.nl/system/files/documenten/categories-of-personal-information-en.pdf){target="_blank"}. 
+If you need help assessing whether or not your data contain personal data, 
+please contact your [privacy officer or data manager](#support).
 
 ## Special types of personal data {#special-types-personal-data}
 There are a few special types of personal data that are worth taking note of: 
 special categories of personal data, and otherwise sensitive personal data. 
 These types of personal data have additional requirements. If you want to 
-process them, please contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
-first.
+process them, please contact your [privacy officer](#support) first.
 
 ### Special categories of personal data
 The GDPR explicitly defines seven ‘special categories of personal data’. It is 
@@ -134,24 +132,24 @@ information that reveals:
 
 It is in principle **prohibited** to process these types of personal data, 
 unless an exception applies 
-(<a href = "https://gdpr-info.eu/art-9-gdpr/" target = "_blank">art.9</a>). 
+([art. 9](https://gdpr-info.eu/art-9-gdpr/){target="_blank"}). 
 For example, it is allowed to process these if:
 
 - Data subjects have provided explicit consent to process these data for a 
 specific purpose.
 - Data subjects have made the data publicly available themselves
 - Processing is necessary for scientific research purposes (incl. historical 
-and statistical purposes)
+and statistical purposes) and it is impossible or would take an unreasonable
+amount of effort to obtain explicit consent 
+([UAVG art. 24](https://wetten.overheid.nl/BWBR0040940/2021-07-01#Hoofdstuk3){target="_blank"}).
 
 Even if you can make use of one of these exemptions, special categories of 
 personal data warrant additional security measures to make sure they are 
-protected. Always contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
-if you intend on processing these types of data.
+protected. Always contact your [privacy officer](#support) if you intend on 
+processing these types of data.
 
 :::note
-The 
-<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf" target="_blank">Dutch Code of Conduct for Health Research</a> 
+The [Dutch Code of Conduct for Health Research](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}
 (p.68) specifies a number of exceptions for health researchers in which explicit 
 consent for processing special categories of personal data may not be necessary.
 :::
@@ -161,8 +159,7 @@ consent for processing special categories of personal data may not be necessary.
 Other types of data can also be sensitive, because they can carry higher risks 
 for the data subjects. These types of data can either not be processed at all, 
 or only under certain circumstances. Either way, they require additional 
-security measures. Always contact your 
-<a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
+security measures. Always contact your [privacy officer](#support)
 if you intend on using these types of data.
 
 Examples are:
@@ -173,4 +170,4 @@ Examples are:
 Service Number (BSN). In principle, the BSN cannot be used in research at all.
 - Criminal or justice-related data: they can only be processed under 
 governmental supervision or when a derogation exists in national legislation 
-(<a href = "https://gdpr-info.eu/art-10-gdpr/" target = "_blank">art. 10</a>).
+([art. 10](https://gdpr-info.eu/art-10-gdpr/){target="_blank"}).
