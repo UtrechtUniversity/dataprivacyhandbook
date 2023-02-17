@@ -41,6 +41,6 @@ of your faculty. Besides the privacy officer, you can also ask for help from:
 
 - [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}
 or your local data steward.
-- [Information security](https://intranet.uu.nl/en/security/information-security-contact-who-are-we){target="_blank"}
+- [Information security](https://intranet.uu.nl/en/security/information-security-contact-who-are-we){target="_blank"}.
 - In some faculties, the [Research Support Office](https://intranet.uu.nl/en/knowledgebase/research-support-offices){target="_blank"} 
 may be of help in drafting agreements.
