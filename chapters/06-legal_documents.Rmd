@@ -585,7 +585,7 @@ the EEA.
 subject to the GDPR (e.g., the party is situated in Germany or Italy).
 ::: 
 
-### Goal and content of a DTA {dtia-goal-content}
+### Goal and content of a DTA {#dtia-goal-content}
 
 The goal of a DTIA is to:
 
