@@ -110,7 +110,7 @@ the data you process can still contain personal data under the GDPR. Besides
 the examples mentioned here, there are many 
 [other examples of personal data](https://intranet.uu.nl/system/files/documenten/categories-of-personal-information-en.pdf){target="_blank"}. 
 If you need help assessing whether or not your data contain personal data, 
-please contact your [privacy officer or data manager]{#support}.
+please contact your [privacy officer or data manager](#support).
 
 ## Special types of personal data {#special-types-personal-data}
 There are a few special types of personal data that are worth taking note of: 
