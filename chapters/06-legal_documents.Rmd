@@ -1,4 +1,4 @@
-# Documents & Agreements {#legal-documents}
+# Documents & Assessments {#legal-documents}
 
 **This chapter addresses privacy-related documentation that is most commonly used
 within research. For each type of documentation, it explains what it entails,
@@ -16,11 +16,6 @@ The following documents are addressed:
 - [Several agreements](#agreements), such as the non-disclosure agreement, data processing
 agreement, data transfer agreement, joint controller agreement, and data use 
 agreement.
-
-::::note
-<br>
-This chapter is a work in progress: sub-chapters are added continuously.
-::::
 
 ## Information to data subjects {#privacy-notices}
 <head>
@@ -427,11 +422,200 @@ Bad example sentences:
 
 ## Privacy scan {#privacy-scan}
 
+A privacy scan is an initial risk assessment that helps you delineate how you 
+will handle and protect the personal data in your research project ("a Data 
+Management Plan for personal data", also known as "pre-DPIA", "DPIA-light", or 
+"privacy review"). It contains information on your 
+[research question(s)](#purpose-limitation), which [personal data](#personal-data) 
+you process and from which data subjects, how you use the personal data (e.g., 
+will you [share](#data-sharing-collaboration) them) and which 
+[protective measures](#design-strategies) you apply, your [legal basis](#legal-basis), 
+how data subjects can exercise their [data subjects’ rights](#data-subject-rights), 
+and a preliminary assessment of the [risks](#risk-assessment) for data subjects.
+
+The purpose of a privacy scan is to: 
+
+- Make a preliminary assessment of the risks of your project for data subjects.  
+- Implement [Privacy by Design and Privacy by Default](#privacy-by-design) into 
+your project. 
+- Fulfil the principle of [Accountability](#accountability) by documenting your 
+project. 
+- Identify whether a full [Data Protection Impact Assessment](#dpia) (DPIA) is needed. 
+
+### When to use a privacy scan? {#privacy-scan-when}
+
+Whenever you use personal data in your project, we recommend to complete a 
+privacy scan in consultation with your [privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"} 
+to make sure your data are well protected throughout your project. As the 
+privacy scan is a planning document, much like a Data Management Plan, it is 
+preferable to fill it out as **early as possible before you start collecting data**, 
+to prevent unforeseen or costly changes to the design of your research project.  
+
+::::note
+- Treat the privacy scan as a living document: update it if anything changes 
+in your design.  
+- Retain the privacy scan as long as you retain personal data.
+::::
+
+Note that there is some overlap in content with some Data Management Plans and 
+research protocols (e.g., that of the CCMO). The privacy aspects in a privacy 
+scan are just more extensive. 
+
+### Examples and templates
+<a href="https://geo-data-support.sites.uu.nl/privacy-scan-empty-template/" target="_blank" 
+style="text-decoration: none;"><button type="button">Example template</button></a>
+
 ## Data Protection Impact Assessment {#dpia}
+
+A Data Protection Impact Assessment (DPIA) is an instrument to identify and 
+mitigate privacy risks associated with processing personal data in a project. 
+Whereas a [privacy scan](#privacy-scan) is recommended for all projects 
+processing personal data, a DPIA is required by the GDPR if your processing of 
+personal data poses a 
+[high risk](https://intranet.uu.nl/en/knowledgebase/when-is-it-mandatory-to-do-a-dpia){target="_blank"} 
+to the rights and freedoms of data subjects or others 
+([art. 35](https://gdpr-info.eu/art-35-gdpr/){target="_blank"}). This can be the 
+case, for example, when you process personal data from vulnerable groups such 
+as children or patients, sensitive personal data, or a large amount of personal 
+data (see also the [risk assessment chapter](#risk-assessment)).
+
+A DPIA is very in-depth, and requires an official advice from the university’s 
+[Data Protection Officer](https://intranet.uu.nl/en/knowledgebase/data-protection-officer){target="_blank"} 
+(DPO). We strongly recommend contacting your 
+[privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"} 
+early on: they can best estimate whether a DPIA is necessary and to identify 
+any approved DPIAs that may be useful for your project to reuse. And they have 
+to be involved in performing the assessment anyway.
+
+### The process of performing a DPIA {#dpia-process}
+
+1. Contact your [privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"}
+as early as possible to assess the necessity to carry out a DPIA. 
+2. Work together with your privacy officer, and possible other stakeholders like 
+security officers, to assess your [design](#privacy-by-design) and 
+[risks](#risk-assessment) and complete the DPIA.
+3. When finished, the DPIA will be sent to the Data Protection Officer (DPO) for 
+advice. Their considerations will also need to be documented.
+4. You may need to adjust your research design and update the DPIA accordingly.
+5. In case of a negative DPO advice, you should ask your head of department or 
+faculty dean for permission to go ahead with your project.
+6. Regularly update the DPIA when there are changes in your research project.
+7. Retain the DPIA for as long as you retain personal data.
+
+### Examples and templates 
+
+<a href="https://intranet.uu.nl/en/system/files/data_protection_impact_assessment_based_on_norea_pia_version_1.2_english.xlsx" 
+target="_blank" style="text-decoration: none;"><button type="button">Example template Norea</button></a>
+<a href="https://intranet.uu.nl/en/system/files/documenten/model_data_protection_impact_assessment_pia_translated_from_dutch.pdf" 
+target="_blank" style="text-decoration: none;"><button type="button">Example template Dutch government</button></a>
+
+ 
+
+An example case from Utrecht University about social safety in the Dutch House 
+of Representatives is described on the 
+[UU intranet](https://intranet.uu.nl/en/news/background/privacy-in-practice-research-into-social-safety-in-the-dutch-house-of-representatives){target="_blank"} 
+(privacy considerations) and on the 
+UU website](https://www.uu.nl/en/news/utrecht-university-to-study-social-safety-in-dutch-house-of-representatives){target="_blank"} 
+(news message). 
+
 
 ## Legitimate interest assessment {#legitimate-interest-assessment}
 
+If you plan to use legitimate interest as a [legal basis](#legal-basis) in your 
+research project, the GDPR requires that you assess the balance between your 
+interests and those of your data subjects 
+([art. 6](https://gdpr-info.eu/art-6-gdpr/){target="_blank"}). In such an 
+assessment, you consider:
+
+- the purpose of your research: what is your interest? The interest (purpose) 
+must be real, concrete and direct. In research, enabling you to perform your 
+research is usually a legitimate purpose.
+- whether your processing is:
+  - necessary: can you reasonably achieve your goal in a more privacy-friendly 
+  way?, and
+  - proportionate: how many people will be affected, to what extent and how 
+  intrusive is your processing?
+- your interests vs. those of data subjects (balancing test), e.g., can data 
+subjects expect you to process their data this way, what is the impact of your 
+processing on data subjects, your project, and society, and which safeguards can 
+you put in place to protect data subjects’ interests? 
+
+### How to do a legitimate interest assessment? {#lia-how}
+
+Assessing the legitimacy of your processing is part of the 
+[privacy scan](#privacy-scan) or, if applicable, a [DPIA](#dpia). If you do not 
+use a privacy scan or DPIA and/or you have not performed this assessment (yet), 
+but you do rely on legitimate interest, please contact your 
+[privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"} 
+as soon as possible to perform a privacy scan anyways.
+
+::::note
+Please note: once your interest is assessed as being "legitimate", this is not 
+a free pass to do whatever you want with the data: you still need to incorporate 
+[Privacy by design](#privacy-by-design) into your project, for example by 
+adequately informing data subjects, protecting the personal data, and allowing 
+data subjects to exercise their rights.
+::::
+
+### Examples and templates 
+<a href="assets/Legitimate_interest_assessment_empty.pdf" target = "_blank" 
+style="text-decoration: none;"><button type="button">Template in the absence of a privacy scan/DPIA</button></a> 
+
+
 ## Data Transfer Impact Assessment {#dtia}
+
+A Data Transfer Impact Assessment (DTIA) is a risk analysis that is needed when 
+personal data are transferred to third countries. A DTIA is not an official 
+GDPR document by itself, like the DPIA, but instead is **usually part of, or a 
+supplement to, a [DPIA](#dpia)**.
+
+### What is a third-country transfer? {#third-country-transfer}
+::::fyi
+In legal terms, a transfer exists when personal data controlled by one party 
+are accessible to another, irrespective of whether the data are physically sent 
+to that party. An international/third-country transfer exists when the party 
+that can potentially gain access is based in a country outside the European 
+Economic Area (EEA) which does not have an 
+[adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}
+from the European Commission. So in GDPR terminology:
+
+- No transfer: a researcher who is connected to an EEA-organisation - and thus 
+has to abide by the GDPR - accesses data that are stored at that EEA-organisation 
+from a "non-adequate" country (provided safeguards are in place to prevent other 
+parties from gaining access). 
+- Third-country transfer: if personal data are stored at the servers of a 
+non-EEA party, or uses a cloud provider that has servers both in- and outside 
+the EEA.
+- No third-country transfer: the party with whom the data are shared is already 
+subject to the GDPR (e.g., the party is situated in Germany or Italy).
+::: 
+
+The goal of a DTIA is to:
+
+- assess the risks of:
+  - the data receiver not being able to provide the promised level of protection.
+  - local regulations preventing the removal or returning of the personal data after use.
+  - local authorities accessing the personal data (il)legitimately.
+- determine the appropriate safeguards to protect the data during the transfer. 
+
+The DTIA [should ideally contain](https://edpb.europa.eu/system/files/2021-06/edpb_recommendations_202001vo.2.0_supplementarymeasurestransferstools_en.pdf){target="_blank": 
+
+1. the context of the data transfer (which data are transferred, how, where?)
+2. under which safeguards ([art. 46](https://gdpr-info.eu/art-46-gdpr/){target="_blank"}) 
+the data will be transferred (e.g., [Standard Contractual Clauses](#scc))
+3. how effective the safeguards will be ([risk analysis](#risk-assessment))
+4. which additional safeguards are needed to ensure a sufficient level of data protection 
+5. a final decision on whether or not the data can be transferred
+
+As this is a relatively new topic in data protection land, please contact your 
+[privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"}
+for assistance with a DTIA or for questions about third-country transfers . 
+
+### Examples and templates 
+
+<a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/international-data-transfer-agreement-and-guidance/transfer-risk-assessments/#TRA-tool" target="_blank" 
+style="text-decoration: none;"><button type="button">Example questions</button></a>
+
 
 ## Processing register {#processing-register}
 
