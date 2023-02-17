@@ -8,11 +8,9 @@
 This chapter addresses guidelines to take into account when you want to share 
 personal data with collaborators outside of your own institution **during** 
 your research project. For guidelines to share personal data after a research 
-project, please refer to the chapter on 
-<a href="#data-sharing-reuse">Data sharing for reuse</a>. 
+project, please refer to the chapter on [Data sharing for reuse](#data-sharing-reuse). 
 
 To be able to share personal data with external collaborators, you should:  
-
 
 <details open="true"><summary><b>1. Make sure you have a legal basis and 
 inform data subjects</b></summary>
@@ -63,8 +61,7 @@ inform data subjects</b></summary>
     are then joint controllers, and agreements need to be made in a 
     <a href="#joint-controllers-agreement">joint controllers agreement</a>.</p><p>In any collaboration in which data are shared, you need to (<a href = "https://gdpr-info.eu/art-26-gdpr/" target = "_blank">art. 26</a>):</p><ul><li>Come to a formal agreement on:
         <ul><li>The role of each party in the research project</li><li>Respective responsibilities in terms of data protection, such as informing data subjects and handling requests relating to data subjects' rights</li><li>Who is the main point of contact for data subjects</li> </ul><li>Communicate (the essence of) the agreement to data subjects.</li></ul>
-  <p>Your 
-  <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
+  <p>Your <a href="#support" target = "_blank">privacy officer</a> 
   can help you draw up a valid agreement.</p>
  </div>
 </details>
@@ -78,13 +75,13 @@ inform data subjects</b></summary>
       drawing up an agreement to make sure the other party is GDPR-compliant and 
       uses the necessary security measures (if you haven’t already done so). The 
       exact type of agreement will depend on your specific situation: your 
-      <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a> 
+      <a href="#support" target = "_blank">privacy officer</a> 
       can help you choose and set up the right one.
     </p><p>The flowchart below indicates conditions under which you can share data 
       internationally. Note that they assume that you have taken sufficient 
       safeguards to protect the personal data. To determine the possibilities 
       of sharing data internationally in your project, we strongly advise you 
-      to consult with your <a href = "https://intranet.uu.nl/en/knowledgebase/contact-privacy" target = "_blank">privacy officer</a>. In some cases a <a href="#dtia">Data Transfer Impact Assessment</a> may 
+      to consult with your <a href="#support" target = "_blank">privacy officer</a>. In some cases a <a href="#dtia">Data Transfer Impact Assessment</a> may 
       be required, which can take some effort.</p><img src="img/international-data-transfer.png" alt="Flowchart about 
       international data transfers. If you are transfering data to countries 
       within the European Economic Area, no additional measures are required. If 
