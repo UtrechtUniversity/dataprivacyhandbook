@@ -105,6 +105,7 @@ I want to...:
     <li>
         <details>
             <summary>Plan a GDPR-compliant research project</summary>
+            <ul>
                 <li><a href="#privacy-by-design">Designing your research project</a></li>
                 <li><a href="#legal-basis">Choosing a legal basis</a></li>
                 <li><a href="#risk-assessment">Assessing the risks in your project</a>, 
