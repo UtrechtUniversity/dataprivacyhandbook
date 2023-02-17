@@ -5,7 +5,7 @@ personal data in research. Click a question you have to read its answer.
 
 ```{r faqsformattingfunction, message=FALSE, warning=FALSE, echo=FALSE,include=FALSE}
 # Install and load the readxl package
-install.packages("readxl")
+#install.packages("readxl")
 library(readxl)
 
 formatfaqs <- function(faqsheet){
@@ -103,7 +103,7 @@ faqs_student <- formatfaqs("faqs-student")
 
 `r faqs_student`
 
-### Finding support {#support}
+### Finding support {#finding-support}
 
 ```{r faqs-support, message=FALSE,warning=FALSE,echo=FALSE}
 faqs_support <- formatfaqs("faqs-support")
