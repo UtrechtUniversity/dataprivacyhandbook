@@ -250,7 +250,7 @@ Understanding these principles is the first step to determining what type of
 personal data can be collected and how they can processed.**
 
 The GDPR principles are explained further below the image. The 
-[next chapter](#privacy-by-design) describes how to implement these principles 
+[Design chapter](#privacy-by-design) describes how to implement these principles 
 in your research. You can also always contact your [privacy officer](#support).
 
 <img src="img/gdpr-principles.png" alt="Principles of the GDPR: Lawful, fair and 
