@@ -47,15 +47,13 @@ Additionally, you can find available software via
 
 We are creating an overview of potential privacy-related tools for 
 deidentifying data, creating synthetic data, and analysing data in secure 
-environments in 
-[this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/){target="_blank"}.
+environments in a GitHub repository.
 
-```{r github-repo, out.width='100%', dev='png', cache=TRUE, screenshot.opts=list(vwidth=992)}
-knitr::include_url("https://github.com/UtrechtUniversity/privacy-engineering-tools/")
-```
+<a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/" target="_blank" 
+style="text-decoration: none;"><button type="button">To the overview</button></a>
 
-Please feel free to open an Issue or a Pull Request if you wish to adjust the
-existing content or add new content in this repository.
+Please feel free to open an Issue or a Pull Request in this repository if you 
+wish to adjust the existing content or add new content.
 
 
 ## Requirements for a third-party tool {#tool-requirements}
