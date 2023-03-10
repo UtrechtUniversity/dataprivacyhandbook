@@ -71,13 +71,13 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Data Privacy Handbook},
-  pdfauthor={Utrecht University \textbar{} Last updated: 2023-02-17},
+  pdfauthor={Utrecht University \textbar{} Last updated: 2023-03-10},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Data Privacy Handbook}
-\author{Utrecht University \textbar{} Last updated: 2023-02-17}
-\date{17 februari 2023}
+\author{Utrecht University \textbar{} Last updated: 2023-03-10}
+\date{10 maart 2023}
 
 \begin{document}
 \maketitle
@@ -96,7 +96,7 @@
 
 \includegraphics{img/cover-image-dph.png}
 
-\emph{Last updated: 17 February 2023}
+\emph{Last updated: 10 March 2023}
 
 The Data Privacy Handbook is a guide on handling personal data in scientific
 research, in line with European data protection and privacy regulations. It
@@ -2576,8 +2576,8 @@ are standardised clauses, including these can make it easier to finalise a DPA.
 \hypertarget{differential-privacy}{%
 \section{Differential privacy}\label{differential-privacy}}
 
-\hypertarget{secure-computing}{%
-\chapter{Secure computing}\label{secure-computing}}
+\hypertarget{secure-computation}{%
+\chapter{Secure computing}\label{secure-computation}}
 
 \hypertarget{other-techniques}{%
 \chapter{Other techniques}\label{other-techniques}}
@@ -2651,13 +2651,12 @@ Additionally, you can find available software via
 
 We are creating an overview of potential privacy-related tools for
 deidentifying data, creating synthetic data, and analysing data in secure
-environments in
-\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/}{this GitHub repository}.
+environments in a GitHub repository.
 
-\begin{center}\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/}{\includegraphics[width=1\linewidth]{dataprivacyhandbook_files/figure-latex/github-repo-1} }\end{center}
+To the overview
 
-Please feel free to open an Issue or a Pull Request if you wish to adjust the
-existing content or add new content in this repository.
+Please feel free to open an Issue or a Pull Request in this repository if you
+wish to adjust the existing content or add new content.
 
 \hypertarget{tool-requirements}{%
 \section{Requirements for a third-party tool}\label{tool-requirements}}
@@ -3028,14 +3027,312 @@ with encryption.
 \hypertarget{data-sharing-reuse}{%
 \chapter{Sharing data for reuse}\label{data-sharing-reuse}}
 
+\textbf{In the context of Open Science, it is becoming more important to share data with
+other researchers, so that they can reproduce results and reuse the data to
+answer new research questions. This can be challenging when you work with
+personal data. Here, we list a few options for sharing personal data for reuse
+responsibly, and making datasets that contain personal data
+\href{https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair}{Findable, Accessible, Interoperable and Reusable}
+(FAIR).}
+
+How you can make your dataset FAIR, from a privacy perspective, depends on
+which scenario applies to you:
+
+\begin{itemize}
+\tightlist
+\item
+  Your data are fully anonymised: you can
+  \protect\hyperlink{publish-anonymous-data}{publish them in a data repository}.
+\item
+  Your data cannot be fully anonymised, but you have a
+  \protect\hyperlink{share-reuse-legal-basis}{legal basis to share them for reuse}: you can share
+  them, but possibly with some restrictions.
+\item
+  Your data cannot be fully anonymised, and you do not have a legal basis to
+  share them: you cannot share them, but we discuss
+  \protect\hyperlink{sharing-reuse-alternatives}{some alternatives}.
+\end{itemize}
+
+If you are in doubt whether you can share personal data for reuse, please ask
+your \protect\hyperlink{support}{privacy officer} for help.
+
 \hypertarget{publish-anonymous-data}{%
-\section{Publishing anonymised data}\label{publish-anonymous-data}}
+\section{Sharing anonymised data}\label{publish-anonymous-data}}
+
+If (part of) the data are truly fully anonymous, they are not classified as
+personal data anymore: from a privacy perspective, you can publish this
+anonymised (part of the) dataset
+\href{https://www.uu.nl/en/research/research-data-management/guides/publishing-and-sharing-data}{in a data repository}
+without restrictions.
+
+The data should indeed be fully anonymous.
+\protect\hyperlink{pseudonymisation-anonymisation}{Here} you can find how you know that your data
+are anonymous. In
+\href{https://doi.org/10.31234/osf.io/ybzu9}{this preprint}, you
+can find some examples of poorly anonymised (hence still personal) datasets in
+the field of psychology. It can be very difficult to fully anonymise personal
+data, so when in doubt, we recommend to always treat data as personal.
+
+Just because data are no longer subject to the GDPR, it does not mean that there
+may not be other concerns for sharing data publicly. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  publishing the data may not be \emph{ethically} responsible when the data can be
+  used to discriminate against a group of people.
+\item
+  data may be someone else's intellectual property.
+\end{itemize}
+
+Publish your data in a
+\href{https://tools.uu.nl/repository-decision-tool/}{data repository}
+and include sufficient documentation and an
+\href{https://www.uu.nl/en/research/research-data-management/guides/publishing-and-sharing-data}{open license}
+to your dataset, to make your data
+\href{https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair}{FAIR}.
+This way, others can find, access, understand and reuse your data.
 
 \hypertarget{share-reuse-legal-basis}{%
 \section{Sharing personal data with a legal basis}\label{share-reuse-legal-basis}}
 
+If you cannot fully anonymise your data, they are still considered personal data.
+In order to share personal data for reuse, you therefore need to consider the
+following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Be transparent in your information to data subjects
+\item
+  Make sure you have a legal basis
+\item
+  Protect the data while sharing
+\item
+  Make your personal data FAIR
+\end{enumerate}
+
+If you are in doubt whether you can share personal data for reuse, please ask
+your \protect\hyperlink{support}{privacy officer} for help. If you cannot share the personal data
+for reuse, there are still \protect\hyperlink{sharing-reuse-alternatives}{alternatives} you can
+apply to make (characteristics of) your data useful to others.
+
+\hypertarget{transparent-reuse}{%
+\subsection{1. Be transparent}\label{transparent-reuse}}
+
+Irrespective of the legal basis you use to share personal data, data subjects
+must be informed about any reuse of their data. This allows them to exercise
+their rights, such as the right to object (if you use public interest) or to
+withdraw their consent (if you use consent). \textbf{If data subjects haven't been
+informed that you will share their data, you cannot share their data}: you have
+not fulfilled your transparency obligation!
+
+Before the start of your project
+
+Include the intention of sharing data in your
+\protect\hyperlink{privacy-notices}{information to data subjects}, how you plan to keep them
+informed, and how they can exercise \protect\hyperlink{data-subject-rights}{their rights}.
+Avoid language that precludes sharing, such as ``your data will remain strictly
+confidential'', and ``your data will only be shared with members of the research
+team''.
+
+If it is not possible to identify the specific data subject that objected or
+withdrew consent within the dataset, without additional information provided
+by the data subject themselves, data subjects can simply not exercise those
+rights anymore. Let data subjects know about this!
+
+At the time of data sharing
+
+If you can still identify the data subjects in your dataset at the time
+of data sharing (e.g., if you still have a keyfile and/or contact information),
+inform the data subjects specifically about the data sharing process, using
+appropriate channels such as email
+(\href{https://gdpr-info.eu/art-12-gdpr/}{art. 12},
+\href{https://gdpr-info.eu/art-14-gdpr/}{art. 14}): which data are
+shared, with whom exactly, for which purposes, under which restrictions, and
+how can data subjects object or withdraw consent?
+
+If you cannot identify data subjects in the dataset at the time of data sharing
+(e.g., there is no keyfile/contact information anymore, but the data are not
+anonymous), inform them indirectly on how their data are being (re)used and
+if/how they can exercise their rights, via channels that are easily accessible,
+for example through a project website, newsletter, mailing list, etc.
+
+In most cases, the original owner (controller) of the data is responsible for
+informing data subjects and handling requests related to data subjects' rights,
+unless otherwise agreed.
+
+\hypertarget{legal-basis-reuse}{%
+\subsection{2. Make sure you have a legal basis}\label{legal-basis-reuse}}
+
+When you share personal data with another organisation for their own specified
+reuse, the recipient will likely become a new \protect\hyperlink{definitions}{controller} of the
+personal data. This means that both you and the recipient need a valid legal
+reason to share (you, the owner) and (re)use (recipient) the personal data.
+
+For the \textbf{original owner}, there are multiple possibilities to rely on to share
+the data:
+
+Further processing for research purposes
+
+This is a derogation in the GDPR that enables personal data to be further
+processed (e.g., shared) for \emph{research purposes}, without requiring a new legal
+basis, as long as sufficient safeguards are in place to protect the data
+(e.g., pseudonymisation, access control, data transfer agreement, etc,
+\href{https://gdpr-info.eu/art-5-gdpr/}{art. 5(1)(b)},
+\href{https://gdpr-info.eu/art-89-gdpr/}{art. 89}). If the data
+are not shared for research purposes, then this derogation does not apply.
+\textbf{Note}: There is ongoing discussion whether you can rely on this
+derogation if you used consent to collect the data: sharing that falls
+outside of the scope of the original consent, may not meet the
+\protect\hyperlink{consent-requirements}{specificity criterium} and may not be
+\protect\hyperlink{lawful-fair-and-transparent}{fair} to data subjects. You can rely on it,
+however, if you used another legal basis to collect the data (e.g., public
+interest, legitimate interest).
+
+Consent for data sharing
+
+This entails asking explicit consent to share data with others for reuse
+for specified purposes, before you collect the data. In
+\href{https://www.uu.nl/en/research/research-data-management/guides/informed-consent-for-data-sharing}{this guide}
+you can find more information about that.
+
+An advantage of this approach is that it gives data subjects a lot of
+control, and reuse does not have to be limited to scientific research only
+(as it is with further processing).
+
+A limitation of this approach is that consent has to be specific in
+order to be valid. Thus, consent for data sharing is only legitimate when
+you \emph{additionally} inform data subjects about the \emph{specific} sharing right
+before you share the data (e.g., with whom specifically will the data be
+shared and why?), so that data subjects can still withdraw their data sharing
+consent.
+
+Public or legitimate interest
+
+Public or legitimate interest could in principle also be used as a legal
+bases to share personal data, when sharing the data is necessary and
+proportional and it does not override the interests of the data subjects
+(a \protect\hyperlink{privacy-scan}{privacy scan} is a good way to assess that).
+
+\textbf{For the recipient}, in most cases the legal basis for reusing the received
+data is public interest (when reused for research purposes), although
+legitimate interest (when reused for non-research purposes) and consent (if the
+recipient can themselves obtain consent from the data subjects) are also
+possible. Using public (and legitimate) interest requires the recipient to
+assess the risks for data subjects against the benefits of using the data for
+their purposes (a \protect\hyperlink{privacy-scan}{privacy scan} is a good way to do that). This
+is necessary because the recipient will become a new controller and therefore
+also has to treat the personal data in a fair, transparent and lawful way. The
+recipient is usually also bound by the restrictions set forth by the original
+owner, which usually happens through a
+\protect\hyperlink{data-transfer-agreement}{data transfer agreement} or custom license (e.g., use
+safeguards to protect the data, do not share the data any further, only use the
+data for the specified purposes, etc.).
+
+If you want to share or reuse
+\protect\hyperlink{special-types-personal-data}{special categories of personal data}, you may
+still need explicit consent, except when the data subject had made their data
+publicly available themselves, or when obtaining consent would involve an
+unreasonable amount of effort.
+
+\hypertarget{protect-sharing-reuse}{%
+\subsection{3. Protect the data while sharing}\label{protect-sharing-reuse}}
+
+Unless you have a legal basis to make personal data publicly available, you
+should aim to protect the personal data also while sharing them. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  Do not share more data than needed; pseudonymise the data as much as possible.
+\item
+  Put in place an \protect\hyperlink{agreements}{agreement} that forces recipients to treat the
+  data confidentially and that clarifies each party's responsibilities.
+\item
+  Share the data safely, for example by giving access via a secure
+  \protect\hyperlink{data-storage}{storage} environment, or \protect\hyperlink{encryption}{encrypting} the data
+  before transferring them.
+\item
+  Always follow the restrictions that you communicated to data subjects.
+\end{itemize}
+
+\hypertarget{fair-personal-data}{%
+\subsection{4. Make your data FAIR}\label{fair-personal-data}}
+
+Personal data or not, you can always make your data Findable, Accessible,
+Interoperable and Reusable:
+
+Findable
+
+Publish your metadata and documentation in a
+\href{https://tools.uu.nl/repository-decision-tool/}{data repository}
+that assigns a persistent identifier to the dataset. Depending on your
+situation, you may be able to deposit the data there as well (under restricted
+access).
+
+Accessible
+
+Clearly specify if and how others can access your dataset and make that
+information publicly available. Some studies have set up a data access
+protocol in which this is made clear (e.g., data are accessible after signing
+an agreement, writing a research proposal, helping to collect new data, etc.).
+You can find an
+\href{https://www.uu.nl/sites/default/files/DataAccessProtocol_YOUth_220627.pdf}{example here}.
+
+Interoperable
+
+Structure and document your data so that they are easily understandable
+for humans and machines (see our
+\href{https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair}{FAIR guide}).
+
+Reusable
+
+If you only deposited metadata and documentation, add an
+\href{https://www.uu.nl/en/research/research-data-management/guides/publishing-and-sharing-data}{open license}
+to the dataset (e.g., CC0 or CC BY 4.0). If you deposited the personal data
+in the data repository as well, there will usually be custom terms of use
+such as the data access protocol mentioned under Accessible.
+
 \hypertarget{sharing-reuse-alternatives}{%
 \section{Alternatives to sharing personal data}\label{sharing-reuse-alternatives}}
+
+\hypertarget{publish-metadata}{%
+\subsection{Publish metadata and documentation}\label{publish-metadata}}
+
+Even if you cannot share/publish the data, you can still publish non-sensitive
+metadata and documentation surrounding your research project. This allows your
+dataset and documentation to be findable, citable, and in some cases even
+reusable (one person's metadata is another person's data!). In order to
+\href{https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair}{make the dataset FAIR},
+you should include a note on the access restrictions of the dataset and choose
+a good \href{https://tools.uu.nl/repository-decision-tool/}{data repository}.
+Knowing that your dataset exists can sometimes already be useful information,
+even when the data are not accessible for others. For an example, please refer to
+the use case about the \protect\hyperlink{open-science-questionnaire}{Open Science Monitor}.
+
+\hypertarget{reuse-strategies}{%
+\subsection{Use other techniques and strategies to enable reuse}\label{reuse-strategies}}
+
+There are also more technical alternatives to transferring personal data to others:
+
+\begin{itemize}
+\tightlist
+\item
+  Use solutions that allow others to run analyses on your data, without ever
+  needing access to those data (remote data science, see the
+  \protect\hyperlink{secure-computation}{Secure computing} chapter).
+\item
+  Create a \protect\hyperlink{synthetic-data}{synthetic dataset} that others can use to reproduce
+  trends or explore the data.
+\item
+  Only allow \protect\hyperlink{differential-privacy}{differentially private algorithms} to query
+  your dataset.
+\item
+  Publish aggregated (anonymous) data which may still be useful for others
+  (e.g., group-level statistics).
+\end{itemize}
 
 \hypertarget{part-use-cases}{%
 \chapter{(PART*) Use Cases}\label{part-use-cases}}
