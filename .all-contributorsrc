@@ -107,6 +107,17 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "qubixes",
+      "name": "qubixes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44498096?v=4",
+      "profile": "https://github.com/qubixes",
+      "contributions": [
+        "content",
+        "ideas",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
