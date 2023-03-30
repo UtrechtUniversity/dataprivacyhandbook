@@ -92,6 +92,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MIBeltran"><img src="https://avatars.githubusercontent.com/u/107920053?v=4?s=100" width="100px;" alt="Mercedes Beltrán"/><br /><sub><b>Mercedes Beltrán</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3AMIBeltran" title="Reviewed Pull Requests">👀</a> <a href="#ideas-MIBeltran" title="Ideas, Planning, & Feedback">🤔</a> <a href="#promotion-MIBeltran" title="Promotion">📣</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.uu.nl"><img src="https://avatars.githubusercontent.com/u/121875841?v=4?s=100" width="100px;" alt="Rik D.T. Janssen"/><br /><sub><b>Rik D.T. Janssen</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3ARikDTJanssen" title="Reviewed Pull Requests">👀</a> <a href="#ideas-RikDTJanssen" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/maartenschermer"><img src="https://avatars.githubusercontent.com/u/6727628?v=4?s=100" width="100px;" alt="maarten schermer"/><br /><sub><b>maarten schermer</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3Amaartenschermer" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
