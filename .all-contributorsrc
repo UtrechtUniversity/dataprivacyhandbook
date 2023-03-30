@@ -37,26 +37,26 @@
       "profile": "https://github.com/Danny-dK",
       "contributions": [
         "review"
-        ]
-      },
-      {
+      ]
+    },
+    {
       "login": "gspeed0689",
       "name": "Garrett Speed",
       "avatar_url": "https://avatars.githubusercontent.com/u/6378547?v=4",
       "profile": "http://garrettspeed.com",
       "contributions": [
         "review"
-        ]
-     },
-     {
+      ]
+    },
+    {
       "login": "MartineDeVos",
       "name": "Martine de Vos",
       "avatar_url": "https://avatars.githubusercontent.com/u/1482239?v=4",
       "profile": "https://www.uu.nl/staff/MGdeVos",
       "contributions": [
         "review"
-        ]
-       },
+      ]
+    },
     {
       "login": "Mish-JPFD",
       "name": "Jacques Flores",
@@ -66,7 +66,7 @@
         "ideas",
         "content",
         "review"
-        ]
+      ]
     },
     {
       "login": "RonScholten",
@@ -77,6 +77,17 @@
         "content",
         "review"
       ]
+    },
+    {
+      "login": "MIBeltran",
+      "name": "Mercedes Beltrán",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107920053?v=4",
+      "profile": "https://github.com/MIBeltran",
+      "contributions": [
+        "review",
+        "ideas",
+        "promotion"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -84,5 +95,6 @@
   "projectOwner": "UtrechtUniversity",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
