@@ -88,6 +88,16 @@
         "ideas",
         "promotion"
       ]
+    },
+    {
+      "login": "RikDTJanssen",
+      "name": "Rik D.T. Janssen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/121875841?v=4",
+      "profile": "http://www.uu.nl",
+      "contributions": [
+        "review",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
