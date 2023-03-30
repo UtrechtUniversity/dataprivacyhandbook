@@ -26,7 +26,7 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-03-10" />
+<meta name="author" content="Utrecht University | Last updated: 2023-03-30" />
 
 
 
@@ -261,7 +261,11 @@ Support.</p>" />
 </ul></li>
 <li class="part"><span><b>Use Cases</b></span></li>
 <li class="chapter" data-level="" data-path="pet-survey.html"><a href="pet-survey.html"><i class="fa fa-check"></i>Data minimisation in a survey</a></li>
-<li class="chapter" data-level="" data-path="youth-pseudonymisation.html"><a href="youth-pseudonymisation.html"><i class="fa fa-check"></i>Data pseudonymisation</a></li>
+<li class="chapter" data-level="" data-path="youth-pseudonymisation.html"><a href="youth-pseudonymisation.html"><i class="fa fa-check"></i>Data pseudonymisation</a>
+<ul>
+<li class="chapter" data-level="" data-path="youth-pseudonymisation.html"><a href="youth-pseudonymisation.html#general-steps"><i class="fa fa-check"></i>General steps</a></li>
+<li class="chapter" data-level="" data-path="youth-pseudonymisation.html"><a href="youth-pseudonymisation.html#pseudonymisation-per-data-type"><i class="fa fa-check"></i>Pseudonymisation per data type</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="open-science-questionnaire.html"><a href="open-science-questionnaire.html"><i class="fa fa-check"></i>Publishing metadata</a></li>
 <li class="chapter" data-level="" data-path="reuse-education-data.html"><a href="reuse-education-data.html"><i class="fa fa-check"></i>Reusing education data for research</a></li>
 <li class="part"><span><b>Resources</b></span></li>
@@ -295,7 +299,205 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="youth-pseudonymisation" class="section level1 hasAnchor">
 <h1>Data pseudonymisation<a href="youth-pseudonymisation.html#youth-pseudonymisation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Coming soon!</p>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/yellow-details.css">
+<style>
+details > summary {
+  padding: 1px 4px;
+}
+</style>
+</head>
+<p><a href="https://www.uu.nl/en/research/youth-cohort-study" target="_blank">YOUth</a>
+(Youth of Utrecht) is a longitudinal child cohort study that collects data about
+the behavioural and cognitive development of children in the Utrecht area. The
+study follows about 4000 children and their parents in two cohorts. One from
+birth until around the age of six, one from around 9-years-old until adolescence.
+YOUth collects a wide variety of data types, ranging from questionnaires to
+biological samples. Because of the large amount of data and the sensitive nature
+of the data and the participants (minors), the data can be considered as very
+sensitive, and thus should be pseudonymised where possible.</p>
+<div id="general-steps" class="section level3 hasAnchor">
+<h3>General steps<a href="youth-pseudonymisation.html#general-steps" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>YOUth is committed to sharing their data for reuse, and thus the datasets that
+they share should contain as little personal information as possible. For that
+purpose, the YOUth data manager implements a number of measures:</p>
+<ul>
+<li>All data are pseudonymised as much as possible (see below).</li>
+<li>Every dataset that is shared for reuse is first checked for identifiable
+information. Special category information is taken out of the datasets as much
+as possible, and no unnecessary information such as date of birth is shared.</li>
+<li>Using the tool
+<a href="https://github.com/UtrechtUniversity/anonymouus" target="_blank">AnonymoUUs</a>,
+participant pseudonyms are replaced with artificial pseudonyms, and all
+dates with a fake date, each time a new set of data is prepared for sharing.
+This limits the ability of external researchers to link multiple requested
+datasets together and thus to form a more complete image of each participant.
+It also prevents singling out participants based on the day they visited the
+research centre.</li>
+</ul>
+</div>
+<div id="pseudonymisation-per-data-type" class="section level3 hasAnchor">
+<h3>Pseudonymisation per data type<a href="youth-pseudonymisation.html#pseudonymisation-per-data-type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Below is an overview of the data types and pseudonymisation measures taken by
+the YOUth data manager. Besides these pseudonymisation measures, YOUth has
+implemented a
+<a href="https://www.uu.nl/en/research/youth-cohort-study/data-access" target="_blank">data request procedure</a>
+which delineates the conditions under which researchers can access the data,
+and the steps they have to take to request access.</p>
+<details>
+<summary>
+Questionnaire data (tabular)
+</summary>
+<div>
+<p>Children and their parents/caretakers (sometimes their teacher) fill out
+several questionnaires about, among others, their mental and physical
+development, living conditions, and social environment.</p>
+Pseudonymisation measures:
+<ul>
+<li>
+A script removes unnecessary (special category) personal data from the
+shared dataset where possible, such as religion, ethnicity and open text
+responses.
+</li>
+<li>
+If a researcher needs demographic information only to describe the sample,
+the data manager shares a frequency table of the requested information, for
+example for ethnicity and socio-economic status, instead of sharing the raw
+responses.
+</li>
+<li>
+The Anonymouus tool replaces the pseudonym and date in the questionnaire
+data and file names.
+</li>
+</ul>
+<p>In the future, the data manager would like to share only scale scores, instead of responses to individual questions in standardised questionnaires.</p>
+</div>
+</details>
+<details>
+<summary>
+Computer tasks (tabular)
+</summary>
+<div>
+On a computer, children play various games to measure cognitive and motoric
+development of the child. In most games, the response times, choices and scores
+are recorded. To pseudonymise the data, the AnonymoUUs tool replaces the
+pseudonym and dates in the task data and filenames and in some cases even the
+name of the participant.
+</div>
+</details>
+<details>
+<summary>
+Logbook- and experiment book data (tabular)
+</summary>
+<div>
+Notes about data collection (data quality, task-order, if experiment
+started etc.) are made in logbooks by means of a data capturing tool. In that
+same tool, YOUth also collects research data about body measures (length, weight
+and head circumference) and intelligence (WISC and WPPSI) To pseudonymise those
+data, the AnonymoUUs tool replaces the pseudonym and date in the filenames and
+data.
+</div>
+</details>
+<details>
+<summary>
+Video tasks (video recording)
+</summary>
+<div>
+<p>
+During two tasks (the Hand game and the Delay of gratification task),
+children are video- and audiotaped to be able to analyse their behaviour. Parents
+may also be visible in the background, as well as a research assistant.
+</p>
+<p>
+To pseudonymise these data, both the videos from the Hand game and the Delayed
+gratification task will be coded/scored on the variables of interest (e.g., does
+the child take the candy out of the bag or not). This way, no actual video
+recordings will need to be shared with other researchers.
+</p>
+</div>
+</details>
+<details>
+<summary>
+Parent-child interaction (video recording)
+</summary>
+<div>
+Children and their parents are videotaped while they play with each other
+or discuss specific topics. Because these data are difficult to pseudonymise and
+could be scored/coded on many different aspects, YOUth provides a special local
+laboratory space to perform the desired qualitative analysis on these video
+data.
+</div>
+</details>
+<details>
+<summary>
+Magnetic Resonance Imaging (MRI) data (3D image)
+</summary>
+<div>
+<p>
+MRI data of children are collected to study structural (3D image of the
+brain, skull, and outer layers of the head) and functional (brain activity)
+properties of the brain.
+</p>
+<p>
+To pseudonymise the MRI data, structural MRI scans (DICOM) are defaced using
+<a href="https://surfer.nmr.mgh.harvard.edu/fswiki/mri_deface" target="_blank">mri_deface</a>
+(v1.22), resulting in NIfTi files. Additionally, the AnonymoUUs tool replaces
+the pseudonym in the filenames.
+</p>
+</div>
+</details>
+<details>
+<summary>
+Electro-encephalography (EEG) data (video and text files)
+</summary>
+<div>
+A cap is placed on the child’s head with electrodes attached to measure
+brain activity. The child is placed in front of a monitor and views various
+on-screen stimuli (incl. faces, objects, sounds, music, toys). A video is also
+made to check whether the child watches the screen. For the moment, the videos
+will not be shared with external researchers. In the EEG data itself, the
+AnonymoUUs tool replaces the pseudonym and date.
+</div>
+</details>
+<details>
+<summary>
+Eye tracking data (text files)
+</summary>
+<div>
+Children are placed in front of a screen and view various stimuli (incl. 
+faces, objects, sounds, music, toys), with or without an assignment. Eye
+movements and focus points are recorded using an eyetracker. To pseudonymise
+these data, the AnonymoUUs tool replaces the pseudonym and date in the
+eyetracking data and the filenames.
+</div>
+</details>
+<details>
+<summary>
+Ultrasound images (3D echos)
+</summary>
+<div>
+During the mothers’ pregnancy, 3D ultrasound images are made of foetuses
+to follow overall and brain size development. To pseudonymise these data, the
+ultrasound images (DICOM) will be converted to nifti (.nii) format, which does
+not contain header information. Additionally, the AnonymoUUs tool replaces the
+pseudonym and date in the filenames and in the SQL database that comes with the
+measurement.
+</div>
+</details>
+<details>
+<summary>
+Biological materials
+</summary>
+<div>
+At various moments during the study, (chord) blood, hair, saliva, and
+buccal swabs are taken from the child and sometimes their parent(s). The samples
+cannot be pseudonymised, because they are physical samples. Instead, a procedure
+is in place to have biological samples analysed at preferred partners, without
+having to share the physical samples with researchers.
+</div>
+</details>
+</div>
 </div>
 <div class = "footer">
 <footer>
