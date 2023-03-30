@@ -98,6 +98,15 @@
         "review",
         "ideas"
       ]
+    },
+    {
+      "login": "maartenschermer",
+      "name": "maarten schermer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6727628?v=4",
+      "profile": "https://github.com/maartenschermer",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
