@@ -1,1 +1,411 @@
-# Secure computing {#secure-computation}
+# Secure computation {#secure-computation}
+
+When you use personal data in your research project, you likely also need to 
+analyse those data, often using a script of sorts. In this chapter, we discuss 
+the following scenarios for analysing personal data: 
+
+<img src="img/secure-computing.png" alt="Graphical depiction of the  three 
+secure computation scenarios: data-to-code, code-to-data and federated analysis" 
+height="100%"/>
+
+1. ["Regular" data analysis](#data-to-code) ("data-to-code"), where the data are 
+brought to the "script" or analysis software in order to analyse them.
+2. ["Code-to-data" scenario](#code-to-data), where a script or analysis software 
+is run on the data, without moving the data elsewhere. 
+3. [Federated analysis scenario](#federated-analysis), where a script or 
+analysis software runs on multiple datasets that are in different locations, 
+without moving those datasets elsewhere.
+
+Additionally, we discuss relatively new 
+[cryptographic techniques](#computational-cryptography) that can be used in 
+securing the analysis of  personal or otherwise sensitive data.
+
+#### Which scenario should I choose?
+
+Which scenario is suitable to apply in your project depends on, among others: 
+
+- Your dataset: does it contain personal data? How large is the dataset? Do you 
+know the data structure and analysis method beforehand? 
+- Which computing facility is most suitable: 
+  - Local (e.g., laptop), on campus (e.g., cluster at Geosciences), from a 
+  national trusted party (e.g., SURF), or external (e.g., Amazon, Microsoft)? 
+  - Located in the Netherlands, Europe or in a non-EEA country? 
+  - Small or large amount of computing power (CPUs/codes/threads or GPUs, memory 
+  size, disk space, etc.)? 
+- Which software you need to run on the data using the computer power, e.g., R, 
+Python, SPSS, or any other scripting language. 
+  - Does the software require root user access to install and/or configure? 
+  - Does the software require paid licenses (e.g., MATLAB)? 
+  - Can the software be installed in advance, or does it need to be updated 
+  during analyses (e.g., with additional packages from a repository)? 
+- Whether and with whom you are collaborating on your project. 
+
+#### Tools and support {#computation-support}
+
+We have created an overview of secure computing software and services in this 
+[GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/secure-computing-tools.md){target="_blank"}. 
+Keep in mind that this is by no means a complete list! 
+
+If you work at Utrecht University, you can ask the 
+[Research engineering team](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"} 
+for help with choosing a suitable computing solution. If you have already 
+chosen a solution, but are not sure whether it is safe to use, you can contact 
+[Information Security or your privacy officer](#support) for help.
+
+## "Regular" data analysis: data-to-code {#data-to-code}
+
+In this scenario, you transfer the data to a computing facility, and run an 
+analysis (script) on the data. In the most basic variant, this computing 
+facility consists of your work computer or faculty computing cluster, where you 
+do not transfer the data outside of your organisation for the analysis. In other 
+cases, data need to be transferred to a computing facility outside your 
+organisation, such as [high-performance clusters](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/high-performance-and-cloud-computing){target="_blank"} 
+from SURF, Microsoft, Amazon, etc. 
+
+### When to use
+
+If you have a relatively small dataset, the "data-to-code" scenario is the most 
+common and flexible scenario: 
+
+- It allows you to choose a computing facility that is best suited to your 
+situation.  
+- It allows you to interactively read, analyse, export and transport the data 
+you want.  
+
+Disadvantages of this approach can be: 
+
+- When transferring the data to a computing facility, often new copies of the 
+data are created, which can make it more difficult to keep track of different 
+versions of the data. 
+- Transferring data always comes with additional risks of a data breach. Besides 
+protection during data storage, it is therefore crucial to also protect the data 
+during the transfer to the computing facility, and when used at the computing 
+facility itself.  
+- The way the data are transferred to the computing facility is not always as 
+straightforward, especially if you have a large dataset. 
+
+### Implications for research
+
+In this scenario, you need to make sure that: 
+
+- You apply data minimisation, access control, and, if applicable, 
+pseudonymisation and other protective measures to limit the amount of personal 
+data that is transferred to the computing facility. 
+- The data are also protected during the transfer to the computing facility 
+(e.g., your work laptop or an external solution), for example through encryption. 
+
+Additionally, if the computing facility is provided by an external processor 
+(e.g., SURF, Amazon): 
+
+- A [data processing agreement](#data-processing-agreement) with the provider of 
+the computing facility is needed. If there is none, you cannot use the computing 
+facility to analyse personal data. 
+- The computing facility should be suitable (secure enough) for the 
+[sensitivity level](#data-classification) of your (personal) data. For example, 
+if your data are "critical" in terms of confidentiality, the computing facility 
+should also have that "critical" classification.
+
+### Examples 
+
+- You use your faculty’s high performance cluster to analyse a dataset that you 
+collected at your organisation. 
+- You use the High Performance Computing platform from SURF to analyse a large 
+dataset that you collected at your organisation. In this case, a 
+[data processing agreement](#data-processing-agreement) between your organisation 
+and SURF is needed to make sure that your organisation remains in control of the 
+personal data at SURF's servers.
+- You use Amazon Web Services (AWS) to analyse a large dataset that you 
+collected at your organisation. In this case, a 
+[data processing agreement](#data-processing-agreement) between your organisation 
+and AWS is even more important, because Amazon has servers that are located 
+outside of the European Economic Area.
+
+## Code-to-data (one data provider) {#code-to-data}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/yellow-details.css">
+<style>
+details > summary {
+  padding: 1px 4px;
+}
+</style>
+</head>
+
+In this scenario, an analysis is run on data without transferring the data 
+outside of the organisation In many cases, only the results of the analysis can 
+be exported, and not the data. 
+
+We distinguish the following versions of this scenario: 
+
+<details><summary><b>'Tinker' version: interaction with the data</b></summary>
+<div>In the Tinker version, users can log in to the computing facility and directly 
+interact with the data, but there may be technical limitations on the import and 
+export of the data. Procedural limitations should be posed through 
+[agreements](#agreements) with the user. This version can be implemented in 
+multiple ways, such as: 
+<ul>
+  <li>Accessing and analysing locally stored data on premises. An example is 
+  analysing highly sensitive data in a dedicated room without an internet 
+  connection.</li>
+  <li>Accessing locally stored data through 
+  [remote desktop](https://manuals.uu.nl/en/manual/solisworkspace-faq/){target="_blank"}. 
+  This usually does not impose technical limitations on what can be done with 
+  the data.</li>
+  <li>[Virtual Research Environments](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/virtual-research-environments){target="_blank"}
+  (VREs) are temporary facilities where you can interactively perform 
+  computations on data in the cloud. In this case, it is sometimes possible to 
+  impose technical limitations on what can be done with the data (in which case 
+  these are called 
+  "[Trusted Research Environments](https://the-turing-way.netlify.app/project-design/sdpw/trew.html){target="_blank"}"). 
+  Examples of VREs are 
+  [SURF Research Cloud](https://www.surf.nl/en/surf-research-cloud-collaboration-portal-for-research){target="_blank"} 
+  and [anDREa](https://www.andrea-cloud.eu/){target="_blank"}.</li>
+</ul>
+</div></details>
+<details><summary><b>'Blind' version: remote execution</b></summary>
+<div>In the Blind version, users do not have access to the data 
+at all, and only receive the results of an analysis, after reviews by the data 
+owner(s) to ensure that the results do not contain sensitive details. In this 
+case, a [synthetic dataset](#synthetic-data) can be provided to write and test 
+the analysis script on, before it is run on the real dataset. This "blind" 
+version could be run in a dedicated environment where researchers can upload 
+their script, but can also be implemented manually, for example when a 
+researcher sends a script by email to be run on a dataset, and receives the 
+results back via email as well (i.e., this is possible when neither the script 
+nor the results contain any sensitive details).
+</div></details>
+
+::::note
+At the moment, both the Tinker and Blind versions of this code-to-data scenario 
+are being developed as virtual research environments in the 
+[Secure ANalysis Environment](https://www.surf.nl/en/news/sane-secure-data-environment-for-social-sciences-and-humanities){target="_blank"} 
+project (SANE). 
+::::
+
+### When to use
+
+Reasons to use this scenario include: 
+
+- You want to retain control over the data, e.g., to prevent any unnecessary 
+copies from being made (data sovereignty). 
+- You do not want, or are not allowed to transfer the data, because they contain 
+personal data or intellectual property. 
+- The dataset is too large to transfer. 
+- In the 'Blind' version: You want to be sure that the analysis results do not 
+contain any sensitive details. 
+
+### Implications for research 
+
+Compared to the "[data-to-code](#data-to-code)" scenario, the code-to-data 
+approach offers more control over the data, but often requires more, sometimes 
+manual, work, such as: 
+
+- Checking the credentials of a user: can they be trusted? An 
+[agreement](#agreements) with the user may be desirable or even required. In 
+SURF Research Cloud, credentials can be checked using 
+[SURF Research Access Management](https://www.surf.nl/en/surf-research-access-management-easy-and-secure-access-to-research-services){target="_blank"}. 
+- Preparing a protected computing environment that a user can use. 
+- In the 'Blind' version:
+  - Creating a [synthetic dataset](#synthetic-data). 
+  - Reviewing the output of the script for sensitive elements. This requires 
+  the right expertise. 
+  - Reviewing whether the code that is run on the data is privacy-preserving. 
+  This also requires the right expertise.
+
+It is essential to have a well-described workflow to use this scenario, to 
+ensure confidentiality of the personal data. Additionally, dedicated personnel 
+may make the process easier and consistent. 
+
+### Examples
+
+- A research team needs to process a dataset containing health data to determine 
+the number of Covid-19 patients at a certain hospital. The hospital providing 
+this dataset does not allow transferring the dataset, but they do allow to run 
+scripts on the dataset. To make that possible, the hospital provides a computing 
+facility, owned by the hospital, to run scripts from research teams. In addition, 
+for each result, the hospital staff inspects if it contains personal data, and 
+if not, it will be passed onto the research team. Since a result like "100 
+patients at this hospital have had Covid-19 in 2021" does not contain personal 
+data, it can be safely passed to the research team.
+- In the [data donation approach](#data-donation), the software 
+[PORT](https://github.com/eyra/port){target="_blank"} can be run on data 
+subjects' locally stored data, and only the results of that analysis can be 
+shared with the researcher if allowed by the data subject. Note however that the 
+sensitivity of the results fully depend on the analysis that was run. 
+
+## Federated analysis {#federated-analysis}
+
+Federated analysis is an extension to the [code-to-data](#code-to-data) scenario, 
+where the data of interest are owned by multiple organisations. In this scenario, 
+the data remain with multiple data providers, and the script "travels" across 
+those data sources, combining the results in a central location, and only 
+sharing the results of the analysis. If necessary, there are techniques to hide 
+intermediate results (which could also reveal sensitive information). If the 
+script in question is a machine learning model, then this technique is called 
+"federated (machine) learning". You can learn more about federated analysis in 
+[this article](https://foldercase.com/blog-federated-data-analysis-how-to-get-started.php){target="_blank"}.
+
+### When to use
+
+Federated analysis is useful when there are multiple data providers who do not 
+allow transferring their data outside of the organisation, or whose data are 
+simply too large to share.
+
+### Implications for research 
+
+- A prerequisite for analysing data in this way is often that the data at the 
+different providers are similarly structured and use similar terminology (e.g., 
+making sure that every party uses "male", "female", and "other" as levels for 
+the variable Gender, instead of "girl" and "boy", or 0 and 1). 
+- Federated analysis works best for "horizontally partitioned" datasets, where 
+different organisations have the same (types of) information, but from different 
+people. It is not well-suited for "vertically partitioned" datasets, where the 
+different organisations have different (types of) information on the same people 
+and thus want to link those different data sources. 
+- Setting up the infrastructure for federated analysis is challenging and can 
+take a large amount of time (software installation, access rights, linking 
+datasets, etc.). It is wise to first investigate whether this option is indeed 
+the most suitable for your project.
+
+### Examples
+
+- A research team needs access to various datasets containing health data to 
+determine which factors contribute to health of Covid-19 patients at various 
+hospitals. Each dataset contains health data from patients of the hospital where 
+they are treated. Since each dataset contains sensitive personal data, it is not 
+desirable to store these datasets in a central location to combine them. To be
+able to answer the research question, one needs to access each dataset separately 
+and combine the results of each dataset. To make this possible, each hospital 
+provides a computing facility. The research team submits their script to each of 
+the computing facilities, where it is run on the local dataset. After a check by 
+each hospital's staff that the results do not contain any sensitive details, the 
+results of the individual computations are combined centrally into one result. 
+In the example, the result of the calculation at each hospital is a prediction 
+model for Covid-19 patients, and the individual models are combined to create a 
+more reliable prediction model. 
+- Several university medical centres use the 
+[Personal Health Train](https://pht.health-ri.nl/){target="_blank"} from 
+Health-RI, which relies on the [vantage6](https://vantage6.ai/){target="_blank"} 
+software. 
+- [DataSHIELD](https://www.datashield.org/index.php/about){target="_blank"} is 
+an infrastructure and a series of R packages that allows to co-analyse data 
+hosted at different organisations. It requires harmonising the data at the 
+different organisations and setting up the DataSHIELD infrastructure.
+
+## Cryptographic techniques {#computational-cryptography}
+
+Besides the scenarios described previously, there are also multiple cryptographic 
+techniques that can be applied to protect sensitive data in the analysis phase. 
+Here, we discuss secure multiparty computation, confidential computing, and 
+homomorphic encryption.  
+
+::::note
+Although there is some overlap in functionality and purpose between these three techniques, they are generally still considered to be distinct and can be combined to enhance security. 
+::::
+
+::::warning
+These cryptographic techniques are relatively new and are not available as 
+distinct services (yet) for direct application in research. They are for now 
+listed here for information purposes. 
+::::
+
+### Secure multiparty computation {#mpc}
+
+Secure multiparty computation (also referred to as "MPC") is a set of 
+cryptographic techniques that allows multiple parties to jointly perform analyses 
+on distributed datasets, as if they had a shared database, and without revealing 
+the underlying data to each other. Among those techniques are secure set 
+intersection (securely investigating which elements multiple databases have in 
+common), homomorphic encryption (see below), and others.  
+
+#### When to use 
+
+The benefits of MPC are that no raw data are shared between the parties, 
+computations are guaranteed to perform correctly, and there is a degree of 
+control on who receives the result of the computation (i.e., the results are 
+not necessarily combined in a central location). MPC is therefore a good way of 
+implementing Privacy by Design into your project when you work with personal 
+data.  
+
+Contrary to [federated analysis](#federated-analysis), MPC is suitable for 
+linking "vertically partitioned" datasets, i.e., when different organisations 
+have different (types of) information on the same people and thus want to link 
+those different data sources. 
+ 
+
+#### Implications for research 
+
+- The computation in MPC is really joint: you need to have agreed on a specific 
+analysis to be performed and what you will reveal as result of the computation. 
+- There is no one-size-fits-all MPC solution: different use cases ask for 
+different implementations of MPC.
+- Additional computational resources are required to generate random secrets 
+and distribute data over the multiple parties. 
+
+#### Example 
+
+- MPC was used by a medical insurance company and hospital to determine the 
+effectiveness of a personal lifestyle app for diabetes. In this example, it was 
+possible to calculate average medical cost for different patient groups, based 
+on whether they used the app or not, without revealing patient information 
+between the insurance company and the hospital. 
+- You can find a simplified example on 
+[jointly calculating average income here](https://www.geeksforgeeks.org/what-is-secure-multiparty-computation/){target="_blank"}. 
+
+You can find more information about secure multiparty computation on 
+https://securecomputation.org/, in 
+[this report](http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b){target="_blank"}, 
+and on the [website of TNO](https://mpc.tno.nl){target="_blank"}. 
+
+---
+
+### Confidential computing 
+
+Confidential computing is a technique that protects data in use through a 
+(hardware-based) Trusted Execution Environment (TEE). This environment makes 
+sure that data within it are kept confidential (data confidentiality) and that 
+both the data and the code running in the TEE cannot be modified or deleted 
+(data and code integrity). The TEE uses embedded encryption keys and makes sure 
+that the analysis stops running when malware or unauthorised access is detected. 
+Moreover, data and code are even invisible to the operating system, cloud 
+provider and any virtual machines. 
+
+There are many possible applications of this technique, for example: 
+
+- You want to protect against unauthorised access during the analysis of 
+sensitive data. 
+- You want to analyse sensitive data, and it is necessary to use an untrusted 
+cloud platform or infrastructure. 
+- You want to prevent the analysis script from leaking or manipulating data.  
+
+It is important that confidential computing is used together with encryption of 
+data at rest and in transit, with restricted access to the decryption keys. It 
+also requires the TEE to be trustworthy (attestation), which is an active field 
+of study. You can read more on the website of the 
+[Confidential Computing Consortium](https://confidentialcomputing.io/){target="_blank"}. 
+
+---
+
+### (Fully) homomorphic encryption {#homomorphic-encryption}
+
+Where "regular" [encryption](#encryption) focuses on data at rest (e.g., in 
+storage) or data in transit (e.g., when transferring data), homomorphic 
+encryption allows analyses to be performed on encrypted data ("data in use"). 
+During the analysis, both the data and the computation result remain encrypted, 
+unless they are decrypted by the decryption key owner. This technique can be 
+applied both in [confidential computing](#confidential-computing) and in 
+[secure multiparty computation](#mpc). 
+
+There are multiple types of homomorphic encryption: partial, somewhat partial 
+and fully homomorphic encryption. The latter is the most promising solution, as 
+it allows an infinite number of additions and multiplications to be performed on 
+the encrypted data.  
+
+Currently, the practical use of homomorphic is limited, because it can require 
+a lot of computational resources to use it, causing it to be relatively slow. 
+New implementations are however being developed, see 
+[this website](https://homomorphicencryption.org/introduction/){target="_blank"} 
+for a list of available implementations. Another limitation is that there is no 
+interaction with the data during the analysis, and so you cannot check whether 
+the analysis was successful. To solve this, you could use a synthetic dataset 
+to develop and test your algorithms first. 
