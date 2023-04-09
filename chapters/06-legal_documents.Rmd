@@ -144,15 +144,6 @@ testing, or by interactions with data subjects themselves (or their
 representatives).
 
 ## Informed consent {#informed-consent-forms}
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-<style>
-details > summary {
-  padding: 1px 4px;
-}
-</style>
-</head>
 
 **Of the 6 possible legal bases to process personal data, informed consent is 
 currently the one most often used in research. With the term consent, we mean 
