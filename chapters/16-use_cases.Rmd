@@ -29,15 +29,6 @@ Note that the new version of the survey:
 interest) and publish (consent) the data for purposes other than education.
 
 # Data pseudonymisation {#youth-pseudonymisation}
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-<style>
-details > summary {
-  padding: 1px 4px;
-}
-</style>
-</head>
 
 [YOUth](https://www.uu.nl/en/research/youth-cohort-study){target="_blank"} 
 (Youth of Utrecht) is a longitudinal child cohort study that collects data about 
