@@ -1,10 +1,5 @@
 # Sharing data with collaborators {#data-sharing-collaboration}
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-</head>
-
 This chapter addresses guidelines to take into account when you want to share 
 personal data with collaborators outside of your own institution **during** 
 your research project. For guidelines to share personal data after a research 
