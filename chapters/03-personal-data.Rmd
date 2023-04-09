@@ -39,33 +39,33 @@ technology ([rec. 26](https://gdpr-info.eu/recitals/no-26/){target="_blank"}).
 Data can be identifiable when:
 
 - They contain **directly identifying information**.<br>
-<details><summary><i>Examples (click to expand)</i></summary>
-  name, image, video recording, audio recording, patient number, IP address, 
-  email address, phone number, location data, social media data
-  <br><br>
+<details>
+  <summary><i>Examples (click to expand)</i></summary>
+    <div>name, image, video recording, audio recording, patient number, IP address, 
+    email address, phone number, location data, social media data<br></div>
 </details>
 - It is possible to **single out** an individual, for example when there are 
 unique data points or unique behavioural patterns which can only apply to one 
 person.<br>
-<details><summary><i>Examples</i></summary>
-  <ul>
-    <li>You have a data subject who is 2.10 meters tall. If this is a unique 
-    value in your dataset, this distinguishes this person from others and thus 
-    can make them identifiable.</li>
-    <li>You have a data subject who only follows far-right accounts on Twitter. 
-    If they are the only one in your dataset who do so, this distinguishes this 
-    person from others and can make them identifiable.</li>
-  </ul>
-  <br>
+<details>
+  <summary><i>Examples</i></summary>
+    <div><ul>
+      <li>You have a data subject who is 2.10 meters tall. If this is a unique 
+      value in your dataset, this distinguishes this person from others and thus 
+      can make them identifiable.</li>
+      <li>You have a data subject who only follows far-right accounts on Twitter. 
+      If they are the only one in your dataset who do so, this distinguishes this 
+      person from others and can make them identifiable.</li>
+    </ul><br></div>
 </details>
 - It is possible to **infer information** about an individual based on information
 in your dataset.<br>
-<details><summary><i>Examples</i></summary>
-<ul>
-  <li>Inferring a medical condition based on registered medications.</li>
-  <li>Guessing that someone lives in a certain neighbourhood based on where they go to school.</li>
-</ul>
-<br>
+<details>
+  <summary><i>Examples</i></summary>
+  <div><ul>
+    <li>Inferring a medical condition based on registered medications.</li>
+    <li>Guessing that someone lives in a certain neighbourhood based on where they go to school.</li>
+  </ul><br></div>
 </details>
 - It is possible to **link records** relating to an individual. This can happen 
 when combining multiple variables within your dataset (e.g., demographic 
@@ -73,8 +73,9 @@ information, indirect identifiers). However, it can also happen when combining
 your dataset with other datasets (the "Mosaic effect"). In that case, your data 
 still contain personal data, even if the data in your own dataset are not 
 identifiable by themselves.<br>
-<details><summary><i>Examples</i></summary>
-  Linkage is often possible with demographic information (age, 
+<details>
+  <summary><i>Examples</i></summary>
+  <div>Linkage is often possible with demographic information (age, 
   gender, country of origin, education, workplace information, etc.) and 
   indirect identifiers (pseudonyms, device ID, etc.), for example:
   <ul>
@@ -92,8 +93,7 @@ identifiable by themselves.<br>
     [This video](https://www.youtube.com/watch?v=Pivd71NYKDA){target="_blank"} 
     nicely explains why.</li>
   </ul>
-  <br>
-</details>
+  <br></div></details>
 - De-identification is still **reversible**. This often happens when data are 
 pseudonymised, but there is still a way to link the pseudonymised data with 
 identifiable data, for example when a name-pseudonym key still exists.
