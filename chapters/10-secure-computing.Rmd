@@ -4,7 +4,7 @@ When you use personal data in your research project, you likely also need to
 analyse those data, often using a script of sorts. In this chapter, we discuss 
 the following scenarios for analysing personal data: 
 
-<img src="img/secure-computing.png" alt="Graphical depiction of the  three 
+<img src="img/secure-computing.png" alt="Graphical depiction of the three 
 secure computation scenarios: data-to-code, code-to-data and federated analysis" 
 height="100%"/>
 
@@ -54,13 +54,23 @@ chosen a solution, but are not sure whether it is safe to use, you can contact
 
 ## "Regular" data analysis: data-to-code {#data-to-code}
 
-In this scenario, you transfer the data to a computing facility, and run an 
-analysis (script) on the data. In the most basic variant, this computing 
-facility consists of your work computer or faculty computing cluster, where you 
-do not transfer the data outside of your organisation for the analysis. In other 
-cases, data need to be transferred to a computing facility outside your 
-organisation, such as [high-performance clusters](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/high-performance-and-cloud-computing){target="_blank"} 
-from SURF, Microsoft, Amazon, etc. 
+<div style="display: flex; flex-direction: row; align-items: flex-start;">
+  <img src="img/data-to-code.png" alt="Graphical depiction of the data-to-code 
+  scenario: the data are brought to the code (e.g., by transferring them)" 
+  style="width: 25%; max-width: 200px; margin-right: 10px;"/>
+  <p>
+    In this scenario, you transfer the data to a computing facility, and run an 
+    analysis (script) on the data.
+  <br>
+  <br>
+    In the most basic variant, this computing facility consists of your work 
+    computer or faculty computing cluster, where you do not transfer the data 
+    outside of your organisation for the analysis. In other cases, data need to 
+    be transferred to a computing facility outside your organisation, such as 
+    [high-performance clusters](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/high-performance-and-cloud-computing){target="_blank"} 
+    from SURF, Microsoft, Amazon, etc.
+  </p>
+</div>
 
 ### When to use
 
@@ -131,9 +141,17 @@ details > summary {
 </style>
 </head>
 
-In this scenario, an analysis is run on data without transferring the data 
-outside of the organisation In many cases, only the results of the analysis can 
-be exported, and not the data. 
+<div style="display: flex; flex-direction: row; align-items: flex-start;">
+  <img src="img/code-to-data.png" alt="Graphical depiction of the code-to-data
+  scenario: the data are not transferred outside the organisation, and instead, 
+  the code travels to the data" 
+  style="width: 25%; max-width: 200px; margin-right: 10px;"/>
+  <p>
+    In this scenario, an analysis is run on data without transferring the data 
+    outside of the organisation In many cases, only the results of the analysis 
+    can be exported, and not the data. 
+  </p>
+</div>
 
 We distinguish the following versions of this scenario: 
 
@@ -234,6 +252,11 @@ shared with the researcher if allowed by the data subject. Note however that the
 sensitivity of the results fully depend on the analysis that was run. 
 
 ## Federated analysis {#federated-analysis}
+
+<img src="img/federated-analysis.png" alt="Graphical depiction of the federated
+analysis scenario: code (e.g., a machine learning model) travels across local
+datasets and compiles the results of running the code in a central server" 
+height="100%"/>
 
 Federated analysis is an extension to the [code-to-data](#code-to-data) scenario, 
 where the data of interest are owned by multiple organisations. In this scenario, 
