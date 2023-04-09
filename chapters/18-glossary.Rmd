@@ -7,59 +7,66 @@ The glossary consists of frequently used jargon concerning the GDPR and research
 
 <details>
   <summary><b>Anonymous data</b></summary>
-    Any data where an individual is irreversibly de-identified, both directly (e.g., through names and   email addresses) and indirectly. The latter means that you cannot identify someone:
-      <ul>
-        <li>by combining variables or datasets (e.g., a combination of date of birth, gender and birthplace, or the combination of a dataset with its name-number key)</li>
-        <li>via inference, i.e., when you can deduce who the data are about (e.g., when profession is Dutch prime minister, it is clear who the data is about)</li>
-        <li>by singling out a single subject, such as through unique data points (e.g., someone who is 210 cm tall is relatively easy to identify)</li>
-      </ul>
-    <p>
-      Anonymous data are no longer personal data and thus not subject to GDPR compliance. In practice, anonymous data may be difficult 
-      to attain and care must be given that the data legitimately cannot be traced to an individual in any way. The document 
-      <a href="https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf" target="_blank">Opinion 05/2014 on Anonymisation Techniques</a> 
-      explains the criteria that must be met for data to be considered anonymous.
-    </p>
+  <div>Any data where an individual is irreversibly de-identified, both directly 
+  (e.g., through names and email addresses) and indirectly. The latter means 
+  that you cannot identify someone:
+  <ul>
+    <li>by combining variables or datasets (e.g., a combination of date of birth, 
+    gender and birthplace, or the combination of a dataset with its name-number key)</li>
+    <li>via inference, i.e., when you can deduce who the data are about (e.g., 
+    when profession is Dutch prime minister, it is clear who the data is about)</li>
+    <li>by singling out a single subject, such as through unique data points 
+    e.g., someone who is 210 cm tall is relatively easy to identify)</li>
+  </ul>
+  <p>
+  Anonymous data are no longer personal data and thus not subject to GDPR 
+  compliance. In practice, anonymous data may be difficult to attain and care 
+  must be given that the data legitimately cannot be traced to an individual in 
+  any way. The document 
+  [Opinion 05/2014 on Anonymisation Techniques](https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf){target="_blank"} 
+  explains the criteria that must be met for data to be considered anonymous.
+  </p></div>
 </details>
 
 #### C
 
 <details>
   <summary><b>Controller</b></summary>
-    <p>
-      The natural or legal entity that, alone or with others, determines or has an influence on <b>why</b> and <b>how</b> 
-      personal data are processed. On an organisational level, Utrecht University (UU) is the controller of personal data 
-      collected by UU researchers and will be held responsible in case of GDPR infringement. On a practical level, however, 
-      researchers (e.g., Principal Investigators) often determine why and how data are processed, and are thus fulfilling the 
-      role of controller themselves.
-    </p>
-    <p>
-    Note that it is possible to be a controller without having access to personal
-    data, for example if you assign an external company to execute research for 
-    which you determined which data they should collect, among which data subjects, 
-    how, and for what purpose.
-    </p>
+  <div><p>
+  The natural or legal entity that, alone or with others, determines or has an 
+  influence on <b>why</b> and <b>how</b> personal data are processed. On an 
+  organisational level, Utrecht University (UU) is the controller of personal 
+  data collected by UU researchers and will be held responsible in case of GDPR 
+  infringement. On a practical level, however, researchers (e.g., Principal 
+  Investigators) often determine why and how data are processed, and are thus 
+  fulfilling the role of controller themselves.
+  </p>
+  <p>
+  Note that it is possible to be a controller without having access to personal
+  data, for example if you assign an external company to execute research for 
+  which you determined which data they should collect, among which data subjects, 
+  how, and for what purpose.
+  </p></div>
 </details>
 
 #### D
 
 <details>
   <summary><b>Data subject</b></summary>
-    <p>
-      A living individual who can be identified directly or indirectly through personal data. In a research setting, 
-      this would be the individual whose personal data is being processed (see below for the definition of processing).
-    </p>
+    <div>A living individual who can be identified directly or indirectly through 
+      personal data. In a research setting, this would be the individual whose 
+      personal data is being processed (see below for the definition of processing).</div>
 </details>
 
 #### E
 
 <details>
   <summary><b>European Economic Area (EEA)</b></summary>
-    <p>
-      The member states of the European Union and Iceland, Liechtenstein, and Norway. In total, the EEA now consists of 
-      30 countries. The aim of the EEA is to enable the "free movement of goods, people, services and capital" between countries, 
-      and this includes (personal) data (source: 
-      <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)" target="_blank">Eurostat</a>).
-    </p>
+    <div>The member states of the European Union and Iceland, Liechtenstein, and 
+      Norway. In total, the EEA now consists of 30 countries. The aim of the EEA 
+      is to enable the "free movement of goods, people, services and capital" 
+      between countries, and this includes (personal) data (source: 
+      <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)" target="_blank">Eurostat</a>).</div>
 </details>
 
 
@@ -67,8 +74,7 @@ The glossary consists of frequently used jargon concerning the GDPR and research
 
 <details>
   <summary><b>Hashing</b></summary>
-    <p>
-    Hashing is a way of replacing one or multiple variables with a string of 
+    <div>Hashing is a way of replacing one or multiple variables with a string of 
     random characters with a fixed length. It can be used to create a “hashed” 
     pseudonym, or to replace multiple variables with one unique value. It is 
     usually quite difficult to reverse the hashing process, except if an attacker 
@@ -76,86 +82,104 @@ The glossary consists of frequently used jargon concerning the GDPR and research
     To prevent reversal, cryptographic hashing techniques add a “salt”, i.e., a 
     random number or string, to the hash (the result is called a “digest”). If 
     the “salt” is kept confidential or is removed (similar to a keyfile), it is 
-    almost impossible to reverse the hashing process.
-    </p>
+    almost impossible to reverse the hashing process.</div>
 </details>
 
 #### L
 
 <details>
   <summary><b>Legal basis</b></summary>
-  <p>
-    Any processing of personal data should have a valid legal basis. Without it, you are now allowed to process personal data at all. 
-    The GDPR provides 6 legal bases: consent, legitimate interest, public interest, legal obligation, performance of a contract, vital 
-    interest. Consent and public and legitimate interest are most often used in a research context.
-  </p>
+  <div>
+  Any processing of personal data should have a valid legal basis. Without it, 
+  you are now allowed to process personal data at all. The GDPR provides 6 legal 
+  bases: consent, public interest, legitimate interest, legal obligation, 
+  performance of a contract, and vital interest. Consent and public interest are 
+  most often used in a research context. 
+  </div>
 </details>
 
 #### P
 
 <details>
   <summary><b>Personal data</b></summary>
-  <p>
-    Any information related to an identified or identifiable (living) natural person, for example identifiers (name, identification number, 
-    location data, online identifier or a combination of identifiers) or factors specific to the physical, physiological, genetic, mental, 
-    economic, cultural or social identity of the person. Moreover, IP address, opinions, tweets, answers to questionnaires, etc. may also be 
-    personal data, either by itself or through a combination of one another.
+  <div><p>
+  Any information related to an identified or identifiable (living) natural 
+  person. This can include identifiers (name, identification number, location 
+  data, online identifier or a combination of identifiers) or factors specific 
+  to the physical, physiological, genetic, mental, economic, cultural or social 
+  identity of the person. Moreover, IP addresses, opinions, tweets, answers to 
+  questionnaires, etc. may also be personal data, either by itself or through a 
+  combination of one another.
   </p>
   <p>
-    Of note: as soon as you process data related to a person that is identifiable, you are processing personal data. Additionally, 
-    pseudonymised data is still considered personal data. Read more in <a href="#privacy-by-design">Designing a GDPR-compliant research project</a>.
-  </p>
+  Of note: as soon as you collect data related to a person that is identifiable, 
+  you are processing personal data. Additionally, pseudonymised data is still 
+  considered personal data. Read more in 
+  [What are personal data?](#personal-data).
+  </p></div>
 </details>
 
 <details>
   <summary><b>Processing</b></summary>
-    <p>
-      Any operation performed on personal data, including collection, storage, organisation, alteration, analysis, 
-      transcription, sharing, publishing, deletion, etc.
-    </p>
+  <div>
+  Any operation performed on personal data. This includes collection, storage, 
+  organisation, alteration, analysis, transcription, sharing, publishing, deletion, etc.
+  </div>
 </details>
 
 <details>
   <summary><b>Processor</b></summary>
-    <p>
-        A natural or legal entity that processes personal data on behalf of the 
+  <div>
+  A natural or legal entity that processes personal data on behalf of the 
   controller. For example, when using a cloud transcription service, you often 
   need to send personal data (e.g., an audio recording) to the transcription 
   service for the purpose of your research, which is then fulfilling the role 
   of processor. Other examples of processors are mailhouses used to send emails
   to data subjects, or Trusted Third Parties who hold the keyfile to link 
   pseudonyms to personal data. When using such a third party, you must have a 
-  <a href="#data-processing-agreement">data processing agreement</a> in place.
-    </p>
+  [data processing agreement](#data-processing-agreement) in place.
+  </div>
 </details>
 
 <details>
   <summary><b>Pseudonymous data</b></summary>
-  <p>
-    Personal data that cannot lead to identification <i>without additional information</i>, 
-    such as a key file linking pseudonyms to names. This additional information should be kept separately and securely 
-    and makes for deidentification that is reversible. Data are sometimes pseudonymised by replacing direct identifiers 
-    (e.g., names) with a participant code (e.g., number). However, this may not always suffice, as sometimes it is still 
-    possible to identify participants indirectly (e.g., through linkage, inference or singling out). Importantly, pseudonymous 
-    data are still personal data and therefore must be handled in accordance with the GDPR.
-  </p>
+  <div>
+  Personal data that cannot lead to identification <i>without additional 
+  information</i>, such as a key file linking pseudonyms to names. This additional 
+  information should be kept separately and securely and makes for 
+  de-identification that is reversible. Data are sometimes pseudonymised by 
+  replacing direct identifiers (e.g., names) with a participant code (e.g., 
+  number). However, this may not always suffice, as sometimes it is still 
+  possible to identify participants indirectly (e.g., through linkage, inference 
+  or singling out). Importantly, pseudonymous data are still personal data and 
+  therefore must be handled in accordance with the GDPR.
+  </div>
 </details>
 
 #### S
 
 <details>
   <summary><b>Special categories of personal data</b></summary>
-    Any information pertaining to the data subject which reveals any of the below categories:
-      <ul>
-        <li>racial or ethnic origin</li>
-        <li>political opinions</li>
-        <li>religious or philosophical beliefs</li>
-        <li>trade union membership</li>
-        <li>genetic and biometric data when meant to uniquely identify someone</li>
-        <li>physical or mental health conditions</li>
-        <li>an individual's sex life or sexual orientation</li>
-      </ul><p>The processing of these categories of data is 
-      <b>prohibited</b>, unless one of the exceptions of 
-    <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">art. 9</a> applies. 
-    For example, an exception applies when:</p><ul><li>the data subject has provided explicit consent to process these data for a specific purpose</li><li>the data subject has made the data publicly available themselves </li><li>processing is necessary for scientific research purposes</li></ul><p>Contact your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a> if you wish to process special categories of personal data.</p>
+  <div>Any information pertaining to the data subject which reveals any of the below categories:
+  <ul>
+    <li>racial or ethnic origin</li>
+    <li>political opinions</li>
+    <li>religious or philosophical beliefs</li>
+    <li>trade union membership</li>
+    <li>genetic and biometric data when meant to uniquely identify someone</li>
+    <li>physical or mental health conditions</li>
+    <li>an individual's sex life or sexual orientation</li>
+  </ul>
+  
+  The processing of these categories of data is <b>prohibited</b>, unless one of 
+  the exceptions of [article 9](https://gdpr-info.eu/art-9-gdpr/){target="_blank"} 
+  applies. For example, an exception applies when:
+  <ul>
+    <li>the data subject has provided explicit consent to process these data for 
+    a specific purpose,</li>
+    <li>the data subject has made the data publicly available themselves,</li>
+    <li>processing is necessary for scientific research purposes.</li>
+  </ul>
+  <p>
+  Contact your [privacy officer](#support) if you wish to process special categories of personal data.</p></div>
 </details>
