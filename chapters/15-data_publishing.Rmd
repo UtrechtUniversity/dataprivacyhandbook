@@ -62,16 +62,6 @@ This way, others can find, access, understand and reuse your data.
 
 ## Sharing personal data with a legal basis {#share-reuse-legal-basis}
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-<style>
-details > summary {
-  padding: 1px 4px;
-}
-</style>
-</head>
-
 If you cannot fully anonymise your data, they are still considered personal data. 
 In order to share personal data for reuse, you therefore need to consider the 
 following steps:
@@ -182,6 +172,8 @@ the data:
   </div>
 </details>
   
+<br>
+
 **For the recipient**, in most cases the legal basis for reusing the received 
 data is public interest (when reused for research purposes), although 
 legitimate interest (when reused for non-research purposes) and consent (if the 
