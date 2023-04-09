@@ -131,15 +131,6 @@ and AWS is even more important, because Amazon has servers that are located
 outside of the European Economic Area.
 
 ## Code-to-data (one data provider) {#code-to-data}
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-<style>
-details > summary {
-  padding: 1px 4px;
-}
-</style>
-</head>
 
 <div style="display: flex; flex-direction: row; align-items: flex-start;">
   <img src="img/code-to-data.png" alt="Graphical depiction of the code-to-data
