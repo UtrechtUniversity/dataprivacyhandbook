@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Definition of personal data | Data Privacy Handbook</title>
+  <title>Code-to-data (one data provider) | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Definition of personal data | Data Privacy Handbook" />
+  <meta property="og:title" content="Code-to-data (one data provider) | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,25 +19,25 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Definition of personal data | Data Privacy Handbook" />
+  <meta name="twitter:title" content="Code-to-data (one data provider) | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-03-30" />
+<meta name="author" content="Utrecht University | Last updated: 2023-04-13" />
 
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-04-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="personal-data.html"/>
-<link rel="next" href="personal-data-assess.html"/>
+<link rel="prev" href="data-to-code.html"/>
+<link rel="next" href="federated-analysis.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -82,12 +82,14 @@ Support.</p>" />
 <li class="divider"></li>
 <li class="part"><span><b>Intro</b></span></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Data Privacy Handbook</a><ul>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About</a><ul>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html#license-and-citation"><i class="fa fa-check"></i>License and Citation</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="how-to-use-this-handbook.html"><a href="how-to-use-this-handbook.html"><i class="fa fa-check"></i>How to use this Handbook</a><ul>
 <li class="chapter" data-level="" data-path="how-to-use-this-handbook.html"><a href="how-to-use-this-handbook.html#what-are-you-looking-for"><i class="fa fa-check"></i>What are you looking for?</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="license-and-citation.html"><a href="license-and-citation.html"><i class="fa fa-check"></i>License and Citation</a></li>
 <li class="chapter" data-level="" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i>Disclaimer</a></li>
-<li class="chapter" data-level="" data-path="contributions.html"><a href="contributions.html"><i class="fa fa-check"></i>Contributions</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Privacy FAQs</a><ul>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#general"><i class="fa fa-check"></i>General questions</a></li>
@@ -114,7 +116,7 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="data-subject-rights.html"><a href="data-subject-rights.html"><i class="fa fa-check"></i>Data Subjects’ Rights</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="personal-data.html"><a href="personal-data.html"><i class="fa fa-check"></i>What are personal data?</a><ul>
-<li class="chapter" data-level="" data-path="definition-personal-data.html"><a href="definition-personal-data.html"><i class="fa fa-check"></i>Definition of personal data</a></li>
+<li class="chapter" data-level="" data-path="personal-data.html"><a href="personal-data.html#definition-personal-data"><i class="fa fa-check"></i>Definition of personal data</a></li>
 <li class="chapter" data-level="" data-path="personal-data-assess.html"><a href="personal-data-assess.html"><i class="fa fa-check"></i>How to assess whether data contain personal data?</a></li>
 <li class="chapter" data-level="" data-path="special-types-personal-data.html"><a href="special-types-personal-data.html"><i class="fa fa-check"></i>Special types of personal data</a><ul>
 <li class="chapter" data-level="" data-path="special-types-personal-data.html"><a href="special-types-personal-data.html#special-categories-of-personal-data"><i class="fa fa-check"></i>Special categories of personal data</a></li>
@@ -122,18 +124,10 @@ Support.</p>" />
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="privacy-by-design.html"><a href="privacy-by-design.html"><i class="fa fa-check"></i>Designing your project</a><ul>
-<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html"><i class="fa fa-check"></i>Privacy by Design strategies</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html"><i class="fa fa-check"></i>Data-oriented strategies</a><ul>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#minimise"><i class="fa fa-check"></i>Minimise</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#separate"><i class="fa fa-check"></i>Separate</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#hide"><i class="fa fa-check"></i>Hide</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html"><i class="fa fa-check"></i>Process-oriented strategies</a><ul>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#inform"><i class="fa fa-check"></i>Inform</a></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#control"><i class="fa fa-check"></i>Control</a></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#enforce"><i class="fa fa-check"></i>Enforce</a></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#demonstrate"><i class="fa fa-check"></i>Demonstrate</a></li>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html"><i class="fa fa-check"></i>Privacy by Design strategies</a><ul>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html#control"><i class="fa fa-check"></i><img src="img/control.svg" alt="control icon" style="height: 2em; vertical-align: middle;"> Control</a></li>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html#enforce"><i class="fa fa-check"></i><img src="img/enforce.svg" alt="enforce icon" style="height: 2em; vertical-align: middle;"> Enforce</a></li>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html#demonstrate"><i class="fa fa-check"></i><img src="img/demonstrate.svg" alt="demonstrate icon" style="height: 2em; vertical-align: middle;"> Demonstrate</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="risk-assessment.html"><a href="risk-assessment.html"><i class="fa fa-check"></i>Risk Assessment</a><ul>
@@ -192,7 +186,28 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
 <li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computing</a></li>
+<li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a><ul>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html"><i class="fa fa-check"></i>“Regular” data analysis: data-to-code</a><ul>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html#when-to-use"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html#implications-for-research"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html#examples"><i class="fa fa-check"></i>Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html"><i class="fa fa-check"></i>Code-to-data (one data provider)</a><ul>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html#when-to-use-1"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html#implications-for-research-1"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html#examples-1"><i class="fa fa-check"></i>Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html"><i class="fa fa-check"></i>Federated analysis</a><ul>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html#when-to-use-2"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html#implications-for-research-2"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html#examples-2"><i class="fa fa-check"></i>Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html"><i class="fa fa-check"></i>Cryptographic techniques</a><ul>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html#mpc"><i class="fa fa-check"></i>Secure multiparty computation</a></li>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html#confidential-computing"><i class="fa fa-check"></i>Confidential computing</a></li>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html#homomorphic-encryption"><i class="fa fa-check"></i>(Fully) homomorphic encryption</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="other-techniques.html"><a href="other-techniques.html"><i class="fa fa-check"></i>Other techniques</a><ul>
 <li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html"><i class="fa fa-check"></i>Encryption</a></li>
 <li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html"><i class="fa fa-check"></i>Synthetic Data</a></li>
@@ -209,9 +224,7 @@ Support.</p>" />
 <li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
 <li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a><ul>
 <li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
-<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a><ul>
-<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html#storage-media-at-uu"><i class="fa fa-check"></i>Storage media at UU</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a></li>
 <li class="chapter" data-level="" data-path="data-storage-how.html"><a href="data-storage-how.html"><i class="fa fa-check"></i>How should I store personal data?</a></li>
 <li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html"><i class="fa fa-check"></i>For how long should I store personal data?</a><ul>
 <li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
@@ -267,25 +280,136 @@ Support.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="definition-personal-data" class="section level2 hasAnchor">
-<h2>Definition of personal data<a href="definition-personal-data.html#definition-personal-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>According to the GDPR, personal data are “any information relating to an
-identified or identifiable natural person”
-(<a href="https://gdpr-info.eu/art-4-gdpr/" target="_blank">art. 4(1)</a>):</p>
+<div id="code-to-data" class="section level2 hasAnchor">
+<h2>Code-to-data (one data provider)<a href="code-to-data.html#code-to-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: code-to-data, script-to-data, algorithm-to-data, tools-to-data,
+SANE, digital research environment, secure research environment, virtual
+research environment, access control</p>
+</div>
+<div style="display: flex; flex-direction: row; align-items: flex-start;">
+<img src="img/code-to-data.png" alt="Graphical depiction of the code-to-data
+  scenario: the data are not transferred outside the organisation, and instead, 
+  the code travels to the data" 
+  style="width: 25%; max-width: 200px; margin-right: 10px;"/>
+<p>
+In this scenario, an analysis is run on data without transferring the data
+outside of the organisation In many cases, only the results of the analysis
+can be exported, and not the data.
+</p>
+</div>
+<p>We distinguish the following versions of this scenario:</p>
+<details>
+<summary><b>‘Tinker’ version: interaction with the data</b></summary>
+<div>
+In the Tinker version, users can log in to the computing facility and directly
+interact with the data, but there may be technical limitations on the import and
+export of the data. Procedural limitations should be posed through
+<a href="agreements.html#agreements">agreements</a> with the user. This version can be implemented in
+multiple ways, such as:
 <ul>
-<li><strong>Natural person</strong>: Data by themselves (numbers, text, pictures, audio, etc.)
-are not inherently personal. They only become personal when they refer to or
-relate to a <strong>living individual</strong>. When data refer to an organisation,
-deceased person, or group of individuals, they are not considered personal data
-under the GDPR.</li>
-<li>Data are personal if they <strong>relate</strong> to an individual. This means practically
-anything that someone is, has said or done, owns, may think, etc.</li>
-<li>The person should be <strong>identified or identifiable</strong>. This is the case not
-only through <strong>directly</strong> identifying information, such as names and contact
-information, but also through <strong>indirectly</strong> identifying information, for
-example if you can single someone out or identify them by combining datasets
-(see the next page).</li>
+<li>
+Accessing and analysing locally stored data on premises. An example is
+analysing highly sensitive data in a dedicated room without an internet
+connection.
+</li>
+<li>
+Accessing locally stored data through
+<a href="https://manuals.uu.nl/en/manual/solisworkspace-faq/" target="_blank">remote desktop</a>.
+This usually does not impose technical limitations on what can be done with
+the data.
+</li>
+<li>
+<a href="https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/virtual-research-environments" target="_blank">Virtual Research Environments</a>
+(VREs) are temporary facilities where you can interactively perform
+computations on data in the cloud. In this case, it is sometimes possible to
+impose technical limitations on what can be done with the data (in which case
+these are called
+“<a href="https://the-turing-way.netlify.app/project-design/sdpw/trew.html" target="_blank">Trusted Research Environments</a>”).
+Examples of VREs are
+<a href="https://www.surf.nl/en/surf-research-cloud-collaboration-portal-for-research" target="_blank">SURF Research Cloud</a>
+and <a href="https://www.andrea-cloud.eu/" target="_blank">anDREa</a>.
+</li>
 </ul>
+</div>
+</details>
+<details>
+<summary><b>‘Blind’ version: remote execution</b></summary>
+<div>
+<p>In the Blind version, users do not have access to the data
+at all, and only receive the results of an analysis, after reviews by the data
+owner(s) to ensure that the results do not contain sensitive details. In this
+case, a <a href="synthetic-data.html#synthetic-data">synthetic dataset</a> can be provided to write and test
+the analysis script on, before it is run on the real dataset. This “blind”
+version could be run in a dedicated environment where researchers can upload
+their script, but can also be implemented manually, for example when a
+researcher sends a script by email to be run on a dataset, and receives the
+results back via email as well (i.e., this is possible when neither the script
+nor the results contain any sensitive details).</p>
+</div>
+</details>
+<div class="note">
+<p>At the moment, both the Tinker and Blind versions of this code-to-data scenario
+are being developed as virtual research environments in the
+<a href="https://www.surf.nl/en/news/sane-secure-data-environment-for-social-sciences-and-humanities" target="_blank">Secure ANalysis Environment</a>
+project (SANE).</p>
+</div>
+<div id="when-to-use-1" class="section level3 hasAnchor">
+<h3>When to use<a href="code-to-data.html#when-to-use-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Reasons to use this scenario include:</p>
+<ul>
+<li>You want to retain control over the data, e.g., to prevent any unnecessary
+copies from being made (data sovereignty).</li>
+<li>You do not want, or are not allowed to transfer the data, because they contain
+personal data or intellectual property.</li>
+<li>The dataset is too large to transfer.</li>
+<li>In the ‘Blind’ version: You want to be sure that the analysis results do not
+contain any sensitive details.</li>
+</ul>
+</div>
+<div id="implications-for-research-1" class="section level3 hasAnchor">
+<h3>Implications for research<a href="code-to-data.html#implications-for-research-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Compared to the “<a href="data-to-code.html#data-to-code">data-to-code</a>” scenario, the code-to-data
+approach offers more control over the data, but often requires more, sometimes
+manual, work, such as:</p>
+<ul>
+<li>Checking the credentials of a user: can they be trusted? An
+<a href="agreements.html#agreements">agreement</a> with the user may be desirable or even required. In
+SURF Research Cloud, credentials can be checked using
+<a href="https://www.surf.nl/en/surf-research-access-management-easy-and-secure-access-to-research-services" target="_blank">SURF Research Access Management</a>.</li>
+<li>Preparing a protected computing environment that a user can use.</li>
+<li>In the ‘Blind’ version:
+<ul>
+<li>Creating a <a href="synthetic-data.html#synthetic-data">synthetic dataset</a>.</li>
+<li>Reviewing the output of the script for sensitive elements. This requires
+the right expertise.</li>
+<li>Reviewing whether the code that is run on the data is privacy-preserving.
+This also requires the right expertise.</li>
+</ul></li>
+</ul>
+<p>It is essential to have a well-described workflow to use this scenario, to
+ensure confidentiality of the personal data. Additionally, dedicated personnel
+may make the process easier and consistent.</p>
+</div>
+<div id="examples-1" class="section level3 hasAnchor">
+<h3>Examples<a href="code-to-data.html#examples-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>A research team needs to process a dataset containing health data to determine
+the number of Covid-19 patients at a certain hospital. The hospital providing
+this dataset does not allow transferring the dataset, but they do allow to run
+scripts on the dataset. To make that possible, the hospital provides a computing
+facility, owned by the hospital, to run scripts from research teams. In addition,
+for each result, the hospital staff inspects if it contains personal data, and
+if not, it will be passed onto the research team. Since a result like “100
+patients at this hospital have had Covid-19 in 2021” does not contain personal
+data, it can be safely passed to the research team.</li>
+<li>In the <a href="data-donation.html#data-donation">data donation approach</a>, the software
+<a href="https://github.com/eyra/port" target="_blank">PORT</a> can be run on data
+subjects’ locally stored data, and only the results of that analysis can be
+shared with the researcher if allowed by the data subject. Note however that the
+sensitivity of the results fully depend on the analysis that was run.</li>
+</ul>
+</div>
 </div>
 <div class = "footer">
 <footer>
@@ -350,8 +474,8 @@ example if you can single someone out or identify them by combining datasets
           </div>
         </div>
       </div>
-<a href="personal-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="personal-data-assess.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-to-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="federated-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -382,7 +506,7 @@ gitbook.start({
 "size": 1.5
 },
 "edit": {
-"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/03-personal-data.Rmd",
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/10-secure-computing.Rmd",
 "text": "Suggest edits"
 },
 "history": {

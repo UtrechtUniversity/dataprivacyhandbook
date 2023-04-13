@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Process-oriented strategies | Data Privacy Handbook</title>
+  <title>Cryptographic techniques | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Process-oriented strategies | Data Privacy Handbook" />
+  <meta property="og:title" content="Cryptographic techniques | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,25 +19,25 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Process-oriented strategies | Data Privacy Handbook" />
+  <meta name="twitter:title" content="Cryptographic techniques | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-03-30" />
+<meta name="author" content="Utrecht University | Last updated: 2023-04-13" />
 
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-04-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-oriented-strategies.html"/>
-<link rel="next" href="risk-assessment.html"/>
+<link rel="prev" href="federated-analysis.html"/>
+<link rel="next" href="other-techniques.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -82,12 +82,14 @@ Support.</p>" />
 <li class="divider"></li>
 <li class="part"><span><b>Intro</b></span></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Data Privacy Handbook</a><ul>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i>About</a><ul>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html#license-and-citation"><i class="fa fa-check"></i>License and Citation</a></li>
+<li class="chapter" data-level="" data-path="about.html"><a href="about.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="how-to-use-this-handbook.html"><a href="how-to-use-this-handbook.html"><i class="fa fa-check"></i>How to use this Handbook</a><ul>
 <li class="chapter" data-level="" data-path="how-to-use-this-handbook.html"><a href="how-to-use-this-handbook.html#what-are-you-looking-for"><i class="fa fa-check"></i>What are you looking for?</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="license-and-citation.html"><a href="license-and-citation.html"><i class="fa fa-check"></i>License and Citation</a></li>
 <li class="chapter" data-level="" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i>Disclaimer</a></li>
-<li class="chapter" data-level="" data-path="contributions.html"><a href="contributions.html"><i class="fa fa-check"></i>Contributions</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Privacy FAQs</a><ul>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#general"><i class="fa fa-check"></i>General questions</a></li>
@@ -114,7 +116,7 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="data-subject-rights.html"><a href="data-subject-rights.html"><i class="fa fa-check"></i>Data Subjects’ Rights</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="personal-data.html"><a href="personal-data.html"><i class="fa fa-check"></i>What are personal data?</a><ul>
-<li class="chapter" data-level="" data-path="definition-personal-data.html"><a href="definition-personal-data.html"><i class="fa fa-check"></i>Definition of personal data</a></li>
+<li class="chapter" data-level="" data-path="personal-data.html"><a href="personal-data.html#definition-personal-data"><i class="fa fa-check"></i>Definition of personal data</a></li>
 <li class="chapter" data-level="" data-path="personal-data-assess.html"><a href="personal-data-assess.html"><i class="fa fa-check"></i>How to assess whether data contain personal data?</a></li>
 <li class="chapter" data-level="" data-path="special-types-personal-data.html"><a href="special-types-personal-data.html"><i class="fa fa-check"></i>Special types of personal data</a><ul>
 <li class="chapter" data-level="" data-path="special-types-personal-data.html"><a href="special-types-personal-data.html#special-categories-of-personal-data"><i class="fa fa-check"></i>Special categories of personal data</a></li>
@@ -122,18 +124,10 @@ Support.</p>" />
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="privacy-by-design.html"><a href="privacy-by-design.html"><i class="fa fa-check"></i>Designing your project</a><ul>
-<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html"><i class="fa fa-check"></i>Privacy by Design strategies</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html"><i class="fa fa-check"></i>Data-oriented strategies</a><ul>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#minimise"><i class="fa fa-check"></i>Minimise</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#separate"><i class="fa fa-check"></i>Separate</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
-<li class="chapter" data-level="" data-path="data-oriented-strategies.html"><a href="data-oriented-strategies.html#hide"><i class="fa fa-check"></i>Hide</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html"><i class="fa fa-check"></i>Process-oriented strategies</a><ul>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#inform"><i class="fa fa-check"></i>Inform</a></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#control"><i class="fa fa-check"></i>Control</a></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#enforce"><i class="fa fa-check"></i>Enforce</a></li>
-<li class="chapter" data-level="" data-path="process-oriented-strategies.html"><a href="process-oriented-strategies.html#demonstrate"><i class="fa fa-check"></i>Demonstrate</a></li>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html"><i class="fa fa-check"></i>Privacy by Design strategies</a><ul>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html#control"><i class="fa fa-check"></i><img src="img/control.svg" alt="control icon" style="height: 2em; vertical-align: middle;"> Control</a></li>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html#enforce"><i class="fa fa-check"></i><img src="img/enforce.svg" alt="enforce icon" style="height: 2em; vertical-align: middle;"> Enforce</a></li>
+<li class="chapter" data-level="" data-path="design-strategies.html"><a href="design-strategies.html#demonstrate"><i class="fa fa-check"></i><img src="img/demonstrate.svg" alt="demonstrate icon" style="height: 2em; vertical-align: middle;"> Demonstrate</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="risk-assessment.html"><a href="risk-assessment.html"><i class="fa fa-check"></i>Risk Assessment</a><ul>
@@ -192,7 +186,28 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
 <li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computing</a></li>
+<li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a><ul>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html"><i class="fa fa-check"></i>“Regular” data analysis: data-to-code</a><ul>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html#when-to-use"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html#implications-for-research"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="data-to-code.html"><a href="data-to-code.html#examples"><i class="fa fa-check"></i>Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html"><i class="fa fa-check"></i>Code-to-data (one data provider)</a><ul>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html#when-to-use-1"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html#implications-for-research-1"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="code-to-data.html"><a href="code-to-data.html#examples-1"><i class="fa fa-check"></i>Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html"><i class="fa fa-check"></i>Federated analysis</a><ul>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html#when-to-use-2"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html#implications-for-research-2"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="federated-analysis.html"><a href="federated-analysis.html#examples-2"><i class="fa fa-check"></i>Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html"><i class="fa fa-check"></i>Cryptographic techniques</a><ul>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html#mpc"><i class="fa fa-check"></i>Secure multiparty computation</a></li>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html#confidential-computing"><i class="fa fa-check"></i>Confidential computing</a></li>
+<li class="chapter" data-level="" data-path="computational-cryptography.html"><a href="computational-cryptography.html#homomorphic-encryption"><i class="fa fa-check"></i>(Fully) homomorphic encryption</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="other-techniques.html"><a href="other-techniques.html"><i class="fa fa-check"></i>Other techniques</a><ul>
 <li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html"><i class="fa fa-check"></i>Encryption</a></li>
 <li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html"><i class="fa fa-check"></i>Synthetic Data</a></li>
@@ -209,9 +224,7 @@ Support.</p>" />
 <li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
 <li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a><ul>
 <li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
-<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a><ul>
-<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html#storage-media-at-uu"><i class="fa fa-check"></i>Storage media at UU</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a></li>
 <li class="chapter" data-level="" data-path="data-storage-how.html"><a href="data-storage-how.html"><i class="fa fa-check"></i>How should I store personal data?</a></li>
 <li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html"><i class="fa fa-check"></i>For how long should I store personal data?</a><ul>
 <li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
@@ -267,66 +280,120 @@ Support.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="process-oriented-strategies" class="section level2 hasAnchor">
-<h2>Process-oriented strategies<a href="process-oriented-strategies.html#process-oriented-strategies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="inform" class="section level3 hasAnchor">
-<h3>Inform<a href="process-oriented-strategies.html#inform" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Inform data subjects about the processing of their personal data in a timely
-and adequate manner, for example by:</p>
+<div id="computational-cryptography" class="section level2 hasAnchor">
+<h2>Cryptographic techniques<a href="computational-cryptography.html#computational-cryptography" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: encryption, cryptography, security, collaboration, confidential
+computing, mpc, homomorphic encryption</p>
+</div>
+<p>Besides the scenarios described previously, there are also multiple cryptographic
+techniques that can be applied to protect sensitive data in the analysis phase.
+Here, we discuss secure multiparty computation, confidential computing, and
+homomorphic encryption.</p>
+<div class="note">
+<p>Although there is some overlap in functionality and purpose between these three techniques, they are generally still considered to be distinct and can be combined to enhance security.</p>
+</div>
+<div class="warning">
+<p>These cryptographic techniques are relatively new and are not available as
+distinct services (yet) for direct application in research. They are for now
+listed here for information purposes.</p>
+</div>
+<div id="mpc" class="section level3 hasAnchor">
+<h3>Secure multiparty computation<a href="computational-cryptography.html#mpc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Secure multiparty computation (also referred to as “MPC”) is a set of
+cryptographic techniques that allows multiple parties to jointly perform analyses
+on distributed datasets, as if they had a shared database, and without revealing
+the underlying data to each other. Among those techniques are secure set
+intersection (securely investigating which elements multiple databases have in
+common), homomorphic encryption (see below), and others.</p>
+<div id="when-to-use-3" class="section level4 hasAnchor">
+<h4>When to use<a href="computational-cryptography.html#when-to-use-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The benefits of MPC are that no raw data are shared between the parties,
+computations are guaranteed to perform correctly, and there is a degree of
+control on who receives the result of the computation (i.e., the results are
+not necessarily combined in a central location). MPC is therefore a good way of
+implementing Privacy by Design into your project when you work with personal
+data.</p>
+<p>Contrary to <a href="federated-analysis.html#federated-analysis">federated analysis</a>, MPC is suitable for
+linking “vertically partitioned” datasets, i.e., when different organisations
+have different (types of) information on the same people and thus want to link
+those different data sources.</p>
+</div>
+<div id="implications-for-research-3" class="section level4 hasAnchor">
+<h4>Implications for research<a href="computational-cryptography.html#implications-for-research-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li>Providing information via an
-<a href="privacy-notices.html#privacy-notices">information letter or privacy notice</a> on a project website.</li>
-<li>Providing verbal explanation before an interview.</li>
-<li>Obtaining explicit consent via an informed consent procedure.</li>
+<li>The computation in MPC is really joint: you need to have agreed on a specific
+analysis to be performed and what you will reveal as result of the computation.</li>
+<li>There is no one-size-fits-all MPC solution: different use cases ask for
+different implementations of MPC.</li>
+<li>Additional computational resources are required to generate random secrets
+and distribute data over the multiple parties.</li>
 </ul>
 </div>
-<div id="control" class="section level3 hasAnchor">
-<h3>Control<a href="process-oriented-strategies.html#control" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Give data subjects adequate control over the processing of their personal data,
-for example by:</p>
+<div id="example" class="section level4 hasAnchor">
+<h4>Example<a href="computational-cryptography.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li>Specifying a procedure and responsible person in case data subjects want to
-exercise their <a href="data-subject-rights.html#data-subject-rights">data subject rights</a>.</li>
-<li>Providing data subjects with a contact point (e.g., email address) for
-questions and exercising their data subject rights.</li>
+<li>MPC was used by a medical insurance company and hospital to determine the
+effectiveness of a personal lifestyle app for diabetes. In this example, it was
+possible to calculate average medical cost for different patient groups, based
+on whether they used the app or not, without revealing patient information
+between the insurance company and the hospital.</li>
+<li>You can find a simplified example on
+<a href="https://www.geeksforgeeks.org/what-is-secure-multiparty-computation/" target="_blank">jointly calculating average income here</a>.</li>
 </ul>
+<p>You can find more information about secure multiparty computation on
+<a href="https://securecomputation.org/" class="uri">https://securecomputation.org/</a>, in
+<a href="http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b" target="_blank">this report</a>,
+and on the <a href="https://mpc.tno.nl" target="_blank">website of TNO</a>.</p>
+<hr />
 </div>
-<div id="enforce" class="section level3 hasAnchor">
-<h3>Enforce<a href="process-oriented-strategies.html#enforce" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Commit to processing personal data in a privacy-friendly way, and adequately
-enforce this, for example by:</p>
-<ul>
-<li>Using only <a href="https://tools.uu.nl/" target="_blank">Utrecht University-approved tools</a>
-to collect, <a href="data-storage.html#data-storage">store</a>, analyse and <a href="data-sharing-collaboration.html#data-sharing-collaboration">share</a>
-personal data.</li>
-<li>Entering into <a href="agreements.html#agreements">agreements</a> with third parties if they
-are working with UU-controlled personal data. Such agreements will make sure
-everyone will treat the data up to UU-standards.</li>
-<li>Always keeping your software up-to-date and using a virus scanner on your devices.</li>
-<li>Appointing someone responsible for regulating access to the data.</li>
-<li>Always reporting (suspicions of)
-<a href="https://intranet.uu.nl/en/knowledgebase/what-is-a-personal-data-breach" target="_blank">data breaches</a>.
-At UU, contact the <a href="https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert" target="_blank">Computer Emergency Response Team</a>.</li>
-<li>If needed, drawing up a privacy and/or security policy that specify roles and
-responsibilities and best practices on how personal data are handled throughout
-a project.</li>
-<li>Using a Trusted Third Party when linking individual data from different
-sources together.</li>
-</ul>
 </div>
-<div id="demonstrate" class="section level3 hasAnchor">
-<h3>Demonstrate<a href="process-oriented-strategies.html#demonstrate" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Demonstrate you are processing personal data in a privacy-friendly way, for
-example by:</p>
+<div id="confidential-computing" class="section level3 hasAnchor">
+<h3>Confidential computing<a href="computational-cryptography.html#confidential-computing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Confidential computing is a technique that protects data in use through a
+(hardware-based) Trusted Execution Environment (TEE). This environment makes
+sure that data within it are kept confidential (data confidentiality) and that
+both the data and the code running in the TEE cannot be modified or deleted
+(data and code integrity). The TEE uses embedded encryption keys and makes sure
+that the analysis stops running when malware or unauthorised access is detected.
+Moreover, data and code are even invisible to the operating system, cloud
+provider and any virtual machines.</p>
+<p>There are many possible applications of this technique, for example:</p>
 <ul>
-<li>Registering your research project in the UU processing register (once available).</li>
-<li>Performing a <a href="privacy-scan.html#privacy-scan">Privacy Scan</a> and storing it alongside the personal data.</li>
-<li>Performing a <a href="dpia.html#dpia">Data Protection Impact Assessment</a> (DPIA)</a> for
-projects that have a high privacy risk for the data subjects.</li>
-<li>Keeping information for data subjects and (signed) informed consent forms on
-file. This is not needed if you can fully anonymise the data: then you should
-delete the (signed) consent forms as well.</li>
+<li>You want to protect against unauthorised access during the analysis of
+sensitive data.</li>
+<li>You want to analyse sensitive data, and it is necessary to use an untrusted
+cloud platform or infrastructure.</li>
+<li>You want to prevent the analysis script from leaking or manipulating data.</li>
 </ul>
+<p>It is important that confidential computing is used together with encryption of
+data at rest and in transit, with restricted access to the decryption keys. It
+also requires the TEE to be trustworthy (attestation), which is an active field
+of study. You can read more on the website of the
+<a href="https://confidentialcomputing.io/" target="_blank">Confidential Computing Consortium</a>.</p>
+<hr />
+</div>
+<div id="homomorphic-encryption" class="section level3 hasAnchor">
+<h3>(Fully) homomorphic encryption<a href="computational-cryptography.html#homomorphic-encryption" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Where “regular” <a href="encryption.html#encryption">encryption</a> focuses on data at rest (e.g., in
+storage) or data in transit (e.g., when transferring data), homomorphic
+encryption allows analyses to be performed on encrypted data (“data in use”).
+During the analysis, both the data and the computation result remain encrypted,
+unless they are decrypted by the decryption key owner. This technique can be
+applied both in <a href="computational-cryptography.html#confidential-computing">confidential computing</a> and in
+<a href="computational-cryptography.html#mpc">secure multiparty computation</a>.</p>
+<p>There are multiple types of homomorphic encryption: partial, somewhat partial
+and fully homomorphic encryption. The latter is the most promising solution, as
+it allows an infinite number of additions and multiplications to be performed on
+the encrypted data.</p>
+<p>Currently, the practical use of homomorphic is limited, because it can require
+a lot of computational resources to use it, causing it to be relatively slow.
+New implementations are however being developed, see
+<a href="https://homomorphicencryption.org/introduction/" target="_blank">this website</a>
+for a list of available implementations. Another limitation is that there is no
+interaction with the data during the analysis, and so you cannot check whether
+the analysis was successful. To solve this, you could use a synthetic dataset
+to develop and test your algorithms first.</p>
 
 </div>
 </div>
@@ -394,8 +461,8 @@ delete the (signed) consent forms as well.</li>
           </div>
         </div>
       </div>
-<a href="data-oriented-strategies.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="risk-assessment.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="federated-analysis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="other-techniques.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -426,7 +493,7 @@ gitbook.start({
 "size": 1.5
 },
 "edit": {
-"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/04-privacy-by-design.Rmd",
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/10-secure-computing.Rmd",
 "text": "Suggest edits"
 },
 "history": {
