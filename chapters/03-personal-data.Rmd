@@ -5,7 +5,7 @@ project, the first question to answer is: do you process personal data? To
 answer this question, we need to know: (1) What exactly are personal data, 
 and (2) how do you know if you are working with personal data in your research?
 
-## Definition of personal data {#definition-personal-data}
+### Definition of personal data {#definition-personal-data}
 
 According to the GDPR, personal data are “any information relating to an 
 identified or identifiable natural person” 
@@ -22,9 +22,13 @@ anything that someone is, has said or done, owns, may think, etc.
 only through **directly** identifying information, such as names and contact 
 information, but also through **indirectly** identifying information, for 
 example if you can single someone out or identify them by combining datasets 
-(see the next page).
+(see the [next page](#personal-data-assess)).
 
 ## How to assess whether data contain personal data? {#personal-data-assess}
+::::keywords
+On this page: sensitive data, privacy-sensitive, personal data, when is data 
+privacy-sensitive, identifiability, identifier
+::::
 
 Whether your data contain personal data depends on which data you are 
 collecting (nature) and under which circumstances (context). A date like 
@@ -38,44 +42,39 @@ technology ([rec. 26](https://gdpr-info.eu/recitals/no-26/){target="_blank"}).
 
 Data can be identifiable when:
 
-- They contain **directly identifying information**.<br>
-<details>
-  <summary><i>Examples (click to expand)</i></summary>
-    <div>name, image, video recording, audio recording, patient number, IP address, 
-    email address, phone number, location data, social media data<br></div>
-</details>
-- It is possible to **single out** an individual, for example when there are 
-unique data points or unique behavioural patterns which can only apply to one 
-person.<br>
-<details>
-  <summary><i>Examples</i></summary>
-    <div><ul>
-      <li>You have a data subject who is 2.10 meters tall. If this is a unique 
-      value in your dataset, this distinguishes this person from others and thus 
-      can make them identifiable.</li>
-      <li>You have a data subject who only follows far-right accounts on Twitter. 
-      If they are the only one in your dataset who do so, this distinguishes this 
-      person from others and can make them identifiable.</li>
-    </ul><br></div>
-</details>
-- It is possible to **infer information** about an individual based on information
-in your dataset.<br>
-<details>
-  <summary><i>Examples</i></summary>
-  <div><ul>
+- <details><summary>They contain **directly identifying information**.</summary>
+  <div>For example: name, image, video recording, audio recording, patient 
+  number, IP address, email address, phone number, location data, social media 
+  data.</div>
+  </details>
+- <details><summary>It is possible to **single out** an individual</summary>
+  <div><p>This can happen when there are unique data points or unique behavioural 
+  patterns which can only apply to one person.</p>
+  <p>Examples:
+  <ul>
+    <li>You have a data subject who is 2.10 meters tall. If this is a unique 
+    value in your dataset, this distinguishes this person from others and thus 
+    can make them identifiable.</li>
+    <li>You have a data subject who only follows far-right accounts on Twitter. 
+    If they are the only one in your dataset who do so, this distinguishes this 
+    person from others and can make them identifiable.</li>
+  </ul></p>
+  </div></details>
+- <details><summary>It is possible to **infer information** about an individual 
+based on information in your dataset</summary>
+  <div>For example:
+  <ul>
     <li>Inferring a medical condition based on registered medications.</li>
     <li>Guessing that someone lives in a certain neighbourhood based on where they go to school.</li>
-  </ul><br></div>
+  </ul></div>
 </details>
-- It is possible to **link records** relating to an individual. This can happen 
-when combining multiple variables within your dataset (e.g., demographic 
+- <details><summary>It is possible to **link records** relating to an individual.</summary>
+<div><p>This can happen when combining multiple variables within your dataset (e.g., demographic 
 information, indirect identifiers). However, it can also happen when combining 
 your dataset with other datasets (the "Mosaic effect"). In that case, your data 
 still contain personal data, even if the data in your own dataset are not 
-identifiable by themselves.<br>
-<details>
-  <summary><i>Examples</i></summary>
-  <div>Linkage is often possible with demographic information (age, 
+identifiable by themselves.</p>
+<p>Linkage is often possible with demographic information (age, 
   gender, country of origin, education, workplace information, etc.) and 
   indirect identifiers (pseudonyms, device ID, etc.), for example:
   <ul>
@@ -93,10 +92,12 @@ identifiable by themselves.<br>
     [This video](https://www.youtube.com/watch?v=Pivd71NYKDA){target="_blank"} 
     nicely explains why.</li>
   </ul>
-  <br></div></details>
-- De-identification is still **reversible**. This often happens when data are 
-pseudonymised, but there is still a way to link the pseudonymised data with 
-identifiable data, for example when a name-pseudonym key still exists.
+  </p></div></details>
+- <details><summary>De-identification is still **reversible**.</summary>
+<div>This often happens when data are pseudonymised, but there is still a way 
+to link the pseudonymised data with identifiable data, for example when a 
+name-pseudonym key still exists.</div>
+</details>
 
 :::fyi
 You can assume that you are processing personal data when you collect data 
@@ -110,9 +111,15 @@ the data you process can still contain personal data under the GDPR. Besides
 the examples mentioned here, there are many 
 [other examples of personal data](https://intranet.uu.nl/system/files/documenten/categories-of-personal-information-en.pdf){target="_blank"}. 
 If you need help assessing whether or not your data contain personal data, 
-please contact your [privacy officer or data manager](#support).
+please contact your [privacy officer](#support).
 
 ## Special types of personal data {#special-types-personal-data}
+::::keywords
+On this page: sensitive personal data, sensitive data, special category, special
+categories, politics, race, ethnicity, religion, philosophy, dna, 
+genetics, genes, fingerprint, physical condition, mental illness, sexual 
+identity, gender identity
+::::
 There are a few special types of personal data that are worth taking note of: 
 special categories of personal data, and otherwise sensitive personal data. 
 These types of personal data have additional requirements. If you want to 
