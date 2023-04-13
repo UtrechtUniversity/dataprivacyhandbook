@@ -190,7 +190,7 @@ the data:
 </details>
   
 <br>
-
+  
 **For the recipient**, in most cases the legal basis for reusing the received 
 data is public interest (when reused for research purposes), although 
 legitimate interest (when reused for non-research purposes) and consent (if the 
@@ -221,7 +221,10 @@ should aim to protect the personal data also while sharing them. For example:
 
 - Do not share more data than needed; pseudonymise the data as much as possible.
 - Put in place an [agreement](#agreements) that forces recipients to treat the 
-data confidentially and that clarifies each party’s responsibilities.
+data confidentially and that clarifies each party’s responsibilities. This is 
+especially important if the data will be shared outside the European Economic Area
+with countries that do not have an 
+[adequate level of data protection](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}.
 - Share the data safely, for example by giving access via a secure 
 [storage](#data-storage) environment, or [encrypting](#encryption) the data 
 before transferring them.
