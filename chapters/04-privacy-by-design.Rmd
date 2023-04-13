@@ -1,4 +1,7 @@
 # Designing your project {#privacy-by-design}
+::::keywords
+On this page: privacy by design, start early, preparation
+::::
 
 Research projects typically go through a number of stages: conception, proposal, 
 planning, execution, publishing, preservation, etc. If you work with personal 
@@ -31,9 +34,16 @@ DPIA, Data Management Plan, Privacy notice and consent form, Ethics review,
 Agreements between parties) to Data acquisition (Data collection and reuse), Data 
 Processing (Preprocessing, Analysis, Output generation), to Preservation (of data,
 code and documentation) and Publication (Manuscript, Data, Code and Documentation)" 
+title = "Privacy in the research cycle: a good preparation is crucial" 
 height="80%"/>
 
 ## Privacy by Design strategies {#design-strategies}
+
+::::keywords
+On this page: safeguards, measures, technical, organisational, procedure, 
+design, access control, minimisation, transparency, pseudonymisation, 
+abstraction, information, accountability, rights
+::::
 
 To incorporate the concepts of Privacy by Design and Privacy by Default into 
 your project, the approach of **privacy design strategies** 
@@ -41,7 +51,7 @@ your project, the approach of **privacy design strategies**
 offers a way to make the GDPR principles more concrete. Hoepman distinguishes 8 
 strategies that you can apply to protect the personal data in your research: 
 minimise, separate, abstract, hide, inform, control, enforce, and demonstrate. 
-In the next sections, we explain what these mean and how you can apply them. 
+Below, we explain what these mean and how you can apply them. 
 
 :::fyi
 The GDPR does not prescribe *which* specific measures you should apply in your 
@@ -51,13 +61,34 @@ data subjects, and the current progress in technology (i.e. will the data be
 protected on the long haul?).
 :::
 
+<!--
 <img src="img/pbd-strategies.png" alt="Eight Privacy by Design strategies which
 can also be applied in research projects: minimise, separate, abstract, hide, 
-inform, control, enforce, and demonstrate" height="80%"/>
+inform, control, enforce, and demonstrate" 
+title = "Strategies to incorporate privacy into the research design"
+height="80%"/>
+-->
 
-## Data-oriented strategies {#data-oriented-strategies}
+<div class="row" style="display: flex; flex-wrap: wrap;">
+  <div class="column" style="flex: 1; padding: 10px; box-sizing: border-box;">
+  <h3 id="data-oriented-strategies">Data-oriented strategies</h3>
+  <img src="img/minimise.svg" alt="minimise icon" style="height: 2em; vertical-align: middle;"> [Minimise](#minimise)  
+  <img src="img/separate.svg" alt="separate icon" style="height: 2em; vertical-align: middle;"> [Separate](#separate)  
+  <img src="img/abstract.svg" alt="abtract icon" style="height: 2em; vertical-align: middle;"> [Abstract](#abstract)  
+  <img src="img/hide.svg" alt="hide icon" style="height: 2em; vertical-align: middle;"> [Hide](#hide)
+  </div>
+  <div class="column" style="flex: 1; padding: 10px; box-sizing: border-box;">
+  <h3 id="process-oriented-strategies">Process-oriented strategies</h3>
+  <img src="img/info.svg" alt="inform icon" style="height: 2em; vertical-align: middle;"> [Inform](#inform)  
+  <img src="img/control.svg" alt="control icon" style="height: 2em; vertical-align: middle;"> [Control](#control)  
+  <img src="img/enforce.svg" alt="enforce icon" style="height: 2em; vertical-align: middle;"> [Enforce](#enforce)  
+  <img src="img/demonstrate.svg" alt="demonstrate icon" style="height: 2em; vertical-align: middle;"> [Demonstrate](#demonstrate)
+  </div>
+</div>
 
-### Minimise 
+---
+
+#### <img src="img/minimise.svg" alt="minimise icon" style="height: 2em; vertical-align: middle;"> Minimise 
 Limit as much as possible the processing of personal data, for example by:
 
 - Collecting as little data as possible to reach your research purpose.
@@ -77,7 +108,9 @@ with data subjects or to answer your research question.
 data as early as possible.
 - Use portable storage media only temporarily.
 
-### Separate
+[Back to top](#data-oriented-strategies)
+
+#### <img src="img/separate.svg" alt="separate icon" style="height: 2em; vertical-align: middle;"> Separate
 Separate the processing of different types of personal data as much as possible, 
 for example by:
 
@@ -86,10 +119,12 @@ separately from the research data. Use identification keys to link both datasets
 and store these keys also separately from the research data.
 - Separating access to different types of personal data. For example, separate
 who has access to contact information vs. to the research data.
-- Applying [secure computing](#secure-computing) techniques, where 
+- Applying [secure computation](#secure-computation) techniques, where 
 the data remain at a central location and do not have to be moved for the analysis.
 
-### Abstract
+[Back to top](#data-oriented-strategies)
+
+#### <img src="img/abstract.svg" alt="abtract icon" style="height: 2em; vertical-align: middle;"> Abstract
 Limit as much and as early on as possible the detail in which personal data 
 are processed, for example by:
 
@@ -100,7 +135,9 @@ data points.
 - [Synthesising](#synthetic-data) the data, e.g., for sharing trends 
 in the data without revealing individual data points.
 
-### Hide
+[Back to top](#data-oriented-strategies)
+
+#### <img src="img/hide.svg" alt="hide icon" style="height: 2em; vertical-align: middle;"> Hide
 Protect personal data, or make them unlinkable or unobservable. Make sure they 
 do not become public or known. You can for example do so using a combination of:
 
@@ -121,8 +158,9 @@ authorisations when access is no longer required.
 - Keeping a clear desk policy: lock your screen and store paper behind lock and 
 key when you leave your desk.
 
-## Process-oriented strategies {#process-oriented-strategies}
-### Inform
+[Back to top](#data-oriented-strategies)
+
+#### <img src="img/info.svg" alt="inform icon" style="height: 2em; vertical-align: middle;"> Inform
 Inform data subjects about the processing of their personal data in a timely 
 and adequate manner, for example by:
 
@@ -131,7 +169,9 @@ and adequate manner, for example by:
 - Providing verbal explanation before an interview. 
 - Obtaining explicit consent via an informed consent procedure.
 
-### Control
+[Back to top](#data-oriented-strategies)
+
+### <img src="img/control.svg" alt="control icon" style="height: 2em; vertical-align: middle;"> Control
 Give data subjects adequate control over the processing of their personal data, 
 for example by:
 
@@ -140,7 +180,9 @@ exercise their [data subject rights](#data-subject-rights).
 - Providing data subjects with a contact point (e.g., email address) for 
 questions and exercising their data subject rights.
 
-### Enforce
+[Back to top](#data-oriented-strategies)
+
+### <img src="img/enforce.svg" alt="enforce icon" style="height: 2em; vertical-align: middle;"> Enforce
 Commit to processing personal data in a privacy-friendly way, and adequately 
 enforce this, for example by:
 
@@ -161,7 +203,9 @@ a project.
 - Using a Trusted Third Party when linking individual data from different 
 sources together.
 
-### Demonstrate
+[Back to top](#data-oriented-strategies)
+
+### <img src="img/demonstrate.svg" alt="demonstrate icon" style="height: 2em; vertical-align: middle;"> Demonstrate
 Demonstrate you are processing personal data in a privacy-friendly way, for 
 example by:
 
@@ -172,3 +216,5 @@ projects that have a high privacy risk for the data subjects.
 - Keeping information for data subjects and (signed) informed consent forms on 
 file. This is not needed if you can fully anonymise the data: then you should 
 delete the (signed) consent forms as well. 
+
+[Back to top](#data-oriented-strategies)
