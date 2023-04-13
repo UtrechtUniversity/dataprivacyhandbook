@@ -42,9 +42,11 @@ Sys.setlocale("LC_TIME", "English")
 *Last updated: `r format(Sys.time(), "%d %B %Y")`*
 <br><br>  
 
-The Data Privacy Handbook is a guide on handling personal data in scientific 
-research, in line with European data protection and privacy regulations. It 
-consists of:
+**The Data Privacy Handbook is a practical guide on handling personal data in 
+scientific research, primarily written for Utrecht University researchers and 
+research support staff**
+
+It consists of:
 
 - A **knowledge base** which explains how the EU General Data Protection 
 Regulation (GDPR, Dutch: Algemene Verordening Gegevensbescherming)  applies to 
@@ -53,12 +55,17 @@ GDPR-compliant scientific research;
 - An overview of privacy-enhancing **techniques & tools** and practical guidance 
 on their implementation;
 - **Use Cases** in the form of research projects with privacy-related issues, 
-for which a reusable solution (e.g., tool, workflow) has been developed. 
+for which a reusable solution (e.g., tool, workflow) is shared. 
 
-The Data Privacy Handbook synthesises information across various sources and 
-presents it a *practical* format. This includes workflows, tools, and practical 
-translations of the GDPR, which could be used by researchers and (data) support 
-staff within Utrecht University and beyond.
+:::note
+This is an Utrecht University (UU) community-driven, 
+[open source project](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}.
+We welcome feedback and contributions of any type, please read our 
+[contributing guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md){target="_blank"}
+for more information.
+:::
+
+## About
 
 The Data Privacy Handbook is an initiative of 
 [Research Data Management Support](https://www.uu.nl/en/research/research-data-management){target="_blank"}, 
@@ -70,13 +77,31 @@ on how researchers can and should deal with personal data. This project is
 funded by the Utrecht University Research IT Program and an NWO Digital 
 Competence Center grant.
 
-:::note
-This is an Utrecht University (UU) community-driven, 
-[open source project](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}.
-We welcome feedback and contributions of any type, please read our 
-[contributing guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md){target="_blank"}
-for more information.
-:::
+
+### License and Citation
+
+The Data Privacy Handbook is licensed under a 
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target="_blank"}. 
+You can [view the license here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md){target="_blank}.
+
+### Contributions
+
+The Data Privacy Handbook is a collaborative effort, made possible by a large 
+number of contributors (also to be viewed in our 
+[GitHub repository](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}):
+
+Neha  Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Kasper de Bruijn, 
+Wies Cipido, Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan, 
+Saskia van den Hout, Frans Huigen, Artan Jacquet, Rik Janssen, Sanne Kleerebezem, 
+Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen, 
+Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Maisam Mohammadi Dadkan, 
+Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, Raoul Schram,
+Ron Scholten, Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong, 
+Liliana Vargas Meleza, and Martine de Vos.
+
+Would you like to contribute to this Handbook yourself? Please read our 
+[Contributing  guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md){target="_blank"}.
+
 
 ## How to use this Handbook
 
@@ -174,13 +199,6 @@ I want to...:
 </ul>
 
 
-## License and Citation
-
-The Data Privacy Handbook is licensed under a 
-[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target="_blank"}. 
-You can [view the license here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md){target="_blank}.
-
-
 ## Disclaimer
 
 The content presented in the Data Privacy Handbook has been carefully curated by 
@@ -218,22 +236,3 @@ of open science and therefore welcomes readers from outside of the organization.
 However, the contents of the Data Privacy Handbook may not be in line with readers’ 
 institutions’ policies or views. For more authoritative information, these 
 readers should refer to resources from their own institutions.
-
-
-## Contributions
-
-The Data Privacy Handbook is a collaborative effort, made possible by a large 
-number of contributors (also to be viewed in our 
-[GitHub repository](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}):
-
-Neha  Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Kasper de Bruijn, 
-Wies Cipido, Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan, 
-Saskia van den Hout, Frans Huigen, Artan Jacquet, Rik Janssen, Sanne Kleerebezem, 
-Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen, 
-Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Maisam Mohammadi Dadkan, 
-Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, Raoul Schram,
-Ron Scholten, Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong, 
-Liliana Vargas Meleza, and Martine de Vos.
-
-Would you like to contribute to this Handbook yourself? Please read our 
-[Contributing  guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md){target="_blank"}.
