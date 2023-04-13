@@ -1,9 +1,9 @@
 # Sharing data with collaborators {#data-sharing-collaboration}
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-</head>
+::::keywords
+On this page: share, transfer, collaborate, consortium, outside EU, EEA, 
+security, legal basis, transparency, transparent, third-party transfer
+::::
 
 This chapter addresses guidelines to take into account when you want to share 
 personal data with collaborators outside of your own institution **during** 
@@ -30,7 +30,7 @@ inform data subjects</b></summary>
     </ul>
   </div>
 </details>
-<br>
+
 <details><summary><b>2. Protect the personal data appropriately</b></summary>
 <div><ul>
       <li><a href="#risk-assessment">Assess the risks</a> of sharing the 
@@ -49,7 +49,7 @@ inform data subjects</b></summary>
       data. It is important to make clear how you and them will do so.</li>
 </ul></div>
 </details>
-<br>
+
 <details><summary><b>3. Come to agreements with collaborators</b></summary>
 <div><p>In order to protect the personal data effectively, it is important to 
     determine which role every collaborator has: 
@@ -65,8 +65,8 @@ inform data subjects</b></summary>
   can help you draw up a valid agreement.</p>
  </div>
 </details>
-<br>
-<details><summary><b>4. Pay special attention to third-country transfers</b></summary>
+
+<details><summary><b>4. Pay special attention when sharing personal data outside the EU</b></summary>
 <div><p>
       If you share personal data with international collaborators (for example, 
       with countries that have no 
@@ -75,9 +75,8 @@ inform data subjects</b></summary>
       drawing up an agreement to make sure the other party is GDPR-compliant and 
       uses the necessary security measures (if you haven’t already done so). The 
       exact type of agreement will depend on your specific situation: your 
-      <a href="#support" target = "_blank">privacy officer</a> 
-      can help you choose and set up the right one.
-    </p><p>The flowchart below indicates conditions under which you can share data 
+      <a href="#support">privacy officer</a>  can help you choose and set up the right one.</p>
+      <p>The flowchart below indicates conditions under which you can share data 
       internationally. Note that they assume that you have taken sufficient 
       safeguards to protect the personal data. To determine the possibilities 
       of sharing data internationally in your project, we strongly advise you 
@@ -90,7 +89,7 @@ inform data subjects</b></summary>
       measures.">
    </div>
 </details>
-<br>
+
 <details><summary><b>5. Use a secure way to share the data</b></summary>
 <div><ul>
   <li><b>Granting access</b>: It is preferable to grant a user access 

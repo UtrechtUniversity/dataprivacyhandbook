@@ -96,6 +96,16 @@ div.note {
   border: solid 5x black;
 }
 
+/* --------------- keywords div ---------------- */
+div.keywords {
+    font-size: small;
+    color: #999;
+    font-style: italic;
+    border-bottom: 1px solid #ccc; /* light grey color */
+    padding-bottom: 5px; /* space below the line */
+    margin-bottom: 10px; /* space below the div */
+  }
+
 /* -----------Section anchors -------------*/
 .book .book-body .page-wrapper .page-inner section.normal {
   overflow: visible !important; /*so anchor link doesnt get cut off */
@@ -254,6 +264,33 @@ button:active {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   color: white;
   transform: translateY(0);
+}
+
+/* -----------Pretty details tag--------------------*/
+details {
+  width: 100% /*620px*/;
+  padding: 6px;
+}
+
+details > summary {
+  padding: 1px 4px;
+  background-color: #FFCD00;
+  /*padding: 10px;*/
+  border: none;
+  box-shadow: 3px 3px 4px grey;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+details > div {
+  border-radius: 0 0 10px 10px;
+  padding: 12px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px grey;
+}
+
+details[open] > summary {
+  background-color: #FFCD00;
 }
 
 /* -----------Collapsibles-------------*/

@@ -1,5 +1,10 @@
 # Sharing data for reuse {#data-sharing-reuse}
 
+::::keywords
+On this page: publication, publish, share, transfer, open science, open data,
+FAIR data, reuse, reproducibility
+::::
+
 **In the context of Open Science, it is becoming more important to share data with 
 other researchers, so that they can reproduce results and reuse the data to 
 answer new research questions. This can be challenging when you work with 
@@ -24,6 +29,11 @@ If you are in doubt whether you can share personal data for reuse, please ask
 your [privacy officer](#support) for help. 
 
 ## Sharing anonymised data {#publish-anonymous-data}
+
+::::keywords
+On this page: anonymous, publication, share, transfer, open science, open data,
+FAIR data
+::::
 
 If (part of) the data are truly fully anonymous, they are not classified as 
 personal data anymore: from a privacy perspective, you can publish this 
@@ -62,15 +72,12 @@ This way, others can find, access, understand and reuse your data.
 
 ## Sharing personal data with a legal basis {#share-reuse-legal-basis}
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/yellow-details.css">
-<style>
-details > summary {
-  padding: 1px 4px;
-}
-</style>
-</head>
+::::keywords
+On this page: pseudonymous, personal, sensitive, share, transfer, open science,
+reuse, access control, legal basis, legal ground, data sharing, transparency,
+transparent, inform, further processing, secondary use, secondary processing,
+safeguards, protection, FAIR data
+::::
 
 If you cannot fully anonymise your data, they are still considered personal data. 
 In order to share personal data for reuse, you therefore need to consider the 
@@ -182,6 +189,8 @@ the data:
   </div>
 </details>
   
+<br>
+  
 **For the recipient**, in most cases the legal basis for reusing the received 
 data is public interest (when reused for research purposes), although 
 legitimate interest (when reused for non-research purposes) and consent (if the 
@@ -212,7 +221,10 @@ should aim to protect the personal data also while sharing them. For example:
 
 - Do not share more data than needed; pseudonymise the data as much as possible.
 - Put in place an [agreement](#agreements) that forces recipients to treat the 
-data confidentially and that clarifies each party’s responsibilities.
+data confidentially and that clarifies each party’s responsibilities. This is 
+especially important if the data will be shared outside the European Economic Area
+with countries that do not have an 
+[adequate level of data protection](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}.
 - Share the data safely, for example by giving access via a secure 
 [storage](#data-storage) environment, or [encrypting](#encryption) the data 
 before transferring them.
@@ -256,6 +268,11 @@ Interoperable and Reusable:
 </details>
 
 ## Alternatives to sharing personal data {#sharing-reuse-alternatives}
+
+::::keywords
+On this page: metadata, documentation, information, publication, share, transfer, 
+open science, FAIR data, reproducibility
+::::
 
 ### Publish metadata and documentation {#publish-metadata}
 

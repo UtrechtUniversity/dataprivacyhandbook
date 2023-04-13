@@ -40,7 +40,11 @@ purposes for a longer period of time, e.g., 10 years or longer.
 
 
 ## Where should I store personal data? {#data-storage-where}
-### Storage media at UU
+
+::::keywords
+On this page: storage, location, medium, yoda, o-drive, u-drive, usb stick, 
+google drive, onedrive, teams, surfdrive, paper, security
+::::
 
 If you work at Utrecht University (UU), you can find a suitable storage medium for 
 digital research data via the 
@@ -58,7 +62,7 @@ Is your preferred storage medium not included in the storage finder? Contact
 
 :::note
 - Consider encrypting your data, especially when using **portable devices** 
-(e.g, memory sticks, phones). Portable devices are also not suitable as back-up, 
+(e.g, memory sticks, phones, dictaphones). Portable devices are also not suitable as back-up, 
 due to bit rot and being easily lost.
 - Physical personal data (e.g., paper questionnaires, informed consent forms) 
 should be stored securely too, e.g. in a locked room, cabinet or drawer. You 
@@ -75,6 +79,11 @@ purposes.
 :::
 
 ## How should I store personal data? {#data-storage-how}
+
+::::keywords
+On this page: access control, accountability, interoperability, interoperable,
+separate, anonymise, pseudonymise, de-identify
+::::
 
 **Once you have chosen a suitable storage medium, you should act in accordance 
 with the nature of your data as well**, for example through:
@@ -108,6 +117,10 @@ You can read more about this in the RDM guide
 :::
 
 ## For how long should I store personal data? {#data-storage-duration}
+
+::::keywords
+On this page: retention, storage period, duration, remove, delete
+::::
 
 **As per the GDPR, anyone processing personal data can only store those for as 
 long as is necessary for prespecified purposes 
