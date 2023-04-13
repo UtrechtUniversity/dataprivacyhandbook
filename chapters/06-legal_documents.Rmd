@@ -449,9 +449,11 @@ project.
 Whenever you use personal data in your project, we recommend to complete a 
 privacy scan in consultation with your [privacy officer](#support) 
 to make sure your data are well protected throughout your project. As the 
-privacy scan is a planning document, much like a Data Management Plan, it is 
-preferable to fill it out as **early as possible before you start collecting data**, 
-to prevent unforeseen or costly changes to the design of your research project.  
+privacy scan is a planning document, much like a 
+[Data Management Plan](https://www.uu.nl/en/research/research-data-management/guides/data-management-planning){target="_blank"}, 
+it is preferable to fill it out as **early as possible before you start 
+collecting data**, to prevent unforeseen or costly changes to the design of your 
+research project.  
 
 ::::note
 - Treat the privacy scan as a living document: update it if anything changes 
