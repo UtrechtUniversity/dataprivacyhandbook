@@ -69,6 +69,16 @@ The glossary consists of frequently used jargon concerning the GDPR and research
       <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)" target="_blank">Eurostat</a>).</div>
 </details>
 
+#### G
+
+<details>
+  <summary><b>General Data Protection Regulation (GDPR)</b></summary>
+    <div>A European data protection regulation meant to protect the personal 
+    data of individuals, and facilitates the free movement of personal data 
+    within the European Economic Area (EEA). The Dutch name of the regulation is 
+    "Algemene Verordening Gegevensbescherming" (AVG). 
+    </div>
+</details>
 
 #### H
 
