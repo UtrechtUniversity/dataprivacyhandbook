@@ -23,6 +23,10 @@ agreement.
 <link rel="stylesheet" href="assets/details-button.css">
 </head>
 
+::::keywords
+On this page: informed consent, informing, information, transparency, 
+transparent, privacy notice, information letter, privacy policy
+::::
 
 **A privacy notice is any information given to data subjects about what is 
 happening with their personal data. In research, a privacy notice is usually 
@@ -144,6 +148,10 @@ testing, or by interactions with data subjects themselves (or their
 representatives).
 
 ## Informed consent {#informed-consent-forms}
+
+::::keywords
+On this page: consent, consent form, informed consent form, legal basis
+::::
 
 **Of the 6 possible legal bases to process personal data, informed consent is 
 currently the one most often used in research. With the term consent, we mean 
@@ -411,6 +419,11 @@ Bad example sentences:
 
 ## Privacy scan {#privacy-scan}
 
+::::keywords
+On this page: privacy scan, pre-DPIA, DPIA-light, design, data management plan
+for privacy, risk assessment, planning
+::::
+
 A privacy scan is an initial risk assessment that helps you delineate how you 
 will handle and protect the personal data in your research project ("a Data 
 Management Plan for personal data", also known as "pre-DPIA", "DPIA-light", or 
@@ -455,6 +468,11 @@ scan are just more extensive.
 style="text-decoration: none;"><button type="button">Example template</button></a>
 
 ## Data Protection Impact Assessment {#dpia}
+
+::::keywords
+On this page: DPIA, GBEB, risk assessment, high risk, protection measures,
+safeguards
+::::
 
 A Data Protection Impact Assessment (DPIA) is an instrument to identify and 
 mitigate privacy risks associated with processing personal data in a project. 
@@ -506,6 +524,11 @@ of Representatives is described on the
 
 ## Legitimate interest assessment {#legitimate-interest-assessment}
 
+::::keywords
+On this page: proportionality, necessity, proportional, necessary, balancing 
+test, legitimate interest, legal basis
+::::
+
 If you plan to use legitimate interest as a [legal basis](#legal-basis) in your 
 research project, the GDPR requires that you assess the balance between your 
 interests and those of your data subjects 
@@ -547,6 +570,11 @@ style="text-decoration: none;"><button type="button">Template in the absence of 
 
 
 ## Data Transfer Impact Assessment {#dtia}
+
+::::keywords
+On this page: data transfer, third-country transfer, sharing outside EU, EEA, 
+risk assessment
+::::
 
 A Data Transfer Impact Assessment (DTIA) is a risk analysis that is needed when 
 personal data are transferred to third countries. A DTIA is not an official 
@@ -607,6 +635,10 @@ style="text-decoration: none;"><button type="button">Example questions</button><
 
 ## Processing register {#processing-register}
 
+::::keywords
+On this page: registry, processing activities, project register, administration
+::::
+
 Any EU-based organisation is required to keep a registry of processing 
 activities from within their organisation 
 ([art. 30](https://gdpr-info.eu/art-30-gdpr/){target="_blank"}). 
@@ -630,6 +662,11 @@ application may function as a processing register. Please ask your
 :::
 
 ## Agreements {#agreements}
+
+::::keywords
+On this page: agreement, contract, sharing, transfer, sharing outside EU, EEA, 
+controller, processor, provider, data owner
+::::
 
 **There are many types of agreements that can – and sometimes should – be set up 
 during a research project. Which one you need depends on the purpose of transfer, 
