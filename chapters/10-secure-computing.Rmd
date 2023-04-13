@@ -1,5 +1,11 @@
 # Secure computation {#secure-computation}
 
+::::keywords
+On this page: data-to-code, code-to-data, tools-to-data, algorithm-to-data, 
+cryptography, technique, tool, computing, computation, analysis, analyse, 
+distributed analysis
+::::
+
 When you use personal data in your research project, you likely also need to 
 analyse those data, often using a script of sorts. In this chapter, we discuss 
 the following scenarios for analysing personal data: 
@@ -53,6 +59,10 @@ chosen a solution, but are not sure whether it is safe to use, you can contact
 [Information Security or your privacy officer](#support) for help.
 
 ## "Regular" data analysis: data-to-code {#data-to-code}
+
+::::keywords
+On this page: analysis, data-to-code, data-to-script, transfer, sharing
+::::
 
 <div style="display: flex; flex-direction: row; align-items: flex-start;">
   <img src="img/data-to-code.png" alt="Graphical depiction of the data-to-code 
@@ -131,6 +141,12 @@ and AWS is even more important, because Amazon has servers that are located
 outside of the European Economic Area.
 
 ## Code-to-data (one data provider) {#code-to-data}
+
+::::keywords
+On this page: code-to-data, script-to-data, algorithm-to-data, tools-to-data, 
+SANE, digital research environment, secure research environment, virtual
+research environment, access control
+::::
 
 <div style="display: flex; flex-direction: row; align-items: flex-start;">
   <img src="img/code-to-data.png" alt="Graphical depiction of the code-to-data
@@ -244,6 +260,11 @@ sensitivity of the results fully depend on the analysis that was run.
 
 ## Federated analysis {#federated-analysis}
 
+::::keywords
+On this page: federated analysis, federated learning, machine learning, 
+distributed analysis, distributed learning, collaboration, harmonisation
+::::
+
 <img src="img/federated-analysis.png" alt="Graphical depiction of the federated
 analysis scenario: code (e.g., a machine learning model) travels across local
 datasets and compiles the results of running the code in a central server" 
@@ -307,6 +328,11 @@ hosted at different organisations. It requires harmonising the data at the
 different organisations and setting up the DataSHIELD infrastructure.
 
 ## Cryptographic techniques {#computational-cryptography}
+
+::::keywords
+On this page: encryption, cryptography, security, collaboration, confidential
+computing, mpc, homomorphic encryption
+::::
 
 Besides the scenarios described previously, there are also multiple cryptographic 
 techniques that can be applied to protect sensitive data in the analysis phase. 
