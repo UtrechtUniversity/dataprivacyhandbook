@@ -23,6 +23,11 @@ for step-by-step guidance on how to develop your software in compliance with the
 
 ## Utrecht University tool finders {#uu-tools}
 
+::::keywords
+On this page: storage, storing, collection, repository, data archive, sharing, 
+tools, services
+::::
+
 When you are using a tool that processes personal data, that tool should do so
 in compliance with the GDPR. If you work at Utrecht University (UU), you can use 
 https://tools.uu.nl to find: 
@@ -45,6 +50,11 @@ Additionally, you can find available software via
 
 ## Tools to deidentify, synthetise and work safely with personal data {#tool-repository}
 
+::::keywords
+On this page: anonymisation, pseudonymisation, de-identification, synthetic data, encryption,
+secure computing, computation
+::::
+
 We are creating an overview of potential privacy-related tools for 
 deidentifying data, creating synthetic data, and analysing data in secure 
 environments in a GitHub repository.
@@ -57,6 +67,10 @@ wish to adjust the existing content or add new content.
 
 
 ## Requirements for a third-party tool {#tool-requirements}
+
+::::keywords
+On this page: custom tool, provider, agreement, third-party tool, service
+::::
 
 **If your tool of choice is not listed in https://tools.uu.nl, but it does
 process personal data, please contact the 
