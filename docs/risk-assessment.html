@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-04-13" />
+<meta name="author" content="Utrecht University | Last updated: 2023-04-18" />
 
 
-<meta name="date" content="2023-04-13" />
+<meta name="date" content="2023-04-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -142,10 +142,26 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="risk-assessment.html"><a href="risk-assessment.html"><i class="fa fa-check"></i>Risk Assessment</a>
 <ul>
-<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a></li>
-<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a></li>
-<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Classifying personal data</a></li>
-<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of privacy risks and how to mitigate them</a></li>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a>
+<ul>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html#risk-assessment-steps"><i class="fa fa-check"></i>Risk assessment step by step</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a>
+<ul>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html#high-risk-examples"><i class="fa fa-check"></i>Examples of high-risk scenarios</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Data classification</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html#classification-levels"><i class="fa fa-check"></i>Classification levels</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of risks and how to mitigate them</a>
+<ul>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unwarranted-access"><i class="fa fa-check"></i>Unwarranted access to personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#loss-of-personal-data"><i class="fa fa-check"></i>Loss of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unintended-collection"><i class="fa fa-check"></i>Unintended collection of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#invalid-legal-basis"><i class="fa fa-check"></i>Invalid legal basis</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#risks-data-subjects"><i class="fa fa-check"></i>Risks for data subjects</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="legal-documents.html"><a href="legal-documents.html"><i class="fa fa-check"></i>Documents &amp; Assessments</a>
 <ul>
@@ -317,6 +333,38 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="risk-assessment" class="section level1 hasAnchor">
 <h1>Risk Assessment<a href="risk-assessment.html#risk-assessment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>When you work with personal data, you need to make sure that you correctly
+collect, store, analyse, share, etc. those data to avoid harm to data subjects.
+To do so, it is important to gain insight in:</p>
+<ul>
+<li><p><strong><a href="risk-assessment-how.html#risk-assessment-how">The risks involved</a></strong>:<br />
+<em>Security risks</em> occur when data are unexpectedly less available, less correct, or
+there is an unintended breach of confidentiality. They need to be mitigated by
+implementing <a href="gdpr-principles.html#integrity-and-confidentiality">integrity and confidentiality</a> into your project.<br><br>
+<em>Privacy risks</em> exist when your use of (personal) data, either expectedly or
+unexpectedly, affects the interests, rights and freedoms of data subjects. These can be <a href="data-subject-rights.html#data-subject-rights">Data Subjects’ Rights under the GDPR</a>, but also
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:12012P/TXT&amp;from=EN" target="_blank">other fundamental rights</a>,
+such as the right to equality and non-discrimination, the right to life and
+physical integrity, freedom of expression and information, and religious freedom.
+In practice, we consider it a privacy risk if your processing of personal data
+can result in physical, material, or non-material harm to data subjects. Privacy
+risks should be mitigated by implementing
+<a href="gdpr-principles.html#gdpr-principles"><strong>all</strong> data protection principles</a> into your project.<br><br>
+When the <a href="high-risk-processing.html#high-risk-processing">risks for data subjects are high</a>, an in-depth
+risk assessment in the form of a <a href="dpia.html#dpia">Data Protection Impact Assessment</a> is needed.</p></li>
+<li><p><strong><a href="data-classification.html#data-classification">The data classification</a></strong>: a classification of the
+data (low, basic, sensitive, critical) that is based on the risks for data
+subjects and the damages to an institute or project when data are incorrectly
+handled, there is unauthorised access, or data are leaked. This classification
+affects the security measures you need to take (e.g., which storage solution you
+choose, whether you need to encrypt the data, etc.).</p></li>
+</ul>
+<p>Based on the risks you identified and the classification of the data, you can
+then implement <a href="example-risks.html#example-risks">safeguards to mitigate the risks</a>.</p>
+<!-- Does not work yet
+
+*Privacy risks can occur in any stage of your research project (see also 
+[Solove, 2006](https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2074&context=faculty_publications){target="_blank"}).*-->
 </div>
 <div class = "footer">
 <footer>
