@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-04-13" />
+<meta name="author" content="Utrecht University | Last updated: 2023-04-19" />
 
 
-<meta name="date" content="2023-04-13" />
+<meta name="date" content="2023-04-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,10 +131,22 @@ Support.</p>" />
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="risk-assessment.html"><a href="risk-assessment.html"><i class="fa fa-check"></i>Risk Assessment</a><ul>
-<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a></li>
-<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a></li>
-<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Classifying personal data</a></li>
-<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of privacy risks and how to mitigate them</a></li>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a><ul>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html#risk-assessment-steps"><i class="fa fa-check"></i>Risk assessment step by step</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a><ul>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html#high-risk-examples"><i class="fa fa-check"></i>Examples of high-risk scenarios</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Data classification</a><ul>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html#classification-levels"><i class="fa fa-check"></i>Classification levels</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of risks and how to mitigate them</a><ul>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unwarranted-access"><i class="fa fa-check"></i>Unwarranted access to personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#loss-of-personal-data"><i class="fa fa-check"></i>Loss of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unintended-collection"><i class="fa fa-check"></i>Unintended collection of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#invalid-legal-basis"><i class="fa fa-check"></i>Invalid legal basis</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#risks-data-subjects"><i class="fa fa-check"></i>Risks for data subjects</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="legal-documents.html"><a href="legal-documents.html"><i class="fa fa-check"></i>Documents &amp; Assessments</a><ul>
 <li class="chapter" data-level="" data-path="privacy-notices.html"><a href="privacy-notices.html"><i class="fa fa-check"></i>Information to data subjects</a><ul>
@@ -282,6 +294,125 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="high-risk-processing" class="section level2 hasAnchor">
 <h2>What are high-risk operations?<a href="high-risk-processing.html#high-risk-processing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: high-risk, large risk, dpia, assessment, mandatory</p>
+</div>
+<p>The GDPR requires a <a href="dpia.html#dpia">Data Protection Impact Assessment</a> (DPIA) to be
+conducted when the risks in your project are high, considering “the nature,
+scope, context and purposes” of your project
+(<a href="https://gdpr-info.eu/art-35-gdpr/" target="_blank">art. 35(1)</a>). More
+practically, you need to do a DPIA when two or more of the criteria from the
+<a href="https://ec.europa.eu/newsroom/article29/items/611236" target="_blank">European Data Protection Board</a>
+apply to your project, or – if the processing occurs in the Netherlands - when
+one or more of the criteria from the
+<a href="https://www.autoriteitpersoonsgegevens.nl/sites/default/files/atoms/files/stcrt-2019-64418.pdf" target="_blank">Dutch Data Protection Authority</a>
+(<a href="https://intranet.uu.nl/en/system/files/mandatory_dpias_unofficial_translation_of_ap_decision.pdf" target="_blank">English UU translation</a>)
+applies to your project.</p>
+<div id="high-risk-examples" class="section level3 hasAnchor">
+<h3>Examples of high-risk scenarios<a href="high-risk-processing.html#high-risk-examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details open="true">
+<summary>You systematically use automated decision making in your project
+(<a href="https://gdpr-info.eu/art-35-gdpr/" target="_blank">art. 35(3)</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>You use an algorithm to analyse health records and predict patients’ risk of
+complications.</li>
+<li>You use an algorithm to analyse students’ test scores and learning patterns,
+to make personalised recommendations for coursework or additional resources.</li>
+<li>You use an algorithm to detect fraudulent activity.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>You process <a href="special-types-personal-data.html#special-types-personal-data">special categories of personal data</a>
+or criminal offense data on a large scale
+(<a href="https://gdpr-info.eu/art-35-gdpr/" target="_blank">art. 35(3)</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>You amplify bodily materials into pluripotent stem cells, cell lines, germ
+cells or embryos (see the
+<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf#page=58" target="_blank">Dutch Code of Conduct for health research, 2022</a>).</li>
+<li>You analyse social media data to study political opinions and religious
+beliefs.</li>
+<li>You investigate criminal records from all currently incarcerated individuals
+(note that such a project is likely subject to additional restrictions).</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>You publicly monitor people on a large scale
+(<a href="https://gdpr-info.eu/art-35-gdpr/" target="_blank">art. 35(3)</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>You use traffic data and GPS devices to monitor people’s behaviour in traffic.</li>
+<li>You use CCTV footage to study public safety.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>You collect a lot of personal data, or from a large group
+of people
+(<a href="https://ec.europa.eu/newsroom/article29/items/611236/en" target="_blank">EDPB, 2017</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>You collect data on psychosocial development in twins annually for over a decade.</li>
+<li>You collect genomic data to study the genetic basis of a specific disease.</li>
+<li>You keep a database with contact information from thousands of people.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>You use new techniques or methods for which the effects on
+data subjects or others are not yet known
+(<a href="https://ec.europa.eu/newsroom/article29/items/611236/en" target="_blank">EDPB, 2017</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>Machine learning algorithms.</li>
+<li>Internet of Things.</li>
+<li>Virtual or Augmented Reality.</li>
+<li>Natural Language Processing.</li>
+<li>Human-computer interaction.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Your research involves groups that are vulnerable or touches
+a vulnerable topic
+(<a href="https://ec.europa.eu/newsroom/article29/items/611236/en" target="_blank">EDPB, 2017</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>You perform video interviews with children talking about abuse.</li>
+<li>You interview refugees about their home country.</li>
+<li>You perform in-depth interviews with employees about their job satisfaction.</li>
+<li>You perform a diary study among mentally ill patients.</li>
+<li>You collect data from homosexual individuals in a country where
+homosexuality is forbidden or can lead to discrimination.</li>
+<li>You perform research among a population with (severe) distrust towards
+scientific research(ers) or who have difficulty understanding your research.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>There is a high chance of incidental findings in your research
+(<a href="https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf#page=58" target="_blank">Dutch Code of Conduct for health research, 2022</a>)</summary>
+<div>
+<p>For example:</p>
+<ul>
+<li>You collect neuroimaging data from patients who likely have a brain tumour.</li>
+<li>You investigate genetic data from vulnerable subjects that indicates a risk
+for disease.</li>
+</ul>
+</div>
+</details>
+<p>When you suspect that you may need a DPIA, or when you are not certain whether
+your project needs one, please contact your <a href="seeking-help.html#support">privacy officer</a>.</p>
+</div>
 </div>
 <div class = "footer">
 <footer>

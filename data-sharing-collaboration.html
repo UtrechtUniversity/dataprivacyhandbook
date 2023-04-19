@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-04-13" />
+<meta name="author" content="Utrecht University | Last updated: 2023-04-19" />
 
 
-<meta name="date" content="2023-04-13" />
+<meta name="date" content="2023-04-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,10 +131,22 @@ Support.</p>" />
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="risk-assessment.html"><a href="risk-assessment.html"><i class="fa fa-check"></i>Risk Assessment</a><ul>
-<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a></li>
-<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a></li>
-<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Classifying personal data</a></li>
-<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of privacy risks and how to mitigate them</a></li>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a><ul>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html#risk-assessment-steps"><i class="fa fa-check"></i>Risk assessment step by step</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a><ul>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html#high-risk-examples"><i class="fa fa-check"></i>Examples of high-risk scenarios</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Data classification</a><ul>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html#classification-levels"><i class="fa fa-check"></i>Classification levels</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of risks and how to mitigate them</a><ul>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unwarranted-access"><i class="fa fa-check"></i>Unwarranted access to personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#loss-of-personal-data"><i class="fa fa-check"></i>Loss of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unintended-collection"><i class="fa fa-check"></i>Unintended collection of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#invalid-legal-basis"><i class="fa fa-check"></i>Invalid legal basis</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#risks-data-subjects"><i class="fa fa-check"></i>Risks for data subjects</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="legal-documents.html"><a href="legal-documents.html"><i class="fa fa-check"></i>Documents &amp; Assessments</a><ul>
 <li class="chapter" data-level="" data-path="privacy-notices.html"><a href="privacy-notices.html"><i class="fa fa-check"></i>Information to data subjects</a><ul>
@@ -299,7 +311,7 @@ inform data subjects</b></summary>
 <li>
 Make sure data subjects are well-informed about your intentions to
 share the data with collaborators. Include information in your
-<a href="privacy-notices.html#privacy-notices">privacy notice</a> on the identity of your
+<a href="privacy-notices.html#privacy-notices">information to data subjects</a> on the identity of your
 collaborators, which data are shared with them and why, how, and for how
 long. Avoid using statements that preclude sharing such as “Your data
 will not be shared with anyone else”.
@@ -324,8 +336,9 @@ their data - and <b>proactively</b> - directly if possible.
 <li>
 <a href="risk-assessment.html#risk-assessment">Assess the risks</a> of sharing the
 data and the measures you will take to mitigate those in your
-<a href = "https://www.uu.nl/en/research/research-data-management/guides/data-management-planning" target = "_blank">Data Management Plan</a>, <a href="privacy-scan.html#privacy-scan">Privacy scan</a>,
-or if applicable, <a href="dpia.html#dpia">Data Protection Impact Assessment</a>.
+<a href="https://www.uu.nl/en/research/research-data-management/guides/data-management-planning" target="_blank">Data Management Plan</a>,
+<a href="privacy-scan.html#privacy-scan">privacy scan</a>, or if applicable,
+<a href="dpia.html#dpia">Data Protection Impact Assessment</a>.
 This is especially important if you will share your data with
 collaborators outside of the European Economic Area.
 </li>
@@ -347,7 +360,6 @@ data. It is important to make clear how you and them will do so.
 <details>
 <summary><b>3. Come to agreements with collaborators</b></summary>
 <div>
-<p>
 In order to protect the personal data effectively, it is important to
 determine which role every collaborator has:
 <a href="definitions.html#definitions">controller or processor</a>? And if there are
@@ -356,11 +368,10 @@ in many collaborative research projects (e.g., in consortia), there are
 multiple controllers that collectively determine why (e.g., research
 question) and how (e.g., methods) to process personal data. These parties
 are then joint controllers, and agreements need to be made in a
-<a href="#joint-controllers-agreement">joint controllers agreement</a>.
-</p>
-<p>
-In any collaboration in which data are shared, you need to (<a href = "https://gdpr-info.eu/art-26-gdpr/" target = "_blank">art. 26</a>):
-</p>
+<a href="agreements.html#joint-controller-agreement">joint controllers agreement</a>.
+<br><br>
+In any collaboration in which data are shared, you need to
+(<a href="https://gdpr-info.eu/art-26-gdpr/" target="_blank">art. 26</a>):
 <ul>
 <li>
 Come to a formal agreement on:
@@ -369,46 +380,47 @@ Come to a formal agreement on:
 The role of each party in the research project
 </li>
 <li>
-Respective responsibilities in terms of data protection, such as informing data subjects and handling requests relating to data subjects’ rights
+Respective responsibilities in terms of data protection, such as
+informing data subjects and handling requests relating to data subjects’
+rights
 </li>
 <li>
 Who is the main point of contact for data subjects
 </li>
 </ul>
+</li>
 <li>
 Communicate (the essence of) the agreement to data subjects.
 </li>
 </ul>
-<p>
-Your <a href="seeking-help.html#support" target = "_blank">privacy officer</a>
-can help you draw up a valid agreement.
-</p>
+Your <a href="seeking-help.html#support">privacy officer</a> can help you draw up a valid agreement.
 </div>
 </details>
 <details>
 <summary><b>4. Pay special attention when sharing personal data outside the EU</b></summary>
 <div>
-<p>
-If you share personal data with international collaborators (for example,
+<p>If you share personal data with international collaborators (for example,
 with countries that have no
-<a href = "https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target = "_blank">adequacy decision</a>),
+<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank">adequacy decision</a>,
 you may need to take additional measures. Usually, these measures include
 drawing up an agreement to make sure the other party is GDPR-compliant and
 uses the necessary security measures (if you haven’t already done so). The
 exact type of agreement will depend on your specific situation: your
 <a href="seeking-help.html#support">privacy officer</a> can help you choose and set up the right one.
-</p>
-<pre><code>  &lt;p&gt;The flowchart below indicates conditions under which you can share data 
-  internationally. Note that they assume that you have taken sufficient 
-  safeguards to protect the personal data. To determine the possibilities 
-  of sharing data internationally in your project, we strongly advise you 
-  to consult with your &lt;a href=&quot;#support&quot; target = &quot;_blank&quot;&gt;privacy officer&lt;/a&gt;. In some cases a &lt;a href=&quot;#dtia&quot;&gt;Data Transfer Impact Assessment&lt;/a&gt; may 
-  be required, which can take some effort.&lt;/p&gt;&lt;img src=&quot;img/international-data-transfer.png&quot; alt=&quot;Flowchart about 
+<br><br>
+The flowchart below indicates conditions under which you can share data
+internationally. Note that they assume that you have taken sufficient
+safeguards to protect the personal data. To determine the possibilities
+of sharing data internationally in your project, we strongly advise you
+to consult with your <a href="seeking-help.html#support">privacy officer</a>. In some cases a
+<a href="dtia.html#dtia">Data Transfer Impact Assessment</a> may be required, which can
+take some effort.
+<img src="img/international-data-transfer.png" alt="Flowchart about 
   international data transfers. If you are transfering data to countries 
   within the European Economic Area, no additional measures are required. If 
   you however transfer data outside of the European Economic Area, we 
   recommend to contact your faculty privacy officer to take the proper 
-  measures.&quot;&gt;</code></pre>
+  measures."></p>
 </div>
 </details>
 <details>
@@ -429,7 +441,7 @@ being copied elsewhere.
 <b>Transferring data</b>: When it is absolutely necessary to
 transfer the files to a different location, you must do so securely.
 Researchers at Utrecht University can use
-<a href = "https://filesender.surf.nl" target = "_blank">SURF Filesender</a>
+<a href="https://filesender.surf.nl" target="_blank">SURF Filesender</a>
 with encryption.
 </li>
 </ul>

@@ -71,13 +71,13 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Data Privacy Handbook},
-  pdfauthor={Utrecht University \textbar{} Last updated: 2023-04-13},
+  pdfauthor={Utrecht University \textbar{} Last updated: 2023-04-18},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Data Privacy Handbook}
-\author{Utrecht University \textbar{} Last updated: 2023-04-13}
-\date{13 april 2023}
+\author{Utrecht University \textbar{} Last updated: 2023-04-18}
+\date{18 april 2023}
 
 \begin{document}
 \maketitle
@@ -96,7 +96,7 @@
 
 \includegraphics{img/cover-image-dph.png}
 
-\emph{Last updated: 13 April 2023}
+\emph{Last updated: 18 April 2023}
 
 \textbf{The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, primarily written for Utrecht University researchers and
@@ -1681,17 +1681,799 @@ example by:
 \hypertarget{risk-assessment}{%
 \chapter{Risk Assessment}\label{risk-assessment}}
 
+When you work with personal data, you need to make sure that you correctly
+collect, store, analyse, share, etc. those data to avoid harm to data subjects.
+To do so, it is important to gain insight in:
+
+\begin{itemize}
+\item
+  \textbf{\protect\hyperlink{risk-assessment-how}{The risks involved}}:\\
+  \emph{Security risks} occur when data are unexpectedly less available, less correct, or
+  there is an unintended breach of confidentiality. They need to be mitigated by
+  implementing \protect\hyperlink{integrity-and-confidentiality}{integrity and confidentiality} into your project.
+  \emph{Privacy risks} exist when your use of (personal) data, either expectedly or
+  unexpectedly, affects the interests, rights and freedoms of data subjects. These can be \protect\hyperlink{data-subject-rights}{Data Subjects' Rights under the GDPR}, but also
+  \href{https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:12012P/TXT\&from=EN}{other fundamental rights},
+  such as the right to equality and non-discrimination, the right to life and
+  physical integrity, freedom of expression and information, and religious freedom.
+  In practice, we consider it a privacy risk if your processing of personal data
+  can result in physical, material, or non-material harm to data subjects. Privacy
+  risks should be mitigated by implementing
+  \protect\hyperlink{gdpr-principles}{\textbf{all} data protection principles} into your project.
+  When the \protect\hyperlink{high-risk-processing}{risks for data subjects are high}, an in-depth
+  risk assessment in the form of a \protect\hyperlink{dpia}{Data Protection Impact Assessment} is needed.
+\item
+  \textbf{\protect\hyperlink{data-classification}{The data classification}}: a classification of the
+  data (low, basic, sensitive, critical) that is based on the risks for data
+  subjects and the damages to an institute or project when data are incorrectly
+  handled, there is unauthorised access, or data are leaked. This classification
+  affects the security measures you need to take (e.g., which storage solution you
+  choose, whether you need to encrypt the data, etc.).
+\end{itemize}
+
+Based on the risks you identified and the classification of the data, you can
+then implement \protect\hyperlink{example-risks}{safeguards to mitigate the risks}.
+
 \hypertarget{risk-assessment-how}{%
 \section{How to assess privacy risks?}\label{risk-assessment-how}}
+
+On this page: risk, security, assessment, harm, damage, dpia, threat, secure,
+measure, safeguard, protect, plan, probability, likelihood, impact
+
+Before you start your research project, it is important to consider the risks
+and their severity for data subjects in your project. This assessment will
+inform you on which (additional) safeguards to put in place to mitigate the
+risks.
+
+Privacy and security risks are usually outlined in a
+\protect\hyperlink{privacy-scan}{privacy scan} or \protect\hyperlink{dpia}{Data Protection Impact Assessment}, and
+purely security risks in a \protect\hyperlink{data-classification}{data classification}. If you
+create an algorithm that can affect people, an
+``\href{https://dspace.library.uu.nl/handle/1874/420552}{Impact Assessment Fundamental Rights and Algorithms}''
+may be required or combined with any of the before mentioned assessments.
+
+\hypertarget{risk-assessment-steps}{%
+\subsection{Risk assessment step by step}\label{risk-assessment-steps}}
+
+When going through the below steps, take into account at least the following
+risk scenarios:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data breach} (unintended security risks): someone unauthorised gains (or
+  keeps) access to personal data, or personal data are lost due to a security
+  incident.
+\item
+  \textbf{Inability for data subjects to exercise their rights}: for example, data
+  subjects have not been (well-)informed about data processing, there is no
+  contact person to ask for data removal, or there is no procedure in place to
+  find, correct or remove data subjects' data.
+\item
+  \textbf{Intrusion of personal space}: for example, you observe data subjects in a
+  place or at a time where/when they would expect a sense of privacy (e.g.,
+  dressing rooms or at home). If there is secret or excessive observation, people
+  may feel violated and stifled.
+\item
+  \textbf{Inappropriate outcomes}: the outcomes of your research project may also
+  impact data subjects, for example when it induces discrimination, inappropriate
+  bias, (physical or mental) health effects, but also when a lack of participation
+  denies data subjects beneficial treatment effects.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Outline which and how much (personal) data you use, how,
+  and for what purposes
+
+  This is usually one of the first steps of a \protect\hyperlink{privacy-scan}{privacy scan}.
+\item
+  Is there a project with similar data, purposes, methods and
+  techniques?
+
+  If there are projects that are the same or very similar to your project,
+  you can reuse relevant work from their \protect\hyperlink{privacy}{privacy scan}, or if
+  applicable, \protect\hyperlink{dpia}{Data Protection Impact Assessment} (DPIA). Naturally, you
+  should adjust sections that do not apply in your own project. If you're not
+  sure of any existing projects similar to yours, ask your
+  \protect\hyperlink{support}{privacy officer} or colleagues.
+\item
+  List possible harm to data subjects and others
+
+  Make an overview of the possible harm that could occur to data subjects and
+  others if any of the risk scenarios occurs. These could be:
+
+  \textbf{Physical harm}
+  Damage to someone's physical integrity, such as when they receive the wrong
+  medical treatment, end up as a victim of a violent crime, or develop mental
+  health problems such a depression or anxiety.
+
+  \textbf{Material harm}
+  Destruction or property or economic damage, such as financial loss, career
+  disadvantages, reduced state benefits, identity theft, extortion, unjustified
+  fines, costs for legal advice after a data breach, etc.
+
+  \textbf{Non-material harm}
+
+  Social disadvantage, for example damage to someone's reputation,
+  humiliation, social discrimination, etc.
+
+  Damage to privacy, for example a lack of control over their own data
+  or the feeling of being spied on. This can happen when you collect a lot
+  of personal data, or for a longer period of time (e.g., with surveillance,
+  web applications).
+
+  Chilling effects: when someone stops or avoids doing something they
+  otherwise would, because they fear negative consequences or feel
+  uncomfortable.
+
+  Interference with rights: using personal data may violate other
+  fundamental rights, such as the right to non-discrimination or freedom of
+  expression.
+\item
+  Estimate the risk level without safeguards
+
+  After listing the possible harm, you should determine the risk level of
+  each harm occurring. The risk level depends on:
+
+  the \textbf{impact} of the harm: what is the effect of each of the 4 scenarios
+  above on the data subject and others (major, substantial, manageable, minor)?
+
+  the \textbf{likelihood} of the harm occurring: this depends on the
+  circumstances of your project, such as: what and who can cause the harm to
+  occur? How easily are mistakes made (e.g., how easily will an unauthorised
+  person gain access)?
+
+  It is important to first determine the risk level in case you do not implement
+  any safeguards. This will be your risk level if all those safeguards fail.
+  The \protect\hyperlink{high-risk-processing}{higher this initial risk}, the more you should do to
+  mitigate it.
+\item
+  Determine the safeguards you can use to mitigate the
+  risks
+
+  In many cases, it is possible to mitigate the risks by implementing
+  organisational and technical measures. The higher the risks, the more and/or
+  stricter measures should be in place to mitigate them. You can find some
+  relevant measures in the \protect\hyperlink{privacy-design-strategies}{Privacy by Design chapter},
+  and on the \protect\hyperlink{example-risks}{example page in this chapter}.
+\item
+  Determine the residual risk after implementing
+  safeguards
+
+  By implementing safeguards, you are decreasing the likelihood of the risks
+  occurring. If the risk is still unacceptably high, even after implementing
+  safeguards, you should:
+
+  Modify your processing to reduce the impact of potential damages (for
+  example, refrain from collecting specific data types), or
+
+  Implement more or better measures, reducing the likelihood of any harm
+  occurring.
+\end{enumerate}
+
+It will always be difficult to quantify risks. Therefore, it is largely the
+argumentation that can provide context in how the risk level was determined.
+The same harm may in one project be very unlikely to occur, while in another
+it may be very likely: \textbf{context matters}!
 
 \hypertarget{high-risk-processing}{%
 \section{What are high-risk operations?}\label{high-risk-processing}}
 
+On this page: high-risk, large risk, dpia, assessment, mandatory
+
+The GDPR requires a \protect\hyperlink{dpia}{Data Protection Impact Assessment} (DPIA) to be
+conducted when the risks in your project are high, considering ``the nature,
+scope, context and purposes'' of your project
+(\href{https://gdpr-info.eu/art-35-gdpr/}{art. 35(1)}). More
+practically, you need to do a DPIA when two or more of the criteria from the
+\href{https://ec.europa.eu/newsroom/article29/items/611236}{European Data Protection Board}
+apply to your project, or -- if the processing occurs in the Netherlands - when
+one or more of the criteria from the
+\href{https://www.autoriteitpersoonsgegevens.nl/sites/default/files/atoms/files/stcrt-2019-64418.pdf}{Dutch Data Protection Authority}
+(\href{https://intranet.uu.nl/en/system/files/mandatory_dpias_unofficial_translation_of_ap_decision.pdf}{English UU translation})
+applies to your project.
+
+\hypertarget{high-risk-examples}{%
+\subsection{Examples of high-risk scenarios}\label{high-risk-examples}}
+
+You systematically use automated decision making in your project
+(\href{https://gdpr-info.eu/art-35-gdpr/}{art. 35(3)})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  You use an algorithm to analyse health records and predict patients' risk of
+  complications.
+\item
+  You use an algorithm to analyse students' test scores and learning patterns,
+  to make personalised recommendations for coursework or additional resources.
+\item
+  You use an algorithm to detect fraudulent activity.
+\end{itemize}
+
+You process \protect\hyperlink{special-types-personal-data}{special categories of personal data}
+or criminal offense data on a large scale
+(\href{https://gdpr-info.eu/art-35-gdpr/}{art. 35(3)})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  You amplify bodily materials into pluripotent stem cells, cell lines, germ
+  cells or embryos (see the
+  \href{https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf\#page=58}{Dutch Code of Conduct for health research, 2022}).
+\item
+  You analyse social media data to study political opinions and religious
+  beliefs.
+\item
+  You investigate criminal records from all currently incarcerated individuals
+  (note that such a project is likely subject to additional restrictions).
+\end{itemize}
+
+You publicly monitor people on a large scale
+(\href{https://gdpr-info.eu/art-35-gdpr/}{art. 35(3)})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  You use traffic data and GPS devices to monitor people's behaviour in traffic.
+\item
+  You use CCTV footage to study public safety.
+\end{itemize}
+
+You collect a lot of personal data, or from a large group
+of people
+(\href{https://ec.europa.eu/newsroom/article29/items/611236/en}{EDPB, 2017})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  You collect data on psychosocial development in twins annually for over a decade.
+\item
+  You collect genomic data to study the genetic basis of a specific disease.
+\item
+  You keep a database with contact information from thousands of people.
+\end{itemize}
+
+You use new techniques or methods for which the effects on
+data subjects or others are not yet known
+(\href{https://ec.europa.eu/newsroom/article29/items/611236/en}{EDPB, 2017})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  Machine learning algorithms.
+\item
+  Internet of Things.
+\item
+  Virtual or Augmented Reality.
+\item
+  Natural Language Processing.
+\item
+  Human-computer interaction.
+\end{itemize}
+
+Your research involves groups that are vulnerable or touches
+a vulnerable topic
+(\href{https://ec.europa.eu/newsroom/article29/items/611236/en}{EDPB, 2017})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  You perform video interviews with children talking about abuse.
+\item
+  You interview refugees about their home country.
+\item
+  You perform in-depth interviews with employees about their job satisfaction.
+\item
+  You perform a diary study among mentally ill patients.
+\item
+  You collect data from homosexual individuals in a country where
+  homosexuality is forbidden or can lead to discrimination.
+\item
+  You perform research among a population with (severe) distrust towards
+  scientific research(ers) or who have difficulty understanding your research.
+\end{itemize}
+
+There is a high chance of incidental findings in your research
+(\href{https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf\#page=58}{Dutch Code of Conduct for health research, 2022})
+
+For example:
+
+\begin{itemize}
+\tightlist
+\item
+  You collect neuroimaging data from patients who likely have a brain tumour.
+\item
+  You investigate genetic data from vulnerable subjects that indicates a risk
+  for disease.
+\end{itemize}
+
+When you suspect that you may need a DPIA, or when you are not certain whether
+your project needs one, please contact your \protect\hyperlink{support}{privacy officer}.
+
 \hypertarget{data-classification}{%
-\section{Classifying personal data}\label{data-classification}}
+\section{Data classification}\label{data-classification}}
+
+On this page: BIV classificatie, CIA triad, data classification, information
+security, IT system
+
+In order to determine which IT solutions are suitable for processing personal
+data (e.g., storage or analysis platforms), a classification of your data is
+needed. That data classification can then be paired to the classification given
+to IT solutions. Institutes will determine for which data classification certain
+IT solutions are suitable. For example, at Utrecht University (UU), the
+classification levels are: low, basic, sensitive or critical. If your data are
+classified as ``critical'', you are not allowed to use an IT solution that is only
+suitable for ``sensitive'' data.
+
+To classify data, you determine how important it is to keep the data
+Confidential, correct (Integrity), and Available. Below you can find some
+guidance on determining the risk level for each of these. Note that this
+guidance is based on the UU data classification, but your institute may adhere
+to a different form of the classification.
+
+Data classification can be done for all types of data, not only personal data.
+Personal data would simply score ``higher'' on the Confidentiality aspect.
+
+\hypertarget{classification-levels}{%
+\subsection{Classification levels}\label{classification-levels}}
+
+Confidentiality
+
+How confidential are the data?
+
+\begin{itemize}
+\tightlist
+\item
+  Low:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Anonymous data, or data that are already publicly available, from less than
+    50 people.
+  \item
+    Direct colleagues.
+  \item
+    No third parties and software involved.
+  \item
+    No reputation loss when data are lost.
+  \end{itemize}
+\item
+  Basic:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Non-public basic personal data such as name, (email)address, etc.
+  \item
+    Personal data obtained directly from data subjects.
+  \item
+    Personal data from a moderate number of data subjects (\textgreater{} 50 - 200).
+  \item
+    Sensitive personal data from a small number of individuals.
+  \item
+    Third parties are involved but they are located inside the EEA.
+  \end{itemize}
+\item
+  Sensitive:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A data leak would lead to reputation damage to you and the university.
+  \item
+    You are bound to patents or contractual agreements.
+  \item
+    Sensitive personal data from a moderate number of data subjects (e.g.,
+    personality data, financial data).
+  \item
+    Non-sensitive personal data from a large number of data subjects (\textgreater{} 10.000).
+  \item
+    Personal data enriched with external resources.
+  \item
+    Far-reaching process automation.
+  \item
+    Non-targeted monitoring.
+  \item
+    Relatively new technology.
+  \end{itemize}
+\item
+  Critical:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Any project that carries \protect\hyperlink{high-risk-processing}{high risks} for data
+    subjects or others:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Highly sensitive personal data (e.g., biometric identification data,
+      genetic data).
+    \item
+      Personal data from a very large number of data subjects (\textgreater{} 50,000).
+    \item
+      Vulnerable subjects (e.g., minors, disabled, undocumented, persecuted groups).
+    \item
+      Processing happens (partly) outside of the EEA without an adequacy decision.
+    \end{itemize}
+  \item
+    Life-threatening research.
+  \item
+    There are far-reaching contractual obligations.
+  \item
+    A data leak would lead to exclusion from future grants.
+  \end{itemize}
+\end{itemize}
+
+Integrity
+
+How important is it that the data are correct and can only be modified by
+authorised individuals?
+
+\begin{itemize}
+\tightlist
+\item
+  Low: Incorrect data would be an inconvenience and/or require some rework.
+\item
+  Basic: Incorrect data would invalidate research and/or require significant
+  rework.
+\item
+  Sensitive: Incorrect data would invalidate multiple research projects, could
+  cause reputational damage to you and the university, or lead to significant
+  contractual violations.
+\item
+  Critical: Incorrect data could have far-reaching contractual obligations,
+  exclusion from future grants or life-threatening research.
+\end{itemize}
+
+Availability
+
+How important is it that the data are available? When would it be a problem; if
+the data are not available for an hour, a day, a week\ldots?
+
+\begin{itemize}
+\tightlist
+\item
+  Low: Losing (access to) the data would be inconvenient and/or lead to rework.
+\item
+  Basic: Losing (access to) the data would invalidate research and/or require
+  significant rework. Not having access to the data would cause significant delays
+  and could incur costs up to 250.000 EUR.
+\item
+  Sensitive: Losing (access to) the data would terminate or hugely delay
+  multiple research projects, could cause significant reputational damage to you
+  and the university, lead to significant contractual violations or individuals
+  not being able to access their sensitive personal data.
+\item
+  Critical: Inaccessible data could have far-reaching contractual obligations,
+  cause damages in excess of 1.500.000 EUR, including exclusion from future grants
+  or losing/not being able to access potentially life-threatening data.
+\end{itemize}
+
+Please note that a classification may be lower or higher than indicated in the
+examples, depending on your specific context. Please contact your
+\protect\hyperlink{support}{privacy officer} to help you classify your data. You can also
+contact \protect\hyperlink{support}{Information Security} for questions about data classification
+and security measures.
 
 \hypertarget{example-risks}{%
-\section{Examples of privacy risks and how to mitigate them}\label{example-risks}}
+\section{Examples of risks and how to mitigate them}\label{example-risks}}
+
+On this page: risk example, safeguards, organisational and technical measures,
+protection, protective, security, data breach
+
+Below you can find a list of common privacy and security risks in research and
+how you can mitigate them:
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{unwarranted-access}{Unwarranted access to personal data}
+\item
+  \protect\hyperlink{loss-of-personal-data}{Loss of personal data}
+\item
+  \protect\hyperlink{unintended-collection}{Unintended collection of personal data}
+\item
+  \protect\hyperlink{invalid-legal-basis}{Invalid legal basis}
+\item
+  \protect\hyperlink{risks-data-subjects}{Risks for data subjects}
+\end{itemize}
+
+\hypertarget{unwarranted-access}{%
+\subsection{Unwarranted access to personal data}\label{unwarranted-access}}
+
+Someone tries to gain access to personal data
+
+\begin{itemize}
+\tightlist
+\item
+  Use storage and analysis systems that are suitable for your
+  \protect\hyperlink{data-classification}{data classification}, e.g., systems that are managed by
+  your institute and/or \protect\hyperlink{encryption}{encrypted}.
+\item
+  Apply \protect\hyperlink{data-oriented-strategies}{protection strategies described here}.
+\end{itemize}
+
+A previous team member still has access (e.g., a copy on their
+personal device, a working account)
+
+Enforce a protocol in which team members who leave need to remove all their
+copies of the data and are denied access to the data and shared folders (on- and
+offboarding). Periodically review and update all users/rights. Make someone
+responsible for this process.
+
+A team member shares the data with a third party
+
+\begin{itemize}
+\tightlist
+\item
+  Put in place a protocol or \protect\hyperlink{nda}{non-disclosure agreement} that makes team
+  members aware that this is not allowed, or make sure that a
+  \protect\hyperlink{data-transfer-agreement}{data transfer agreement} is in place.
+\item
+  Make sure that team members do not have access to data that they do not
+  need access to.
+\end{itemize}
+
+A password is leaked
+
+\begin{itemize}
+\tightlist
+\item
+  Use systems that apply multifactor authentication.
+\item
+  Change your password regularly or immediately when it is compromised, and
+  have your team members do the same.
+\end{itemize}
+
+\protect\hyperlink{example-risks}{Back to top}
+
+\hypertarget{loss-of-personal-data}{%
+\subsection{Loss of personal data}\label{loss-of-personal-data}}
+
+A device is lost or defective (e.g., laptop, USB stick)
+
+\begin{itemize}
+\tightlist
+\item
+  Protect the device with a password.
+\item
+  Encrypt the device or the data on it.
+\item
+  \protect\hyperlink{deleting-personal-data}{Delete} unnecessary copies of the data on the
+  device as soon as you've made a back-up on a more stable and secure system,
+  such as university-managed storage facilities.
+\item
+  Enable removing data from the device from a distance.
+\end{itemize}
+
+Paper data are lost
+
+\begin{itemize}
+\tightlist
+\item
+  Avoid collecting data on paper altogether, or only collect the necessary
+  information.\\
+\item
+  Store the paper data in a central and access-controlled location, scan the
+  documents as soon as possible, store the scans on a backed-up storage medium
+  and destroy the paper records (securely).\\
+\end{itemize}
+
+The dataset is deleted accidentally
+
+Use a storage system that has back-up functionality, or if not available, make
+regular manual back-ups of the data.
+
+A system error causes temporary loss of or access to data
+
+\begin{itemize}
+\tightlist
+\item
+  If you are not using centrally managed IT solutions, regularly check if
+  back-ups are being done as expected and have protocols in place on how to
+  restore back-ups.
+\item
+  If the time-out takes a significant amount of time, discuss with your
+  \protect\hyperlink{support}{privacy officer} whether you need to inform data subjects about it:
+  they cannot exercise their rights during that time.\\
+\end{itemize}
+
+The organisation is hit by a ransomware attack
+
+Enforce a security protocol that emphasises secure data practices, such as:
+
+\begin{itemize}
+\tightlist
+\item
+  Do not download data from unknown sources.
+\item
+  Be careful when installing software, preferably only install software from
+  the institutional software catalogue.
+\item
+  Create awareness of what phishing looks like and to report phishing
+  immediately to the
+  \href{https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert}{Computer Emergency Response Team}.
+\end{itemize}
+
+\protect\hyperlink{example-risks}{Back to top}
+
+\hypertarget{unintended-collection}{%
+\subsection{Unintended collection of personal data}\label{unintended-collection}}
+
+Data subjects give more, or more sensitive information about
+themselves than intended/needed
+
+\begin{itemize}
+\tightlist
+\item
+  Offer data subjects the possibility to review what information they provided.
+\item
+  Offer the possibility to withdraw consent in a later stage.
+\item
+  Use a data collection protocol to prevent this from taking place.
+\item
+  Remove the unnecessary information from your dataset.\\
+\end{itemize}
+
+Data subjects give (sensitive) information about others
+
+\begin{itemize}
+\tightlist
+\item
+  Use a data collection protocol to prevent this from taking place.
+\item
+  Offer data subjects the possibility to review what information they provided.
+\item
+  Remove the unnecessary information from your dataset.
+\item
+  Consider the risks for those others vs.~your own research benefits: if the
+  interests for the other people are more important, you should delete or
+  anonymise the information.\\
+\end{itemize}
+
+Personal data are collected unintendedly
+
+This can happen when a survey tool automatically collects additional data such
+as IP addresses. You can sometimes turn this off, and otherwise must remove the
+data as soon as possible after collection.
+
+\protect\hyperlink{example-risks}{Back to top}
+
+\hypertarget{invalid-legal-basis}{%
+\subsection{Invalid legal basis}\label{invalid-legal-basis}}
+
+Data subjects were not informed in a way that is
+understandable for them
+
+This can be a risk with vulnerable subjects, such as children or psychiatric
+patients but also with data subjects from different cultures. Make sure the
+information to data subjects is \protect\hyperlink{form-of-a-privacy-notice}{easy to understand},
+consider other forms than text (e.g., orally). You could even test this with a
+sub-group of data subjects. Moreover, we recommend going through an ethical
+review to consider these aspects more in-depth.
+
+Data subjects could not be (fully) informed because it would
+harm your research project
+
+If fully informing data subjects can negatively affect your research project
+(\href{https://gdpr-info.eu/art-14-gdpr/}{art. 14(5)}), we recommend
+going through ethical review and extensively debriefing data subjects after your
+project, including a possibility to withdraw consent or to object to the
+processing. In case of secretive research (heimelijk onderzoek), please contact
+your \protect\hyperlink{support}{privacy officer}: this requires an in-depth privacy scan.
+
+Data subjects do not know their data are used for research
+
+This can happen for example in web scraping or archival research. In principle,
+you need to inform the data subjects directly. If this takes an unreasonable
+amount of effort, place a link to a privacy statement on a place that those
+data subjects likely visit (e.g., social media). Point at a possibility to
+object to your processing.
+
+Consent cannot be demonstrated
+
+Use a system that registers the consent (e.g., a survey tool, an interview
+recording), preferably with the date of providing consent. If your research
+involves a survey, make sure data subjects cannot enter the survey itself if
+they have not ticked the ``consent'' box(es). Store the consent declarations for
+as long as you retain the personal data. Do so securely, but separated from the
+research data.
+
+Data subjects do not want to sign a consent form
+
+\begin{itemize}
+\tightlist
+\item
+  Consider whether you actually need a signature. If you do not use real names
+  or a pseudonym unconnected to real names, using a signature would lead to the
+  unnecessary processing of personal data, and a checkbox will likely suffice.
+\item
+  Contact your \protect\hyperlink{support}{privacy officer} to consider using public interest
+  as a legal basis instead of consent. Note that data subjects still need to be
+  informed properly.
+\item
+  If you have to use consent, consider the format of consent: for some groups
+  oral consent may work better than written consent.\\
+\end{itemize}
+
+Consent may not be freely given because you do research in
+your own organisation
+
+\begin{itemize}
+\tightlist
+\item
+  Consider whether you can rely on public interest instead of consent: contact
+  your \protect\hyperlink{support}{privacy officer} for assistance.\\
+\item
+  If you need to use consent, try to distance yourself from the data subjects.
+  For example, if your data subjects are students, have someone other than the
+  teacher perform the data collection and/or analysis, or investigate a
+  department other than your own, and prevent the management of the department
+  of interest from getting involved in your project.\\
+\end{itemize}
+
+\protect\hyperlink{example-risks}{Back to top}
+
+\hypertarget{risks-data-subjects}{%
+\subsection{Risks for data subjects}\label{risks-data-subjects}}
+
+Your research has a stigmatising effect on the data subjects
+due to incorrect, unclear or opaque selection criteria
+
+Describe clearly how the data subjects are selected.
+
+Due to a small sample size, data subjects are easily
+identifiable
+
+\begin{itemize}
+\tightlist
+\item
+  Increase the sample size
+\item
+  Put in place \protect\hyperlink{data-oriented-strategies}{protection measures} to protect
+  the identity of the data subjects\\
+\end{itemize}
+
+Data subjects put themselves in harm's way by participating
+
+\begin{itemize}
+\tightlist
+\item
+  Balance the interests of the data subjects vs.~those of your research
+  project and go through ethical review.
+\item
+  Collect the data in a physically safe location.
+\item
+  Put in place \protect\hyperlink{data-oriented-strategies}{protection measures} like
+  anonymisation, minimisation, blurring, etc. to hide and protect the identity
+  of the data subjects.
+\item
+  Clearly inform data subjects what their participation entails and obtain
+  their explicit consent.
+\item
+  If applicable, inform local authorities and obtain formal permission to
+  perform your research.
+\end{itemize}
+
+\protect\hyperlink{example-risks}{Back to top}
 
 \hypertarget{legal-documents}{%
 \chapter{Documents \& Assessments}\label{legal-documents}}
@@ -3567,12 +4349,12 @@ inform data subjects
 
 Make sure data subjects are well-informed about your intentions to
 share the data with collaborators. Include information in your
-privacy notice on the identity of your
+\protect\hyperlink{privacy-notices}{information to data subjects} on the identity of your
 collaborators, which data are shared with them and why, how, and for how
 long. Avoid using statements that preclude sharing such as ``Your data
 will not be shared with anyone else''.
 
-Make sure you have a legal basis to
+Make sure you have a \protect\hyperlink{legal-basis}{legal basis} to
 share the data, e.g., informed consent or public interest. If you use
 consent, make sure that data subjects are aware that they are also
 providing consent to share their data with your collaborators.
@@ -3582,10 +4364,11 @@ their data - and proactively - directly if possible.
 
 2. Protect the personal data appropriately
 
-Assess the risks of sharing the
+\protect\hyperlink{risk-assessment}{Assess the risks} of sharing the
 data and the measures you will take to mitigate those in your
-Data Management Plan, Privacy scan,
-or if applicable, Data Protection Impact Assessment.
+\href{https://www.uu.nl/en/research/research-data-management/guides/data-management-planning}{Data Management Plan},
+\protect\hyperlink{privacy-scan}{privacy scan}, or if applicable,
+\protect\hyperlink{dpia}{Data Protection Impact Assessment}.
 This is especially important if you will share your data with
 collaborators outside of the European Economic Area.
 
@@ -3594,7 +4377,7 @@ for example by deleting unnecessary data, pseudonymising the data, and
 sharing only with those who need access to the data.
 
 Make sure data subjects can still exercise their
-data subjects' rights. For example,
+\protect\hyperlink{data-subject-rights}{data subjects' rights}. For example,
 if a data subject withdraws their consent, not only you, but also your
 collaborators will have to stop processing the data subject's personal
 data. It is important to make clear how you and them will do so.
@@ -3603,53 +4386,47 @@ data. It is important to make clear how you and them will do so.
 
 In order to protect the personal data effectively, it is important to
 determine which role every collaborator has:
-controller or processor? And if there are
+\protect\hyperlink{definitions}{controller or processor}? And if there are
 multiple controllers, are they separate or joint controllers? For example,
 in many collaborative research projects (e.g., in consortia), there are
 multiple controllers that collectively determine why (e.g., research
 question) and how (e.g., methods) to process personal data. These parties
 are then joint controllers, and agreements need to be made in a
-joint controllers agreement.
-
-In any collaboration in which data are shared, you need to (art. 26):
+\protect\hyperlink{joint-controller-agreement}{joint controllers agreement}.
+In any collaboration in which data are shared, you need to
+(\href{https://gdpr-info.eu/art-26-gdpr/}{art. 26}):
 
 Come to a formal agreement on:
 
 The role of each party in the research project
 
-Respective responsibilities in terms of data protection, such as informing data subjects and handling requests relating to data subjects' rights
+Respective responsibilities in terms of data protection, such as
+informing data subjects and handling requests relating to data subjects'
+rights
 
 Who is the main point of contact for data subjects
 
 Communicate (the essence of) the agreement to data subjects.
 
-Your privacy officer
-can help you draw up a valid agreement.
+Your \protect\hyperlink{support}{privacy officer} can help you draw up a valid agreement.
 
 4. Pay special attention when sharing personal data outside the EU
 
 If you share personal data with international collaborators (for example,
 with countries that have no
-adequacy decision),
+\href{https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en}{adequacy decision},
 you may need to take additional measures. Usually, these measures include
 drawing up an agreement to make sure the other party is GDPR-compliant and
 uses the necessary security measures (if you haven't already done so). The
 exact type of agreement will depend on your specific situation: your
-privacy officer can help you choose and set up the right one.
-
-\begin{verbatim}
-  <p>The flowchart below indicates conditions under which you can share data 
-  internationally. Note that they assume that you have taken sufficient 
-  safeguards to protect the personal data. To determine the possibilities 
-  of sharing data internationally in your project, we strongly advise you 
-  to consult with your <a href="#support" target = "_blank">privacy officer</a>. In some cases a <a href="#dtia">Data Transfer Impact Assessment</a> may 
-  be required, which can take some effort.</p><img src="img/international-data-transfer.png" alt="Flowchart about 
-  international data transfers. If you are transfering data to countries 
-  within the European Economic Area, no additional measures are required. If 
-  you however transfer data outside of the European Economic Area, we 
-  recommend to contact your faculty privacy officer to take the proper 
-  measures.">
-\end{verbatim}
+\protect\hyperlink{support}{privacy officer} can help you choose and set up the right one.
+The flowchart below indicates conditions under which you can share data
+internationally. Note that they assume that you have taken sufficient
+safeguards to protect the personal data. To determine the possibilities
+of sharing data internationally in your project, we strongly advise you
+to consult with your \protect\hyperlink{support}{privacy officer}. In some cases a
+\protect\hyperlink{dtia}{Data Transfer Impact Assessment} may be required, which can
+take some effort.
 
 5. Use a secure way to share the data
 
@@ -3665,7 +4442,7 @@ being copied elsewhere.
 Transferring data: When it is absolutely necessary to
 transfer the files to a different location, you must do so securely.
 Researchers at Utrecht University can use
-SURF Filesender
+\href{https://filesender.surf.nl}{SURF Filesender}
 with encryption.
 
 \hypertarget{data-sharing-reuse}{%

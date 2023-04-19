@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Classifying personal data | Data Privacy Handbook</title>
+  <title>Data classification | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Classifying personal data | Data Privacy Handbook" />
+  <meta property="og:title" content="Data classification | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,17 +19,17 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Classifying personal data | Data Privacy Handbook" />
+  <meta name="twitter:title" content="Data classification | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-04-13" />
+<meta name="author" content="Utrecht University | Last updated: 2023-04-19" />
 
 
-<meta name="date" content="2023-04-13" />
+<meta name="date" content="2023-04-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,10 +131,22 @@ Support.</p>" />
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="risk-assessment.html"><a href="risk-assessment.html"><i class="fa fa-check"></i>Risk Assessment</a><ul>
-<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a></li>
-<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a></li>
-<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Classifying personal data</a></li>
-<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of privacy risks and how to mitigate them</a></li>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html"><i class="fa fa-check"></i>How to assess privacy risks?</a><ul>
+<li class="chapter" data-level="" data-path="risk-assessment-how.html"><a href="risk-assessment-how.html#risk-assessment-steps"><i class="fa fa-check"></i>Risk assessment step by step</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html"><i class="fa fa-check"></i>What are high-risk operations?</a><ul>
+<li class="chapter" data-level="" data-path="high-risk-processing.html"><a href="high-risk-processing.html#high-risk-examples"><i class="fa fa-check"></i>Examples of high-risk scenarios</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i>Data classification</a><ul>
+<li class="chapter" data-level="" data-path="data-classification.html"><a href="data-classification.html#classification-levels"><i class="fa fa-check"></i>Classification levels</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html"><i class="fa fa-check"></i>Examples of risks and how to mitigate them</a><ul>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unwarranted-access"><i class="fa fa-check"></i>Unwarranted access to personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#loss-of-personal-data"><i class="fa fa-check"></i>Loss of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#unintended-collection"><i class="fa fa-check"></i>Unintended collection of personal data</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#invalid-legal-basis"><i class="fa fa-check"></i>Invalid legal basis</a></li>
+<li class="chapter" data-level="" data-path="example-risks.html"><a href="example-risks.html#risks-data-subjects"><i class="fa fa-check"></i>Risks for data subjects</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="legal-documents.html"><a href="legal-documents.html"><i class="fa fa-check"></i>Documents &amp; Assessments</a><ul>
 <li class="chapter" data-level="" data-path="privacy-notices.html"><a href="privacy-notices.html"><i class="fa fa-check"></i>Information to data subjects</a><ul>
@@ -281,7 +293,126 @@ Support.</p>" />
 
             <section class="normal" id="section-">
 <div id="data-classification" class="section level2 hasAnchor">
-<h2>Classifying personal data<a href="data-classification.html#data-classification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2>Data classification<a href="data-classification.html#data-classification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: BIV classificatie, CIA triad, data classification, information
+security, IT system</p>
+</div>
+<p>In order to determine which IT solutions are suitable for processing personal
+data (e.g., storage or analysis platforms), a classification of your data is
+needed. That data classification can then be paired to the classification given
+to IT solutions. Institutes will determine for which data classification certain
+IT solutions are suitable. For example, at Utrecht University (UU), the
+classification levels are: low, basic, sensitive or critical. If your data are
+classified as “critical”, you are not allowed to use an IT solution that is only
+suitable for “sensitive” data.</p>
+<p>To classify data, you determine how important it is to keep the data
+Confidential, correct (Integrity), and Available. Below you can find some
+guidance on determining the risk level for each of these. Note that this
+guidance is based on the UU data classification, but your institute may adhere
+to a different form of the classification.</p>
+<div class="note">
+<p>Data classification can be done for all types of data, not only personal data.
+Personal data would simply score “higher” on the Confidentiality aspect.</p>
+</div>
+<div id="classification-levels" class="section level3 hasAnchor">
+<h3>Classification levels<a href="data-classification.html#classification-levels" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details>
+<summary>Confidentiality</summary>
+<div>
+<p>How confidential are the data?</p>
+<ul>
+<li>Low:
+<ul>
+<li>Anonymous data, or data that are already publicly available, from less than
+50 people.</li>
+<li>Direct colleagues.</li>
+<li>No third parties and software involved.</li>
+<li>No reputation loss when data are lost.</li>
+</ul></li>
+<li>Basic:
+<ul>
+<li>Non-public basic personal data such as name, (email)address, etc.</li>
+<li>Personal data obtained directly from data subjects.</li>
+<li>Personal data from a moderate number of data subjects (&gt; 50 - 200).</li>
+<li>Sensitive personal data from a small number of individuals.</li>
+<li>Third parties are involved but they are located inside the EEA.</li>
+</ul></li>
+<li>Sensitive:
+<ul>
+<li>A data leak would lead to reputation damage to you and the university.</li>
+<li>You are bound to patents or contractual agreements.</li>
+<li>Sensitive personal data from a moderate number of data subjects (e.g.,
+personality data, financial data).</li>
+<li>Non-sensitive personal data from a large number of data subjects (&gt; 10.000).</li>
+<li>Personal data enriched with external resources.</li>
+<li>Far-reaching process automation.</li>
+<li>Non-targeted monitoring.</li>
+<li>Relatively new technology.</li>
+</ul></li>
+<li>Critical:
+<ul>
+<li>Any project that carries <a href="high-risk-processing.html#high-risk-processing">high risks</a> for data
+subjects or others:
+<ul>
+<li>Highly sensitive personal data (e.g., biometric identification data,
+genetic data).</li>
+<li>Personal data from a very large number of data subjects (&gt; 50,000).</li>
+<li>Vulnerable subjects (e.g., minors, disabled, undocumented, persecuted groups).</li>
+<li>Processing happens (partly) outside of the EEA without an adequacy decision.</li>
+</ul></li>
+<li>Life-threatening research.</li>
+<li>There are far-reaching contractual obligations.</li>
+<li>A data leak would lead to exclusion from future grants.</li>
+</ul></li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Integrity</summary>
+<div>
+<p>How important is it that the data are correct and can only be modified by
+authorised individuals?</p>
+<ul>
+<li>Low: Incorrect data would be an inconvenience and/or require some rework.</li>
+<li>Basic: Incorrect data would invalidate research and/or require significant
+rework.</li>
+<li>Sensitive: Incorrect data would invalidate multiple research projects, could
+cause reputational damage to you and the university, or lead to significant
+contractual violations.</li>
+<li>Critical: Incorrect data could have far-reaching contractual obligations,
+exclusion from future grants or life-threatening research.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Availability</summary>
+<div>
+<p>How important is it that the data are available? When would it be a problem; if
+the data are not available for an hour, a day, a week…?</p>
+<ul>
+<li>Low: Losing (access to) the data would be inconvenient and/or lead to rework.</li>
+<li>Basic: Losing (access to) the data would invalidate research and/or require
+significant rework. Not having access to the data would cause significant delays
+and could incur costs up to 250.000 EUR.</li>
+<li>Sensitive: Losing (access to) the data would terminate or hugely delay
+multiple research projects, could cause significant reputational damage to you
+and the university, lead to significant contractual violations or individuals
+not being able to access their sensitive personal data.</li>
+<li>Critical: Inaccessible data could have far-reaching contractual obligations,
+cause damages in excess of 1.500.000 EUR, including exclusion from future grants
+or losing/not being able to access potentially life-threatening data.</li>
+</ul>
+</div>
+</details>
+<div class="warning">
+<p>Please note that a classification may be lower or higher than indicated in the
+examples, depending on your specific context. Please contact your
+<a href="seeking-help.html#support">privacy officer</a> to help you classify your data. You can also
+contact <a href="seeking-help.html#support">Information Security</a> for questions about data classification
+and security measures.</p>
+</div>
+</div>
 </div>
 <div class = "footer">
 <footer>
