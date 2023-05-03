@@ -84,9 +84,20 @@ anonymous data should be seen as lying on a spectrum. The more de-identified the
 data are, the closer they are to anonymous data and the lower the risk of 
 re-identification. The visual guide below nicely illustrates this:
 
-```{r identifiability-spectrum, echo=FALSE, out.width="100%"}
-knitr::include_url("https://fpf.org/wp-content/uploads/2017/06/FPF_Visual-Guide-to-Practical-Data-DeID.pdf")
+```{r identifiability-spectrum, echo=FALSE, out.width="100%", cache=TRUE, results="asis"}
+if (knitr::is_html_output()) {
+  # insert external pdf in iframe for html output
+  cat('<iframe src="https://fpf.org/wp-content/uploads/2017/06/FPF_Visual-Guide-to-Practical-Data-DeID.pdf" width="100%" height="600px"></iframe>')
+} else if (knitr::is_latex_output()) { 
+  # for pdf output, insert locally stored version
+  cat('\\includepdf{img/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}')
+} else if (knitr::is_epub_output()) { #(params$output_format == "bookdown::epub_book") {
+  # For epub output, just show a download link
+  cat("[Download PDF](img/FPF_Visual-Guide-to-Practical-Data-DeID.pdf)")
+}
 ```
+*If the image does not show correctly, 
+[view it online](https://fpf.org/wp-content/uploads/2017/06/FPF_Visual-Guide-to-Practical-Data-DeID.pdf){target="_blank"}*
 
 ### When are data anonymous? {#when-anonymous}
 
