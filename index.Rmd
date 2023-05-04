@@ -38,6 +38,10 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       fig.align = "center")
 Sys.setlocale("LC_TIME", "English")
+local({r <- getOption("repos")
+       r["CRAN"] <- "https://cloud.r-project.org" 
+       options(repos=r)
+})
 ```
 *Last updated: `r format(Sys.time(), "%d %B %Y")`*
 <br><br>  

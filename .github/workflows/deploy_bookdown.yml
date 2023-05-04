@@ -12,9 +12,9 @@ jobs:
     name: Render-Book
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-pandoc@v1
+      - uses: actions/checkout@v3 # was v1 before
+      - uses: r-lib/actions/setup-r@v2 # was v1 before
+      - uses: r-lib/actions/setup-pandoc@v2 # was v1 before
       - name: Install rmarkdown
         run: Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
       - name: Render Book
@@ -48,4 +48,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
           BUILD_DIR: docs/                     # "_site/" by default
     
- 
