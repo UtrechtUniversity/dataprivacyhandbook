@@ -61,6 +61,7 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{pdfpages}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -71,13 +72,13 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Data Privacy Handbook},
-  pdfauthor={Utrecht University \textbar{} Last updated: 2023-04-18},
+  pdfauthor={Utrecht University \textbar{} Last updated: 2023-05-03},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Data Privacy Handbook}
-\author{Utrecht University \textbar{} Last updated: 2023-04-18}
-\date{18 april 2023}
+\author{Utrecht University \textbar{} Last updated: 2023-05-03}
+\date{03 mei 2023}
 
 \begin{document}
 \maketitle
@@ -96,7 +97,7 @@
 
 \includegraphics{img/cover-image-dph.png}
 
-\emph{Last updated: 18 April 2023}
+\emph{Last updated: 03 May 2023}
 
 \textbf{The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, primarily written for Utrecht University researchers and
@@ -3429,6 +3430,470 @@ are standardised clauses, including these can make it easier to finalise a DPA.
 \hypertarget{pseudonymisation-anonymisation}{%
 \chapter{Pseudonymisation \& Anonymisation}\label{pseudonymisation-anonymisation}}
 
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, sdc, statistical disclosure control
+
+Pseudonymisation and anonymisation are both ways to make personal data less
+easily linkable to individual data subjects: they are methods to \textbf{de-identify}
+personal data. Importantly, whereas anonymisation results in non-personal data
+that are not subject to the GDPR anymore, pseudonymised data are \textbf{still personal
+data}. It is therefore important to understand the difference between the two,
+and to estimate when your data are indeed fully anonymous.
+
+Any operation that you do up until the personal data are anonymised - including
+the anonymisation itself - is still subject to the GDPR. So even if you can
+anonymise your data later, you still need to comply with the GDPR for everything
+you do beforehand (e.g., collecting, analysing, sharing, etc.).
+
+In this chapter, we:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Explain what \protect\hyperlink{definition-anonymisation-pseudonymisation}{pseudonymisation and anonymisation}
+  mean.
+\item
+  Present a step-by-step
+  \protect\hyperlink{deidentification-workflow}{workflow to de-identify personal data}.
+\item
+  List a number of \protect\hyperlink{deidentification-techniques}{techniques} that you can use
+  to de-identify personal data.
+\end{enumerate}
+
+Finally, we list some resources for \protect\hyperlink{deidentification-resources}{further reading}.
+
+\hypertarget{definition-anonymisation-pseudonymisation}{%
+\section{What are pseudonymisation and anonymisation?}\label{definition-anonymisation-pseudonymisation}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, identifiable, sdc, statistical disclosure control, disclosure risk
+
+\hypertarget{pseudonymisation}{%
+\subsection{Pseudonymisation}\label{pseudonymisation}}
+
+Pseudonymisation is a safeguard that reduces the linkability of your data to
+your data subjects (\href{https://gdpr-info.eu/recitals/no-28/}{rec. 28}).
+It means that you de-identify the data in such a way that they can no longer
+lead to identification \emph{without additional information}
+(\href{https://gdpr-info.eu/art-4-gdpr/}{art. 4(5)}). In theory,
+removing this additional information should lead to anonymised data.
+
+Pseudonymisation is often interpreted as replacing direct
+identifiers (e.g., names) with pseudonyms, and storing the link between the
+identifiers and the pseudonyms in a key file, separated from the research data.
+While this is a good practice (it makes sure that data are not directly
+identifiable anymore), this interpretation of pseudonymisation does not take
+into account \protect\hyperlink{when-anonymous}{indirectly identifiable information}, and thus
+does not necessarily fulfil the GDPR's definition of pseudonymisation!
+
+Pseudonymous data are still \textbf{personal data} and thus subject to the GDPR. This
+is because the de-identification is \emph{reversible}: identifying data subjects is
+still possible, just more difficult. This means that in order to use
+pseudonymous data, you still need to comply to all the rules in the GDPR.
+
+\hypertarget{anonymisation}{%
+\subsection{Anonymisation}\label{anonymisation}}
+
+Anonymisation is a de-identification process that results in data that are
+``rendered anonymous in such a manner that the data subject is not or no longer
+identifiable'' (\href{https://gdpr-info.eu/recitals/no-26/}{rec. 26}),
+neither directly nor indirectly, and by no one, including you. When data are
+anonymised, they are no longer personal data, and thus no longer subject to the
+GDPR. Note, however, that \textbf{everything you do \emph{before} the data are anonymised}
+(including the anonymisation itself) \emph{is} subject to the GDPR!
+
+Anonymisation is very difficult to accomplish in practice!
+\href{https://www.youtube.com/watch?v=puQvpyf0W-M}{This video}
+nicely illustrates why.
+
+\hypertarget{identifiability-spectrum}{%
+\subsection{The identifiability spectrum}\label{identifiability-spectrum}}
+
+The relationship between (identifiable) personal data, pseudonymous data and
+anonymous data should be seen as lying on a spectrum. The more de-identified the
+data are, the closer they are to anonymous data and the lower the risk of
+re-identification. The visual guide below nicely illustrates this:
+
+\includepdf{img/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}
+
+\emph{If the image does not show correctly,
+\href{https://fpf.org/wp-content/uploads/2017/06/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}{view it online}}
+
+\hypertarget{when-anonymous}{%
+\subsection{When are data anonymous?}\label{when-anonymous}}
+
+Your data can be considered anonymous if data subjects can only be re-identified
+with an \emph{unreasonable} amount of effort, i.e., taking into account the costs,
+required time and technology, and future technological developments
+(\href{https://gdpr-info.eu/recitals/no-26/}{rec. 26}).
+
+Basically, your data are \textbf{not} anonymous (personal) when they comply with
+\emph{any} of the \protect\hyperlink{personal-data-assess}{characteristics of personal data}:
+
+\begin{itemize}
+\tightlist
+\item
+  There is directly identifiable information (e.g., name, email address, social
+  security number, etc.).
+\item
+  Data subjects can be singled out (i.e., you can tell one data subject from
+  another within a known group of data subjects).
+\item
+  It is possible to identify data subjects by linking records (``mosaic effect''),
+  either within your own database or when using other data sources.
+\item
+  It is possible to identify a data subject by inferring information about them
+  (e.g., infer a disease by the variable ``medication''), either within
+  your own database or when using other data sources.
+\item
+  It is possible to reverse the de-identification.
+\end{itemize}
+
+Whether data can be seen as anonymous strongly depends on the context of your
+research and how much information is available about the data subjects.
+
+When collaborating with research data centres, such as the Statistics Netherlands
+(Centraal Bureau voor de Statistiek, CBS), often
+\href{https://cros-legacy.ec.europa.eu/system/files/dwb_standalone-document_output-checking-guidelines.pdf}{output checking guidelines}
+are used to determine the risk of identification resulting from the analysis
+output of sensitive data.
+
+\hypertarget{anonymisation-alternatives}{%
+\subsection{Alternatives to anonymisation}\label{anonymisation-alternatives}}
+
+Anonymisation is not the only solution. The best way to protect data subjects'
+privacy is to only collect/process their personal data if necessary
+(\protect\hyperlink{minimise}{minimisation}). Additionally, in many cases, full anonymisation
+is not even possible or desirable, for example if it results in too much
+information loss or incorrect inferences.
+
+If you cannot anonymise the data, there are always other ways in which you can
+protect the data, such as:
+
+\begin{itemize}
+\tightlist
+\item
+  De-identifying (pseudonymising) the data to the extent you can.
+\item
+  Controlling access to the data, for example using
+  \protect\hyperlink{agreements}{user agreements}, authentication, \protect\hyperlink{encryption}{encryption},
+  \protect\hyperlink{secure-computation}{secure analysis environments}, etc.
+\item
+  Creating a \protect\hyperlink{synthetic-data}{synthetic version} of your dataset to share with
+  others.
+\end{itemize}
+
+\hypertarget{deidentification-workflow}{%
+\section{Step-by-step de-identification}\label{deidentification-workflow}}
+
+On this page: anonymous, pseudonymous, step-by-step, workflow, deidentification,
+safeguard, protection measure
+
+Below is a step-by-step workflow that you can use to de-identify your data.
+Whether or not the de-identification results in a pseudonymised or an anonymised
+dataset is highly dependent on the characteristics of the dataset and the context
+in which it was obtained.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Perform the de-identification in a \textbf{safe storage or processing environment}:
+  remember that you are working with personal data, and as long as the data are
+  not anonymous, they will be subject to the GDPR!
+\item
+  Identify any \textbf{potentially identifying information} in your data.
+\item
+  Assess whether you need to \textbf{collect this information at all}. For example:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Do you really need IP addresses in your survey data?
+  \item
+    Do you really need to record audio or video?
+  \item
+    Do you really need a consent form with a name, contact information, and
+    signature on it?
+  \item
+    Replace names with pseudonyms in filenames and within the data where
+    possible.
+  \end{enumerate}
+\item
+  If you do not need \textbf{directly identifying information} to answer your research
+  question, but you do need it to, for example, contact data subjects:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Separate directly identifying information from the research data.
+  \item
+    Use pseudonyms to refer to individuals instead of names.
+  \item
+    Create a keyfile to link the pseudonyms to the names.
+  \item
+    Store the directly identifiable information and the keyfile in a separate
+    location from the research data and/or in encrypted form.
+  \end{enumerate}
+\item
+  Consider which types of information may lead to \textbf{indirect identification}, such
+  as demographic information (age, education, occupation, etc.), geolocation,
+  specific dates, medical conditions, unique personal characteristics, open text
+  responses, etc.
+\item
+  \textbf{De-identify} the directly and indirectly identifiable data using (a selection
+  of) the \protect\hyperlink{deidentification-techniques}{techniques described on the next page}.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Before you start, save a copy of the raw, untouched dataset, in case
+    anything in the process goes wrong.
+  \item
+    Document the steps you took, for example in a programming script or README
+    file, which always accompanies the data.
+  \item
+    Whether you can delete the raw (non-pseudonymised) version of the dataset,
+    depends on whether it needs to be preserved for verification purposes. Specific
+    restrictions may also apply if the Dutch Medical Research Involving Human
+    Subjects Act (WMO) and/or Good Clinical Practice apply to your research.
+  \end{enumerate}
+\item
+  \textbf{Treat the data according to their sensitivity}. If the data are not fully
+  anonymised, they are pseudonymous and thus still need to be handled according to
+  the GDPR guidelines!
+\end{enumerate}
+
+How de-identified is de-identified enough? You can read more about this in the
+chapter \protect\hyperlink{statistical-privacy}{Statistical approaches to privacy}.
+
+\hypertarget{deidentification-techniques}{%
+\section{De-identification techniques}\label{deidentification-techniques}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, technique, anonymisation method, privacy-preserving, privacy-enhancing,
+sdc, statistical disclosure control, disclosure risk
+
+Below is a list of techniques you can apply to your data to de-identify your
+dataset so that it results in a pseudonymised, or possibly even anonymised
+dataset. Bear in mind that applying these will always result in loss of
+information, so ask yourself how useful your dataset will still be after
+de-identification.
+
+The techniques are:
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{suppression}{Suppression}
+\item
+  \protect\hyperlink{generalisation}{Generalisation}
+\item
+  \protect\hyperlink{replacement}{Replacement}
+\item
+  \protect\hyperlink{top-bottom-coding}{Top- and bottom coding}
+\item
+  \protect\hyperlink{adding-noise}{Adding noise}
+\item
+  \protect\hyperlink{permutation}{Permutation}
+\end{itemize}
+
+\textbf{Statistical Disclosure Control (SDC)}
+The below de-identification methods are sometimes also referred to as methods
+to apply Statistical Disclosure Control (SDC). You will most likely encounter
+SDC when you collaborate with a research data centre such as Statistics
+Netherlands (Centraal Bureau voor de Statistiek, CBS).
+
+\hypertarget{suppression}{%
+\subsubsection{Suppression}\label{suppression}}
+
+Suppression (sometimes called ``masking'') basically means removing variables,
+(parts of) values, or entire entries that you do not need from your dataset.
+Examples of data that you could consider removing:
+
+\begin{itemize}
+\tightlist
+\item
+  Name and contact information
+\item
+  (Parts of) address
+\item
+  Date, such as birthdate or participation date
+\item
+  Social security number/Burgerservicenummer (BSN). NB. In the Netherlands, you
+  are not allowed to use BSN in research at all!
+\item
+  Medical record number
+\item
+  IP address
+\item
+  Facial features from neuroimaging data
+\item
+  Automatically generated metadata such as GPS data in an image, author in a
+  document, etc.
+\item
+  Participants that form extreme outliers or are too unique
+\end{itemize}
+
+\hypertarget{generalisation}{%
+\subsubsection{Generalisation}\label{generalisation}}
+
+Generalisation (also sometimes called abstraction, binning, aggregation, or
+categorisation) reduces the granularity of the data so that data subjects are
+less easily singled out. It can be applied to both qualitative (e.g., interview
+notes) and quantitative data (e.g., variables in a dataset). Here are some
+examples:
+
+\begin{itemize}
+\tightlist
+\item
+  Recoding date of birth into age.
+\item
+  Categorising age into age groups.
+\item
+  Recoding rare categories as ``other'' or as missing values.
+\item
+  Replacing address with the name of a neighbourhood or town.
+\item
+  Generalising specific persons in text into broader categories, e.g., ``mother''
+  to ``{[}woman{]}'', ``Bob'' to ``{[}colleague{]}''.
+\item
+  Generalising specific locations into more general places, e.g., ``Utrecht'' to
+  ``{[}home town{]}'', or from point coordinates to larger geographical areas (e.g.,
+  polygon or linear features).
+\item
+  Coding open-ended responses into categories of responses, or as ``responded'' vs.~
+  ``not responded''.
+\end{itemize}
+
+\hypertarget{replacement}{%
+\subsubsection{Replacement}\label{replacement}}
+
+In this case, you replace sensitive details with non-sensitive ones, which are
+usually less informative, for example:
+
+\begin{itemize}
+\tightlist
+\item
+  Replacing directly identifying information that you do need with pseudonyms.
+  When doing this, always store the key file securely and separately from the
+  research data (e.g., use access control, \protect\hyperlink{encryption}{encryption}). If you
+  do not need the links with direct identifiers anymore, remove the keyfile or
+  replace the pseudonyms with random identifiers without saving the key.
+
+  A good pseudonym:
+
+  Is not meaningful with respect to the data subjects: a random (unique)
+  number or string is better than a code that contains parts of personal
+  information, because the latter may reveal details about data subjects.
+
+  Is managed securely, for example by appointing someone to be responsible
+  for managing access to the keyfile.
+
+  Can be a simple number, random number, cryptographic hash function, text
+  string, etc.
+  (\href{https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices}{read more}).
+\item
+  Replacing identifiable text with ``{[}redacted{]}''. When redacting changes in-text,
+  never just blank out the identifying value, always put a placeholder or
+  pseudonym there, e.g., in \texttt{{[}}square brackets\texttt{{]}} or \texttt{\textless{}seg\textgreater{}}segments\texttt{\textless{}/seg\textgreater{}}.
+\item
+  Replacing unique values with a summary statistic, e.g., the mean.
+\item
+  Rounding values, making the data less precise.
+\item
+  Replacing one or multiple variables with a hash.
+
+  What is hashing?
+
+  Hashing is a way of obscuring data with a string of seemingly random
+  characters with a fixed length. It can be used to create a''hashed'' pseudonym, or
+  to replace multiple variables with one unique value. There are many hash
+  functions which all have their own strength. It is usually quite difficult to
+  reverse the hashing process, except if an attacker has knowledge about the type
+  of information that was masked through hashing (e.g., for the MD5 algorithm,
+  there are many lookup tables that can reverse common hashes). To prevent
+  reversal, cryptographic hashing techniques add a ``salt'', i.e., a random number
+  or string, to the hash (the result is called a''digest''). If the ``salt'' is kept
+  confidential or is removed (similar to a keyfile), it is almost impossible to
+  reverse the hashing process.
+\end{itemize}
+
+\hypertarget{top-bottom-coding}{%
+\subsubsection{Top- and bottom-coding}\label{top-bottom-coding}}
+
+Top- and bottom-coding are mostly useful for quantitative datasets that have
+some unique extreme values. It means that you set a maximum or minimum and
+recode all higher or lower values to that minimum or maximum. For example, you
+can top-code a variable ``income'' so that all incomes over €80.000 are set to
+€80.000. This does distort the distribution, but leaves a large part of the data
+intact.
+
+\hypertarget{adding-noise}{%
+\subsubsection{Adding noise}\label{adding-noise}}
+
+\href{https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf\#page=12}{Adding noise}
+to data obfuscates sensitive details. It is mostly applied to quantitative
+datasets, but can also apply to other types of data. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  Adding half a standard deviation to a variable.
+\item
+  Multiplying a variable by a random number.
+\item
+  Applying \protect\hyperlink{differential-privacy}{Differential Privacy} guarantees to an algorithm.
+\item
+  Blurring (pixelating) images and videos.
+\item
+  Voice alteration in audio.
+\end{itemize}
+
+\hypertarget{permutation}{%
+\subsubsection{Permutation}\label{permutation}}
+
+\href{https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf\#page=13}{Permutation}
+means swapping values between data subjects, so that it becomes more difficult
+to link information belonging to one data subject together. This will keep the
+distribution and summary statistics constant, but change correlations between
+variables, making some statistical analyses more difficult or impossible.
+
+\hypertarget{deidentification-resources}{%
+\section{Tools and further reading}\label{deidentification-resources}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, tool, resource, reading material
+
+You can find a selection of \textbf{de-identification tools} in
+\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification}{this GitHub repository}.
+
+For further reading, we compiled a reading list on this topic in our publicly
+accessible \href{https://www.zotero.org/groups/2554340/data_privacy_uu/collections/6HS9MPBR}{Zotero library}.
+
+We can recommend:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://edps.europa.eu/system/files/2021-04/21-04-27_aepd-edps_anonymisation_en_5.pdf}{10 misunderstandings related to anonymisation}.
+\item
+  \href{https://doi.org/10.5281/zenodo.3584332}{Risk management for research data about people}.
+\item
+  CESSDA's \href{https://dmeg.cessda.eu/Data-Management-Expert-Guide/5.-Protect/Anonymisation}{Data Management Expert Guide on Anonymisation}.
+\item
+  \href{https://ico.org.uk/media/1061/anonymisation-code.pdf}{Anonymisation: managing data protection risk, code of practice}.
+\item
+  \href{https://doi.org/10.31234/osf.io/ybzu9}{Privacy protection in the era of open science}.
+\item
+  Statistics Netherlands (CBS) on
+  \href{https://www.cbs.nl/en-gb/our-services/methods/statistical-methods/output/statistical-disclosure-control}{techniques used to de-identify sensitive data}.
+\end{itemize}
+
 \hypertarget{statistical-privacy}{%
 \chapter{Statistical privacy}\label{statistical-privacy}}
 
@@ -4065,8 +4530,9 @@ environments in a GitHub repository.
 
 To the overview
 
-Please feel free to open an Issue or a Pull Request in this repository if you
-wish to adjust the existing content or add new content.
+Please feel free to
+\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/\#contact-and-contribution}{open an Issue or a Pull Request}
+in this repository if you wish to adjust the existing content or add new content.
 
 \hypertarget{tool-requirements}{%
 \section{Requirements for a third-party tool}\label{tool-requirements}}
@@ -4773,7 +5239,8 @@ There are also more technical alternatives to transferring personal data to othe
 \end{itemize}
 
 \hypertarget{part-use-cases}{%
-\chapter{(PART*) Use Cases}\label{part-use-cases}}
+\part*{Use Cases}\label{part-use-cases}}
+\addcontentsline{toc}{part}{Use Cases}
 
 \hypertarget{pet-survey}{%
 \chapter{Data minimisation in a survey}\label{pet-survey}}
@@ -5362,7 +5829,9 @@ Contact your \protect\hyperlink{support}{privacy officer} if you wish to process
 
 For further reading, we prepared a Zotero library with additional resources, some
 of which are specific to Utrecht University, others more general. Click on the
-image below to see the most recent version of the reference library online.
+image below to see the
+\href{https://www.zotero.org/groups/2554340/data_privacy_uu/library}{most recent version of the reference library}
+online.
 
   \bibliography{book.bib,packages.bib}
 
