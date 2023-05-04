@@ -1,4 +1,4 @@
-# (PART\*) Use Cases
+# (PART\*) Use Cases {-}
 
 # Data minimisation in a survey {#pet-survey}
 

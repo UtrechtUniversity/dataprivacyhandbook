@@ -678,7 +678,8 @@ in which situation. Under the figure, you can also find a short explanation
 about each individual type of agreement.**
 
 
-<img src="img/agreements_flowchart.png" alt="Flowchart to choose the correct type
+<img src="img/agreements_flowchart.png" title="Flowchart to choose the correct 
+type of agreement in research" alt="Flowchart to choose the correct type
 of agreement in research. Firstly, you do not need an agreement if you are 
 collaborating with someone within your own institution, or if you use software of
 which the use is already covered by an existing agreement. Secondly, you need a 

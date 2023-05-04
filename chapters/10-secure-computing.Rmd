@@ -10,7 +10,7 @@ When you use personal data in your research project, you likely also need to
 analyse those data, often using a script of sorts. In this chapter, we discuss 
 the following scenarios for analysing personal data: 
 
-<img src="img/secure-computing.png" alt="Graphical depiction of the three 
+<img src="img/secure-computing.png" title="Graphical depiction of the three 
 secure computation scenarios: data-to-code, code-to-data and federated analysis" 
 height="100%"/>
 
@@ -65,7 +65,7 @@ On this page: analysis, data-to-code, data-to-script, transfer, sharing
 ::::
 
 <div style="display: flex; flex-direction: row; align-items: flex-start;">
-  <img src="img/data-to-code.png" alt="Graphical depiction of the data-to-code 
+  <img src="img/data-to-code.png" title="Graphical depiction of the data-to-code 
   scenario: the data are brought to the code (e.g., by transferring them)" 
   style="width: 25%; max-width: 200px; margin-right: 10px;"/>
   <p>
@@ -149,7 +149,7 @@ research environment, access control
 ::::
 
 <div style="display: flex; flex-direction: row; align-items: flex-start;">
-  <img src="img/code-to-data.png" alt="Graphical depiction of the code-to-data
+  <img src="img/code-to-data.png" title="Graphical depiction of the code-to-data
   scenario: the data are not transferred outside the organisation, and instead, 
   the code travels to the data" 
   style="width: 25%; max-width: 200px; margin-right: 10px;"/>
@@ -265,7 +265,7 @@ On this page: federated analysis, federated learning, machine learning,
 distributed analysis, distributed learning, collaboration, harmonisation
 ::::
 
-<img src="img/federated-analysis.png" alt="Graphical depiction of the federated
+<img src="img/federated-analysis.png" title="Graphical depiction of the federated
 analysis scenario: code (e.g., a machine learning model) travels across local
 datasets and compiles the results of running the code in a central server" 
 height="100%"/>

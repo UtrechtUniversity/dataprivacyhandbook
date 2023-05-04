@@ -1,4 +1,4 @@
-# Statistical privacy
+# Statistical privacy {#statistical-privacy}
 
 ## Statistical disclosure control {#sdc}
 

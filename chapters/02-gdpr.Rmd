@@ -267,7 +267,9 @@ The GDPR principles are explained further below the image. The
 [Design chapter](#privacy-by-design) describes how to implement these principles 
 in your research. You can also always contact your [privacy officer](#support).
 
-<img src="img/gdpr-principles.png" alt="Principles of the GDPR: Lawful, fair and 
+<img src="img/gdpr-principles.png" title="The key principles of the GDPR" 
+alt="Overview of the principles, denoted in text on a yellow background, with an 
+icon that visualises each principle: Lawful, fair and 
 transparent, Purpose limitation, Data minimisation, Accuracy, Storage limitation, 
 Integrity and Confidentiality, and Accountability" height="80%"/>
 

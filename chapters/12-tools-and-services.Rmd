@@ -62,8 +62,9 @@ environments in a GitHub repository.
 <a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/" target="_blank" 
 style="text-decoration: none;"><button type="button">To the overview</button></a>
 
-Please feel free to open an Issue or a Pull Request in this repository if you 
-wish to adjust the existing content or add new content.
+Please feel free to 
+[open an Issue or a Pull Request](https://github.com/UtrechtUniversity/privacy-engineering-tools/#contact-and-contribution){target="_blank"} 
+in this repository if you wish to adjust the existing content or add new content.
 
 
 ## Requirements for a third-party tool {#tool-requirements}
