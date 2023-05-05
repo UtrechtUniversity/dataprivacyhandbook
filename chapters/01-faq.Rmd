@@ -3,46 +3,50 @@
 On this page you can find Frequently Asked Questions (FAQs) about handling 
 personal data in research. Click a question you have to read its answer. 
 
-```{r faqsformattingfunction, message=FALSE, warning=FALSE, echo=FALSE,include=FALSE}
-# Install and load the readxl package
-install.packages("readxl")
-library(readxl)
+```{r formatfaqs, message=FALSE, warning=FALSE, echo=FALSE}
 
-formatfaqs <- function(faqsheet){
-  qanda <- readxl::read_excel("chapters/faqs.xlsx", 
-                              sheet = faqsheet)
+# Read in faqs.csv
+faqs <- read.csv("files/faqs.csv", stringsAsFactors = FALSE)
+
+# Format FAQs in HTML <details> tags - function is used in chunks below
+formatfaqs <- function(faqsection){
+  
+  # Select the relevant section
+  subselection <- faqs[faqs$section_id == faqsection, ]
   
   formattedtext <- list()
   
-  # Format each question in html <details> tags
-  for(questionitem in 1:dim(qanda)[1]){
+  # Format each question in the section in html <details> tags
+  for(questionitem in 1:nrow(subselection)){
     
     tryCatch( { 
-      if(qanda$Include[questionitem] == 1){
-        formattedtext[[questionitem]] <- paste0("<details><summary><b>",
-                                                qanda[questionitem,1],
-                                                "</b></summary><div>",
-                                                qanda[questionitem,2],
+      # Only include if "include" == 1
+      if(subselection$include[questionitem] == 1){
+        formattedtext[[questionitem]] <- paste0("<details><summary>**",
+                                                subselection$question[questionitem],
+                                                "**</summary><div>",
+                                                subselection$answer[questionitem],
                                                 "</div><br></details>")
       }
     }, error = function(e){
       cat("Error in row : ",questionitem,"\n")
     }
     )
-  } #endfor
+  } #end for
+  
   # Remove empty list items (happens when Include == 0)
-  formattedtext <- formattedtext[!sapply(formattedtext,is.null)]
+  formattedtext <- formattedtext[!sapply(formattedtext, is.null)]#
 
   # Concatenate the list of items into a single string
   formattedtext_string <- paste(formattedtext, collapse="")
   return(formattedtext_string)
-}
+} # end function
 ```
 
 ### General questions {#general}
 
 ```{r faqs-general, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_general <- formatfaqs("faqs-general")
+faqs_general <- formatfaqs("general")
 ```
 
 `r faqs_general`
@@ -50,7 +54,7 @@ faqs_general <- formatfaqs("faqs-general")
 ### Procedures and responsibilities {#procedures}
 
 ```{r faqs-procedures, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_procedures <- formatfaqs("faqs-procedures")
+faqs_procedures <- formatfaqs("procedures")
 ```
 
 `r faqs_procedures`
@@ -58,7 +62,7 @@ faqs_procedures <- formatfaqs("faqs-procedures")
 ### Informed consent {#consent}
 
 ```{r faqs-ic, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_ic <- formatfaqs("faqs-ic")
+faqs_ic <- formatfaqs("consent")
 ```
 
 `r faqs_ic`
@@ -66,7 +70,7 @@ faqs_ic <- formatfaqs("faqs-ic")
 ### Legal questions {#legal}
 
 ```{r faqs-legal, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_legal <- formatfaqs("faqs-legal")
+faqs_legal <- formatfaqs("legal")
 ```
 
 `r faqs_legal`
@@ -74,7 +78,7 @@ faqs_legal <- formatfaqs("faqs-legal")
 ### Storing personal data {#storage}
 
 ```{r faqs-storage, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_storage <- formatfaqs("faqs-storage")
+faqs_storage <- formatfaqs("storage")
 ```
 
 `r faqs_storage`
@@ -82,7 +86,7 @@ faqs_storage <- formatfaqs("faqs-storage")
 ### Sharing, publishing and reusing personal data {#sharing}
 
 ```{r faqs-share, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_share <- formatfaqs("faqs-share")
+faqs_share <- formatfaqs("sharing")
 ```
 
 `r faqs_share`
@@ -90,7 +94,7 @@ faqs_share <- formatfaqs("faqs-share")
 ### Practical questions {#practical-questions}
 
 ```{r faqs-practical, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_practical <- formatfaqs("faqs-practical")
+faqs_practical <- formatfaqs("practical-questions")
 ```
 
 `r faqs_practical`
@@ -98,7 +102,7 @@ faqs_practical <- formatfaqs("faqs-practical")
 ### Students and student data {#students}
 
 ```{r faqs-student, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_student <- formatfaqs("faqs-student")
+faqs_student <- formatfaqs("students")
 ```
 
 `r faqs_student`
@@ -106,7 +110,7 @@ faqs_student <- formatfaqs("faqs-student")
 ### Finding support {#finding-support}
 
 ```{r faqs-support, message=FALSE,warning=FALSE,echo=FALSE}
-faqs_support <- formatfaqs("faqs-support")
+faqs_support <- formatfaqs("finding-support")
 ```
 
 `r faqs_support`
