@@ -567,7 +567,7 @@ data subjects to exercise their rights.
 ::::
 
 ### Examples and templates 
-<a href="assets/Legitimate_interest_assessment_empty.pdf" target = "_blank" 
+<a href="files/Legitimate_interest_assessment_empty.pdf" target = "_blank" 
 style="text-decoration: none;"><button type="button">Template in the absence of a privacy scan/DPIA</button></a> 
 
 
@@ -729,8 +729,8 @@ necessary to use an NDA, because students are not (always) bound to
 confidentiality through a contract with the university, whereas the researchers 
 are. 
 
-<a href="assets/Model_Confidentiality_Agreement_2021_en.odt" target = "_blank" style="text-decoration: none;"><button type="button">Model NDA Utrecht University (two-sided)</button></a>
-<a href="assets/One-sided_confidentiality_agreement_Dutch.odt" target = "_blank" style="text-decoration: none;"><button type="button">Example NDA (one-sided)</button></a>
+<a href="files/Model_Confidentiality_Agreement_2021_en.odt" target = "_blank" style="text-decoration: none;"><button type="button">Model NDA Utrecht University (two-sided)</button></a>
+<a href="files/One-sided_confidentiality_agreement_Dutch.odt" target = "_blank" style="text-decoration: none;"><button type="button">Example NDA (one-sided)</button></a>
 
 ### Data processing agreement {#data-processing-agreement}
 

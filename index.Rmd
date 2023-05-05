@@ -48,7 +48,7 @@ local({r <- getOption("repos")
 
 **The Data Privacy Handbook is a practical guide on handling personal data in 
 scientific research, primarily written for Utrecht University researchers and 
-research support staff**
+research support staff.**
 
 It consists of:
 

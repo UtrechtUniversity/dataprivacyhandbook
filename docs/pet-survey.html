@@ -26,7 +26,7 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-04" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-05" />
 
 
 
@@ -57,8 +57,71 @@ Support.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="book.js"></script>
+<script src="assets/book.js"></script>
 
+<!-- This is a first try on adding structured data (metadata) to each page in the Handbook.
+    Some key information is still missing, such as creators, contributors and the DOI.
+    The below json-ld was created using Maastricht University's FAIR metadata wizard: 
+    https://maastrichtu-ids.github.io/fair-metadata-wizard/-->
+<script src="assets/metadata-dph.json" type="application/ld+json">
+    {
+        "@type": "LearningResource",
+        "name": "Data Privacy Handbook",
+        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff.",
+        "version": "1.0",
+        "url": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
+        "license": "https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md",
+        "encodingFormat": "Rmd",
+        "temporalCoverage": "2020-09-01/2023-06-01",
+        "dateCreated": {
+            "@type": "Date",
+            "@value": "2020-09-01"
+        },
+        "datePublished": {
+            "@type": "Date",
+            "@value": "2023-06-01"
+        },
+        "distribution": {
+            "@type": "DataDownload",
+            "contentUrl": {
+                "@type": "URL",
+                "@value": "https://utrechtuniversity.github.io/dataprivacyhandbook/dataprivacyhandbook.pdf"
+            },
+            "encodingFormat": "pdf",
+            "contentSize": "1MB"
+        },
+        "inLanguage": {
+            "@type": "Language",
+            "name": "EN",
+            "alternateName": "en-gb"
+        },
+        "keywords": [
+            "privacy",
+            "scientific research",
+            "academic research",
+            "general data protection regulation",
+            "research data management",
+            "open science",
+            "gdpr"
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Research Data Management Support",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Utrecht University",
+                "url": {
+                    "@type": "URL",
+                    "@value": "https://ror.org/04pp8hn57"
+                },
+                "logo": {
+                    "@type": "ImageObject",
+                    "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+                }
+            }
+        }
+    }
+</script>
 
 
 
@@ -357,8 +420,8 @@ created a new version of the survey that asked for less identifiable information
 and could be more easily anonymised. Additionally, the new version of the survey
 informed participants about the legal basis used to process their personal data.</p>
 <p>Here, you can find the survey before and after data minimisation:</p>
-<p><a href="assets/Use-case-minimisation-Before.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Before minimisation</button></a>
-<a href="assets/Use-case-minimisation-After.pdf" target = "_blank" style="text-decoration: none;"><button type="button">After minimisation</button></a></p>
+<p><a href="files/Use-case-minimisation-Before.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Before minimisation</button></a>
+<a href="files/Use-case-minimisation-After.pdf" target = "_blank" style="text-decoration: none;"><button type="button">After minimisation</button></a></p>
 <p><br>
 Note that the new version of the survey:</p>
 <ul>
