@@ -26,7 +26,7 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-04" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-05" />
 
 
 
@@ -57,8 +57,71 @@ Support.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="book.js"></script>
+<script src="assets/book.js"></script>
 
+<!-- This is a first try on adding structured data (metadata) to each page in the Handbook.
+    Some key information is still missing, such as creators, contributors and the DOI.
+    The below json-ld was created using Maastricht University's FAIR metadata wizard: 
+    https://maastrichtu-ids.github.io/fair-metadata-wizard/-->
+<script src="assets/metadata-dph.json" type="application/ld+json">
+    {
+        "@type": "LearningResource",
+        "name": "Data Privacy Handbook",
+        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff.",
+        "version": "1.0",
+        "url": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
+        "license": "https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md",
+        "encodingFormat": "Rmd",
+        "temporalCoverage": "2020-09-01/2023-06-01",
+        "dateCreated": {
+            "@type": "Date",
+            "@value": "2020-09-01"
+        },
+        "datePublished": {
+            "@type": "Date",
+            "@value": "2023-06-01"
+        },
+        "distribution": {
+            "@type": "DataDownload",
+            "contentUrl": {
+                "@type": "URL",
+                "@value": "https://utrechtuniversity.github.io/dataprivacyhandbook/dataprivacyhandbook.pdf"
+            },
+            "encodingFormat": "pdf",
+            "contentSize": "1MB"
+        },
+        "inLanguage": {
+            "@type": "Language",
+            "name": "EN",
+            "alternateName": "en-gb"
+        },
+        "keywords": [
+            "privacy",
+            "scientific research",
+            "academic research",
+            "general data protection regulation",
+            "research data management",
+            "open science",
+            "gdpr"
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Research Data Management Support",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Utrecht University",
+                "url": {
+                    "@type": "URL",
+                    "@value": "https://ror.org/04pp8hn57"
+                },
+                "logo": {
+                    "@type": "ImageObject",
+                    "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+                }
+            }
+        }
+    }
+</script>
 
 
 
@@ -345,213 +408,173 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="glossary" class="section level1 hasAnchor">
 <h1>Glossary<a href="glossary.html#glossary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The glossary consists of frequently used jargon concerning the GDPR and research data.</p>
-<div id="a" class="section level4 hasAnchor">
-<h4>A<a href="glossary.html#a" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<!-- If you wish to correct existing or add new terms, please edit the
+glossary.csv file which is located in the files folder of the repository -->
+<p>The glossary consists of frequently used jargon concerning the GDPR and
+research data. Click on a term to see its definition.</p>
+<h4>
+A
+</h4>
 <details>
 <summary>
-<b>Anonymous data</b>
+<strong>Anonymous data</strong>
 </summary>
 <div>
-Any data where an individual is irreversibly de-identified, both directly
-(e.g., through names and email addresses) and indirectly. The latter means
-that you cannot identify someone:
+Any data where an individual is irreversibly de-identified, both directly (e.g., through names and email addresses) and indirectly. The latter means that you cannot identify someone:
 <ul>
 <li>
-by combining variables or datasets (e.g., a combination of date of birth,
-gender and birthplace, or the combination of a dataset with its name-number key)
+by combining variables or datasets (e.g., a combination of date of birth, gender and birthplace, or the combination of a dataset with its name-number key)
 </li>
 <li>
-via inference, i.e., when you can deduce who the data are about (e.g.,
-when profession is Dutch prime minister, it is clear who the data is about)
+via inference, i.e., when you can deduce who the data are about (e.g., when “profession” is Dutch prime minister, it is clear who the data is about)
 </li>
 <li>
-by singling out a single subject, such as through unique data points
-e.g., someone who is 210 cm tall is relatively easy to identify)
+by singling out a single subject, such as through unique data points, e.g., someone who is 210 cm tall is relatively easy to identify)
 </li>
 </ul>
 <p>
 Anonymous data are no longer personal data and thus not subject to GDPR
-compliance. In practice, anonymous data may be difficult to attain and care
-must be given that the data legitimately cannot be traced to an individual in
-any way. The document
-<a href="https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf" target="_blank">Opinion 05/2014 on Anonymisation Techniques</a>
-explains the criteria that must be met for data to be considered anonymous.
+compliance. In practice, anonymous data may be difficult to attain and care must be given that the data legitimately cannot be traced to an individual in any way. The document <a href="https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf" target="_blank">Opinion 05/2014 on Anonymisation Techniques</a> explains the criteria that must be met for data to be considered anonymous.
 </p>
 </div>
+<br>
 </details>
-</div>
-<div id="c" class="section level4 hasAnchor">
-<h4>C<a href="glossary.html#c" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+C
+</h4>
 <details>
 <summary>
-<b>Controller</b>
+<strong>Controller</strong>
 </summary>
 <div>
 <p>
-The natural or legal entity that, alone or with others, determines or has an
-influence on <b>why</b> and <b>how</b> personal data are processed. On an
-organisational level, Utrecht University (UU) is the controller of personal
-data collected by UU researchers and will be held responsible in case of GDPR
-infringement. On a practical level, however, researchers (e.g., Principal
-Investigators) often determine why and how data are processed, and are thus
-fulfilling the role of controller themselves.
+The natural or legal entity that, alone or with others, determines or has an influence on <strong>why</strong> and <strong>how</strong> personal data are processed. On an organisational level, Utrecht University (UU) is the controller of personal data collected by UU researchers and will be held responsible in case of GDPR
+infringement. On a practical level, however, researchers (e.g., Principal Investigators) often determine why and how data are processed, and are thus fulfilling the role of controller themselves.
 </p>
 <p>
-Note that it is possible to be a controller without having access to personal
-data, for example if you assign an external company to execute research for
-which you determined which data they should collect, among which data subjects,
-how, and for what purpose.
+Note that it is possible to be a controller without having access to personal data, for example if you assign an external company to execute research for which you determined which data they should collect, among which data subjects, how, and for what purpose.
 </p>
 </div>
+<br>
 </details>
-</div>
-<div id="d" class="section level4 hasAnchor">
-<h4>D<a href="glossary.html#d" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+D
+</h4>
 <details>
 <summary>
-<b>Data subject</b>
+<strong>Data subject</strong>
 </summary>
 <div>
-A living individual who can be identified directly or indirectly through
-personal data. In a research setting, this would be the individual whose
-personal data is being processed (see below for the definition of processing).
+A living individual who can be identified directly or indirectly through personal data. In a research setting, this would be the individual whose personal data is being processed (see below for the definition of processing).
 </div>
+<br>
 </details>
-</div>
-<div id="e" class="section level4 hasAnchor">
-<h4>E<a href="glossary.html#e" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+E
+</h4>
 <details>
 <summary>
-<b>European Economic Area (EEA)</b>
+<strong>European Economic Area (EEA)</strong>
 </summary>
 <div>
-The member states of the European Union and Iceland, Liechtenstein, and
-Norway. In total, the EEA now consists of 30 countries. The aim of the EEA
-is to enable the “free movement of goods, people, services and capital”
-between countries, and this includes (personal) data (source:
-<a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)" target="_blank">Eurostat</a>).
+The member states of the European Union and Iceland, Liechtenstein, and Norway. In total, the EEA now consists of 30 countries. The aim of the EEA is to enable the “free movement of goods, people, services and capital” between countries, and this includes (personal) data (source: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)" target="_blank">Eurostat</a>).
 </div>
+<br>
 </details>
-</div>
-<div id="g" class="section level4 hasAnchor">
-<h4>G<a href="glossary.html#g" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+G
+</h4>
 <details>
 <summary>
-<b>General Data Protection Regulation (GDPR)</b>
+<strong>General Data Protection Regulation (GDPR)</strong>
 </summary>
 <div>
-A European data protection regulation meant to protect the personal
-data of individuals, and facilitates the free movement of personal data
-within the European Economic Area (EEA). The Dutch name of the regulation is
-“Algemene Verordening Gegevensbescherming” (AVG).
+A European data protection regulation meant to protect the personal data of individuals, and facilitates the free movement of personal data within the European Economic Area (EEA). The Dutch name of the regulation is “Algemene Verordening Gegevensbescherming” (AVG).
 </div>
+<br>
 </details>
-</div>
-<div id="h" class="section level4 hasAnchor">
-<h4>H<a href="glossary.html#h" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+H
+</h4>
 <details>
 <summary>
-<b>Hashing</b>
+<strong>Hashing</strong>
 </summary>
 <div>
-Hashing is a way of replacing one or multiple variables with a string of
-random characters with a fixed length. It can be used to create a “hashed”
-pseudonym, or to replace multiple variables with one unique value. It is
-usually quite difficult to reverse the hashing process, except if an attacker
-has knowledge about the type of information that was masked through hashing.
-To prevent reversal, cryptographic hashing techniques add a “salt”, i.e., a
-random number or string, to the hash (the result is called a “digest”). If
-the “salt” is kept confidential or is removed (similar to a keyfile), it is
-almost impossible to reverse the hashing process.
+Hashing is a way of replacing one or multiple variables with a string of random characters with a fixed length. It can be used to create a “hashed” pseudonym, or to replace multiple variables with one unique value. It is usually quite difficult to reverse the hashing process, except if an attacker has knowledge about the type of information that was masked through hashing. To prevent reversal, cryptographic hashing techniques add a “salt”, i.e., a random number or string, to the hash (the result is called a “digest”). If the “salt” is kept confidential or is removed (similar to a keyfile), it is almost impossible to reverse the hashing process.
 </div>
+<br>
 </details>
-</div>
-<div id="l" class="section level4 hasAnchor">
-<h4>L<a href="glossary.html#l" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+L
+</h4>
 <details>
 <summary>
-<b>Legal basis</b>
+<strong>Legal basis</strong>
 </summary>
 <div>
-Any processing of personal data should have a valid legal basis. Without it,
-you are now allowed to process personal data at all. The GDPR provides 6 legal
-bases: consent, public interest, legitimate interest, legal obligation,
-performance of a contract, and vital interest. Consent and public interest are
-most often used in a research context.
+Any processing of personal data should have a valid legal basis. Without it, you are now allowed to process personal data at all. The GDPR provides 6 legal bases: consent, public interest, legitimate interest, legal obligation, performance of a contract, and vital interest. Consent and public interest are most often used in a research context.
 </div>
+<br>
 </details>
-</div>
-<div id="p" class="section level4 hasAnchor">
-<h4>P<a href="glossary.html#p" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+P
+</h4>
 <details>
 <summary>
-<b>Personal data</b>
+<strong>Personal data</strong>
 </summary>
 <div>
 <p>
-Any information related to an identified or identifiable (living) natural
-person. This can include identifiers (name, identification number, location
-data, online identifier or a combination of identifiers) or factors specific
-to the physical, physiological, genetic, mental, economic, cultural or social
-identity of the person. Moreover, IP addresses, opinions, tweets, answers to
-questionnaires, etc. may also be personal data, either by itself or through a
-combination of one another.
+Any information related to an identified or identifiable (living) natural person. This can include identifiers (name, identification number, location data, online identifier or a combination of identifiers) or factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of the person. Moreover, IP addresses, opinions, tweets, answers to questionnaires, etc. may also be personal data, either by itself or through a combination of one another.
 </p>
 <p>
-Of note: as soon as you collect data related to a person that is identifiable,
-you are processing personal data. Additionally, pseudonymised data is still
-considered personal data. Read more in
-<a href="personal-data.html#personal-data">What are personal data?</a>.
+Of note: as soon as you collect data related to a person that is identifiable, you are processing personal data. Additionally, pseudonymised data is still considered personal data. Read more in <a href="personal-data.html#personal-data">What are personal data?</a>.
 </p>
 </div>
+<br>
 </details>
 <details>
 <summary>
-<b>Processing</b>
+<strong>Processing</strong>
 </summary>
 <div>
-Any operation performed on personal data. This includes collection, storage,
-organisation, alteration, analysis, transcription, sharing, publishing, deletion, etc.
+Any operation performed on personal data. This includes collection, storage, organisation, alteration, analysis, transcription, sharing, publishing, deletion, etc.
 </div>
+<br>
 </details>
 <details>
 <summary>
-<b>Processor</b>
+<strong>Processor</strong>
 </summary>
 <div>
-A natural or legal entity that processes personal data on behalf of the
-controller. For example, when using a cloud transcription service, you often
-need to send personal data (e.g., an audio recording) to the transcription
-service for the purpose of your research, which is then fulfilling the role
-of processor. Other examples of processors are mailhouses used to send emails
-to data subjects, or Trusted Third Parties who hold the keyfile to link
-pseudonyms to personal data. When using such a third party, you must have a
-<a href="agreements.html#data-processing-agreement">data processing agreement</a> in place.
+A natural or legal entity that processes personal data on behalf of the controller. For example, when using a cloud transcription service, you often need to send personal data (e.g., an audio recording) to the transcription service for the purpose of your research, which is then fulfilling the role of processor. Other examples of processors are mailhouses used to send emails to data subjects, or Trusted Third Parties who hold the keyfile to link pseudonyms to personal data. When using such a third party, you must have a <a href="agreements.html#data-processing-agreement">data processing agreement</a> in place.
 </div>
+<br>
 </details>
 <details>
 <summary>
-<b>Pseudonymous data</b>
+<strong>Pseudonymous data</strong>
 </summary>
 <div>
-Personal data that cannot lead to identification <i>without additional
-information</i>, such as a key file linking pseudonyms to names. This additional
-information should be kept separately and securely and makes for
-de-identification that is reversible. Data are sometimes pseudonymised by
-replacing direct identifiers (e.g., names) with a participant code (e.g.,
-number). However, this may not always suffice, as sometimes it is still
-possible to identify participants indirectly (e.g., through linkage, inference
-or singling out). Importantly, pseudonymous data are still personal data and
-therefore must be handled in accordance with the GDPR.
+Personal data that cannot lead to identification <em>without additional information</em>, such as a key file linking pseudonyms to names. This additional information should be kept separately and securely and makes for de-identification that is reversible. Data are sometimes pseudonymised by replacing direct identifiers (e.g., names) with a participant code (e.g., number). However, this may not always suffice, as sometimes it is still possible to identify participants indirectly (e.g., through linkage, inference or singling out). Importantly, pseudonymous data are still personal data and therefore must be handled in accordance with the GDPR.
 </div>
+<br>
 </details>
-</div>
-<div id="s" class="section level4 hasAnchor">
-<h4>S<a href="glossary.html#s" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<br>
+<h4>
+S
+</h4>
 <details>
 <summary>
-<b>Special categories of personal data</b>
+<strong>Special categories of personal data</strong>
 </summary>
 <div>
 Any information pertaining to the data subject which reveals any of the below categories:
@@ -578,28 +601,26 @@ physical or mental health conditions
 an individual’s sex life or sexual orientation
 </li>
 </ul>
-The processing of these categories of data is <b>prohibited</b>, unless one of
-the exceptions of <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">article 9</a>
-applies. For example, an exception applies when:
+The processing of these categories of data is <strong>prohibited</strong>, unless one of the exceptions of <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">article 9</a> applies. For example, an exception applies when:
 <ul>
 <li>
-the data subject has provided explicit consent to process these data for
-a specific purpose,
+the data subject has provided explicit consent to process these data for a specific purpose,
 </li>
 <li>
 the data subject has made the data publicly available themselves,
 </li>
 <li>
-processing is necessary for scientific research purposes.
+processing is necessary for scientific research purposes and obtaining consent is impossible or would require an unreasonable amount of effort.
 </li>
 </ul>
 <p>
 Contact your <a href="seeking-help.html#support">privacy officer</a> if you wish to process special categories of personal data.
 </p>
 </div>
+<br>
 </details>
+<p><br></p>
 
-</div>
 </div>
 <div class = "footer">
 <footer>
