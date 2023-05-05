@@ -108,147 +108,56 @@ basis, anonymised, pseudonymised
 
 Below, you will find a selection of important terms in the GDPR that you should 
 become familiar with when working with personal data (also included in the 
-[Glossary](#glossary)). Click a term to see the definition.
+[Glossary](#glossary)). Click on a term to see the definition.
 
-<details>
-  <summary><b>Data subject</b></summary>
-    <div>A living individual who can be identified directly or indirectly through 
-      personal data. In a research setting, this would be the individual whose 
-      personal data is being processed (see below for the definition of processing).</div>
-</details>
+<!-- If you wish to edit the definitions or add a new one, please do so in the
+glossary.csv file in the files folder of this repository -->
 
-<details>
-  <summary><b>Personal data</b></summary>
-  <div><p>
-  Any information related to an identified or identifiable (living) natural 
-  person. This can include identifiers (name, identification number, location 
-  data, online identifier or a combination of identifiers) or factors specific 
-  to the physical, physiological, genetic, mental, economic, cultural or social 
-  identity of the person. Moreover, IP addresses, opinions, tweets, answers to 
-  questionnaires, etc. may also be personal data, either by itself or through a 
-  combination of one another.
-  </p>
-  <p>
-  Of note: as soon as you collect data related to a person that is identifiable, 
-  you are processing personal data. Additionally, pseudonymised data is still 
-  considered personal data. Read more in 
-  [What are personal data?](#personal-data).
-  </p></div>
-</details>
+```{r formatdefinitions_subset, echo=FALSE}
+# Read in glossary.csv
+glossary <- read.csv("files/glossary.csv", stringsAsFactors = FALSE)
 
-<details>
-  <summary><b>Special categories of personal data</b></summary>
-  <div>Any information pertaining to the data subject which reveals any of the below categories:
-  <ul>
-    <li>racial or ethnic origin</li>
-    <li>political opinions</li>
-    <li>religious or philosophical beliefs</li>
-    <li>trade union membership</li>
-    <li>genetic and biometric data when meant to uniquely identify someone</li>
-    <li>physical or mental health conditions</li>
-    <li>an individual's sex life or sexual orientation</li>
-  </ul>
+# Select only a couple of terms from the glossary to display on this page
+terms_subset <- c("Data subject", "Personal data","Special categories of personal data", "Processing", "Controller", "Processor", "Legal basis", "Anonymous data", "Pseudonymous data")
+glossary_sub <- subset(glossary, term %in% terms_subset)
+
+# Order the subset according to order in the terms_subset
+ordered <- match(terms_subset, glossary_sub$term)
+glossary_suborder <- glossary_sub[ordered, ]
+
+# Empty list variable
+formattedtext <- list()
+deftext <- c()
+
+# Format each question in the section in html <details> tags
+for (item in 1:nrow(glossary_suborder)){
   
-  The processing of these categories of data is <b>prohibited</b>, unless one of 
-  the exceptions of [article 9](https://gdpr-info.eu/art-9-gdpr/){target="_blank"} 
-  applies. For example, an exception applies when:
-  <ul>
-    <li>the data subject has provided explicit consent to process these data for 
-    a specific purpose,</li>
-    <li>the data subject has made the data publicly available themselves,</li>
-    <li>processing is necessary for scientific research purposes.</li>
-  </ul>
-  <p>
-  Contact your [privacy officer](#support) if you wish to process special categories of personal data.</p></div>
-</details>
+  tryCatch( { 
+    # Only include if "include" == 1 and there are terms there
+    if(glossary_suborder$include[item] == 1 & !is.na(glossary_suborder$term[item]) & !is.na(glossary_suborder$include[item])){
+      formattedtext[[item]] <- paste0("<details><summary>**",
+                                      glossary_suborder$term[item],
+                                      "**</summary><div>",
+                                      glossary_suborder$definition[item],
+                                      "</div><br></details>")
+    }
+  }, error = function(e){
+    cat("Error in row : ",item,"\n")
+  }
+  )
+} #end for
 
-<details>
-  <summary><b>Processing</b></summary>
-  <div>
-  Any operation performed on personal data. This includes collection, storage, 
-  organisation, alteration, analysis, transcription, sharing, publishing, deletion, etc.
-  </div>
-</details>
+# Remove empty list items (happens when Include == 0)
+formattedtext <- formattedtext[!sapply(formattedtext, is.null)]
 
-<details>
-  <summary><b>Controller</b></summary>
-  <div><p>
-  The natural or legal entity that, alone or with others, determines or has an 
-  influence on <b>why</b> and <b>how</b> personal data are processed. On an 
-  organisational level, Utrecht University (UU) is the controller of personal 
-  data collected by UU researchers and will be held responsible in case of GDPR 
-  infringement. On a practical level, however, researchers (e.g., Principal 
-  Investigators) often determine why and how data are processed, and are thus 
-  fulfilling the role of controller themselves.
-  </p>
-  <p>
-  Note that it is possible to be a controller without having access to personal
-  data, for example if you assign an external company to execute research for 
-  which you determined which data they should collect, among which data subjects, 
-  how, and for what purpose.
-  </p></div>
-</details>
+# Concatenate the list of items into a single string
+formattedtext_string <- paste(formattedtext, collapse="")
 
-<details>
-  <summary><b>Processor</b></summary>
-  <div>
-  A natural or legal entity that processes personal data on behalf of the 
-  controller. For example, when using a cloud transcription service, you often 
-  need to send personal data (e.g., an audio recording) to the transcription 
-  service for the purpose of your research, which is then fulfilling the role 
-  of processor. Other examples of processors are mailhouses used to send emails
-  to data subjects, or Trusted Third Parties who hold the keyfile to link 
-  pseudonyms to personal data. When using such a third party, you must have a 
-  [data processing agreement](#data-processing-agreement) in place.
-  </div>
-</details>
+#deftext <- c(deftext, formattedtext_string)
+#fulldeftext <- paste(deftext, collapse = "    ")
+```
 
-<details>
-  <summary><b>Legal basis</b></summary>
-  <div>
-  Any processing of personal data should have a valid legal basis. Without it, 
-  you are now allowed to process personal data at all. The GDPR provides 6 legal 
-  bases which are explained further [in this chapter](#legal-basis).
-  </div>
-</details>
-
-<details>
-  <summary><b>Anonymous data</b></summary>
-  <div>Any data where an individual is irreversibly de-identified, both directly 
-  (e.g., through names and email addresses) and indirectly. The latter means 
-  that you cannot identify someone:
-  <ul>
-    <li>by combining variables or datasets (e.g., a combination of date of birth, 
-    gender and birthplace, or the combination of a dataset with its name-number key)</li>
-    <li>via inference, i.e., when you can deduce who the data are about (e.g., 
-    when profession is Dutch prime minister, it is clear who the data is about)</li>
-    <li>by singling out a single subject, such as through unique data points 
-    e.g., someone who is 210 cm tall is relatively easy to identify)</li>
-  </ul>
-  <p>
-  Anonymous data are no longer personal data and thus not subject to GDPR 
-  compliance. In practice, anonymous data may be difficult to attain and care 
-  must be given that the data legitimately cannot be traced to an individual in 
-  any way. The document 
-  [Opinion 05/2014 on Anonymisation Techniques](https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf){target="_blank"} 
-  explains the criteria that must be met for data to be considered anonymous.
-  </p></div>
-</details>
-
-<details>
-  <summary><b>Pseudonymous data</b></summary>
-  <div>
-  Personal data that cannot lead to identification <i>without additional 
-  information</i>, such as a key file linking pseudonyms to names. This additional 
-  information should be kept separately and securely and makes for 
-  de-identification that is reversible. Data are sometimes pseudonymised by 
-  replacing direct identifiers (e.g., names) with a participant code (e.g., 
-  number). However, this may not always suffice, as sometimes it is still 
-  possible to identify participants indirectly (e.g., through linkage, inference 
-  or singling out). Importantly, pseudonymous data are still personal data and 
-  therefore must be handled in accordance with the GDPR.
-  </div>
-</details>
+`r formattedtext_string`
 
 ## Principles in the GDPR {#gdpr-principles}
 
