@@ -1,7 +1,5 @@
 # Statistical privacy {#statistical-privacy}
 
-## Statistical disclosure control {#sdc}
-
 ## K-anonymity and its descendents
 
 ## Differential privacy {#differential-privacy}
