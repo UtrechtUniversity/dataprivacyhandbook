@@ -1,1 +1,10 @@
 # Research scenarios {#research-scenarios}
+
+This chapter will outline typical privacy issues and design solutions for 
+several types of scientific research. 
+
+:::note
+These scenarios are as yet a Work In Progress. For now, please consult the rest 
+of the Data Privacy Handbook, or contact your [privacy officer](#support) if you
+cannot find the answer here.
+:::
