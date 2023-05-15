@@ -1,5 +1,3 @@
-# (PART\*) Storage, Sharing, Publication {-} 
-
 # Storing personal data {#data-storage}
 
 In research, storage of personal data is one of the most common processing 
