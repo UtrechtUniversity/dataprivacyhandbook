@@ -30,19 +30,24 @@ choose, whether you need to encrypt the data, etc.).
 Based on the risks you identified and the classification of the data, you can 
 then implement [safeguards to mitigate the risks](#example-risks).  
 
-<!-- Does not work yet
-```{r embed-solove, echo=FALSE}
-#knitr::include_url("https://enterprivacy.com/wp-content/uploads/2018/09/A-Taxonomy-of-Privacy.pdf")
+```{r risk-areas, echo=FALSE, out.width="100%", cache=TRUE, results="asis"}
+# Only shows in html output, not in epub or pdf:
+if (knitr::is_html_output()) {
+  cat('<iframe src="https://enterprivacy.com/wp-content/uploads/2018/09/A-Taxonomy-of-Privacy.pdf" width="100%" height="600px"></iframe>')
+}
 ```
 *Privacy risks can occur in any stage of your research project (see also 
-[Solove, 2006](https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2074&context=faculty_publications){target="_blank"}).*-->
+[Solove, 2006](https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2074&context=faculty_publications){target="_blank"}).
+If the image does not show correctly, 
+[view it online](https://enterprivacy.com/wp-content/uploads/2018/09/A-Taxonomy-of-Privacy.pdf){target="_blank"}.*
 
 ## How to assess privacy risks? {#risk-assessment-how}
 
-::::keywords
+:::keywords
 On this page: risk, security, assessment, harm, damage, dpia, threat, secure,
-measure, safeguard, protect, plan, probability, likelihood, impact
-::::
+measure, safeguard, protect, plan, probability, likelihood, impact    
+Date of last review: 2023-04-18
+:::
 
 Before you start your research project, it is important to consider the risks 
 and their severity for data subjects in your project. This assessment will 
@@ -173,9 +178,10 @@ it may be very likely: **context matters**!
 :::
 
 ## What are high-risk operations? {#high-risk-processing}
-::::keywords
-On this page: high-risk, large risk, dpia, assessment, mandatory
-::::
+:::keywords
+On this page: high-risk, large risk, dpia, assessment, mandatory    
+Date of last review: 2023-04-18
+:::
 
 The GDPR requires a [Data Protection Impact Assessment](#dpia) (DPIA) to be 
 conducted when the risks in your project are high, considering "the nature, 
@@ -290,7 +296,8 @@ your project needs one, please contact your [privacy officer](#support).
 ## Data classification {#data-classification}
 :::keywords
 On this page: BIV classificatie, CIA triad, data classification, information 
-security, IT system 
+security, IT system    
+Date of last review: 2023-04-18
 :::
 
 In order to determine which IT solutions are suitable for processing personal 
@@ -401,9 +408,9 @@ and security measures.
 ## Examples of risks and how to mitigate them {#example-risks}
 :::keywords
 On this page: risk example, safeguards, organisational and technical measures, 
-protection, protective, security, data breach
+protection, protective, security, data breach    
+Date of last review: 2023-04-18
 :::
-
 
 Below you can find a list of common privacy and security risks in research and 
 how you can mitigate them:
@@ -414,243 +421,97 @@ how you can mitigate them:
 - [Invalid legal basis](#invalid-legal-basis)
 - [Risks for data subjects](#risks-data-subjects)
 
- 
+<!-- If you wish to edit the risks / measures or add a new one, please do so in 
+the risk-examples.csv file in the files folder of this repository -->
+
+```{r formatrisks, message=FALSE, warning=FALSE, echo=FALSE}
+# Read in risk-examples.csv
+risks <- read.csv("files/risk-examples.csv", stringsAsFactors = FALSE)
+
+# Format FAQs in HTML <details> tags - function is used in chunks below
+formatrisks <- function(risksection){
+  
+  # Select the relevant section
+  subselection <- risks[risks$section_id == risksection, ]
+  
+  formattedtext <- list()
+  
+  # Format each question in the section in html <details> tags
+  for(riskitem in 1:nrow(subselection)){
+    
+    tryCatch( { 
+      # Only include if "include" == 1
+      if(subselection$include[riskitem] == 1){
+        formattedtext[[riskitem]] <- paste0("<details><summary>**",
+                                                subselection$risk[riskitem],
+                                                "**</summary><div>",
+                                                subselection$measure[riskitem],
+                                                "</div><br></details>")
+      }
+    }, error = function(e){
+      cat("Error in row : ",riskitem,"\n")
+    }
+    )
+  } #end for
+  
+  # Remove empty list items (happens when Include == 0)
+  formattedtext <- formattedtext[!sapply(formattedtext, is.null)]#
+
+  # Concatenate the list of items into a single string
+  formattedtext_string <- paste(formattedtext, collapse="")
+  return(formattedtext_string)
+} # end function
+```
+
 ### Unwarranted access to personal data {#unwarranted-access}
 
-<details><summary>Someone tries to gain access to personal data</summary>
-<div>
-  - Use storage and analysis systems that are suitable for your 
-  [data classification](#data-classification), e.g., systems that are managed by 
-  your institute and/or [encrypted](#encryption). 
-  - Apply [protection strategies described here](#data-oriented-strategies). 
-</div>
-</details>
+```{r unwarranted-access, message=FALSE,warning=FALSE,echo=FALSE}
+unwarranted_access <- formatrisks("unwarranted-access")
+```
 
-<details><summary>A previous team member still has access (e.g., a copy on their 
-personal device, a working account) </summary>
-<div>
-Enforce a protocol in which team members who leave need to remove all their 
-copies of the data and are denied access to the data and shared folders (on- and 
-offboarding). Periodically review and update all users/rights. Make someone 
-responsible for this process.  
-</div>
-</details>
-
-<details><summary>A team member shares the data with a third party</summary>
-<div>
-  - Put in place a protocol or [non-disclosure agreement](#nda) that makes team 
-  members aware that this is not allowed, or make sure that a 
-  [data transfer agreement](#data-transfer-agreement) is in place. 
-  - Make sure that team members do not have access to data that they do not 
-  need access to. 
-</div>
-</details>
-
-<details><summary>A password is leaked</summary>
-<div>
-  - Use systems that apply multifactor authentication. 
-  - Change your password regularly or immediately when it is compromised, and 
-  have your team members do the same.
-</div>
-</details>
+`r unwarranted_access`
   
 [Back to top](#example-risks)
+
 
 ### Loss of personal data {#loss-of-personal-data}
 
-<details><summary>A device is lost or defective (e.g., laptop, USB stick)</summary>
-<div>
-  - Protect the device with a password.
-  - Encrypt the device or the data on it. 
-  - [Delete](#deleting-personal-data) unnecessary copies of the data on the 
-  device as soon as you’ve made a back-up on a more stable and secure system, 
-  such as university-managed storage facilities. 
-  - Enable removing data from the device from a distance.
-</div>
-</details>
+```{r data-loss, message=FALSE,warning=FALSE,echo=FALSE}
+data_loss <- formatrisks("data-loss")
+```
 
-<details><summary>Paper data are lost</summary>
-<div>
-  - Avoid collecting data on paper altogether, or only collect the necessary 
-  information.  
-  - Store the paper data in a central and access-controlled location, scan the 
-  documents as soon as possible, store the scans on a backed-up storage medium 
-  and destroy the paper records (securely).  
-</div>
-</details>
-
-<details><summary>The dataset is deleted accidentally</summary>
-<div>
-Use a storage system that has back-up functionality, or if not available, make 
-regular manual back-ups of the data.
-</div>
-</details>
-
-<details><summary>A system error causes temporary loss of or access to data</summary>
-<div>
-  - If you are not using centrally managed IT solutions, regularly check if 
-  back-ups are being done as expected and have protocols in place on how to 
-  restore back-ups. 
-  - If the time-out takes a significant amount of time, discuss with your 
-  [privacy officer](#support) whether you need to inform data subjects about it: 
-  they cannot exercise their rights during that time.   
-</div>
-</details>
-
-<details><summary>The organisation is hit by a ransomware attack</summary>
-<div>
-Enforce a security protocol that emphasises secure data practices, such as: 
-
-  - Do not download data from unknown sources. 
-  - Be careful when installing software, preferably only install software from 
-  the institutional software catalogue. 
-  - Create awareness of what phishing looks like and to report phishing 
-  immediately to the 
-  [Computer Emergency Response Team](https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert){target="_blank"}.
-</div>
-</details>
+`r data_loss`
   
 [Back to top](#example-risks)
+
 
 ### Unintended collection of personal data {#unintended-collection}
 
-<details><summary>Data subjects give more, or more sensitive information about 
-themselves than intended/needed</summary>
-<div>
-  - Offer data subjects the possibility to review what information they provided. 
-  - Offer the possibility to withdraw consent in a later stage. 
-  - Use a data collection protocol to prevent this from taking place. 
-  - Remove the unnecessary information from your dataset.  
-</div>
-</details>
+```{r unintended-collection, message=FALSE,warning=FALSE,echo=FALSE}
+unintended_collection <- formatrisks("unintended-collection")
+```
 
-<details><summary>Data subjects give (sensitive) information about others</summary>
-<div>
-  - Use a data collection protocol to prevent this from taking place. 
-  - Offer data subjects the possibility to review what information they provided. 
-  - Remove the unnecessary information from your dataset. 
-  - Consider the risks for those others vs. your own research benefits: if the 
-  interests for the other people are more important, you should delete or 
-  anonymise the information.  
-</div>
-</details>
-
-<details><summary>Personal data are collected unintendedly</summary>
-<div>
-This can happen when a survey tool automatically collects additional data such 
-as IP addresses. You can sometimes turn this off, and otherwise must remove the 
-data as soon as possible after collection. 
-</div>
-</details>
+`r unintended_collection`
   
 [Back to top](#example-risks)
 
+
 ### Invalid legal basis {#invalid-legal-basis}
 
-<details><summary>Data subjects were not informed in a way that is 
-understandable for them </summary>
-<div>
-This can be a risk with vulnerable subjects, such as children or psychiatric 
-patients but also with data subjects from different cultures. Make sure the 
-information to data subjects is [easy to understand](#form-of-a-privacy-notice), 
-consider other forms than text (e.g., orally). You could even test this with a 
-sub-group of data subjects. Moreover, we recommend going through an ethical 
-review to consider these aspects more in-depth.
-</div>
-</details>
+```{r invalid-legal-basis, message=FALSE,warning=FALSE,echo=FALSE}
+invalid_legal_basis <- formatrisks("invalid-legal-basis")
+```
 
-<details><summary>Data subjects could not be (fully) informed because it would 
-harm your research project</summary>
-<div>
-If fully informing data subjects can negatively affect your research project 
-([art. 14(5)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}), we recommend 
-going through ethical review and extensively debriefing data subjects after your 
-project, including a possibility to withdraw consent or to object to the 
-processing. In case of secretive research (heimelijk onderzoek), please contact 
-your [privacy officer](#support): this requires an in-depth privacy scan.
-</div>
-</details>
-
-<details><summary>Data subjects do not know their data are used for research</summary>
-<div>
-This can happen for example in web scraping or archival research. In principle, 
-you need to inform the data subjects directly. If this takes an unreasonable 
-amount of effort, place a link to a privacy statement on a place that those 
-data subjects likely visit (e.g., social media). Point at a possibility to 
-object to your processing. 
-</div>
-</details>
-
-<details><summary>Consent cannot be demonstrated</summary>
-<div>
-Use a system that registers the consent (e.g., a survey tool, an interview 
-recording), preferably with the date of providing consent. If your research 
-involves a survey, make sure data subjects cannot enter the survey itself if 
-they have not ticked the "consent" box(es). Store the consent declarations for 
-as long as you retain the personal data. Do so securely, but separated from the 
-research data. 
-</div>
-</details>
-
-<details><summary>Data subjects do not want to sign a consent form</summary>
-<div>
-  - Consider whether you actually need a signature. If you do not use real names 
-  or a pseudonym unconnected to real names, using a signature would lead to the 
-  unnecessary processing of personal data, and a checkbox will likely suffice. 
-  - Contact your [privacy officer](#support) to consider using public interest 
-  as a legal basis instead of consent. Note that data subjects still need to be 
-  informed properly. 
-  - If you have to use consent, consider the format of consent: for some groups 
-  oral consent may work better than written consent.  
-</div>
-</details>
-
-<details><summary>Consent may not be freely given because you do research in 
-your own organisation</summary>
-<div>
-  - Consider whether you can rely on public interest instead of consent: contact 
-  your [privacy officer](#support) for assistance.  
-  - If you need to use consent, try to distance yourself from the data subjects. 
-  For example, if your data subjects are students, have someone other than the 
-  teacher perform the data collection and/or analysis, or investigate a 
-  department other than your own, and prevent the management of the department 
-  of interest from getting involved in your project.    
-</div>
-</details>
+`r invalid_legal_basis`
   
 [Back to top](#example-risks)
 
 ### Risks for data subjects {#risks-data-subjects}
 
-<details><summary>Your research has a stigmatising effect on the data subjects 
-due to incorrect, unclear or opaque selection criteria</summary>
-<div>
-Describe clearly how the data subjects are selected.   
-</div>
-</details>
+```{r risks-data-subjects, message=FALSE,warning=FALSE,echo=FALSE}
+risks_data_subjects <- formatrisks("risks-data-subjects")
+```
 
-<details><summary>Due to a small sample size, data subjects are easily 
-identifiable</summary>
-<div>
-  - Increase the sample size 
-  - Put in place [protection measures](#data-oriented-strategies) to protect 
-  the identity of the data subjects    
-</div>
-</details>
-
-<details><summary>Data subjects put themselves in harm’s way by participating</summary>
-<div>
-  - Balance the interests of the data subjects vs. those of your research 
-  project and go through ethical review. 
-  - Collect the data in a physically safe location. 
-  - Put in place [protection measures](#data-oriented-strategies) like 
-  anonymisation, minimisation, blurring, etc. to hide and protect the identity 
-  of the data subjects. 
-  - Clearly inform data subjects what their participation entails and obtain 
-  their explicit consent. 
-  - If applicable, inform local authorities and obtain formal permission to 
-  perform your research.
-</div>
-</details>
+`r risks_data_subjects`
   
 [Back to top](#example-risks)
