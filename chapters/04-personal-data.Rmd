@@ -25,10 +25,11 @@ example if you can single someone out or identify them by combining datasets
 (see the [next page](#personal-data-assess)).
 
 ## How to assess whether data contain personal data? {#personal-data-assess}
-::::keywords
+:::keywords
 On this page: sensitive data, privacy-sensitive, personal data, when is data 
-privacy-sensitive, identifiability, identifier
-::::
+privacy-sensitive, identifiability, identifier    
+Date of last review: 2022-08-23
+:::
 
 Whether your data contain personal data depends on which data you are 
 collecting (nature) and under which circumstances (context). A date like 
@@ -114,12 +115,14 @@ If you need help assessing whether or not your data contain personal data,
 please contact your [privacy officer](#support).
 
 ## Special types of personal data {#special-types-personal-data}
-::::keywords
+:::keywords
 On this page: sensitive personal data, sensitive data, special category, special
 categories, politics, race, ethnicity, religion, philosophy, dna, 
 genetics, genes, fingerprint, physical condition, mental illness, sexual 
-identity, gender identity
-::::
+identity, gender identity    
+Date of last review: 2022-08-23
+:::
+
 There are a few special types of personal data that are worth taking note of: 
 special categories of personal data, and otherwise sensitive personal data. 
 These types of personal data have additional requirements. If you want to 
