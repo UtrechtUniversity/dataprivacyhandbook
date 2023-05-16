@@ -1,7 +1,8 @@
 # Designing your project {#privacy-by-design}
-::::keywords
-On this page: privacy by design, start early, preparation
-::::
+:::keywords
+On this page: privacy by design, start early, preparation    
+Date of last review: 2022-10-31
+:::
 
 Research projects typically go through a number of stages: conception, proposal, 
 planning, execution, publishing, preservation, etc. If you work with personal 
@@ -39,11 +40,12 @@ height="80%"/>
 
 ## Privacy by Design strategies {#design-strategies}
 
-::::keywords
+:::keywords
 On this page: safeguards, measures, technical, organisational, procedure, 
 design, access control, minimisation, transparency, pseudonymisation, 
-abstraction, information, accountability, rights
-::::
+abstraction, information, accountability, rights    
+Date of last review: 2022-10-31
+:::
 
 To incorporate the concepts of Privacy by Design and Privacy by Default into 
 your project, the approach of **privacy design strategies** 
@@ -60,14 +62,6 @@ measures will be effective, will depend on your specific project, the risks for
 data subjects, and the current progress in technology (i.e. will the data be 
 protected on the long haul?).
 :::
-
-<!--
-<img src="img/pbd-strategies.png" alt="Eight Privacy by Design strategies which
-can also be applied in research projects: minimise, separate, abstract, hide, 
-inform, control, enforce, and demonstrate" 
-title = "Strategies to incorporate privacy into the research design"
-height="80%"/>
--->
 
 <div class="row" style="display: flex; flex-wrap: wrap;">
   <div class="column" style="flex: 1; padding: 10px; box-sizing: border-box;">
