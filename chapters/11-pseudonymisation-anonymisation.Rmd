@@ -4,7 +4,8 @@
 
 :::keywords
 On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, sdc, statistical disclosure control
+measure, sdc, statistical disclosure control    
+Date of last review: 2023-05-02
 :::
 
 Pseudonymisation and anonymisation are both ways to make personal data less 
@@ -36,7 +37,8 @@ Finally, we list some resources for [further reading](#deidentification-resource
 
 :::keywords
 On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, identifiable, sdc, statistical disclosure control, disclosure risk
+measure, identifiable, sdc, statistical disclosure control, disclosure risk    
+Date of last review: 2023-05-02
 :::
 
 ### Pseudonymisation {#pseudonymisation}
@@ -164,7 +166,8 @@ others.
 
 :::keywords
 On this page: anonymous, pseudonymous, step-by-step, workflow, deidentification, 
-safeguard, protection measure
+safeguard, protection measure    
+Date of last review: 2023-05-02
 :::
 
 Below is a step-by-step workflow that you can use to de-identify your data. 
@@ -218,7 +221,8 @@ chapter [Statistical approaches to privacy](#statistical-privacy).
 :::keywords
 On this page: anonymous, pseudonymous, deidentification, safeguard, protection
 measure, technique, anonymisation method, privacy-preserving, privacy-enhancing,
-sdc, statistical disclosure control, disclosure risk
+sdc, statistical disclosure control, disclosure risk    
+Date of last review: 2023-05-02
 :::
 
 Below is a list of techniques you can apply to your data to de-identify your 
@@ -362,7 +366,8 @@ variables, making some statistical analyses more difficult or impossible.
 
 :::keywords
 On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, tool, resource, reading material
+measure, tool, resource, reading material    
+Date of last review: 2023-05-02
 :::
 
 You can find a selection of **de-identification tools** in 
