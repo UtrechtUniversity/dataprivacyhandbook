@@ -39,10 +39,11 @@ purposes for a longer period of time, e.g., 10 years or longer.
 
 ## Where should I store personal data? {#data-storage-where}
 
-::::keywords
+:::keywords
 On this page: storage, location, medium, yoda, o-drive, u-drive, usb stick, 
-google drive, onedrive, teams, surfdrive, paper, security
-::::
+google drive, onedrive, teams, surfdrive, paper, security    
+Date of last review: 2022-06-02
+:::
 
 If you work at Utrecht University (UU), you can find a suitable storage medium for 
 digital research data via the 
@@ -80,7 +81,8 @@ purposes.
 
 ::::keywords
 On this page: access control, accountability, interoperability, interoperable,
-separate, anonymise, pseudonymise, de-identify
+separate, anonymise, pseudonymise, de-identify    
+Date of last review: 2022-06-02
 ::::
 
 **Once you have chosen a suitable storage medium, you should act in accordance 
@@ -117,7 +119,8 @@ You can read more about this in the RDM guide
 ## For how long should I store personal data? {#data-storage-duration}
 
 ::::keywords
-On this page: retention, storage period, duration, remove, delete
+On this page: retention, storage period, duration, remove, delete    
+Date of last review: 2022-06-02
 ::::
 
 **As per the GDPR, anyone processing personal data can only store those for as 
