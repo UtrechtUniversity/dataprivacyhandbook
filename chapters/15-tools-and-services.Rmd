@@ -25,7 +25,8 @@ for step-by-step guidance on how to develop your software in compliance with the
 
 ::::keywords
 On this page: storage, storing, collection, repository, data archive, sharing, 
-tools, services
+tools, services    
+Date of last review: 2023-02-17
 ::::
 
 When you are using a tool that processes personal data, that tool should do so
@@ -52,7 +53,8 @@ Additionally, you can find available software via
 
 ::::keywords
 On this page: anonymisation, pseudonymisation, de-identification, synthetic data, encryption,
-secure computing, computation
+secure computing, computation    
+Date of last review: 2023-02-17
 ::::
 
 We are creating an overview of potential privacy-related tools for 
@@ -70,7 +72,8 @@ in this repository if you wish to adjust the existing content or add new content
 ## Requirements for a third-party tool {#tool-requirements}
 
 ::::keywords
-On this page: custom tool, provider, agreement, third-party tool, service
+On this page: custom tool, provider, agreement, third-party tool, service    
+Date of last review: 2023-02-17
 ::::
 
 **If your tool of choice is not listed in https://tools.uu.nl, but it does
