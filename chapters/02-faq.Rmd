@@ -1,4 +1,7 @@
 # Privacy FAQs {#faq}
+:::keywords
+Date of last review: 2023-01-27
+:::
 
 On this page you can find Frequently Asked Questions (FAQs) about handling 
 personal data in research. Click a question you have to read its answer. 
