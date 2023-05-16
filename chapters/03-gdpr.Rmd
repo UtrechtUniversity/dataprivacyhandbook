@@ -25,9 +25,10 @@ for that necessary amount of time.
 
 ## What is the GDPR? {#what-is-the-gdpr}
 
-::::keywords
-On this page: gdpr, when privacy, uavg
-::::
+:::keywords
+On this page: gdpr, when privacy, uavg    
+Date of last review: 2022-07-11
+:::
 
 The General Data Protection Regulation (GDPR, Dutch: *Algemene Verordening 
 Gegevensbescherming* [AVG]) is an EU-wide regulation meant to protect the privacy 
@@ -100,11 +101,12 @@ General Administrative Order (AMvB).
 
 ## Definitions in the GDPR {#definitions}
 
-::::keywords
+:::keywords
 On this page: glossary, sensitive data, personal data, process, controller, 
 processor, participant, data subject, special categories, legal ground, legal 
-basis, anonymised, pseudonymised
-::::
+basis, anonymised, pseudonymised    
+Date of last review: 2023-07-11
+:::
 
 Below, you will find a selection of important terms in the GDPR that you should 
 become familiar with when working with personal data (also included in the 
@@ -164,7 +166,8 @@ formattedtext_string <- paste(formattedtext, collapse="")
 ::::keywords
 On this page: legal basis, legal ground, fair, transparent, purpose, goal, aim, 
 minimise, accurate, storing, storage, safeguards, measures, responsible, 
-responsibility
+responsibility    
+Date of last review: 2023-07-11
 ::::
 
 **The GDPR has a number of principles at its core which dictate the (method of) 
@@ -273,10 +276,11 @@ measures into your research project.
 
 ## Legal bases for working with personal data {#legal-basis}
 
-::::keywords
+:::keywords
 On this page: legal basis, legal ground, consent, public interest, legitimate
-interest, secondary use
-::::
+interest, secondary use    
+Date of last review: 2023-07-11
+:::
 
 You can only process personal data if you have a **legal basis** to do so, which 
 should be registered, among other information, in the 
@@ -420,9 +424,10 @@ the data subjects.
 
 ## Data Subjects' Rights {#data-subject-rights}
 
-::::keywords
-On this page: rights of participants, right, withdrawing consent, delete data
-::::
+:::keywords
+On this page: rights of participants, right, withdrawing consent, delete data    
+Date of last review: 2023-07-11
+:::
 
 The GDPR provides data subjects with several rights that gives them a relatively 
 high degree of control over their own personal data. Below, we list these rights 
