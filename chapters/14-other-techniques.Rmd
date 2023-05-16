@@ -13,7 +13,8 @@ trace data for scientific research purposes.
 ## Encryption {#encryption}
 :::keywords
 On this page: encryption, cryptography, cryptographic technique, secure storage,
-encryption software
+encryption software    
+Date of last review: 2023-05-15
 :::
 
 
@@ -123,7 +124,8 @@ you can read further if you want to know more about cryptography.
 
 :::keywords
 On this page: synthetic data, fake data, artificial data, dummy data, fictitious
-data, reproducibility, reproduce, open science workflow
+data, reproducibility, reproduce, open science workflow    
+Date of last review: 2023-05-15
 :::
 
 
@@ -214,7 +216,8 @@ recommend the book
 
 :::keywords
 On this page: data donation, digital trace data, local processing, interactive 
-consent
+consent    
+Date of last review: 2023-05-15
 :::
 
 People leave all kinds of digital traces, for example on social media, 
