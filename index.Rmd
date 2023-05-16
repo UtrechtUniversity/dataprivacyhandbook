@@ -69,6 +69,13 @@ We welcome feedback and contributions of any type, please read our
 for more information.
 :::
 
+:::warning
+If you work at the University Medical Centre Utrecht (UMCU) or any other 
+institution outside of Utrecht University, some of the guidelines in the Data
+Privacy Handbook may not be in line with your institutional guidelines. Please 
+consult with your local privacy staff whenever you are in doubt about this.
+:::
+
 ## About
 
 The Data Privacy Handbook is an initiative of 
