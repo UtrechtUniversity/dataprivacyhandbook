@@ -23,10 +23,11 @@ agreement.
 <link rel="stylesheet" href="assets/details-button.css">
 </head>
 
-::::keywords
+:::keywords
 On this page: informed consent, informing, information, transparency, 
-transparent, privacy notice, information letter, privacy policy
-::::
+transparent, privacy notice, information letter, privacy policy    
+Date of last review: 2022-10-07
+:::
 
 **A privacy notice is any information given to data subjects about what is 
 happening with their personal data. In research, a privacy notice is usually 
@@ -149,9 +150,10 @@ representatives).
 
 ## Informed consent {#informed-consent-forms}
 
-::::keywords
-On this page: consent, consent form, informed consent form, legal basis
-::::
+:::keywords
+On this page: consent, consent form, informed consent form, legal basis    
+Date of last review: 2022-11-15
+:::
 
 **Of the 6 possible legal bases to process personal data, informed consent is 
 currently the one most often used in research. With the term consent, we mean 
@@ -419,10 +421,11 @@ Bad example sentences:
 
 ## Privacy scan {#privacy-scan}
 
-::::keywords
+:::keywords
 On this page: privacy scan, pre-DPIA, DPIA-light, design, data management plan
-for privacy, risk assessment, planning
-::::
+for privacy, risk assessment, planning    
+Date of last review: 2023-02-14
+:::
 
 A privacy scan is an initial risk assessment that helps you delineate how you 
 will handle and protect the personal data in your research project ("a Data 
@@ -473,7 +476,8 @@ style="text-decoration: none;"><button type="button">Example template</button></
 
 ::::keywords
 On this page: DPIA, GBEB, risk assessment, high risk, protection measures,
-safeguards
+safeguards    
+Date of last review: 2023-02-14
 ::::
 
 A Data Protection Impact Assessment (DPIA) is an instrument to identify and 
@@ -528,7 +532,8 @@ of Representatives is described on the
 
 ::::keywords
 On this page: proportionality, necessity, proportional, necessary, balancing 
-test, legitimate interest, legal basis
+test, legitimate interest, legal basis    
+Date of last review: 2023-02-14
 ::::
 
 If you plan to use legitimate interest as a [legal basis](#legal-basis) in your 
@@ -573,10 +578,11 @@ style="text-decoration: none;"><button type="button">Template in the absence of 
 
 ## Data Transfer Impact Assessment {#dtia}
 
-::::keywords
+:::keywords
 On this page: data transfer, third-country transfer, sharing outside EU, EEA, 
-risk assessment
-::::
+risk assessment    
+Date of last review: 2023-02-14
+:::
 
 A Data Transfer Impact Assessment (DTIA) is a risk analysis that is needed when 
 personal data are transferred to third countries. A DTIA is not an official 
@@ -639,6 +645,7 @@ style="text-decoration: none;"><button type="button">Example questions</button><
 
 ::::keywords
 On this page: registry, processing activities, project register, administration
+Date of last review: 2022-01-05
 ::::
 
 Any EU-based organisation is required to keep a registry of processing 
@@ -667,7 +674,8 @@ application may function as a processing register. Please ask your
 
 ::::keywords
 On this page: agreement, contract, sharing, transfer, sharing outside EU, EEA, 
-controller, processor, provider, data owner
+controller, processor, provider, data owner    
+Date of last review: 2022-12-15
 ::::
 
 **There are many types of agreements that can – and sometimes should – be set up 
