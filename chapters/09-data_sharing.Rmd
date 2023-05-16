@@ -1,9 +1,10 @@
 # Sharing data with collaborators {#data-sharing-collaboration}
 
-::::keywords
+:::keywords
 On this page: share, transfer, collaborate, consortium, outside EU, EEA, 
-security, legal basis, transparency, transparent, third-party transfer
-::::
+security, legal basis, transparency, transparent, third-party transfer    
+Date of last review: 2022-09-22
+:::
 
 This chapter addresses guidelines to take into account when you want to share 
 personal data with collaborators outside of your own institution **during** 
