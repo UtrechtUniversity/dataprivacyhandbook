@@ -1,29 +1,27 @@
 cff-version: 1.2.0
-message: "If you use the Data Privacy Handbook, please cite it as below."
+title: Data Privacy Handbook
+message: >-
+  If you (re)use (parts of) the Data Privacy Handbook,
+  please cite us.
+type: software
 authors:
-- family-names: "Moopen"
-  given-names: "Neha"
-  orcid: "https://orcid.org/0000-0003-1412-4402"
-- family-names: "Huijser"
-  given-names: "Dorien"
-  orcid: "https://orcid.org/0000-0003-3282-8083"
-- family-names: "Flores"
-  given-names: "Jacques"
-  orcid: "https://orcid.org/0000-0002-4123-6111"
-- family-names: "van den Hout"
-  given-names: "Saskia"
-- family-names: "Kleerebezem"
-  given-names: "Sanne"
-- family-names: "Romero Pastrana"
-  given-names: "Francisco"
-  orcid: "https://orcid.org/0000-0002-5943-882X"
-- family-names: "Scholten"
-  given-names: "Ron"
-  orcid: "https://orcid.org/0000-0002-4571-8855"
-- family-names: "de Koning-van Nieuwamerongen"
-  given-names: "Danny"
-title: "Data Privacy Handbook"
-version: 0.0.1
-doi: ~
-date-released: ~
-url: "https://utrechtuniversity.github.io/dataprivacyhandbook/"
+  - family-names: Research Data Management Support
+    affiliation: Utrecht University
+repository-code: 'https://github.com/UtrechtUniversity/dataprivacyhandbook'
+url: 'https://utrechtuniversity.github.io/dataprivacyhandbook/'
+repository: 'https://utrechtuniversity.github.io/dataprivacyproject/'
+abstract: >-
+  The Data Privacy Handbook is a practical guide on handling
+  personal data in scientific research, primarily written
+  for Utrecht University researchers and research support
+  staff in the Netherlands.
+keywords:
+  - privacy
+  - research
+  - academia
+  - general data protection regulation
+  - scientific research
+  - gdpr
+license: CC-BY-4.0
+version: v1.0
+
