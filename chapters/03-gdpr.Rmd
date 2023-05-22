@@ -516,17 +516,13 @@ and how you can apply them in your research:
 
 
 :::note
-In the Netherlands, it is possible to exclude the right of access 
-([art. 15](https://gdpr-info.eu/art-15-gdpr/){target="_blank"}), the right to 
-rectification ([art. 16](https://gdpr-info.eu/art-16-gdpr/){target="_blank"}), 
-and the right to restriction of processing
-([art. 18](https://gdpr-info.eu/art-18-gdpr/){target="_blank"}), so that data 
-subjects cannot exercise those rights 
+In Dutch scientific research, it is possible to exclude the rights of access 
+([art. 15](https://gdpr-info.eu/art-15-gdpr/){target="_blank"}), rectification 
+([art. 16](https://gdpr-info.eu/art-16-gdpr/){target="_blank"}), and restriction 
+of processing ([art. 18](https://gdpr-info.eu/art-18-gdpr/){target="_blank"}), 
+so that data subjects cannot exercise those rights 
 ([UAVG art. 44](https://wetten.overheid.nl/jci1.3:c:BWBR0040940&hoofdstuk=4&artikel=44&z=2021-07-01&g=2021-07-01){target="_blank"}). 
-Importantly, this is only possible if you use the personal data solely for 
-scientific or statistical purposes, and, in the 
-[information to data subjects](#privacy-notices), you have to explicitly 
-mention that you are excluding these rights.
+If you wish to do this, please first consult with your [privacy officer](#support).
 :::
 
 #### How can data subjects exercise their rights?
