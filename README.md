@@ -5,7 +5,6 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 ![issues](https://img.shields.io/github/issues/utrechtuniversity/dataprivacyhandbook?color=red)  
 [![start/join a discussion](https://img.shields.io/badge/start%2Fjoin%20a-GitHub%20Discussion-blue)](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
-[![chat on Slack](https://img.shields.io/badge/chat%20on-Slack-blueviolet)](https://join.slack.com/t/dtl-dsig/shared_invite/zt-krwq991u-6PczI7~fxokJuLOpnI3u0A)
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
 
 ## ✨Welcome!✨
@@ -16,8 +15,7 @@ You can find the Handbook here: https://utrechtuniversity.github.io/dataprivacyh
 
 ## Table of Contents
 - [About the Handbook](#about-the-handbook)
-- [Contribute](#contribute)
-- [Contact](#contact)
+- [Contribute](#contributing)
 - [License & Citation](#license-and-citation)
 - [Wiki](#wiki)
 - [Contributors ✨](#contributors-)
@@ -39,19 +37,17 @@ While we call it a 'Handbook' - it's not meant to be written or read like a text
 
 ### Audience & Authors
 
-Our primary audience is **scientific researchers**. You might catch us saying the Handbook needs to be 'researcher-readable' 🙃
-That being said, **privacy professionals** and **research data management (RDM) staff** might find the Handbook useful for reference or recommendation.
+Our primary audience is **scientific researchers**. However, privacy professionals and research data management staff might find the Handbook useful for reference or recommendation as well.
 
-The Handbook is developed at Utrecht University (UU) in the Netherlands 🌷. In the interest of open science and FAIR principles, we'll be keeping the content insitution-agnostic as far as possible. Nonetheless, some sections or chapters might be opinionated towards UU policies and preferences.  
+The Handbook was developed at Utrecht University (UU) in the Netherlands. In the interest of open science and the FAIR principles, we aim to keep the content insitution-agnostic where possible. Nonetheless, some sections or chapters might be opinionated towards UU policies and preferences.
 
 ### History
 
-The Data Privacy Handbook is an initiative of Utrecht University's [Research Data Management Support](https://uu.nl/rdm) as part of the [Data Privacy Project](https://utrechtuniversity.github.io/dataprivacyproject). 
-This project  was initiated by Menno Rasch in early 2020, along with colleagues from UU RDM Support. It is currently supported with funding from UU's Research IT program and a grant from the NWO-DCC funding instrument (July 2021-May 2023).
+The Data Privacy Handbook was an initiative of Utrecht University's [Research Data Management Support](https://uu.nl/rdm) as part of the [Data Privacy Project](https://utrechtuniversity.github.io/dataprivacyproject). This project was initiated in early 2020 and was supported with funding from UU's (FAIR) Research IT program and a grant from the NWO-DCC funding instrument (July 2021-June 2023).
 
-## Contribute
+## Contributing
 
-Want to get involved in this project? Awesome! You can find how to contribute in the [Contributing Guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md).
+Want to get involved in this project and join the [list of contributors](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/contributors.md)? Awesome! You can find how to contribute in the [Contributing Guidelines](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md).
 In short, you can:
 - Open or comment on [Issues](https://github.com/UtrechtUniversity/dataprivacyhandbook/issues)
 - Start or join a [Discussion](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
@@ -59,9 +55,7 @@ In short, you can:
 
 When contributing to this project, we expect you to abide by our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and [Style guide](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/styleguide.md).
 
-## Contact
-
-For any comments or suggestions about the Data Privacy Handbook, please contact [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us) or [Dorien Huijser](https://www.uu.nl/medewerkers/DCHuijser) (project coordinator) by email. You can also stay in touch via the dedicated `#sig-privacy channel` on the [DTL Data Stewards Interest Group](https://www.dtls.nl/community/interest-groups/data-stewards-interest-group/)'s [Slack community](https://join.slack.com/t/dtl-dsig/shared_invite/zt-krwq991u-6PczI7~fxokJuLOpnI3u0A), the _Data Privacy Project_ Teams environment, or the [Research Data Management Support newsletter](https://mailings.uu.nl/hp/gKQRpokhPxN6bw8NlPTr8g/subscribe_newsletter_research_data_management_support).
+For any comments or suggestions about the Data Privacy Handbook outside of GitHub, you can contact [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us).
 
 ## License and Citation
 

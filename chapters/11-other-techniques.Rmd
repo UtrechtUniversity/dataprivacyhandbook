@@ -1,7 +1,0 @@
-# Other techniques
-
-## Encryption {#encryption}
-
-## Synthetic Data {#synthetic-data}
-
-## Data donation {#data-donation}

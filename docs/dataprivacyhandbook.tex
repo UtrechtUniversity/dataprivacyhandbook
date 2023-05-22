@@ -66,19 +66,19 @@
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
-\bibliographystyle{apalike}
+\bibliographystyle{plainnat}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Data Privacy Handbook},
-  pdfauthor={Utrecht University \textbar{} Last updated: 2023-05-05},
+  pdfauthor={Utrecht University \textbar{} Last updated: 2023-05-22},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Data Privacy Handbook}
-\author{Utrecht University \textbar{} Last updated: 2023-05-05}
-\date{05 mei 2023}
+\author{Utrecht University \textbar{} Last updated: 2023-05-22}
+\date{22 mei 2023}
 
 \begin{document}
 \maketitle
@@ -97,11 +97,11 @@
 
 \includegraphics{img/cover-image-dph.png}
 
-\emph{Last updated: 05 May 2023}
+\emph{Last updated: 22 May 2023}
 
 \textbf{The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, primarily written for Utrecht University researchers and
-research support staff.}
+research support staff in the Netherlands.}
 
 It consists of:
 
@@ -126,6 +126,11 @@ We welcome feedback and contributions of any type, please read our
 \href{https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md}{contributing guidelines}
 for more information.
 
+If you work at the University Medical Centre Utrecht (UMCU) or any other
+institution outside of Utrecht University, some of the guidelines in the Data
+Privacy Handbook may not be in line with your institutional guidelines. Please
+consult with your local privacy staff whenever you are in doubt about this.
+
 \hypertarget{about}{%
 \section{About}\label{about}}
 
@@ -146,24 +151,19 @@ The Data Privacy Handbook is licensed under a
 \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International License}.
 You can \href{https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md}{view the license here}.
 
+When using (parts of) the Data Privacy Handbook in your work, please cite us
+using the citation provided in the \href{target=\%22_blank\%22}{GitHub repository}.
+
 \hypertarget{contributions}{%
 \subsection{Contributions}\label{contributions}}
 
 The Data Privacy Handbook is a collaborative effort, made possible by a large
-number of contributors (also to be viewed in our
-\href{https://github.com/UtrechtUniversity/dataprivacyhandbook}{GitHub repository}):
+number of contributors. All contributors can be found in our
+\href{https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/contributors.md}{GitHub repository}.
 
-Neha Moopen, Dorien Huijser, Jacques Flores, Mercedes Beltrán, Kasper de Bruijn,
-Wies Cipido, Ruud Dielen, David Gecks, Joris de Graaf, Judith de Haan,
-Saskia van den Hout, Frans Huigen, Artan Jacquet, Rik Janssen, Sanne Kleerebezem,
-Annemiek van der Kuil, Danny de Koning-van Nieuwamerongen,
-Pieter Sebastiaan de Lange, Frans de Liagre Böhl, Maisam Mohammadi Dadkan,
-Francisco Romero Pastrana, Najoua Ryane, Johanneke Siljee, Maarten Schermer, Raoul Schram,
-Ron Scholten, Garrett Speed, Robert Steeman, Jacqueline Tenkink-de Jong,
-Liliana Vargas Meleza, and Martine de Vos.
-
-Would you like to contribute to this Handbook yourself? Please read our
-\href{https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md}{Contributing guidelines}.
+Would you like to contribute to this Handbook yourself? Please follow our
+\href{https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md}{Contributing guidelines}
+and the \href{https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/styleguide.md}{Style guide}.
 
 \hypertarget{how-to-use-this-handbook}{%
 \section{How to use this Handbook}\label{how-to-use-this-handbook}}
@@ -296,8 +296,20 @@ However, the contents of the Data Privacy Handbook may not be in line with reade
 institutions' policies or views. For more authoritative information, these
 readers should refer to resources from their own institutions.
 
+\hypertarget{research-scenarios}{%
+\chapter{Research scenarios}\label{research-scenarios}}
+
+This chapter will outline typical privacy issues and design solutions for
+several types of scientific research.
+
+These scenarios are as yet a Work In Progress. For now, please consult the rest
+of the Data Privacy Handbook, or contact your \protect\hyperlink{support}{privacy officer} if you
+cannot find the answer here.
+
 \hypertarget{faq}{%
 \chapter{Privacy FAQs}\label{faq}}
+
+Date of last review: 2023-01-27
 
 On this page you can find Frequently Asked Questions (FAQs) about handling
 personal data in research. Click a question you have to read its answer.
@@ -590,7 +602,8 @@ If you process personal data, you should:
 \hypertarget{what-is-the-gdpr}{%
 \section{What is the GDPR?}\label{what-is-the-gdpr}}
 
-On this page: gdpr, when privacy, uavg
+On this page: gdpr, when privacy, uavg\\
+Date of last review: 2022-07-11
 
 The General Data Protection Regulation (GDPR, Dutch: \emph{Algemene Verordening
 Gegevensbescherming} {[}AVG{]}) is an EU-wide regulation meant to protect the privacy
@@ -663,7 +676,8 @@ General Administrative Order (AMvB).
 
 On this page: glossary, sensitive data, personal data, process, controller,
 processor, participant, data subject, special categories, legal ground, legal
-basis, anonymised, pseudonymised
+basis, anonymised, pseudonymised\\
+Date of last review: 2023-07-11
 
 Below, you will find a selection of important terms in the GDPR that you should
 become familiar with when working with personal data (also included in the
@@ -748,7 +762,8 @@ Personal data that cannot lead to identification \emph{without additional inform
 
 On this page: legal basis, legal ground, fair, transparent, purpose, goal, aim,
 minimise, accurate, storing, storage, safeguards, measures, responsible,
-responsibility
+responsibility\\
+Date of last review: 2023-07-11
 
 \textbf{The GDPR has a number of principles at its core which dictate the (method of)
 data processing. Every type of processing has to comply with these principles.
@@ -857,7 +872,8 @@ measures into your research project.
 \section{Legal bases for working with personal data}\label{legal-basis}}
 
 On this page: legal basis, legal ground, consent, public interest, legitimate
-interest, secondary use
+interest, secondary use\\
+Date of last review: 2023-07-11
 
 You can only process personal data if you have a \textbf{legal basis} to do so, which
 should be registered, among other information, in the
@@ -982,7 +998,8 @@ the data subjects.
 \hypertarget{data-subject-rights}{%
 \section{Data Subjects' Rights}\label{data-subject-rights}}
 
-On this page: rights of participants, right, withdrawing consent, delete data
+On this page: rights of participants, right, withdrawing consent, delete data\\
+Date of last review: 2023-07-11
 
 The GDPR provides data subjects with several rights that gives them a relatively
 high degree of control over their own personal data. Below, we list these rights
@@ -1049,6 +1066,18 @@ In case of objection, you have to stop your processing activities and thus
 delete any data you have from the particular data subject, unless you can
 demonstrate concrete grounds for overriding the data subject's rights
 (e.g., excluding the data subject would substantially bias your results).
+
+In the Netherlands, it is possible to exclude the right of access
+(\href{https://gdpr-info.eu/art-15-gdpr/}{art. 15}), the right to
+rectification (\href{https://gdpr-info.eu/art-16-gdpr/}{art. 16}),
+and the right to restriction of processing
+(\href{https://gdpr-info.eu/art-18-gdpr/}{art. 18}), so that data
+subjects cannot exercise those rights
+(\href{https://wetten.overheid.nl/jci1.3:c:BWBR0040940\&hoofdstuk=4\&artikel=44\&z=2021-07-01\&g=2021-07-01}{UAVG art. 44}).
+Importantly, this is only possible if you use the personal data solely for
+scientific or statistical purposes, and, in the
+\protect\hyperlink{privacy-notices}{information to data subjects}, you have to explicitly
+mention that you are excluding these rights.
 
 \hypertarget{how-can-data-subjects-exercise-their-rights}{%
 \subsubsection{How can data subjects exercise their rights?}\label{how-can-data-subjects-exercise-their-rights}}
@@ -1146,7 +1175,8 @@ identified or identifiable natural person''
 \section{How to assess whether data contain personal data?}\label{personal-data-assess}}
 
 On this page: sensitive data, privacy-sensitive, personal data, when is data
-privacy-sensitive, identifiability, identifier
+privacy-sensitive, identifiability, identifier\\
+Date of last review: 2022-08-23
 
 Whether your data contain personal data depends on which data you are
 collecting (nature) and under which circumstances (context). A date like
@@ -1245,7 +1275,8 @@ please contact your \protect\hyperlink{support}{privacy officer}.
 On this page: sensitive personal data, sensitive data, special category, special
 categories, politics, race, ethnicity, religion, philosophy, dna,
 genetics, genes, fingerprint, physical condition, mental illness, sexual
-identity, gender identity
+identity, gender identity\\
+Date of last review: 2022-08-23
 
 There are a few special types of personal data that are worth taking note of:
 special categories of personal data, and otherwise sensitive personal data.
@@ -1333,7 +1364,8 @@ Examples are:
 \hypertarget{privacy-by-design}{%
 \chapter{Designing your project}\label{privacy-by-design}}
 
-On this page: privacy by design, start early, preparation
+On this page: privacy by design, start early, preparation\\
+Date of last review: 2022-10-31
 
 Research projects typically go through a number of stages: conception, proposal,
 planning, execution, publishing, preservation, etc. If you work with personal
@@ -1368,7 +1400,8 @@ need to perform a more elaborate \protect\hyperlink{dpia}{Data Protection Impact
 
 On this page: safeguards, measures, technical, organisational, procedure,
 design, access control, minimisation, transparency, pseudonymisation,
-abstraction, information, accountability, rights
+abstraction, information, accountability, rights\\
+Date of last review: 2022-10-31
 
 To incorporate the concepts of Privacy by Design and Privacy by Default into
 your project, the approach of \textbf{privacy design strategies}
@@ -1642,11 +1675,17 @@ To do so, it is important to gain insight in:
 Based on the risks you identified and the classification of the data, you can
 then implement \protect\hyperlink{example-risks}{safeguards to mitigate the risks}.
 
+\emph{Privacy risks can occur in any stage of your research project (see also
+\href{https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2074\&context=faculty_publications}{Solove, 2006}).
+If the image does not show correctly,
+\href{https://enterprivacy.com/wp-content/uploads/2018/09/A-Taxonomy-of-Privacy.pdf}{view it online}.}
+
 \hypertarget{risk-assessment-how}{%
 \section{How to assess privacy risks?}\label{risk-assessment-how}}
 
 On this page: risk, security, assessment, harm, damage, dpia, threat, secure,
-measure, safeguard, protect, plan, probability, likelihood, impact
+measure, safeguard, protect, plan, probability, likelihood, impact\\
+Date of last review: 2023-04-18
 
 Before you start your research project, it is important to consider the risks
 and their severity for data subjects in your project. This assessment will
@@ -1789,7 +1828,8 @@ it may be very likely: \textbf{context matters}!
 \hypertarget{high-risk-processing}{%
 \section{What are high-risk operations?}\label{high-risk-processing}}
 
-On this page: high-risk, large risk, dpia, assessment, mandatory
+On this page: high-risk, large risk, dpia, assessment, mandatory\\
+Date of last review: 2023-04-18
 
 The GDPR requires a \protect\hyperlink{dpia}{Data Protection Impact Assessment} (DPIA) to be
 conducted when the risks in your project are high, considering ``the nature,
@@ -1937,7 +1977,8 @@ your project needs one, please contact your \protect\hyperlink{support}{privacy 
 \section{Data classification}\label{data-classification}}
 
 On this page: BIV classificatie, CIA triad, data classification, information
-security, IT system
+security, IT system\\
+Date of last review: 2023-04-18
 
 In order to determine which IT solutions are suitable for processing personal
 data (e.g., storage or analysis platforms), a classification of your data is
@@ -2105,7 +2146,8 @@ and security measures.
 \section{Examples of risks and how to mitigate them}\label{example-risks}}
 
 On this page: risk example, safeguards, organisational and technical measures,
-protection, protective, security, data breach
+protection, protective, security, data breach\\
+Date of last review: 2023-04-18
 
 Below you can find a list of common privacy and security risks in research and
 how you can mitigate them:
@@ -2127,279 +2169,157 @@ how you can mitigate them:
 \hypertarget{unwarranted-access}{%
 \subsection{Unwarranted access to personal data}\label{unwarranted-access}}
 
-Someone tries to gain access to personal data
+\textbf{Someone tries to gain access to personal data}
 
-\begin{itemize}
-\tightlist
-\item
-  Use storage and analysis systems that are suitable for your
-  \protect\hyperlink{data-classification}{data classification}, e.g., systems that are managed by
-  your institute and/or \protect\hyperlink{encryption}{encrypted}.
-\item
-  Apply \protect\hyperlink{data-oriented-strategies}{protection strategies described here}.
-\end{itemize}
+Use storage and analysis systems that are suitable for your \protect\hyperlink{data-classification}{data classification}, e.g., systems that are managed by your institute and/or \protect\hyperlink{encryption}{encrypted}.
 
-A previous team member still has access (e.g., a copy on their
-personal device, a working account)
+Apply \protect\hyperlink{data-oriented-strategies}{protection strategies described here}.
 
-Enforce a protocol in which team members who leave need to remove all their
-copies of the data and are denied access to the data and shared folders (on- and
-offboarding). Periodically review and update all users/rights. Make someone
-responsible for this process.
+\textbf{A previous team member still has access (e.g., a copy on their personal device, a working account)}
 
-A team member shares the data with a third party
+Enforce a protocol in which team members who leave need to remove all their copies of the data and are denied access to the data and shared folders (on- and offboarding). Periodically review and update all users/rights. Make someone responsible for this process.
 
-\begin{itemize}
-\tightlist
-\item
-  Put in place a protocol or \protect\hyperlink{nda}{non-disclosure agreement} that makes team
-  members aware that this is not allowed, or make sure that a
-  \protect\hyperlink{data-transfer-agreement}{data transfer agreement} is in place.
-\item
-  Make sure that team members do not have access to data that they do not
-  need access to.
-\end{itemize}
+\textbf{A team member shares the data with a third party}
 
-A password is leaked
+Put in place a protocol or \protect\hyperlink{nda}{non-disclosure agreement} that makes team members aware that this is not allowed, or make sure that a \protect\hyperlink{data-transfer-agreement}{data transfer agreement} is in place.
 
-\begin{itemize}
-\tightlist
-\item
-  Use systems that apply multifactor authentication.
-\item
-  Change your password regularly or immediately when it is compromised, and
-  have your team members do the same.
-\end{itemize}
+Make sure that team members do not have access to data that they do not need access to.
+
+\textbf{A password is leaked}
+
+Use systems that apply multifactor authentication.
+
+Change your password regularly or immediately when it is compromised, and have your team members do the same.
 
 \protect\hyperlink{example-risks}{Back to top}
 
 \hypertarget{loss-of-personal-data}{%
 \subsection{Loss of personal data}\label{loss-of-personal-data}}
 
-A device is lost or defective (e.g., laptop, USB stick)
+\textbf{A device is lost or defective (e.g., laptop, USB stick)}
 
-\begin{itemize}
-\tightlist
-\item
-  Protect the device with a password.
-\item
-  Encrypt the device or the data on it.
-\item
-  \protect\hyperlink{deleting-personal-data}{Delete} unnecessary copies of the data on the
-  device as soon as you've made a back-up on a more stable and secure system,
-  such as university-managed storage facilities.
-\item
-  Enable removing data from the device from a distance.
-\end{itemize}
+Protect the device with a password.
 
-Paper data are lost
+Encrypt the device or the data on it.
 
-\begin{itemize}
-\tightlist
-\item
-  Avoid collecting data on paper altogether, or only collect the necessary
-  information.\\
-\item
-  Store the paper data in a central and access-controlled location, scan the
-  documents as soon as possible, store the scans on a backed-up storage medium
-  and destroy the paper records (securely).\\
-\end{itemize}
+\protect\hyperlink{deleting-personal-data}{Delete} unnecessary copies of the data on the device as soon as you've made a back-up on a more stable and secure system, such as university-managed storage facilities.
 
-The dataset is deleted accidentally
+Enable removing data from the device from a distance.
 
-Use a storage system that has back-up functionality, or if not available, make
-regular manual back-ups of the data.
+\textbf{Paper data are lost}
 
-A system error causes temporary loss of or access to data
+Avoid collecting data on paper altogether, or only collect the necessary information.
 
-\begin{itemize}
-\tightlist
-\item
-  If you are not using centrally managed IT solutions, regularly check if
-  back-ups are being done as expected and have protocols in place on how to
-  restore back-ups.
-\item
-  If the time-out takes a significant amount of time, discuss with your
-  \protect\hyperlink{support}{privacy officer} whether you need to inform data subjects about it:
-  they cannot exercise their rights during that time.\\
-\end{itemize}
+Store the paper data in a central and access-controlled location, scan the documents as soon as possible, store the scans on a backed-up storage medium and destroy the paper records (securely).
 
-The organisation is hit by a ransomware attack
+\textbf{The dataset is deleted accidentally}
+
+Use a storage system that has back-up functionality, or if not available, make regular manual back-ups of the data.
+
+\textbf{A system error causes temporary loss of or access to data}
+
+If you are not using centrally managed IT solutions, regularly check if back-ups are being done as expected and have protocols in place on how to restore back-ups.
+
+If the time-out takes a significant amount of time, discuss with your \protect\hyperlink{support}{privacy officer} whether you need to inform data subjects about it: they cannot exercise their rights during that time.
+
+\textbf{The organisation is hit by a ransomware attack}
 
 Enforce a security protocol that emphasises secure data practices, such as:
 
-\begin{itemize}
-\tightlist
-\item
-  Do not download data from unknown sources.
-\item
-  Be careful when installing software, preferably only install software from
-  the institutional software catalogue.
-\item
-  Create awareness of what phishing looks like and to report phishing
-  immediately to the
-  \href{https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert}{Computer Emergency Response Team}.
-\end{itemize}
+Do not download data from unknown sources.
+
+Be careful when installing software, preferably only install software from the institutional software catalogue.
+
+Create awareness of what phishing looks like and to report phishing immediately to the \href{https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert}{Computer Emergency Response Team}.
 
 \protect\hyperlink{example-risks}{Back to top}
 
 \hypertarget{unintended-collection}{%
 \subsection{Unintended collection of personal data}\label{unintended-collection}}
 
-Data subjects give more, or more sensitive information about
-themselves than intended/needed
+\textbf{Data subjects give more, or more sensitive information about themselves than intended/needed}
 
-\begin{itemize}
-\tightlist
-\item
-  Offer data subjects the possibility to review what information they provided.
-\item
-  Offer the possibility to withdraw consent in a later stage.
-\item
-  Use a data collection protocol to prevent this from taking place.
-\item
-  Remove the unnecessary information from your dataset.\\
-\end{itemize}
+Offer data subjects the possibility to review what information they provided.
 
-Data subjects give (sensitive) information about others
+Offer the possibility to withdraw consent in a later stage.
 
-\begin{itemize}
-\tightlist
-\item
-  Use a data collection protocol to prevent this from taking place.
-\item
-  Offer data subjects the possibility to review what information they provided.
-\item
-  Remove the unnecessary information from your dataset.
-\item
-  Consider the risks for those others vs.~your own research benefits: if the
-  interests for the other people are more important, you should delete or
-  anonymise the information.\\
-\end{itemize}
+Use a data collection protocol to prevent this from taking place.
 
-Personal data are collected unintendedly
+Remove the unnecessary information from your dataset.
 
-This can happen when a survey tool automatically collects additional data such
-as IP addresses. You can sometimes turn this off, and otherwise must remove the
-data as soon as possible after collection.
+\textbf{Data subjects give (sensitive) information about others}
+
+Use a data collection protocol to prevent this from taking place.
+
+Offer data subjects the possibility to review what information they provided.
+
+Remove the unnecessary information from your dataset.
+
+Consider the risks for those others vs.~your own research benefits: if the interests for the other people are more important, you should delete or anonymise the information.
+
+\textbf{Personal data are collected unintendedly}
+
+This can happen when a survey tool automatically collects additional data such as IP addresses. You can sometimes turn this off, and otherwise must remove the data as soon as possible after collection.
 
 \protect\hyperlink{example-risks}{Back to top}
 
 \hypertarget{invalid-legal-basis}{%
 \subsection{Invalid legal basis}\label{invalid-legal-basis}}
 
-Data subjects were not informed in a way that is
-understandable for them
+\textbf{Data subjects were not informed in a way that is understandable for them}
 
-This can be a risk with vulnerable subjects, such as children or psychiatric
-patients but also with data subjects from different cultures. Make sure the
-information to data subjects is \protect\hyperlink{form-of-a-privacy-notice}{easy to understand},
-consider other forms than text (e.g., orally). You could even test this with a
-sub-group of data subjects. Moreover, we recommend going through an ethical
-review to consider these aspects more in-depth.
+This can be a risk with vulnerable subjects, such as children or psychiatric patients but also with data subjects from different cultures. Make sure the information to data subjects is \protect\hyperlink{form-of-a-privacy-notice}{easy to understand}, consider other forms than text (e.g., orally). You could even test this with a sub-group of data subjects. Moreover, we recommend going through an ethical review to consider these aspects more in-depth.
 
-Data subjects could not be (fully) informed because it would
-harm your research project
+\textbf{Data subjects could not be (fully) informed because it would harm your research project}
 
-If fully informing data subjects can negatively affect your research project
-(\href{https://gdpr-info.eu/art-14-gdpr/}{art. 14(5)}), we recommend
-going through ethical review and extensively debriefing data subjects after your
-project, including a possibility to withdraw consent or to object to the
-processing. In case of secretive research (heimelijk onderzoek), please contact
-your \protect\hyperlink{support}{privacy officer}: this requires an in-depth privacy scan.
+If fully informing data subjects can negatively affect your research project (\href{https://gdpr-info.eu/art-14-gdpr/}{art. 14(5)}), we recommend going through ethical review and extensively debriefing data subjects after your project, including a possibility to withdraw consent or to object to the processing. In case of secretive research (heimelijk onderzoek), please contact your \protect\hyperlink{support}{privacy officer}: this requires an in-depth privacy scan.
 
-Data subjects do not know their data are used for research
+\textbf{Data subjects do not know that their data are used for research}
 
-This can happen for example in web scraping or archival research. In principle,
-you need to inform the data subjects directly. If this takes an unreasonable
-amount of effort, place a link to a privacy statement on a place that those
-data subjects likely visit (e.g., social media). Point at a possibility to
-object to your processing.
+This can happen for example in web scraping or archival research. In principle, you need to inform the data subjects directly. If this takes an unreasonable amount of effort, place a link to a privacy statement on a place that those data subjects likely visit (e.g., social media). Point at a possibility to object to your processing.
 
-Consent cannot be demonstrated
+\textbf{Consent cannot be demonstrated}
 
-Use a system that registers the consent (e.g., a survey tool, an interview
-recording), preferably with the date of providing consent. If your research
-involves a survey, make sure data subjects cannot enter the survey itself if
-they have not ticked the ``consent'' box(es). Store the consent declarations for
-as long as you retain the personal data. Do so securely, but separated from the
-research data.
+Use a system that registers the consent (e.g., a survey tool, an interview recording), preferably with the date of providing consent. If your research involves a survey, make sure data subjects cannot enter the survey itself if they have not ticked the ``consent'' box(es). Store the consent declarations for as long as you retain the personal data. Do so securely, but separated from the research data.
 
-Data subjects do not want to sign a consent form
+\textbf{Data subjects do not want to sign a consent form}
 
-\begin{itemize}
-\tightlist
-\item
-  Consider whether you actually need a signature. If you do not use real names
-  or a pseudonym unconnected to real names, using a signature would lead to the
-  unnecessary processing of personal data, and a checkbox will likely suffice.
-\item
-  Contact your \protect\hyperlink{support}{privacy officer} to consider using public interest
-  as a legal basis instead of consent. Note that data subjects still need to be
-  informed properly.
-\item
-  If you have to use consent, consider the format of consent: for some groups
-  oral consent may work better than written consent.\\
-\end{itemize}
+Consider whether you actually need a signature. If you do not use real names or a pseudonym unconnected to real names, using a signature would lead to the unnecessary processing of personal data, and a checkbox will likely suffice.
 
-Consent may not be freely given because you do research in
-your own organisation
+Contact your \protect\hyperlink{support}{privacy officer} to consider using public interest as a legal basis instead of consent. Note that data subjects still need to be informed properly.
 
-\begin{itemize}
-\tightlist
-\item
-  Consider whether you can rely on public interest instead of consent: contact
-  your \protect\hyperlink{support}{privacy officer} for assistance.\\
-\item
-  If you need to use consent, try to distance yourself from the data subjects.
-  For example, if your data subjects are students, have someone other than the
-  teacher perform the data collection and/or analysis, or investigate a
-  department other than your own, and prevent the management of the department
-  of interest from getting involved in your project.\\
-\end{itemize}
+If you have to use consent, consider the format of consent: for some groups oral consent may work better than written consent.
+
+\textbf{Consent may not be freely given because you do research in your own organisation}
+
+Consider whether you can rely on public interest instead of consent: contact your \protect\hyperlink{support}{privacy officer} for assistance.
+
+If you need to use consent, try to distance yourself from the data subjects. For example, if your data subjects are students, have someone other than the teacher perform the data collection and/or analysis, or investigate a department other than your own, and prevent the management of the department of interest from getting involved in your project.
 
 \protect\hyperlink{example-risks}{Back to top}
 
 \hypertarget{risks-data-subjects}{%
 \subsection{Risks for data subjects}\label{risks-data-subjects}}
 
-Your research has a stigmatising effect on the data subjects
-due to incorrect, unclear or opaque selection criteria
+\textbf{Your research has a stigmatising effect on the data subjects due to incorrect, unclear or opaque selection criteria}
 
 Describe clearly how the data subjects are selected.
 
-Due to a small sample size, data subjects are easily
-identifiable
+\textbf{Due to a small sample size, data subjects are easily identifiable}
 
-\begin{itemize}
-\tightlist
-\item
-  Increase the sample size
-\item
-  Put in place \protect\hyperlink{data-oriented-strategies}{protection measures} to protect
-  the identity of the data subjects\\
-\end{itemize}
+If you cannot increase the sample size, put in place \protect\hyperlink{data-oriented-strategies}{protection measures} to protect the identity of the data subjects.
 
-Data subjects put themselves in harm's way by participating
+\textbf{Data subjects put themselves in harm's way by participating}
 
-\begin{itemize}
-\tightlist
-\item
-  Balance the interests of the data subjects vs.~those of your research
-  project and go through ethical review.
-\item
-  Collect the data in a physically safe location.
-\item
-  Put in place \protect\hyperlink{data-oriented-strategies}{protection measures} like
-  anonymisation, minimisation, blurring, etc. to hide and protect the identity
-  of the data subjects.
-\item
-  Clearly inform data subjects what their participation entails and obtain
-  their explicit consent.
-\item
-  If applicable, inform local authorities and obtain formal permission to
-  perform your research.
-\end{itemize}
+Balance the interests of the data subjects vs.~those of your research project and go through ethical review.
+
+Collect the data in a physically safe location.
+
+Put in place \protect\hyperlink{data-oriented-strategies}{protection measures} like anonymisation, minimisation, blurring, etc. to hide and protect the identity of the data subjects.
+
+Clearly inform data subjects what their participation entails and obtain their explicit consent.
+
+If applicable, inform local authorities and obtain formal permission to perform your research.
 
 \protect\hyperlink{example-risks}{Back to top}
 
@@ -2438,7 +2358,8 @@ The following documents are addressed:
 \section{Information to data subjects}\label{privacy-notices}}
 
 On this page: informed consent, informing, information, transparency,
-transparent, privacy notice, information letter, privacy policy
+transparent, privacy notice, information letter, privacy policy\\
+Date of last review: 2022-10-07
 
 \textbf{A privacy notice is any information given to data subjects about what is
 happening with their personal data. In research, a privacy notice is usually
@@ -2568,7 +2489,8 @@ representatives).
 \hypertarget{informed-consent-forms}{%
 \section{Informed consent}\label{informed-consent-forms}}
 
-On this page: consent, consent form, informed consent form, legal basis
+On this page: consent, consent form, informed consent form, legal basis\\
+Date of last review: 2022-11-15
 
 \textbf{Of the 6 possible legal bases to process personal data, informed consent is
 currently the one most often used in research. With the term consent, we mean
@@ -2879,7 +2801,8 @@ it is not allowed to deny data subjects their data subjects' rights.
 \section{Privacy scan}\label{privacy-scan}}
 
 On this page: privacy scan, pre-DPIA, DPIA-light, design, data management plan
-for privacy, risk assessment, planning
+for privacy, risk assessment, planning\\
+Date of last review: 2023-02-14
 
 A privacy scan is an initial risk assessment that helps you delineate how you
 will handle and protect the personal data in your research project (``a Data
@@ -2942,7 +2865,8 @@ Example template
 \section{Data Protection Impact Assessment}\label{dpia}}
 
 On this page: DPIA, GBEB, risk assessment, high risk, protection measures,
-safeguards
+safeguards\\
+Date of last review: 2023-02-14
 
 A Data Protection Impact Assessment (DPIA) is an instrument to identify and
 mitigate privacy risks associated with processing personal data in a project.
@@ -3006,7 +2930,8 @@ of Representatives is described on the
 \section{Legitimate interest assessment}\label{legitimate-interest-assessment}}
 
 On this page: proportionality, necessity, proportional, necessary, balancing
-test, legitimate interest, legal basis
+test, legitimate interest, legal basis\\
+Date of last review: 2023-02-14
 
 If you plan to use legitimate interest as a \protect\hyperlink{legal-basis}{legal basis} in your
 research project, the GDPR requires that you assess the balance between your
@@ -3063,7 +2988,8 @@ Template in the absence of a privacy scan/DPIA
 \section{Data Transfer Impact Assessment}\label{dtia}}
 
 On this page: data transfer, third-country transfer, sharing outside EU, EEA,
-risk assessment
+risk assessment\\
+Date of last review: 2023-02-14
 
 A Data Transfer Impact Assessment (DTIA) is a risk analysis that is needed when
 personal data are transferred to third countries. A DTIA is not an official
@@ -3153,6 +3079,7 @@ Example questions
 \section{Processing register}\label{processing-register}}
 
 On this page: registry, processing activities, project register, administration
+Date of last review: 2022-01-05
 
 Any EU-based organisation is required to keep a registry of processing
 activities from within their organisation
@@ -3178,7 +3105,8 @@ application may function as a processing register. Please ask your
 \section{Agreements}\label{agreements}}
 
 On this page: agreement, contract, sharing, transfer, sharing outside EU, EEA,
-controller, processor, provider, data owner
+controller, processor, provider, data owner\\
+Date of last review: 2022-12-15
 
 \textbf{There are many types of agreements that can -- and sometimes should -- be set up
 during a research project. Which one you need depends on the purpose of transfer,
@@ -3347,1174 +3275,6 @@ These can be included in a
 \protect\hyperlink{data-processing-agreement}{Data Processing Agreement}. Because they
 are standardised clauses, including these can make it easier to finalise a DPA.
 
-\hypertarget{part-techniques-tools}{%
-\part*{Techniques \& Tools}\label{part-techniques-tools}}
-\addcontentsline{toc}{part}{Techniques \& Tools}
-
-\hypertarget{research-scenarios}{%
-\chapter{Research scenarios}\label{research-scenarios}}
-
-\hypertarget{pseudonymisation-anonymisation}{%
-\chapter{Pseudonymisation \& Anonymisation}\label{pseudonymisation-anonymisation}}
-
-On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, sdc, statistical disclosure control
-
-Pseudonymisation and anonymisation are both ways to make personal data less
-easily linkable to individual data subjects: they are methods to \textbf{de-identify}
-personal data. Importantly, whereas anonymisation results in non-personal data
-that are not subject to the GDPR anymore, pseudonymised data are \textbf{still personal
-data}. It is therefore important to understand the difference between the two,
-and to estimate when your data are indeed fully anonymous.
-
-Any operation that you do up until the personal data are anonymised - including
-the anonymisation itself - is still subject to the GDPR. So even if you can
-anonymise your data later, you still need to comply with the GDPR for everything
-you do beforehand (e.g., collecting, analysing, sharing, etc.).
-
-In this chapter, we:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Explain what \protect\hyperlink{definition-anonymisation-pseudonymisation}{pseudonymisation and anonymisation}
-  mean.
-\item
-  Present a step-by-step
-  \protect\hyperlink{deidentification-workflow}{workflow to de-identify personal data}.
-\item
-  List a number of \protect\hyperlink{deidentification-techniques}{techniques} that you can use
-  to de-identify personal data.
-\end{enumerate}
-
-Finally, we list some resources for \protect\hyperlink{deidentification-resources}{further reading}.
-
-\hypertarget{definition-anonymisation-pseudonymisation}{%
-\section{What are pseudonymisation and anonymisation?}\label{definition-anonymisation-pseudonymisation}}
-
-On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, identifiable, sdc, statistical disclosure control, disclosure risk
-
-\hypertarget{pseudonymisation}{%
-\subsection{Pseudonymisation}\label{pseudonymisation}}
-
-Pseudonymisation is a safeguard that reduces the linkability of your data to
-your data subjects (\href{https://gdpr-info.eu/recitals/no-28/}{rec. 28}).
-It means that you de-identify the data in such a way that they can no longer
-lead to identification \emph{without additional information}
-(\href{https://gdpr-info.eu/art-4-gdpr/}{art. 4(5)}). In theory,
-removing this additional information should lead to anonymised data.
-
-Pseudonymisation is often interpreted as replacing direct
-identifiers (e.g., names) with pseudonyms, and storing the link between the
-identifiers and the pseudonyms in a key file, separated from the research data.
-While this is a good practice (it makes sure that data are not directly
-identifiable anymore), this interpretation of pseudonymisation does not take
-into account \protect\hyperlink{when-anonymous}{indirectly identifiable information}, and thus
-does not necessarily fulfil the GDPR's definition of pseudonymisation!
-
-Pseudonymous data are still \textbf{personal data} and thus subject to the GDPR. This
-is because the de-identification is \emph{reversible}: identifying data subjects is
-still possible, just more difficult. This means that in order to use
-pseudonymous data, you still need to comply to all the rules in the GDPR.
-
-\hypertarget{anonymisation}{%
-\subsection{Anonymisation}\label{anonymisation}}
-
-Anonymisation is a de-identification process that results in data that are
-``rendered anonymous in such a manner that the data subject is not or no longer
-identifiable'' (\href{https://gdpr-info.eu/recitals/no-26/}{rec. 26}),
-neither directly nor indirectly, and by no one, including you. When data are
-anonymised, they are no longer personal data, and thus no longer subject to the
-GDPR. Note, however, that \textbf{everything you do \emph{before} the data are anonymised}
-(including the anonymisation itself) \emph{is} subject to the GDPR!
-
-Anonymisation is very difficult to accomplish in practice!
-\href{https://www.youtube.com/watch?v=puQvpyf0W-M}{This video}
-nicely illustrates why.
-
-\hypertarget{identifiability-spectrum}{%
-\subsection{The identifiability spectrum}\label{identifiability-spectrum}}
-
-The relationship between (identifiable) personal data, pseudonymous data and
-anonymous data should be seen as lying on a spectrum. The more de-identified the
-data are, the closer they are to anonymous data and the lower the risk of
-re-identification. The visual guide below nicely illustrates this:
-
-\includepdf{img/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}
-
-\emph{If the image does not show correctly,
-\href{https://fpf.org/wp-content/uploads/2017/06/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}{view it online}}
-
-\hypertarget{when-anonymous}{%
-\subsection{When are data anonymous?}\label{when-anonymous}}
-
-Your data can be considered anonymous if data subjects can only be re-identified
-with an \emph{unreasonable} amount of effort, i.e., taking into account the costs,
-required time and technology, and future technological developments
-(\href{https://gdpr-info.eu/recitals/no-26/}{rec. 26}).
-
-Basically, your data are \textbf{not} anonymous (personal) when they comply with
-\emph{any} of the \protect\hyperlink{personal-data-assess}{characteristics of personal data}:
-
-\begin{itemize}
-\tightlist
-\item
-  There is directly identifiable information (e.g., name, email address, social
-  security number, etc.).
-\item
-  Data subjects can be singled out (i.e., you can tell one data subject from
-  another within a known group of data subjects).
-\item
-  It is possible to identify data subjects by linking records (``mosaic effect''),
-  either within your own database or when using other data sources.
-\item
-  It is possible to identify a data subject by inferring information about them
-  (e.g., infer a disease by the variable ``medication''), either within
-  your own database or when using other data sources.
-\item
-  It is possible to reverse the de-identification.
-\end{itemize}
-
-Whether data can be seen as anonymous strongly depends on the context of your
-research and how much information is available about the data subjects.
-
-When collaborating with research data centres, such as the Statistics Netherlands
-(Centraal Bureau voor de Statistiek, CBS), often
-\href{https://cros-legacy.ec.europa.eu/system/files/dwb_standalone-document_output-checking-guidelines.pdf}{output checking guidelines}
-are used to determine the risk of identification resulting from the analysis
-output of sensitive data.
-
-\hypertarget{anonymisation-alternatives}{%
-\subsection{Alternatives to anonymisation}\label{anonymisation-alternatives}}
-
-Anonymisation is not the only solution. The best way to protect data subjects'
-privacy is to only collect/process their personal data if necessary
-(\protect\hyperlink{minimise}{minimisation}). Additionally, in many cases, full anonymisation
-is not even possible or desirable, for example if it results in too much
-information loss or incorrect inferences.
-
-If you cannot anonymise the data, there are always other ways in which you can
-protect the data, such as:
-
-\begin{itemize}
-\tightlist
-\item
-  De-identifying (pseudonymising) the data to the extent you can.
-\item
-  Controlling access to the data, for example using
-  \protect\hyperlink{agreements}{user agreements}, authentication, \protect\hyperlink{encryption}{encryption},
-  \protect\hyperlink{secure-computation}{secure analysis environments}, etc.
-\item
-  Creating a \protect\hyperlink{synthetic-data}{synthetic version} of your dataset to share with
-  others.
-\end{itemize}
-
-\hypertarget{deidentification-workflow}{%
-\section{Step-by-step de-identification}\label{deidentification-workflow}}
-
-On this page: anonymous, pseudonymous, step-by-step, workflow, deidentification,
-safeguard, protection measure
-
-Below is a step-by-step workflow that you can use to de-identify your data.
-Whether or not the de-identification results in a pseudonymised or an anonymised
-dataset is highly dependent on the characteristics of the dataset and the context
-in which it was obtained.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Perform the de-identification in a \textbf{safe storage or processing environment}:
-  remember that you are working with personal data, and as long as the data are
-  not anonymous, they will be subject to the GDPR!
-\item
-  Identify any \textbf{potentially identifying information} in your data.
-\item
-  Assess whether you need to \textbf{collect this information at all}. For example:
-
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \tightlist
-  \item
-    Do you really need IP addresses in your survey data?
-  \item
-    Do you really need to record audio or video?
-  \item
-    Do you really need a consent form with a name, contact information, and
-    signature on it?
-  \item
-    Replace names with pseudonyms in filenames and within the data where
-    possible.
-  \end{enumerate}
-\item
-  If you do not need \textbf{directly identifying information} to answer your research
-  question, but you do need it to, for example, contact data subjects:
-
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \tightlist
-  \item
-    Separate directly identifying information from the research data.
-  \item
-    Use pseudonyms to refer to individuals instead of names.
-  \item
-    Create a keyfile to link the pseudonyms to the names.
-  \item
-    Store the directly identifiable information and the keyfile in a separate
-    location from the research data and/or in encrypted form.
-  \end{enumerate}
-\item
-  Consider which types of information may lead to \textbf{indirect identification}, such
-  as demographic information (age, education, occupation, etc.), geolocation,
-  specific dates, medical conditions, unique personal characteristics, open text
-  responses, etc.
-\item
-  \textbf{De-identify} the directly and indirectly identifiable data using (a selection
-  of) the \protect\hyperlink{deidentification-techniques}{techniques described on the next page}.
-
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \tightlist
-  \item
-    Before you start, save a copy of the raw, untouched dataset, in case
-    anything in the process goes wrong.
-  \item
-    Document the steps you took, for example in a programming script or README
-    file, which always accompanies the data.
-  \item
-    Whether you can delete the raw (non-pseudonymised) version of the dataset,
-    depends on whether it needs to be preserved for verification purposes. Specific
-    restrictions may also apply if the Dutch Medical Research Involving Human
-    Subjects Act (WMO) and/or Good Clinical Practice apply to your research.
-  \end{enumerate}
-\item
-  \textbf{Treat the data according to their sensitivity}. If the data are not fully
-  anonymised, they are pseudonymous and thus still need to be handled according to
-  the GDPR guidelines!
-\end{enumerate}
-
-How de-identified is de-identified enough? You can read more about this in the
-chapter \protect\hyperlink{statistical-privacy}{Statistical approaches to privacy}.
-
-\hypertarget{deidentification-techniques}{%
-\section{De-identification techniques}\label{deidentification-techniques}}
-
-On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, technique, anonymisation method, privacy-preserving, privacy-enhancing,
-sdc, statistical disclosure control, disclosure risk
-
-Below is a list of techniques you can apply to your data to de-identify your
-dataset so that it results in a pseudonymised, or possibly even anonymised
-dataset. Bear in mind that applying these will always result in loss of
-information, so ask yourself how useful your dataset will still be after
-de-identification.
-
-The techniques are:
-
-\begin{itemize}
-\tightlist
-\item
-  \protect\hyperlink{suppression}{Suppression}
-\item
-  \protect\hyperlink{generalisation}{Generalisation}
-\item
-  \protect\hyperlink{replacement}{Replacement}
-\item
-  \protect\hyperlink{top-bottom-coding}{Top- and bottom coding}
-\item
-  \protect\hyperlink{adding-noise}{Adding noise}
-\item
-  \protect\hyperlink{permutation}{Permutation}
-\end{itemize}
-
-\textbf{Statistical Disclosure Control (SDC)}
-The below de-identification methods are sometimes also referred to as methods
-to apply Statistical Disclosure Control (SDC). You will most likely encounter
-SDC when you collaborate with a research data centre such as Statistics
-Netherlands (Centraal Bureau voor de Statistiek, CBS).
-
-\hypertarget{suppression}{%
-\subsubsection{Suppression}\label{suppression}}
-
-Suppression (sometimes called ``masking'') basically means removing variables,
-(parts of) values, or entire entries that you do not need from your dataset.
-Examples of data that you could consider removing:
-
-\begin{itemize}
-\tightlist
-\item
-  Name and contact information
-\item
-  (Parts of) address
-\item
-  Date, such as birthdate or participation date
-\item
-  Social security number/Burgerservicenummer (BSN). NB. In the Netherlands, you
-  are not allowed to use BSN in research at all!
-\item
-  Medical record number
-\item
-  IP address
-\item
-  Facial features from neuroimaging data
-\item
-  Automatically generated metadata such as GPS data in an image, author in a
-  document, etc.
-\item
-  Participants that form extreme outliers or are too unique
-\end{itemize}
-
-\hypertarget{generalisation}{%
-\subsubsection{Generalisation}\label{generalisation}}
-
-Generalisation (also sometimes called abstraction, binning, aggregation, or
-categorisation) reduces the granularity of the data so that data subjects are
-less easily singled out. It can be applied to both qualitative (e.g., interview
-notes) and quantitative data (e.g., variables in a dataset). Here are some
-examples:
-
-\begin{itemize}
-\tightlist
-\item
-  Recoding date of birth into age.
-\item
-  Categorising age into age groups.
-\item
-  Recoding rare categories as ``other'' or as missing values.
-\item
-  Replacing address with the name of a neighbourhood or town.
-\item
-  Generalising specific persons in text into broader categories, e.g., ``mother''
-  to ``{[}woman{]}'', ``Bob'' to ``{[}colleague{]}''.
-\item
-  Generalising specific locations into more general places, e.g., ``Utrecht'' to
-  ``{[}home town{]}'', or from point coordinates to larger geographical areas (e.g.,
-  polygon or linear features).
-\item
-  Coding open-ended responses into categories of responses, or as ``responded'' vs.~
-  ``not responded''.
-\end{itemize}
-
-\hypertarget{replacement}{%
-\subsubsection{Replacement}\label{replacement}}
-
-In this case, you replace sensitive details with non-sensitive ones, which are
-usually less informative, for example:
-
-\begin{itemize}
-\tightlist
-\item
-  Replacing directly identifying information that you do need with pseudonyms.
-  When doing this, always store the key file securely and separately from the
-  research data (e.g., use access control, \protect\hyperlink{encryption}{encryption}). If you
-  do not need the links with direct identifiers anymore, remove the keyfile or
-  replace the pseudonyms with random identifiers without saving the key.
-
-  A good pseudonym:
-
-  Is not meaningful with respect to the data subjects: a random (unique)
-  number or string is better than a code that contains parts of personal
-  information, because the latter may reveal details about data subjects.
-
-  Is managed securely, for example by appointing someone to be responsible
-  for managing access to the keyfile.
-
-  Can be a simple number, random number, cryptographic hash function, text
-  string, etc.
-  (\href{https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices}{read more}).
-\item
-  Replacing identifiable text with ``{[}redacted{]}''. When redacting changes in-text,
-  never just blank out the identifying value, always put a placeholder or
-  pseudonym there, e.g., in \texttt{{[}}square brackets\texttt{{]}} or \texttt{\textless{}seg\textgreater{}}segments\texttt{\textless{}/seg\textgreater{}}.
-\item
-  Replacing unique values with a summary statistic, e.g., the mean.
-\item
-  Rounding values, making the data less precise.
-\item
-  Replacing one or multiple variables with a hash.
-
-  What is hashing?
-
-  Hashing is a way of obscuring data with a string of seemingly random
-  characters with a fixed length. It can be used to create a''hashed'' pseudonym, or
-  to replace multiple variables with one unique value. There are many hash
-  functions which all have their own strength. It is usually quite difficult to
-  reverse the hashing process, except if an attacker has knowledge about the type
-  of information that was masked through hashing (e.g., for the MD5 algorithm,
-  there are many lookup tables that can reverse common hashes). To prevent
-  reversal, cryptographic hashing techniques add a ``salt'', i.e., a random number
-  or string, to the hash (the result is called a''digest''). If the ``salt'' is kept
-  confidential or is removed (similar to a keyfile), it is almost impossible to
-  reverse the hashing process.
-\end{itemize}
-
-\hypertarget{top-bottom-coding}{%
-\subsubsection{Top- and bottom-coding}\label{top-bottom-coding}}
-
-Top- and bottom-coding are mostly useful for quantitative datasets that have
-some unique extreme values. It means that you set a maximum or minimum and
-recode all higher or lower values to that minimum or maximum. For example, you
-can top-code a variable ``income'' so that all incomes over €80.000 are set to
-€80.000. This does distort the distribution, but leaves a large part of the data
-intact.
-
-\hypertarget{adding-noise}{%
-\subsubsection{Adding noise}\label{adding-noise}}
-
-\href{https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf\#page=12}{Adding noise}
-to data obfuscates sensitive details. It is mostly applied to quantitative
-datasets, but can also apply to other types of data. For example:
-
-\begin{itemize}
-\tightlist
-\item
-  Adding half a standard deviation to a variable.
-\item
-  Multiplying a variable by a random number.
-\item
-  Applying \protect\hyperlink{differential-privacy}{Differential Privacy} guarantees to an algorithm.
-\item
-  Blurring (pixelating) images and videos.
-\item
-  Voice alteration in audio.
-\end{itemize}
-
-\hypertarget{permutation}{%
-\subsubsection{Permutation}\label{permutation}}
-
-\href{https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf\#page=13}{Permutation}
-means swapping values between data subjects, so that it becomes more difficult
-to link information belonging to one data subject together. This will keep the
-distribution and summary statistics constant, but change correlations between
-variables, making some statistical analyses more difficult or impossible.
-
-\hypertarget{deidentification-resources}{%
-\section{Tools and further reading}\label{deidentification-resources}}
-
-On this page: anonymous, pseudonymous, deidentification, safeguard, protection
-measure, tool, resource, reading material
-
-You can find a selection of \textbf{de-identification tools} in
-\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification}{this GitHub repository}.
-
-For further reading, we compiled a reading list on this topic in our publicly
-accessible \href{https://www.zotero.org/groups/2554340/data_privacy_uu/collections/6HS9MPBR}{Zotero library}.
-
-We can recommend:
-
-\begin{itemize}
-\tightlist
-\item
-  \href{https://edps.europa.eu/system/files/2021-04/21-04-27_aepd-edps_anonymisation_en_5.pdf}{10 misunderstandings related to anonymisation}.
-\item
-  \href{https://doi.org/10.5281/zenodo.3584332}{Risk management for research data about people}.
-\item
-  CESSDA's \href{https://dmeg.cessda.eu/Data-Management-Expert-Guide/5.-Protect/Anonymisation}{Data Management Expert Guide on Anonymisation}.
-\item
-  \href{https://ico.org.uk/media/1061/anonymisation-code.pdf}{Anonymisation: managing data protection risk, code of practice}.
-\item
-  \href{https://doi.org/10.31234/osf.io/ybzu9}{Privacy protection in the era of open science}.
-\item
-  Statistics Netherlands (CBS) on
-  \href{https://www.cbs.nl/en-gb/our-services/methods/statistical-methods/output/statistical-disclosure-control}{techniques used to de-identify sensitive data}.
-\end{itemize}
-
-\hypertarget{statistical-privacy}{%
-\chapter{Statistical privacy}\label{statistical-privacy}}
-
-\hypertarget{sdc}{%
-\section{Statistical disclosure control}\label{sdc}}
-
-\hypertarget{k-anonymity-and-its-descendents}{%
-\section{K-anonymity and its descendents}\label{k-anonymity-and-its-descendents}}
-
-\hypertarget{differential-privacy}{%
-\section{Differential privacy}\label{differential-privacy}}
-
-\hypertarget{secure-computation}{%
-\chapter{Secure computation}\label{secure-computation}}
-
-On this page: data-to-code, code-to-data, tools-to-data, algorithm-to-data,
-cryptography, technique, tool, computing, computation, analysis, analyse,
-distributed analysis
-
-When you use personal data in your research project, you likely also need to
-analyse those data, often using a script of sorts. In this chapter, we discuss
-the following scenarios for analysing personal data:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \protect\hyperlink{data-to-code}{``Regular'' data analysis} (``data-to-code''), where the data are
-  brought to the ``script'' or analysis software in order to analyse them.
-\item
-  \protect\hyperlink{code-to-data}{``Code-to-data'' scenario}, where a script or analysis software
-  is run on the data, without moving the data elsewhere.
-\item
-  \protect\hyperlink{federated-analysis}{Federated analysis scenario}, where a script or
-  analysis software runs on multiple datasets that are in different locations,
-  without moving those datasets elsewhere.
-\end{enumerate}
-
-Additionally, we discuss relatively new
-\protect\hyperlink{computational-cryptography}{cryptographic techniques} that can be used in
-securing the analysis of personal or otherwise sensitive data.
-
-\hypertarget{which-scenario-should-i-choose}{%
-\subsubsection{Which scenario should I choose?}\label{which-scenario-should-i-choose}}
-
-Which scenario is suitable to apply in your project depends on, among others:
-
-\begin{itemize}
-\tightlist
-\item
-  Your dataset: does it contain personal data? How large is the dataset? Do you
-  know the data structure and analysis method beforehand?
-\item
-  Which computing facility is most suitable:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Local (e.g., laptop), on campus (e.g., cluster at Geosciences), from a
-    national trusted party (e.g., SURF), or external (e.g., Amazon, Microsoft)?
-  \item
-    Located in the Netherlands, Europe or in a non-EEA country?
-  \item
-    Small or large amount of computing power (CPUs/codes/threads or GPUs, memory
-    size, disk space, etc.)?
-  \end{itemize}
-\item
-  Which software you need to run on the data using the computer power, e.g., R,
-  Python, SPSS, or any other scripting language.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Does the software require root user access to install and/or configure?
-  \item
-    Does the software require paid licenses (e.g., MATLAB)?
-  \item
-    Can the software be installed in advance, or does it need to be updated
-    during analyses (e.g., with additional packages from a repository)?
-  \end{itemize}
-\item
-  Whether and with whom you are collaborating on your project.
-\end{itemize}
-
-\hypertarget{computation-support}{%
-\subsubsection{Tools and support}\label{computation-support}}
-
-We have created an overview of secure computing software and services in this
-\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/secure-computing-tools.md}{GitHub repository}.
-Keep in mind that this is by no means a complete list!
-
-If you work at Utrecht University, you can ask the
-\href{https://www.uu.nl/en/research/research-data-management/contact-us}{Research engineering team}
-for help with choosing a suitable computing solution. If you have already
-chosen a solution, but are not sure whether it is safe to use, you can contact
-\protect\hyperlink{support}{Information Security or your privacy officer} for help.
-
-\hypertarget{data-to-code}{%
-\section{``Regular'' data analysis: data-to-code}\label{data-to-code}}
-
-On this page: analysis, data-to-code, data-to-script, transfer, sharing
-
-In this scenario, you transfer the data to a computing facility, and run an
-analysis (script) on the data.
-In the most basic variant, this computing facility consists of your work
-computer or faculty computing cluster, where you do not transfer the data
-outside of your organisation for the analysis. In other cases, data need to
-be transferred to a computing facility outside your organisation, such as
-\href{https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/high-performance-and-cloud-computing}{high-performance clusters}
-from SURF, Microsoft, Amazon, etc.
-
-\hypertarget{when-to-use}{%
-\subsection{When to use}\label{when-to-use}}
-
-If you have a relatively small dataset, the ``data-to-code'' scenario is the most
-common and flexible scenario:
-
-\begin{itemize}
-\tightlist
-\item
-  It allows you to choose a computing facility that is best suited to your
-  situation.\\
-\item
-  It allows you to interactively read, analyse, export and transport the data
-  you want.
-\end{itemize}
-
-Disadvantages of this approach can be:
-
-\begin{itemize}
-\tightlist
-\item
-  When transferring the data to a computing facility, often new copies of the
-  data are created, which can make it more difficult to keep track of different
-  versions of the data.
-\item
-  Transferring data always comes with additional risks of a data breach. Besides
-  protection during data storage, it is therefore crucial to also protect the data
-  during the transfer to the computing facility, and when used at the computing
-  facility itself.\\
-\item
-  The way the data are transferred to the computing facility is not always as
-  straightforward, especially if you have a large dataset.
-\end{itemize}
-
-\hypertarget{implications-for-research}{%
-\subsection{Implications for research}\label{implications-for-research}}
-
-In this scenario, you need to make sure that:
-
-\begin{itemize}
-\tightlist
-\item
-  You apply data minimisation, access control, and, if applicable,
-  pseudonymisation and other protective measures to limit the amount of personal
-  data that is transferred to the computing facility.
-\item
-  The data are also protected during the transfer to the computing facility
-  (e.g., your work laptop or an external solution), for example through encryption.
-\end{itemize}
-
-Additionally, if the computing facility is provided by an external processor
-(e.g., SURF, Amazon):
-
-\begin{itemize}
-\tightlist
-\item
-  A \protect\hyperlink{data-processing-agreement}{data processing agreement} with the provider of
-  the computing facility is needed. If there is none, you cannot use the computing
-  facility to analyse personal data.
-\item
-  The computing facility should be suitable (secure enough) for the
-  \protect\hyperlink{data-classification}{sensitivity level} of your (personal) data. For example,
-  if your data are ``critical'' in terms of confidentiality, the computing facility
-  should also have that ``critical'' classification.
-\end{itemize}
-
-\hypertarget{examples}{%
-\subsection{Examples}\label{examples}}
-
-\begin{itemize}
-\tightlist
-\item
-  You use your faculty's high performance cluster to analyse a dataset that you
-  collected at your organisation.
-\item
-  You use the High Performance Computing platform from SURF to analyse a large
-  dataset that you collected at your organisation. In this case, a
-  \protect\hyperlink{data-processing-agreement}{data processing agreement} between your organisation
-  and SURF is needed to make sure that your organisation remains in control of the
-  personal data at SURF's servers.
-\item
-  You use Amazon Web Services (AWS) to analyse a large dataset that you
-  collected at your organisation. In this case, a
-  \protect\hyperlink{data-processing-agreement}{data processing agreement} between your organisation
-  and AWS is even more important, because Amazon has servers that are located
-  outside of the European Economic Area.
-\end{itemize}
-
-\hypertarget{code-to-data}{%
-\section{Code-to-data (one data provider)}\label{code-to-data}}
-
-On this page: code-to-data, script-to-data, algorithm-to-data, tools-to-data,
-SANE, digital research environment, secure research environment, virtual
-research environment, access control
-
-In this scenario, an analysis is run on data without transferring the data
-outside of the organisation In many cases, only the results of the analysis
-can be exported, and not the data.
-
-We distinguish the following versions of this scenario:
-
-`Tinker' version: interaction with the data
-
-In the Tinker version, users can log in to the computing facility and directly
-interact with the data, but there may be technical limitations on the import and
-export of the data. Procedural limitations should be posed through
-\protect\hyperlink{agreements}{agreements} with the user. This version can be implemented in
-multiple ways, such as:
-
-Accessing and analysing locally stored data on premises. An example is
-analysing highly sensitive data in a dedicated room without an internet
-connection.
-
-Accessing locally stored data through
-\href{https://manuals.uu.nl/en/manual/solisworkspace-faq/}{remote desktop}.
-This usually does not impose technical limitations on what can be done with
-the data.
-
-\href{https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/virtual-research-environments}{Virtual Research Environments}
-(VREs) are temporary facilities where you can interactively perform
-computations on data in the cloud. In this case, it is sometimes possible to
-impose technical limitations on what can be done with the data (in which case
-these are called
-``\href{https://the-turing-way.netlify.app/project-design/sdpw/trew.html}{Trusted Research Environments}'').
-Examples of VREs are
-\href{https://www.surf.nl/en/surf-research-cloud-collaboration-portal-for-research}{SURF Research Cloud}
-and \href{https://www.andrea-cloud.eu/}{anDREa}.
-
-`Blind' version: remote execution
-
-In the Blind version, users do not have access to the data
-at all, and only receive the results of an analysis, after reviews by the data
-owner(s) to ensure that the results do not contain sensitive details. In this
-case, a \protect\hyperlink{synthetic-data}{synthetic dataset} can be provided to write and test
-the analysis script on, before it is run on the real dataset. This ``blind''
-version could be run in a dedicated environment where researchers can upload
-their script, but can also be implemented manually, for example when a
-researcher sends a script by email to be run on a dataset, and receives the
-results back via email as well (i.e., this is possible when neither the script
-nor the results contain any sensitive details).
-
-At the moment, both the Tinker and Blind versions of this code-to-data scenario
-are being developed as virtual research environments in the
-\href{https://www.surf.nl/en/news/sane-secure-data-environment-for-social-sciences-and-humanities}{Secure ANalysis Environment}
-project (SANE).
-
-\hypertarget{when-to-use-1}{%
-\subsection{When to use}\label{when-to-use-1}}
-
-Reasons to use this scenario include:
-
-\begin{itemize}
-\tightlist
-\item
-  You want to retain control over the data, e.g., to prevent any unnecessary
-  copies from being made (data sovereignty).
-\item
-  You do not want, or are not allowed to transfer the data, because they contain
-  personal data or intellectual property.
-\item
-  The dataset is too large to transfer.
-\item
-  In the `Blind' version: You want to be sure that the analysis results do not
-  contain any sensitive details.
-\end{itemize}
-
-\hypertarget{implications-for-research-1}{%
-\subsection{Implications for research}\label{implications-for-research-1}}
-
-Compared to the ``\protect\hyperlink{data-to-code}{data-to-code}'' scenario, the code-to-data
-approach offers more control over the data, but often requires more, sometimes
-manual, work, such as:
-
-\begin{itemize}
-\tightlist
-\item
-  Checking the credentials of a user: can they be trusted? An
-  \protect\hyperlink{agreements}{agreement} with the user may be desirable or even required. In
-  SURF Research Cloud, credentials can be checked using
-  \href{https://www.surf.nl/en/surf-research-access-management-easy-and-secure-access-to-research-services}{SURF Research Access Management}.
-\item
-  Preparing a protected computing environment that a user can use.
-\item
-  In the `Blind' version:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Creating a \protect\hyperlink{synthetic-data}{synthetic dataset}.
-  \item
-    Reviewing the output of the script for sensitive elements. This requires
-    the right expertise.
-  \item
-    Reviewing whether the code that is run on the data is privacy-preserving.
-    This also requires the right expertise.
-  \end{itemize}
-\end{itemize}
-
-It is essential to have a well-described workflow to use this scenario, to
-ensure confidentiality of the personal data. Additionally, dedicated personnel
-may make the process easier and consistent.
-
-\hypertarget{examples-1}{%
-\subsection{Examples}\label{examples-1}}
-
-\begin{itemize}
-\tightlist
-\item
-  A research team needs to process a dataset containing health data to determine
-  the number of Covid-19 patients at a certain hospital. The hospital providing
-  this dataset does not allow transferring the dataset, but they do allow to run
-  scripts on the dataset. To make that possible, the hospital provides a computing
-  facility, owned by the hospital, to run scripts from research teams. In addition,
-  for each result, the hospital staff inspects if it contains personal data, and
-  if not, it will be passed onto the research team. Since a result like ``100
-  patients at this hospital have had Covid-19 in 2021'' does not contain personal
-  data, it can be safely passed to the research team.
-\item
-  In the \protect\hyperlink{data-donation}{data donation approach}, the software
-  \href{https://github.com/eyra/port}{PORT} can be run on data
-  subjects' locally stored data, and only the results of that analysis can be
-  shared with the researcher if allowed by the data subject. Note however that the
-  sensitivity of the results fully depend on the analysis that was run.
-\end{itemize}
-
-\hypertarget{federated-analysis}{%
-\section{Federated analysis}\label{federated-analysis}}
-
-On this page: federated analysis, federated learning, machine learning,
-distributed analysis, distributed learning, collaboration, harmonisation
-
-Federated analysis is an extension to the \protect\hyperlink{code-to-data}{code-to-data} scenario,
-where the data of interest are owned by multiple organisations. In this scenario,
-the data remain with multiple data providers, and the script ``travels'' across
-those data sources, combining the results in a central location, and only
-sharing the results of the analysis. If necessary, there are techniques to hide
-intermediate results (which could also reveal sensitive information). If the
-script in question is a machine learning model, then this technique is called
-``federated (machine) learning''. You can learn more about federated analysis in
-\href{https://foldercase.com/blog-federated-data-analysis-how-to-get-started.php}{this article}.
-
-\hypertarget{when-to-use-2}{%
-\subsection{When to use}\label{when-to-use-2}}
-
-Federated analysis is useful when there are multiple data providers who do not
-allow transferring their data outside of the organisation, or whose data are
-simply too large to share.
-
-\hypertarget{implications-for-research-2}{%
-\subsection{Implications for research}\label{implications-for-research-2}}
-
-\begin{itemize}
-\tightlist
-\item
-  A prerequisite for analysing data in this way is often that the data at the
-  different providers are similarly structured and use similar terminology (e.g.,
-  making sure that every party uses ``male'', ``female'', and ``other'' as levels for
-  the variable Gender, instead of ``girl'' and ``boy'', or 0 and 1).
-\item
-  Federated analysis works best for ``horizontally partitioned'' datasets, where
-  different organisations have the same (types of) information, but from different
-  people. It is not well-suited for ``vertically partitioned'' datasets, where the
-  different organisations have different (types of) information on the same people
-  and thus want to link those different data sources.
-\item
-  Setting up the infrastructure for federated analysis is challenging and can
-  take a large amount of time (software installation, access rights, linking
-  datasets, etc.). It is wise to first investigate whether this option is indeed
-  the most suitable for your project.
-\end{itemize}
-
-\hypertarget{examples-2}{%
-\subsection{Examples}\label{examples-2}}
-
-\begin{itemize}
-\tightlist
-\item
-  A research team needs access to various datasets containing health data to
-  determine which factors contribute to health of Covid-19 patients at various
-  hospitals. Each dataset contains health data from patients of the hospital where
-  they are treated. Since each dataset contains sensitive personal data, it is not
-  desirable to store these datasets in a central location to combine them. To be
-  able to answer the research question, one needs to access each dataset separately
-  and combine the results of each dataset. To make this possible, each hospital
-  provides a computing facility. The research team submits their script to each of
-  the computing facilities, where it is run on the local dataset. After a check by
-  each hospital's staff that the results do not contain any sensitive details, the
-  results of the individual computations are combined centrally into one result.
-  In the example, the result of the calculation at each hospital is a prediction
-  model for Covid-19 patients, and the individual models are combined to create a
-  more reliable prediction model.
-\item
-  Several university medical centres use the
-  \href{https://pht.health-ri.nl/}{Personal Health Train} from
-  Health-RI, which relies on the \href{https://vantage6.ai/}{vantage6}
-  software.
-\item
-  \href{https://www.datashield.org/index.php/about}{DataSHIELD} is
-  an infrastructure and a series of R packages that allows to co-analyse data
-  hosted at different organisations. It requires harmonising the data at the
-  different organisations and setting up the DataSHIELD infrastructure.
-\end{itemize}
-
-\hypertarget{computational-cryptography}{%
-\section{Cryptographic techniques}\label{computational-cryptography}}
-
-On this page: encryption, cryptography, security, collaboration, confidential
-computing, mpc, homomorphic encryption
-
-Besides the scenarios described previously, there are also multiple cryptographic
-techniques that can be applied to protect sensitive data in the analysis phase.
-Here, we discuss secure multiparty computation, confidential computing, and
-homomorphic encryption.
-
-Although there is some overlap in functionality and purpose between these three techniques, they are generally still considered to be distinct and can be combined to enhance security.
-
-These cryptographic techniques are relatively new and are not available as
-distinct services (yet) for direct application in research. They are for now
-listed here for information purposes.
-
-\hypertarget{mpc}{%
-\subsection{Secure multiparty computation}\label{mpc}}
-
-Secure multiparty computation (also referred to as ``MPC'') is a set of
-cryptographic techniques that allows multiple parties to jointly perform analyses
-on distributed datasets, as if they had a shared database, and without revealing
-the underlying data to each other. Among those techniques are secure set
-intersection (securely investigating which elements multiple databases have in
-common), homomorphic encryption (see below), and others.
-
-\hypertarget{when-to-use-3}{%
-\subsubsection{When to use}\label{when-to-use-3}}
-
-The benefits of MPC are that no raw data are shared between the parties,
-computations are guaranteed to perform correctly, and there is a degree of
-control on who receives the result of the computation (i.e., the results are
-not necessarily combined in a central location). MPC is therefore a good way of
-implementing Privacy by Design into your project when you work with personal
-data.
-
-Contrary to \protect\hyperlink{federated-analysis}{federated analysis}, MPC is suitable for
-linking ``vertically partitioned'' datasets, i.e., when different organisations
-have different (types of) information on the same people and thus want to link
-those different data sources.
-
-\hypertarget{implications-for-research-3}{%
-\subsubsection{Implications for research}\label{implications-for-research-3}}
-
-\begin{itemize}
-\tightlist
-\item
-  The computation in MPC is really joint: you need to have agreed on a specific
-  analysis to be performed and what you will reveal as result of the computation.
-\item
-  There is no one-size-fits-all MPC solution: different use cases ask for
-  different implementations of MPC.
-\item
-  Additional computational resources are required to generate random secrets
-  and distribute data over the multiple parties.
-\end{itemize}
-
-\hypertarget{example}{%
-\subsubsection{Example}\label{example}}
-
-\begin{itemize}
-\tightlist
-\item
-  MPC was used by a medical insurance company and hospital to determine the
-  effectiveness of a personal lifestyle app for diabetes. In this example, it was
-  possible to calculate average medical cost for different patient groups, based
-  on whether they used the app or not, without revealing patient information
-  between the insurance company and the hospital.
-\item
-  You can find a simplified example on
-  \href{https://www.geeksforgeeks.org/what-is-secure-multiparty-computation/}{jointly calculating average income here}.
-\end{itemize}
-
-You can find more information about secure multiparty computation on
-\url{https://securecomputation.org/}, in
-\href{http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b}{this report},
-and on the \href{https://mpc.tno.nl}{website of TNO}.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{confidential-computing}{%
-\subsection{Confidential computing}\label{confidential-computing}}
-
-Confidential computing is a technique that protects data in use through a
-(hardware-based) Trusted Execution Environment (TEE). This environment makes
-sure that data within it are kept confidential (data confidentiality) and that
-both the data and the code running in the TEE cannot be modified or deleted
-(data and code integrity). The TEE uses embedded encryption keys and makes sure
-that the analysis stops running when malware or unauthorised access is detected.
-Moreover, data and code are even invisible to the operating system, cloud
-provider and any virtual machines.
-
-There are many possible applications of this technique, for example:
-
-\begin{itemize}
-\tightlist
-\item
-  You want to protect against unauthorised access during the analysis of
-  sensitive data.
-\item
-  You want to analyse sensitive data, and it is necessary to use an untrusted
-  cloud platform or infrastructure.
-\item
-  You want to prevent the analysis script from leaking or manipulating data.
-\end{itemize}
-
-It is important that confidential computing is used together with encryption of
-data at rest and in transit, with restricted access to the decryption keys. It
-also requires the TEE to be trustworthy (attestation), which is an active field
-of study. You can read more on the website of the
-\href{https://confidentialcomputing.io/}{Confidential Computing Consortium}.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{homomorphic-encryption}{%
-\subsection{(Fully) homomorphic encryption}\label{homomorphic-encryption}}
-
-Where ``regular'' \protect\hyperlink{encryption}{encryption} focuses on data at rest (e.g., in
-storage) or data in transit (e.g., when transferring data), homomorphic
-encryption allows analyses to be performed on encrypted data (``data in use'').
-During the analysis, both the data and the computation result remain encrypted,
-unless they are decrypted by the decryption key owner. This technique can be
-applied both in \protect\hyperlink{confidential-computing}{confidential computing} and in
-\protect\hyperlink{mpc}{secure multiparty computation}.
-
-There are multiple types of homomorphic encryption: partial, somewhat partial
-and fully homomorphic encryption. The latter is the most promising solution, as
-it allows an infinite number of additions and multiplications to be performed on
-the encrypted data.
-
-Currently, the practical use of homomorphic is limited, because it can require
-a lot of computational resources to use it, causing it to be relatively slow.
-New implementations are however being developed, see
-\href{https://homomorphicencryption.org/introduction/}{this website}
-for a list of available implementations. Another limitation is that there is no
-interaction with the data during the analysis, and so you cannot check whether
-the analysis was successful. To solve this, you could use a synthetic dataset
-to develop and test your algorithms first.
-
-\hypertarget{other-techniques}{%
-\chapter{Other techniques}\label{other-techniques}}
-
-\hypertarget{encryption}{%
-\section{Encryption}\label{encryption}}
-
-\hypertarget{synthetic-data}{%
-\section{Synthetic Data}\label{synthetic-data}}
-
-\hypertarget{data-donation}{%
-\section{Data donation}\label{data-donation}}
-
-\hypertarget{tools-and-services}{%
-\chapter{Tools \& Services}\label{tools-and-services}}
-
-There are many tools that you can use to work with personal data, such as tools
-to collect, store, and analyse personal data, but also to deidentify, encrypt
-and synthetise datasets. In this chapter, we provide resources to identify
-the tool you are looking for.
-
-In short:
-
-\begin{itemize}
-\tightlist
-\item
-  If you work at Utrecht University, you can use \url{https://tools.uu.nl} to find UU-approved tools.
-\item
-  In \href{https://github.com/UtrechtUniversity/privacy-engineering-tools/}{this GitHub repository},
-  you can find tools and packages to deidentify, encrypt, synthetise and otherwise
-  work with personal data.
-\item
-  If you are in doubt whether you can use a specific tool, please contact your
-  \protect\hyperlink{support}{privacy officer, data manager or information security} for help.
-\end{itemize}
-
-Are you developing a website or application yourself that uses user data? Check
-out the \href{https://lincnil.github.io/GDPR-Developer-Guide/}{CNIL GDPR Guide for Developers}
-for step-by-step guidance on how to develop your software in compliance with the GDPR.
-
-\hypertarget{uu-tools}{%
-\section{Utrecht University tool finders}\label{uu-tools}}
-
-On this page: storage, storing, collection, repository, data archive, sharing,
-tools, services
-
-When you are using a tool that processes personal data, that tool should do so
-in compliance with the GDPR. If you work at Utrecht University (UU), you can use
-\url{https://tools.uu.nl} to find:
-
-\begin{itemize}
-\tightlist
-\item
-  tools that are safe to use in the \href{https://tools.uu.nl/tooladvisor}{Tooladvisor}.
-  These include tools for data collection, file sharing, audio transcription, and more.
-  Most of the tools listed in the Tooladvisor are safe to use either because no (personal)
-  data are being used by the tool, data are processed at UU premises, or because
-  of a \protect\hyperlink{data-processing-agreement}{Data Processing Agreement} between
-  UU and the supplier of the tool, in which the supplier agreed to
-  sufficiently protect the data entered into their tool.
-\item
-  all \href{https://tools.uu.nl/storagefinder/}{storage facilities}
-  provided by UU.
-\item
-  a selection of possible \href{https://tools.uu.nl/repository-decision-tool/}{data repositories}
-  to publish (meta)data in.
-\end{itemize}
-
-Additionally, you can find available software via
-\href{https://intranet.uu.nl/en/knowledgebase/software-at-work-teaching-rooms-and-home}{this intranet page}
-
-\hypertarget{tool-repository}{%
-\section{Tools to deidentify, synthetise and work safely with personal data}\label{tool-repository}}
-
-On this page: anonymisation, pseudonymisation, de-identification, synthetic data, encryption,
-secure computing, computation
-
-We are creating an overview of potential privacy-related tools for
-deidentifying data, creating synthetic data, and analysing data in secure
-environments in a GitHub repository.
-
-To the overview
-
-Please feel free to
-\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/\#contact-and-contribution}{open an Issue or a Pull Request}
-in this repository if you wish to adjust the existing content or add new content.
-
-\hypertarget{tool-requirements}{%
-\section{Requirements for a third-party tool}\label{tool-requirements}}
-
-On this page: custom tool, provider, agreement, third-party tool, service
-
-\textbf{If your tool of choice is not listed in \url{https://tools.uu.nl}, but it does
-process personal data, please contact the
-\href{https://www.uu.nl/en/organisation/information-and-technology-services-its/i-want-to/get-help-and-advice}{IT servicedesk}.
-They will help you assess whether a tool is safe to use.}
-
-If a tool is processing personal data, the following two aspects are important to consider:
-
-\hypertarget{who-is-processing-the-personal-data-arrange-an-agreement}{%
-\subsection{1. Who is processing the personal data: arrange an agreement}\label{who-is-processing-the-personal-data-arrange-an-agreement}}
-
-When you use a third-party tool that processes personal data, the data are not
-under your (full) control. In this case, you must ensure the GDPR compliance of
-the tool provider using (\href{https://gdpr-info.eu/art-46-gdpr/}{art.46}):
-
-\begin{itemize}
-\tightlist
-\item
-  A \protect\hyperlink{data-processing-agreement}{Data processing agreement} -
-  when the provider processes (e.g., stores, analyses, collects) personal data
-  within the European Economic Area (EEA) or a country with an
-  \href{https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en}{adequate level of data protection}.
-\item
-  \protect\hyperlink{scc}{Standard contractual clauses} (SCCs) - when personal data are processed
-  by a supplier outside of the EEA without an adequate level of data protection.
-  These make sure the provider will use sufficient measures to protect the personal
-  data and enable data subjects to exercise their rights.
-\item
-  \protect\hyperlink{informed-consent-forms}{Explicit consent} of data subjects who have been
-  informed on the risks involved - in the absence of an agreement. Please contact your
-  \protect\hyperlink{support}{privacy officer} if you are considering this option.
-\end{itemize}
-
-You can assume agreements are in place for the tools recommended by UU.
-If there is no agreement in place between UU and the tool provider, using
-this tool is \textbf{not allowed}, even if the provider is located within the EEA,
-has an adequate level of data protection, or has high security standards. The
-only exception is when data are always end-to-end encrypted, because then the
-tool provider cannot learn anything from the data.
-
-\hypertarget{security-level}{%
-\subsection{2. Security level}\label{security-level}}
-
-The tool provider should employ good security practices, such as regular back-ups
-in distinct geographical areas (preferably in replication rather than on tape),
-regular integrity checks, encryption at rest, multi-factor authentication, etc.
-Most of these aspects will likely be covered in the agreement, and sometimes a
-\protect\hyperlink{data-classification}{data classification} will need to be performed.
-\protect\hyperlink{support}{Information security} can help you determine all necessary security requirements.
-
 \hypertarget{part-storage-sharing-publication}{%
 \part*{Storage, Sharing, Publication}\label{part-storage-sharing-publication}}
 \addcontentsline{toc}{part}{Storage, Sharing, Publication}
@@ -4578,7 +3338,8 @@ an alternative solution.
 \section{Where should I store personal data?}\label{data-storage-where}}
 
 On this page: storage, location, medium, yoda, o-drive, u-drive, usb stick,
-google drive, onedrive, teams, surfdrive, paper, security
+google drive, onedrive, teams, surfdrive, paper, security\\
+Date of last review: 2022-06-02
 
 If you work at Utrecht University (UU), you can find a suitable storage medium for
 digital research data via the
@@ -4617,7 +3378,8 @@ purposes.
 \section{How should I store personal data?}\label{data-storage-how}}
 
 On this page: access control, accountability, interoperability, interoperable,
-separate, anonymise, pseudonymise, de-identify
+separate, anonymise, pseudonymise, de-identify\\
+Date of last review: 2022-06-02
 
 \textbf{Once you have chosen a suitable storage medium, you should act in accordance
 with the nature of your data as well}, for example through:
@@ -4659,7 +3421,8 @@ You can read more about this in the RDM guide
 \hypertarget{data-storage-duration}{%
 \section{For how long should I store personal data?}\label{data-storage-duration}}
 
-On this page: retention, storage period, duration, remove, delete
+On this page: retention, storage period, duration, remove, delete\\
+Date of last review: 2022-06-02
 
 \textbf{As per the GDPR, anyone processing personal data can only store those for as
 long as is necessary for prespecified purposes
@@ -4728,7 +3491,8 @@ and \href{https://eraser.heidi.ie/}{Eraser} to delete data.
 \chapter{Sharing data with collaborators}\label{data-sharing-collaboration}}
 
 On this page: share, transfer, collaborate, consortium, outside EU, EEA,
-security, legal basis, transparency, transparent, third-party transfer
+security, legal basis, transparency, transparent, third-party transfer\\
+Date of last review: 2022-09-22
 
 This chapter addresses guidelines to take into account when you want to share
 personal data with collaborators outside of your own institution \textbf{during}
@@ -4842,7 +3606,8 @@ with encryption.
 \chapter{Sharing data for reuse}\label{data-sharing-reuse}}
 
 On this page: publication, publish, share, transfer, open science, open data,
-FAIR data, reuse, reproducibility
+FAIR data, reuse, reproducibility\\
+Date of last review: 2023-03-09
 
 \textbf{In the context of Open Science, it is becoming more important to share data with
 other researchers, so that they can reproduce results and reuse the data to
@@ -4877,7 +3642,8 @@ your \protect\hyperlink{support}{privacy officer} for help.
 \section{Sharing anonymised data}\label{publish-anonymous-data}}
 
 On this page: anonymous, publication, share, transfer, open science, open data,
-FAIR data
+FAIR data\\
+Date of last review: 2023-03-09
 
 If (part of) the data are truly fully anonymous, they are not classified as
 personal data anymore: from a privacy perspective, you can publish this
@@ -4919,7 +3685,8 @@ This way, others can find, access, understand and reuse your data.
 On this page: pseudonymous, personal, sensitive, share, transfer, open science,
 reuse, access control, legal basis, legal ground, data sharing, transparency,
 transparent, inform, further processing, secondary use, secondary processing,
-safeguards, protection, FAIR data
+safeguards, protection, FAIR data\\
+Date of last review: 2023-03-09
 
 If you cannot fully anonymise your data, they are still considered personal data.
 In order to share personal data for reuse, you therefore need to consider the
@@ -5127,7 +3894,8 @@ such as the data access protocol mentioned under Accessible.
 \section{Alternatives to sharing personal data}\label{sharing-reuse-alternatives}}
 
 On this page: metadata, documentation, information, publication, share, transfer,
-open science, FAIR data, reproducibility
+open science, FAIR data, reproducibility\\
+Date of last review: 2023-03-09
 
 \hypertarget{publish-metadata}{%
 \subsection{Publish metadata and documentation}\label{publish-metadata}}
@@ -5165,6 +3933,1582 @@ There are also more technical alternatives to transferring personal data to othe
   (e.g., group-level statistics).
 \end{itemize}
 
+\hypertarget{part-techniques-tools}{%
+\part*{Techniques \& Tools}\label{part-techniques-tools}}
+\addcontentsline{toc}{part}{Techniques \& Tools}
+
+\hypertarget{pseudonymisation-anonymisation}{%
+\chapter{Pseudonymisation \& Anonymisation}\label{pseudonymisation-anonymisation}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, sdc, statistical disclosure control\\
+Date of last review: 2023-05-02
+
+Pseudonymisation and anonymisation are both ways to make personal data less
+easily linkable to individual data subjects: they are methods to \textbf{de-identify}
+personal data. Importantly, whereas anonymisation results in non-personal data
+that are not subject to the GDPR anymore, pseudonymised data are \textbf{still personal
+data}. It is therefore important to understand the difference between the two,
+and to estimate when your data are indeed fully anonymous.
+
+Any operation that you do up until the personal data are anonymised - including
+the anonymisation itself - is still subject to the GDPR. So even if you can
+anonymise your data later, you still need to comply with the GDPR for everything
+you do beforehand (e.g., collecting, analysing, sharing, etc.).
+
+In this chapter, we:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Explain what \protect\hyperlink{definition-anonymisation-pseudonymisation}{pseudonymisation and anonymisation}
+  mean.
+\item
+  Present a step-by-step
+  \protect\hyperlink{deidentification-workflow}{workflow to de-identify personal data}.
+\item
+  List a number of \protect\hyperlink{deidentification-techniques}{techniques} that you can use
+  to de-identify personal data.
+\end{enumerate}
+
+Finally, we list some resources for \protect\hyperlink{deidentification-resources}{further reading}.
+
+\hypertarget{definition-anonymisation-pseudonymisation}{%
+\section{What are pseudonymisation and anonymisation?}\label{definition-anonymisation-pseudonymisation}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, identifiable, sdc, statistical disclosure control, disclosure risk\\
+Date of last review: 2023-05-02
+
+\hypertarget{pseudonymisation}{%
+\subsection{Pseudonymisation}\label{pseudonymisation}}
+
+Pseudonymisation is a safeguard that reduces the linkability of your data to
+your data subjects (\href{https://gdpr-info.eu/recitals/no-28/}{rec. 28}).
+It means that you de-identify the data in such a way that they can no longer
+lead to identification \emph{without additional information}
+(\href{https://gdpr-info.eu/art-4-gdpr/}{art. 4(5)}). In theory,
+removing this additional information should lead to anonymised data.
+
+Pseudonymisation is often interpreted as replacing direct
+identifiers (e.g., names) with pseudonyms, and storing the link between the
+identifiers and the pseudonyms in a key file, separated from the research data.
+While this is a good practice (it makes sure that data are not directly
+identifiable anymore), this interpretation of pseudonymisation does not take
+into account \protect\hyperlink{when-anonymous}{indirectly identifiable information}, and thus
+does not necessarily fulfil the GDPR's definition of pseudonymisation!
+
+Pseudonymous data are still \textbf{personal data} and thus subject to the GDPR. This
+is because the de-identification is \emph{reversible}: identifying data subjects is
+still possible, just more difficult. This means that in order to use
+pseudonymous data, you still need to comply to all the rules in the GDPR.
+
+\hypertarget{anonymisation}{%
+\subsection{Anonymisation}\label{anonymisation}}
+
+Anonymisation is a de-identification process that results in data that are
+``rendered anonymous in such a manner that the data subject is not or no longer
+identifiable'' (\href{https://gdpr-info.eu/recitals/no-26/}{rec. 26}),
+neither directly nor indirectly, and by no one, including you. When data are
+anonymised, they are no longer personal data, and thus no longer subject to the
+GDPR. Note, however, that \textbf{everything you do \emph{before} the data are anonymised}
+(including the anonymisation itself) \emph{is} subject to the GDPR!
+
+Anonymisation is very difficult to accomplish in practice!
+\href{https://www.youtube.com/watch?v=puQvpyf0W-M}{This video}
+nicely illustrates why.
+
+\hypertarget{identifiability-spectrum}{%
+\subsection{The identifiability spectrum}\label{identifiability-spectrum}}
+
+The relationship between (identifiable) personal data, pseudonymous data and
+anonymous data should be seen as lying on a spectrum. The more de-identified the
+data are, the closer they are to anonymous data and the lower the risk of
+re-identification. The visual guide below nicely illustrates this:
+
+\includepdf{img/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}
+
+\emph{If the image does not show correctly,
+\href{https://fpf.org/wp-content/uploads/2017/06/FPF_Visual-Guide-to-Practical-Data-DeID.pdf}{view it online}}
+
+\hypertarget{when-anonymous}{%
+\subsection{When are data anonymous?}\label{when-anonymous}}
+
+Your data can be considered anonymous if data subjects can only be re-identified
+with an \emph{unreasonable} amount of effort, i.e., taking into account the costs,
+required time and technology, and future technological developments
+(\href{https://gdpr-info.eu/recitals/no-26/}{rec. 26}).
+
+Basically, your data are \textbf{not} anonymous (personal) when they comply with
+\emph{any} of the \protect\hyperlink{personal-data-assess}{characteristics of personal data}:
+
+\begin{itemize}
+\tightlist
+\item
+  There is directly identifiable information (e.g., name, email address, social
+  security number, etc.).
+\item
+  Data subjects can be singled out (i.e., you can tell one data subject from
+  another within a known group of data subjects).
+\item
+  It is possible to identify data subjects by linking records (``mosaic effect''),
+  either within your own database or when using other data sources.
+\item
+  It is possible to identify a data subject by inferring information about them
+  (e.g., infer a disease by the variable ``medication''), either within
+  your own database or when using other data sources.
+\item
+  It is possible to reverse the de-identification.
+\end{itemize}
+
+Whether data can be seen as anonymous strongly depends on the context of your
+research and how much information is available about the data subjects.
+
+When collaborating with research data centres, such as the Statistics Netherlands
+(Centraal Bureau voor de Statistiek, CBS), often
+\href{https://cros-legacy.ec.europa.eu/system/files/dwb_standalone-document_output-checking-guidelines.pdf}{output checking guidelines}
+are used to determine the risk of identification resulting from the analysis
+output of sensitive data.
+
+\hypertarget{anonymisation-alternatives}{%
+\subsection{Alternatives to anonymisation}\label{anonymisation-alternatives}}
+
+Anonymisation is not the only solution. The best way to protect data subjects'
+privacy is to only collect/process their personal data if necessary
+(\protect\hyperlink{minimise}{minimisation}). Additionally, in many cases, full anonymisation
+is not even possible or desirable, for example if it results in too much
+information loss or incorrect inferences.
+
+If you cannot anonymise the data, there are always other ways in which you can
+protect the data, such as:
+
+\begin{itemize}
+\tightlist
+\item
+  De-identifying (pseudonymising) the data to the extent you can.
+\item
+  Controlling access to the data, for example using
+  \protect\hyperlink{agreements}{user agreements}, authentication, \protect\hyperlink{encryption}{encryption},
+  \protect\hyperlink{secure-computation}{secure analysis environments}, etc.
+\item
+  Creating a \protect\hyperlink{synthetic-data}{synthetic version} of your dataset to share with
+  others.
+\end{itemize}
+
+\hypertarget{deidentification-workflow}{%
+\section{Step-by-step de-identification}\label{deidentification-workflow}}
+
+On this page: anonymous, pseudonymous, step-by-step, workflow, deidentification,
+safeguard, protection measure\\
+Date of last review: 2023-05-02
+
+Below is a step-by-step workflow that you can use to de-identify your data.
+Whether or not the de-identification results in a pseudonymised or an anonymised
+dataset is highly dependent on the characteristics of the dataset and the context
+in which it was obtained.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Perform the de-identification in a \textbf{safe storage or processing environment}:
+  remember that you are working with personal data, and as long as the data are
+  not anonymous, they will be subject to the GDPR!
+\item
+  Identify any \textbf{potentially identifying information} in your data.
+\item
+  Assess whether you need to \textbf{collect this information at all}. For example:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Do you really need IP addresses in your survey data?
+  \item
+    Do you really need to record audio or video?
+  \item
+    Do you really need a consent form with a name, contact information, and
+    signature on it?
+  \item
+    Replace names with pseudonyms in filenames and within the data where
+    possible.
+  \end{enumerate}
+\item
+  If you do not need \textbf{directly identifying information} to answer your research
+  question, but you do need it to, for example, contact data subjects:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Separate directly identifying information from the research data.
+  \item
+    Use pseudonyms to refer to individuals instead of names.
+  \item
+    Create a keyfile to link the pseudonyms to the names.
+  \item
+    Store the directly identifiable information and the keyfile in a separate
+    location from the research data and/or in encrypted form.
+  \end{enumerate}
+\item
+  Consider which types of information may lead to \textbf{indirect identification}, such
+  as demographic information (age, education, occupation, etc.), geolocation,
+  specific dates, medical conditions, unique personal characteristics, open text
+  responses, etc.
+\item
+  \textbf{De-identify} the directly and indirectly identifiable data using (a selection
+  of) the \protect\hyperlink{deidentification-techniques}{techniques described on the next page}.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Before you start, save a copy of the raw, untouched dataset, in case
+    anything in the process goes wrong.
+  \item
+    Document the steps you took, for example in a programming script or README
+    file, which always accompanies the data.
+  \item
+    Whether you can delete the raw (non-pseudonymised) version of the dataset,
+    depends on whether it needs to be preserved for verification purposes. Specific
+    restrictions may also apply if the Dutch Medical Research Involving Human
+    Subjects Act (WMO) and/or Good Clinical Practice apply to your research.
+  \end{enumerate}
+\item
+  \textbf{Treat the data according to their sensitivity}. If the data are not fully
+  anonymised, they are pseudonymous and thus still need to be handled according to
+  the GDPR guidelines!
+\end{enumerate}
+
+How de-identified is de-identified enough? You can read more about this in the
+chapter \protect\hyperlink{statistical-privacy}{Statistical approaches to privacy}.
+
+\hypertarget{deidentification-techniques}{%
+\section{De-identification techniques}\label{deidentification-techniques}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, technique, anonymisation method, privacy-preserving, privacy-enhancing,
+sdc, statistical disclosure control, disclosure risk\\
+Date of last review: 2023-05-02
+
+Below is a list of techniques you can apply to your data to de-identify your
+dataset so that it results in a pseudonymised, or possibly even anonymised
+dataset. Bear in mind that applying these will always result in loss of
+information, so ask yourself how useful your dataset will still be after
+de-identification.
+
+The techniques are:
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{suppression}{Suppression}
+\item
+  \protect\hyperlink{generalisation}{Generalisation}
+\item
+  \protect\hyperlink{replacement}{Replacement}
+\item
+  \protect\hyperlink{top-bottom-coding}{Top- and bottom coding}
+\item
+  \protect\hyperlink{adding-noise}{Adding noise}
+\item
+  \protect\hyperlink{permutation}{Permutation}
+\end{itemize}
+
+\textbf{Statistical Disclosure Control (SDC)}
+The below de-identification methods are sometimes also referred to as methods
+to apply Statistical Disclosure Control (SDC). You will most likely encounter
+SDC when you collaborate with a research data centre such as Statistics
+Netherlands (Centraal Bureau voor de Statistiek, CBS).
+
+\hypertarget{suppression}{%
+\subsubsection{Suppression}\label{suppression}}
+
+Suppression (sometimes called ``masking'') basically means removing variables,
+(parts of) values, or entire entries that you do not need from your dataset.
+Examples of data that you could consider removing:
+
+\begin{itemize}
+\tightlist
+\item
+  Name and contact information
+\item
+  (Parts of) address
+\item
+  Date, such as birthdate or participation date
+\item
+  Social security number/Burgerservicenummer (BSN). NB. In the Netherlands, you
+  are not allowed to use BSN in research at all!
+\item
+  Medical record number
+\item
+  IP address
+\item
+  Facial features from neuroimaging data
+\item
+  Automatically generated metadata such as GPS data in an image, author in a
+  document, etc.
+\item
+  Participants that form extreme outliers or are too unique
+\end{itemize}
+
+\hypertarget{generalisation}{%
+\subsubsection{Generalisation}\label{generalisation}}
+
+Generalisation (also sometimes called abstraction, binning, aggregation, or
+categorisation) reduces the granularity of the data so that data subjects are
+less easily singled out. It can be applied to both qualitative (e.g., interview
+notes) and quantitative data (e.g., variables in a dataset). Here are some
+examples:
+
+\begin{itemize}
+\tightlist
+\item
+  Recoding date of birth into age.
+\item
+  Categorising age into age groups.
+\item
+  Recoding rare categories as ``other'' or as missing values.
+\item
+  Replacing address with the name of a neighbourhood or town.
+\item
+  Generalising specific persons in text into broader categories, e.g., ``mother''
+  to ``{[}woman{]}'', ``Bob'' to ``{[}colleague{]}''.
+\item
+  Generalising specific locations into more general places, e.g., ``Utrecht'' to
+  ``{[}home town{]}'', or from point coordinates to larger geographical areas (e.g.,
+  polygon or linear features).
+\item
+  Coding open-ended responses into categories of responses, or as ``responded'' vs.~
+  ``not responded''.
+\end{itemize}
+
+\hypertarget{replacement}{%
+\subsubsection{Replacement}\label{replacement}}
+
+In this case, you replace sensitive details with non-sensitive ones, which are
+usually less informative, for example:
+
+\begin{itemize}
+\tightlist
+\item
+  Replacing directly identifying information that you do need with pseudonyms.
+  When doing this, always store the key file securely and separately from the
+  research data (e.g., use access control, \protect\hyperlink{encryption}{encryption}). If you
+  do not need the links with direct identifiers anymore, remove the keyfile or
+  replace the pseudonyms with random identifiers without saving the key.
+
+  A good pseudonym:
+
+  Is not meaningful with respect to the data subjects: a random (unique)
+  number or string is better than a code that contains parts of personal
+  information, because the latter may reveal details about data subjects.
+
+  Is managed securely, for example by appointing someone to be responsible
+  for managing access to the keyfile.
+
+  Can be a simple number, random number, cryptographic hash function, text
+  string, etc.
+  (\href{https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices}{read more}).
+\item
+  Replacing identifiable text with ``{[}redacted{]}''. When redacting changes in-text,
+  never just blank out the identifying value, always put a placeholder or
+  pseudonym there, e.g., in \texttt{{[}}square brackets\texttt{{]}} or \texttt{\textless{}seg\textgreater{}}segments\texttt{\textless{}/seg\textgreater{}}.
+\item
+  Replacing unique values with a summary statistic, e.g., the mean.
+\item
+  Rounding values, making the data less precise.
+\item
+  Replacing one or multiple variables with a hash.
+
+  What is hashing?
+
+  Hashing is a way of obscuring data with a string of seemingly random
+  characters with a fixed length. It can be used to create a''hashed'' pseudonym, or
+  to replace multiple variables with one unique value. There are many hash
+  functions which all have their own strength. It is usually quite difficult to
+  reverse the hashing process, except if an attacker has knowledge about the type
+  of information that was masked through hashing (e.g., for the MD5 algorithm,
+  there are many lookup tables that can reverse common hashes). To prevent
+  reversal, cryptographic hashing techniques add a ``salt'', i.e., a random number
+  or string, to the hash (the result is called a''digest''). If the ``salt'' is kept
+  confidential or is removed (similar to a keyfile), it is almost impossible to
+  reverse the hashing process.
+\end{itemize}
+
+\hypertarget{top-bottom-coding}{%
+\subsubsection{Top- and bottom-coding}\label{top-bottom-coding}}
+
+Top- and bottom-coding are mostly useful for quantitative datasets that have
+some unique extreme values. It means that you set a maximum or minimum and
+recode all higher or lower values to that minimum or maximum. For example, you
+can top-code a variable ``income'' so that all incomes over €80.000 are set to
+€80.000. This does distort the distribution, but leaves a large part of the data
+intact.
+
+\hypertarget{adding-noise}{%
+\subsubsection{Adding noise}\label{adding-noise}}
+
+\href{https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf\#page=12}{Adding noise}
+to data obfuscates sensitive details. It is mostly applied to quantitative
+datasets, but can also apply to other types of data. For example:
+
+\begin{itemize}
+\tightlist
+\item
+  Adding half a standard deviation to a variable.
+\item
+  Multiplying a variable by a random number.
+\item
+  Applying \protect\hyperlink{differential-privacy}{Differential Privacy} guarantees to an algorithm.
+\item
+  Blurring (pixelating) images and videos.
+\item
+  Voice alteration in audio.
+\end{itemize}
+
+\hypertarget{permutation}{%
+\subsubsection{Permutation}\label{permutation}}
+
+\href{https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf\#page=13}{Permutation}
+means swapping values between data subjects, so that it becomes more difficult
+to link information belonging to one data subject together. This will keep the
+distribution and summary statistics constant, but change correlations between
+variables, making some statistical analyses more difficult or impossible.
+
+\hypertarget{deidentification-resources}{%
+\section{Tools and further reading}\label{deidentification-resources}}
+
+On this page: anonymous, pseudonymous, deidentification, safeguard, protection
+measure, tool, resource, reading material\\
+Date of last review: 2023-05-02
+
+You can find a selection of \textbf{de-identification tools} in
+\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification}{this GitHub repository}.
+
+For further reading, we compiled a reading list on this topic in our publicly
+accessible \href{https://www.zotero.org/groups/2554340/data_privacy_uu/collections/6HS9MPBR}{Zotero library}.
+
+We can recommend:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://edps.europa.eu/system/files/2021-04/21-04-27_aepd-edps_anonymisation_en_5.pdf}{10 misunderstandings related to anonymisation}.
+\item
+  \href{https://doi.org/10.5281/zenodo.3584332}{Risk management for research data about people}.
+\item
+  CESSDA's \href{https://dmeg.cessda.eu/Data-Management-Expert-Guide/5.-Protect/Anonymisation}{Data Management Expert Guide on Anonymisation}.
+\item
+  \href{https://ico.org.uk/media/1061/anonymisation-code.pdf}{Anonymisation: managing data protection risk, code of practice}.
+\item
+  \href{https://doi.org/10.31234/osf.io/ybzu9}{Privacy protection in the era of open science}.
+\item
+  Statistics Netherlands (CBS) on
+  \href{https://www.cbs.nl/en-gb/our-services/methods/statistical-methods/output/statistical-disclosure-control}{techniques used to de-identify sensitive data}.
+\end{itemize}
+
+\hypertarget{statistical-privacy}{%
+\chapter{Statistical privacy}\label{statistical-privacy}}
+
+\hypertarget{k-anonymity-and-its-descendents}{%
+\section{K-anonymity and its descendents}\label{k-anonymity-and-its-descendents}}
+
+\hypertarget{differential-privacy}{%
+\section{Differential privacy}\label{differential-privacy}}
+
+\hypertarget{secure-computation}{%
+\chapter{Secure computation}\label{secure-computation}}
+
+On this page: data-to-code, code-to-data, tools-to-data, algorithm-to-data,
+cryptography, technique, tool, computing, computation, analysis, analyse,
+distributed analysis\\
+Date of last review: 2023-04-02
+
+When you use personal data in your research project, you likely also need to
+analyse those data, often using a script of sorts. In this chapter, we discuss
+the following scenarios for analysing personal data:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \protect\hyperlink{data-to-code}{``Regular'' data analysis} (``data-to-code''), where the data are
+  brought to the ``script'' or analysis software in order to analyse them.
+\item
+  \protect\hyperlink{code-to-data}{``Code-to-data'' scenario}, where a script or analysis software
+  is run on the data, without moving the data elsewhere.
+\item
+  \protect\hyperlink{federated-analysis}{Federated analysis scenario}, where a script or
+  analysis software runs on multiple datasets that are in different locations,
+  without moving those datasets elsewhere.
+\end{enumerate}
+
+Additionally, we discuss relatively new
+\protect\hyperlink{computational-cryptography}{cryptographic techniques} that can be used in
+securing the analysis of personal or otherwise sensitive data.
+
+\hypertarget{which-scenario-should-i-choose}{%
+\subsubsection{Which scenario should I choose?}\label{which-scenario-should-i-choose}}
+
+Which scenario is suitable to apply in your project depends on, among others:
+
+\begin{itemize}
+\tightlist
+\item
+  Your dataset: does it contain personal data? How large is the dataset? Do you
+  know the data structure and analysis method beforehand?
+\item
+  Which computing facility is most suitable:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Local (e.g., laptop), on campus (e.g., cluster at Geosciences), from a
+    national trusted party (e.g., SURF), or external (e.g., Amazon, Microsoft)?
+  \item
+    Located in the Netherlands, Europe or in a non-EEA country?
+  \item
+    Small or large amount of computing power (CPUs/codes/threads or GPUs, memory
+    size, disk space, etc.)?
+  \end{itemize}
+\item
+  Which software you need to run on the data using the computer power, e.g., R,
+  Python, SPSS, or any other scripting language.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Does the software require root user access to install and/or configure?
+  \item
+    Does the software require paid licenses (e.g., MATLAB)?
+  \item
+    Can the software be installed in advance, or does it need to be updated
+    during analyses (e.g., with additional packages from a repository)?
+  \end{itemize}
+\item
+  Whether and with whom you are collaborating on your project.
+\end{itemize}
+
+\hypertarget{computation-support}{%
+\subsubsection{Tools and support}\label{computation-support}}
+
+We have created an overview of secure computing software and services in this
+\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/secure-computing-tools.md}{GitHub repository}.
+Keep in mind that this is by no means a complete list!
+
+If you work at Utrecht University, you can ask the
+\href{https://www.uu.nl/en/research/research-data-management/contact-us}{Research engineering team}
+for help with choosing a suitable computing solution. If you have already
+chosen a solution, but are not sure whether it is safe to use, you can contact
+\protect\hyperlink{support}{Information Security or your privacy officer} for help.
+
+\hypertarget{data-to-code}{%
+\section{``Regular'' data analysis: data-to-code}\label{data-to-code}}
+
+On this page: analysis, data-to-code, data-to-script, transfer, sharing\\
+Date of last review: 2023-04-02
+
+In this scenario, you transfer the data to a computing facility, and run an
+analysis (script) on the data.
+In the most basic variant, this computing facility consists of your work
+computer or faculty computing cluster, where you do not transfer the data
+outside of your organisation for the analysis. In other cases, data need to
+be transferred to a computing facility outside your organisation, such as
+\href{https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/high-performance-and-cloud-computing}{high-performance clusters}
+from SURF, Microsoft, Amazon, etc.
+
+\hypertarget{when-to-use}{%
+\subsection{When to use}\label{when-to-use}}
+
+If you have a relatively small dataset, the ``data-to-code'' scenario is the most
+common and flexible scenario:
+
+\begin{itemize}
+\tightlist
+\item
+  It allows you to choose a computing facility that is best suited to your
+  situation.\\
+\item
+  It allows you to interactively read, analyse, export and transport the data
+  you want.
+\end{itemize}
+
+Disadvantages of this approach can be:
+
+\begin{itemize}
+\tightlist
+\item
+  When transferring the data to a computing facility, often new copies of the
+  data are created, which can make it more difficult to keep track of different
+  versions of the data.
+\item
+  Transferring data always comes with additional risks of a data breach. Besides
+  protection during data storage, it is therefore crucial to also protect the data
+  during the transfer to the computing facility, and when used at the computing
+  facility itself.\\
+\item
+  The way the data are transferred to the computing facility is not always as
+  straightforward, especially if you have a large dataset.
+\end{itemize}
+
+\hypertarget{implications-for-research}{%
+\subsection{Implications for research}\label{implications-for-research}}
+
+In this scenario, you need to make sure that:
+
+\begin{itemize}
+\tightlist
+\item
+  You apply data minimisation, access control, and, if applicable,
+  pseudonymisation and other protective measures to limit the amount of personal
+  data that is transferred to the computing facility.
+\item
+  The data are also protected during the transfer to the computing facility
+  (e.g., your work laptop or an external solution), for example through encryption.
+\end{itemize}
+
+Additionally, if the computing facility is provided by an external processor
+(e.g., SURF, Amazon):
+
+\begin{itemize}
+\tightlist
+\item
+  A \protect\hyperlink{data-processing-agreement}{data processing agreement} with the provider of
+  the computing facility is needed. If there is none, you cannot use the computing
+  facility to analyse personal data.
+\item
+  The computing facility should be suitable (secure enough) for the
+  \protect\hyperlink{data-classification}{sensitivity level} of your (personal) data. For example,
+  if your data are ``critical'' in terms of confidentiality, the computing facility
+  should also have that ``critical'' classification.
+\end{itemize}
+
+\hypertarget{examples}{%
+\subsection{Examples}\label{examples}}
+
+\begin{itemize}
+\tightlist
+\item
+  You use your faculty's high performance cluster to analyse a dataset that you
+  collected at your organisation.
+\item
+  You use the High Performance Computing platform from SURF to analyse a large
+  dataset that you collected at your organisation. In this case, a
+  \protect\hyperlink{data-processing-agreement}{data processing agreement} between your organisation
+  and SURF is needed to make sure that your organisation remains in control of the
+  personal data at SURF's servers.
+\item
+  You use Amazon Web Services (AWS) to analyse a large dataset that you
+  collected at your organisation. In this case, a
+  \protect\hyperlink{data-processing-agreement}{data processing agreement} between your organisation
+  and AWS is even more important, because Amazon has servers that are located
+  outside of the European Economic Area.
+\end{itemize}
+
+\hypertarget{code-to-data}{%
+\section{Code-to-data (one data provider)}\label{code-to-data}}
+
+On this page: code-to-data, script-to-data, algorithm-to-data, tools-to-data,
+SANE, digital research environment, secure research environment, virtual
+research environment, access control\\
+Date of last review: 2023-04-02
+
+In this scenario, an analysis is run on data without transferring the data
+outside of the organisation In many cases, only the results of the analysis
+can be exported, and not the data.
+
+We distinguish the following versions of this scenario:
+
+`Tinker' version: interaction with the data
+
+In the Tinker version, users can log in to the computing facility and directly
+interact with the data, but there may be technical limitations on the import and
+export of the data. Procedural limitations should be posed through
+\protect\hyperlink{agreements}{agreements} with the user. This version can be implemented in
+multiple ways, such as:
+
+Accessing and analysing locally stored data on premises. An example is
+analysing highly sensitive data in a dedicated room without an internet
+connection.
+
+Accessing locally stored data through
+\href{https://manuals.uu.nl/en/manual/solisworkspace-faq/}{remote desktop}.
+This usually does not impose technical limitations on what can be done with
+the data.
+
+\href{https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/virtual-research-environments}{Virtual Research Environments}
+(VREs) are temporary facilities where you can interactively perform
+computations on data in the cloud. In this case, it is sometimes possible to
+impose technical limitations on what can be done with the data (in which case
+these are called
+``\href{https://the-turing-way.netlify.app/project-design/sdpw/trew.html}{Trusted Research Environments}'').
+Examples of VREs are
+\href{https://www.surf.nl/en/surf-research-cloud-collaboration-portal-for-research}{SURF Research Cloud}
+and \href{https://www.andrea-cloud.eu/}{anDREa}.
+
+`Blind' version: remote execution
+
+In the Blind version, users do not have access to the data
+at all, and only receive the results of an analysis, after reviews by the data
+owner(s) to ensure that the results do not contain sensitive details. In this
+case, a \protect\hyperlink{synthetic-data}{synthetic dataset} can be provided to write and test
+the analysis script on, before it is run on the real dataset. This ``blind''
+version could be run in a dedicated environment where researchers can upload
+their script, but can also be implemented manually, for example when a
+researcher sends a script by email to be run on a dataset, and receives the
+results back via email as well (i.e., this is possible when neither the script
+nor the results contain any sensitive details).
+
+At the moment, both the Tinker and Blind versions of this code-to-data scenario
+are being developed as virtual research environments in the
+\href{https://www.surf.nl/en/news/sane-secure-data-environment-for-social-sciences-and-humanities}{Secure ANalysis Environment}
+project (SANE).
+
+\hypertarget{when-to-use-1}{%
+\subsection{When to use}\label{when-to-use-1}}
+
+Reasons to use this scenario include:
+
+\begin{itemize}
+\tightlist
+\item
+  You want to retain control over the data, e.g., to prevent any unnecessary
+  copies from being made (data sovereignty).
+\item
+  You do not want, or are not allowed to transfer the data, because they contain
+  personal data or intellectual property.
+\item
+  The dataset is too large to transfer.
+\item
+  In the `Blind' version: You want to be sure that the analysis results do not
+  contain any sensitive details.
+\end{itemize}
+
+\hypertarget{implications-for-research-1}{%
+\subsection{Implications for research}\label{implications-for-research-1}}
+
+Compared to the ``\protect\hyperlink{data-to-code}{data-to-code}'' scenario, the code-to-data
+approach offers more control over the data, but often requires more, sometimes
+manual, work, such as:
+
+\begin{itemize}
+\tightlist
+\item
+  Checking the credentials of a user: can they be trusted? An
+  \protect\hyperlink{agreements}{agreement} with the user may be desirable or even required. In
+  SURF Research Cloud, credentials can be checked using
+  \href{https://www.surf.nl/en/surf-research-access-management-easy-and-secure-access-to-research-services}{SURF Research Access Management}.
+\item
+  Preparing a protected computing environment that a user can use.
+\item
+  In the `Blind' version:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Creating a \protect\hyperlink{synthetic-data}{synthetic dataset}.
+  \item
+    Reviewing the output of the script for sensitive elements. This requires
+    the right expertise.
+  \item
+    Reviewing whether the code that is run on the data is privacy-preserving.
+    This also requires the right expertise.
+  \end{itemize}
+\end{itemize}
+
+It is essential to have a well-described workflow to use this scenario, to
+ensure confidentiality of the personal data. Additionally, dedicated personnel
+may make the process easier and consistent.
+
+\hypertarget{examples-1}{%
+\subsection{Examples}\label{examples-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  A research team needs to process a dataset containing health data to determine
+  the number of Covid-19 patients at a certain hospital. The hospital providing
+  this dataset does not allow transferring the dataset, but they do allow to run
+  scripts on the dataset. To make that possible, the hospital provides a computing
+  facility, owned by the hospital, to run scripts from research teams. In addition,
+  for each result, the hospital staff inspects if it contains personal data, and
+  if not, it will be passed onto the research team. Since a result like ``100
+  patients at this hospital have had Covid-19 in 2021'' does not contain personal
+  data, it can be safely passed to the research team.
+\item
+  In the \protect\hyperlink{data-donation}{data donation approach}, the software
+  \href{https://github.com/eyra/port}{PORT} can be run on data
+  subjects' locally stored data, and only the results of that analysis can be
+  shared with the researcher if allowed by the data subject. Note however that the
+  sensitivity of the results fully depend on the analysis that was run.
+\end{itemize}
+
+\hypertarget{federated-analysis}{%
+\section{Federated analysis}\label{federated-analysis}}
+
+On this page: federated analysis, federated learning, machine learning,
+distributed analysis, distributed learning, collaboration, harmonisation\\
+Date of last review: 2023-04-02
+
+Federated analysis is an extension to the \protect\hyperlink{code-to-data}{code-to-data} scenario,
+where the data of interest are owned by multiple organisations. In this scenario,
+the data remain with multiple data providers, and the script ``travels'' across
+those data sources, combining the results in a central location, and only
+sharing the results of the analysis. If necessary, there are techniques to hide
+intermediate results (which could also reveal sensitive information). If the
+script in question is a machine learning model, then this technique is called
+``federated (machine) learning''. You can learn more about federated analysis in
+\href{https://foldercase.com/blog-federated-data-analysis-how-to-get-started.php}{this article}.
+
+\hypertarget{when-to-use-2}{%
+\subsection{When to use}\label{when-to-use-2}}
+
+Federated analysis is useful when there are multiple data providers who do not
+allow transferring their data outside of the organisation, or whose data are
+simply too large to share.
+
+\hypertarget{implications-for-research-2}{%
+\subsection{Implications for research}\label{implications-for-research-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  A prerequisite for analysing data in this way is often that the data at the
+  different providers are similarly structured and use similar terminology (e.g.,
+  making sure that every party uses ``male'', ``female'', and ``other'' as levels for
+  the variable Gender, instead of ``girl'' and ``boy'', or 0 and 1).
+\item
+  Federated analysis works best for ``horizontally partitioned'' datasets, where
+  different organisations have the same (types of) information, but from different
+  people. It is not well-suited for ``vertically partitioned'' datasets, where the
+  different organisations have different (types of) information on the same people
+  and thus want to link those different data sources.
+\item
+  Setting up the infrastructure for federated analysis is challenging and can
+  take a large amount of time (software installation, access rights, linking
+  datasets, etc.). It is wise to first investigate whether this option is indeed
+  the most suitable for your project.
+\end{itemize}
+
+\hypertarget{examples-2}{%
+\subsection{Examples}\label{examples-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  A research team needs access to various datasets containing health data to
+  determine which factors contribute to health of Covid-19 patients at various
+  hospitals. Each dataset contains health data from patients of the hospital where
+  they are treated. Since each dataset contains sensitive personal data, it is not
+  desirable to store these datasets in a central location to combine them. To be
+  able to answer the research question, one needs to access each dataset separately
+  and combine the results of each dataset. To make this possible, each hospital
+  provides a computing facility. The research team submits their script to each of
+  the computing facilities, where it is run on the local dataset. After a check by
+  each hospital's staff that the results do not contain any sensitive details, the
+  results of the individual computations are combined centrally into one result.
+  In the example, the result of the calculation at each hospital is a prediction
+  model for Covid-19 patients, and the individual models are combined to create a
+  more reliable prediction model.
+\item
+  Several university medical centres use the
+  \href{https://pht.health-ri.nl/}{Personal Health Train} from
+  Health-RI, which relies on the \href{https://vantage6.ai/}{vantage6}
+  software.
+\item
+  \href{https://www.datashield.org/index.php/about}{DataSHIELD} is
+  an infrastructure and a series of R packages that allows to co-analyse data
+  hosted at different organisations. It requires harmonising the data at the
+  different organisations and setting up the DataSHIELD infrastructure.
+\end{itemize}
+
+\hypertarget{computational-cryptography}{%
+\section{Cryptographic techniques}\label{computational-cryptography}}
+
+On this page: encryption, cryptography, security, collaboration, confidential
+computing, mpc, homomorphic encryption\\
+Date of last review: 2023-04-02
+
+Besides the scenarios described previously, there are also multiple cryptographic
+techniques that can be applied to protect sensitive data in the analysis phase.
+Here, we discuss secure multiparty computation, confidential computing, and
+homomorphic encryption.
+
+Although there is some overlap in functionality and purpose between these three techniques, they are generally still considered to be distinct and can be combined to enhance security.
+
+These cryptographic techniques are relatively new and are not available as
+distinct services (yet) for direct application in research. They are for now
+listed here for information purposes.
+
+\hypertarget{mpc}{%
+\subsection{Secure multiparty computation}\label{mpc}}
+
+Secure multiparty computation (also referred to as ``MPC'') is a set of
+cryptographic techniques that allows multiple parties to jointly perform analyses
+on distributed datasets, as if they had a shared database, and without revealing
+the underlying data to each other. Among those techniques are secure set
+intersection (securely investigating which elements multiple databases have in
+common), homomorphic encryption (see below), and others.
+
+\hypertarget{when-to-use-3}{%
+\subsubsection{When to use}\label{when-to-use-3}}
+
+The benefits of MPC are that no raw data are shared between the parties,
+computations are guaranteed to perform correctly, and there is a degree of
+control on who receives the result of the computation (i.e., the results are
+not necessarily combined in a central location). MPC is therefore a good way of
+implementing Privacy by Design into your project when you work with personal
+data.
+
+Contrary to \protect\hyperlink{federated-analysis}{federated analysis}, MPC is suitable for
+linking ``vertically partitioned'' datasets, i.e., when different organisations
+have different (types of) information on the same people and thus want to link
+those different data sources.
+
+\hypertarget{implications-for-research-3}{%
+\subsubsection{Implications for research}\label{implications-for-research-3}}
+
+\begin{itemize}
+\tightlist
+\item
+  The computation in MPC is really joint: you need to have agreed on a specific
+  analysis to be performed and what you will reveal as result of the computation.
+\item
+  There is no one-size-fits-all MPC solution: different use cases ask for
+  different implementations of MPC.
+\item
+  Additional computational resources are required to generate random secrets
+  and distribute data over the multiple parties.
+\end{itemize}
+
+\hypertarget{example}{%
+\subsubsection{Example}\label{example}}
+
+\begin{itemize}
+\tightlist
+\item
+  MPC was used by a medical insurance company and hospital to determine the
+  effectiveness of a personal lifestyle app for diabetes. In this example, it was
+  possible to calculate average medical cost for different patient groups, based
+  on whether they used the app or not, without revealing patient information
+  between the insurance company and the hospital.
+\item
+  You can find a simplified example on
+  \href{https://www.geeksforgeeks.org/what-is-secure-multiparty-computation/}{jointly calculating average income here}.
+\end{itemize}
+
+You can find more information about secure multiparty computation on
+\url{https://securecomputation.org/}, in
+\href{http://resolver.tudelft.nl/uuid:8002b966-7bba-427c-b343-56326c1a587b}{this report},
+and on the \href{https://mpc.tno.nl}{website of TNO}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{confidential-computing}{%
+\subsection{Confidential computing}\label{confidential-computing}}
+
+Confidential computing is a technique that protects data in use through a
+(hardware-based) Trusted Execution Environment (TEE). This environment makes
+sure that data within it are kept confidential (data confidentiality) and that
+both the data and the code running in the TEE cannot be modified or deleted
+(data and code integrity). The TEE uses embedded encryption keys and makes sure
+that the analysis stops running when malware or unauthorised access is detected.
+Moreover, data and code are even invisible to the operating system, cloud
+provider and any virtual machines.
+
+There are many possible applications of this technique, for example:
+
+\begin{itemize}
+\tightlist
+\item
+  You want to protect against unauthorised access during the analysis of
+  sensitive data.
+\item
+  You want to analyse sensitive data, and it is necessary to use an untrusted
+  cloud platform or infrastructure.
+\item
+  You want to prevent the analysis script from leaking or manipulating data.
+\end{itemize}
+
+It is important that confidential computing is used together with encryption of
+data at rest and in transit, with restricted access to the decryption keys. It
+also requires the TEE to be trustworthy (attestation), which is an active field
+of study. You can read more on the website of the
+\href{https://confidentialcomputing.io/}{Confidential Computing Consortium}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{homomorphic-encryption}{%
+\subsection{(Fully) homomorphic encryption}\label{homomorphic-encryption}}
+
+Where ``regular'' \protect\hyperlink{encryption}{encryption} focuses on data at rest (e.g., in
+storage) or data in transit (e.g., when transferring data), homomorphic
+encryption allows analyses to be performed on encrypted data (``data in use'').
+During the analysis, both the data and the computation result remain encrypted,
+unless they are decrypted by the decryption key owner. This technique can be
+applied both in \protect\hyperlink{confidential-computing}{confidential computing} and in
+\protect\hyperlink{mpc}{secure multiparty computation}.
+
+There are multiple types of homomorphic encryption: partial, somewhat partial
+and fully homomorphic encryption. The latter is the most promising solution, as
+it allows an infinite number of additions and multiplications to be performed on
+the encrypted data.
+
+Currently, the practical use of homomorphic is limited, because it can require
+a lot of computational resources to use it, causing it to be relatively slow.
+New implementations are however being developed, see
+\href{https://homomorphicencryption.org/introduction/}{this website}
+for a list of available implementations. Another limitation is that there is no
+interaction with the data during the analysis, and so you cannot check whether
+the analysis was successful. To solve this, you could use a synthetic dataset
+to develop and test your algorithms first.
+
+\hypertarget{other-techniques}{%
+\chapter{Other techniques}\label{other-techniques}}
+
+In addition to the techniques discussed in the previous chapters, other
+techniques exist that can help protect data subjects' privacy. Here, we discuss
+the following techniques:
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{encryption}{Encryption}, for example of files, folder or entire drives.
+\item
+  \protect\hyperlink{synthetic-data}{Synthetic data} that does not contain data from real
+  individuals, but can mimic statistical properties of the original dataset.
+\item
+  \protect\hyperlink{data-donation}{Data donation}, in which citizens are asked to donate digital
+  trace data for scientific research purposes.
+\end{itemize}
+
+\hypertarget{encryption}{%
+\section{Encryption}\label{encryption}}
+
+On this page: encryption, cryptography, cryptographic technique, secure storage,
+encryption software\\
+Date of last review: 2023-05-15
+
+Encryption is a technique to convert digital information into a code or cipher,
+which can only be read by someone who has the key to decipher or decrypt it. It
+can be applied to many digital objects, such as text strings, files, folders or
+entire storage drives. The format of the decryption key can also vary between a
+password, a randomly generated code, or a file.
+
+For personal data, encryption can be seen as a pseudonymisation technique, where
+the encrypted data are pseudonymised and the encryption key is the additional
+information needed to identify individuals. In research, encryption is often
+applied for data ``at rest'', that is, data that are stored and not actively used.
+However, data can also be encrypted \emph{in transit} (i.e., during transfers) or
+even \emph{in use} (i.e., performing \protect\hyperlink{homomorphic-encryption}{computations on encrypted data}).
+
+\hypertarget{encryption-types}{%
+\subsection{Types of encryption}\label{encryption-types}}
+
+There are several \href{https://en.wikipedia.org/wiki/Encryption\#Types}{types of encryption}.
+How they work can get complicated very quickly, but here is a general overview
+of the different types:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Symmetric encryption}: the same key is used for both encryption and
+  decryption. This is a relatively quick way to encrypt data and is most often
+  used for research data. Because only one key is needed to leak the data, a
+  hard-to-guess key, secure storage and secure transfer of the key is crucial.
+  Example algorithms that use symmetric encryption are AES, (3)DES, Blowfish, and
+  IDEA.
+\item
+  \textbf{Asymmetric encryption} (public-key): two different keys are used for
+  encryption and decryption: a public key is used for encryption and can be
+  shared with anyone, and a private key is used for decryption, which must be
+  kept secret. This is also known as end-to-end encryption and is used in many
+  messaging platforms to prevent service providers from decrypting private
+  messages. Example algorithms are RSA and elliptic curve cryptography.
+\item
+  \textbf{Hybrid cyphers}: hybrid cyphers combine the speed of symmetric, and the
+  security of asymmetric encryption. Typically, a symmetric algorithm is used to
+  encrypt the data, and an asymmetric algorithm to encrypt the symmetric key.
+  This type of encryption is commonly used in secure communications, such as
+  email and virtual private networks (VPNs).
+\end{enumerate}
+
+In general, the more ``bits'' that are used by an encryption algorithm, the
+larger the number of possible keys is, and thus the harder it is to
+\href{https://www.futurelearn.com/info/courses/encryption-and-cryptography/0/steps/184663}{guess the correct key}
+using a brute-force attack.
+
+\hypertarget{encryption-when}{%
+\subsection{When to use}\label{encryption-when}}
+
+Encryption can be applied on different levels. In research, data are encrypted
+usually either on a drive-level or on file/folder level:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Full-drive encryption} (``volume'' encryption) makes sure that data on
+  storage drives or devices are not readable if someone gains unauthorised access
+  to the device or drive. This is generally recommended to always apply to
+  devices that contain research data, but particularly when:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    you want to protect data on your personal laptop (encrypt the entire laptop
+    or specific hard drives).
+  \item
+    you collect data on portable devices like USB sticks and audio recorders.
+  \end{itemize}
+\item
+  Encryption of \textbf{individual files or folders} (``container'' encryption) can be
+  used when you need to protect individual files or folders. Use it when:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    you cannot physically separate different types of personal data on different
+    storage locations and need to make sure that a limited number of people can
+    access the encrypted data.
+  \item
+    you have to store personal data on a non-encrypted drive that multiple
+    people have access to, which they do not need.
+  \item
+    you need to send personal data to a collaborator, for example via the cloud
+    or via a file sender.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{encryption-implications}{%
+\subsection{Implications for research}\label{encryption-implications}}
+
+\begin{itemize}
+\tightlist
+\item
+  Encryption only guarantees protection while the data are encrypted, which is
+  usually during storage or in transit. For example, encryption is generally not
+  a suitable safeguard to protect data during data analysis, because usually
+  data need to be decrypted in order to be read by analysis software. This implies
+  that when you need to decrypt the data, other safeguards must be in place to
+  protect the data, such as controlled access and a secure workspace.
+\item
+  Responsible key management is crucial. In principle, the data cannot be
+  accessed without a decryption key. Although some encryption software offers the
+  possibility to create recovery keys, there is still someone who needs to manage
+  the key(s), as long as the data are encrypted.
+\item
+  When you use file/folder encryption, please note that in some cases, folder
+  and/or file names are not encrypted. If these names contain sensitive
+  information, consider renaming the folders/files or putting them in a zipped
+  folder with a non-sensitive name and then encrypting the zipped folder.
+\item
+  Just because you encrypt data with a state-of-the-art encryption algorithm now,
+  that does not mean the data are necessarily protected in the future as well.
+  Encryption algorithms can become unsafe due to, for example, new technological
+  developments or bugs in the encryption algorithm that make it more vulnerable
+  to attacks. Therefore, if you store encrypted files for a long period of time,
+  you need to regularly re-assess whether the algorithm is still secure enough
+  and if needed, re-encrypt the data.
+\end{itemize}
+
+\hypertarget{encryption-resources}{%
+\subsection{Tools and resources}\label{encryption-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  We have created an overview of commonly used encryption tools in our
+  \href{https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/encryption-tools.md}{GitHub repository}.
+  \textbf{Note}: many institutes have institution-wide encryption software available.
+  Please consult with your \protect\hyperlink{support}{information security officer} to determine
+  which tool you can best use for your situation.
+\item
+  Ghent University has created a \href{https://osf.io/nx8km}{guidance}
+  on several common encryption tools in different scenarios.
+\item
+  In \href{https://www.cs.unibo.it/babaoglu/courses/security/resources/documents/intro-to-crypto.pdf}{this introductory book},
+  you can read further if you want to know more about cryptography.
+\end{itemize}
+
+\hypertarget{synthetic-data}{%
+\section{Synthetic Data}\label{synthetic-data}}
+
+On this page: synthetic data, fake data, artificial data, dummy data, fictitious
+data, reproducibility, reproduce, open science workflow\\
+Date of last review: 2023-05-15
+
+Synthetic data generation is the process of creating artificial data, which can
+be used in place of the real, possibly personal, data. Instead of simply
+adjusting an existing dataset to make it less identifiable, a completely new
+dataset is generated, with fictitious individuals. When creating synthetic data,
+sensitive values (which can be some values, or the entire dataset) in the data
+are replaced by values that are generated from a statistical model. The
+intuition behind this is to mimic the idea of drawing samples from a population.
+Not with actual people, but with fictitious individuals that ``look like'' the
+people from the population. Synthetic data can be created in multiple ways,
+such as based on rules or using a trained machine learning model, and for
+different purposes, such as for privacy protection purposes, but also for data
+enrichment or software testing.
+
+\hypertarget{synthetic-data-when}{%
+\subsection{When to use}\label{synthetic-data-when}}
+
+Synthetic data can be generated for a variety of reasons, for example:
+
+\begin{itemize}
+\tightlist
+\item
+  As an intermediate step in sharing (personal) data, before others gain access
+  to (part of) the real dataset. This can for example be useful when data
+  recipients still have to determine which variables they need from the real
+  dataset, or how many observations. Or when the data request procedure can take
+  up a large amount of time and recipients already want to explore the (synthetic)
+  data.
+\item
+  To develop code without requiring access to real (personal) data. In this
+  case, the synthetic data usually does not need to mirror the data statistically,
+  but just in terms of the structure (e.g., only with the same column names and
+  data types). Synthetic data that only resembles the real dataset in terms of
+  its structure is also sometimes called ``dummy data''.
+\item
+  To adhere to an open science workflow, to evaluate and reproduce analyses. If
+  you share both a synthetic dataset and your code, others can easily evaluate
+  your code with an actual dataset, see the results of the code and test its
+  reproducibility.
+\item
+  In teaching, to prevent having to share (personal) data with students.
+\end{itemize}
+
+\hypertarget{synthetic-data-implications}{%
+\subsection{Implications for research}\label{synthetic-data-implications}}
+
+\begin{itemize}
+\tightlist
+\item
+  Although synthetic data are artificial, privacy risks may still remain. You
+  can think of it like this: if the generating model is too good, you could
+  reproduce the original data exactly, doing no better in protecting anyone's
+  privacy. On the other end, you can create a synthetic dataset that sets every
+  value to ``0'', which protects privacy very well, but is useless in terms of its
+  quality. Usually, the result is somewhere in between: the synthetic data is
+  less informative than the real data, at the expense of leaking some information
+  about the original sample (e.g., descriptive statistics, relationships between
+  variables, plausible values in the data). Hence, the synthetic data lies on a
+  \textbf{privacy-utility spectrum}. Whether the synthetic dataset still contains
+  personal data will need to be considered on a case-by-case basis and will
+  differ depending on the method used to create the synthetic dataset. For more
+  detailed information on this concept of the privacy-utility spectrum, see the
+  \href{https://www.ons.gov.uk/methodology/methodologicalpublications/generalmethodology/onsworkingpaperseries/onsmethodologyworkingpaperseriesnumber16syntheticdatapilot}{UK Office for National Statistics}.
+\item
+  Synthetic data is sometimes used in conjunction with
+  \protect\hyperlink{differential-privacy}{Differential Privacy}, which can help to numerically
+  set the level of privacy/utility. Unfortunately, it is not straightforward to
+  determine the disclosure risk directly from the synthetic data, and it is
+  better to fix the privacy leakage in the process of generating the data.
+\item
+  The quality of the synthetic dataset is highly dependent on the input from
+  which it is created. In general, a larger number of rows in the dataset
+  (individuals) results in better quality synthetic data as there is more
+  variability in the dataset. Moreover, datasets that contain many outliers
+  typically result in lower-quality synthetic data, because they can have a large
+  influence on the statistical properties of the dataset (e.g., the mean) from
+  which the synthetic dataset is created. This in turn can lead to a distorted or
+  unrealistic distribution in the synthetic dataset.
+\end{itemize}
+
+\hypertarget{synthetic-data-resources}{%
+\subsection{Tools and resources}\label{synthetic-data-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  We have created an overview of tools to create synthetic data in our
+  \href{https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/synthetic-data}{tool repository on GitHub}.
+\item
+  Here's a \href{https://doi.org/10.5281/zenodo.7234120}{comprehensive tutorial}
+  for creating synthetic data that includes information on the Python package
+  \href{https://github.com/sodascience/metasynth}{MetaSynth} (\href{https://github.com/sodascience/workshop-syntheticdata-osf2022}{workshop})
+  and the R package \href{https://www.synthpop.org.uk/index.html}{Synthpop}
+  (\href{https://thomvolker.github.io/osf_synthetic/osf_synthetic_workshop.html}{how-to}).
+\item
+  Read further about synthetic data in
+  ``\href{https://doi.org/10.48550/arXiv.2205.03257}{Synthetic data - What, Why and How?}''
+\item
+  The United Nations has created this
+  \href{https://unece.org/sites/default/files/2022-11/ECECESSTAT20226.pdf}{Starter Guide on synthetic data},
+  which includes what to consider when creating synthetic data.
+\item
+  If you want to know more about the methodology behind synthetic data, we can
+  recommend the book
+  ``\href{https://doi.org/10.1007/978-1-4614-0326-5}{Synthetic Datasets for Statistical Disclosure Control}''
+  (Drechsler, 2011).
+\end{itemize}
+
+\hypertarget{data-donation}{%
+\section{Data donation}\label{data-donation}}
+
+On this page: data donation, digital trace data, local processing, interactive
+consent\\
+Date of last review: 2023-05-15
+
+People leave all kinds of digital traces, for example on social media,
+smartphones, search engines, email, banks, energy providers, and online shops.
+\href{https://gdpr-info.eu/art-15-gdpr/}{Article 15} of the GDPR
+mandates that individuals have the right to request access to a copy of their
+personal data collected and stored on those digital platforms. The owners of
+those platforms will then make that digital trace data available through
+individual ``Data Download Packages'' (DDPs). These DDPs can contain a lot of
+personal information that may be too sensitive to share, but can also be of
+high value for scientific research purposes.
+
+The data donation approach as developed by
+\href{https://doi.org/10.48550/arXiv.2011.09851}{Boeschoten et al.~(2020)}
+allows researchers to automatically analyse the digital traces found in DDPs,
+while preserving the privacy of research participants. The workflow is as follows:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Data subjects are recruited as respondents like in a regular research project.
+\item
+  The researcher determines which DDPs are relevant for the research question
+  and writes a script to extract the relevant information.
+\item
+  Each data subject requests their DDPs with the selected providers and stores
+  these locally on their own device.
+\item
+  Stored DDPs are then locally processed with the software
+  \href{https://github.com/eyra/port}{PORT} to extract relevant
+  research variables. PORT executes the script provided by the researcher and
+  locally extracts the data from the DDP. PORT uses
+  \href{https://pyodide.org/en/stable}{Pyodide} technology to run in
+  its own secure environment which is completely separated from the device. This
+  environment is destroyed as soon as the browser page is closed.
+\item
+  The data subject inspects the information resulting from the analysis and is
+  asked to provide \protect\hyperlink{informed-consent-forms}{informed consent} to share it with
+  the researcher.
+\item
+  If the data subject consents, the derived information is encrypted and sent
+  to the researcher for further analysis.
+\end{enumerate}
+
+\hypertarget{data-donation-when}{%
+\subsection{When to use}\label{data-donation-when}}
+
+The data donation approach can be used:
+
+\begin{itemize}
+\tightlist
+\item
+  As an alternative or in addition to surveys to study human behaviour.
+\item
+  To analyse data that are too sensitive to transfer in raw form.
+\item
+  To allow data subjects a large degree of control over their (personal) data.
+\item
+  To access data that are representative of a population of interest, in
+  contrast to, for example, data retrieved from APIs, which often pertain a
+  non-random subset of a platform's user group.
+\item
+  As a user-centric approach that is independent from platforms or data
+  controllers: private companies cannot suddenly withdraw from a collaboration or
+  restrict access to a dataset, because the data were not obtained directly
+  through them. It is important, however, to review the Terms of Service of the
+  platforms you use, to review if there are restrictions on data usage for
+  scientific research.
+\end{itemize}
+
+\hypertarget{implications-for-research-4}{%
+\subsection{Implications for research}\label{implications-for-research-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  DDPs may be large and contain different types of information. For both the
+  analysis (writing the script) and the informed consent (informing data subjects
+  specifically), it is important that you know which specific data are of interest.
+\item
+  The structure of DDPs varies by provider and by person, making it difficult
+  to set up analysis scripts generically. Moreover, DDPs change over time.
+  Analysis scripts should regularly be checked and updated
+  (\href{https://doi.org/10.3233/DS-210035}{Boeschoten et al., 2021}).
+\item
+  Analysis scripts are usually developed based on sample data. However, due to
+  the sensitive content, DDP sample data are difficult to obtain. As sample data,
+  you could use your own DDP, synthetic data
+  (\href{https://github.com/UtrechtUniversity/google-semantic-location-history}{example}),
+  or already available open data
+  (\href{http://doi.org/10.5281/zenodo.4472606}{example}).
+\item
+  It is important to make sure that data subjects understand what they are
+  consenting to when presenting the results that will be shared with you (step 5).
+  Do they understand the risks involved (if any)? We recommend talking to a
+  \protect\hyperlink{support}{privacy officer} and/or testing this among data subjects before you
+  start your Data Donation project.
+\end{itemize}
+
+\hypertarget{data-donation-resources}{%
+\subsection{Examples and resources}\label{data-donation-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  Several projects have made use of the data donation approach, such as one
+  using \href{https://github.com/UtrechtUniversity/google-semantic-location-history}{Google semantic location history data},
+  and one with \href{https://github.com/sodascience/port-whatsapp-datadonation}{Whatsapp data}.
+\item
+  A more elaborate data donation platform is being developed in the
+  \href{https://pdi-ssh.nl/en/2021/11/funded-projects-2021-call/}{PDI-SSH-funded}
+  Digital Data Donation Infrastructure
+  (\href{https://www.uu.nl/en/news/the-board-of-the-pdi-ssh-foundation-honours-applications-in-the-call-digital-infrastructure-ssh}{D3I})
+  project.
+\item
+  Read further about the
+  \href{https://doi.org/10.5117/CCR2022.2.002.BOES}{framework},
+  the \href{https://doi.org/10.1016/j.patter.2022.100444}{proof of concept of the PORT software},
+  a \href{https://doi.org/10.1080/1369118X.2022.2097015}{comparison with a browser plug-in} approach,
+  and \href{https://doi.org/10.31219/osf.io/krqb9}{promises and pitfalls of the approach for social media data}.
+\item
+  Or read more about how Data Download Packages can be
+  \href{https://doi.org/10.3233/DS-210035}{de-identified}.
+\end{itemize}
+
+\hypertarget{tools-and-services}{%
+\chapter{Tools \& Services}\label{tools-and-services}}
+
+There are many tools that you can use to work with personal data, such as tools
+to collect, store, and analyse personal data, but also to deidentify, encrypt
+and synthetise datasets. In this chapter, we provide resources to identify
+the tool you are looking for.
+
+In short:
+
+\begin{itemize}
+\tightlist
+\item
+  If you work at Utrecht University, you can use \url{https://tools.uu.nl} to find UU-approved tools.
+\item
+  In \href{https://github.com/UtrechtUniversity/privacy-engineering-tools/}{this GitHub repository},
+  you can find tools and packages to deidentify, encrypt, synthetise and otherwise
+  work with personal data.
+\item
+  If you are in doubt whether you can use a specific tool, please contact your
+  \protect\hyperlink{support}{privacy officer, data manager or information security} for help.
+\end{itemize}
+
+Are you developing a website or application yourself that uses user data? Check
+out the \href{https://lincnil.github.io/GDPR-Developer-Guide/}{CNIL GDPR Guide for Developers}
+for step-by-step guidance on how to develop your software in compliance with the GDPR.
+
+\hypertarget{uu-tools}{%
+\section{Utrecht University tool finders}\label{uu-tools}}
+
+On this page: storage, storing, collection, repository, data archive, sharing,
+tools, services\\
+Date of last review: 2023-02-17
+
+When you are using a tool that processes personal data, that tool should do so
+in compliance with the GDPR. If you work at Utrecht University (UU), you can use
+\url{https://tools.uu.nl} to find:
+
+\begin{itemize}
+\tightlist
+\item
+  tools that are safe to use in the \href{https://tools.uu.nl/tooladvisor}{Tooladvisor}.
+  These include tools for data collection, file sharing, audio transcription, and more.
+  Most of the tools listed in the Tooladvisor are safe to use either because no (personal)
+  data are being used by the tool, data are processed at UU premises, or because
+  of a \protect\hyperlink{data-processing-agreement}{Data Processing Agreement} between
+  UU and the supplier of the tool, in which the supplier agreed to
+  sufficiently protect the data entered into their tool.
+\item
+  all \href{https://tools.uu.nl/storagefinder/}{storage facilities}
+  provided by UU.
+\item
+  a selection of possible \href{https://tools.uu.nl/repository-decision-tool/}{data repositories}
+  to publish (meta)data in.
+\end{itemize}
+
+Additionally, you can find available software via
+\href{https://intranet.uu.nl/en/knowledgebase/software-at-work-teaching-rooms-and-home}{this intranet page}
+
+\hypertarget{tool-repository}{%
+\section{Tools to deidentify, synthetise and work safely with personal data}\label{tool-repository}}
+
+On this page: anonymisation, pseudonymisation, de-identification, synthetic data, encryption,
+secure computing, computation\\
+Date of last review: 2023-02-17
+
+We are creating an overview of potential privacy-related tools for
+deidentifying data, creating synthetic data, and analysing data in secure
+environments in a GitHub repository.
+
+To the overview
+
+Please feel free to
+\href{https://github.com/UtrechtUniversity/privacy-engineering-tools/\#contact-and-contribution}{open an Issue or a Pull Request}
+in this repository if you wish to adjust the existing content or add new content.
+
+\hypertarget{tool-requirements}{%
+\section{Requirements for a third-party tool}\label{tool-requirements}}
+
+On this page: custom tool, provider, agreement, third-party tool, service\\
+Date of last review: 2023-02-17
+
+\textbf{If your tool of choice is not listed in \url{https://tools.uu.nl}, but it does
+process personal data, please contact the
+\href{https://www.uu.nl/en/organisation/information-and-technology-services-its/i-want-to/get-help-and-advice}{IT servicedesk}.
+They will help you assess whether a tool is safe to use.}
+
+If a tool is processing personal data, the following two aspects are important to consider:
+
+\hypertarget{who-is-processing-the-personal-data-arrange-an-agreement}{%
+\subsection{1. Who is processing the personal data: arrange an agreement}\label{who-is-processing-the-personal-data-arrange-an-agreement}}
+
+When you use a third-party tool that processes personal data, the data are not
+under your (full) control. In this case, you must ensure the GDPR compliance of
+the tool provider using (\href{https://gdpr-info.eu/art-46-gdpr/}{art.46}):
+
+\begin{itemize}
+\tightlist
+\item
+  A \protect\hyperlink{data-processing-agreement}{Data processing agreement} -
+  when the provider processes (e.g., stores, analyses, collects) personal data
+  within the European Economic Area (EEA) or a country with an
+  \href{https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en}{adequate level of data protection}.
+\item
+  \protect\hyperlink{scc}{Standard contractual clauses} (SCCs) - when personal data are processed
+  by a supplier outside of the EEA without an adequate level of data protection.
+  These make sure the provider will use sufficient measures to protect the personal
+  data and enable data subjects to exercise their rights.
+\item
+  \protect\hyperlink{informed-consent-forms}{Explicit consent} of data subjects who have been
+  informed on the risks involved - in the absence of an agreement. Please contact your
+  \protect\hyperlink{support}{privacy officer} if you are considering this option.
+\end{itemize}
+
+You can assume agreements are in place for the tools recommended by UU.
+If there is no agreement in place between UU and the tool provider, using
+this tool is \textbf{not allowed}, even if the provider is located within the EEA,
+has an adequate level of data protection, or has high security standards. The
+only exception is when data are always end-to-end encrypted, because then the
+tool provider cannot learn anything from the data.
+
+\hypertarget{security-level}{%
+\subsection{2. Security level}\label{security-level}}
+
+The tool provider should employ good security practices, such as regular back-ups
+in distinct geographical areas (preferably in replication rather than on tape),
+regular integrity checks, encryption at rest, multi-factor authentication, etc.
+Most of these aspects will likely be covered in the agreement, and sometimes a
+\protect\hyperlink{data-classification}{data classification} will need to be performed.
+\protect\hyperlink{support}{Information security} can help you determine all necessary security requirements.
+
 \hypertarget{part-use-cases}{%
 \part*{Use Cases}\label{part-use-cases}}
 \addcontentsline{toc}{part}{Use Cases}
@@ -5173,6 +5517,7 @@ There are also more technical alternatives to transferring personal data to othe
 \chapter{Data minimisation in a survey}\label{pet-survey}}
 
 On this page: minimise, limit, remove, questionnaire, survey
+Date of last review: 2022-08-22
 
 For a course, a teacher at the faculty of Veterinary Medicine collected data on
 the health of pets and the pets' owners. The initial purpose of the survey was
@@ -5214,7 +5559,8 @@ Note that the new version of the survey:
 \hypertarget{youth-pseudonymisation}{%
 \chapter{Data pseudonymisation}\label{youth-pseudonymisation}}
 
-On this page: pseudonymous, de-identification, replacement, open science, reuse
+On this page: pseudonymous, de-identification, replacement, open science, reuse\\
+Date of last review: 2023-03-30
 
 \href{https://www.uu.nl/en/research/youth-cohort-study}{YOUth}
 (Youth of Utrecht) is a longitudinal child cohort study that collects data about
@@ -5368,7 +5714,8 @@ having to share the physical samples with researchers.
 \hypertarget{open-science-questionnaire}{%
 \chapter{Publishing metadata}\label{open-science-questionnaire}}
 
-On this page: FAIR data, metadata, documentation, publication, reuse
+On this page: FAIR data, metadata, documentation, publication, reuse\\
+Date of last review: 2022-08-22
 
 In 2020, the \href{https://www.uu.nl/en/research/open-science}{Open Science Programme of Utrecht University}
 sent out the first
@@ -5416,7 +5763,8 @@ project's outputs.
 \chapter{Reusing education data for research}\label{reuse-education-data}}
 
 On this page: further processing, secondary use, reuse, student data, education,
-legal basis, access control
+legal basis, access control\\
+Date of last review: 2022-11-18
 
 A research group at the Science faculty wanted to investigate the effects of the
 Covid-19 pandemic on students' motivation and study success in a specific course.
@@ -5496,7 +5844,10 @@ The following privacy issues are relevant in this use case:
 \hypertarget{seeking-help}{%
 \chapter{Seeking help at Utrecht University}\label{seeking-help}}
 
-If you work at Utrecht University, there are several ways to look for further support.
+Date of last review: 2023-05-22
+
+If you work at Utrecht University, there are several ways to look for further
+support.
 
 \hypertarget{education}{%
 \subsection{Education}\label{education}}
@@ -5506,13 +5857,13 @@ Research Data Management Support currently offers:
 \begin{itemize}
 \tightlist
 \item
-  In-person workshop \href{https://www.uu.nl/en/research/research-data-management/training-workshops/handling-personal-data-in-research}{Handling Personal Data}
+  Online module \href{https://www.uu.nl/en/research/research-data-management/walk-in-hours-workshops/privacy-basics-online-training}{Privacy basics for researchers}
 \item
-  E-learning Privacy basics for researchers (coming soon)
+  In-person workshop \href{https://www.uu.nl/en/research/research-data-management/training-workshops/handling-personal-data-in-research}{Handling Personal Data}
 \end{itemize}
 
 Additionally, your own faculty or department may offer workshops surrounding
-privacy, ethics and/or research integrity.
+privacy, ethics and/or research integrity (see websites below).
 
 \hypertarget{websites}{%
 \subsection{Online information}\label{websites}}
@@ -5524,8 +5875,9 @@ Besides this Handbook, you can find more information on the following websites:
 \item
   \href{https://www.uu.nl/rdm}{RDM Support website}
 \item
-  Intranet pages on \href{https://intranet.uu.nl/en/knowledge-base/privacy-at-uu}{privacy} and
-  \href{https://intranet.uu.nl/en/knowledgebase/research}{research}
+  Intranet pages on \href{https://intranet.uu.nl/en/knowledge-base/privacy-at-uu}{privacy},
+  \href{https://intranet.uu.nl/en/knowledgebase/research}{research} and
+  \href{https://intranet.uu.nl/en/information-security-at-the-uu}{information security}
 \item
   Faculty-specific web pages:
 
@@ -5548,21 +5900,23 @@ Besides this Handbook, you can find more information on the following websites:
   \item
     Veterinary medicine: \href{https://www.uu.nl/en/node/589/onderzoeksbureauresearch-support-office}{Research Support Office}
   \item
-    Medicine: \href{https://www.metc-utrecht.nl/en/}{ethics}, data management-related information can be found on UMCU Connect
+    Medicine: \href{https://www.metc-utrecht.nl/en/}{ethics}, data management-related information can be found on UMCU Connect.
   \end{itemize}
 \end{itemize}
 
 \hypertarget{support}{%
 \subsection{In-person support}\label{support}}
 
-The first point of contact about privacy is the \href{https://intranet.uu.nl/en/knowledgebase/privacyofficers}{privacy officer}
-of your faculty. Besides the privacy officer, you can also ask for help from:
+The \textbf{first point of contact} about privacy is the \href{https://intranet.uu.nl/en/knowledgebase/privacyofficers}{privacy officer}
+of your faculty.
+
+Besides the privacy officer, you can also ask for help from:
 
 \begin{itemize}
 \tightlist
 \item
-  \href{https://www.uu.nl/en/research/research-data-management/contact-us}{Research Data Management Support}
-  or your local data steward.
+  Your local data steward/data manager (see websites above) or
+  \href{https://www.uu.nl/en/research/research-data-management/contact-us}{Research Data Management Support}.
 \item
   \href{https://intranet.uu.nl/en/security/information-security-contact-who-are-we}{Information security}.
 \item
@@ -5685,7 +6039,5 @@ of which are specific to Utrecht University, others more general. Click on the
 image below to see the
 \href{https://www.zotero.org/groups/2554340/data_privacy_uu/library}{most recent version of the reference library}
 online.
-
-  \bibliography{book.bib,packages.bib}
 
 \end{document}

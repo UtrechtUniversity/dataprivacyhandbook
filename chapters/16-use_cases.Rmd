@@ -2,9 +2,10 @@
 
 # Data minimisation in a survey {#pet-survey}
 
-::::keywords
+:::keywords
 On this page: minimise, limit, remove, questionnaire, survey
-::::
+Date of last review: 2022-08-22
+:::
 
 For a course, a teacher at the faculty of Veterinary Medicine collected data on 
 the health of pets and the pets’ owners. The initial purpose of the survey was 
@@ -35,7 +36,8 @@ interest) and publish (consent) the data for purposes other than education.
 # Data pseudonymisation {#youth-pseudonymisation}
 
 ::::keywords
-On this page: pseudonymous, de-identification, replacement, open science, reuse
+On this page: pseudonymous, de-identification, replacement, open science, reuse    
+Date of last review: 2023-03-30
 ::::
 
 [YOUth](https://www.uu.nl/en/research/youth-cohort-study){target="_blank"} 
@@ -169,7 +171,8 @@ having to share the physical samples with researchers.</div></details>
 # Publishing metadata {#open-science-questionnaire}
 
 ::::keywords
-On this page: FAIR data, metadata, documentation, publication, reuse
+On this page: FAIR data, metadata, documentation, publication, reuse    
+Date of last review: 2022-08-22
 ::::
 
 In 2020, the [Open Science Programme of Utrecht University](https://www.uu.nl/en/research/open-science){target="_blank"}
@@ -206,7 +209,8 @@ project’s outputs.
 
 ::::keywords
 On this page: further processing, secondary use, reuse, student data, education,
-legal basis, access control
+legal basis, access control    
+Date of last review: 2022-11-18
 ::::
 
 A research group at the Science faculty wanted to investigate the effects of the 

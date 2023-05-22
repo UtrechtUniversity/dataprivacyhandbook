@@ -1,0 +1,5 @@
+# Statistical privacy {#statistical-privacy}
+
+## K-anonymity and its descendents
+
+## Differential privacy {#differential-privacy}

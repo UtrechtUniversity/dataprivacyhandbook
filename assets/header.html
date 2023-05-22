@@ -1,14 +1,13 @@
+<!DOCTYPE HTML>
 <script src="assets/book.js"></script>
-
-<!-- This is a first try on adding structured data (metadata) to each page in the Handbook.
-    Some key information is still missing, such as creators, contributors and the DOI.
-    The below json-ld was created using Maastricht University's FAIR metadata wizard: 
-    https://maastrichtu-ids.github.io/fair-metadata-wizard/-->
-<script src="assets/metadata-dph.json" type="application/ld+json">
+<!-- Structured data created using Maastricht University's FAIR metadata wizard: 
+    https://maastrichtu-ids.github.io/fair-metadata-wizard/ and https://validator.schema.org/-->
+<script type="application/ld+json">
     {
+        "@context": "https://schema.org",
         "@type": "LearningResource",
         "name": "Data Privacy Handbook",
-        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff.",
+        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff in the Netherlands.",
         "version": "1.0",
         "url": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
         "license": "https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md",
@@ -21,15 +20,6 @@
         "datePublished": {
             "@type": "Date",
             "@value": "2023-06-01"
-        },
-        "distribution": {
-            "@type": "DataDownload",
-            "contentUrl": {
-                "@type": "URL",
-                "@value": "https://utrechtuniversity.github.io/dataprivacyhandbook/dataprivacyhandbook.pdf"
-            },
-            "encodingFormat": "pdf",
-            "contentSize": "1MB"
         },
         "inLanguage": {
             "@type": "Language",
@@ -47,17 +37,21 @@
         ],
         "publisher": {
             "@type": "Organization",
-            "name": "Research Data Management Support",
-            "affiliation": {
+            "name": "Utrecht University",
+            "url": {
+            	"@type": "URL",
+                "@value": "https://ror.org/04pp8hn57"
+            },
+            "logo": {
+            	"@type": "ImageObject",
+                "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+            },
+            "subOrganization": {
                 "@type": "Organization",
-                "name": "Utrecht University",
+                "name": "Research Data Management Support",
                 "url": {
-                    "@type": "URL",
-                    "@value": "https://ror.org/04pp8hn57"
-                },
-                "logo": {
-                    "@type": "ImageObject",
-                    "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+                	"@type": "URL",
+                    "@value": "https://uu.nl/rdm"
                 }
             }
         }

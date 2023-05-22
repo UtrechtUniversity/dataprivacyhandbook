@@ -1,0 +1,851 @@
+# Documents & Assessments {#legal-documents}
+
+**This chapter addresses privacy-related documentation that is most commonly used
+within research. For each type of documentation, it explains what it entails,
+when to use it, and how.**
+
+The following documents are addressed:
+
+- [Information to data subjects](#privacy-notices)
+- [Informed consent forms](#informed-consent-forms)
+- [Privacy scan](#privacy-scan)
+- [Data Protection Impact Assessment](#dpia)
+- [Legitimate interest assessment](#legitimate-interest-assessment)
+- [Data Transfer Impact Assessment](#dtia)
+- The [processing register](#processing-register)
+- [Several agreements](#agreements), such as the non-disclosure agreement, data processing
+agreement, data transfer agreement, joint controller agreement, and data use 
+agreement.
+
+## Information to data subjects {#privacy-notices}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/details-button.css">
+</head>
+
+:::keywords
+On this page: informed consent, informing, information, transparency, 
+transparent, privacy notice, information letter, privacy policy    
+Date of last review: 2022-10-07
+:::
+
+**A privacy notice is any information given to data subjects about what is 
+happening with their personal data. In research, a privacy notice is usually 
+combined with general information about the research project and often with an 
+informed consent form, to satisfy both privacy and ethical concerns. Generally, 
+the aim of a privacy notice is to inform data subjects on how and why their 
+data are being processed. Providing that information is the "cornerstone of 
+data subjects' rights", as without it, data subjects cannot exercise their other 
+privacy rights.**
+
+### When to use a privacy notice?
+Informing data subjects is always required, for **all [legal bases](#legal-basis)** 
+(so not only when you use informed consent). Being properly informed is a data 
+subject's right in itself ([art. 12](https://gdpr-info.eu/art-12-gdpr/){target="_blank"}): 
+it is necessary so that data subjects can exercise their [other rights](#data-subject-rights)
+(e.g., right to be forgotten, right to object, etc.). 
+
+You need to inform data subjects **before** you start collecting or otherwise
+processing their personal data (so before the start of your research project). 
+If you share personal data with an external party, you should inform data 
+subjects at the latest when first sharing those data with that external party.
+
+When you use personal data from another source, you have to inform your data 
+subjects within a month after obtaining their data 
+([art. 14](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}), except if:
+
+- they have already been properly informed elsewhere
+- this would involve a disproportionate effort
+- this would seriously impair your processing purposes (e.g., if you cannot 
+answer your research question anymore, 
+[art. 14(5)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}). 
+
+
+### Content and examples of privacy notices
+Below you can find a list of items to include in your information to data 
+subjects (Template) and some example sentences to (not) include in your privacy
+notice (click to expand).
+
+<a href="https://www.uu.nl/sites/default/files/RDM_Support_Template_Information_letter.pdf" 
+target = "_blank" style="text-decoration: none;"><button type="button">Template information letter UU</button></a> 
+<a href="https://www.ccmo.nl/onderzoekers/standaardonderzoeksdossier/e-informatie-proefpersonen" 
+target = "_blank" style="text-decoration: none;"><button type="button">Template information letter for WMO research</button></a> 
+
+<details><summary><b>Example sentences</b></summary>
+
+<table style="width:100%">
+  <tr>
+    <th>Bad promise</th>
+    <th>Alternative</th>
+  </tr>
+  <tr>
+    <td>"After the project ends, we will delete all of your data, so that you will not be identifiable anymore."</td>
+    <td>"After the end of the study, we will delete the code linking your data to your name. We will store your de-identified data for 10 years for integrity purposes."</td>
+  </tr>
+  <tr>
+    <td>"Your data will be fully anonymised before they are shared with others."</td>
+    <td>"We will remove personal information that could reasonably identify you before we share any files with other researchers."</td>
+  </tr>
+    <tr>
+    <td>"All data that you will provide will be kept strictly confidential and will not be shared further."</td>
+    <td>"The main researcher will keep a link that identifies you to your coded information. They will keep this link secure and available only to the selected members of the research team."</td>
+  </tr>
+    <tr>
+    <td>"Your data will only be accessible by the research team, and no one else."</td>
+    <td>"We will only share your de-identified data with other researchers if they agree to treat your data confidentially and only after approval from the original research team."</td>
+  </tr>
+    <tr>
+    <td>"You can withdraw your consent from this study at any time up until the end of the research project. If you withdraw your consent, we will delete all your data from our dataset immediately."</td>
+    <td>"You can withdraw your consent from this study at any time, without stating a reason why and without any repercussions. Please inform the researcher about your decision. We will then delete any personal data referring to you that we still have, where this is still possible."</td>
+  </tr>
+</table>
+</details>
+
+### Form of a privacy notice
+::::fyi
+The format of the privacy notice is also crucial. Even if you include all 
+necessary components in your privacy notice, it will **not be GDPR-compliant** 
+if you fail to provide the information in an appropriate form, shape and time.
+::::
+
+The information you provide to data subjects should be:
+
+- **Clear and understandable**<br>
+A privacy notice is not a legal document, so do not write it like you would 
+write a legal contract. The information should be understandable for data 
+subjects and it should have a clear and concrete meaning. For example, avoid 
+using words like "may", "some", "often" and write active and short sentences.
+Tip: try these 
+[writing tips](https://www.researchplatform-dorp.nl/wp-content/uploads/20220329-Handleiding-PIF-beperkte_gezondheidsvaardigheden.pdf){target="_blank"}, 
+this [language tester](https://ishetb1.nl/){target="_blank"}, or use this 
+[simplified information sheet](https://www.pharos.nl/kennisbank/eenvoudige-en-begrijpelijke-onderzoeksformulieren-patientinformatieformulier-pif/){target="_blank"}
+(all in Dutch).
+
+- **Easily accessible**<br>
+Data subjects should be able to find the information easily. For example, publish 
+the privacy notice on your project website, give participants a copy, or provide 
+a QR-code or short URL. Even if you cannot inform data subjects directly, you 
+should make an effort to inform them and put the information somewhere they will 
+likely come across (such as a website or on social media).
+
+- **Via multiple channels (when appropriate)**<br>
+Textual information sheets are by no means the only way to inform data subjects. 
+If appropriate, you can provide the information via other channels too, e.g., 
+oral statements, images 
+([example](https://irenececile.com/project/stripverhaal-wetenschappelijk-medicijnonderzoek-voor-kinderen-informed-consent/){target="_blank"}), 
+audio, video 
+([example](https://www.youtube.com/watch?v=H5aMCfqw1Lw){target="_blank"}), 
+etc. For some data subjects, such other channels of informing can lead to a better 
+understanding of your processing activities.
+
+- **Layered (when appropriate)**<br>
+To balance being complete with being understandable, you can layer the 
+information you provide. For example, provide concise information up front and 
+provide more detailed information elsewhere (e.g., via a link or dropdown menu).
+
+If you are uncertain about the level of intelligibility and transparency of the 
+information, you can test these, for example through user panels, readability 
+testing, or by interactions with data subjects themselves (or their 
+representatives).
+
+## Informed consent {#informed-consent-forms}
+
+:::keywords
+On this page: consent, consent form, informed consent form, legal basis    
+Date of last review: 2022-11-15
+:::
+
+**Of the 6 possible legal bases to process personal data, informed consent is 
+currently the one most often used in research. With the term consent, we mean 
+the process of data subjects deciding whether or not to agree to specific 
+statements, such as a statement to participate in a research project.**
+
+### Consent step-by-step {#consent-step-by-step}
+
+1. <details open="true"><summary>Determine if consent if the legal basis you need</summary>
+<div><p>Determine if consent is the [legal basis](#legal-basis) you need for your
+      research: there are other legal bases besides consent which can sometimes be 
+      more suitable in a research context.</p>
+      <p>In some situations, consent is likely the only way to process data, for 
+      example, if you want to process 
+      [special categories of personal data]{#special-types-personal-data}, 
+      or if you process personal data from people who are incapable of giving consent
+      or from children under 16 years old. In the latter 
+      case, the GDPR requires to obtain additional obtain consent from a legal 
+      representative (e.g., parent), and there are additional requirements when your 
+      research falls under the Dutch 
+      [Medical Research Involving Human Subjects Act](https://www.ccmo.nl/onderzoekers/aanvullende-informatie-over-bepaalde-soorten-onderzoek/onderzoek-bij-proefpersonen-jonger-dan-16-jaar-kinderen/toestemming){target="_blank"}.</p>
+</div></details>
+2. <details><summary>Consider if you meet all requirements for consent</summary>
+  <div>If you need to use consent as a legal basis, consider if you meet 
+  [all requirements listed below](#consent-requirements). If you do not,
+  consent is not a valid legal basis, and you should consider another one.
+  </div></details>
+3. <details><summary>Determine what you will ask consent for</summary>
+  <div>Determine what specifically you are asking consent for. If you cannot 
+  determine a specific purpose, for instance because your research question is 
+  not yet entirely clear, contact your [privacy officer](#support)
+  to consider [obtaining broad consent](#broad-consent).
+  </div></details>
+4. <details><summary>Prepare information for data subjects</summary>
+  <div>Prepare a 
+  [privacy notice or information letter](#privacy-notices) 
+  for data subjects to inform them before asking for their consent.
+  </div></details>
+5. <details><summary>Obtain demonstrable consent</summary>
+  <div>Different [forms of consent](#forms-consent) are valid. Note 
+  that often a [signature is not required](#to-sign-or-not-to-sign).
+  </div></details>
+6. <details><summary>Keep the consent forms available</summary>
+  <div>Treat the consent declarations as personal data: 
+  [store them](#demonstrate-consent) separately and securely from the 
+  research data, and for as long as your research data contain personal data. 
+  </div></details>
+
+:::note
+Note that the term “consent” is used both in the GDPR as well as in an ethical 
+context. As a [legal basis](#legal-basis), data subjects give consent 
+to process their personal data (e.g., "I consent to my data a, b, c be used for 
+purpose x, y, z"). In an ethical context, consent is a 
+[safeguard](https://edps.europa.eu/sites/default/files/publication/20-01-06_opinion_research_en.pdf#page=20){target="_blank"}
+to give data subjects more control over their personal data, and makes sure they 
+participate voluntarily in the research project (e.g.,  "I have read the 
+information and agree to participate under the conditions described"). Thus, it 
+can happen that consent is not be the best legal basis to use, but should still 
+be used as an ethical requirement.
+:::
+
+### Requirements for valid consent {#consent-requirements}
+
+Under the GDPR, consent is only valid when it is **all** of the below
+([art. 4](https://gdpr-info.eu/art-4-gdpr/){target="_blank"}, 
+[art. 7](https://gdpr-info.eu/art-7-gdpr/){target="_blank"}, 
+[rec. 32](https://gdpr-info.eu/recitals/no-32/){target="_blank"}, 
+[rec. 42](https://gdpr-info.eu/recitals/no-42/){target="_blank"}, 
+[rec. 43](https://gdpr-info.eu/recitals/no-43/){target="_blank"}; 
+click to expand):
+
+<ul>
+  <li><details><summary>Freely given</summary>
+  <div>Data subjects should have an actual voluntary choice and should not experience 
+  negative consequences if they don’t consent or withdraw their consent. Moreover, 
+  they should not be pressured to provide consent, and so there cannot be a power 
+  imbalance between the controller (e.g., researcher) and data subjects 
+  ([rec. 43](https://gdpr-info.eu/recitals/no-43/){target="_blank"}).<br><br>
+  Some examples:
+    <ul>
+      <li>Consent is not a valid legal basis when the researcher is also a 
+      teacher and asks their students to participate, who depend on the teacher 
+      for a good grade.</li>
+      <li>Consent in a clinical trial is not a valid legal basis when patients 
+      are asked to participate in the trial, but the choice to participate 
+      affects their treatment plan or treatment outcome.</li>
+      <li>Consent can still be used for children and persons legally incapable to 
+      provide consent when their legal representative(s) provide the consent.</li>
+    </ul>
+  </div></details></li>
+  <li><details><summary>Specific</summary>
+  <div>Data subjects should know as specifically as possible what they are asked to
+  consent to. Separate processing purposes therefore require explicitly separate 
+  consent ([rec. 32](https://gdpr-info.eu/recitals/no-32/){target="_blank"}, 
+  [rec. 43](https://gdpr-info.eu/recitals/no-43/){target="_blank"}), and 
+  accompanying specific information that will allow the data subjects to decide 
+  if they consent or not. If consents for multiple purposes are necessary for your 
+  research, you can combine those.<br><br>
+  Some examples:
+    <ul>
+      <li>Combined consent may be possible to collect, store, analyse, and share 
+     personal data with your collaborators – all actions are needed to answer your 
+     research question.</li>
+     <li>Separate consent is needed for conducting a survey vs. for conducting a 
+     subsequent interview, if participation in that interview is not required for 
+     your research project.</li>
+     <li>Separate consent is needed for the current research project vs. for contacting 
+     data subjects for future research projects.</li>
+     <li>Separate consent is needed to use personal data to answer a research question 
+     vs. to link different sources of data together to do so 
+     ([Gedragscode Gezondheidsonderzoek, 2022](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}.</li>
+     <li>Separate consent is recommended to make the personal data 
+     [available for reuse](#data-sharing-reuse) (describe the 
+     conditions under which this will be allowed).</li>
+    </ul>
+  </div></details></li>
+  <li><details><summary>Informed</summary>
+  <div>Data subjects need to be clearly and accessibly informed about which personal 
+  data are processed and why, and about their rights (see 
+  [Information to data subjects](#privacy-notices)). Data subjects should be 
+  able to access this information easily (also after they have provided 
+  consent).</div></details>
+  </li>
+  <li><details><summary>Unambiguous and affirmative</summary>
+  <div>It should be clear what data subjects are providing consent for, using 
+  a clear, affirmative statement. Importantly, "silence, pre-ticked boxes or 
+  inactivity" do not constitute valid consent 
+  ([rec. 32](https://gdpr-info.eu/recitals/no-32/){target="_blank"}): 
+  consent should be active.
+  </div></details>
+  </li>
+  <li><details><summary>Retractable</summary>
+  <div>Data subjects have the 
+  [right to withdraw their consent](#data-subject-rights), meaning 
+  their personal data cannot be used for the research purpose anymore and have to 
+  be removed where possible. Withdrawing consent should be as easy as providing 
+  consent. It is important to make the distinction with the right to stop 
+  participating at any time (usually an ethical obligation), because the latter 
+  implies that the data collected up until that point can still be used for the 
+  research project.</div></details>
+  </li>
+</ul>
+
+### What forms of consent are valid? {#forms-consent}
+
+The way you obtain consent may differ per research project and can depend on 
+how you interact with your data subjects. The only requirement is that it should 
+be demonstrable and registered in a reliable manner. Some examples:
+
+- Ticking a box (**not** pre-ticked!)
+- Writing or replying to an email (“I agree to be interviewed”)
+- Filling in an electronic form
+- Audio- or video-recorded consent (separate it from the research data!)
+- Signing a paper document (not usually necessary)
+
+#### To sign or not to sign?
+
+Signatures in consent forms are rarely needed. In fact, if you are only 
+processing *pseudonymised* research data, you will only collect unnecessary 
+personal data by obtaining a signature 
+([art. 11](https://gdpr-info.eu/art-11-gdpr/){target="_blank"}), and a 
+checkbox should be sufficient. In order to link the consent form with the data 
+subject, you should include the pseudonym on the consent form (the identifier 
+you will use for the participant, e.g., “part-001”). Inform your participants 
+of this pseudonym; they can use it to exercise their rights under the GDPR, 
+such as for withdrawing their consent. 
+
+Only when the identity of the data subjects will be used in the process (e.g., 
+clinical trials), a signature may make sense or be required. For example, if 
+your research is 
+[subject](https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not){target="_blank"} 
+to the Dutch Medical Research Involving Human Subjects Act (WMO), 
+[different requirements may apply](https://www.ccmo.nl/onderzoekers/wet-en-regelgeving-voor-medisch-wetenschappelijk-onderzoek/de-wmo-in-een-notendop/toestemming/elektronische-toestemming){target="_blank"}.
+
+### Demonstrating (valid) consent {#demonstrate-consent}
+
+As long as you process personal data, you should be able to demonstrate that the 
+data subjects consented to that processing 
+([rec. 42](https://gdpr-info.eu/recitals/no-42/){target="_blank"}). 
+So as long as you analyse, use, store, archive, etc. the personal data, the 
+proof of consent needs to be retained. It is preferable to store the proofs 
+separately from the research data. If you collected consent on paper, it is 
+best practice to scan the consent forms and securely delete the paper version 
+after having made sure the scanning went well. Only after there is no personal 
+data anymore (e.g., after fully anonymising the dataset), you can remove the 
+proof of consent. 
+
+### Broad consent in research {#broad-consent}
+
+In research, it can sometimes be difficult to formulate very specific research 
+questions in advance. In this case, you may be able to formulate the research 
+purposes on a more general level and obtain consent for these more general 
+purposes 
+([EDPS, 2020](https://edps.europa.eu/sites/default/files/publication/20-01-06_opinion_research_en.pdf){target="_blank"}; 
+[Deutsche Datenschutzkonferenz, 2019](https://www.datenschutzkonferenz-online.de/media/dskb/20190405_auslegung_bestimmte_bereiche_wiss_forschung.pdf){target="_blank"}).
+However, you can do this only as long as:
+
+- data subjects can give consent to only part of the research and easily 
+withdraw consent 
+([rec. 33](https://gdpr-info.eu/recitals/no-33/){target="_blank"}).
+- data subjects are kept informed as specifically as possible about what will 
+happen to their personal data. As soon as you know more, you should also inform 
+data subjects in more detail. Your use of the personal data should fall within
+the line of expectation from data subjects.
+- you use additional protection measures, for example:
+  - obtain ethical approval for using the data for new research questions.
+  - offer a consent withdrawal possibility before using the data for new research 
+ questions. This is especially relevant when it is still possible to reliably 
+ identify data subjects in the dataset.
+  - make sure the data are not transferred to countries outside of the EEA, 
+ unless one of the derogations from GDPR 
+ [Chapter V](https://gdpr-info.eu/chapter-5/){target="_blank"} 
+ applies (e.g., adequacy decision, standard contractual clauses, explicit 
+ consent for transfer).
+  - enforce specific requirements for access the data, e.g., "research in general" 
+ is not a sufficiently specific purpose for reuse of the personal data.
+- you document your considerations and ask for help from a [privacy officer](#support).
+
+:::note
+Broad consent under the GDPR needs to be distinguished from "General consent" 
+as defined by the Dutch
+[Code of Conduct for health researchers](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}, 
+that is: for medical research, different requirements may (additionally) apply.
+:::
+
+### Examples and templates
+
+Note that all examples below assume that they are preceded by 
+[sufficiently specified information](#privacy-notices).
+
+<a href="https://survey.uu.nl/jfe/form/SV_8qpuudgm8Auktjn" target="_blank" 
+style="text-decoration: none;"><button type="button">Template in Qualtrics</button></a>
+<a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/5.-Protect/Informed-consent" 
+target="_blank" style="text-decoration: none;"><button type="button">Examples CESSDA</button></a> 
+
+<details><summary style="list-style: none; align-items: center; background-clip: padding-box; background-color: #FCD000; border: none; border-radius: .25rem; box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0; box-sizing: border-box; color: white; cursor: pointer; display: inline-flex; font-size: 16px; font-weight: 600; justify-content: center; line-height: 1.25; margin: 0; min-height: 3rem; padding: calc(.875rem - 1px) calc(1.5rem - 1px); position: relative; text-decoration: none;   transition: all 250ms; user-select: none; -webkit-user-select: none; touch-action: manipulation; vertical-align: baseline; width: auto; margin-right:5px;"><b>Example sentences</b></summary>
+<div style="border-radius: 0 0 10px 10px; padding: 12px 6px; margin: 0; box-shadow: 3px 3px 4px grey;">Good example sentences:
+<ul>
+  <li>"I consent to the collection and use of my personal data to answer the 
+  research question described in the information letter."</li>
+  <li>"I consent to linking the new research data to data previously collected 
+  about me in this research project."</li>
+  <li>"I agree that research data gathered for the study may be published or 
+  made available provided my name or other identifying information is not used."</li>
+  <li>"I understand that the research data, without any personal information 
+  that could identify me (not linked to me) may be shared with other researchers."</li>
+</ul>
+
+Bad example sentences:
+<ul>
+  <li>"Any information I give will be used for this research project only and 
+  will not be used for any other purpose": this restricts all future uses of 
+  the data, including sharing the data with your collaborators, performing 
+  analyses for new research questions, and sharing the data for reuse. It's 
+  preferred to tell data subjects how their data can be safely used in 
+  different ways.</li>
+  <li>"I do not give consent to share my data": this sentence is ambiguous and 
+  may confuse data subjects.</li>
+  <li>"I acknowledge that the personal data collected by the researcher belongs 
+  to the university and that I have no rights in the research performed on it": 
+  it is not allowed to deny data subjects their data subjects' rights.</li>
+</ul>
+</div>
+</details>
+
+## Privacy scan {#privacy-scan}
+
+:::keywords
+On this page: privacy scan, pre-DPIA, DPIA-light, design, data management plan
+for privacy, risk assessment, planning    
+Date of last review: 2023-02-14
+:::
+
+A privacy scan is an initial risk assessment that helps you delineate how you 
+will handle and protect the personal data in your research project ("a Data 
+Management Plan for personal data", also known as "pre-DPIA", "DPIA-light", or 
+"privacy review"). It contains information on your 
+[research question(s)](#purpose-limitation), which [personal data](#personal-data) 
+you process and from which data subjects, how you use the personal data (e.g., 
+will you [share](#data-sharing-collaboration) them) and which 
+[protective measures](#design-strategies) you apply, your [legal basis](#legal-basis), 
+how data subjects can exercise their [data subjects’ rights](#data-subject-rights), 
+and a preliminary assessment of the [risks](#risk-assessment) for data subjects.
+
+The purpose of a privacy scan is to: 
+
+- Make a preliminary assessment of the risks of your project for data subjects.  
+- Implement [Privacy by Design and Privacy by Default](#privacy-by-design) into 
+your project. 
+- Fulfil the principle of [Accountability](#accountability) by documenting your 
+project. 
+- Identify whether a full [Data Protection Impact Assessment](#dpia) (DPIA) is needed. 
+
+### When to use a privacy scan? {#privacy-scan-when}
+
+Whenever you use personal data in your project, we recommend to complete a 
+privacy scan in consultation with your [privacy officer](#support) 
+to make sure your data are well protected throughout your project. As the 
+privacy scan is a planning document, much like a 
+[Data Management Plan](https://www.uu.nl/en/research/research-data-management/guides/data-management-planning){target="_blank"}, 
+it is preferable to fill it out as **early as possible before you start 
+collecting data**, to prevent unforeseen or costly changes to the design of your 
+research project.  
+
+::::note
+- Treat the privacy scan as a living document: update it if anything changes 
+in your design.  
+- Retain the privacy scan as long as you retain personal data.
+::::
+
+Note that there is some overlap in content with some Data Management Plans and 
+research protocols (e.g., that of the CCMO). The privacy aspects in a privacy 
+scan are just more extensive. 
+
+### Examples and templates
+<a href="https://geo-data-support.sites.uu.nl/privacy-scan-empty-template/" target="_blank" 
+style="text-decoration: none;"><button type="button">Example template</button></a>
+
+## Data Protection Impact Assessment {#dpia}
+
+::::keywords
+On this page: DPIA, GBEB, risk assessment, high risk, protection measures,
+safeguards    
+Date of last review: 2023-02-14
+::::
+
+A Data Protection Impact Assessment (DPIA) is an instrument to identify and 
+mitigate privacy risks associated with processing personal data in a project. 
+Whereas a [privacy scan](#privacy-scan) is recommended for all projects 
+processing personal data, a DPIA is required by the GDPR if your processing of 
+personal data poses a [high risk](#high-risk-processing) to the rights and 
+freedoms of data subjects or others 
+([art. 35](https://gdpr-info.eu/art-35-gdpr/){target="_blank"}). This can be the 
+case, for example, when you process personal data from vulnerable groups such 
+as children or patients, sensitive personal data, or a large amount of personal 
+data (see also the [risk assessment chapter](#risk-assessment)).
+
+A DPIA is very in-depth, and requires an official advice from the university’s 
+[Data Protection Officer](https://intranet.uu.nl/en/knowledgebase/data-protection-officer){target="_blank"} 
+(DPO). We strongly recommend contacting your [privacy officer](#support) 
+early on: they can best estimate whether a DPIA is necessary and to identify 
+any approved DPIAs that may be useful for your project to reuse. And they have 
+to be involved in performing the assessment anyway.
+
+### The process of performing a DPIA {#dpia-process}
+
+1. Contact your [privacy officer](#support) as early as possible to assess the 
+necessity to carry out a DPIA. 
+2. Work together with your privacy officer, and possible other stakeholders like 
+security officers, to assess your [design](#privacy-by-design) and 
+[risks](#risk-assessment) and complete the DPIA.
+3. When finished, the DPIA will be sent to the Data Protection Officer (DPO) for 
+advice. Their considerations will also need to be documented.
+4. You may need to adjust your research design and update the DPIA accordingly.
+5. In case of a negative DPO advice, you should ask your head of department or 
+faculty dean for permission to go ahead with your project.
+6. Regularly update the DPIA when there are changes in your research project.
+7. Retain the DPIA for as long as you retain personal data.
+
+### Examples and templates 
+
+<a href="https://intranet.uu.nl/en/system/files/data_protection_impact_assessment_based_on_norea_pia_version_1.2_english.xlsx" 
+target="_blank" style="text-decoration: none;"><button type="button">Example template Norea</button></a>
+<a href="https://intranet.uu.nl/en/system/files/documenten/model_data_protection_impact_assessment_pia_translated_from_dutch.pdf" 
+target="_blank" style="text-decoration: none;"><button type="button">Example template Dutch government</button></a>
+
+An example case from Utrecht University about social safety in the Dutch House 
+of Representatives is described on the 
+[UU intranet](https://intranet.uu.nl/en/news/background/privacy-in-practice-research-into-social-safety-in-the-dutch-house-of-representatives){target="_blank"} 
+(privacy considerations) and on the 
+[UU website](https://www.uu.nl/en/news/utrecht-university-to-study-social-safety-in-dutch-house-of-representatives){target="_blank"} 
+(news message). 
+
+
+## Legitimate interest assessment {#legitimate-interest-assessment}
+
+::::keywords
+On this page: proportionality, necessity, proportional, necessary, balancing 
+test, legitimate interest, legal basis    
+Date of last review: 2023-02-14
+::::
+
+If you plan to use legitimate interest as a [legal basis](#legal-basis) in your 
+research project, the GDPR requires that you assess the balance between your 
+interests and those of your data subjects 
+([art. 6](https://gdpr-info.eu/art-6-gdpr/){target="_blank"}). In such an 
+assessment, you consider:
+
+- the purpose of your research: what is your interest? The interest (purpose) 
+must be real, concrete and direct. In research, enabling you to perform your 
+research is usually a legitimate purpose.
+- whether your processing is:
+  - necessary: can you reasonably achieve your goal in a more privacy-friendly 
+  way?, and
+  - proportionate: how many people will be affected, to what extent and how 
+  intrusive is your processing?
+- your interests vs. those of data subjects (balancing test), e.g., can data 
+subjects expect you to process their data this way, what is the impact of your 
+processing on data subjects, your project, and society, and which safeguards can 
+you put in place to protect data subjects’ interests? 
+
+### How to do a legitimate interest assessment? {#lia-how}
+
+Assessing the legitimacy of your processing is part of the 
+[privacy scan](#privacy-scan) or, if applicable, a [DPIA](#dpia). If you do not 
+use a privacy scan or DPIA and/or you have not performed this assessment (yet), 
+but you do rely on legitimate interest, please contact your 
+[privacy officer](#support) as soon as possible to perform a privacy scan anyways.
+
+::::note
+Please note: once your interest is assessed as being "legitimate", this is not 
+a free pass to do whatever you want with the data: you still need to incorporate 
+[Privacy by design](#privacy-by-design) into your project, for example by 
+adequately informing data subjects, protecting the personal data, and allowing 
+data subjects to exercise their rights.
+::::
+
+### Examples and templates 
+<a href="files/Legitimate_interest_assessment_empty.pdf" target = "_blank" 
+style="text-decoration: none;"><button type="button">Template in the absence of a privacy scan/DPIA</button></a> 
+
+
+## Data Transfer Impact Assessment {#dtia}
+
+:::keywords
+On this page: data transfer, third-country transfer, sharing outside EU, EEA, 
+risk assessment    
+Date of last review: 2023-02-14
+:::
+
+A Data Transfer Impact Assessment (DTIA) is a risk analysis that is needed when 
+personal data are transferred to third countries. A DTIA is not an official 
+GDPR document by itself, like the DPIA, but instead is **usually part of, or a 
+supplement to, a [DPIA](#dpia)**.
+
+### What is a third-country transfer? {#third-country-transfer}
+In legal terms, a transfer exists when personal data controlled by one party 
+are accessible to another, irrespective of whether the data are physically sent 
+to that party. An international/third-country transfer exists when the party 
+that can potentially gain access is based in a country outside the European 
+Economic Area (EEA) which does not have an 
+[adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}
+from the European Commission. 
+
+::::fyi
+In GDPR terminology:
+
+- No transfer: a researcher who is connected to an EEA-organisation - and thus 
+has to abide by the GDPR - accesses data that are stored at that EEA-organisation 
+from a "non-adequate" country (provided safeguards are in place to prevent other 
+parties from gaining access). 
+- Third-country transfer: if personal data are stored at the servers of a 
+non-EEA party, or uses a cloud provider that has servers both in- and outside 
+the EEA.
+- No third-country transfer: the party with whom the data are shared is already 
+subject to the GDPR (e.g., the party is situated in Germany or Italy).
+::: 
+
+### Goal and content of a DTA {#dtia-goal-content}
+
+The goal of a DTIA is to:
+
+- assess the risks of:
+  - the data receiver not being able to provide the promised level of protection.
+  - local regulations preventing the removal or returning of the personal data after use.
+  - local authorities accessing the personal data (il)legitimately.
+- determine the appropriate safeguards to protect the data during the transfer. 
+
+The DTIA [should ideally contain](https://edpb.europa.eu/system/files/2021-06/edpb_recommendations_202001vo.2.0_supplementarymeasurestransferstools_en.pdf){target="_blank"}: 
+
+1. the context of the data transfer (which data are transferred, how, where?)
+2. under which safeguards ([art. 46](https://gdpr-info.eu/art-46-gdpr/){target="_blank"}) 
+the data will be transferred (e.g., [Standard Contractual Clauses](#scc))
+3. how effective the safeguards will be ([risk analysis](#risk-assessment))
+4. which additional safeguards are needed to ensure a sufficient level of data protection 
+5. a final decision on whether or not the data can be transferred
+
+As this is a relatively new topic in data protection land, please contact your 
+[privacy officer](#support)
+for assistance with a DTIA or for questions about third-country transfers . 
+
+### Examples and templates 
+
+<a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/international-data-transfer-agreement-and-guidance/transfer-risk-assessments/#TRA-tool" target="_blank" 
+style="text-decoration: none;"><button type="button">Example questions</button></a>
+
+
+## Processing register {#processing-register}
+
+::::keywords
+On this page: registry, processing activities, project register, administration
+Date of last review: 2022-01-05
+::::
+
+Any EU-based organisation is required to keep a registry of processing 
+activities from within their organisation 
+([art. 30](https://gdpr-info.eu/art-30-gdpr/){target="_blank"}). 
+If you are performing research with human subjects, the odds are that your 
+research project will have to be registered in such a register as well. Such a
+register should contain who are processing the personal data, for what purpose,
+which personal data are processed, with whom the data are shared, and how the 
+data will be protected.
+
+Notably, the GDPR does not prescribe what such a register should look like 
+exactly, and thus every institution has their own way in which the processing 
+register is implemented and managed. Ask your local [privacy officer](#support) how your
+institution registers research projects that process personal data.
+
+:::note
+At Utrecht University, a university-wide processing register is currently being
+developed. For the time being, other administrative systems and documents such as
+the Data Management Plan, the privacy scan, the DPIA and/or the ethical 
+application may function as a processing register. Please ask your
+[privacy officer](#support) for more information about how your faculty handles this.
+:::
+
+## Agreements {#agreements}
+
+::::keywords
+On this page: agreement, contract, sharing, transfer, sharing outside EU, EEA, 
+controller, processor, provider, data owner    
+Date of last review: 2022-12-15
+::::
+
+**There are many types of agreements that can – and sometimes should – be set up 
+during a research project. Which one you need depends on the purpose of transfer, 
+where the data are transferred to, and the external party’s role in the research 
+project. The flowchart below gives an indication which agreement should be used 
+in which situation. Under the figure, you can also find a short explanation 
+about each individual type of agreement.**
+
+
+<img src="img/agreements_flowchart.png" title="Flowchart to choose the correct 
+type of agreement in research" alt="Flowchart to choose the correct type
+of agreement in research. Firstly, you do not need an agreement if you are 
+collaborating with someone within your own institution, or if you use software of
+which the use is already covered by an existing agreement. Secondly, you need a 
+non-disclosure agreement if you collaborate with someone outside of your 
+institution who processes data within your institutional hardware. Thirdly,
+you need a data processing agreement when you collaborate with someone who does
+not have their own processing purposes and is thus a processor. You also need a
+data processing agreement when you use software that processes personal data on
+your behalf. Fourthly, you need a data transfer agreement when you collaborate 
+with someone who wants to use your data for their own purposes, or when you use
+software that processes personal data for their own purposes. Finally, you need 
+a joint controllers agreement when you collaborate with an external institution or
+with a software provider who has an overlapping processing purpose, such as a 
+shared research question." height="100%"/>
+
+Quick links to:
+<a href="#nda" style="text-decoration: none;"><button type="button">NDA</button></a>
+<a href="#data-processing-agreement" style="text-decoration: none;"><button type="button">DPA</button></a>
+<a href="#data-transfer-agreement" style="text-decoration: none;"><button type="button">DTA</button></a>
+<a href="#joint-controller-agreement" style="text-decoration: none;"><button type="button">Joint controllers agreement</button></a>
+<a href="#user-agreement" style="text-decoration: none;"><button type="button">DUA</button></a>
+<a href="#scc" style="text-decoration: none;"><button type="button">SCCs</button></a>
+
+### How to set up an agreement? {#set-up-agreements}
+
+In order to set up an agreement, you should always get in touch with your 
+[Research Support Office (RSO) or privacy officer](#support) to get the ball rolling!
+
+:::warning
+- Any agreement should be signed by someone who is authorised/mandated to do so. 
+Usually this is a research director or faculty dean, but rarely you yourself. 
+The RSO can tell you who in your case is mandated to sign the agreement.
+- An agreement is not a replacement for consent or any other 
+[legal basis](#legal-basis). It is a safeguard to make sure all 
+parties involved treat the data safely and in accordance with the GDPR.
+:::
+
+### Non-disclosure agreement {#nda}
+
+A Non-Disclosure Agreement (NDA), or Confidentiality agreement, is an agreement 
+that makes sure that either the receiver of the data or both parties handle 
+data with care. Often, an NDA is meant to make sure that the receiving party 
+keeps the data they get access to safe and processes the data according to 
+specific guidelines. In research, it is often used between university researchers 
+and students who perform research on their behalf. In this case, it is sometimes 
+necessary to use an NDA, because students are not (always) bound to 
+confidentiality through a contract with the university, whereas the researchers 
+are. 
+
+<a href="files/Model_Confidentiality_Agreement_2021_en.odt" target = "_blank" style="text-decoration: none;"><button type="button">Model NDA Utrecht University (two-sided)</button></a>
+<a href="files/One-sided_confidentiality_agreement_Dutch.odt" target = "_blank" style="text-decoration: none;"><button type="button">Example NDA (one-sided)</button></a>
+
+### Data processing agreement {#data-processing-agreement}
+
+A data processing agreement (DPA) is mandatory when you transfer personal data 
+to a third party who fulfills the role of a processor 
+([art. 28(3)](https://gdpr-info.eu/art-28-gdpr/){target="_blank"}). 
+In other words: a person or organisation that processes personal data on your 
+behalf, without having a say as to why or how the data are processed. Important 
+components of a DPA are a description of the data that are being shared, why 
+they are being shared, what the third party can or cannot do with them, for how 
+long, and what happens in case of a personal data breach. For example, the third 
+party cannot use the data for their own purposes and is required to keep the 
+data safe and report any potential data breaches to you. 
+
+A DPA is most often used when you use an application or tool that processes 
+personal data. Examples of these are survey tools, analysis tools, transcription 
+tools, documentation tools and data repositories. With many parties that offer 
+such tools, there is already a processing agreement in place at the UU-level, 
+and so they are already safe to use, see the 
+[Tooladvisor](https://tools.uu.nl/){target="_blank"}.
+
+<a href="https://intranet.uu.nl/en/knowledgebase/data-processing-agreements" target = "_blank" style="text-decoration: none;"><button type="button">Utrecht University template (UU only)</button></a>
+<a href="https://www.surf.nl/files/2019-04/SURF-Model-Verwerkersovereenkomst-3.0.pdf" target = "_blank" style="text-decoration: none;"><button type="button">SURF template</button></a>
+
+### Data Transfer Agreement {#data-transfer-agreement}
+
+A data transfer agreement (DTA) is advisable when you transfer data to a third 
+party who will (re)use the data for their own purposes, without having an 
+active role in your research project. It is used often when this third party is 
+an external institution, but is also recommended when the third party is someone 
+from within your own institution. A DTA is used to ensure that both parties are 
+aware of their responsibilities and are bound to do what the agreement says. It 
+contains a description of the personal data that are being shared, why they are 
+being shared, under which legal basis, and how the data should be protected by 
+each party.
+
+A DTA can be used when (for example):
+
+- you want to share personal data for reuse purposes with other researchers. 
+This also requires adding statements on the terms of use, although these terms 
+of use can also be separately registered in a [Data Use Agreement](#user-agreement).
+- you are using a software tool, and the software provider wants to run 
+analytics on the personal data you process in their tool. This makes the 
+software provider a controller, with a separate purpose from your own (e.g., 
+answering your research question). Note that you likely already have a 
+[Data Processing Agreement](#data-processing-agreement) with the 
+software provider, and thus a clause in that DPA can also suffice in such cases.
+
+<a href="https://elsi.health-ri.nl/sites/elsi/files/2020-07/20.30815%20OenO%20Template%20-%20Data%20Sharing%20Agreement.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Health-RI template</button></a>
+<a href="https://www.uu.nl/sites/default/files/data_transfer_agreement_youth_template.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Example Utrecht University</button></a>
+
+### Joint controllers agreement {#joint-controller-agreement}
+
+A joint controllers agreement is mandatory when you work together with another 
+controller on the same personal data, and you have common purposes (why) and 
+means (how) of processing. In a joint controllers agreement, the respective 
+responsibilities of both (all) parties are formalised, e.g., who informs data 
+subjects, who is the contact point for data subjects, and how are data kept 
+secure ([art. 26](https://gdpr-info.eu/art-26-gdpr/){target="_blank"}). 
+In research, this happens most often in a consortium, where multiple institutions
+participate in a research project. Therefore, a joint controllers agreement is 
+often part of the consortium agreement, in which also topics other than the 
+processing of personal data are formalised (e.g., intellectual property rights, 
+how data are shared, etc.).
+
+<a href="https://www.era-learn.eu/documents/examples_jca/view" target = "_blank" style="text-decoration: none;"><button type="button">Examples</button></a>
+<a href="https://surfdrive.surf.nl/files/index.php/apps/richdocuments/public?fileId=4806036408&shareToken=9cWMy7XCvblsspi" target = "_blank" style="text-decoration: none;"><button type="button">Erasmus University Rotterdam template</button></a>
+<a href="https://www.surf.nl/files/2019-01/model-gezamenlijk-verantwoordelijkenovk-1.0.pdf" target = "_blank" style="text-decoration: none;"><button type="button">SURF template</button></a>
+
+<!-- This text on the DUA may be clarified -->
+### Data Use Agreement {#user-agreement}
+A data use agreement (DUA), or user agreement, is basically a custom license for 
+your dataset. It specifies the terms and conditions under which the receiver of 
+the data can (re)use the data and is therefore in many ways similar to a 
+[Data Transfer Agreement](#data-transfer-agreement). For example, 
+it may contain statements on what the receiver can do with the data, and how 
+the original data owners should be attributed. It can also state that the 
+receiver must comply with the GDPR and cannot try to reidentify data subjects. 
+DUAs are often used in data repositories (e.g., custom terms of use in 
+DataverseNL) or as part of a Data Transfer Agreement, and often (but not always) 
+when an open license is not suitable (e.g., with personal data).
+
+<a href="https://data.donders.ru.nl/doc/dua/RU-RA-DUA-1.0.html?8" target = "_blank" style="text-decoration: none;"><button type="button">Example Donders Institute</button></a>
+
+### Standard Contractual Clauses for international transfers {#scc}
+
+Standard Contractual Clauses (SCCs, 
+[art. 46](https://gdpr-info.eu/art-46-gdpr/){target="_blank"}) are 
+model clauses that have been 
+[pre-approved" by the European Commission](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en){target="_blank"}
+to include in agreements. They are specifically meant as a (sometimes necessary) 
+safeguard when personal data are transferred to processors and controllers
+outside of the EEA (i.e., [third-country transfers](#third-country-transfer)). 
+This is because the SCCs contain (among others) a list of 
+minimal necessary safeguards that the receiving party should implement to ensure 
+that the personal data are properly protected. SCCs only have to be used in 
+specific situations, and they should ideally be preceded by a 
+[Data Transfer Impact Assessment](#dia) that identifies SCCs as an 
+appropriate measure. Please contact your [privacy officer](#support)
+if you have questions about them.
+
+<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc/standard-contractual-clauses-international-transfers_en" target = "_blank" style="text-decoration: none;"><button type="button">SCCs for international transfers</button></a>
+
+::::note
+There are also SCCs for transfers to processors *within* the EEA 
+([art. 28(7)](https://gdpr-info.eu/art-28-gdpr/){target="_blank"}). 
+These can be included in a 
+[Data Processing Agreement](#data-processing-agreement). Because they
+are standardised clauses, including these can make it easier to finalise a DPA.
+::::

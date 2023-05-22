@@ -1,0 +1,320 @@
+# Other techniques
+
+In addition to the techniques discussed in the previous chapters, other 
+techniques exist that can help protect data subjects' privacy. Here, we discuss 
+the following techniques:
+
+- [Encryption](#encryption), for example of files, folder or entire drives.
+- [Synthetic data](#synthetic-data) that does not contain data from real 
+individuals, but can mimic statistical properties of the original dataset.
+- [Data donation](#data-donation), in which citizens are asked to donate digital 
+trace data for scientific research purposes.
+
+## Encryption {#encryption}
+:::keywords
+On this page: encryption, cryptography, cryptographic technique, secure storage,
+encryption software    
+Date of last review: 2023-05-15
+:::
+
+
+Encryption is a technique to convert digital information into a code or cipher, 
+which can only be read by someone who has the key to decipher or decrypt it. It 
+can be applied to many digital objects, such as text strings, files, folders or 
+entire storage drives. The format of the decryption key can also vary between a
+password, a randomly generated code, or a file. 
+
+For personal data, encryption can be seen as a pseudonymisation technique, where 
+the encrypted data are pseudonymised and the encryption key is the additional
+information needed to identify individuals. In research, encryption is often 
+applied for data "at rest", that is, data that are stored and not actively used.
+However, data can also be encrypted *in transit* (i.e., during transfers) or 
+even *in use* (i.e., performing [computations on encrypted data](#homomorphic-encryption)).
+
+### Types of encryption {#encryption-types}
+
+There are several [types of encryption](https://en.wikipedia.org/wiki/Encryption#Types){target="_blank"}. 
+How they work can get complicated very quickly, but here is a general overview 
+of the different types:
+
+1. **Symmetric encryption**: the same key is used for both encryption and 
+decryption. This is a relatively quick way to encrypt data and is most often 
+used for research data. Because only one key is needed to leak the data, a 
+hard-to-guess key, secure storage and secure transfer of the key is crucial. 
+Example algorithms that use symmetric encryption are AES, (3)DES, Blowfish, and 
+IDEA.
+2. **Asymmetric encryption** (public-key): two different keys are used for 
+encryption and decryption: a public key is used for encryption and can be 
+shared with anyone, and a private key is used for decryption, which must be 
+kept secret. This is also known as end-to-end encryption and is used in many
+messaging platforms to prevent service providers from decrypting private 
+messages. Example algorithms are RSA and elliptic curve cryptography.
+3. **Hybrid cyphers**: hybrid cyphers combine the speed of symmetric, and the 
+security of asymmetric encryption. Typically, a symmetric algorithm is used to 
+encrypt the data, and an asymmetric algorithm to encrypt the symmetric key. 
+This type of encryption is commonly used in secure communications, such as 
+email and virtual private networks (VPNs).
+
+:::fyi
+In general, the more "bits" that are used by an encryption algorithm, the 
+larger the number of possible keys is, and thus the harder it is to 
+[guess the correct key](https://www.futurelearn.com/info/courses/encryption-and-cryptography/0/steps/184663){target="_blank"} 
+using a brute-force attack.
+:::
+
+### When to use {#encryption-when}
+
+Encryption can be applied on different levels. In research, data are encrypted 
+usually either on a drive-level or on file/folder level:
+
+- **Full-drive encryption** ("volume" encryption) makes sure that data on 
+storage drives or devices are not readable if someone gains unauthorised access 
+to the device or drive. This is generally recommended to always apply to 
+devices that contain research data, but particularly when:
+  - you want to protect data on your personal laptop (encrypt the entire laptop 
+  or specific hard drives).
+  - you collect data on portable devices like USB sticks and audio recorders.
+- Encryption of **individual files or folders** ("container" encryption) can be 
+used when you need to protect individual files or folders. Use it when:
+  - you cannot physically separate different types of personal data on different 
+  storage locations and need to make sure that a limited number of people can 
+  access the encrypted data. 
+  - you have to store personal data on a non-encrypted drive that multiple 
+  people have access to, which they do not need.
+  - you need to send personal data to a collaborator, for example via the cloud 
+  or via a file sender. 
+
+### Implications for research {#encryption-implications}
+
+- Encryption only guarantees protection while the data are encrypted, which is 
+usually during storage or in transit. For example, encryption is generally not 
+a suitable safeguard to protect data during data analysis, because usually 
+data need to be decrypted in order to be read by analysis software. This implies 
+that when you need to decrypt the data, other safeguards must be in place to 
+protect the data, such as controlled access and a secure workspace. 
+- Responsible key management is crucial. In principle, the data cannot be 
+accessed without a decryption key. Although some encryption software offers the 
+possibility to create recovery keys, there is still someone who needs to manage 
+the key(s), as long as the data are encrypted.
+- When you use file/folder encryption, please note that in some cases, folder 
+and/or file names are not encrypted. If these names contain sensitive 
+information, consider renaming the folders/files or putting them in a zipped 
+folder with a non-sensitive name and then encrypting the zipped folder.
+- Just because you encrypt data with a state-of-the-art encryption algorithm now, 
+that does not mean the data are necessarily protected in the future as well. 
+Encryption algorithms can become unsafe due to, for example, new technological 
+developments or bugs in the encryption algorithm that make it more vulnerable 
+to attacks. Therefore, if you store encrypted files for a long period of time, 
+you need to regularly re-assess whether the algorithm is still secure enough 
+and if needed, re-encrypt the data.
+
+### Tools and resources {#encryption-resources}
+
+- We have created an overview of commonly used encryption tools in our 
+[GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/encryption-tools.md){target="_blank}.
+**Note**: many institutes have institution-wide encryption software available. 
+Please consult with your [information security officer](#support) to determine 
+which tool you can best use for your situation. 
+- Ghent University has created a [guidance](https://osf.io/nx8km){target="_blank"} 
+on several common encryption tools in different scenarios.
+- In [this introductory book](https://www.cs.unibo.it/babaoglu/courses/security/resources/documents/intro-to-crypto.pdf){target="_blank"}, 
+you can read further if you want to know more about cryptography.
+
+## Synthetic Data {#synthetic-data}
+
+:::keywords
+On this page: synthetic data, fake data, artificial data, dummy data, fictitious
+data, reproducibility, reproduce, open science workflow    
+Date of last review: 2023-05-15
+:::
+
+
+Synthetic data generation is the process of creating artificial data, which can 
+be used in place of the real, possibly personal, data. Instead of simply 
+adjusting an existing dataset to make it less identifiable, a completely new 
+dataset is generated, with fictitious individuals. When creating synthetic data, 
+sensitive values (which can be some values, or the entire dataset) in the data 
+are replaced by values that are generated from a statistical model. The 
+intuition behind this is to mimic the idea of drawing samples from a population. 
+Not with actual people, but with fictitious individuals that "look like" the 
+people from the population. Synthetic data can be created in multiple ways, 
+such as based on rules or using a trained machine learning model, and for 
+different purposes, such as for privacy protection purposes, but also for data 
+enrichment or software testing.
+
+### When to use {#synthetic-data-when}
+
+Synthetic data can be generated for a variety of reasons, for example:
+
+- As an intermediate step in sharing (personal) data, before others gain access 
+to (part of) the real dataset. This can for example be useful when data 
+recipients still have to determine which variables they need from the real 
+dataset, or how many observations. Or when the data request procedure can take 
+up a large amount of time and recipients already want to explore the (synthetic) 
+data.
+- To develop code without requiring access to real (personal) data. In this 
+case, the synthetic data usually does not need to mirror the data statistically, 
+but just in terms of the structure (e.g., only with the same column names and 
+data types). Synthetic data that only resembles the real dataset in terms of 
+its structure is also sometimes called "dummy data".
+- To adhere to an open science workflow, to evaluate and reproduce analyses. If 
+you share both a synthetic dataset and your code, others can easily evaluate 
+your code with an actual dataset, see the results of the code and test its 
+reproducibility.
+- In teaching, to prevent having to share (personal) data with students.
+
+### Implications for research {#synthetic-data-implications}
+
+- Although synthetic data are artificial, privacy risks may still remain. You 
+can think of it like this: if the generating model is too good, you could 
+reproduce the original data exactly, doing no better in protecting anyone's 
+privacy. On the other end, you can create a synthetic dataset that sets every 
+value to "0", which protects privacy very well, but is useless in terms of its 
+quality. Usually, the result is somewhere in between: the synthetic data is 
+less informative than the real data, at the expense of leaking some information 
+about the original sample (e.g., descriptive statistics, relationships between 
+variables, plausible values in the data). Hence, the synthetic data lies on a 
+**privacy-utility spectrum**. Whether the synthetic dataset still contains 
+personal data will need to be considered on a case-by-case basis and will 
+differ depending on the method used to create the synthetic dataset. For more 
+detailed information on this concept of the privacy-utility spectrum, see the 
+[UK Office for National Statistics](https://www.ons.gov.uk/methodology/methodologicalpublications/generalmethodology/onsworkingpaperseries/onsmethodologyworkingpaperseriesnumber16syntheticdatapilot){target="_blank"}. 
+- Synthetic data is sometimes used in conjunction with 
+[Differential Privacy](#differential-privacy), which can help to numerically 
+set the level of privacy/utility. Unfortunately, it is not straightforward to 
+determine the disclosure risk directly from the synthetic data, and it is 
+better to fix the privacy leakage in the process of generating the data.
+- The quality of the synthetic dataset is highly dependent on the input from 
+which it is created. In general, a larger number of rows in the dataset 
+(individuals) results in better quality synthetic data as there is more 
+variability in the dataset. Moreover, datasets that contain many outliers 
+typically result in lower-quality synthetic data, because they can have a large 
+influence on the statistical properties of the dataset (e.g., the mean) from 
+which the synthetic dataset is created. This in turn can lead to a distorted or 
+unrealistic distribution in the synthetic dataset.
+
+### Tools and resources {#synthetic-data-resources}
+
+- We have created an overview of tools to create synthetic data in our 
+[tool repository on GitHub](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/synthetic-data){target="_blank"}. 
+- Here’s a [comprehensive tutorial](https://doi.org/10.5281/zenodo.7234120){target="_blank"} 
+for creating synthetic data that includes information on the Python package 
+[MetaSynth](https://github.com/sodascience/metasynth){target="_blank"} ([workshop](https://github.com/sodascience/workshop-syntheticdata-osf2022){target="_blank"}) 
+and the R package [Synthpop](https://www.synthpop.org.uk/index.html){target="_blank"} 
+([how-to](https://thomvolker.github.io/osf_synthetic/osf_synthetic_workshop.html){target="_blank"}). 
+- Read further about synthetic data in 
+"[Synthetic data - What, Why and How?](https://doi.org/10.48550/arXiv.2205.03257){target="_blank"}"
+- The United Nations has created this 
+[Starter Guide on synthetic data](https://unece.org/sites/default/files/2022-11/ECECESSTAT20226.pdf){target="_blank"}, 
+which includes what to consider when creating synthetic data.
+- If you want to know more about the methodology behind synthetic data, we can 
+recommend the book 
+"[Synthetic Datasets for Statistical Disclosure Control](https://doi.org/10.1007/978-1-4614-0326-5){target="_blank"}"
+(Drechsler, 2011).
+
+## Data donation {#data-donation}
+
+:::keywords
+On this page: data donation, digital trace data, local processing, interactive 
+consent    
+Date of last review: 2023-05-15
+:::
+
+People leave all kinds of digital traces, for example on social media, 
+smartphones, search engines, email, banks, energy providers, and online shops. 
+[Article 15](https://gdpr-info.eu/art-15-gdpr/){target="_blank"} of the GDPR 
+mandates that individuals have the right to request access to a copy of their 
+personal data collected and stored on those digital platforms. The owners of 
+those platforms will then make that digital trace data available through 
+individual "Data Download Packages" (DDPs). These DDPs can contain a lot of 
+personal information that may be too sensitive to share, but can also be of 
+high value for scientific research purposes.
+
+The data donation approach as developed by 
+[Boeschoten et al. (2020)](https://doi.org/10.48550/arXiv.2011.09851){target="_blank"} 
+allows researchers to automatically analyse the digital traces found in DDPs, 
+while preserving the privacy of research participants. The workflow is as follows:
+
+<p style="text-align:center;"><img src="https://www.cell.com/cms/attachment/3bdcf4ba-3f26-474b-ac54-534ebbe4af52/gr1.jpg"
+title = "Data donation workflow as defined in Boeschoten et al., 2022, 
+https://doi.org/10.1016/j.patter.2022.100444" alt = "Visualisation of the 
+workflow. The following steps take palce at the participant's device: 
+1. Participant requests Data Download Package (DDP) at data controller,
+2. Participant downloads DDP to own device, 3. Participant visits PORT website,
+4. PORT extracts relevant features from the DDP locally. Step 5 takes place at 
+the researcher's environment, where they perform analyses on the extracted 
+features."/></p>
+
+1. Data subjects are recruited as respondents like in a regular research project.
+2. The researcher determines which DDPs are relevant for the research question 
+and writes a script to extract the relevant information. 
+3. Each data subject requests their DDPs with the selected providers and stores 
+these locally on their own device. 
+4. Stored DDPs are then locally processed with the software 
+[PORT](https://github.com/eyra/port){target="_blank"} to extract relevant 
+research variables. PORT executes the script provided by the researcher and 
+locally extracts the data from the DDP. PORT uses 
+[Pyodide](https://pyodide.org/en/stable){target="_blank"} technology to run in 
+its own secure environment which is completely separated from the device. This 
+environment is destroyed as soon as the browser page is closed.
+5. The data subject inspects the information resulting from the analysis and is 
+asked to provide [informed consent](#informed-consent-forms) to share it with 
+the researcher. 
+6. If the data subject consents, the derived information is encrypted and sent 
+to the researcher for further analysis. 
+
+### When to use {#data-donation-when}
+
+The data donation approach can be used:
+
+- As an alternative or in addition to surveys to study human behaviour.
+- To analyse data that are too sensitive to transfer in raw form.
+- To allow data subjects a large degree of control over their (personal) data.
+- To access data that are representative of a population of interest, in 
+contrast to, for example, data retrieved from APIs, which often pertain a 
+non-random subset of a platform's user group. 
+- As a user-centric approach that is independent from platforms or data 
+controllers: private companies cannot suddenly withdraw from a collaboration or 
+restrict access to a dataset, because the data were not obtained directly 
+through them. It is important, however, to review the Terms of Service of the 
+platforms you use, to review if there are restrictions on data usage for 
+scientific research.  
+
+### Implications for research
+
+- DDPs may be large and contain different types of information. For both the 
+analysis (writing the script) and the informed consent (informing data subjects 
+specifically), it is important that you know which specific data are of interest.
+- The structure of DDPs varies by provider and by person, making it difficult 
+to set up analysis scripts generically. Moreover, DDPs change over time. 
+Analysis scripts should regularly be checked and updated 
+([Boeschoten et al., 2021](https://doi.org/10.3233/DS-210035){target="_blank"}).
+- Analysis scripts are usually developed based on sample data. However, due to 
+the sensitive content, DDP sample data are difficult to obtain. As sample data, 
+you could use your own DDP, synthetic data 
+([example](https://github.com/UtrechtUniversity/google-semantic-location-history){target="_blank"}), 
+or already available open data 
+([example](http://doi.org/10.5281/zenodo.4472606){target="_blank"}). 
+- It is important to make sure that data subjects understand what they are 
+consenting to when presenting the results that will be shared with you (step 5). 
+Do they understand the risks involved (if any)? We recommend talking to a 
+[privacy officer](#support) and/or testing this among data subjects before you 
+start your Data Donation project.
+
+### Examples and resources {#data-donation-resources}
+
+- Several projects have made use of the data donation approach, such as one 
+using [Google semantic location history data](https://github.com/UtrechtUniversity/google-semantic-location-history){target="_blank"}, 
+and one with [Whatsapp data](https://github.com/sodascience/port-whatsapp-datadonation){target="_blank"}.
+- A more elaborate data donation platform is being developed in the
+[PDI-SSH-funded](https://pdi-ssh.nl/en/2021/11/funded-projects-2021-call/){target="_blank"} 
+Digital Data Donation Infrastructure 
+([D3I](https://www.uu.nl/en/news/the-board-of-the-pdi-ssh-foundation-honours-applications-in-the-call-digital-infrastructure-ssh){target="_blank"})
+project. 
+- Read further about the 
+[framework](https://doi.org/10.5117/CCR2022.2.002.BOES){target="_blank"}, 
+the [proof of concept of the PORT software](https://doi.org/10.1016/j.patter.2022.100444){target="_blank"}, 
+a [comparison with a browser plug-in](https://doi.org/10.1080/1369118X.2022.2097015){target="__blank"} approach, 
+and [promises and pitfalls of the approach for social media data](https://doi.org/10.31219/osf.io/krqb9){target="_blank"}.
+- Or read more about how Data Download Packages can be 
+[de-identified](https://doi.org/10.3233/DS-210035){target="_blank"}.
