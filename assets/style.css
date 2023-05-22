@@ -41,10 +41,11 @@ https://rstudio4edu.github.io/rstudio4edu-book/book-fancy.html#book-fancy */
 
 /* Make space for the logo on top left of book */
 .toc-logo {
-  width: 150px !important;
+  width: 250px !important;
   object-fit: contain;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 .toc-logo img {
   max-width: 100%;
@@ -209,7 +210,9 @@ Source: https://stackoverflow.com/questions/53399095/disable-title-author-in-the
 .column {
   padding: 5px;
   float: left;
+  display: inline-block;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
