@@ -8,7 +8,7 @@
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Data donation | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-05" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
 
 
-<meta name="date" content="2023-05-05" />
+<meta name="date" content="2023-05-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,17 +58,16 @@ Support.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!DOCTYPE HTML>
 <script src="assets/book.js"></script>
-
-<!-- This is a first try on adding structured data (metadata) to each page in the Handbook.
-    Some key information is still missing, such as creators, contributors and the DOI.
-    The below json-ld was created using Maastricht University's FAIR metadata wizard: 
-    https://maastrichtu-ids.github.io/fair-metadata-wizard/-->
-<script src="assets/metadata-dph.json" type="application/ld+json">
+<!-- Structured data created using Maastricht University's FAIR metadata wizard: 
+    https://maastrichtu-ids.github.io/fair-metadata-wizard/ and https://validator.schema.org/-->
+<script type="application/ld+json">
     {
+        "@context": "https://schema.org",
         "@type": "LearningResource",
         "name": "Data Privacy Handbook",
-        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff.",
+        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff in the Netherlands.",
         "version": "1.0",
         "url": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
         "license": "https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md",
@@ -81,15 +80,6 @@ Support.</p>" />
         "datePublished": {
             "@type": "Date",
             "@value": "2023-06-01"
-        },
-        "distribution": {
-            "@type": "DataDownload",
-            "contentUrl": {
-                "@type": "URL",
-                "@value": "https://utrechtuniversity.github.io/dataprivacyhandbook/dataprivacyhandbook.pdf"
-            },
-            "encodingFormat": "pdf",
-            "contentSize": "1MB"
         },
         "inLanguage": {
             "@type": "Language",
@@ -107,17 +97,21 @@ Support.</p>" />
         ],
         "publisher": {
             "@type": "Organization",
-            "name": "Research Data Management Support",
-            "affiliation": {
+            "name": "Utrecht University",
+            "url": {
+            	"@type": "URL",
+                "@value": "https://ror.org/04pp8hn57"
+            },
+            "logo": {
+            	"@type": "ImageObject",
+                "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+            },
+            "subOrganization": {
                 "@type": "Organization",
-                "name": "Utrecht University",
+                "name": "Research Data Management Support",
                 "url": {
-                    "@type": "URL",
-                    "@value": "https://ror.org/04pp8hn57"
-                },
-                "logo": {
-                    "@type": "ImageObject",
-                    "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+                	"@type": "URL",
+                    "@value": "https://uu.nl/rdm"
                 }
             }
         }
@@ -126,6 +120,10 @@ Support.</p>" />
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -140,7 +138,7 @@ Support.</p>" />
       <nav role="navigation">
 
 <ul class="summary">
-<li class="toc-logo"><a href="./"><img src="img/dpp-logo.png"></a></li>
+<li class="toc-logo"><a href="./"><img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo"></a></li>
 
 <li class="divider"></li>
 <li class="part"><span><b>Intro</b></span></li>
@@ -157,6 +155,7 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i>Disclaimer</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="research-scenarios.html"><a href="research-scenarios.html"><i class="fa fa-check"></i>Research scenarios</a></li>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Privacy FAQs</a>
 <ul>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#general"><i class="fa fa-check"></i>General questions</a></li>
@@ -276,8 +275,35 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="agreements.html"><a href="agreements.html#scc"><i class="fa fa-check"></i>Standard Contractual Clauses for international transfers</a></li>
 </ul></li>
 </ul></li>
+<li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
+<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
+<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a></li>
+<li class="chapter" data-level="" data-path="data-storage-how.html"><a href="data-storage-how.html"><i class="fa fa-check"></i>How should I store personal data?</a></li>
+<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html"><i class="fa fa-check"></i>For how long should I store personal data?</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a></li>
+<li class="chapter" data-level="" data-path="data-sharing-reuse.html"><a href="data-sharing-reuse.html"><i class="fa fa-check"></i>Sharing data for reuse</a>
+<ul>
+<li class="chapter" data-level="" data-path="publish-anonymous-data.html"><a href="publish-anonymous-data.html"><i class="fa fa-check"></i>Sharing anonymised data</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html"><i class="fa fa-check"></i>Sharing personal data with a legal basis</a>
+<ul>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#transparent-reuse"><i class="fa fa-check"></i>1. Be transparent</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#legal-basis-reuse"><i class="fa fa-check"></i>2. Make sure you have a legal basis</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#protect-sharing-reuse"><i class="fa fa-check"></i>3. Protect the data while sharing</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#fair-personal-data"><i class="fa fa-check"></i>4. Make your data FAIR</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html"><i class="fa fa-check"></i>Alternatives to sharing personal data</a>
+<ul>
+<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#publish-metadata"><i class="fa fa-check"></i>Publish metadata and documentation</a></li>
+<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#reuse-strategies"><i class="fa fa-check"></i>Use other techniques and strategies to enable reuse</a></li>
+</ul></li>
+</ul></li>
 <li class="part"><span><b>Techniques &amp; Tools</b></span></li>
-<li class="chapter" data-level="" data-path="research-scenarios.html"><a href="research-scenarios.html"><i class="fa fa-check"></i>Research scenarios</a></li>
 <li class="chapter" data-level="" data-path="pseudonymisation-anonymisation.html"><a href="pseudonymisation-anonymisation.html"><i class="fa fa-check"></i>Pseudonymisation &amp; Anonymisation</a>
 <ul>
 <li class="chapter" data-level="" data-path="definition-anonymisation-pseudonymisation.html"><a href="definition-anonymisation-pseudonymisation.html"><i class="fa fa-check"></i>What are pseudonymisation and anonymisation?</a>
@@ -294,7 +320,6 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
 <ul>
-<li class="chapter" data-level="" data-path="sdc.html"><a href="sdc.html"><i class="fa fa-check"></i>Statistical disclosure control</a></li>
 <li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
 <li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
 </ul></li>
@@ -327,9 +352,25 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="other-techniques.html"><a href="other-techniques.html"><i class="fa fa-check"></i>Other techniques</a>
 <ul>
-<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html"><i class="fa fa-check"></i>Encryption</a></li>
-<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html"><i class="fa fa-check"></i>Synthetic Data</a></li>
-<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html"><i class="fa fa-check"></i>Data donation</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html"><i class="fa fa-check"></i>Encryption</a>
+<ul>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-types"><i class="fa fa-check"></i>Types of encryption</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-resources"><i class="fa fa-check"></i>Tools and resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html"><i class="fa fa-check"></i>Synthetic Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html#synthetic-data-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html#synthetic-data-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html#synthetic-data-resources"><i class="fa fa-check"></i>Tools and resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html"><i class="fa fa-check"></i>Data donation</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html#data-donation-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html#implications-for-research-4"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html#data-donation-resources"><i class="fa fa-check"></i>Examples and resources</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="tools-and-services.html"><a href="tools-and-services.html"><i class="fa fa-check"></i>Tools &amp; Services</a>
 <ul>
@@ -339,34 +380,6 @@ Support.</p>" />
 <ul>
 <li class="chapter" data-level="" data-path="tool-requirements.html"><a href="tool-requirements.html#who-is-processing-the-personal-data-arrange-an-agreement"><i class="fa fa-check"></i>1. Who is processing the personal data: arrange an agreement</a></li>
 <li class="chapter" data-level="" data-path="tool-requirements.html"><a href="tool-requirements.html#security-level"><i class="fa fa-check"></i>2. Security level</a></li>
-</ul></li>
-</ul></li>
-<li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
-<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a>
-<ul>
-<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
-<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a></li>
-<li class="chapter" data-level="" data-path="data-storage-how.html"><a href="data-storage-how.html"><i class="fa fa-check"></i>How should I store personal data?</a></li>
-<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html"><i class="fa fa-check"></i>For how long should I store personal data?</a>
-<ul>
-<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a></li>
-<li class="chapter" data-level="" data-path="data-sharing-reuse.html"><a href="data-sharing-reuse.html"><i class="fa fa-check"></i>Sharing data for reuse</a>
-<ul>
-<li class="chapter" data-level="" data-path="publish-anonymous-data.html"><a href="publish-anonymous-data.html"><i class="fa fa-check"></i>Sharing anonymised data</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html"><i class="fa fa-check"></i>Sharing personal data with a legal basis</a>
-<ul>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#transparent-reuse"><i class="fa fa-check"></i>1. Be transparent</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#legal-basis-reuse"><i class="fa fa-check"></i>2. Make sure you have a legal basis</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#protect-sharing-reuse"><i class="fa fa-check"></i>3. Protect the data while sharing</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#fair-personal-data"><i class="fa fa-check"></i>4. Make your data FAIR</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html"><i class="fa fa-check"></i>Alternatives to sharing personal data</a>
-<ul>
-<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#publish-metadata"><i class="fa fa-check"></i>Publish metadata and documentation</a></li>
-<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#reuse-strategies"><i class="fa fa-check"></i>Use other techniques and strategies to enable reuse</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Use Cases</b></span></li>
@@ -409,24 +422,125 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="data-donation" class="section level2 hasAnchor">
 <h2>Data donation<a href="data-donation.html#data-donation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: data donation, digital trace data, local processing, interactive
+consent<br />
+Date of last review: 2023-05-15</p>
+</div>
+<p>People leave all kinds of digital traces, for example on social media,
+smartphones, search engines, email, banks, energy providers, and online shops.
+<a href="https://gdpr-info.eu/art-15-gdpr/" target="_blank">Article 15</a> of the GDPR
+mandates that individuals have the right to request access to a copy of their
+personal data collected and stored on those digital platforms. The owners of
+those platforms will then make that digital trace data available through
+individual “Data Download Packages” (DDPs). These DDPs can contain a lot of
+personal information that may be too sensitive to share, but can also be of
+high value for scientific research purposes.</p>
+<p>The data donation approach as developed by
+<a href="https://doi.org/10.48550/arXiv.2011.09851" target="_blank">Boeschoten et al. (2020)</a>
+allows researchers to automatically analyse the digital traces found in DDPs,
+while preserving the privacy of research participants. The workflow is as follows:</p>
+<p style="text-align:center;">
+<img src="https://www.cell.com/cms/attachment/3bdcf4ba-3f26-474b-ac54-534ebbe4af52/gr1.jpg"
+title = "Data donation workflow as defined in Boeschoten et al., 2022, 
+https://doi.org/10.1016/j.patter.2022.100444" alt = "Visualisation of the 
+workflow. The following steps take palce at the participant's device: 
+1. Participant requests Data Download Package (DDP) at data controller,
+2. Participant downloads DDP to own device, 3. Participant visits PORT website,
+4. PORT extracts relevant features from the DDP locally. Step 5 takes place at 
+the researcher's environment, where they perform analyses on the extracted 
+features."/>
+</p>
+<ol style="list-style-type: decimal">
+<li>Data subjects are recruited as respondents like in a regular research project.</li>
+<li>The researcher determines which DDPs are relevant for the research question
+and writes a script to extract the relevant information.</li>
+<li>Each data subject requests their DDPs with the selected providers and stores
+these locally on their own device.</li>
+<li>Stored DDPs are then locally processed with the software
+<a href="https://github.com/eyra/port" target="_blank">PORT</a> to extract relevant
+research variables. PORT executes the script provided by the researcher and
+locally extracts the data from the DDP. PORT uses
+<a href="https://pyodide.org/en/stable" target="_blank">Pyodide</a> technology to run in
+its own secure environment which is completely separated from the device. This
+environment is destroyed as soon as the browser page is closed.</li>
+<li>The data subject inspects the information resulting from the analysis and is
+asked to provide <a href="informed-consent-forms.html#informed-consent-forms">informed consent</a> to share it with
+the researcher.</li>
+<li>If the data subject consents, the derived information is encrypted and sent
+to the researcher for further analysis.</li>
+</ol>
+<div id="data-donation-when" class="section level3 hasAnchor">
+<h3>When to use<a href="data-donation.html#data-donation-when" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The data donation approach can be used:</p>
+<ul>
+<li>As an alternative or in addition to surveys to study human behaviour.</li>
+<li>To analyse data that are too sensitive to transfer in raw form.</li>
+<li>To allow data subjects a large degree of control over their (personal) data.</li>
+<li>To access data that are representative of a population of interest, in
+contrast to, for example, data retrieved from APIs, which often pertain a
+non-random subset of a platform’s user group.</li>
+<li>As a user-centric approach that is independent from platforms or data
+controllers: private companies cannot suddenly withdraw from a collaboration or
+restrict access to a dataset, because the data were not obtained directly
+through them. It is important, however, to review the Terms of Service of the
+platforms you use, to review if there are restrictions on data usage for
+scientific research.</li>
+</ul>
+</div>
+<div id="implications-for-research-4" class="section level3 hasAnchor">
+<h3>Implications for research<a href="data-donation.html#implications-for-research-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>DDPs may be large and contain different types of information. For both the
+analysis (writing the script) and the informed consent (informing data subjects
+specifically), it is important that you know which specific data are of interest.</li>
+<li>The structure of DDPs varies by provider and by person, making it difficult
+to set up analysis scripts generically. Moreover, DDPs change over time.
+Analysis scripts should regularly be checked and updated
+(<a href="https://doi.org/10.3233/DS-210035" target="_blank">Boeschoten et al., 2021</a>).</li>
+<li>Analysis scripts are usually developed based on sample data. However, due to
+the sensitive content, DDP sample data are difficult to obtain. As sample data,
+you could use your own DDP, synthetic data
+(<a href="https://github.com/UtrechtUniversity/google-semantic-location-history" target="_blank">example</a>),
+or already available open data
+(<a href="http://doi.org/10.5281/zenodo.4472606" target="_blank">example</a>).</li>
+<li>It is important to make sure that data subjects understand what they are
+consenting to when presenting the results that will be shared with you (step 5).
+Do they understand the risks involved (if any)? We recommend talking to a
+<a href="seeking-help.html#support">privacy officer</a> and/or testing this among data subjects before you
+start your Data Donation project.</li>
+</ul>
+</div>
+<div id="data-donation-resources" class="section level3 hasAnchor">
+<h3>Examples and resources<a href="data-donation.html#data-donation-resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Several projects have made use of the data donation approach, such as one
+using <a href="https://github.com/UtrechtUniversity/google-semantic-location-history" target="_blank">Google semantic location history data</a>,
+and one with <a href="https://github.com/sodascience/port-whatsapp-datadonation" target="_blank">Whatsapp data</a>.</li>
+<li>A more elaborate data donation platform is being developed in the
+<a href="https://pdi-ssh.nl/en/2021/11/funded-projects-2021-call/" target="_blank">PDI-SSH-funded</a>
+Digital Data Donation Infrastructure
+(<a href="https://www.uu.nl/en/news/the-board-of-the-pdi-ssh-foundation-honours-applications-in-the-call-digital-infrastructure-ssh" target="_blank">D3I</a>)
+project.</li>
+<li>Read further about the
+<a href="https://doi.org/10.5117/CCR2022.2.002.BOES" target="_blank">framework</a>,
+the <a href="https://doi.org/10.1016/j.patter.2022.100444" target="_blank">proof of concept of the PORT software</a>,
+a <a href="https://doi.org/10.1080/1369118X.2022.2097015" target="__blank">comparison with a browser plug-in</a> approach,
+and <a href="https://doi.org/10.31219/osf.io/krqb9" target="_blank">promises and pitfalls of the approach for social media data</a>.</li>
+<li>Or read more about how Data Download Packages can be
+<a href="https://doi.org/10.3233/DS-210035" target="_blank">de-identified</a>.</li>
+</ul>
 
+</div>
 </div>
 <!-- </div> -->
 <div class = "footer">
 <footer>
-  <!--<script>
-    // Commented lines all do not work //
-    //var date = document.getElementsByName('date')[0].getAttribute('content');
-    //var date = document.head.innerHTML.date;
-    //document.getElementById("date").innerHTML = date;
-    //var date = document.querySelector('meta[name="date"]').content;
-    //var date = document.getElementsByTag("date").getAttribute('content');
-  </script>-->
   <hr>
   <div class="row">
     <div class="column">
       <p>
-        <img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo">
+        <img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo" style="width:85%;">
       </p>
     </div>
     <div class="column">
@@ -435,26 +549,10 @@ Support.</p>" />
       <small><script type="text/javascript">document.write(document.querySelector('meta[name="author"]').content);</script></small>
       <br>
       <p style ="line-height:1; color:grey">
-        <!--<small>Last updated: </small>-->
-        <!-- Commented lines contain attempts to include the date -->
-        <!--<script type="text/javascript">document.write(date)</script> -->
-        <!--<meta name="date" content="$date-meta$" />-->
-        <!--<p class = "date" style="display:inline !important">${{ date-meta }}</p>-->
-        <!--<script type="text/javascript">document.write(date)</script>-->
-        <!--<script>document.querySelector('meta[name="description"]').content</script>-->
-        <!--<p class="date"><em>r format(Sys.time(), “%d %B %Y”)</em></p>-->
-        <!-- p>$date-meta$</p>-->
-        <!-- p style="margin-top: 6px; margin-left: -2px;">$date$</p>-->
-        <!--<date style="display:inline !important;"></date>-->
-        <!--<span id="meta_date"></span>-->
-        <!--<script> document.write(new Date().toLocaleDateString('en-GB')); </script>--><!-- this is just today's date-->
-        <!--<script> document.write(new Date().getElementsByTag("meta").getAttribute('content'); </script>-->
-        <!--<script type="text/javascript">document.write(date)</script> -->
-        <!--<br>-->
         <small>
           The information presented here is provided as is, with no guarantees of 
           accuracy or completeness. For the most up-to-date information, please refer 
-          to your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>, 
+          to your <a href="https://intranet.uu.nl/en/knowledgebase/privacyofficers" target="_blank">privacy officer</a>, 
           the <a href="https://www.uu.nl/rdm" target="_blank">university website</a> or 
           <a href="https://intranet.uu.nl/en/knowledge-base/privacy-at-uu" target="_blank">intranet</a>. 
           We cannot be held responsible for any negative consequences due to incorrect interpretation or use, and
@@ -467,7 +565,7 @@ Support.</p>" />
       </small>
       </p>
     </div><!-- End div column -->
-  </div> <!-- End div row -->
+  </div><!-- End div row -->
 </footer>
 </div>
             </section>
@@ -507,7 +605,7 @@ gitbook.start({
 "size": 1.5
 },
 "edit": {
-"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/11-other-techniques.Rmd",
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/14-other-techniques.Rmd",
 "text": "Suggest edits"
 },
 "history": {

@@ -8,7 +8,7 @@
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Examples of risks and how to mitigate them | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-05" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
 
 
-<meta name="date" content="2023-05-05" />
+<meta name="date" content="2023-05-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,17 +58,16 @@ Support.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!DOCTYPE HTML>
 <script src="assets/book.js"></script>
-
-<!-- This is a first try on adding structured data (metadata) to each page in the Handbook.
-    Some key information is still missing, such as creators, contributors and the DOI.
-    The below json-ld was created using Maastricht University's FAIR metadata wizard: 
-    https://maastrichtu-ids.github.io/fair-metadata-wizard/-->
-<script src="assets/metadata-dph.json" type="application/ld+json">
+<!-- Structured data created using Maastricht University's FAIR metadata wizard: 
+    https://maastrichtu-ids.github.io/fair-metadata-wizard/ and https://validator.schema.org/-->
+<script type="application/ld+json">
     {
+        "@context": "https://schema.org",
         "@type": "LearningResource",
         "name": "Data Privacy Handbook",
-        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff.",
+        "description": "The Data Privacy Handbook is a practical guide on handling personal data in scientific research, primarily written for Utrecht University researchers and research support staff in the Netherlands.",
         "version": "1.0",
         "url": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
         "license": "https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md",
@@ -81,15 +80,6 @@ Support.</p>" />
         "datePublished": {
             "@type": "Date",
             "@value": "2023-06-01"
-        },
-        "distribution": {
-            "@type": "DataDownload",
-            "contentUrl": {
-                "@type": "URL",
-                "@value": "https://utrechtuniversity.github.io/dataprivacyhandbook/dataprivacyhandbook.pdf"
-            },
-            "encodingFormat": "pdf",
-            "contentSize": "1MB"
         },
         "inLanguage": {
             "@type": "Language",
@@ -107,17 +97,21 @@ Support.</p>" />
         ],
         "publisher": {
             "@type": "Organization",
-            "name": "Research Data Management Support",
-            "affiliation": {
+            "name": "Utrecht University",
+            "url": {
+            	"@type": "URL",
+                "@value": "https://ror.org/04pp8hn57"
+            },
+            "logo": {
+            	"@type": "ImageObject",
+                "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+            },
+            "subOrganization": {
                 "@type": "Organization",
-                "name": "Utrecht University",
+                "name": "Research Data Management Support",
                 "url": {
-                    "@type": "URL",
-                    "@value": "https://ror.org/04pp8hn57"
-                },
-                "logo": {
-                    "@type": "ImageObject",
-                    "contentUrl": "https://www.uu.nl/themes/custom/corp/src/images/uu-logo-nl.svg"
+                	"@type": "URL",
+                    "@value": "https://uu.nl/rdm"
                 }
             }
         }
@@ -126,6 +120,10 @@ Support.</p>" />
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -140,7 +138,7 @@ Support.</p>" />
       <nav role="navigation">
 
 <ul class="summary">
-<li class="toc-logo"><a href="./"><img src="img/dpp-logo.png"></a></li>
+<li class="toc-logo"><a href="./"><img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo"></a></li>
 
 <li class="divider"></li>
 <li class="part"><span><b>Intro</b></span></li>
@@ -157,6 +155,7 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i>Disclaimer</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="research-scenarios.html"><a href="research-scenarios.html"><i class="fa fa-check"></i>Research scenarios</a></li>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Privacy FAQs</a>
 <ul>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#general"><i class="fa fa-check"></i>General questions</a></li>
@@ -276,8 +275,35 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="agreements.html"><a href="agreements.html#scc"><i class="fa fa-check"></i>Standard Contractual Clauses for international transfers</a></li>
 </ul></li>
 </ul></li>
+<li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
+<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
+<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a></li>
+<li class="chapter" data-level="" data-path="data-storage-how.html"><a href="data-storage-how.html"><i class="fa fa-check"></i>How should I store personal data?</a></li>
+<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html"><i class="fa fa-check"></i>For how long should I store personal data?</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a></li>
+<li class="chapter" data-level="" data-path="data-sharing-reuse.html"><a href="data-sharing-reuse.html"><i class="fa fa-check"></i>Sharing data for reuse</a>
+<ul>
+<li class="chapter" data-level="" data-path="publish-anonymous-data.html"><a href="publish-anonymous-data.html"><i class="fa fa-check"></i>Sharing anonymised data</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html"><i class="fa fa-check"></i>Sharing personal data with a legal basis</a>
+<ul>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#transparent-reuse"><i class="fa fa-check"></i>1. Be transparent</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#legal-basis-reuse"><i class="fa fa-check"></i>2. Make sure you have a legal basis</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#protect-sharing-reuse"><i class="fa fa-check"></i>3. Protect the data while sharing</a></li>
+<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#fair-personal-data"><i class="fa fa-check"></i>4. Make your data FAIR</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html"><i class="fa fa-check"></i>Alternatives to sharing personal data</a>
+<ul>
+<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#publish-metadata"><i class="fa fa-check"></i>Publish metadata and documentation</a></li>
+<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#reuse-strategies"><i class="fa fa-check"></i>Use other techniques and strategies to enable reuse</a></li>
+</ul></li>
+</ul></li>
 <li class="part"><span><b>Techniques &amp; Tools</b></span></li>
-<li class="chapter" data-level="" data-path="research-scenarios.html"><a href="research-scenarios.html"><i class="fa fa-check"></i>Research scenarios</a></li>
 <li class="chapter" data-level="" data-path="pseudonymisation-anonymisation.html"><a href="pseudonymisation-anonymisation.html"><i class="fa fa-check"></i>Pseudonymisation &amp; Anonymisation</a>
 <ul>
 <li class="chapter" data-level="" data-path="definition-anonymisation-pseudonymisation.html"><a href="definition-anonymisation-pseudonymisation.html"><i class="fa fa-check"></i>What are pseudonymisation and anonymisation?</a>
@@ -294,7 +320,6 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
 <ul>
-<li class="chapter" data-level="" data-path="sdc.html"><a href="sdc.html"><i class="fa fa-check"></i>Statistical disclosure control</a></li>
 <li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
 <li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
 </ul></li>
@@ -327,9 +352,25 @@ Support.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="other-techniques.html"><a href="other-techniques.html"><i class="fa fa-check"></i>Other techniques</a>
 <ul>
-<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html"><i class="fa fa-check"></i>Encryption</a></li>
-<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html"><i class="fa fa-check"></i>Synthetic Data</a></li>
-<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html"><i class="fa fa-check"></i>Data donation</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html"><i class="fa fa-check"></i>Encryption</a>
+<ul>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-types"><i class="fa fa-check"></i>Types of encryption</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="encryption.html"><a href="encryption.html#encryption-resources"><i class="fa fa-check"></i>Tools and resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html"><i class="fa fa-check"></i>Synthetic Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html#synthetic-data-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html#synthetic-data-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="synthetic-data.html"><a href="synthetic-data.html#synthetic-data-resources"><i class="fa fa-check"></i>Tools and resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html"><i class="fa fa-check"></i>Data donation</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html#data-donation-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html#implications-for-research-4"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="data-donation.html"><a href="data-donation.html#data-donation-resources"><i class="fa fa-check"></i>Examples and resources</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="tools-and-services.html"><a href="tools-and-services.html"><i class="fa fa-check"></i>Tools &amp; Services</a>
 <ul>
@@ -339,34 +380,6 @@ Support.</p>" />
 <ul>
 <li class="chapter" data-level="" data-path="tool-requirements.html"><a href="tool-requirements.html#who-is-processing-the-personal-data-arrange-an-agreement"><i class="fa fa-check"></i>1. Who is processing the personal data: arrange an agreement</a></li>
 <li class="chapter" data-level="" data-path="tool-requirements.html"><a href="tool-requirements.html#security-level"><i class="fa fa-check"></i>2. Security level</a></li>
-</ul></li>
-</ul></li>
-<li class="part"><span><b>Storage, Sharing, Publication</b></span></li>
-<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i>Storing personal data</a>
-<ul>
-<li class="chapter" data-level="" data-path="data-storage.html"><a href="data-storage.html#chapter-summary-1"><i class="fa fa-check"></i>Chapter summary</a></li>
-<li class="chapter" data-level="" data-path="data-storage-where.html"><a href="data-storage-where.html"><i class="fa fa-check"></i>Where should I store personal data?</a></li>
-<li class="chapter" data-level="" data-path="data-storage-how.html"><a href="data-storage-how.html"><i class="fa fa-check"></i>How should I store personal data?</a></li>
-<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html"><i class="fa fa-check"></i>For how long should I store personal data?</a>
-<ul>
-<li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a></li>
-<li class="chapter" data-level="" data-path="data-sharing-reuse.html"><a href="data-sharing-reuse.html"><i class="fa fa-check"></i>Sharing data for reuse</a>
-<ul>
-<li class="chapter" data-level="" data-path="publish-anonymous-data.html"><a href="publish-anonymous-data.html"><i class="fa fa-check"></i>Sharing anonymised data</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html"><i class="fa fa-check"></i>Sharing personal data with a legal basis</a>
-<ul>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#transparent-reuse"><i class="fa fa-check"></i>1. Be transparent</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#legal-basis-reuse"><i class="fa fa-check"></i>2. Make sure you have a legal basis</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#protect-sharing-reuse"><i class="fa fa-check"></i>3. Protect the data while sharing</a></li>
-<li class="chapter" data-level="" data-path="share-reuse-legal-basis.html"><a href="share-reuse-legal-basis.html#fair-personal-data"><i class="fa fa-check"></i>4. Make your data FAIR</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html"><i class="fa fa-check"></i>Alternatives to sharing personal data</a>
-<ul>
-<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#publish-metadata"><i class="fa fa-check"></i>Publish metadata and documentation</a></li>
-<li class="chapter" data-level="" data-path="sharing-reuse-alternatives.html"><a href="sharing-reuse-alternatives.html#reuse-strategies"><i class="fa fa-check"></i>Use other techniques and strategies to enable reuse</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Use Cases</b></span></li>
@@ -411,7 +424,8 @@ Support.</p>" />
 <h2>Examples of risks and how to mitigate them<a href="example-risks.html#example-risks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="keywords">
 <p>On this page: risk example, safeguards, organisational and technical measures,
-protection, protective, security, data breach</p>
+protection, protective, security, data breach<br />
+Date of last review: 2023-04-18</p>
 </div>
 <p>Below you can find a list of common privacy and security risks in research and
 how you can mitigate them:</p>
@@ -422,58 +436,65 @@ how you can mitigate them:</p>
 <li><a href="example-risks.html#invalid-legal-basis">Invalid legal basis</a></li>
 <li><a href="example-risks.html#risks-data-subjects">Risks for data subjects</a></li>
 </ul>
+<!-- If you wish to edit the risks / measures or add a new one, please do so in 
+the risk-examples.csv file in the files folder of this repository -->
 <div id="unwarranted-access" class="section level3 hasAnchor">
 <h3>Unwarranted access to personal data<a href="example-risks.html#unwarranted-access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details>
 <summary>
-Someone tries to gain access to personal data
+<strong>Someone tries to gain access to personal data</strong>
 </summary>
 <div>
 <ul>
-<li>Use storage and analysis systems that are suitable for your
-<a href="data-classification.html#data-classification">data classification</a>, e.g., systems that are managed by
-your institute and/or <a href="encryption.html#encryption">encrypted</a>.</li>
-<li>Apply <a href="design-strategies.html#data-oriented-strategies">protection strategies described here</a>.</li>
-</ul>
+<li>
+Use storage and analysis systems that are suitable for your <a href="data-classification.html#data-classification">data classification</a>, e.g., systems that are managed by your institute and/or <a href="encryption.html#encryption">encrypted</a>.
+</li>
+<li>
+Apply <a href="design-strategies.html#data-oriented-strategies">protection strategies described here</a>.
+</li>
 </div>
+<br>
 </details>
 <details>
 <summary>
-A previous team member still has access (e.g., a copy on their
-personal device, a working account)
+<strong>A previous team member still has access (e.g., a copy on their personal device, a working account)</strong>
 </summary>
 <div>
-<p>Enforce a protocol in which team members who leave need to remove all their
-copies of the data and are denied access to the data and shared folders (on- and
-offboarding). Periodically review and update all users/rights. Make someone
-responsible for this process.</p>
+Enforce a protocol in which team members who leave need to remove all their copies of the data and are denied access to the data and shared folders (on- and offboarding). Periodically review and update all users/rights. Make someone responsible for this process.
 </div>
+<br>
 </details>
 <details>
 <summary>
-A team member shares the data with a third party
-</summary>
-<div>
-<ul>
-<li>Put in place a protocol or <a href="agreements.html#nda">non-disclosure agreement</a> that makes team
-members aware that this is not allowed, or make sure that a
-<a href="agreements.html#data-transfer-agreement">data transfer agreement</a> is in place.</li>
-<li>Make sure that team members do not have access to data that they do not
-need access to.</li>
-</ul>
-</div>
-</details>
-<details>
-<summary>
-A password is leaked
+<strong>A team member shares the data with a third party</strong>
 </summary>
 <div>
 <ul>
-<li>Use systems that apply multifactor authentication.</li>
-<li>Change your password regularly or immediately when it is compromised, and
-have your team members do the same.</li>
+<li>
+Put in place a protocol or <a href="agreements.html#nda">non-disclosure agreement</a> that makes team members aware that this is not allowed, or make sure that a <a href="agreements.html#data-transfer-agreement">data transfer agreement</a> is in place.
+</li>
+<li>
+Make sure that team members do not have access to data that they do not need access to.
+</li>
 </ul>
 </div>
+<br>
+</details>
+<details>
+<summary>
+<strong>A password is leaked</strong>
+</summary>
+<div>
+<ul>
+<li>
+Use systems that apply multifactor authentication.
+</li>
+<li>
+Change your password regularly or immediately when it is compromised, and have your team members do the same.
+</li>
+</ul>
+</div>
+<br>
 </details>
 <p><a href="example-risks.html#example-risks">Back to top</a></p>
 </div>
@@ -481,75 +502,86 @@ have your team members do the same.</li>
 <h3>Loss of personal data<a href="example-risks.html#loss-of-personal-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details>
 <summary>
-A device is lost or defective (e.g., laptop, USB stick)
+<strong>A device is lost or defective (e.g., laptop, USB stick)</strong>
 </summary>
 <div>
 <ul>
-<li>Protect the device with a password.</li>
-<li>Encrypt the device or the data on it.</li>
-<li><a href="data-storage-duration.html#deleting-personal-data">Delete</a> unnecessary copies of the data on the
-device as soon as you’ve made a back-up on a more stable and secure system,
-such as university-managed storage facilities.</li>
-<li>Enable removing data from the device from a distance.</li>
-</ul>
-</div>
-</details>
-<details>
-<summary>
-Paper data are lost
-</summary>
-<div>
-<ul>
-<li>Avoid collecting data on paper altogether, or only collect the necessary
-information.<br />
+<li>
+Protect the device with a password.
 </li>
-<li>Store the paper data in a central and access-controlled location, scan the
-documents as soon as possible, store the scans on a backed-up storage medium
-and destroy the paper records (securely).<br />
+<li>
+Encrypt the device or the data on it.
+</li>
+<li>
+<a href="data-storage-duration.html#deleting-personal-data">Delete</a> unnecessary copies of the data on the device as soon as you’ve made a back-up on a more stable and secure system, such as university-managed storage facilities.
+</li>
+<li>
+Enable removing data from the device from a distance.
 </li>
 </ul>
 </div>
+<br>
 </details>
 <details>
 <summary>
-The dataset is deleted accidentally
-</summary>
-<div>
-<p>Use a storage system that has back-up functionality, or if not available, make
-regular manual back-ups of the data.</p>
-</div>
-</details>
-<details>
-<summary>
-A system error causes temporary loss of or access to data
+<strong>Paper data are lost</strong>
 </summary>
 <div>
 <ul>
-<li>If you are not using centrally managed IT solutions, regularly check if
-back-ups are being done as expected and have protocols in place on how to
-restore back-ups.</li>
-<li>If the time-out takes a significant amount of time, discuss with your
-<a href="seeking-help.html#support">privacy officer</a> whether you need to inform data subjects about it:
-they cannot exercise their rights during that time.<br />
+<li>
+Avoid collecting data on paper altogether, or only collect the necessary information.
+</li>
+<li>
+Store the paper data in a central and access-controlled location, scan the documents as soon as possible, store the scans on a backed-up storage medium and destroy the paper records (securely).
 </li>
 </ul>
 </div>
+<br>
 </details>
 <details>
 <summary>
-The organisation is hit by a ransomware attack
+<strong>The dataset is deleted accidentally</strong>
 </summary>
 <div>
-<p>Enforce a security protocol that emphasises secure data practices, such as:</p>
+Use a storage system that has back-up functionality, or if not available, make regular manual back-ups of the data.
+</div>
+<br>
+</details>
+<details>
+<summary>
+<strong>A system error causes temporary loss of or access to data</strong>
+</summary>
+<div>
 <ul>
-<li>Do not download data from unknown sources.</li>
-<li>Be careful when installing software, preferably only install software from
-the institutional software catalogue.</li>
-<li>Create awareness of what phishing looks like and to report phishing
-immediately to the
-<a href="https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert" target="_blank">Computer Emergency Response Team</a>.</li>
+<li>
+If you are not using centrally managed IT solutions, regularly check if back-ups are being done as expected and have protocols in place on how to restore back-ups.
+</li>
+<li>
+If the time-out takes a significant amount of time, discuss with your <a href="seeking-help.html#support">privacy officer</a> whether you need to inform data subjects about it: they cannot exercise their rights during that time.
+</li>
 </ul>
 </div>
+<br>
+</details>
+<details>
+<summary>
+<strong>The organisation is hit by a ransomware attack</strong>
+</summary>
+<div>
+Enforce a security protocol that emphasises secure data practices, such as:
+<ul>
+<li>
+Do not download data from unknown sources.
+</li>
+<li>
+Be careful when installing software, preferably only install software from the institutional software catalogue.
+</li>
+<li>
+Create awareness of what phishing looks like and to report phishing immediately to the <a href="https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert" target="_blank">Computer Emergency Response Team</a>.
+</li>
+</ul>
+</div>
+<br>
 </details>
 <p><a href="example-risks.html#example-risks">Back to top</a></p>
 </div>
@@ -557,44 +589,56 @@ immediately to the
 <h3>Unintended collection of personal data<a href="example-risks.html#unintended-collection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details>
 <summary>
-Data subjects give more, or more sensitive information about
-themselves than intended/needed
+<strong>Data subjects give more, or more sensitive information about themselves than intended/needed</strong>
 </summary>
 <div>
 <ul>
-<li>Offer data subjects the possibility to review what information they provided.</li>
-<li>Offer the possibility to withdraw consent in a later stage.</li>
-<li>Use a data collection protocol to prevent this from taking place.</li>
-<li>Remove the unnecessary information from your dataset.<br />
+<li>
+Offer data subjects the possibility to review what information they provided.
+</li>
+<li>
+Offer the possibility to withdraw consent in a later stage.
+</li>
+<li>
+Use a data collection protocol to prevent this from taking place.
+</li>
+<li>
+Remove the unnecessary information from your dataset.
 </li>
 </ul>
 </div>
+<br>
 </details>
 <details>
 <summary>
-Data subjects give (sensitive) information about others
+<strong>Data subjects give (sensitive) information about others</strong>
 </summary>
 <div>
 <ul>
-<li>Use a data collection protocol to prevent this from taking place.</li>
-<li>Offer data subjects the possibility to review what information they provided.</li>
-<li>Remove the unnecessary information from your dataset.</li>
-<li>Consider the risks for those others vs. your own research benefits: if the
-interests for the other people are more important, you should delete or
-anonymise the information.<br />
+<li>
+Use a data collection protocol to prevent this from taking place.
+</li>
+<li>
+Offer data subjects the possibility to review what information they provided.
+</li>
+<li>
+Remove the unnecessary information from your dataset.
+</li>
+<li>
+Consider the risks for those others vs. your own research benefits: if the interests for the other people are more important, you should delete or anonymise the information.
 </li>
 </ul>
 </div>
+<br>
 </details>
 <details>
 <summary>
-Personal data are collected unintendedly
+<strong>Personal data are collected unintendedly</strong>
 </summary>
 <div>
-<p>This can happen when a survey tool automatically collects additional data such
-as IP addresses. You can sometimes turn this off, and otherwise must remove the
-data as soon as possible after collection.</p>
+This can happen when a survey tool automatically collects additional data such as IP addresses. You can sometimes turn this off, and otherwise must remove the data as soon as possible after collection.
 </div>
+<br>
 </details>
 <p><a href="example-risks.html#example-risks">Back to top</a></p>
 </div>
@@ -602,93 +646,74 @@ data as soon as possible after collection.</p>
 <h3>Invalid legal basis<a href="example-risks.html#invalid-legal-basis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details>
 <summary>
-Data subjects were not informed in a way that is
-understandable for them
+<strong>Data subjects were not informed in a way that is understandable for them</strong>
 </summary>
 <div>
-<p>This can be a risk with vulnerable subjects, such as children or psychiatric
-patients but also with data subjects from different cultures. Make sure the
-information to data subjects is <a href="privacy-notices.html#form-of-a-privacy-notice">easy to understand</a>,
-consider other forms than text (e.g., orally). You could even test this with a
-sub-group of data subjects. Moreover, we recommend going through an ethical
-review to consider these aspects more in-depth.</p>
+This can be a risk with vulnerable subjects, such as children or psychiatric patients but also with data subjects from different cultures. Make sure the information to data subjects is <a href="privacy-notices.html#form-of-a-privacy-notice">easy to understand</a>, consider other forms than text (e.g., orally). You could even test this with a sub-group of data subjects. Moreover, we recommend going through an ethical review to consider these aspects more in-depth.
 </div>
+<br>
 </details>
 <details>
 <summary>
-Data subjects could not be (fully) informed because it would
-harm your research project
+<strong>Data subjects could not be (fully) informed because it would harm your research project</strong>
 </summary>
 <div>
-<p>If fully informing data subjects can negatively affect your research project
-(<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14(5)</a>), we recommend
-going through ethical review and extensively debriefing data subjects after your
-project, including a possibility to withdraw consent or to object to the
-processing. In case of secretive research (heimelijk onderzoek), please contact
-your <a href="seeking-help.html#support">privacy officer</a>: this requires an in-depth privacy scan.</p>
+If fully informing data subjects can negatively affect your research project (<a href="https://gdpr-info.eu/art-14-gdpr/" target="_blank">art. 14(5)</a>), we recommend going through ethical review and extensively debriefing data subjects after your project, including a possibility to withdraw consent or to object to the processing. In case of secretive research (heimelijk onderzoek), please contact your <a href="seeking-help.html#support">privacy officer</a>: this requires an in-depth privacy scan.
 </div>
+<br>
 </details>
 <details>
 <summary>
-Data subjects do not know their data are used for research
+<strong>Data subjects do not know that their data are used for research</strong>
 </summary>
 <div>
-<p>This can happen for example in web scraping or archival research. In principle,
-you need to inform the data subjects directly. If this takes an unreasonable
-amount of effort, place a link to a privacy statement on a place that those
-data subjects likely visit (e.g., social media). Point at a possibility to
-object to your processing.</p>
+This can happen for example in web scraping or archival research. In principle, you need to inform the data subjects directly. If this takes an unreasonable amount of effort, place a link to a privacy statement on a place that those data subjects likely visit (e.g., social media). Point at a possibility to object to your processing.
 </div>
+<br>
 </details>
 <details>
 <summary>
-Consent cannot be demonstrated
+<strong>Consent cannot be demonstrated</strong>
 </summary>
 <div>
-<p>Use a system that registers the consent (e.g., a survey tool, an interview
-recording), preferably with the date of providing consent. If your research
-involves a survey, make sure data subjects cannot enter the survey itself if
-they have not ticked the “consent” box(es). Store the consent declarations for
-as long as you retain the personal data. Do so securely, but separated from the
-research data.</p>
+Use a system that registers the consent (e.g., a survey tool, an interview recording), preferably with the date of providing consent. If your research involves a survey, make sure data subjects cannot enter the survey itself if they have not ticked the “consent” box(es). Store the consent declarations for as long as you retain the personal data. Do so securely, but separated from the research data.
 </div>
+<br>
 </details>
 <details>
 <summary>
-Data subjects do not want to sign a consent form
+<strong>Data subjects do not want to sign a consent form</strong>
 </summary>
 <div>
 <ul>
-<li>Consider whether you actually need a signature. If you do not use real names
-or a pseudonym unconnected to real names, using a signature would lead to the
-unnecessary processing of personal data, and a checkbox will likely suffice.</li>
-<li>Contact your <a href="seeking-help.html#support">privacy officer</a> to consider using public interest
-as a legal basis instead of consent. Note that data subjects still need to be
-informed properly.</li>
-<li>If you have to use consent, consider the format of consent: for some groups
-oral consent may work better than written consent.<br />
+<li>
+Consider whether you actually need a signature. If you do not use real names or a pseudonym unconnected to real names, using a signature would lead to the unnecessary processing of personal data, and a checkbox will likely suffice.
+</li>
+<li>
+Contact your <a href="seeking-help.html#support">privacy officer</a> to consider using public interest as a legal basis instead of consent. Note that data subjects still need to be informed properly.
+</li>
+<li>
+If you have to use consent, consider the format of consent: for some groups oral consent may work better than written consent.
 </li>
 </ul>
 </div>
+<br>
 </details>
 <details>
 <summary>
-Consent may not be freely given because you do research in
-your own organisation
+<strong>Consent may not be freely given because you do research in your own organisation</strong>
 </summary>
 <div>
 <ul>
-<li>Consider whether you can rely on public interest instead of consent: contact
-your <a href="seeking-help.html#support">privacy officer</a> for assistance.<br />
+<li>
+Consider whether you can rely on public interest instead of consent: contact your <a href="seeking-help.html#support">privacy officer</a> for assistance.
 </li>
-<li>If you need to use consent, try to distance yourself from the data subjects.
-For example, if your data subjects are students, have someone other than the
-teacher perform the data collection and/or analysis, or investigate a
-department other than your own, and prevent the management of the department
-of interest from getting involved in your project.<br />
+<li>
+If you need to use consent, try to distance yourself from the data subjects. For example, if your data subjects are students, have someone other than the teacher perform the data collection and/or analysis, or investigate a department other than your own, and prevent the management of the department of interest from getting involved in your project.
 </li>
 </ul>
 </div>
+<br>
 </details>
 <p><a href="example-risks.html#example-risks">Back to top</a></p>
 </div>
@@ -696,45 +721,46 @@ of interest from getting involved in your project.<br />
 <h3>Risks for data subjects<a href="example-risks.html#risks-data-subjects" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details>
 <summary>
-Your research has a stigmatising effect on the data subjects
-due to incorrect, unclear or opaque selection criteria
+<strong>Your research has a stigmatising effect on the data subjects due to incorrect, unclear or opaque selection criteria</strong>
 </summary>
 <div>
-<p>Describe clearly how the data subjects are selected.</p>
+Describe clearly how the data subjects are selected.
 </div>
+<br>
 </details>
 <details>
 <summary>
-Due to a small sample size, data subjects are easily
-identifiable
+<strong>Due to a small sample size, data subjects are easily identifiable</strong>
+</summary>
+<div>
+If you cannot increase the sample size, put in place <a href="design-strategies.html#data-oriented-strategies">protection measures</a> to protect the identity of the data subjects.
+</div>
+<br>
+</details>
+<details>
+<summary>
+<strong>Data subjects put themselves in harm’s way by participating</strong>
 </summary>
 <div>
 <ul>
-<li>Increase the sample size</li>
-<li>Put in place <a href="design-strategies.html#data-oriented-strategies">protection measures</a> to protect
-the identity of the data subjects<br />
+<li>
+Balance the interests of the data subjects vs. those of your research project and go through ethical review.
+</li>
+<li>
+Collect the data in a physically safe location.
+</li>
+<li>
+Put in place <a href="design-strategies.html#data-oriented-strategies">protection measures</a> like anonymisation, minimisation, blurring, etc. to hide and protect the identity of the data subjects.
+</li>
+<li>
+Clearly inform data subjects what their participation entails and obtain their explicit consent.
+</li>
+<li>
+If applicable, inform local authorities and obtain formal permission to perform your research.
 </li>
 </ul>
 </div>
-</details>
-<details>
-<summary>
-Data subjects put themselves in harm’s way by participating
-</summary>
-<div>
-<ul>
-<li>Balance the interests of the data subjects vs. those of your research
-project and go through ethical review.</li>
-<li>Collect the data in a physically safe location.</li>
-<li>Put in place <a href="design-strategies.html#data-oriented-strategies">protection measures</a> like
-anonymisation, minimisation, blurring, etc. to hide and protect the identity
-of the data subjects.</li>
-<li>Clearly inform data subjects what their participation entails and obtain
-their explicit consent.</li>
-<li>If applicable, inform local authorities and obtain formal permission to
-perform your research.</li>
-</ul>
-</div>
+<br>
 </details>
 <p><a href="example-risks.html#example-risks">Back to top</a></p>
 
@@ -743,19 +769,11 @@ perform your research.</li>
 <!-- </div> -->
 <div class = "footer">
 <footer>
-  <!--<script>
-    // Commented lines all do not work //
-    //var date = document.getElementsByName('date')[0].getAttribute('content');
-    //var date = document.head.innerHTML.date;
-    //document.getElementById("date").innerHTML = date;
-    //var date = document.querySelector('meta[name="date"]').content;
-    //var date = document.getElementsByTag("date").getAttribute('content');
-  </script>-->
   <hr>
   <div class="row">
     <div class="column">
       <p>
-        <img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo">
+        <img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo" style="width:85%;">
       </p>
     </div>
     <div class="column">
@@ -764,26 +782,10 @@ perform your research.</li>
       <small><script type="text/javascript">document.write(document.querySelector('meta[name="author"]').content);</script></small>
       <br>
       <p style ="line-height:1; color:grey">
-        <!--<small>Last updated: </small>-->
-        <!-- Commented lines contain attempts to include the date -->
-        <!--<script type="text/javascript">document.write(date)</script> -->
-        <!--<meta name="date" content="$date-meta$" />-->
-        <!--<p class = "date" style="display:inline !important">${{ date-meta }}</p>-->
-        <!--<script type="text/javascript">document.write(date)</script>-->
-        <!--<script>document.querySelector('meta[name="description"]').content</script>-->
-        <!--<p class="date"><em>r format(Sys.time(), “%d %B %Y”)</em></p>-->
-        <!-- p>$date-meta$</p>-->
-        <!-- p style="margin-top: 6px; margin-left: -2px;">$date$</p>-->
-        <!--<date style="display:inline !important;"></date>-->
-        <!--<span id="meta_date"></span>-->
-        <!--<script> document.write(new Date().toLocaleDateString('en-GB')); </script>--><!-- this is just today's date-->
-        <!--<script> document.write(new Date().getElementsByTag("meta").getAttribute('content'); </script>-->
-        <!--<script type="text/javascript">document.write(date)</script> -->
-        <!--<br>-->
         <small>
           The information presented here is provided as is, with no guarantees of 
           accuracy or completeness. For the most up-to-date information, please refer 
-          to your <a href="https://intranet.uu.nl/en/knowledgebase/contact-privacy" target="_blank">privacy officer</a>, 
+          to your <a href="https://intranet.uu.nl/en/knowledgebase/privacyofficers" target="_blank">privacy officer</a>, 
           the <a href="https://www.uu.nl/rdm" target="_blank">university website</a> or 
           <a href="https://intranet.uu.nl/en/knowledge-base/privacy-at-uu" target="_blank">intranet</a>. 
           We cannot be held responsible for any negative consequences due to incorrect interpretation or use, and
@@ -796,7 +798,7 @@ perform your research.</li>
       </small>
       </p>
     </div><!-- End div column -->
-  </div> <!-- End div row -->
+  </div><!-- End div row -->
 </footer>
 </div>
             </section>
@@ -836,7 +838,7 @@ gitbook.start({
 "size": 1.5
 },
 "edit": {
-"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/05-privacy-and-security-assessment.Rmd",
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/06-privacy-and-security-assessment.Rmd",
 "text": "Suggest edits"
 },
 "history": {
