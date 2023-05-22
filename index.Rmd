@@ -92,6 +92,9 @@ The Data Privacy Handbook is licensed under a
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target="_blank"}. 
 You can [view the license here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md){target="_blank}.
 
+When using (parts of) the Data Privacy Handbook in your work, please cite us 
+using the citation provided in the [GitHub repository](target="_blank").
+
 ### Contributions
 
 The Data Privacy Handbook is a collaborative effort, made possible by a large 
