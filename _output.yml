@@ -14,7 +14,7 @@ bookdown::gitbook:
       collapse: section
       scroll_highlight: true
       before: |
-        <li class="toc-logo"><a href="./"><img src="img/dpp-logo.png"></a></li>
+        <li class="toc-logo"><a href="./"><img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo"></a></li>
       after: |
         <li><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="blank">Visit the GitHub repository</a></li>
     download: ["pdf", "epub"]
