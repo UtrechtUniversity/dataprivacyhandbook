@@ -11,9 +11,7 @@ When you use personal data in your research project, you likely also need to
 analyse those data, often using a script of sorts. In this chapter, we discuss 
 the following scenarios for analysing personal data: 
 
-<img src="img/secure-computing.png" title="Graphical depiction of the three 
-secure computation scenarios: data-to-code, code-to-data and federated analysis" 
-height="100%"/>
+![](img/secure-computing.png "Graphical depiction of the three secure computation scenarios: data-to-code, code-to-data and federated analysis")
 
 1. ["Regular" data analysis](#data-to-code) ("data-to-code"), where the data are 
 brought to the "script" or analysis software in order to analyse them.
