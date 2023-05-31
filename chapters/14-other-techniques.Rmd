@@ -235,15 +235,17 @@ The data donation approach as developed by
 allows researchers to automatically analyse the digital traces found in DDPs, 
 while preserving the privacy of research participants. The workflow is as follows:
 
-<p style="text-align:center;"><img src="https://www.cell.com/cms/attachment/3bdcf4ba-3f26-474b-ac54-534ebbe4af52/gr1.jpg"
-title = "Data donation workflow as defined in Boeschoten et al., 2022, 
+<p style="text-align:center;">
+<img src="https://www.cell.com/cms/attachment/3bdcf4ba-3f26-474b-ac54-534ebbe4af52/gr1.jpg" 
+title="Data donation workflow as defined in Boeschoten et al., 2022, 
 https://doi.org/10.1016/j.patter.2022.100444" alt = "Visualisation of the 
-workflow. The following steps take palce at the participant's device: 
-1. Participant requests Data Download Package (DDP) at data controller,
-2. Participant downloads DDP to own device, 3. Participant visits PORT website,
+workflow. The following steps take place at the participant's device: 
+1. Participant requests Data Download Package (DDP) at data controller, 
+2. Participant downloads DDP to own device, 3. Participant visits PORT website, 
 4. PORT extracts relevant features from the DDP locally. Step 5 takes place at 
 the researcher's environment, where they perform analyses on the extracted 
-features."/></p>
+features." />
+</p>
 
 1. Data subjects are recruited as respondents like in a regular research project.
 2. The researcher determines which DDPs are relevant for the research question 

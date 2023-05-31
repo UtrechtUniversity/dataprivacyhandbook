@@ -1,8 +1,8 @@
 # Code of Conduct
 
-This Code of Conduct supplements Utrecht University’s [university-wide Code of Conduct](https://www.uu.nl/en/organisation/about-us/codes-of-conduct) and outlines our expectations for participants within the project. It is adapted from the **Open Life Science** community's [Code of Conduct](https://openlifesci.org/code-of-conduct). 
+This Code of Conduct supplements Utrecht University's [university-wide Code of Conduct](https://www.uu.nl/en/organisation/about-us/codes-of-conduct) and outlines our expectations for participants within the project. It is adapted from the **Open Life Science** community's [Code of Conduct](https://openlifesci.org/code-of-conduct). 
 
-We welcome everyone to participate in our project. We are committed to providing a friendly and positive environment for all and expect our Code of Conduct to be honored. Although we will fail at times, we seek to treat everyone both as fairly and equally as possible. Whenever a participant has made a mistake, we expect them to take responsibility for it. If someone has been harmed or offended, it is our responsibility to listen carefully and respectfully, and do our best to right the wrong.
+We welcome everyone to participate in our project. We are committed to providing a friendly and positive environment for all and expect our Code of Conduct to be honored. Although we may fail at times, we seek to treat everyone both as fairly and equally as possible. Whenever a participant has made a mistake, we expect them to take responsibility for it. If someone has been harmed or offended, it is our responsibility to listen carefully and respectfully, and do our best to right the wrong.
 
 ## Our Standards
 
@@ -24,11 +24,11 @@ We welcome everyone to participate in our project. We are committed to providing
   - Advocating for, or encouraging, any of the above behavior.
   - Repeated harassment of others. In general, if someone asks you to stop, then stop.
 
-- **When we disagree, try to understand why.** Disagreements, both social and technical, happen all the time and Django is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. Diversity contributes to the strength of our community, which is composed of people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
+- **When we disagree, try to understand why.** Disagreements, both social and technical, happen all the time and we are no exception. It is important that we resolve disagreements and differing views constructively. Remember that we're different. Diversity contributes to the strength of our community, which is composed of people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn't mean that they're wrong. Don't forget that it is human to err and blaming each other doesn't get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 ## Reporting Issues
 
-If you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting the project coordinators: [Neha Moopen](n.moopen@uu.nl) & [Dorien Huijser](d.c.huijser@uu.nl).
+If you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us).
 
 ## Acknowledgements
 

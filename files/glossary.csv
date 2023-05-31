@@ -23,7 +23,7 @@ P,Pseudonymous data,"Personal data that cannot lead to identification *without a
 Q,,,
 R,,,
 S,Special categories of personal data,"Any information pertaining to the data subject which reveals any of the below categories: <ul><li>racial or ethnic origin</li><li>political opinions</li><li>religious or philosophical beliefs</li><li>trade union membership</li><li>genetic and biometric data when meant to uniquely identify someone</li><li>physical or mental health conditions</li><li>an individual's sex life or sexual orientation</li></ul>The processing of these categories of data is **prohibited**, unless one of the exceptions of [article 9](https://gdpr-info.eu/art-9-gdpr/){target=""_blank""} applies. For example, an exception applies when: <ul><li>the data subject has provided explicit consent to process these data for a specific purpose,</li><li>the data subject has made the data publicly available themselves,</li><li>processing is necessary for scientific research purposes and obtaining consent is impossible or would require an unreasonable amount of effort.</li></ul><p>Contact your [privacy officer](#support) if you wish to process special categories of personal data.</p>",1
-T,,,
+T,Third-country transfer,"In legal terms, a transfer exists when personal data controlled by one party are accessible to another, irrespective of whether the data are physically sent to that party. An international/third-country transfer exists when the party that can potentially gain access is based in a country outside the European Economic Area (EEA) which does not have an adequacy decision from the European Commission.",1
 U,,,
 V,,,
 W,,,

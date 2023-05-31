@@ -14,20 +14,12 @@ cover-image: "img/cover-image-dph.png"
 favicon: "img/favicon.ico"
 apple-touch-icon: "img/apple-touch-icon.png"
 apple-touch-icon-size: 180
-output:
-  html_document:
-    toc: true
-    toc_depth: 4
-    toc_float: true
+linkcolor: #C00A35
+urlcolor: #C00A35
+citecolor: #C00A35
 ---
 
 # (PART\*) Intro {-} 
-
-# Data Privacy Handbook {-}
-
-```{r echo=FALSE}
-knitr::include_graphics("img/cover-image-dph.png")
-```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
@@ -40,14 +32,22 @@ local({r <- getOption("repos")
        options(repos=r)
 })
 ```
-*Last updated: `r format(Sys.time(), "%d %B %Y")`*
-<br><br>  
 
-**The Data Privacy Handbook is a practical guide on handling personal data in 
+# Data Privacy Handbook
+
+![Illustrated cover image for the Data Privacy Handbook, showing a person sitting cross-legged with a laptop on their lap. From the laptop arise several concepts that are covered in the Data Privacy Handbook: Anonymisation (depicted as a face covered with a censor bar), Transparency (depicted as one person showing another person a checklist, informing them), Data sharing (depicted as two laptops connected to a globe), Privacy by Design (depicted as a map with a shield on it), and Personal data (depicted as a fingerprint that connects zeros and ones). The person is floating as if in meditation: happy that they achieved GDPR compliance. The left upper corner of the image shows the Utrecht University logo, and the bottom of the image says 'Data Privacy Handbook'. Image drawn by Erik van Tuijn for Utrecht University in May of 2023.](img/cover-image-dph.png "Data Privacy Handbook, image licensed under CC-BY-SA 4.0")
+
+*Last Handbook update: `r format(Sys.time(), "%d %B %Y")`*
+
+## About
+
+The Data Privacy Handbook is a practical guide on handling personal data in 
 scientific research, primarily written for Utrecht University researchers and 
-research support staff in the Netherlands.**
+research support staff in the Netherlands. It is an initiative of 
+[Research Data Management Support](https://www.uu.nl/en/research/research-data-management){target="_blank"}, 
+in collaboration with privacy and data experts at Utrecht University.
 
-It consists of:
+The Data Privacy Handbook consists of:
 
 - A **knowledge base** which explains how the EU General Data Protection 
 Regulation (GDPR, Dutch: Algemene Verordening Gegevensbescherming)  applies to 
@@ -73,19 +73,6 @@ Privacy Handbook may not be in line with your institutional guidelines. Please
 consult with your local privacy staff whenever you are in doubt about this.
 :::
 
-## About
-
-The Data Privacy Handbook is an initiative of 
-[Research Data Management Support](https://www.uu.nl/en/research/research-data-management){target="_blank"}, 
-in collaboration with privacy and data experts at 
-Utrecht University. It is part of a larger project, the
-[Data Privacy Project](https://utrechtuniversity.github.io/dataprivacyproject){target="_blank"}, 
-which aims to develop knowledge, tools, and experience 
-on how researchers can and should deal with personal data. This project is 
-funded by the Utrecht University Research IT Program and an NWO Digital 
-Competence Center grant.
-
-
 ### License and Citation
 
 The Data Privacy Handbook is licensed under a 
@@ -93,7 +80,7 @@ The Data Privacy Handbook is licensed under a
 You can [view the license here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md){target="_blank}.
 
 When using (parts of) the Data Privacy Handbook in your work, please cite us 
-using the citation provided in the [GitHub repository](target="_blank").
+using the citation provided in the [GitHub repository](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}.
 
 ### Contributions
 
@@ -124,8 +111,8 @@ I want to...:
         <details>
             <summary>Learn about the GDPR in the context of scientific research</summary>
             <ul>
-                <li><a href="#gdpr">Introduction to the GDPR</a></li>
-                <li><a href="#glossary">Definitions</a></li>
+                <li>[Introduction to the GDPR](#gdpr)</li>
+                <li>[Definitions](#glossary)</li>
             </ul>
         </details>
     </li>
@@ -133,16 +120,16 @@ I want to...:
         <details>
             <summary>Plan a GDPR-compliant research project</summary>
             <ul>
-                <li><a href="#privacy-by-design">Designing your research project</a></li>
-                <li><a href="#legal-basis">Choosing a legal basis</a></li>
-                <li><a href="#risk-assessment">Assessing the risks in your project</a>, 
-                for example using a <a href="#privacy-scan">privacy scan</a>,
-                                    <a href="#dpia">Data Protection Impact Assessment</a>, or
-                                    <a href="#data-classification">Data classification</a></li>
-                <li><a href="#privacy-notices">Informing participants</a></li>
-                <li><a href="#informed-consent-forms">Obtaining consent</a></li>
-                <li><a href="#data-sharing-collaboration">Collaborating on personal data</a></li>
-                <li><a href="#agreements">Setting up agreements</a></li>
+                <li>[Designing your research project](#privacy-by-design)</li>
+                <li>[Choosing a legal basis](#legal-basis)</li>
+                <li>[Assessing the risks in your project](#risk-assessment), 
+                for example using a [privacy scan](#privacy-scan),
+                                    [Data Protection Impact Assessment](#dpia), or
+                                    [Data classification](#data-classification)</li>
+                <li>[Informing participants](#privacy-notices)</li>
+                <li>[Obtaining consent](#informed-consent-forms)</li>
+                <li>[Collaborating on personal data](#data-sharing-collaboration)</li>
+                <li>[Setting up agreements](#agreements)</li>
             </ul>
         </details>
     </li>
@@ -150,16 +137,16 @@ I want to...:
         <details>
             <summary>Work safely with personal data</summary>
             <ul>
-                <li><a href="#data-storage">Storing personal data</a></li>
-                <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
-                <li><a href="#pseudonymisation-anonymisation">De-identifying personal data</a></li>
-                <li><a href="#secure-computing">Securely computing personal data</a></li>
-                <li><a href="#data-sharing-collaboration">Sharing personal data during research</a></li>
+                <li>[Storing personal data](#data-storage)</li>
+                <li>[Finding suitable tools and services](#tools-and-services)</li>
+                <li>[De-identifying personal data](#pseudonymisation-anonymisation)</li>
+                <li>[Securely analysing personal data](#secure-computation)</li>
+                <li>[Sharing personal data during research](#data-sharing-collaboration)</li>
                 <li>Using other approaches to protect personal data, such as 
-                <a href="#encryption">encryption</a>, 
-                <a href="#statistical-privacy">statistical privacy</a>,
-                <a href="synthetic-data">synthetic data</a>, or
-                <a href="data-donation">data donation</a></li>
+                [encryption](#encryption), 
+                [statistical approaches to de-identification](#statistical-privacy),
+                [synthetic data](#synthetic-data), or
+                [data donation](#data-donation)</li>
             </ul>
         </details>
     </li>
@@ -167,13 +154,13 @@ I want to...:
         <details>
             <summary>Share personal data with others</summary>
             <ul>
-                <li><a href="#legal-basis">Sharing data legally</a></li>
-                <li><a href="#data-sharing-collaboration">Sharing personal data during research</a></li>
-                <li><a href="#pseudonymisation-anonymisation">De-identifying personal data</a></li>
-                <li><a href="#secure-computing">Securely computing personal data</a></li>
-                <li><a href="#tools-and-services">Using GDPR-compliant tools and services</a></li>
-                <li><a href="#data-sharing-reuse">Sharing personal data for reuse</a></li>
-                <li><a href="#agreements">Sharing personal data case by case</a></li>
+                <li>[Sharing data legally](#legal-basis)</li>
+                <li>[Sharing personal data during research](#data-sharing-collaboration)</li>
+                <li>[De-identifying personal data](#pseudonymisation-anonymisation)</li>
+                <li>[Securely analysing personal data](#secure-computation)</li>
+                <li>[Using GDPR-compliant tools and services](#tools-and-services)</li>
+                <li>[Sharing personal data for reuse](#data-sharing-reuse)</li>
+                <li>[Sharing personal data case by case](#agreements)</li>
             </ul>
         </details>
     </li>
@@ -181,10 +168,10 @@ I want to...:
         <details>
             <summary>Learn from other projects</summary>
             <ul>
-                <li><a href="#pet-survey">Minimising personal data in a survey</a></li>
-                <li><a href="#youth-pseudonymisation">Pseudonymising different types of data</a></li>
-                <li><a href="#open-science-questionnaire">Publishing metadata only</a></li>
-                <li><a href="#reuse-education-data">Reusing education data for research purposes</a></li>
+                <li>[Minimising personal data in a survey](#pet-survey)</li>
+                <li>[Pseudonymising different types of data](#youth-pseudonymisation)</li>
+                <li>[Publishing metadata only](#open-science-questionnaire)</li>
+                <li>[Reusing education data for research purposes](#reuse-education-data)</li>
             </ul>
         </details>
     </li>
@@ -192,9 +179,9 @@ I want to...:
         <details>
             <summary>Get help or information</summary>
             <ul>
-                <li><a href="#seeking-help">Getting help at Utrecht University</a></li>
-                <li><a href="#glossary">Definitions</a></li>
-                <li><a href="#references">References</a></li>
+                <li>[Getting help at Utrecht University](#seeking-help)</li>
+                <li>[Definitions](#glossary)</li>
+                <li>[References](#references)</li>
             </ul>
         </details>
     </li>
@@ -207,9 +194,9 @@ The content presented in the Data Privacy Handbook has been carefully curated by
 Research Data Management Support, in collaboration with privacy officers and 
 data experts of Utrecht University.  
 
-The Data Privacy Handbook is a ‘living’ book that is continually being written, 
+The Data Privacy Handbook is a 'living' book that is continually being written, 
 updated and reviewed. Its contents can therefore change, or become outdated or 
-redundant. Hence, the information presented is provided “as is”, **without 
+redundant. Hence, the information presented is provided "as is", **without 
 guarantees of accuracy or completeness**.
 
 As scientific research may differ depending on the discipline, topic, and 
@@ -218,7 +205,7 @@ research projects. The authors can therefore **not be held responsible, nor
 accountable** for any negative consequences arising from interpretation and use 
 of the content of the Data Privacy Handbook.
 
-The Handbook is not endorsed by the Board of Utrecht University and does not 
+The Handbook does not necessarily
 constitute a mandatory directive. **For the most up-to-date and official/
 authoritative information, please refer to the 
 [university website](https://www.uu.nl/en/research/research-data-management){target="_blank"}
@@ -234,7 +221,7 @@ Handbook are **not responsible for the content of any such linked webpages**, no
 is the content of external webpages necessarily endorsed by Utrecht University.  
 
 Utrecht University is committed to sharing knowledge in line with the principles 
-of open science and therefore welcomes readers from outside of the organization. 
+of open science and therefore welcomes readers from outside of the organisation. 
 However, the contents of the Data Privacy Handbook may not be in line with readers’ 
 institutions’ policies or views. For more authoritative information, these 
 readers should refer to resources from their own institutions.

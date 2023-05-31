@@ -2,6 +2,7 @@ bookdown::gitbook:
   number_sections: false
   split_by: section
   css: assets/style.css
+  fig_caption: false
   includes:
     #before_body: header.html
     in_header: assets/header.html
@@ -11,6 +12,8 @@ bookdown::gitbook:
       link: "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/%s"
       text: "Suggest edits"
     toc:
+      toc_depth: 4
+      toc_float: true
       collapse: section
       scroll_highlight: true
       before: |
@@ -33,5 +36,8 @@ bookdown::pdf_book:
     in_header: assets/preamble.tex
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: yes
+  keep_tex: no
+  fig_caption: false
+  highlight: default
+  urlstyle: tt
 bookdown::epub_book: default
