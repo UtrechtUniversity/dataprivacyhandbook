@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Statistical privacy | Data Privacy Handbook</title>
+  <title>Statistical approaches to de-identification | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Statistical privacy | Data Privacy Handbook" />
+  <meta property="og:title" content="Statistical approaches to de-identification | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,17 +19,17 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Statistical privacy | Data Privacy Handbook" />
+  <meta name="twitter:title" content="Statistical approaches to de-identification | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2023-05-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +37,7 @@ Support.</p>" />
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="deidentification-resources.html"/>
-<link rel="next" href="k-anonymity-and-its-descendents.html"/>
+<link rel="next" href="k-l-t-anonymity.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -318,10 +318,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -421,7 +434,26 @@ Support.</p>" />
 
             <section class="normal" id="section-">
 <div id="statistical-privacy" class="section level1 hasAnchor">
-<h1>Statistical privacy<a href="statistical-privacy.html#statistical-privacy" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1>Statistical approaches to de-identification<a href="statistical-privacy.html#statistical-privacy" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In order to protect datasets that contain personal or otherwise sensitive data,
+there is an increasing number of statistical approaches to de-identification,
+which to some extent quantify how identifiable data are after
+<a href="pseudonymisation-anonymisation.html#pseudonymisation-anonymisation">de-identification</a>.</p>
+<p>In this chapter, we discuss the following approaches, as these are the most
+widely used approaches:</p>
+<ul>
+<li><a href="k-l-t-anonymity.html#k-anonymity">K-anonymity</a></li>
+<li><a href="k-l-t-anonymity.html#l-diversity">L-diversity</a></li>
+<li><a href="k-l-t-anonymity.html#t-closeness">T-closeness</a></li>
+<li><a href="differential-privacy.html#differential-privacy">Differential privacy</a></li>
+</ul>
+<p>These approaches (or: privacy models) are not yet much used in research
+practice, because they come with some disadvantages and require resources
+and/or expertise to be applied and interpreted correctly. However, they are
+used in many
+<a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification" target="_blank">de-identification tools</a>
+and are useful to detect specific sensitivities in (tabular) datasets. For
+those reasons, the techniques are introduced in this chapter.</p>
 </div>
 <div class = "footer">
 <footer>
@@ -463,7 +495,7 @@ Support.</p>" />
         </div>
       </div>
 <a href="deidentification-resources.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="k-anonymity-and-its-descendents.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="k-l-t-anonymity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -512,6 +544,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });

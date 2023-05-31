@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2023-05-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -318,10 +318,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -433,22 +446,7 @@ where the data are transferred to, and the external party’s role in the resear
 project. The flowchart below gives an indication which agreement should be used
 in which situation. Under the figure, you can also find a short explanation
 about each individual type of agreement.</strong></p>
-<p><img src="img/agreements_flowchart.png" title="Flowchart to choose the correct 
-type of agreement in research" alt="Flowchart to choose the correct type
-of agreement in research. Firstly, you do not need an agreement if you are 
-collaborating with someone within your own institution, or if you use software of
-which the use is already covered by an existing agreement. Secondly, you need a 
-non-disclosure agreement if you collaborate with someone outside of your 
-institution who processes data within your institutional hardware. Thirdly,
-you need a data processing agreement when you collaborate with someone who does
-not have their own processing purposes and is thus a processor. You also need a
-data processing agreement when you use software that processes personal data on
-your behalf. Fourthly, you need a data transfer agreement when you collaborate 
-with someone who wants to use your data for their own purposes, or when you use
-software that processes personal data for their own purposes. Finally, you need 
-a joint controllers agreement when you collaborate with an external institution or
-with a software provider who has an overlapping processing purpose, such as a 
-shared research question." height="100%"/></p>
+<p><img src="img/agreements_flowchart.png" title="Flowchart to choose the correct type of agreement in research" alt="Flowchart to choose the correct type of agreement in research. Firstly, you do not need an agreement if you are collaborating with someone within your own institution, or if you use software of which the use is already covered by an existing agreement. Secondly, you need a non-disclosure agreement if you collaborate with someone outside of your institution who processes data within your institutional hardware. Thirdly, you need a data processing agreement when you collaborate with someone who does not have their own processing purposes and is thus a processor. You also need a data processing agreement when you use software that processes personal data on your behalf. Fourthly, you need a data transfer agreement when you collaborate with someone who wants to use your data for their own purposes, or when you use software that processes personal data for their own purposes. Finally, you need a joint controllers agreement when you collaborate with an external institution or with a software provider who has an overlapping processing purpose, such as a shared research question." /></p>
 <p>Quick links to:
 <a href="agreements.html#nda" style="text-decoration: none;"><button type="button">NDA</button></a>
 <a href="agreements.html#data-processing-agreement" style="text-decoration: none;"><button type="button">DPA</button></a>
@@ -684,6 +682,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });

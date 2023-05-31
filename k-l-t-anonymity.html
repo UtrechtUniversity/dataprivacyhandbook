@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>K-anonymity and its descendents | Data Privacy Handbook</title>
+  <title>K-anonymity, l-diversity and t-closeness | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="K-anonymity and its descendents | Data Privacy Handbook" />
+  <meta property="og:title" content="K-anonymity, l-diversity and t-closeness | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,17 +19,17 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="K-anonymity and its descendents | Data Privacy Handbook" />
+  <meta name="twitter:title" content="K-anonymity, l-diversity and t-closeness | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2023-05-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -318,10 +318,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -420,8 +433,999 @@ Support.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="k-anonymity-and-its-descendents" class="section level2 hasAnchor">
-<h2>K-anonymity and its descendents<a href="k-anonymity-and-its-descendents.html#k-anonymity-and-its-descendents" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="k-l-t-anonymity" class="section level2 hasAnchor">
+<h2>K-anonymity, l-diversity and t-closeness<a href="k-l-t-anonymity.html#k-l-t-anonymity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: k-anonymous, l-diverse, t-close, privacy model, quantifying
+privacy, key attribute, sensitive attribute, quasi-identifier<br />
+Date of last review: 2023-05-30</p>
+</div>
+<p>K-anonymity, L-diversity and T-closeness are statistical approaches that
+quantify the level of identifiability within a tabular dataset, especially when
+variables within that dataset are combined. They are complementary approaches:
+a dataset can be k-anonymous, L-diverse and T-close, where k, L and T all
+represent a number.</p>
+<div id="k-anonymity-variables" class="section level3 hasAnchor">
+<h3>Identifiers, quasi-identifiers, and sensitive attributes<a href="k-l-t-anonymity.html#k-anonymity-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Privacy models like k-anonymity, L-diversity and T-closeness distinguish
+between 3 types of variables in a dataset:</p>
+<ul>
+<li><strong>Identifiers</strong> (also known as key attributes): direct identifiers such as
+names, student numbers, email addresses, etc. These variables should in
+principle not be collected at all, or removed from the dataset if they are not
+necessary for your research project.</li>
+<li><strong>Quasi-identifiers</strong>: indirect identifiers that can lead to identification
+when combined with other quasi-identifiers in the dataset or external
+information. These are often demographic variables like age, sex, place of
+residence, etc., but could also be something entirely different like physical
+characteristics, timestamps, etc. In general, quasi-identifiers are usually
+variables that are likely to be known to someone in the outside world.<br />
+</li>
+<li><strong>Sensitive attributes</strong>: variables of interest which should be protected, and
+which cannot be changed, because they are the main outcome variables. For
+example, it can be Medical condition in a healthcare dataset, or Income in a
+financial dataset.</li>
+</ul>
+<p>It is important to correctly categorise the variables in your dataset as any of
+these variable types if you want to apply k-anonymity, l-diversity and
+t-closeness, because they will determine how the dataset will be de-identified.</p>
+</div>
+<div id="how-it-works" class="section level3 hasAnchor">
+<h3>How it works<a href="k-l-t-anonymity.html#how-it-works" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="k-anonymity" class="section level4 hasAnchor">
+<h4>K-anonymity<a href="k-l-t-anonymity.html#k-anonymity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>K-anonymity ensures that each individual in a dataset cannot be distinguished
+from at least k-1 other individuals with respect to the quasi-identifiers in the
+dataset. This is done through <a href="deidentification-techniques.html#generalisation">generalisation</a>,
+<a href="deidentification-techniques.html#suppression">suppression</a> and sometimes <a href="deidentification-techniques.html#top-bottom-coding">top- and bottom-coding</a>.
+Applying k-anonymity makes it more difficult for an attacker to re-identify
+specific individuals in the dataset. It protects against
+<a href="personal-data-assess.html#personal-data-assess">singling out and, to some extent, the Mosaic effect</a>.</p>
+The downloaded binary packages are in
+/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T//RtmpXNhZGQ/downloaded_packages
+<table>
+<tr valign="top">
+<td>
+<table class="table" style="font-size: 11px; width: auto !important; ">
+<caption style="font-size: initial !important;">
+Original dataset
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+Nr
+</th>
+<th style="text-align:right;">
+Age
+</th>
+<th style="text-align:left;">
+Sex
+</th>
+<th style="text-align:left;">
+City
+</th>
+<th style="text-align:left;">
+Disease
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+1
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #ffedc3 !important;">
+16
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+2
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #ffedc3 !important;">
+18
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+3
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #ffedc3 !important;">
+19
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+4
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #b2dfd8 !important;">
+22
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+5
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #c9e0fc !important;">
+22
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+No illness
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+6
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #c9e0fc !important;">
+23
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Tuberculosis
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+7
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #c9e0fc !important;">
+24
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #fad6bf !important;">
+8
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #fad6bf !important;">
+25
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Utrecht
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+9
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #b2dfd8 !important;">
+26
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #fad6bf !important;">
+10
+</td>
+<td style="text-align:right;font-weight: bold;background-color: #fad6bf !important;">
+28
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Utrecht
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Tuberculosis
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="table" style="font-size: 11px; width: auto !important; border-bottom: 0;">
+<caption style="font-size: initial !important;">
+2-anonymous dataset
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+Nr
+</th>
+<th style="text-align:left;">
+Age
+</th>
+<th style="text-align:left;">
+Sex
+</th>
+<th style="text-align:left;">
+City
+</th>
+<th style="text-align:left;">
+Disease
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+1
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+2
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+3
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+4
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+5
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+No illness
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+6
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Tuberculosis
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+7
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #fad6bf !important;">
+8
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #fad6bf !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Utrecht
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+9
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #fad6bf !important;">
+10
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #fad6bf !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Utrecht
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Tuberculosis
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Colours indicate an ‘equivalence class’ of quasi-identifers
+</td>
+</tr>
+</tfoot>
+</table>
+</td>
+<tr>
+</table>
+<p>To make a dataset k-anonymous, you must first identify which variables in the
+dataset are identifiers, quasi-identifiers, and sensitive attributes. In the
+example above, Age, Sex and City are quasi-identifiers and Disease is the
+sensitive attribute. Next, you should set a value for k. If we choose a k of 2,
+every row in the example dataset should have the same combination of Age, Sex
+and City as at least 1 other row in the dataset. Finally, you aggregate the
+dataset so that every combination of quasi-identifiers occurs at least k times.
+In the example, this was done by generalising Age into age categories, but
+there may also be other ways to reach 2-anonymity in this dataset.</p>
+<p>There is no single value for k
+<a href="https://desfontain.es/privacy/k-anonymity.html#how-to-choose-k" target="_blank">which you should always choose</a>.
+The higher the k, the more difficult it will be to identify someone, but likely
+your dataset will also become less granular and perhaps less informative. The
+value of k will be highly dependent on what you communicated to data subjects
+(e.g., you may have promised a certain k) and the risk of identification that
+you are willing to accept.</p>
+<p>The below <a href="https://www.youtube.com/watch?v=Q0DNOIGUzMc" target="_blank">video</a>
+gives an example on how k-anonymity can work in practice:</p>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/Q0DNOIGUzMc?end=189" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+<div id="l-diversity" class="section level4 hasAnchor">
+<h4>L-diversity<a href="k-l-t-anonymity.html#l-diversity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>L-diversity is an extension to k-anonymity that ensures that there is sufficient
+variation in a <em>sensitive attribute</em>. This is important, because if all
+individuals in a (subset of a) dataset have the same value for the sensitive
+attribute, there is still a risk of <em>inference</em>. For example, in the below
+2-anonymous dataset, you can infer that any female from Rotterdam between 20 and
+30 who participated had a viral infection (“homogeneity attack”). Similarly, if
+you know that your 25-year old female neighbour from Utrecht participated in
+this study, you learn that she suffers from cancer (“background knowledge attack”).</p>
+<table>
+<tr valign="top">
+<td>
+<table class="table" style="font-size: 11px; width: auto !important; border-bottom: 0;">
+<caption style="font-size: initial !important;">
+2-anonymous dataset
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+Nr
+</th>
+<th style="text-align:left;">
+Age
+</th>
+<th style="text-align:left;">
+Sex
+</th>
+<th style="text-align:left;">
+City
+</th>
+<th style="text-align:left;">
+Disease
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+1
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+2
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+3
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+4
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+5
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+No illness
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+6
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Tuberculosis
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+7
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #fad6bf !important;">
+8
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #fad6bf !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Utrecht
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+9
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #fad6bf !important;">
+10
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #fad6bf !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Utrecht
+</td>
+<td style="text-align:left;background-color: #fad6bf !important;">
+Cancer
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Colours indicate an ‘equivalence class’ of quasi-identifers
+</td>
+</tr>
+</tfoot>
+</table>
+</td>
+<td>
+<table class="table" style="font-size: 11px; width: auto !important; border-bottom: 0;">
+<caption style="font-size: initial !important;">
+2-anonymous 2-diverse dataset
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+Nr
+</th>
+<th style="text-align:left;">
+Age
+</th>
+<th style="text-align:left;">
+Sex
+</th>
+<th style="text-align:left;">
+City
+</th>
+<th style="text-align:left;">
+Disease
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+1
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+2
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #ffedc3 !important;">
+3
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #ffedc3 !important;">
+=&lt; 20
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Rotterdam
+</td>
+<td style="text-align:left;background-color: #ffedc3 !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+4
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+<ul>
+<li></td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+5
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+No illness
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+6
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Tuberculosis
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #c9e0fc !important;">
+7
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #c9e0fc !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Male
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Zwolle
+</td>
+<td style="text-align:left;background-color: #c9e0fc !important;">
+Heart-related
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+8
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+<ul>
+<li></td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Cancer
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+9
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+<ul>
+<li></td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Viral infection
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #b2dfd8 !important;">
+10
+</td>
+<td style="text-align:left;font-weight: bold;background-color: #b2dfd8 !important;">
+20-30
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Female
+</td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+<ul>
+<li></td>
+<td style="text-align:left;background-color: #b2dfd8 !important;">
+Cancer
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Colours indicate an ‘equivalence class’ of quasi-identifers and sensitive attributes
+</td>
+</tr>
+</tfoot>
+</table>
+</td>
+<tr>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>K-anonymity does not protect against such
+<a href="https://doi.org/10.1145/1217299.1217302" target="_blank">homogeneity and background knowledge attacks</a>.
+Therefore, L-diversity proposes that there should be at least L different values
+for the sensitive attribute per combination of quasi-identifiers. In the example
+above, if we choose an L of 2, that means that for each combination of Age, Sex
+and City, there are at least 2 distinct diseases. In the example, we suppressed
+City for these homogeneous cases, so that all females between 20 and 30 years
+old can either have cancer or a viral infection.</p>
+<p>Like k-anonymity, there is
+<a href="https://desfontain.es/privacy/l-diversity.html#the-bad-news-policy" target="_blank">no perfect value of L</a>,
+although it is usually less or equal to k and more than 1.</p>
+<p>The below <a href="https://www.youtube.com/watch?v=GNhb3PcmjmA" target="_blank">video</a>
+explains the concept of L-diversity using an example:</p>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/GNhb3PcmjmA?start=24&amp;end=151" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+<div id="t-closeness" class="section level4 hasAnchor">
+<h4>T-closeness<a href="k-l-t-anonymity.html#t-closeness" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>T-closeness ensures that the distribution of a <em>sensitive attribute</em> within a
+generalisation of a <em>quasi-identifier</em> is close to the distribution of the
+sensitive attribute in the entire dataset. In other words, it ensures that the
+sensitive attribute is not skewed towards a specific value within a group of
+similar individuals, which could potentially be used to re-identify someone.
+For example, if a dataset contains information on Age (quasi-identifier), Sex
+(quasi-identifier), and Income (sensitive attribute), and t-closeness is applied
+with a value of t = 0.1, then for each combination of Age and Sex, the
+distribution of income must be within 10% of the distribution of income in the
+entire dataset.</p>
+<p>T-closeness can get complicated quite fast. If you’re curious to know how it
+works, the below <a href="https://www.youtube.com/watch?v=Upb8jqlsbFM" target="_blank">video</a>
+explains the concept of t-closeness using an example:</p>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/Upb8jqlsbFM?start=23&amp;end=404" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+</div>
+<div id="when-k-anonymity" class="section level3 hasAnchor">
+<h3>When to use<a href="k-l-t-anonymity.html#when-k-anonymity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>K-anonymity, L-diversity and t-closeness are usually applied to de-identify
+tabular datasets, before being shared. They are also most suitable for
+relatively large datasets (i.e., containing a large number of individuals), as
+more details (utility) are likely to be retained in such datasets
+(<a href="https://www.duo.uio.no/bitstream/handle/10852/79902/13/Anonymization-of-Health-Data.pdf#page=130" target="_blank">source</a>).</p>
+</div>
+<div id="implications-k-anonymity" class="section level3 hasAnchor">
+<h3>Implications for research<a href="k-l-t-anonymity.html#implications-k-anonymity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>It is very easy to lose a lot of the (granularity of the) data when satisfying
+the k-, L- or T-criteria: the higher the criteria, the lower the risk of
+re-identification, but the more information you lose. The balance between
+privacy and utility is therefore very important to take into consideration when
+applying these privacy models.</li>
+<li>The more variables (quasi-identifiers), the larger the dataset and the more
+outliers there are in the dataset, the more difficult de-identification will be
+without losing too much information
+(<a href="https://programming-dp.com/ch2.html" target="_blank">as shown here</a>).<br />
+</li>
+<li>If a dataset is k-anonymous, L-diverse or T-close, that does not mean that
+the dataset is also considered <a href="definition-anonymisation-pseudonymisation.html#when-anonymous">anonymous under the GDPR</a>. The
+degree of anonymity after applying these approaches depends entirely on your
+own choices in terms of k, L or T, in terms of the variables that you included,
+and on the context of your dataset. For example, if you failed to include a
+quasi-identifier in k-anonymising your dataset, your dataset is in reality not
+k-anonymous.</li>
+</ul>
+</div>
+<div id="resources-k-anonymity" class="section level3 hasAnchor">
+<h3>Further reading<a href="k-l-t-anonymity.html#resources-k-anonymity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Read the original papers about k-anonymity
+(<a href="https://doi.org/10.1142/S0218488502001648" target="_blank">Sweeney, 2002</a>,
+<a href="https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf" target="_blank">pdf</a>),
+L-diversity (<a href="https://doi.org/10.1145/1217299.1217302" target="_blank">Machanavajjhala et al., 2007</a>)
+and t-closeness (<a href="https://doi.org/10.1109/ICDE.2007.367856" target="_blank">Li et al., 2007</a>,
+<a href="https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf" target="_blank">pdf</a>).</li>
+<li>In response to k-anonymity, L-diversity and T-closeness, other approaches have
+been formulated as well, such as k-Map, delta-presence (δ), beta-likeness (β) and
+delta-disclosure (δ). We do not go into those here, but
+<a href="https://desfontain.es/privacy/archives.html" target="_blank">Damien Desfontaines’s blogposts</a>
+and <a href="http://hdl.handle.net/10852/79902" target="_blank">this thesis</a>
+(<a href="https://www.duo.uio.no/bitstream/handle/10852/79902/13/Anonymization-of-Health-Data.pdf#page=44" target="_blank">pdf</a>)
+discuss some of these approaches in more detail.</li>
+<li>On <a href="https://elf11.github.io/2017/04/22/kanonymity.html" target="_blank">this page</a>
+and <a href="https://programming-dp.com/ch1.html" target="_blank">here</a> you can find
+more information on the different attacks that can potentially be committed to
+datasets.</li>
+</ul>
+</div>
 </div>
 <div class = "footer">
 <footer>
@@ -512,6 +1516,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });

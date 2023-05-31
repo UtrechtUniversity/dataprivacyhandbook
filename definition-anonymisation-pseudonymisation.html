@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2023-05-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -318,10 +318,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -497,14 +510,7 @@ your own database or when using other data sources.</li>
 </ul>
 <p>Whether data can be seen as anonymous strongly depends on the context of your
 research and how much information is available about the data subjects.</p>
-<p><img src="img/anonymous-chicken.PNG" title="Example of data that are not 
-anonymous: it is possible to single out the brown chicken. Source: 
-Hrudey et al., 2019, https://doi.org/10.5281/zenodo.3584841" 
-alt="Comic about anonymous data. The left pane shows an animal that says 'Don't 
-worry! We will only save general information about you, not anything that could 
-identify you!', while holding a paper that says 'Brown chicken'. Next to the 
-animal is a brown chicken giving a 'thumbs up'. The right pane shows that one 
-brown chicken in a crowd of white chickens."/></p>
+<p><img src="img/anonymous-chicken.PNG" title="Example of data that are not anonymous: it is possible to single out the brown chicken. Source: Hrudey et al., 2019, https://doi.org/10.5281/zenodo.3584841" alt="Comic about anonymous data. The left pane shows an animal that says ‘Don’t worry! We will only save general information about you, not anything that could identify you!’, while holding a paper that says ‘Brown chicken’. Next to the animal is a brown chicken giving a ‘thumbs up’. The right pane shows that one brown chicken in a crowd of white chickens." /></p>
 <div class="note">
 <p>When collaborating with research data centres, such as the Statistics Netherlands
 (Centraal Bureau voor de Statistiek, CBS), often
@@ -621,6 +627,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });

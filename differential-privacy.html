@@ -26,17 +26,17 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2023-05-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="k-anonymity-and-its-descendents.html"/>
+<link rel="prev" href="k-l-t-anonymity.html"/>
 <link rel="next" href="secure-computation.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -318,10 +318,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -422,7 +435,114 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="differential-privacy" class="section level2 hasAnchor">
 <h2>Differential privacy<a href="differential-privacy.html#differential-privacy" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: differential privacy, dp, epsilon, quantifying
+privacy, privacy-utility spectrum
+Date of last review: 2023-05-30</p>
+</div>
+<p>Differential privacy (DP) is a mathematical technique to prevent the disclosure
+of personal information by adding statistical noise to queries. In its original
+form, the data are stored on a secure server. Researchers can then, without
+access to the data, pose a query (i.e., an analysis request), and obtain the
+result with a certain amount of statistical noise added to the output. The
+amount of noise is tweaked such that adding or removing an individual to or from
+the dataset alters the result of the query by a limited, predetermined amount.</p>
+<p>The below <a href="https://www.youtube.com/watch?v=gI0wk1CXlsQ" target="_blank">video</a>
+explains the basic premise of differential privacy using a very basic example:</p>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/gI0wk1CXlsQ?start=185" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+<div class="note">
+<p>Differential privacy is generally not added to a dataset itself, but to the
+<strong>result of a query</strong> (e.g., average income in a dataset), although some forms
+exist in which the dataset itself is altered; this is called <em>local</em>
+differential privacy.</p>
+</div>
+<div id="how-it-works-1" class="section level3 hasAnchor">
+<h3>How it works<a href="differential-privacy.html#how-it-works-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Imagine a dataset with peoples’ incomes, and we want to know the average income
+in the data (i.e. our query). When applying differential privacy, we want to
+ensure that we cannot determine whether an individual is in the dataset or not.
+In theory, we can do this by adding or removing any single individual to or from
+our dataset and recalculating the average income in the modified dataset.
+Importantly, additions to the dataset should all be individuals that <em>could be</em>
+in the dataset, and not only those that already are. Depending on the privacy
+requirements (i.e., what amount of privacy leakage is acceptable) and the
+sensitivity of the query (the effect of changing one individual on the average
+income), more or less statistical noise is added to the result.</p>
+<p>The most common definition of differential privacy is “epsilon-differential
+privacy”, epsilon being the “<strong>privacy budget</strong>”. In this definition, we
+consider two scenarios: the original dataset and a modified dataset, where we
+substitute the person with the highest income with the person with the lowest
+income. A certain amount of noise is added, so that the probabilities of
+obtaining a certain result in the original and the modified datasets do not
+differ more than Epsilon. Epsilon (i.e., the privacy budget) is a predetermined
+value: the lower epsilon, the higher the level of privacy, and therefore the
+more noise is added to the query.</p>
+<div class="fyi">
+<p>Differential privacy can also protect <em>groups</em> of people by adding or
+subtracting groups instead of individuals. This can for example be useful
+when you want to protect a household as a whole, and not only the individuals
+in it.</p>
+</div>
+<div class="warning">
+<p>Setting a lower epsilon results in more noise in the results that you release.
+This simply implies that it becomes more difficult to distinguish whether
+individuals were or were not in your dataset. However, it does <strong>not</strong> necessarily
+imply that a certain level of epsilon will result in fully anonymous data.
+Whether a dataset can be viewed as anonymous or not under the GDPR will always
+be context- and dataset-dependent.</p>
+</div>
+</div>
+<div id="dp-implications" class="section level3 hasAnchor">
+<h3>Implications for research<a href="differential-privacy.html#dp-implications" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>The advantage of differential privacy is that privacy risk can be
+mathematically quantified (through epsilon). With many other techniques, it can
+be hard to determine exactly what the privacy guarantees are, especially with
+the presence of external information.</li>
+<li>As with the other statistical approaches, there is a trade-off between more
+privacy or more utility: the lower the privacy budget, the more privacy is
+retained, but also the less accurate (more noisy) individual values will be.</li>
+<li>The privacy budget should be determined in advance and can only be spent once:
+every query will lower the available privacy budget by epsilon, and when the
+privacy budget reaches zero, no more queries can be done. Thus, <strong>you cannot
+indefinitely reuse the data and still preserve privacy</strong>.</li>
+<li>A disadvantage of differential privacy is that the concept is not completely
+trivial for the non-expert and in some cases, this has resulted in
+<a href="https://doi.org/10.48550/arXiv.2011.07018" target="_blank">violated privacy guarantees</a>.
+There is <strong>no absolute right way to set the privacy budget</strong> and no framework
+to decide which value of epsilon should be set for what kind of data. Thus, it
+can be hard for researchers to justify using a particular value of epsilon.</li>
+</ul>
+</div>
+<div id="dp-when" class="section level3 hasAnchor">
+<h3>When to use<a href="differential-privacy.html#dp-when" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The implementation of differential privacy is a very technical (and tricky)
+endeavour. Setting up a differentially private server that only outputs
+differentially private results for any query is currently practically impossible.
+Thus, if you are not an expert on statistics and/or differential privacy, we
+recommend reaching out to someone who is, and to use Differential Privacy in
+addition to other privacy-enhancing techniques, such as pseudonymisation.</p>
+<p>For now, differential Privacy is mostly used in combination with synthetic data,
+or with simple repetitive queries. Widespread use of differential privacy might
+become safer and/or easier over time as implementations are tested more
+thoroughly on real-world datasets.</p>
+</div>
+<div id="dp-resources" class="section level3 hasAnchor">
+<h3>Further reading<a href="differential-privacy.html#dp-resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Damien Desfontaines has written a number of easy to read
+<a href="https://desfontain.es/privacy/friendly-intro-to-differential-privacy.html" target="_blank">blogposts about differential privacy</a>,
+including <a href="https://desfontain.es/privacy/differential-privacy-awesomeness.html" target="_blank">this one</a>
+explaining the basic premise of differential privacy.</li>
+<li>The online book <a href="https://programming-dp.com/index.html" target="_blank">Programming Differential Privacy</a>
+explains in detail how differential privacy works.</li>
+<li>Or read <a href="https://privacytools.seas.harvard.edu/files/privacytools/files/pedagogical-document-dp_new.pdf" target="_blank">Differential privacy: a primer for the non-technical audience</a>.</li>
+<li>Background information:
+<a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf" target="_blank">The Algorithmic Foundations of Differential Privacy</a>.</li>
+</ul>
 
+</div>
 </div>
 <!-- </div> -->
 <div class = "footer">
@@ -464,7 +584,7 @@ Support.</p>" />
           </div>
         </div>
       </div>
-<a href="k-anonymity-and-its-descendents.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="k-l-t-anonymity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="secure-computation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
@@ -514,6 +634,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });

@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
-<meta name="date" content="2023-05-22" />
+<meta name="date" content="2023-05-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -318,10 +318,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -422,22 +435,42 @@ Support.</p>" />
             <section class="normal" id="section-">
 <div id="about" class="section level2 hasAnchor">
 <h2>About<a href="about.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Data Privacy Handbook is an initiative of
+<p>The Data Privacy Handbook is a practical guide on handling personal data in
+scientific research, primarily written for Utrecht University researchers and
+research support staff in the Netherlands. It is an initiative of
 <a href="https://www.uu.nl/en/research/research-data-management" target="_blank">Research Data Management Support</a>,
-in collaboration with privacy and data experts at
-Utrecht University. It is part of a larger project, the
-<a href="https://utrechtuniversity.github.io/dataprivacyproject" target="_blank">Data Privacy Project</a>,
-which aims to develop knowledge, tools, and experience
-on how researchers can and should deal with personal data. This project is
-funded by the Utrecht University Research IT Program and an NWO Digital
-Competence Center grant.</p>
+in collaboration with privacy and data experts at Utrecht University.</p>
+<p>The Data Privacy Handbook consists of:</p>
+<ul>
+<li>A <strong>knowledge base</strong> which explains how the EU General Data Protection
+Regulation (GDPR, Dutch: Algemene Verordening Gegevensbescherming) applies to
+scientific research, including guidelines and good practices in carrying out
+GDPR-compliant scientific research;</li>
+<li>An overview of privacy-enhancing <strong>techniques &amp; tools</strong> and practical guidance
+on their implementation;</li>
+<li><strong>Use Cases</strong> in the form of research projects with privacy-related issues,
+for which a reusable solution (e.g., tool, workflow) is shared.</li>
+</ul>
+<div class="note">
+<p>This is an Utrecht University (UU) community-driven,
+<a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="_blank">open source project</a>.
+We welcome feedback and contributions of any type, please read our
+<a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md" target="_blank">contributing guidelines</a>
+for more information.</p>
+</div>
+<div class="warning">
+<p>If you work at the University Medical Centre Utrecht (UMCU) or any other
+institution outside of Utrecht University, some of the guidelines in the Data
+Privacy Handbook may not be in line with your institutional guidelines. Please
+consult with your local privacy staff whenever you are in doubt about this.</p>
+</div>
 <div id="license-and-citation" class="section level3 hasAnchor">
 <h3>License and Citation<a href="about.html#license-and-citation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The Data Privacy Handbook is licensed under a
 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
 You can <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md" target="&quot;_blank">view the license here</a>.</p>
 <p>When using (parts of) the Data Privacy Handbook in your work, please cite us
-using the citation provided in the <a href="target=%22_blank%22">GitHub repository</a>.</p>
+using the citation provided in the <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="_blank">GitHub repository</a>.</p>
 </div>
 <div id="contributions" class="section level3 hasAnchor">
 <h3>Contributions<a href="about.html#contributions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -538,6 +571,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });
