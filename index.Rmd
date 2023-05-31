@@ -14,12 +14,6 @@ cover-image: "img/cover-image-dph.png"
 favicon: "img/favicon.ico"
 apple-touch-icon: "img/apple-touch-icon.png"
 apple-touch-icon-size: 180
-output:
-  html_document:
-    fig_caption: false
-    toc: true
-    toc_depth: 4
-    toc_float: true
 linkcolor: #C00A35
 urlcolor: #C00A35
 citecolor: #C00A35
