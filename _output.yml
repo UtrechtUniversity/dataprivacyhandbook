@@ -12,6 +12,8 @@ bookdown::gitbook:
       link: "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/%s"
       text: "Suggest edits"
     toc:
+      toc_depth: 4
+      toc_float: true
       collapse: section
       scroll_highlight: true
       before: |
