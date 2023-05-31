@@ -162,7 +162,7 @@ statements, such as a statement to participate in a research project.**
 
 ### Consent step-by-step {#consent-step-by-step}
 
-1. <details open="true"><summary>Determine if consent if the legal basis you need</summary>
+1. <details><summary>Determine if consent is the legal basis you need</summary>
 <div><p>Determine if consent is the [legal basis](#legal-basis) you need for your
       research: there are other legal bases besides consent which can sometimes be 
       more suitable in a research context.</p>
@@ -685,23 +685,7 @@ project. The flowchart below gives an indication which agreement should be used
 in which situation. Under the figure, you can also find a short explanation 
 about each individual type of agreement.**
 
-
-<img src="img/agreements_flowchart.png" title="Flowchart to choose the correct 
-type of agreement in research" alt="Flowchart to choose the correct type
-of agreement in research. Firstly, you do not need an agreement if you are 
-collaborating with someone within your own institution, or if you use software of
-which the use is already covered by an existing agreement. Secondly, you need a 
-non-disclosure agreement if you collaborate with someone outside of your 
-institution who processes data within your institutional hardware. Thirdly,
-you need a data processing agreement when you collaborate with someone who does
-not have their own processing purposes and is thus a processor. You also need a
-data processing agreement when you use software that processes personal data on
-your behalf. Fourthly, you need a data transfer agreement when you collaborate 
-with someone who wants to use your data for their own purposes, or when you use
-software that processes personal data for their own purposes. Finally, you need 
-a joint controllers agreement when you collaborate with an external institution or
-with a software provider who has an overlapping processing purpose, such as a 
-shared research question." height="100%"/>
+![Flowchart to choose the correct type of agreement in research. Firstly, you do not need an agreement if you are collaborating with someone within your own institution, or if you use software of which the use is already covered by an existing agreement. Secondly, you need a non-disclosure agreement if you collaborate with someone outside of your institution who processes data within your institutional hardware. Thirdly, you need a data processing agreement when you collaborate with someone who does not have their own processing purposes and is thus a processor. You also need a data processing agreement when you use software that processes personal data on your behalf. Fourthly, you need a data transfer agreement when you collaborate with someone who wants to use your data for their own purposes, or when you use software that processes personal data for their own purposes. Finally, you need a joint controllers agreement when you collaborate with an external institution or with a software provider who has an overlapping processing purpose, such as a shared research question.](img/agreements_flowchart.png "Flowchart to choose the correct type of agreement in research")
 
 Quick links to:
 <a href="#nda" style="text-decoration: none;"><button type="button">NDA</button></a>
