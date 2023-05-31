@@ -533,7 +533,7 @@ a contact person responsible for handling questions and requests.
 Incoming requests need to be **coordinated with a privacy officer**, so that 
 they can be picked up in accordance with the GDPR. Additionally, at Utrecht 
 University, data subjects can always contact 
-[privacy@uu.nl](mailto:privacy@uu.nl){.email} (the Data Protection Officer) for 
+[privacy@uu.nl](mailto:privacy@uu.nl){.email} (Legal Affairs) for 
 requests or complaints.
 
 #### What to do when receiving a request concerning data subjects' rights?
