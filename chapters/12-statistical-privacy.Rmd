@@ -352,6 +352,12 @@ datasets.
 
 ## Differential privacy {#differential-privacy}
 
+:::keywords
+On this page: differential privacy, dp, epsilon, quantifying
+privacy, privacy-utility spectrum
+Date of last review: 2023-05-30
+:::
+
 Differential privacy (DP) is a mathematical technique to prevent the disclosure 
 of personal information by adding statistical noise to queries. In its original 
 form, the data are stored on a secure server. Researchers can then, without 
