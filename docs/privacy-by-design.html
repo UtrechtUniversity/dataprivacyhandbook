@@ -26,7 +26,7 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-05-22" />
+<meta name="author" content="Utrecht University | Last updated: 2023-05-31" />
 
 
 
@@ -313,10 +313,23 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="deidentification-techniques.html"><a href="deidentification-techniques.html"><i class="fa fa-check"></i>De-identification techniques</a></li>
 <li class="chapter" data-level="" data-path="deidentification-resources.html"><a href="deidentification-resources.html"><i class="fa fa-check"></i>Tools and further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical privacy</a>
+<li class="chapter" data-level="" data-path="statistical-privacy.html"><a href="statistical-privacy.html"><i class="fa fa-check"></i>Statistical approaches to de-identification</a>
 <ul>
-<li class="chapter" data-level="" data-path="k-anonymity-and-its-descendents.html"><a href="k-anonymity-and-its-descendents.html"><i class="fa fa-check"></i>K-anonymity and its descendents</a></li>
-<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html"><i class="fa fa-check"></i>K-anonymity, l-diversity and t-closeness</a>
+<ul>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#k-anonymity-variables"><i class="fa fa-check"></i>Identifiers, quasi-identifiers, and sensitive attributes</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#how-it-works"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#when-k-anonymity"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#implications-k-anonymity"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="k-l-t-anonymity.html"><a href="k-l-t-anonymity.html#resources-k-anonymity"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html"><i class="fa fa-check"></i>Differential privacy</a>
+<ul>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#how-it-works-1"><i class="fa fa-check"></i>How it works</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-implications"><i class="fa fa-check"></i>Implications for research</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-when"><i class="fa fa-check"></i>When to use</a></li>
+<li class="chapter" data-level="" data-path="differential-privacy.html"><a href="differential-privacy.html#dp-resources"><i class="fa fa-check"></i>Further reading</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="secure-computation.html"><a href="secure-computation.html"><i class="fa fa-check"></i>Secure computation</a>
 <ul>
@@ -443,16 +456,7 @@ officer will help you go through the different stages smoothly, and eventually
 save you time and effort. They can help you review and possibly adjust your
 plans, determine the appropriate protection measures, and determine whether you
 need to perform a more elaborate <a href="dpia.html#dpia">Data Protection Impact Assessment</a>.</p>
-<p><img src="img/privacy-research-cycle.png" alt="Privacy in the research cycle. 
-From Conception (Hypothesis generation, ideas), to Designing the project
-(Grant/project proposal, Draft privacy scan, Consult with privacy officer, 
-data manager, grant officer), to Grant/project approved (Privacy scan, possibly 
-DPIA, Data Management Plan, Privacy notice and consent form, Ethics review, 
-Agreements between parties) to Data acquisition (Data collection and reuse), Data 
-Processing (Preprocessing, Analysis, Output generation), to Preservation (of data,
-code and documentation) and Publication (Manuscript, Data, Code and Documentation)" 
-title = "Privacy in the research cycle: a good preparation is crucial" 
-height="80%"/></p>
+<p><img src="img/privacy-research-cycle.png" title="Privacy in the research cycle: a good preparation is crucial" alt="Privacy in the research cycle. From Conception (Hypothesis generation, ideas), to Designing the project (Grant/project proposal, Draft privacy scan, Consult with privacy officer, data manager, grant officer), to Grant/project approved (Privacy scan, possibly DPIA, Data Management Plan, Privacy notice and consent form, Ethics review, Agreements between parties) to Data acquisition (Data collection and reuse), Data Processing (Preprocessing, Analysis, Output generation), to Preservation (of data, code and documentation) and Publication (Manuscript, Data, Code and Documentation)" /></p>
 </div>
 <div class = "footer">
 <footer>
@@ -543,6 +547,8 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section",
+"toc_depth": 4,
+"toc_float": true,
 "scroll_highlight": true
 }
 });
