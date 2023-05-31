@@ -83,7 +83,7 @@ identifiable by themselves.</p>
     [87% of the United States population](https://dataprivacylab.org/projects/identifiability/paper1.pdf){target="_blank"} 
     was found to be identifiable using a combination of their ZIP code, gender 
     and date of birth. You can see for yourself on 
-    [this website](https://cpg.doc.ic.ac.uk/individual-risk/){target="_blank"}.</li>
+    [this website](https://www.ooa.world/){target="_blank"}.</li>
     <li>An agricultural company’s Uniek Bedrijfsnummer (UBN) can be used to 
     search for the address of the company in the 
     [I&R mobile app](https://www.rvo.nl/onderwerpen/identificatie-en-registratie-dieren/app-ir-dieren){target="_blank"}. 
