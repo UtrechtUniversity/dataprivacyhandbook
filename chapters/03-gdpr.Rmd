@@ -41,9 +41,10 @@ personal data (Articles 13 and 8, from the Charter of Fundamental right of the E
 #### The GDPR in a nutshell {#the-gdpr-in-a-nutshell}
 
 All articles and recitals of the GDPR can be found online via <https://gdpr-info.eu/>. 
-The video below highlights some important aspects of the GDPR:
+The [video below](https://www.youtube.com/watch?v=rzhsHuuCX6w){target="_blank"} 
+highlights some important aspects of the GDPR:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rzhsHuuCX6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/rzhsHuuCX6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 
 <details>
@@ -179,11 +180,7 @@ The GDPR principles are explained further below the image. The
 [Design chapter](#privacy-by-design) describes how to implement these principles 
 in your research. You can also always contact your [privacy officer](#support).
 
-<img src="img/gdpr-principles.png" title="The key principles of the GDPR" 
-alt="Overview of the principles, denoted in text on a yellow background, with an 
-icon that visualises each principle: Lawful, fair and 
-transparent, Purpose limitation, Data minimisation, Accuracy, Storage limitation, 
-Integrity and Confidentiality, and Accountability" height="80%"/>
+![Overview of the principles, denoted in text on a yellow background, with an icon that visualises each principle: Lawful, fair and transparent, Purpose limitation, Data minimisation, Accuracy, Storage limitation, Integrity and Confidentiality, and Accountability](img/gdpr-principles.png "The key principles of the GDPR")
 
 #### 1. Lawful, fair and transparent
 
@@ -536,7 +533,7 @@ a contact person responsible for handling questions and requests.
 Incoming requests need to be **coordinated with a privacy officer**, so that 
 they can be picked up in accordance with the GDPR. Additionally, at Utrecht 
 University, data subjects can always contact 
-[fg@uu.nl](mailto:fg@uu.nl){.email} (the Data Protection Officer) for 
+[privacy@uu.nl](mailto:privacy@uu.nl){.email} (the Data Protection Officer) for 
 requests or complaints.
 
 #### What to do when receiving a request concerning data subjects' rights?
