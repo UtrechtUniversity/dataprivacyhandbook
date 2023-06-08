@@ -2,10 +2,11 @@
 
 [![read the book](https://img.shields.io/badge/read-the%20book-yellow)](https://utrechtuniversity.github.io/dataprivacyhandbook/)
 [![i want to contribute!](https://img.shields.io/badge/i%20want%20to-contribute!-brightgreen)](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CONTRIBUTING.md)
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-orange.svg?style=flat-square)](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/contributors.md)
+[![DOI](https://zenodo.org/badge/329296206.svg)](https://zenodo.org/badge/latestdoi/329296206)
 ![issues](https://img.shields.io/github/issues/utrechtuniversity/dataprivacyhandbook?color=red)  
-[![start/join a discussion](https://img.shields.io/badge/start%2Fjoin%20a-GitHub%20Discussion-blue)](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+
 
 ## ✨Welcome!✨
 
@@ -52,14 +53,15 @@ In short, you can:
 - Open or comment on [Issues](https://github.com/UtrechtUniversity/dataprivacyhandbook/issues)
 - Start or join a [Discussion](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
 - Contribute direct Handbook content by opening a Pull Request
+- If you do not have a GitHub account, leave your feedback in the feedback form linked at the bottom of each page on the Handbook: ![Feedback button "Give feedback about this page"](img/non-gh-feedback.PNG)
 
 When contributing to this project, we expect you to abide by our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and [Style guide](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/styleguide.md).
 
-For any comments or suggestions about the Data Privacy Handbook outside of GitHub, you can contact [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us).
+For any comments or suggestions about the Data Privacy Handbook outside of GitHub, you can also contact [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us).
 
 ## License and Citation
 
-Non-software content in this project is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You can view the license [here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md). To cite the Data Privacy Handbook, click `Cite this repository` at the [repository homepage](https://github.com/UtrechtUniversity/dataprivacyhandbook), under the header `About` (at top right of the screen).
+Non-software content in this project is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). You can view the license [here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md). To cite the Data Privacy Handbook, visit the [latest release on Zenodo](https://doi.org/10.5281/zenodo.8005847).
 
 ## Wiki
 
