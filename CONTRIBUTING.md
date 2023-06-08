@@ -9,17 +9,18 @@ We invite everyone who is interested to get involved. Even if you just want to c
   * [How can I contribute?](#how-can-i-contribute)  
 
 *Contributing*
-  * [Joining the discussion](#joining-the-discussion)
-  * [Using Issues to contribute practical ideas or bug reports](#using-issues-to-contribute-practical-ideas-or-bug-reports)
+  * [Join the discussion on GitHub](#join-the-discussion-on-github)
+  * [Open an Issue on GitHub](#open-an-issue-on-github)
     + [How to open an issue?](#how-to-open-an-issue)
-  * [Contributing to handbook content](#contributing-to-handbook-content)
+  * [Contribute directly to handbook content on GitHub](#contributing-to-handbook-content)
     + [1. Fork the repository: Copy the repository to your own account](#1-fork-the-repository-copy-the-repository-to-your-own-account)
     + [2. Edit the content in your own copy (edit, stage, commit)](#2-edit-the-content-in-your-own-copy-edit-stage-commit)
       - [General tips for editing content](#general-tips-for-editing-content)
       - [A. Easiest way: Editing files on GitHub](#a-easiest-way-editing-files-on-github)
       - [B. More advanced way: Editing files locally](#b-more-advanced-way-editing-files-locally)
     + [3. Open a pull request: ask the maintainers to merge your edits](#3-open-a-pull-request-ask-the-maintainers-to-merge-your-edits)  
- 
+   * [Give feedback on the Handbook without a GitHub account](#give-feedback-on-the-handbook-without-a-github-account)
+
  *After contributing*
   * [Recognition for your contribution](#recognition-for-your-contribution)
 
@@ -36,26 +37,15 @@ If you want to be able to work on your local PC, you should additionally have [`
 
 ## How can I contribute?
 You can contribute to the Data Privacy Handbook in the following ways:
-- [Joining the discussion](#joining-the-discussion). Examples scenarios:
-  - I have a question that's not necessarily related to specific files in the repository or parts of the Handbook.
-  - I want to share news that's relevant for the Data Privacy Handbook.
-  - I want to start or participate in an open-ended conversation.
-  - I want to make an announcement to my community.
-- Coming up with ideas for the handbook or let us know about errors or bugs, by [opening an Issue](#using-issues-to-contribute-practical-ideas-or-bug-reports). Example scenarios:
-  - I want to keep track of tasks, enhancements and bugs.
-  - I want to file a bug report.
-  - I want to share feedback about a specific part of the Handbook.
-  - I want to ask a question about files in the repository or parts of the Handbook.
-- [Contributing or editing Handbook content](#contributing-to-handbook-content). Example scenarios:
-  - I want to fix a typo in the repository or in the Handbook.
-  - I want to make changes to the repository of to the Handbook.
-  - I want to make changes to fix an issue.
-  - I want to comment on changes suggested by others.
+- [Joining the discussion on GitHub](#joining-the-discussion)
+- Coming up with ideas for the handbook or let us know about errors or bugs, by [opening an Issue on GitHub](#open-an-issue-on-github)
+- [Directly contributing or editing Handbook content on GitHub](#contributing-to-handbook-content)
+- You can also contribute ideas and feedback [if you do not have a GitHub account](#give-feedback-on-the-handbook-without-a-github-account)
 
 ---
 
-## Joining the discussion
-Do you want some feedback from others on your idea before you propose it as an Issue? Do you want to discuss some of the content of the handbook with others? Is there news that other contributors should be aware of? Or do you have a question about any part of the project? Then GitHub discussions is a great place to go! 
+## Join the discussion on GitHub
+Do you want some feedback from others on your idea before you propose it as an Issue? Do you want to discuss some of the content of the handbook with others? Is there news that others should be aware of? Or do you have a question about any part of the project? Then GitHub discussions is a great place to go! 
 
 1. Go to the Discussions tab in this repository: https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions
 2. Have a look at the existing discussions in the different sections (General, Idea, Q&A, etc.). Does your question or comment already relate to an open discussion? If so, see if you can find an answer to your question or comment. You can add to an existing discussion by simply commenting there!
@@ -63,12 +53,13 @@ Do you want some feedback from others on your idea before you propose it as an I
 
 ---
 
-## Using Issues to contribute practical ideas or bug reports
+## Open an Issue on GitHub
  A relatively easy way to get involved is to open an [Issue](https://github.com/UtrechtUniversity/dataprivacyhandbook/issues). You can do this when (among others):
  - You signalled a bug and don't have time or don't know how to fix it yourself (Bug report)
  - You want to provide feedback on a part of the Data Privacy Handbook (Leave a review)
  - You have an idea for an extension of the content of the Data Privacy Handbook (Suggest changes)
  - You want to suggest edits to the Data Privacy Handbook (Suggest changes)
+ - You want to ask a question about files in the repository or parts of the Handbook.
 
 ### How to open an issue?
 1. Go to the Issues tab in this repository: https://github.com/UtrechtUniversity/dataprivacyhandbook/issues
@@ -83,7 +74,8 @@ Congratulations, you have now opened an issue! 🎉
 ---
 
 ## Contributing to handbook content
-First of all, how awesome that you want to contribute actual content, thank you!! ✨ The following steps are a guide to help you contribute in a way that will be easy for everyone to review and accept.
+
+You can also directly contribute to Handbook content on GitHub, for example to fix a typo or bug, reformulate sentences, add content, or perhaps even an entirely new chapter. The following steps are a guide to help you contribute in a way that will be easy for everyone to review and accept.
 
 The workflow on GitHub is as follows:
 1. Copy the repository and all the files in it to your own account (a "fork")
@@ -129,6 +121,15 @@ You have now made (a) change(s) in your copy of the repository, congratulations!
 5. Your pull request will now appear in the [list of pull requests](https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls). If you want, you can assign someone to review your pull request. 
 
 Well done, you have opened a PR! One of the owners of the repository will review your commits, may request changes and will finally approve the pull request and merge your changes into the UtrechtUniversity/dataprivacyhandbook repository. After merging with the `main` branch, your edits will become visible in the online handbook! Thank you so much for your contribution! 🙏🙏🙏
+
+---
+
+## Give feedback on the Handbook without a GitHub account
+
+What if you don't have a GitHub account? No worries, we've got you covered!
+
+1. If you have feedback on the content of the Data Privacy Handbook, you can leave it via the form that is linked at the bottom of each Handbook page: ![](img/non-gh-feedback.PNG)
+2. If you have suggestions for which the form is not suitable, please feel free to email [Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us)
 
 ---
 
