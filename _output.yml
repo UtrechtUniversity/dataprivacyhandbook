@@ -5,7 +5,7 @@ bookdown::gitbook:
   fig_caption: false
   includes:
     #before_body: header.html
-    in_header: assets/header.html
+    in_header: [assets/header.html, assets/analytics.html]
     after_body: assets/footer.html
   config:
     edit:
