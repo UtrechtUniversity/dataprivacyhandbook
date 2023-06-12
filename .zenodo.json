@@ -6,7 +6,6 @@
     }
   ],
   "contributors": [
-    [
       {
         "name": "Dorien Huijser",
         "affiliation": "Utrecht University",
@@ -166,7 +165,6 @@
         "orcid": "0000-0001-5301-1713",
         "type": "ProjectMember"
       }
-     ]
   ],
   "title": "Data Privacy Handbook",
   "access_right": "open",
