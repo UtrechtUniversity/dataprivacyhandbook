@@ -73,7 +73,6 @@ specific individuals in the dataset. It protects against
 # Here is the documentation for kableExtra for html: https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
 # And here it is for LateX/pdf: https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf
 library(knitr)
-install.packages("kableExtra")
 library(kableExtra)
 
 # Sample data frames
