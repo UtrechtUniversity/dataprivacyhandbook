@@ -144,6 +144,16 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "thomvolker",
+      "name": "Thom Volker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59019602?v=4",
+      "profile": "https://thomvolker.github.io",
+      "contributions": [
+        "content",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
