@@ -126,6 +126,15 @@
         "ideas",
         "review"
       ]
+    },
+    {
+      "login": "J535D165",
+      "name": "Jonathan de Bruin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12981139?v=4",
+      "profile": "https://github.com/J535D165",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
