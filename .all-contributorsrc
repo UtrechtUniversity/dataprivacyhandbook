@@ -27,7 +27,8 @@
         "projectManagement",
         "doc",
         "infra",
-        "maintenance"
+        "maintenance",
+        "content"
       ]
     },
     {
