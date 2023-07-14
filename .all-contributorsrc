@@ -154,6 +154,15 @@
         "content",
         "review"
       ]
+    },
+    {
+      "login": "kleuveld",
+      "name": "kleuveld",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6230899?v=4",
+      "profile": "https://github.com/kleuveld",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
