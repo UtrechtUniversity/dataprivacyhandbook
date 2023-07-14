@@ -225,3 +225,43 @@ of open science and therefore welcomes readers from outside of the organisation.
 However, the contents of the Data Privacy Handbook may not be in line with readers’ 
 institutions’ policies or views. For more authoritative information, these 
 readers should refer to resources from their own institutions.
+
+
+## Your own privacy {#privacy-policy}
+
+:::keywords
+This page was last updated on 2023-07-14
+:::
+
+The Data Privacy Handbook currently uses Google Analytics to track its usage. 
+We do this because we want to see how often the Data Privacy Handbook is used, 
+for whom it is useful, how users find it, and which pages are most commonly 
+visited. For this purpose, Google Analytics places a tracking cookie in your web
+browser. 
+
+We try to limit the amount of tracked details to a minimum. Currently, the 
+following information is being collected: 
+
+- Which pages you visit and for how long
+- Generic aspects of your behaviour on the page, such as clicks and scrolls
+- How you found the page (e.g., directly or via another website)
+- From what country you are accessing the page (note: detailed location 
+information has been disabled)
+- What language your browser is in
+- How you are accessing the page (e.g., via desktop or mobile)
+
+This information is stored at Google for 2 months, and shared with the 
+maintainers of the Data Privacy Handbook and a selection of communication 
+professionals at Utrecht University.
+
+:::warning
+We are working on a cookie banner so that you can consent to or reject the 
+tracking cookies. In the meantime, we recommend using the 
+[Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout){target="_blank"} 
+to prevent websites, including this one, from tracking you, or disabling or 
+blocking tracking in your browser settings.
+:::
+
+If you have questions or comments about tracking cookies, please consult the 
+[Google Analytics documentation](https://support.google.com/analytics/){target="_blank"} 
+or [contact us](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}.
