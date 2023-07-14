@@ -94,6 +94,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/pascalpas"><img src="https://avatars.githubusercontent.com/u/8132276?v=4?s=100" width="100px;" alt="pascalpas"/><br /><sub><b>pascalpas</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3Apascalpas" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://thomvolker.github.io"><img src="https://avatars.githubusercontent.com/u/59019602?v=4?s=100" width="100px;" alt="Thom Volker"/><br /><sub><b>Thom Volker</b></sub></a><br /><a href="#content-thomvolker" title="Content">🖋</a> <a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3Athomvolker" title="Reviewed Pull Requests">👀</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kleuveld"><img src="https://avatars.githubusercontent.com/u/6230899?v=4?s=100" width="100px;" alt="kleuveld"/><br /><sub><b>kleuveld</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=kleuveld" title="Code">💻</a></td>
+    </tr>
   </tbody>
 </table>
 
