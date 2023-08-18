@@ -1,0 +1,76 @@
+`r if (knitr::is_html_output()) '
+# Glossary {#glossary}
+'`
+
+<!-- If you wish to correct existing or add new terms, please edit the
+glossary.csv file which is located in the files folder of the repository -->
+
+The glossary consists of frequently used jargon concerning the GDPR and 
+research data. Click on a term to see its definition.
+
+
+```{r formatdefinitions, echo=FALSE}
+# Read in glossary.csv
+glossary <- read.csv("files/glossary.csv", stringsAsFactors = FALSE)
+
+# Format terms in HTML <details> tags - function is used in chunk below
+formatdefs <- function(letter){
+  # Select the relevant section
+  subselection <- glossary[glossary$letter == letter, ]
+  
+  formattedtext <- list()
+  
+  # Only do all this if there is content for the letter
+  if(subselection$term[1] != ""){
+    
+    # Format each question in the section in html <details> tags
+    for(item in 1:nrow(subselection)){
+      
+      tryCatch( { 
+        # Only include if "include" == 1 and there are terms there
+        if(subselection$include[item] == 1 & !is.na(subselection$term[item]) & !is.na(subselection$include[item])){
+          formattedtext[[item]] <- paste0("<details><summary>**",
+                                          subselection$term[item],
+                                          "**</summary><div>",
+                                          subselection$definition[item],
+                                          "</div><br></details>")
+        }
+      }, error = function(e){
+        cat("Error in row : ",item,"\n")
+      }
+      )
+    } #end for
+    
+    # Remove empty list items (happens when Include == 0)
+    formattedtext <- formattedtext[!sapply(formattedtext, is.null)]#
+    
+    # Concatenate the list of items into a single string
+    formattedtext_string <- paste(formattedtext, collapse="")
+    
+    # Add letter as header
+    formattedtext_string <- paste0("<h4>", 
+                                   letter,
+                                   "</h4>",
+                                   formattedtext_string,
+                                   "<br>")
+    
+    return(formattedtext_string)
+  }
+} # end function
+```
+
+```{r createglossarytext, message=FALSE,warning=FALSE, echo=FALSE}
+# Create an empty vector to store the concatenated results
+glossarytext <- c()
+
+# Run the function in a for loop
+for (letter in toupper(letters)) {
+  formattedletter <- formatdefs(letter)
+  glossarytext <- c(glossarytext, formattedletter)
+}
+
+# Concatenate the character objects into one string
+fullglossarytext <- paste(glossarytext, collapse = "    ")
+```
+
+`r fullglossarytext`

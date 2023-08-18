@@ -1,0 +1,183 @@
+# What are personal data? {#personal-data}
+
+In order to know whether you should comply with the GDPR in your research 
+project, the first question to answer is: do you process personal data? To 
+answer this question, we need to know: (1) What exactly are personal data, 
+and (2) how do you know if you are working with personal data in your research?
+
+### Definition of personal data {#definition-personal-data}
+
+According to the GDPR, personal data are “any information relating to an 
+identified or identifiable natural person” 
+([art. 4(1)](https://gdpr-info.eu/art-4-gdpr/){target="_blank"}):
+
+- **Natural person**: Data by themselves (numbers, text, pictures, audio, etc.) 
+are not inherently personal. They only become personal when they refer to or 
+relate to a **living individual**. When data refer to an organisation, 
+deceased person, or group of individuals, they are not considered personal data 
+under the GDPR.
+- Data are personal if they **relate** to an individual. This means practically 
+anything that someone is, has said or done, owns, may think, etc. 
+- The person should be **identified or identifiable**. This is the case not 
+only through **directly** identifying information, such as names and contact 
+information, but also through **indirectly** identifying information, for 
+example if you can single someone out or identify them by combining datasets 
+(see the [next page](#personal-data-assess)).
+
+## How to assess whether data contain personal data? {#personal-data-assess}
+:::keywords
+On this page: sensitive data, privacy-sensitive, personal data, when is data 
+privacy-sensitive, identifiability, identifier    
+Date of last review: 2022-08-23
+:::
+
+Whether your data contain personal data depends on which data you are 
+collecting (nature) and under which circumstances (context). A date like 
+“12 December 1980”, is not personal data – it is just a date. However, that 
+date becomes personal data if it refers to someone’s birthday.  
+
+In assessing whether data are personal, you should take into account all the 
+means that you and others may **reasonably likely** use to identify your data 
+subjects, such as the required money, time, or (future) developments in 
+technology ([rec. 26](https://gdpr-info.eu/recitals/no-26/){target="_blank"}).  
+
+Data can be identifiable when:
+
+- <details><summary>They contain **directly identifying information**.</summary>
+  <div>For example: name, image, video recording, audio recording, patient 
+  number, IP address, email address, phone number, location data, social media 
+  data.</div>
+  </details>
+- <details><summary>It is possible to **single out** an individual</summary>
+  <div><p>This can happen when there are unique data points or unique behavioural 
+  patterns which can only apply to one person.</p>
+  <p>Examples:
+  <ul>
+    <li>You have a data subject who is 2.10 meters tall. If this is a unique 
+    value in your dataset, this distinguishes this person from others and thus 
+    can make them identifiable.</li>
+    <li>You have a data subject who only follows far-right accounts on Twitter. 
+    If they are the only one in your dataset who do so, this distinguishes this 
+    person from others and can make them identifiable.</li>
+  </ul></p>
+  </div></details>
+- <details><summary>It is possible to **infer information** about an individual 
+based on information in your dataset</summary>
+  <div>For example:
+  <ul>
+    <li>Inferring a medical condition based on registered medications.</li>
+    <li>Guessing that someone lives in a certain neighbourhood based on where they go to school.</li>
+  </ul></div>
+</details>
+- <details><summary>It is possible to **link records** relating to an individual.</summary>
+<div><p>This can happen when combining multiple variables within your dataset (e.g., demographic 
+information, indirect identifiers). However, it can also happen when combining 
+your dataset with other datasets (the "Mosaic effect"). In that case, your data 
+still contain personal data, even if the data in your own dataset are not 
+identifiable by themselves.</p>
+<p>Linkage is often possible with demographic information (age, 
+  gender, country of origin, education, workplace information, etc.) and 
+  indirect identifiers (pseudonyms, device ID, etc.), for example:
+  <ul>
+    <li>In the year 2000, 
+    [87% of the United States population](https://dataprivacylab.org/projects/identifiability/paper1.pdf){target="_blank"} 
+    was found to be identifiable using a combination of their ZIP code, gender 
+    and date of birth. You can see for yourself on 
+    [this website](https://www.ooa.world/){target="_blank"}.</li>
+    <li>An agricultural company’s Uniek Bedrijfsnummer (UBN) can be used to 
+    search for the address of the company in the 
+    [I&R mobile app](https://www.rvo.nl/onderwerpen/identificatie-en-registratie-dieren/app-ir-dieren){target="_blank"}. 
+    Often, this address is also the owner’s home address.</li>
+    <li>Geographical data tracking individuals are particularly sensitive 
+    because of the multiplicity of data points. 
+    [This video](https://www.youtube.com/watch?v=Pivd71NYKDA){target="_blank"} 
+    nicely explains why.</li>
+  </ul>
+  </p></div></details>
+- <details><summary>De-identification is still **reversible**.</summary>
+<div>This often happens when data are pseudonymised, but there is still a way 
+to link the pseudonymised data with identifiable data, for example when a 
+name-pseudonym key still exists.</div>
+</details>
+
+:::fyi
+You can assume that you are processing personal data when you collect data 
+**directly** from people, even if the results of that collection are anonymous. But 
+also when you use data that are **observed or derived from people**, even if those
+data were previously collected, made public or used for non-research purposes.
+:::
+
+In short, even if you cannot find out someone’s real identity (name, address), 
+the data you process can still contain personal data under the GDPR. Besides 
+the examples mentioned here, there are many 
+[other examples of personal data](https://intranet.uu.nl/system/files/documenten/categories-of-personal-information-en.pdf){target="_blank"}. 
+If you need help assessing whether or not your data contain personal data, 
+please contact your [privacy officer](#support).
+
+## Special types of personal data {#special-types-personal-data}
+:::keywords
+On this page: sensitive personal data, sensitive data, special category, special
+categories, politics, race, ethnicity, religion, philosophy, dna, 
+genetics, genes, fingerprint, physical condition, mental illness, sexual 
+identity, gender identity    
+Date of last review: 2022-08-23
+:::
+
+There are a few special types of personal data that are worth taking note of: 
+special categories of personal data, and otherwise sensitive personal data. 
+These types of personal data have additional requirements. If you want to 
+process them, please contact your [privacy officer](#support) first.
+
+### Special categories of personal data
+The GDPR explicitly defines seven ‘special categories of personal data’. It is 
+information that reveals:
+
+- racial or ethnic origin
+- political opinions
+- religious or philosophical beliefs
+- trade union membership
+- genetic or biometric data when meant to uniquely identify someone
+- physical or mental health conditions
+- sex life or sexual orientation
+
+It is in principle **prohibited** to process these types of personal data, 
+unless an exception applies 
+([art. 9](https://gdpr-info.eu/art-9-gdpr/){target="_blank"}). 
+For example, it is allowed to process these if:
+
+- Data subjects have provided explicit consent to process these data for a 
+specific purpose.
+- Data subjects have made the data publicly available themselves
+- Processing is necessary for scientific research purposes (incl. historical 
+and statistical purposes) and it is impossible or would take an unreasonable
+amount of effort to obtain explicit consent 
+([UAVG art. 24](https://wetten.overheid.nl/BWBR0040940/2021-07-01#Hoofdstuk3){target="_blank"}).
+
+Even if you can make use of one of these exemptions, special categories of 
+personal data warrant additional security measures to make sure they are 
+protected. Always contact your [privacy officer](#support) if you intend on 
+processing these types of data.
+
+:::note
+The [Dutch Code of Conduct for Health Research](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}
+(p.68) specifies a number of exceptions for health researchers in which explicit 
+consent for processing special categories of personal data may not be necessary.
+:::
+
+
+### Data that are otherwise sensitive
+Other types of data can also be sensitive, because they can carry higher risks 
+for the data subjects. These types of data can either not be processed at all, 
+or only under certain circumstances. Either way, they require additional 
+security measures. Always contact your [privacy officer](#support)
+if you intend on using these types of data.
+
+Examples are:
+
+- Financial data
+- Data about relationship problems
+- Data that can be misused for identity fraud, such as the Dutch Citizen 
+Service Number (BSN). In principle, the BSN cannot be used in research at all.
+- Criminal or justice-related data: they can only be processed under 
+governmental supervision or when a derogation exists in national legislation 
+([art. 10](https://gdpr-info.eu/art-10-gdpr/){target="_blank"}).

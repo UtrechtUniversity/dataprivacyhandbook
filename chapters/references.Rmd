@@ -1,0 +1,9 @@
+# Resources {#references}
+
+For further reading, we prepared a Zotero library with additional resources, some
+of which are specific to Utrecht University, others more general. Click on the 
+image below to see the 
+[most recent version of the reference library](https://www.zotero.org/groups/2554340/data_privacy_uu/library){target="_blank"} 
+online.
+
+<a href="https://www.zotero.org/groups/2554340/data_privacy_uu/library" target="_blank"><img src="img/zoterolibrary.png" title="Screenshot of the 'Data Privacy UU' Zotero library" height="80%"/></a>

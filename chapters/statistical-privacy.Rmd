@@ -1,0 +1,464 @@
+# Statistical approaches to de-identification {#statistical-privacy}
+
+In order to protect datasets that contain personal or otherwise sensitive data, 
+there is an increasing number of statistical approaches to de-identification, 
+which to some extent quantify how identifiable data are after 
+[de-identification](#pseudonymisation-anonymisation).  
+
+In this chapter, we discuss the following approaches, as these are the most 
+widely used approaches: 
+
+- [K-anonymity](#k-anonymity) 
+- [L-diversity](#l-diversity) 
+- [T-closeness](#t-closeness) 
+- [Differential privacy](#differential-privacy) 
+
+These approaches (or: privacy models) are not yet much used in research 
+practice, because they come with some disadvantages and require resources 
+and/or expertise to be applied and interpreted correctly. However, they are 
+used in many 
+[de-identification tools](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification){target="_blank"} 
+and are useful to detect specific sensitivities in (tabular) datasets. For 
+those reasons, the techniques are introduced in this chapter. 
+
+## K-anonymity, l-diversity and t-closeness {#k-l-t-anonymity}
+
+:::keywords
+On this page: k-anonymous, l-diverse, t-close, privacy model, quantifying 
+privacy, key attribute, sensitive attribute, quasi-identifier  
+Date of last review: 2023-05-30
+:::
+
+K-anonymity, L-diversity and T-closeness are statistical approaches that 
+quantify the level of identifiability within a tabular dataset, especially when 
+variables within that dataset are combined. They are complementary approaches: 
+a dataset can be k-anonymous, L-diverse and T-close, where k, L and T all 
+represent a number.  
+
+### Identifiers, quasi-identifiers, and sensitive attributes {#k-anonymity-variables}
+
+Privacy models like k-anonymity, L-diversity and T-closeness distinguish 
+between 3 types of variables in a dataset: 
+
+- **Identifiers** (also known as key attributes): direct identifiers such as 
+names, student numbers, email addresses, etc. These variables should in 
+principle not be collected at all, or removed from the dataset if they are not 
+necessary for your research project. 
+- **Quasi-identifiers**: indirect identifiers that can lead to identification 
+when combined with other quasi-identifiers in the dataset or external 
+information. These are often demographic variables like age, sex, place of 
+residence, etc., but could also be something entirely different like physical 
+characteristics, timestamps, etc. In general, quasi-identifiers are usually 
+variables that are likely to be known to someone in the outside world.  
+- **Sensitive attributes**: variables of interest which should be protected, and 
+which cannot be changed, because they are the main outcome variables. For 
+example, it can be Medical condition in a healthcare dataset, or Income in a 
+financial dataset. 
+
+It is important to correctly categorise the variables in your dataset as any of 
+these variable types if you want to apply k-anonymity, l-diversity and 
+t-closeness, because they will determine how the dataset will be de-identified. 
+
+### How it works
+#### K-anonymity {#k-anonymity}
+K-anonymity ensures that each individual in a dataset cannot be distinguished 
+from at least k-1 other individuals with respect to the quasi-identifiers in the 
+dataset. This is done through [generalisation](#generalisation), 
+[suppression](#suppression) and sometimes [top- and bottom-coding](#top-bottom-coding). 
+Applying k-anonymity makes it more difficult for an attacker to re-identify 
+specific individuals in the dataset. It protects against 
+[singling out and, to some extent, the Mosaic effect](#personal-data-assess). 
+
+```{r k-anonymity-tables, echo=FALSE, results='asis', warning=FALSE, message=FALSE}
+# Here is the documentation for kableExtra for html: https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
+# And here it is for LateX/pdf: https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf
+library(knitr)
+library(kableExtra)
+
+# Sample data frames
+df1 <- data.frame(Nr = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), 
+                  Age = c(16, 18, 19, 22, 22, 23, 24, 25, 26, 28),
+                  Sex = c("Male", "Male", "Male", "Female", "Male", "Male", 
+                          "Male", "Female", "Female", "Female"),
+                  City = c("Rotterdam", "Rotterdam", "Rotterdam", "Rotterdam", 
+                           "Zwolle", "Zwolle", "Zwolle", "Utrecht", 
+                           "Rotterdam",  "Utrecht"),
+                  Disease = c("Viral infection", "Heart-related", "Cancer", 
+                              "Viral infection", "No illness", "Tuberculosis", 
+                              "Heart-related", "Cancer", "Heart-related", 
+                              "Tuberculosis"))
+
+df2 <- data.frame(Nr = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), 
+                  Age = c("=< 20", "=< 20", "=< 20", "20-30", "20-30", "20-30",
+                          "20-30",  "20-30",  "20-30",  "20-30"),
+                  Sex = c("Male", "Male", "Male", "Female", "Male", "Male", 
+                          "Male", "Female", "Female", "Female"),
+                  City = c("Rotterdam", "Rotterdam", "Rotterdam", "Rotterdam", 
+                           "Zwolle", "Zwolle", "Zwolle", "Utrecht", 
+                           "Rotterdam",  "Utrecht"),
+                  Disease = c("Viral infection", "Heart-related", "Cancer", 
+                              "Viral infection", "No illness", "Tuberculosis", 
+                              "Heart-related", "Cancer", "Heart-related", 
+                              "Tuberculosis"))
+
+# Convert data frames to tables
+table1 <- 
+  kbl(df1, caption = "Original dataset", label = NA) %>% 
+  kable_styling(
+    full_width = FALSE,
+    position = "left",
+    font_size = 11,
+    #fixed_thead = list(enabled = T, background = "#FFCD00")
+  ) %>%
+  column_spec(2, bold = T) %>%
+  row_spec(row = 1:3, background = "#ffedc3") %>%
+  row_spec(row = c(4, 9), background = "#b2dfd8") %>%
+  row_spec(row = 5:7, background = "#c9e0fc") %>%
+  row_spec(row = c(8, 10), background = "#fad6bf") #%>%
+#footnote(general = "Original dataset", general_title = "", footnote_as_chunk = T)
+
+table2 <- 
+  kbl(df2, caption = "2-anonymous dataset", label = NA) %>% 
+  kable_styling(
+    full_width = FALSE,
+    position = "left",
+    font_size = 11,
+    #fixed_thead = list(enabled = T, background = "#FFCD00")
+  ) %>%
+  column_spec(2, bold = T) %>%
+  row_spec(row = 1:3, background = "#ffedc3") %>%
+  row_spec(row = c(4, 9), background = "#b2dfd8") %>%
+  row_spec(row = 5:7, background = "#c9e0fc") %>%
+  row_spec(row = c(8, 10), background = "#fad6bf") %>%
+  footnote(general = "Colours indicate an 'equivalence class' of quasi-identifers", 
+           general_title = "", footnote_as_chunk = T)
+
+if(knitr::is_html_output()){
+cat(c(
+      '<table><tr valign="top"><td>', 
+      table1, 
+      '</td><td>', 
+      table2, 
+      '</td><tr></table>'),
+    sep = '')
+  
+} else if(knitr::is_latex_output()){
+  print(table1)
+  print(table2)
+} else if(knitr::is_epub_output()){
+  print(table1)
+  print(table2)
+}
+```
+
+To make a dataset k-anonymous, you must first identify which variables in the 
+dataset are identifiers, quasi-identifiers, and sensitive attributes. In the 
+example above, Age, Sex and City are quasi-identifiers and Disease is the 
+sensitive attribute. Next, you should set a value for k. If we choose a k of 2, 
+every row in the example dataset should have the same combination of Age, Sex 
+and City as at least 1 other row in the dataset. Finally, you aggregate the 
+dataset so that every combination of quasi-identifiers occurs at least k times. 
+In the example, this was done by generalising Age into age categories, but 
+there may also be other ways to reach 2-anonymity in this dataset. 
+
+There is no single value for k 
+[which you should always choose](https://desfontain.es/privacy/k-anonymity.html#how-to-choose-k){target="_blank"}. 
+The higher the k, the more difficult it will be to identify someone, but likely 
+your dataset will also become less granular and perhaps less informative. The 
+value of k will be highly dependent on what you communicated to data subjects 
+(e.g., you may have promised a certain k) and the risk of identification that 
+you are willing to accept.  
+
+The below [video](https://www.youtube.com/watch?v=Q0DNOIGUzMc){target="_blank"} 
+gives an example on how k-anonymity can work in practice: 
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/Q0DNOIGUzMc?end=189" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### L-diversity {#l-diversity}
+
+L-diversity is an extension to k-anonymity that ensures that there is sufficient 
+variation in a *sensitive attribute*. This is important, because if all 
+individuals in a (subset of a) dataset have the same value for the sensitive 
+attribute, there is still a risk of *inference*. For example, in the below 
+2-anonymous dataset, you can infer that any female from Rotterdam between 20 and 
+30 who participated had a viral infection ("homogeneity attack"). Similarly, if 
+you know that your 25-year old female neighbour from Utrecht participated in 
+this study, you learn that she suffers from cancer ("background knowledge attack").
+
+```{r l-diversity-data, echo=FALSE, results='asis', warning=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+
+# Sample data frames
+df3 <- data.frame(Nr = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), 
+                  Age = c("=< 20", "=< 20", "=< 20", "20-30", "20-30", "20-30",
+                          "20-30",  "20-30",  "20-30",  "20-30"),
+                  Sex = c("Male", "Male", "Male", "Female", "Male", "Male", 
+                          "Male", "Female", "Female", "Female"),
+                  City = c("Rotterdam", "Rotterdam", "Rotterdam", "Rotterdam", 
+                           "Zwolle", "Zwolle", "Zwolle", "Utrecht", 
+                           "Rotterdam",  "Utrecht"),
+                  Disease = c("Viral infection", "Heart-related", "Cancer", 
+                              "Viral infection", "No illness", "Tuberculosis", 
+                              "Heart-related", "Cancer", "Viral infection", 
+                              "Cancer"))
+
+df4 <- data.frame(Nr = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), 
+                  Age = c("=< 20", "=< 20", "=< 20", "20-30", "20-30", "20-30",
+                          "20-30",  "20-30",  "20-30",  "20-30"),
+                  Sex = c("Male", "Male", "Male", "Female", "Male", "Male", 
+                          "Male", "Female", "Female", "Female"),
+                  City = c("Rotterdam", "Rotterdam", "Rotterdam", "*", 
+                           "Zwolle", "Zwolle", "Zwolle", "*", 
+                           "*",  "*"),
+                  Disease = c("Viral infection", "Heart-related", "Cancer", 
+                              "Viral infection", "No illness", "Tuberculosis", 
+                              "Heart-related", "Cancer", "Viral infection", 
+                              "Cancer"))
+
+# Convert data frames to tables
+table3 <- 
+  kbl(df3, caption = "2-anonymous dataset", label = NA) %>% 
+  kable_styling(
+    full_width = FALSE,
+    position = "left",
+    font_size = 11,
+    #fixed_thead = list(enabled = T, background = "#FFCD00")
+  ) %>%
+  column_spec(2, bold = T) %>%
+  row_spec(row = 1:3, background = "#ffedc3") %>%
+  row_spec(row = c(4, 9), background = "#b2dfd8") %>%
+  row_spec(row = 5:7, background = "#c9e0fc") %>%
+  row_spec(row = c(8, 10), background = "#fad6bf") %>%
+  footnote(general = "Colours indicate an 'equivalence class' of quasi-identifers", general_title = "", footnote_as_chunk = T)
+
+table4 <- 
+  kbl(df4, caption = "2-anonymous 2-diverse dataset", label = NA) %>% 
+  kable_styling(
+    full_width = FALSE,
+    position = "left",
+    font_size = 11 #,
+    #fixed_thead = list(enabled = T, background = "#FFCD00")
+  ) %>%
+  column_spec(2, bold = T) %>%
+  row_spec(row = 1:3, background = "#ffedc3") %>%
+  row_spec(row = c(4, 8:10), background = "#b2dfd8") %>%
+  row_spec(row = 5:7, background = "#c9e0fc") %>%
+  footnote(general = "Colours indicate an 'equivalence class' of quasi-identifers and sensitive attributes", 
+           general_title = "", footnote_as_chunk = T)
+
+
+if(knitr::is_html_output()){
+cat(c(
+      '<table><tr valign="top"><td>', 
+      table3, 
+      '</td><td>', 
+      table4, 
+      '</td><tr></table>'),
+    sep = '')
+  
+} else if(knitr::is_latex_output()){
+    print(table3)
+    print(table4)
+} else if(knitr::is_epub_output()){
+  print(table1)
+  print(table2)
+}
+```
+
+K-anonymity does not protect against such 
+[homogeneity and background knowledge attacks](https://doi.org/10.1145/1217299.1217302){target="_blank"}. 
+Therefore, L-diversity proposes that there should be at least L different values 
+for the sensitive attribute per combination of quasi-identifiers. In the example 
+above, if we choose an L of 2, that means that for each combination of Age, Sex 
+and City, there are at least 2 distinct diseases. In the example, we suppressed 
+City for these homogeneous cases, so that all females between 20 and 30 years 
+old can either have cancer or a viral infection.
+
+Like k-anonymity, there is 
+[no perfect value of L](https://desfontain.es/privacy/l-diversity.html#the-bad-news-policy){target="_blank"}, 
+although it is usually less or equal to k and more than 1.
+
+The below [video](https://www.youtube.com/watch?v=GNhb3PcmjmA){target="_blank"} 
+explains the concept of L-diversity using an example: 
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/GNhb3PcmjmA?start=24&end=151" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### T-closeness {#t-closeness}
+
+T-closeness ensures that the distribution of a *sensitive attribute* within a 
+generalisation of a *quasi-identifier* is close to the distribution of the 
+sensitive attribute in the entire dataset. In other words, it ensures that the 
+sensitive attribute is not skewed towards a specific value within a group of 
+similar individuals, which could potentially be used to re-identify someone. 
+For example, if a dataset contains information on Age (quasi-identifier), Sex 
+(quasi-identifier), and Income (sensitive attribute), and t-closeness is applied 
+with a value of t = 0.1, then for each combination of Age and Sex, the 
+distribution of income must be within 10% of the distribution of income in the 
+entire dataset. 
+
+T-closeness can get complicated quite fast. If you’re curious to know how it 
+works, the below [video](https://www.youtube.com/watch?v=Upb8jqlsbFM){target="_blank"} 
+explains the concept of t-closeness using an example: 
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/Upb8jqlsbFM?start=23&end=404" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### When to use {#when-k-anonymity}
+
+K-anonymity, L-diversity and t-closeness are usually applied to de-identify 
+tabular datasets, before being shared. They are also most suitable for 
+relatively large datasets (i.e., containing a large number of individuals), as 
+more details (utility) are likely to be retained in such datasets
+([source](https://www.duo.uio.no/bitstream/handle/10852/79902/13/Anonymization-of-Health-Data.pdf#page=130){target="_blank"}). 
+
+### Implications for research {#implications-k-anonymity}
+
+- It is very easy to lose a lot of the (granularity of the) data when satisfying 
+the k-, L- or T-criteria: the higher the criteria, the lower the risk of 
+re-identification, but the more information you lose. The balance between 
+privacy and utility is therefore very important to take into consideration when 
+applying these privacy models. 
+- The more variables (quasi-identifiers), the larger the dataset and the more 
+outliers there are in the dataset, the more difficult de-identification will be 
+without losing too much information 
+([as shown here](https://programming-dp.com/ch2.html){target="_blank"}).  
+- If a dataset is k-anonymous, L-diverse or T-close, that does not mean that 
+the dataset is also considered [anonymous under the GDPR](#when-anonymous). The 
+degree of anonymity after applying these approaches depends entirely on your 
+own choices in terms of k, L or T, in terms of the variables that you included, 
+and on the context of your dataset. For example, if you failed to include a 
+quasi-identifier in k-anonymising your dataset, your dataset is in reality not 
+k-anonymous. 
+
+### Further reading {#resources-k-anonymity}
+
+- Read the original papers about k-anonymity 
+([Sweeney, 2002](https://doi.org/10.1142/S0218488502001648){target="_blank"}, 
+[pdf](https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf){target="_blank"}), 
+L-diversity ([Machanavajjhala et al., 2007](https://doi.org/10.1145/1217299.1217302){target="_blank"}) 
+and t-closeness ([Li et al., 2007](https://doi.org/10.1109/ICDE.2007.367856){target="_blank"}, 
+[pdf](https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf){target="_blank"}). 
+- In response to k-anonymity, L-diversity and T-closeness, other approaches have 
+been formulated as well, such as k-Map, delta-presence (δ), beta-likeness (β) and 
+delta-disclosure (δ). We do not go into those here, but 
+[Damien Desfontaines’s blogposts](https://desfontain.es/privacy/archives.html){target="_blank"} 
+and [this thesis](http://hdl.handle.net/10852/79902){target="_blank"} 
+([pdf](https://www.duo.uio.no/bitstream/handle/10852/79902/13/Anonymization-of-Health-Data.pdf#page=44){target="_blank"}) 
+discuss some of these approaches in more detail. 
+- On [this page](https://elf11.github.io/2017/04/22/kanonymity.html){target="_blank"} 
+and [here](https://programming-dp.com/ch1.html){target="_blank"} you can find 
+more information on the different attacks that can potentially be committed to 
+datasets. 
+
+## Differential privacy {#differential-privacy}
+
+:::keywords
+On this page: differential privacy, dp, epsilon, quantifying
+privacy, privacy-utility spectrum
+Date of last review: 2023-05-30
+:::
+
+Differential privacy (DP) is a mathematical technique to prevent the disclosure 
+of personal information by adding statistical noise to queries. In its original 
+form, the data are stored on a secure server. Researchers can then, without 
+access to the data, pose a query (i.e., an analysis request), and obtain the 
+result with a certain amount of statistical noise added to the output. The 
+amount of noise is tweaked such that adding or removing an individual to or from 
+the dataset alters the result of the query by a limited, predetermined amount.  
+
+The below [video](https://www.youtube.com/watch?v=gI0wk1CXlsQ){target="_blank"} 
+explains the basic premise of differential privacy using a very basic example:  
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/gI0wk1CXlsQ?start=185" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+:::note
+Differential privacy is generally not added to a dataset itself, but to the 
+**result of a query** (e.g., average income in a dataset), although some forms 
+exist in which the dataset itself is altered; this is called *local* 
+differential privacy. 
+:::
+
+### How it works
+
+Imagine a dataset with peoples' incomes, and we want to know the average income 
+in the data (i.e. our query). When applying differential privacy, we want to 
+ensure that we cannot determine whether an individual is in the dataset or not. 
+In theory, we can do this by adding or removing any single individual to or from 
+our dataset and recalculating the average income in the modified dataset. 
+Importantly, additions to the dataset should all be individuals that *could be* 
+in the dataset, and not only those that already are. Depending on the privacy 
+requirements (i.e., what amount of privacy leakage is acceptable) and the 
+sensitivity of the query (the effect of changing one individual on the average 
+income), more or less statistical noise is added to the result. 
+
+The most common definition of differential privacy is "epsilon-differential 
+privacy", epsilon being the "**privacy budget**". In this definition, we 
+consider two scenarios: the original dataset and a modified dataset, where we 
+substitute the person with the highest income with the person with the lowest 
+income. A certain amount of noise is added, so that the probabilities of 
+obtaining a certain result in the original and the modified datasets do not 
+differ more than Epsilon. Epsilon (i.e., the privacy budget) is a predetermined 
+value: the lower epsilon, the higher the level of privacy, and therefore the 
+more noise is added to the query. 
+
+:::fyi
+Differential privacy can also protect *groups* of people by adding or 
+subtracting groups instead of individuals. This can for example be useful 
+when you want to protect a household as a whole, and not only the individuals 
+in it. 
+:::
+
+:::warning
+Setting a lower epsilon results in more noise in the results that you release. 
+This simply implies that it becomes more difficult to distinguish whether 
+individuals were or were not in your dataset. However, it does **not** necessarily 
+imply that a certain level of epsilon will result in fully anonymous data. 
+Whether a dataset can be viewed as anonymous or not under the GDPR will always 
+be context- and dataset-dependent. 
+:::
+
+### Implications for research {#dp-implications}
+
+- The advantage of differential privacy is that privacy risk can be 
+mathematically quantified (through epsilon). With many other techniques, it can 
+be hard to determine exactly what the privacy guarantees are, especially with 
+the presence of external information. 
+- As with the other statistical approaches, there is a trade-off between more 
+privacy or more utility: the lower the privacy budget, the more privacy is 
+retained, but also the less accurate (more noisy) individual values will be. 
+- The privacy budget should be determined in advance and can only be spent once: 
+every query will lower the available privacy budget by epsilon, and when the 
+privacy budget reaches zero, no more queries can be done. Thus, **you cannot 
+indefinitely reuse the data and still preserve privacy**. 
+- A disadvantage of differential privacy is that the concept is not completely 
+trivial for the non-expert and in some cases, this has resulted in 
+[violated privacy guarantees](https://doi.org/10.48550/arXiv.2011.07018){target="_blank"}. 
+There is **no absolute right way to set the privacy budget** and no framework 
+to decide which value of epsilon should be set for what kind of data. Thus, it 
+can be hard for researchers to justify using a particular value of epsilon.
+
+### When to use {#dp-when}
+
+The implementation of differential privacy is a very technical (and tricky) 
+endeavour. Setting up a differentially private server that only outputs 
+differentially private results for any query is currently practically impossible. 
+Thus, if you are not an expert on statistics and/or differential privacy, we 
+recommend reaching out to someone who is, and to use Differential Privacy in 
+addition to other privacy-enhancing techniques, such as pseudonymisation.
+
+For now, differential Privacy is mostly used in combination with synthetic data, 
+or with simple repetitive queries. Widespread use of differential privacy might 
+become safer and/or easier over time as implementations are tested more 
+thoroughly on real-world datasets. 
+
+### Further reading {#dp-resources}
+
+- Damien Desfontaines has written a number of easy to read 
+[blogposts about differential privacy](https://desfontain.es/privacy/friendly-intro-to-differential-privacy.html){target="_blank"}, 
+including [this one](https://desfontain.es/privacy/differential-privacy-awesomeness.html){target="_blank"} 
+explaining the basic premise of differential privacy. 
+- The online book [Programming Differential Privacy](https://programming-dp.com/index.html){target="_blank"} 
+explains in detail how differential privacy works. 
+- Or read [Differential privacy: a primer for the non-technical audience](https://privacytools.seas.harvard.edu/files/privacytools/files/pedagogical-document-dp_new.pdf){target="_blank"}.
+- Background information: 
+[The Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf){target="_blank"}.

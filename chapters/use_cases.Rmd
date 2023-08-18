@@ -1,0 +1,268 @@
+# (PART\*) Use Cases {-}
+
+# Data minimisation in a survey {#pet-survey}
+
+:::keywords
+On this page: minimise, limit, remove, questionnaire, survey
+Date of last review: 2022-08-22
+:::
+
+For a course, a teacher at the faculty of Veterinary Medicine collected data on 
+the health of pets and the pets’ owners. The initial purpose of the survey was 
+to create simply datasets for students to learn about statistics. However, 
+besides for the course, the teacher also wanted to use the collected data for 
+research purposes and share the data with others. In order to do so, the teacher 
+created a new version of the survey that asked for less identifiable information 
+and could be more easily anonymised. Additionally, the new version of the survey 
+informed participants about the legal basis used to process their personal data. 
+
+Here, you can find the survey before and after data minimisation:
+
+<a href="files/Use-case-minimisation-Before.pdf" target = "_blank" style="text-decoration: none;"><button type="button">Before minimisation</button></a> 
+<a href="files/Use-case-minimisation-After.pdf" target = "_blank" style="text-decoration: none;"><button type="button">After minimisation</button></a>
+
+<br>
+Note that the new version of the survey:
+
+- minimises the amount of personal data collected:
+  - Student number and pet names are not asked in the new version of the survey.
+  - Instead of Age, the new version asks the Age category of  the owner/caretaker.
+  - The survey includes questions on Weight and Height. For data publication, 
+  they are used to calculate the Body Mass Index (BMI) and deleted after this 
+  calculation.
+- contains information about the legal basis used to be able to use (legitimate 
+interest) and publish (consent) the data for purposes other than education.
+
+# Data pseudonymisation {#youth-pseudonymisation}
+
+::::keywords
+On this page: pseudonymous, de-identification, replacement, open science, reuse    
+Date of last review: 2023-03-30
+::::
+
+[YOUth](https://www.uu.nl/en/research/youth-cohort-study){target="_blank"} 
+(Youth of Utrecht) is a longitudinal child cohort study that collects data about 
+the behavioural and cognitive development of children in the Utrecht area. The 
+study follows about 4000 children and their parents in two cohorts. One from 
+birth until around the age of six, one from around 9-years-old until adolescence. 
+YOUth collects a wide variety of data types, ranging from questionnaires to 
+biological samples. Because of the large amount of data and the sensitive nature 
+of the data and the participants (minors), the data can be considered as very 
+sensitive, and thus should be pseudonymised where possible.
+
+### General steps
+YOUth is committed to sharing their data for reuse, and thus the datasets that 
+they share should contain as little personal information as possible. For that 
+purpose, the YOUth data manager implements a number of measures: 
+
+- All data are pseudonymised as much as possible (see below). 
+- Every dataset that is shared for reuse is first checked for identifiable 
+information. Special category information is taken out of the datasets as much 
+as possible, and no unnecessary information such as date of birth is shared. 
+- Using the tool 
+[AnonymoUUs](https://github.com/UtrechtUniversity/anonymouus){target="_blank"}, 
+participant pseudonyms are replaced with artificial pseudonyms, and all 
+dates with a fake date, each time a new set of data is prepared for sharing. 
+This limits the ability of external researchers to link multiple requested 
+datasets together and thus to form a more complete image of each participant. 
+It also prevents singling out participants based on the day they visited the 
+research centre.
+
+### Pseudonymisation per data type
+
+Below is an overview of the data types and pseudonymisation measures taken by 
+the YOUth data manager. Besides these pseudonymisation measures, YOUth has 
+implemented a 
+[data request procedure](https://www.uu.nl/en/research/youth-cohort-study/data-access){target="_blank"} 
+which delineates the conditions under which researchers can access the data, 
+and the steps they have to take to request access.
+
+<details><summary>Questionnaire data (tabular)</summary>
+<div>Children and their parents/caretakers (sometimes their teacher) fill out 
+several questionnaires about, among others, their mental and physical 
+development, living conditions, and social environment. 
+
+Pseudonymisation measures: 
+<ul>
+<li>A script removes unnecessary (special category) personal data from the 
+shared dataset where possible, such as religion, ethnicity and open text 
+responses.</li>
+<li>If a researcher needs demographic information only to describe the sample, 
+the data manager shares a frequency table of the requested information, for 
+example for ethnicity and socio-economic status, instead of sharing the raw 
+responses.</li>
+<li>The Anonymouus tool replaces the pseudonym and date in the questionnaire 
+data and file names.</li>
+</ul>
+
+In the future, the data manager would like to share only scale scores, instead of responses to individual questions in standardised questionnaires. 
+</div></details>
+
+<details><summary>Computer tasks (tabular)</summary>
+<div>On a computer, children play various games to measure cognitive and motoric 
+development of the child. In most games, the response times, choices and scores 
+are recorded. To pseudonymise the data, the AnonymoUUs tool replaces the 
+pseudonym and dates in the task data and filenames and in some cases even the 
+name of the participant.</div></details>
+
+<details><summary>Logbook- and experiment book data (tabular)</summary>
+<div>Notes about data collection (data quality, task-order, if experiment 
+started etc.) are made in logbooks by means of a data capturing tool. In that 
+same tool, YOUth also collects research data about body measures (length, weight 
+and head circumference) and intelligence (WISC and WPPSI) To pseudonymise those 
+data, the AnonymoUUs tool replaces the pseudonym and date in the filenames and 
+data.</div></details> 
+
+<details><summary>Video tasks (video recording)</summary>
+<div><p>During two tasks (the Hand game and the Delay of gratification task), 
+children are video- and audiotaped to be able to analyse their behaviour. Parents 
+may also be visible in the background, as well as a research assistant.</p>
+<p>To pseudonymise these data, both the videos from the Hand game and the Delayed 
+gratification task will be coded/scored on the variables of interest (e.g., does 
+the child take the candy out of the bag or not). This way, no actual video 
+recordings will need to be shared with other researchers.</p></div></details>
+
+<details><summary>Parent-child interaction (video recording)</summary>
+<div>Children and their parents are videotaped while they play with each other 
+or discuss specific topics. Because these data are difficult to pseudonymise and 
+could be scored/coded on many different aspects, YOUth provides a special local 
+laboratory space to perform the desired qualitative analysis on these video 
+data.</div></details> 
+
+<details><summary>Magnetic Resonance Imaging (MRI) data (3D image)</summary>
+<div><p>MRI data of children are collected to study structural (3D image of the 
+brain, skull, and outer layers of the head) and functional (brain activity) 
+properties of the brain.</p>
+<p>To pseudonymise the MRI data, structural MRI scans (DICOM) are defaced using 
+<a href="https://surfer.nmr.mgh.harvard.edu/fswiki/mri_deface" target="_blank">mri_deface</a> 
+(v1.22), resulting in NIfTi files. Additionally, the AnonymoUUs tool replaces 
+the pseudonym in the filenames.</p></div></details>
+
+<details><summary>Electro-encephalography (EEG) data (video and text files)</summary>
+<div>A cap is placed on the child's head with electrodes attached to measure 
+brain activity. The child is placed in front of a monitor and views various 
+on-screen stimuli (incl. faces, objects, sounds, music, toys). A video is also 
+made to check whether the child watches the screen. For the moment, the videos 
+will not be shared with external researchers. In the EEG data itself, the 
+AnonymoUUs tool replaces the pseudonym and date.</div></details>
+
+<details><summary>Eye tracking data (text files)</summary> 
+<div>Children are placed in front of a screen and view various stimuli (incl. 
+faces, objects, sounds, music, toys), with or without an assignment. Eye 
+movements and focus points are recorded using an eyetracker. To pseudonymise 
+these data, the AnonymoUUs tool replaces the pseudonym and date in the 
+eyetracking data and the filenames.</div></details> 
+
+<details><summary>Ultrasound images (3D echos)</summary>
+<div>During the mothers' pregnancy, 3D ultrasound images are made of foetuses 
+to follow overall and brain size development. To pseudonymise these data, the 
+ultrasound images (DICOM) will be converted to nifti (.nii) format, which does 
+not contain header information. Additionally, the AnonymoUUs tool replaces the 
+pseudonym and date in the filenames and in the SQL database that comes with the 
+measurement.</div></details>
+
+<details><summary>Biological materials</summary> 
+<div>At various moments during the study, (chord) blood, hair, saliva, and 
+buccal swabs are taken from the child and sometimes their parent(s). The samples 
+cannot be pseudonymised, because they are physical samples. Instead, a procedure
+is in place to have biological samples analysed at preferred partners, without
+having to share the physical samples with researchers.</div></details>
+
+# Publishing metadata {#open-science-questionnaire}
+
+::::keywords
+On this page: FAIR data, metadata, documentation, publication, reuse    
+Date of last review: 2022-08-22
+::::
+
+In 2020, the [Open Science Programme of Utrecht University](https://www.uu.nl/en/research/open-science){target="_blank"}
+sent out the first 
+Open Science monitor. The aim was to gain insights into the awareness, 
+attitudes, practices, opportunities and barriers of employees of Utrecht 
+University and Utrecht University Medical Center regarding several Open 
+Science practices. As the dataset contained a lot of demographic information 
+(e.g., gender, age, nationality, position, type of contract, etc.), and all of 
+those variables combined could lead to identification, it could not be shared 
+publicly. For this particular dataset, full anonymisation was not desirable, 
+as that would greatly decrease its scientific value. Therefore, the Open Science 
+Programme chose to publish only the metadata and documentation, without sharing 
+the data, in order to protect participants’ data while still complying with the
+[FAIR principles](https://www.uu.nl/en/research/research-data-management/guides/how-to-make-your-data-fair){target="_blank"}. 
+
+Here’s the strategy they took:
+
+- They published the dataset under 
+[restricted access on Yoda](https://doi.org/10.24416/UU01-3L9K99){target="_blank"}, 
+so that the dataset was at least Findable and Accessible.
+- They shared other relevant documentation publicly:
+  - The [preregistration](https://doi.org/10.5281/zenodo.5727106){target="_blank"}.
+  - The [questionnaire itself](https://doi.org/10.5281/zenodo.5727057){target="_blank"}, 
+  including the information provided to participants.
+  - The [final report](https://doi.org/10.5281/zenodo.5725177){target="_blank"} 
+  written about the dataset.
+
+Note that in the metadata of all these publications, cross-references to the 
+other publications are included to allow for maximum findability of the 
+project’s outputs.
+
+# Reusing education data for research {#reuse-education-data}
+
+::::keywords
+On this page: further processing, secondary use, reuse, student data, education,
+legal basis, access control    
+Date of last review: 2022-11-18
+::::
+
+A research group at the Science faculty wanted to investigate the effects of the 
+Covid-19 pandemic on students’ motivation and study success in a specific course. 
+To do so, they wanted to analyse:
+
+- Students’ evaluations of the course from both before and during the pandemic.
+- Students’ test and final grades in the course from both before and during the pandemic.
+
+The primary researchers already had access to the data for their educational 
+activities, and so they wanted to use the data for research purposes. They went 
+to their faculty privacy officer to find out how they could reuse these data in 
+a responsible way.
+
+The following privacy issues are relevant in this use case:
+
+- **The raw data were identifiable**<br>
+The student grades were linked to names, and both the grades and the evaluations 
+were linked to student IDs. Moreover, the evaluations could potentially contain 
+names of teachers and other personal information, as they consisted of partly 
+open-ended questions. To decrease identifiability, the principal investigator and 
+a second examiner, who already had access to the students’ data, first removed or 
+replaced all names with pseudonyms (both names of student and teachers), and went 
+through the open-ended questions to remove potentially directly identifiable 
+information. Only after deidentification were the data shared with research 
+assistants who performed the main data and content analyses.<br><br>
+- **Data subjects’ rights**<br>
+Most students had already finished the course, and were not informed about the 
+use of their evaluations and grades for this research project. The researchers 
+argued that the majority of the students could not be traced anymore to provide 
+this information or to enable them to exercise their data subjects’ rights 
+([art. 14(5)(b)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}). 
+Moreover, in case a student did want to exercise their rights, it would prove 
+difficult to retrieve the correct data, as the data were deidentified as soon as 
+possible.<br><br>
+- **Legal basis**<br>
+Students did not provide explicit consent to process their grades and evaluations 
+for this research project. Moreover, if they had provided consent, it could be 
+argued that the consent was not freely given, as the primary researchers were 
+also involved as teachers, and therefore there was a hierarchical relationship 
+between the students and the teachers.  For these reasons, consent was not a 
+suitable legal basis in this case. Instead, the researchers relied on:
+  - **Public interest**: processing students’ data for the course itself is a 
+  public task, namely that of providing education. It was the legal basis for 
+  the initial data collection.
+  - **Further processing for scientific research purposes**: processing data to 
+  answer the research question can be considered as secondary use of the 
+  students’ personal data. The GDPR does not consider secondary use of personal 
+  data for scientific research purposes incompatible with the original purpose 
+  (i.e., the original purpose being to provide education and improving the 
+  course, [art. 5(1)(b)](https://gdpr-info.eu/art-5-gdpr/){target="_blank"}). 
+  Thus, it was not necessary to rely on a new legal basis for this research 
+  project, provided that the data were protected sufficiently: The researchers 
+  made sure that the data were well-protected (i.e., minimised, pseudonymised, 
+  and access controlled, [art. 89](https://gdpr-info.eu/art-89-gdpr/){target="_blank"}).
