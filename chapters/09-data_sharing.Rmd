@@ -85,26 +85,13 @@ inform data subjects</b></summary>
 <div>
   If you share personal data with international collaborators (for example, 
   with countries that have no 
-  [adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}, 
+  [adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}), 
   you may need to take additional measures. Usually, these measures include 
   drawing up an agreement to make sure the other party is GDPR-compliant and 
-  uses the necessary security measures (if you haven’t already done so). The 
-  exact type of agreement will depend on your specific situation: your 
-  [privacy officer](#support) can help you choose and set up the right one.
-  <br><br>
-  The flowchart below indicates conditions under which you can share data 
-  internationally. Note that they assume that you have taken sufficient 
-  safeguards to protect the personal data. To determine the possibilities 
-  of sharing data internationally in your project, we strongly advise you 
-  to consult with your [privacy officer](#support). In some cases a 
-  [Data Transfer Impact Assessment](#dtia) may be required, which can 
-  take some effort.
-  <img src="img/international-data-transfer.png" alt="Flowchart about 
-  international data transfers. If you are transfering data to countries 
-  within the European Economic Area, no additional measures are required. If 
-  you however transfer data outside of the European Economic Area, we 
-  recommend to contact your faculty privacy officer to take the proper 
-  measures.">
+  uses the necessary security measures (if you haven’t already done so). 
+  Please refer to the page about [international transfers](#third-country-transfer)
+  for more information, and contact your 
+  [privacy officer](#support) to assist you with international transfers.
 </div>
 </details>
 
@@ -123,3 +110,65 @@ inform data subjects</b></summary>
           [SURF Filesender](https://filesender.surf.nl){target="_blank"}
           with encryption.</li></ul></div>
 </details>
+
+
+## Third-country transfers {#third-country-transfer}
+
+:::keywords
+On this page: data transfer, third-country transfer, sharing outside EU, EEA    
+Date of last review: 2023-08-18
+:::
+
+When you want to share personal data with parties who are located outside of the
+European Economic Area (EEA), you need to take extra steps to make sure that
+the transfer is GDPR-compliant, such as:
+
+- Assessing whether you can transfer the data at all using a 
+[Data Transfer Impact Assessment](#dtia).
+- Taking additional protective measures, such as 
+[Standard Contractual Clauses](#scc).
+- Explicitly [informing data subjects](#privacy-notices) about the (possible) 
+third-country transfer.
+- ... And possibly more.
+
+### What is a third-country transfer? {#third-country-transfer-def}
+
+In legal terms, a transfer exists when personal data controlled by one party 
+are accessible to another, irrespective of whether the data are physically sent 
+to that party. An international/third-country transfer exists when the party 
+that can potentially gain access is based in a country outside the European 
+Economic Area (EEA) which does not have an 
+[adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}
+from the European Commission. 
+
+::::fyi
+There is a third-country transfer if personal data are stored at the servers of
+a non-EEA party, and when a cloud provider is used that has servers both in-
+and outside of the EEA.
+
+There is **no** third-country transfer in the following cases:
+
+- Personal data are stored at the university premises in the EEA, and are 
+accessed from outside of the EEA by a researcher from that EEA university - this 
+is not a transfer, provided that safeguards are in place to prevent other parties 
+from gaining access.
+- The party with whom the data are shared is already subject to the GDPR
+(e.g., the party is situated in Germany or Italy).
+::: 
+
+### When is a third-country transfer possible? {#third-country-transfer-when}
+
+The flowchart below indicates conditions under which you can share data 
+internationally. Note that they assume that you have taken sufficient safeguards 
+to protect the personal data. To determine the possibilities of sharing data 
+internationally in your project, we strongly advise you to consult with your 
+[privacy officer](#support). In some cases a 
+[Data Transfer Impact Assessment](#dtia) may be required, which can take some 
+effort.
+
+<img src="img/international-data-transfer.png" alt="Flowchart about 
+international data transfers. If you are transfering data to countries 
+within the European Economic Area, no additional measures are required. If 
+you however transfer data outside of the European Economic Area, we 
+recommend to contact your faculty privacy officer to take the proper 
+measures.">
