@@ -120,8 +120,8 @@ using words like "may", "some", "often" and write active and short sentences.
 Tip: try these 
 [writing tips](https://www.researchplatform-dorp.nl/wp-content/uploads/20220329-Handleiding-PIF-beperkte_gezondheidsvaardigheden.pdf){target="_blank"}, 
 this [language tester](https://ishetb1.nl/){target="_blank"}, or use this 
-[simplified information sheet](https://www.pharos.nl/kennisbank/eenvoudige-en-begrijpelijke-onderzoeksformulieren-patientinformatieformulier-pif/){target="_blank"}
-(all in Dutch).
+[simplified information sheet](https://www.pharos.nl/kennisbank/eenvoudige-en-begrijpelijke-onderzoeksformulieren-patientinformatieformulier-pif/){target="_blank"}. Or take a look at some good 
+examples in terms of [language](https://www.eur.nl/en/media/2022-12-221208a2b1toestemmingethiekalgemeenbelangprivacycasus){target="_blank"} and [formatting](https://www.eur.nl/en/media/2023-05-geanonimiseerd-1-informatie-vragenlijstonderzoek){target="_blank"} (all in Dutch).
 
 - **Easily accessible**<br>
 Data subjects should be able to find the information easily. For example, publish 
@@ -266,7 +266,7 @@ click to expand):
      data subjects for future research projects.</li>
      <li>Separate consent is needed to use personal data to answer a research question 
      vs. to link different sources of data together to do so 
-     ([Gedragscode Gezondheidsonderzoek, 2022](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}.</li>
+     ([Code of Conduct Dutch Health Research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}.</li>
      <li>Separate consent is recommended to make the personal data 
      [available for reuse](#data-sharing-reuse) (describe the 
      conditions under which this will be allowed).</li>
