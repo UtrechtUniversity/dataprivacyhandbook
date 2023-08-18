@@ -4,30 +4,30 @@ delete_merged_file: true
 rmd_subdir: "chapters"
 rmd_files:
   - index.Rmd
-  - chapters/01-research-scenarios.Rmd
-  - chapters/02-faq.Rmd
+  - chapters/research-scenarios.Rmd
+  - chapters/faq.Rmd
   # Knowledge base
-  - chapters/03-gdpr.Rmd
-  - chapters/04-personal-data.Rmd
+  - chapters/gdpr.Rmd
+  - chapters/personal-data.Rmd
   - chapters/legal-basis.Rmd
-  - chapters/05-privacy-by-design.Rmd
-  - chapters/06-privacy-and-security-assessment.Rmd
-  - chapters/07-legal_documents.Rmd
-  - chapters/08-data_storage.Rmd
-  - chapters/09-data_sharing.Rmd
-  - chapters/10-data_publishing.Rmd
+  - chapters/risk-assessment.Rmd
+  # How to
+  - chapters/privacy-by-design.Rmd
+  - chapters/data_storage.Rmd
+  - chapters/data_sharing.Rmd # combine with data_publishing.Rmd?
+  - chapters/data_publishing.Rmd
   # Techniques & tools
-  - chapters/11-pseudonymisation-anonymisation.Rmd
-  - chapters/12-statistical-privacy.Rmd
-  - chapters/13-secure-computing.Rmd
-  - chapters/14-other-techniques.Rmd
-  - chapters/15-tools-and-services.Rmd
+  - chapters/pseudonymisation-anonymisation.Rmd
+  - chapters/statistical-privacy.Rmd
+  - chapters/secure-computing.Rmd
+  - chapters/other-techniques.Rmd
+  - chapters/tools-and-services.Rmd
   # Use cases
-  - chapters/16-use_cases.Rmd
+  - chapters/use_cases.Rmd
   # Resources
-  - chapters/17-seeking-help.Rmd
-  - chapters/18-glossary.Rmd
-  - chapters/19-references.Rmd
+  - chapters/seeking-help.Rmd
+  - chapters/glossary.Rmd
+  - chapters/references.Rmd
 language:
   ui:
     chapter_name: ""
