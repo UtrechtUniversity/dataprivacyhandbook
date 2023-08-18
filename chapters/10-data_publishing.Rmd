@@ -150,20 +150,22 @@ For the **original owner**, there are multiple possibilities to rely on to share
 the data:
 
 <details><summary><b>Further processing for research purposes</b></summary>
-  <div>This is a derogation in the GDPR that enables personal data to be further 
-  processed (e.g., shared) for *research purposes*, without requiring a new legal 
-  basis, as long as sufficient safeguards are in place to protect the data 
+  <div><p>This is a derogation in the GDPR that enables personal data to be further 
+  processed (e.g., shared) for any *scientific research purposes*, without requiring 
+  a new legal basis, as long as sufficient safeguards are in place to protect the data 
   (e.g., pseudonymisation, access control, data transfer agreement, etc, 
   [art. 5(1)(b)](https://gdpr-info.eu/art-5-gdpr/){target="_blank"}, 
   [art. 89](https://gdpr-info.eu/art-89-gdpr/){target="_blank"}). If the data 
-  are not shared for research purposes, then this derogation does not apply. 
-  **Note**: There is ongoing discussion whether you can rely on this 
-  derogation if you used consent to collect the data: sharing that falls 
+  are not shared for scientific research purposes, then a new legal basis *is* 
+  required, except if the new purpose is *compatible* with the original purpose.</p> 
+  <p>**Note**: There is ongoing discussion whether you can rely on this 
+  derogation if you used consent to collect the data, especially if those data 
+  are of [special categories](#special-types-personal-data): sharing that falls 
   outside of the scope of the original consent, may not meet the 
   [specificity criterium](#consent-requirements) and may not be 
   [fair](#lawful-fair-and-transparent) to data subjects. You can rely on it, 
   however, if you used another legal basis to collect the data (e.g., public 
-  interest, legitimate interest).
+  interest, legitimate interest).</p>
   </div>
 </details>
 <details><summary><b>Consent for data sharing</b></summary>
@@ -224,14 +226,16 @@ should aim to protect the personal data also while sharing them. For example:
 
 - Do not share more data than needed; pseudonymise the data as much as possible.
 - Put in place an [agreement](#agreements) that forces recipients to treat the 
-data confidentially and that clarifies each party’s responsibilities. This is 
-especially important if the data will be shared outside the European Economic Area
-with countries that do not have an 
-[adequate level of data protection](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}.
+data confidentially and that clarifies each party’s responsibilities. 
 - Share the data safely, for example by giving access via a secure 
 [storage](#data-storage) environment, or [encrypting](#encryption) the data 
 before transferring them.
 - Always follow the restrictions that you communicated to data subjects.
+- If you will transfer personal data 
+[outside of the European Economic Area](#third-country-transfer) (EEA),
+consider which measures are needed, especially if the relevant country does not 
+have an 
+[adequate level of data protection](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}.
 
 ### 4. Make your data FAIR {#fair-personal-data}
 
