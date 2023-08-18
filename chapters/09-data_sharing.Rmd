@@ -158,8 +158,10 @@ from gaining access.
 
 ### When is a third-country transfer possible? {#third-country-transfer-when}
 
-The flowchart below indicates conditions under which you can share data 
-internationally. Note that they assume that you have taken sufficient safeguards 
+GDPR [Chapter V](https://gdpr-info.eu/chapter-5/){target="_blank"} specifies 
+all conditions under which an international transfer is allowed. The flowchart 
+below indicates conditions that are most likely to apply to scientific research. 
+Note that the flowchart assumes that you have taken sufficient safeguards 
 to protect the personal data. To determine the possibilities of sharing data 
 internationally in your project, we strongly advise you to consult with your 
 [privacy officer](#support). In some cases a 
@@ -167,7 +169,7 @@ internationally in your project, we strongly advise you to consult with your
 effort.
 
 <img src="img/international-data-transfer.png" alt="Flowchart about 
-international data transfers. If you are transfering data to countries 
+international data transfers. If you are transferring data to countries 
 within the European Economic Area, no additional measures are required. If 
 you however transfer data outside of the European Economic Area, we 
 recommend to contact your faculty privacy officer to take the proper 
