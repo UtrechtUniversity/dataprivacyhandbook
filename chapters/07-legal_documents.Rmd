@@ -54,8 +54,10 @@ When you use personal data from another source, you have to inform your data
 subjects within a month after obtaining their data 
 ([art. 14](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}), except if:
 
-- they have already been properly informed elsewhere
-- this would involve a disproportionate effort
+- they have already been properly informed elsewhere.
+- this would involve a disproportionate effort (e.g., considering the amount of 
+data subjects, how old the data are, and which protection measures have to be 
+applied, [rec. 62](https://gdpr-info.eu/recitals/no-62/){target="_blank"}).
 - this would seriously impair your processing purposes (e.g., if you cannot 
 answer your research question anymore, 
 [art. 14(5)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}). 
