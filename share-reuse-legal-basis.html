@@ -8,7 +8,7 @@
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Sharing personal data with a legal basis | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-07-14" />
+<meta name="author" content="Utrecht University | Last updated: 2023-08-18" />
 
 
-<meta name="date" content="2023-07-14" />
+<meta name="date" content="2023-08-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -323,8 +323,8 @@ gtag('consent', 'default', {
 </ul></li>
 <li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html"><i class="fa fa-check"></i>Data Transfer Impact Assessment</a>
 <ul>
-<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#third-country-transfer"><i class="fa fa-check"></i>What is a third-country transfer?</a></li>
-<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#dtia-goal-content"><i class="fa fa-check"></i>Goal and content of a DTA</a></li>
+<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#dtia-goal"><i class="fa fa-check"></i>Goal and content of a DTA</a></li>
+<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#dtia-content"><i class="fa fa-check"></i>Content of a DTIA</a></li>
 <li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#examples-and-templates-4"><i class="fa fa-check"></i>Examples and templates</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="processing-register.html"><a href="processing-register.html"><i class="fa fa-check"></i>Processing register</a></li>
@@ -350,7 +350,14 @@ gtag('consent', 'default', {
 <li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a></li>
+<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a>
+<ul>
+<li class="chapter" data-level="" data-path="third-country-transfer.html"><a href="third-country-transfer.html"><i class="fa fa-check"></i>Third-country transfers</a>
+<ul>
+<li class="chapter" data-level="" data-path="third-country-transfer.html"><a href="third-country-transfer.html#third-country-transfer-def"><i class="fa fa-check"></i>What is a third-country transfer?</a></li>
+<li class="chapter" data-level="" data-path="third-country-transfer.html"><a href="third-country-transfer.html#third-country-transfer-when"><i class="fa fa-check"></i>When is a third-country transfer possible?</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="data-sharing-reuse.html"><a href="data-sharing-reuse.html"><i class="fa fa-check"></i>Sharing data for reuse</a>
 <ul>
 <li class="chapter" data-level="" data-path="publish-anonymous-data.html"><a href="publish-anonymous-data.html"><i class="fa fa-check"></i>Sharing anonymised data</a></li>
@@ -589,20 +596,26 @@ the data:</p>
 <b>Further processing for research purposes</b>
 </summary>
 <div>
+<p>
 This is a derogation in the GDPR that enables personal data to be further
-processed (e.g., shared) for <em>research purposes</em>, without requiring a new legal
-basis, as long as sufficient safeguards are in place to protect the data
+processed (e.g., shared) for any <em>scientific research purposes</em>, without requiring
+a new legal basis, as long as sufficient safeguards are in place to protect the data
 (e.g., pseudonymisation, access control, data transfer agreement, etc,
 <a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">art. 5(1)(b)</a>,
 <a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>). If the data
-are not shared for research purposes, then this derogation does not apply.
+are not shared for scientific research purposes, then a new legal basis <em>is</em>
+required, except if the new purpose is <em>compatible</em> with the original purpose.
+</p>
+<p>
 <strong>Note</strong>: There is ongoing discussion whether you can rely on this
-derogation if you used consent to collect the data: sharing that falls
+derogation if you used consent to collect the data, especially if those data
+are of <a href="special-types-personal-data.html#special-types-personal-data">special categories</a>: sharing that falls
 outside of the scope of the original consent, may not meet the
 <a href="informed-consent-forms.html#consent-requirements">specificity criterium</a> and may not be
 <a href="gdpr-principles.html#lawful-fair-and-transparent">fair</a> to data subjects. You can rely on it,
 however, if you used another legal basis to collect the data (e.g., public
 interest, legitimate interest).
+</p>
 </div>
 </details>
 <details>
@@ -672,14 +685,16 @@ should aim to protect the personal data also while sharing them. For example:</p
 <ul>
 <li>Do not share more data than needed; pseudonymise the data as much as possible.</li>
 <li>Put in place an <a href="agreements.html#agreements">agreement</a> that forces recipients to treat the
-data confidentially and that clarifies each party’s responsibilities. This is
-especially important if the data will be shared outside the European Economic Area
-with countries that do not have an
-<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank">adequate level of data protection</a>.</li>
+data confidentially and that clarifies each party’s responsibilities.</li>
 <li>Share the data safely, for example by giving access via a secure
 <a href="data-storage.html#data-storage">storage</a> environment, or <a href="encryption.html#encryption">encrypting</a> the data
 before transferring them.</li>
 <li>Always follow the restrictions that you communicated to data subjects.</li>
+<li>If you will transfer personal data
+<a href="third-country-transfer.html#third-country-transfer">outside of the European Economic Area</a> (EEA),
+consider which measures are needed, especially if the relevant country does not
+have an
+<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank">adequate level of data protection</a>.</li>
 </ul>
 </div>
 <div id="fair-personal-data" class="section level3 hasAnchor">

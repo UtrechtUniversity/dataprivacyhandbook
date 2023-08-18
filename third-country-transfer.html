@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Disclaimer | Data Privacy Handbook</title>
+  <title>Third-country transfers | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Disclaimer | Data Privacy Handbook" />
+  <meta property="og:title" content="Third-country transfers | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,7 +19,7 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Disclaimer | Data Privacy Handbook" />
+  <meta name="twitter:title" content="Third-country transfers | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
@@ -36,8 +36,8 @@ Support.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="how-to-use-this-handbook.html"/>
-<link rel="next" href="privacy-policy.html"/>
+<link rel="prev" href="data-sharing-collaboration.html"/>
+<link rel="next" href="data-sharing-reuse.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -504,39 +504,69 @@ gtag('consent', 'default', {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="disclaimer" class="section level2 hasAnchor">
-<h2>Disclaimer<a href="disclaimer.html#disclaimer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The content presented in the Data Privacy Handbook has been carefully curated by
-Research Data Management Support, in collaboration with privacy officers and
-data experts of Utrecht University.</p>
-<p>The Data Privacy Handbook is a ‘living’ book that is continually being written,
-updated and reviewed. Its contents can therefore change, or become outdated or
-redundant. Hence, the information presented is provided “as is”, <strong>without
-guarantees of accuracy or completeness</strong>.</p>
-<p>As scientific research may differ depending on the discipline, topic, and
-context, measures needed or taken to ensure GDPR-compliance will vary across
-research projects. The authors can therefore <strong>not be held responsible, nor
-accountable</strong> for any negative consequences arising from interpretation and use
-of the content of the Data Privacy Handbook.</p>
-<p>The Handbook does not necessarily
-constitute a mandatory directive. <strong>For the most up-to-date and official/
-authoritative information, please refer to the
-<a href="https://www.uu.nl/en/research/research-data-management" target="_blank">university website</a>
-and <a href="https://intranet.uu.nl/en/knowledge-base/privacy-at-uu" target="_blank">intranet</a>,
-to which this Handbook is a hands-on, practical supplement</strong>. Moreover, before
-implementing the guidance laid out in this Handbook, always seek the advice of
-your privacy officer or RDM Support to confirm the suitability of any proposed
-solution to your project.</p>
-<p>Throughout the Data Privacy Handbook, links to external webpages may be provided
-for additional information or assistance. The authors of the Data Privacy
-Handbook are <strong>not responsible for the content of any such linked webpages</strong>, nor
-is the content of external webpages necessarily endorsed by Utrecht University.</p>
-<p>Utrecht University is committed to sharing knowledge in line with the principles
-of open science and therefore welcomes readers from outside of the organisation.
-However, the contents of the Data Privacy Handbook may not be in line with readers’
-institutions’ policies or views. For more authoritative information, these
-readers should refer to resources from their own institutions.</p>
+<div id="third-country-transfer" class="section level2 hasAnchor">
+<h2>Third-country transfers<a href="third-country-transfer.html#third-country-transfer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="keywords">
+<p>On this page: data transfer, third-country transfer, sharing outside EU, EEA<br />
+Date of last review: 2023-08-18</p>
 </div>
+<p>When you want to share personal data with parties who are located outside of the
+European Economic Area (EEA), you need to take extra steps to make sure that
+the transfer is GDPR-compliant, such as:</p>
+<ul>
+<li>Assessing whether you can transfer the data at all using a
+<a href="dtia.html#dtia">Data Transfer Impact Assessment</a>.</li>
+<li>Taking additional protective measures, such as
+<a href="agreements.html#scc">Standard Contractual Clauses</a>.</li>
+<li>Explicitly <a href="privacy-notices.html#privacy-notices">informing data subjects</a> about the (possible)
+third-country transfer.</li>
+<li>… And possibly more.</li>
+</ul>
+<div id="third-country-transfer-def" class="section level3 hasAnchor">
+<h3>What is a third-country transfer?<a href="third-country-transfer.html#third-country-transfer-def" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In legal terms, a transfer exists when personal data controlled by one party
+are accessible to another, irrespective of whether the data are physically sent
+to that party. An international/third-country transfer exists when the party
+that can potentially gain access is based in a country outside the European
+Economic Area (EEA) which does not have an
+<a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank">adequacy decision</a>
+from the European Commission.</p>
+<div class="fyi">
+<p>There is a third-country transfer if personal data are stored at the servers of
+a non-EEA party, and when a cloud provider is used that has servers both in-
+and outside of the EEA.</p>
+<p>There is <strong>no</strong> third-country transfer in the following cases:</p>
+<ul>
+<li>Personal data are stored at the university premises in the EEA, and are
+accessed from outside of the EEA by a researcher from that EEA university - this
+is not a transfer, provided that safeguards are in place to prevent other parties
+from gaining access.</li>
+<li>The party with whom the data are shared is already subject to the GDPR
+(e.g., the party is situated in Germany or Italy).</li>
+</ul>
+</div>
+</div>
+<div id="third-country-transfer-when" class="section level3 hasAnchor">
+<h3>When is a third-country transfer possible?<a href="third-country-transfer.html#third-country-transfer-when" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GDPR <a href="https://gdpr-info.eu/chapter-5/" target="_blank">Chapter V</a> specifies
+all conditions under which an international transfer is allowed. The flowchart
+below indicates conditions that are most likely to apply to scientific research.
+Note that the flowchart assumes that you have taken sufficient safeguards
+to protect the personal data. To determine the possibilities of sharing data
+internationally in your project, we strongly advise you to consult with your
+<a href="seeking-help.html#support">privacy officer</a>. In some cases a
+<a href="dtia.html#dtia">Data Transfer Impact Assessment</a> may be required, which can take some
+effort.</p>
+<p><img src="img/international-data-transfer.png" alt="Flowchart about 
+international data transfers. If you are transferring data to countries 
+within the European Economic Area, no additional measures are required. If 
+you however transfer data outside of the European Economic Area, we 
+recommend to contact your faculty privacy officer to take the proper 
+measures."></p>
+
+</div>
+</div>
+<!-- </div> -->
 <div class = "footer">
 <footer>
   <hr>
@@ -578,8 +608,8 @@ readers should refer to resources from their own institutions.</p>
           </div>
         </div>
       </div>
-<a href="how-to-use-this-handbook.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="privacy-policy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-sharing-collaboration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-sharing-reuse.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -610,7 +640,7 @@ gitbook.start({
 "size": 1.5
 },
 "edit": {
-"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/index.Rmd",
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/09-data_sharing.Rmd",
 "text": "Suggest edits"
 },
 "history": {

@@ -57,12 +57,13 @@ https://rstudio4edu.github.io/rstudio4edu-book/book-fancy.html#book-fancy */
 
 /* Body Links */
 .book .book-body .page-wrapper .page-inner section.normal a {
-  color: #C00A35;
+  color: black; /* used to be;w #C00A35*/
+  text-decoration: underline;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a:hover {
-color: #890726; /* darker color when hovering */
-/* text-decoration: none; */ /* Removes underline when hovering*/
+color: #C00A35; /*color when hovering, used to be: #890726 */
+text-decoration: underline; /* Keep underline when hovering*/
 }
 
 /* -----------Sidebar div tips------------- */
