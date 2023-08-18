@@ -8,7 +8,7 @@
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Privacy FAQs | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
@@ -26,7 +26,7 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-07-14" />
+<meta name="author" content="Utrecht University | Last updated: 2023-08-18" />
 
 
 
@@ -182,6 +182,10 @@ gtag('consent', 'default', {
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -318,8 +322,8 @@ gtag('consent', 'default', {
 </ul></li>
 <li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html"><i class="fa fa-check"></i>Data Transfer Impact Assessment</a>
 <ul>
-<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#third-country-transfer"><i class="fa fa-check"></i>What is a third-country transfer?</a></li>
-<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#dtia-goal-content"><i class="fa fa-check"></i>Goal and content of a DTA</a></li>
+<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#dtia-goal"><i class="fa fa-check"></i>Goal and content of a DTA</a></li>
+<li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#dtia-content"><i class="fa fa-check"></i>Content of a DTIA</a></li>
 <li class="chapter" data-level="" data-path="dtia.html"><a href="dtia.html#examples-and-templates-4"><i class="fa fa-check"></i>Examples and templates</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="processing-register.html"><a href="processing-register.html"><i class="fa fa-check"></i>Processing register</a></li>
@@ -345,7 +349,14 @@ gtag('consent', 'default', {
 <li class="chapter" data-level="" data-path="data-storage-duration.html"><a href="data-storage-duration.html#deleting-personal-data"><i class="fa fa-check"></i>Deleting personal data</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a></li>
+<li class="chapter" data-level="" data-path="data-sharing-collaboration.html"><a href="data-sharing-collaboration.html"><i class="fa fa-check"></i>Sharing data with collaborators</a>
+<ul>
+<li class="chapter" data-level="" data-path="third-country-transfer.html"><a href="third-country-transfer.html"><i class="fa fa-check"></i>Third-country transfers</a>
+<ul>
+<li class="chapter" data-level="" data-path="third-country-transfer.html"><a href="third-country-transfer.html#third-country-transfer-def"><i class="fa fa-check"></i>What is a third-country transfer?</a></li>
+<li class="chapter" data-level="" data-path="third-country-transfer.html"><a href="third-country-transfer.html#third-country-transfer-when"><i class="fa fa-check"></i>When is a third-country transfer possible?</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="data-sharing-reuse.html"><a href="data-sharing-reuse.html"><i class="fa fa-check"></i>Sharing data for reuse</a>
 <ul>
 <li class="chapter" data-level="" data-path="publish-anonymous-data.html"><a href="publish-anonymous-data.html"><i class="fa fa-check"></i>Sharing anonymised data</a></li>
@@ -503,23 +514,6 @@ personal data in research. Click a question you have to read its answer.</p>
 <h3>General questions<a href="faq.html#general" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details>
 <summary>
-<strong>When should I be dealing with privacy in my project?</strong>
-</summary>
-<div>
-You should think about privacy:
-<ul>
-<li>
-as soon as you are processing personal data. Processing means anything you do with personal data, e.g., collecting, analysing, sharing, storing, etc. The definition of personal data is explained in the chapter <a href="personal-data.html#personal-data">What are personal data?</a>.
-</li>
-<li>
-during the earliest stages of your project. This principle is called “<a href="privacy-by-design.html#privacy-by-design">privacy by design</a>”. It is easier and more effective to address any privacy issues at the design phase of your project rather than having to change your plans later on due to privacy concerns.
-</li>
-</ul>
-</div>
-<br>
-</details>
-<details>
-<summary>
 <strong>When are data truly anonymous?</strong>
 </summary>
 <div>
@@ -527,483 +521,46 @@ You can read all about this in the chapters <a href="personal-data.html#personal
 </div>
 <br>
 </details>
-<details>
-<summary>
-<strong>What should I consider when handling personal data?</strong>
-</summary>
-<div>
-It is best to conduct a <a href="privacy-scan.html#privacy-scan">privacy scan</a> to check if you work with personal data. The below figure summarises what you need to describe, determine and do as part of a privacy scan: <img src="img/privacyscan_infograph.png" alt="You should describe your purpose (what will you use the personal data for?), your data subjects (who are they, what is your relationship with them), which personal data you will use, what you will do with the sensitive data (e.g., collect, store, analyse, share), and whether you will share any personal data with other parties. You should determine which legal basis you will use (e.g., consent, public interest), what privacy risks there are in your project and how you will mitigate them, whether you need a Data Protection Impact Assessment (DPIA), and how data subjects will be able to exercise their rights. Finally, you shoud act: inform data subjects, apply organisational and technical measures to protect the data, and maintain privacy-related documentation as long as you process personal data." />
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>My data were collected prior to the GDPR, what rules do I need to follow?</strong>
-</summary>
-<div>
-The GDPR applies to all personal data, including those collected prior to the GDPR (May 2018). Therefore, there is really no difference between how personal data should be handled before or after the advent of the GDPR.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>My data were collected outside of the EU, does the GDPR apply to them?</strong>
-</summary>
-<div>
-Yes, as long as personal data are being processed, and the <a href="definitions.html#definitions">data controller, data processor, or data subject</a> reside(s) in the European Economic Area, the <a href="what-is-the-gdpr.html#gdpr-scope">GDPR applies</a>. 
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How sensitive are my data?</strong>
-</summary>
-<div>
-Personal data can differ in sensitivity, depending on the type of data (e.g., <a href="special-types-personal-data.html#special-types-personal-data">sensitive personal data</a>), of whom the data were collected (e.g., healthy adults, children, patients, elderly, etc.) and on which scale. <a href="data-classification.html#data-classification">Data classification</a> and a <a href="dpia.html#dpia">Data Protection Impact Assessment</a> are useful tools to assess how sensitive the data are.
-</div>
-<br>
-</details>
 </div>
 <div id="procedures" class="section level3 hasAnchor">
 <h3>Procedures and responsibilities<a href="faq.html#procedures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>Who is responsible for correctly handling personal data?</strong>
-</summary>
-<div>
-Legally, the <a href="definitions.html#definitions">controller</a> of the personal data is responsible, i.e., the people or organisation responsible for the project activities. If you are an employee at Utrecht University (UU), the UU is legally the controller. The UU however delegates this responsibility to the appropriate employee who is actually in charge of determining why and how personal data are handled. In a research context, this is usually the researcher on the project (e.g., PhD candidate, principal investigator).
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>What does the procedure look like for researchers at Utrecht University?</strong>
-</summary>
-<div>
-All researchers at UU have to write a <a href="https://www.uu.nl/en/research/research-data-management/guides/data-management-planning" target="_blank">Data Management Plan</a>. Besides that, many faculties  require that a <a href="privacy-scan.html#privacy-scan">privacy scan</a> is done and ethical approval is obtained. Preferably, a Data Management Plan and privacy scan (which has to sometimes be extended to a <a href="dpia.html#dpia">Data Protection Impact Assessment</a>) are done (and preferably marked as positive by the relevant data steward/privacy officer) before the ethical review takes place. Once accepted by the ethical committee, you can then start your research project.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How long will the planning process  of my research take?</strong>
-</summary>
-<div>
-This differs per faculty, but you should count at least 1 month, if not more, to complete all planning activities. In terms of administrative work, you need to reserve time for:
-<ul>
-<li>
-writing a Data Management Plan and having it reviewed (a few days)
-</li>
-<li>
-filling out the <a href="privacy-scan.html#privacy-scan">privacy scan</a> and consulting with the privacy officer (a few days). If a DPIA needs to be conducted, this will take more time because the Data Protection Officer also needs to be consulted.
-</li>
-<li>
-creating information for data subjects and potentially a consent form.
-</li>
-<li>
-going through ethical review: it can take up to 1 month before a first decision is taken by some faculty review boards, or longer for the Medical-Ethical Review Board.
-</li>
-<li>
-in some projects, setting up an agreement.
-</li>
-</ul>
-In general, designing your research with correctly processing personal data in mind will cost you less effort In the long run: Start as early as possible!
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Doesn’t the ethical committee also look at privacy?</strong>
-</summary>
-<div>
-Partly, although this differs per UU faculty. In most faculties, there is a collaboration between privacy and ethics. For example, at the Faculties of Social and Behavioural Sciences, the Humanities, and Geosciences, privacy is included in the ethical application, but the privacy aspect of it is outsourced to the faculty privacy officer. For you as a researcher, it is wise to first complete a draft <a href="privacy-scan.html#privacy-scan">privacy scan</a>, and consult with the faculty privacy officer and only then do the ethical application, so you have already thought about the privacy aspect before the ethical review process starts.
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="consent" class="section level3 hasAnchor">
 <h3>Informed consent<a href="faq.html#consent" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>When is parental consent needed?</strong>
-</summary>
-<div>
-The GDPR dictates that at least one legal guardian provide consent if you process personal data from children under 16 years old. Note that for medical data and in some faculties, there can be additional requirements, such as obtaining written consent from both parents, and also from the child themselves if the child is between 12 and 15 years old.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can consent be digital?</strong>
-</summary>
-<div>
-Yes, as long as you can <a href="informed-consent-forms.html#forms-consent">demonstrate</a> that consent was obtained, it is valid according to the GDPR. Consent can for example consist of participants ticking a checkbox in a survey tool after reading or watching information about the research. The checkbox should be empty at the start of the survey and not already come “pre-ticked”: consent must be actively given. Note that for <a href="https://www.ccmo.nl/onderzoekers/wet-en-regelgeving-voor-medisch-wetenschappelijk-onderzoek/de-wmo-in-een-notendop/toestemming/elektronische-toestemming" target="_blank">medical data</a>, consent may have to be provided in writing: always check with your Ethical Review Board.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Where can I find a template consent form?   </strong>
-</summary>
-<div>
-You can use the <a href="https://www.uu.nl/sites/default/files/RDM_Support_Template_Information_letter.pdf" target="_blank">minimal list of requirements</a> for an information letter and read through the guidance on <a href="informed-consent-forms.html#informed-consent-forms">informed consent</a> and <a href="privacy-notices.html#privacy-notices">information to data subjects</a>. Please note that some <a href="https://intranet.uu.nl/en/knowledgebase/ethics-assessment" target="_blank">Ethical Review Boards</a> have specific templates that you should use.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How to balance being complete vs. being intelligible in the information to participants?</strong>
-</summary>
-<div>
-The GDPR does not require you to provide all details in the same way to participants. For example, it allows you to layer information, and it requires that you always provide the information in a format that is intelligible for your target audience, which does not necessarily have to be in text. Please refer to the section on <a href="privacy-notices.html#privacy-notices">Information to data subjects</a> for more information on this. Please note that some Ethical Review Boards have specific requirements on how information should be provided to participants, which have to do with ethical and legal aspects other than the GDPR.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Where, how and for how long should I store my consent forms?</strong>
-</summary>
-<div>
-Consent forms have to be stored securely (access-controlled) and separately from the research data, for as long as the research data contain personal data. This can be in digital or physical (e.g., paper) form. Once the personal data are deleted or fully anonymised, the consent forms should be deleted as well. An empty consent form can be stored for longer, for example to check the phrases about re-use. Read more about this in the <a href="data-storage.html#data-storage">Data storage</a> chapter.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>A participant wants to withdraw their consent. Can I continue to use their data afterwards?</strong>
-</summary>
-<div>
-No, once a participant has withdrawn consent, you are obliged to remove any of their data that is under your control and cease any further use of their data from that point onwards. Any processing that occurred <em>prior</em> to withdrawal is nevertheless still legal. For example, if the data were published and made publicly available prior to their withdrawal, you are not obliged to take down the entire dataset and seek all individuals that may have downloaded the data subject’s data. Another example is if you already analysed the data (but have not yet published the results). In that case, the data have to be deleted, but you do not necessarily need to re-do the analysis. The only important thing is that the data then no longer support the analysis, so for research integrity reasons, you may want to re-do the analysis anyway.<br><br>Additionally, if you cannot find the participant’s data in your dataset because they are deidentified too much, then you are exempt from removing them, unless participants can provide you with information to enable their re-identification.
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="legal" class="section level3 hasAnchor">
 <h3>Legal questions<a href="faq.html#legal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>What if I cannot formulate a specific research question in advance?</strong>
-</summary>
-<div>
-It is not always possible in research to be very specific about what the personal data will be used for in the future. In some cases, you can therefore use the concept of “broad consent”, where you continuously inform data subjects and enable them to exercise their rights. This is described <a href="informed-consent-forms.html#broad-consent">in more detail here</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>I will move to another institution, can I take my research data that contains personal data with me?</strong>
-</summary>
-<div>
-Moving data to another institution constitutes a new way of “processing” data and implies that there will be a new (additional) controller of the personal data. This means that you need to take some additional steps, such as ensuring that data subjects are informed about the move, the purpose of the transfer is compatible with the original purpose(s) for data use, both institutions sign an agreement on data protection, use and ownership of the data, etc. What is possible depends largely on the context of your research and the type of data you have: contact your <a href="https://intranet.uu.nl/en/knowledgebase/privacyofficers" target="_blank">faculty privacy officer</a> for assistance.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>When do I have to perform a Data Protection Impact Assessment?</strong>
-</summary>
-<div>
-If there is a possibility for a <a href="high-risk-processing.html#high-risk-processing">high risk of damages</a> to data subjects, a DPIA is mandatory. This can for example be the case when you observe people in public spaces or process sensitive personal data on a large scale. Note that correctly performing a DPIA can take some time. Contact your faculty privacy officer if you suspect that you may need a DPIA.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Do I need an agreement?</strong>
-</summary>
-<div>
-An agreement is usually needed when someone outside of your institution accesses (personal) data that you control. Please refer to the <a href="agreements.html#agreements">Agreements section</a> to assess whether you need an agreement, and if so, which type.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>What is the difference between a Data Transfer Agreement and a Data Processing Agreement?</strong>
-</summary>
-<div>
-A data transfer agreement is needed when (personal) data are transferred from one controller to another, and is also recommended to use when data are transferred between departments of a single controller, to delineate the agreed upon responsibilities. For example, in research is it used often when data are shared with other researchers for reuse. A data processing agreement is needed when personal data are transferred from a controller to a processor. For example, it is needed to ensure that an external survey tool protects the university’s personal data sufficiently and does not use it for their own purposes, only to provide their survey services. You can read more about <a href="agreements.html#agreements">these agreements here</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Am I a processor as employee of my university?</strong>
-</summary>
-<div>
-No. As an employee you are still determining your own why (research question) and how (methods) of personal data processing. This makes you a controller, acting as an “agent” of the legal controller (your university). Read more on the difference between processors and controllers <a href="definitions.html#definitions">on the definitions page</a>.
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="storage" class="section level3 hasAnchor">
 <h3>Storing personal data<a href="faq.html#storage" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>Where should I store physical personal data?</strong>
-</summary>
-<div>
-Physical personal data should be stored in a locked area that only a select group of people has access to. The exact location will depend on the type of data (e.g., consent forms, filled out questionnaires, biomedical samples, etc.), and where you work. If possible, we recommend digitising and then destroying any paper materials in order to have the data in a secure and backed-up location.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Where to store participants’ contact information?</strong>
-</summary>
-<div>
-Similarly to informed consent forms, you should store contact information on a different location than the research data and well-protected (strict access control, encryption, etc.). For example, store the research data on Yoda, and the contact information in a controlled OneDrive or ResearchDrive folder. Delete the contact information when you do not longer need them (e.g., after the research project has ended).
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="sharing" class="section level3 hasAnchor">
 <h3>Sharing, publishing and reusing personal data<a href="faq.html#sharing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>Can I publish personal data?</strong>
-</summary>
-<div>
-This is not only a privacy issue, but also an ethical one. You can in principle ask consent to publish personal data (either publicly or under restricted access), or in some cases rely on public interest to do so. Because the data will remain protected by the GDPR, anyone (re)using the data will have to abide by the GDPR as well (the requirements travel with the personal data). However, even if you have a legal basis to publish personal data, it still may not always be ethical to do so. For that reason, we recommend always obtaining ethical approval, including when you want to publish personal data. You can read more about sharing and publishing personal data for reuse in the <a href="data-sharing-reuse.html#data-sharing-reuse">Sharing data for reuse chapter</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How can I share personal data with collaborators?</strong>
-</summary>
-<div>
-If the collaborator resides outside of your institute, but within the European Economic Area (EEA) or an <a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank">“adequate” country</a>, it is possible to share personal data with them, provided that data subjects are informed, there is a (joint controllers) <a href="agreements.html#agreements">agreement</a> with them, and other safeguards are in place (e.g., pseudonymisation). Please contact your privacy officer if the collaborator is located outside the EEA in a country without an adequate level of data protection.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How can I share data with a third party outside of the EEA?</strong>
-</summary>
-<div>
-Personal data can be shared outside of the EEA if one of the following applies:
-<ul>
-<li>
-Participants have given their explicit consent after having been well informed of the risks.
-</li>
-<li>
-The transfer is necessary for important reasons of public interest.
-</li>
-<li>
-The data are transferred to a non-EEA country that has been deemed <a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank">adequate by the European Commission</a>.
-</li>
-</ul>
-<br>The above apply only to “occasional” transfers. For frequent transfers, <a href="agreements.html#scc">Standard Contractual Clauses</a> should be drafted, although this requires a greater commitment from the third parties, and may require more in-depth legal assistance to establish.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>What should I do if some participants do not consent to sharing their data?</strong>
-</summary>
-<div>
-This depends on the identifiability of the data and the legal basis: if it is still possible to identify individuals, then data subjects can withdraw their consent, and you won’t be able to share their data for reuse. However, if the data are altered in such a way that you can no longer identify individuals within the dataset, then you can share their data for reuse. Of note, it is not always necessary to ask people their consent for data reuse for scientific purposes - consult your privacy officer. You can read more about this in the <a href="data-sharing-reuse.html#data-sharing-reuse">Sharing data for reuse</a> chapter.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can I reuse medical data for research purposes?</strong>
-</summary>
-<div>
-You likely can. The GDPR has a derogation that specifies that secondary use for research is “not incompatible with the initial purposes” (<a href="https://gdpr-info.eu/art-5-gdpr/" target="_blank">art. 5(1)(b)</a>), meaning that it is allowed to reuse data for research, provided that you protect the data sufficiently. As with any research project, we recommend to conduct a <a href="privacy-scan.html#privacy-scan">privacy scan</a> to assess the legality of your project, and to obtain ethical approval to assess the ethical aspects of your project.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can I use personal data that are already published by other researchers?</strong>
-</summary>
-<div>
-You generally can, depending on the license or terms of use that the dataset has, and assuming that the researcher who published the data had a legal basis to do so. In general, it is possible to reuse personal data for scientific research, as long as appropriate safeguards are in place (<a href="https://gdpr-info.eu/art-89-gdpr/" target="_blank">art. 89</a>).
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can I reuse contact details for a new study?</strong>
-</summary>
-<div>
-This depends on how data subjects were informed about potential reuse of their contact details: can they expect to be contacted again and for this purpose? Note that you should have obtained access to the contact details legitimately too: are you supposed to have access to their contact details in the first place? If you are uncertain about this, ask your <a href="seeking-help.html#support">privacy officer</a> for help.
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="practical-questions" class="section level3 hasAnchor">
 <h3>Practical questions<a href="faq.html#practical-questions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>I am using hardware to collect personal data. What should I take into account?</strong>
-</summary>
-<div>
-There are many security aspects to consider when using hardware (e.g., tablets, cameras, phones, etc.), such as whether and where any personal data is recorded and whether the device is approved by the university, see <a href="https://students.uu.nl/en/practical-information/it-facilities/information-security-at-the-uu" target="_blank">this link</a> for more information. Make sure that you transfer the data to secure storage as soon as possible and consider measures (such as encryption) that ensure that data are protected if the hardware is lost or stolen. When you use video recording hardware, be mindful of what is recorded, also in the background. For example, be aware when filming around open laptops, documents or vulnerable people.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>I want to combine data from multiple sources. How can I do so securely?</strong>
-</summary>
-<div>
-There are multiple factors to consider, depending on the type of research, the ownership of the data, involved parties, etc. As a rule of thumb, practice data minimisation, only keep the fields or variables you need. Be mindful of data ownership: if someone else owns the data, keep that dataset separate. For more information and tailored advice, contact <a href="https://www.uu.nl/en/research/research-data-management/contact-us" target="_blank">RDM Support</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How to generate suitable pseudonyms?</strong>
-</summary>
-<div>
-A pseudonym can be a random number, cryptographic hash function, text string, etc. It is important that the pseudonym is not meaningful with respect to the data subjects: a random (unique) number or string is better than a code that contains parts of personal information, because the latter may reveal details about data subjects.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How to pseudonymise qualitative data?</strong>
-</summary>
-<div>
-Textual data is often redacted (either manually or using a <a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification" target="_blank">tool</a> so that identifiable information is removed or replaced with a placeholder text. There are now also tools for masking or blurring video data and distorting audio. Note that sometimes it is not possible to anonymise or pseudonymise qualitative data, because you may lose too much valuable information, or because the data are just too revealing (e.g., face, voice, gestures, posture in video data, language use in audio data). In that case, other measures like access control, safe storage, and encryption may be more suitable.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>I am analysing my data in a git repository to ensure reproducibility. How can I make sure I do not accidentally push the data to GitHub?</strong>
-</summary>
-<div>
-Before you put your data in your git repository, place a line in the .gitignore file that prevents tracking the data. This way, when pushed to GitHub, the data will not be pushed alongside the other files in the repository - only the folder name will be visible. <br><br>Please note that if the data were tracked by git before, adding a line to your .gitignore will not prevent the data from being tracked. In this case, it is best to create a new git repository where you add a .gitignore file from the start, and delete all old versions from GitHub if there were any. If you delete the data, add the line to the .gitignore file, and then re-add the dataset, the tracking history from before the .gitignore will still exist and be pushed to GitHub. <br><br>Sidenote: it is possible to override the .gitignore file by force. This will likely not happen accidentally, but it is important to realise that the .gitignore file is not iron clad. You can read <a href="https://the-turing-way.netlify.app/project-design/sdpw/pd-sdp-sensitive-files.html" target="_blank">more on the gitignore here</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How to securely send participant data to participants?</strong>
-</summary>
-<div>
-In the same protected way as when you would send personal data to fellow researchers. Researchers at Utrecht University can for example use <a href="https://filesender.surf.nl/" target="_blank">SURF filesender</a> with encryption or share a OneDrive or Research Drive file. Be sure not to share any data from other participants or other researchers!
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>How to work responsibly with social media data?</strong>
-</summary>
-<div>
-See <a href="https://doi.org/10.33540/1874/406645" target="_blank">these guidelines</a> (in Dutch) about working with social media data. Every social media platform has different terms and conditions. Read these to see what you are, and are not, allowed to do with the data published on the platform you wish to research.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Where can I find relevant or approved tools?</strong>
-</summary>
-<div>
-Researchers at Utrecht University can find tools via <a href="https://tools.uu.nl" class="uri">https://tools.uu.nl</a> and the <a href="https://intranet.uu.nl/en/knowledgebase/software-at-work-teaching-rooms-and-home" target="_blank">intranet</a>. We also curated an overview of several tools to handle personal data in <a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/" target="_blank">this GitHub repository</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Where can I find privacy-related templates and examples for research?</strong>
-</summary>
-<div>
-Please refer to the <a href="legal-documents.html#legal-documents">Documents and agreements chapter</a> or the <a href="https://www.uu.nl/rdm" target="_blank">RDM website</a>. For others, please contact your <a href="https://intranet.uu.nl/en/knowledgebase/privacyofficers" target="_blank">privacy officer</a> and/or your <a href="https://intranet.uu.nl/en/knowledgebase/ethics-assessment" target="_blank">Ethical Review Board</a>.
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="students" class="section level3 hasAnchor">
 <h3>Students and student data<a href="faq.html#students" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>Can I reuse educational data (e.g., grades, course evaluations) for my research?</strong>
-</summary>
-<div>
-It is possible, but its compliance would have to be documented in a <a href="privacy-scan.html#privacy-scan">privacy scan</a> to explain why this further processing for scientific purposes is compliant with the GDPR. Please refer to the <a href="reuse-education-data.html#reuse-education-data">use case about this topic</a> for an example.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can I share my research data containing personal data with my students?</strong>
-</summary>
-<div>
-Preferably not. Especially in a classroom setting, students should work on anonymised data as much as possible. For thesis students, only share personal data with them as strictly necessary and make sure that the students know how to safely handle the personal data. Additionally, data subjects should be informed that these students will handle their data.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can I (re)use personal data collected by my students?</strong>
-</summary>
-<div>
-You should check what information was given to data subjects to see whether it is possible to reuse the data. In general, if data are deidentified and are going to be used for research, it is possible to make this data reuse legitimate - a <a href="privacy-scan.html#privacy-scan">privacy scan</a> may be able to demonstrate this.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>When students collect personal data, who is responsible for correct handling of those data? </strong>
-</summary>
-<div>
-The supervisor is the main person responsible, but students are also co-responsible, especially if they are taking decisions on the data themselves. Students need to comply with their respective obligations and responsibilities to ensure data is kept safe and protected.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Can a student take research data containing personal data with them to publish about them later?</strong>
-</summary>
-<div>
-It depends on why this is considered necessary, if data subjects have been informed, if data minimisation and deidentification are applied, etc. If students take data with them, they will probably end up being stored on a free cloud solution such as Google Drive or Dropbox. Make sure your data subjects are informed about this beforehand and realise that obtaining consent will be more difficult. A <a href="privacy-scan.html#privacy-scan">privacy scan</a> should document why this is compliant with the GDPR.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>I am a student, where can I store my data?</strong>
-</summary>
-<div>
-If you are student who will be collecting personal data for research, it is the responsibility of your supervisor or course coordinator to supply you with access to an approved storage solution. Please do not use a personal device or commercial cloud solutions like Dropbox or Google Drive to store research data containing personal data. Any “free” commercial solution will scrape and analyse what you store and thus your data are not safe there.
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 </div>
 <div id="finding-support" class="section level3 hasAnchor">
 <h3>Finding support<a href="faq.html#finding-support" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<details>
-<summary>
-<strong>Where can I learn more?</strong>
-</summary>
-<div>
-Please see the <a href="seeking-help.html#seeking-help">Seeking help</a> page for more information and contact persons for all your questions about privacy, research data management and security.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>Who is the Data Protection Officer (DPO)?</strong>
-</summary>
-<div>
-The Data Protection Officer (Dutch: Functionaris Gegevensbescherming, FG) oversees an organisation’s compliance to the General Data Protection Regulation (GDPR). In research, the DPO is sometimes involved in a <a href="dpia.html#dpia">Data Protection Impact Assessment</a> and in some cases in possible data breaches. If you work at Utrecht University, you can read more about the <a href="https://intranet.uu.nl/en/knowledgebase/data-protection-officer" target="_blank">DPO’s role here</a>.
-</div>
-<br>
-</details>
-<details>
-<summary>
-<strong>I have a potential data breach, what should I do?</strong>
-</summary>
-<div>
-If you work or study at Utrecht University, please report this as soon as possible to the <a href="https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert" target="_blank">Computer Emergency Response Team</a> (CERT).
-</div>
-<br>
-</details>
+<pre><code>## Error in row :  1 
+## Error in row :  0</code></pre>
 
 </div>
 </div>
