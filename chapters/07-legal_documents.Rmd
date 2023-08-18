@@ -54,8 +54,10 @@ When you use personal data from another source, you have to inform your data
 subjects within a month after obtaining their data 
 ([art. 14](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}), except if:
 
-- they have already been properly informed elsewhere
-- this would involve a disproportionate effort
+- they have already been properly informed elsewhere.
+- this would involve a disproportionate effort (e.g., considering the amount of 
+data subjects, how old the data are, and which protection measures have to be 
+applied, [rec. 62](https://gdpr-info.eu/recitals/no-62/){target="_blank"}).
 - this would seriously impair your processing purposes (e.g., if you cannot 
 answer your research question anymore, 
 [art. 14(5)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}). 
@@ -118,8 +120,8 @@ using words like "may", "some", "often" and write active and short sentences.
 Tip: try these 
 [writing tips](https://www.researchplatform-dorp.nl/wp-content/uploads/20220329-Handleiding-PIF-beperkte_gezondheidsvaardigheden.pdf){target="_blank"}, 
 this [language tester](https://ishetb1.nl/){target="_blank"}, or use this 
-[simplified information sheet](https://www.pharos.nl/kennisbank/eenvoudige-en-begrijpelijke-onderzoeksformulieren-patientinformatieformulier-pif/){target="_blank"}
-(all in Dutch).
+[simplified information sheet](https://www.pharos.nl/kennisbank/eenvoudige-en-begrijpelijke-onderzoeksformulieren-patientinformatieformulier-pif/){target="_blank"}. Or take a look at some good 
+examples in terms of [language](https://www.eur.nl/en/media/2022-12-221208a2b1toestemmingethiekalgemeenbelangprivacycasus){target="_blank"} and [formatting](https://www.eur.nl/en/media/2023-05-geanonimiseerd-1-informatie-vragenlijstonderzoek){target="_blank"} (all in Dutch).
 
 - **Easily accessible**<br>
 Data subjects should be able to find the information easily. For example, publish 
@@ -264,7 +266,7 @@ click to expand):
      data subjects for future research projects.</li>
      <li>Separate consent is needed to use personal data to answer a research question 
      vs. to link different sources of data together to do so 
-     ([Gedragscode Gezondheidsonderzoek, 2022](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}.</li>
+     ([Code of Conduct Dutch Health Research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}.</li>
      <li>Separate consent is recommended to make the personal data 
      [available for reuse](#data-sharing-reuse) (describe the 
      conditions under which this will be allowed).</li>
@@ -375,7 +377,7 @@ the line of expectation from data subjects.
 :::note
 Broad consent under the GDPR needs to be distinguished from "General consent" 
 as defined by the Dutch
-[Code of Conduct for health researchers](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}, 
+[Code of Conduct for health researchers](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}, 
 that is: for medical research, different requirements may (additionally) apply.
 :::
 
@@ -585,34 +587,11 @@ Date of last review: 2023-02-14
 :::
 
 A Data Transfer Impact Assessment (DTIA) is a risk analysis that is needed when 
-personal data are transferred to third countries. A DTIA is not an official 
-GDPR document by itself, like the DPIA, but instead is **usually part of, or a 
-supplement to, a [DPIA](#dpia)**.
+personal data are [transferred to third countries](#third-country-transfers). 
+A DTIA is not an official GDPR document by itself, like the DPIA, but instead 
+is **usually part of, or a supplement to, a [DPIA](#dpia)**.
 
-### What is a third-country transfer? {#third-country-transfer}
-In legal terms, a transfer exists when personal data controlled by one party 
-are accessible to another, irrespective of whether the data are physically sent 
-to that party. An international/third-country transfer exists when the party 
-that can potentially gain access is based in a country outside the European 
-Economic Area (EEA) which does not have an 
-[adequacy decision](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}
-from the European Commission. 
-
-::::fyi
-In GDPR terminology:
-
-- No transfer: a researcher who is connected to an EEA-organisation - and thus 
-has to abide by the GDPR - accesses data that are stored at that EEA-organisation 
-from a "non-adequate" country (provided safeguards are in place to prevent other 
-parties from gaining access). 
-- Third-country transfer: if personal data are stored at the servers of a 
-non-EEA party, or uses a cloud provider that has servers both in- and outside 
-the EEA.
-- No third-country transfer: the party with whom the data are shared is already 
-subject to the GDPR (e.g., the party is situated in Germany or Italy).
-::: 
-
-### Goal and content of a DTA {#dtia-goal-content}
+### Goal and content of a DTA {#dtia-goal}
 
 The goal of a DTIA is to:
 
@@ -621,6 +600,8 @@ The goal of a DTIA is to:
   - local regulations preventing the removal or returning of the personal data after use.
   - local authorities accessing the personal data (il)legitimately.
 - determine the appropriate safeguards to protect the data during the transfer. 
+
+### Content of a DTIA {#dtia-content}
 
 The DTIA [should ideally contain](https://edpb.europa.eu/system/files/2021-06/edpb_recommendations_202001vo.2.0_supplementarymeasurestransferstools_en.pdf){target="_blank"}: 
 
@@ -632,14 +613,13 @@ the data will be transferred (e.g., [Standard Contractual Clauses](#scc))
 5. a final decision on whether or not the data can be transferred
 
 As this is a relatively new topic in data protection land, please contact your 
-[privacy officer](#support)
-for assistance with a DTIA or for questions about third-country transfers . 
+[privacy officer](#support) for assistance with a DTIA or for questions about 
+third-country transfers . 
 
 ### Examples and templates 
 
 <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/international-data-transfer-agreement-and-guidance/transfer-risk-assessments/#TRA-tool" target="_blank" 
 style="text-decoration: none;"><button type="button">Example questions</button></a>
-
 
 ## Processing register {#processing-register}
 

@@ -159,7 +159,7 @@ protected. Always contact your [privacy officer](#support) if you intend on
 processing these types of data.
 
 :::note
-The [Dutch Code of Conduct for Health Research](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}
+The [Dutch Code of Conduct for Health Research](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}
 (p.68) specifies a number of exceptions for health researchers in which explicit 
 consent for processing special categories of personal data may not be necessary.
 :::

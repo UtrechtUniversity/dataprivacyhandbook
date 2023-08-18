@@ -218,7 +218,7 @@ For example:
 
   - You amplify bodily materials into pluripotent stem cells, cell lines, germ 
   cells or embryos (see the 
-  [Dutch Code of Conduct for health research, 2022](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf#page=58){target="_blank"}). 
+  [Dutch Code of Conduct for health research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf#page=123){target="_blank"}). 
   - You analyse social media data to study political opinions and religious 
   beliefs. 
   - You investigate criminal records from all currently incarcerated individuals 
@@ -280,7 +280,7 @@ For example:
 </details>
 
 <details><summary>There is a high chance of incidental findings in your research 
-  ([Dutch Code of Conduct for health research, 2022](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf#page=58){target="_blank"})</summary>
+  ([Dutch Code of Conduct for health research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf#page=123){target="_blank"})</summary>
   <div>
   For example:  
   
