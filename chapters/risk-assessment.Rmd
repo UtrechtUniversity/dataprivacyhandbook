@@ -1,0 +1,517 @@
+# Risk Assessment {#risk-assessment}
+
+When you work with personal data, you need to make sure that you correctly 
+collect, store, analyse, share, etc. those data to avoid harm to data subjects. 
+To do so, it is important to gain insight in: 
+
+- **[The risks involved](#risk-assessment-how)**:   
+*Security risks* occur when data are unexpectedly less available, less correct, or
+there is an unintended breach of confidentiality. They need to be mitigated by 
+implementing [integrity and confidentiality](#integrity-and-confidentiality) into your project.<br><br>
+*Privacy risks* exist when your use of (personal) data, either expectedly or 
+unexpectedly, affects the interests, rights and freedoms of data subjects. These can be [Data Subjects’ Rights under the GDPR](#data-subject-rights), but also 
+[other fundamental rights](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:12012P/TXT&from=EN){target="_blank"}, 
+such as the right to equality and non-discrimination, the right to life and 
+physical integrity, freedom of expression and information, and religious freedom. 
+In practice, we consider it a privacy risk if your processing of personal data 
+can result in physical, material, or non-material harm to data subjects. Privacy 
+risks should be mitigated by implementing 
+[**all** data protection principles](#gdpr-principles) into your project.<br><br>
+When the [risks for data subjects are high](#high-risk-processing), an in-depth 
+risk assessment in the form of a [Data Protection Impact Assessment](#dpia) is needed. 
+
+- **[The data classification](#data-classification)**: a classification of the 
+data (low, basic, sensitive, critical) that is based on the risks for data 
+subjects and the damages to an institute or project when data are incorrectly 
+handled, there is unauthorised access, or data are leaked. This classification 
+affects the security measures you need to take (e.g., which storage solution you 
+choose, whether you need to encrypt the data, etc.).  
+
+Based on the risks you identified and the classification of the data, you can 
+then implement [safeguards to mitigate the risks](#example-risks).  
+
+```{r risk-areas, echo=FALSE, out.width="100%", cache=TRUE, results="asis"}
+# Only shows in html output, not in epub or pdf:
+if (knitr::is_html_output()) {
+  cat('<iframe src="https://enterprivacy.com/wp-content/uploads/2018/09/A-Taxonomy-of-Privacy.pdf" width="100%" height="600px"></iframe>')
+}
+```
+*Privacy risks can occur in any stage of your research project (see also 
+[Solove, 2006](https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2074&context=faculty_publications){target="_blank"}).
+If the image does not show correctly, 
+[view it online](https://enterprivacy.com/wp-content/uploads/2018/09/A-Taxonomy-of-Privacy.pdf){target="_blank"}.*
+
+## How to assess privacy risks? {#risk-assessment-how}
+
+:::keywords
+On this page: risk, security, assessment, harm, damage, dpia, threat, secure,
+measure, safeguard, protect, plan, probability, likelihood, impact    
+Date of last review: 2023-04-18
+:::
+
+Before you start your research project, it is important to consider the risks 
+and their severity for data subjects in your project. This assessment will 
+inform you on which (additional) safeguards to put in place to mitigate the 
+risks. 
+
+ 
+:::fyi
+Privacy and security risks are usually outlined in a 
+[privacy scan](#privacy-scan) or [Data Protection Impact Assessment](#dpia), and 
+purely security risks in a [data classification](#data-classification). If you 
+create an algorithm that can affect people, an 
+"[Impact Assessment Fundamental Rights and Algorithms](https://dspace.library.uu.nl/handle/1874/420552){target="_blank"}" 
+may be required or combined with any of the before mentioned assessments. 
+:::
+
+### Risk assessment step by step {#risk-assessment-steps}
+
+When going through the below steps, take into account at least the following 
+risk scenarios: 
+
+- **Data breach** (unintended security risks): someone unauthorised gains (or 
+keeps) access to personal data, or personal data are lost due to a security 
+incident. 
+- **Inability for data subjects to exercise their rights**: for example, data 
+subjects have not been (well-)informed about data processing, there is no 
+contact person to ask for data removal, or there is no procedure in place to 
+find, correct or remove data subjects’ data. 
+- **Intrusion of personal space**: for example, you observe data subjects in a 
+place or at a time where/when they would expect a sense of privacy (e.g., 
+dressing rooms or at home). If there is secret or excessive observation, people 
+may feel violated and stifled. 
+- **Inappropriate outcomes**: the outcomes of your research project may also 
+impact data subjects, for example when it induces discrimination, inappropriate 
+bias, (physical or mental) health effects, but also when a lack of participation 
+denies data subjects beneficial treatment effects. 
+
+1. <details><summary>Outline which and how much (personal) data you use, how, 
+and for what purposes</summary>
+<div>This is usually one of the first steps of a [privacy scan](#privacy-scan).</div>
+</details>
+
+2. <details><summary>Is there a project with similar data, purposes, methods and 
+techniques?</summary>
+<div>If there are projects that are the same or very similar to your project, 
+you can reuse relevant work from their [privacy scan](#privacy), or if 
+applicable, [Data Protection Impact Assessment](#dpia) (DPIA). Naturally, you 
+should adjust sections that do not apply in your own project. If you’re not 
+sure of any existing projects similar to yours, ask your 
+[privacy officer](#support) or colleagues.
+</div></details>
+
+3. <details><summary>List possible harm to data subjects and others</summary>
+<div>Make an overview of the possible harm that could occur to data subjects and 
+others if any of the risk scenarios occurs. These could be:
+<ul>
+  <li>**Physical harm**<br>
+  Damage to someone’s physical integrity, such as when they receive the wrong 
+  medical treatment, end up as a victim of a violent crime, or develop mental 
+  health problems such a depression or anxiety.</li>
+  <li>**Material harm**<br>
+  Destruction or property or economic damage, such as financial loss, career 
+  disadvantages, reduced state benefits, identity theft, extortion, unjustified 
+  fines, costs for legal advice after a data breach, etc.</li>
+  <li>**Non-material harm**
+    <ul>
+      <li>Social disadvantage, for example damage to someone’s reputation, 
+      humiliation, social discrimination, etc.</li>
+      <li>Damage to privacy, for example a lack of control over their own data 
+      or the feeling of being spied on. This can happen when you collect a lot 
+      of personal data, or for a longer period of time (e.g., with surveillance, 
+      web applications).</li>
+      <li>Chilling effects: when someone stops or avoids doing something they 
+      otherwise would, because they fear negative consequences or feel 
+      uncomfortable.</li>
+      <li>Interference with rights: using personal data may violate other 
+      fundamental rights, such as the right to non-discrimination or freedom of 
+      expression.</li>
+    </ul>
+  </li>
+</ul>
+</div></details>
+
+4. <details><summary>Estimate the risk level without safeguards</summary>
+<div>After listing the possible harm, you should determine the risk level of 
+each harm occurring. The risk level depends on:
+<ul>
+  <li>the **impact** of the harm: what is the effect of each of the 4 scenarios 
+  above on the data subject and others (major, substantial, manageable, minor)?</li>
+  <li>the **likelihood** of the harm occurring: this depends on the 
+  circumstances of your project, such as: what and who can cause the harm to 
+  occur? How easily are mistakes made (e.g., how easily will an unauthorised 
+  person gain access)?</li>
+</ul>
+It is important to first determine the risk level in case you do not implement 
+any safeguards. This will be your risk level if all those safeguards fail. 
+The [higher this initial risk](#high-risk-processing), the more you should do to 
+mitigate it.  
+</div></details>
+
+5. <details><summary>Determine the safeguards you can use to mitigate the 
+risks</summary>
+<div>In many cases, it is possible to mitigate the risks by implementing 
+organisational and technical measures. The higher the risks, the more and/or 
+stricter measures should be in place to mitigate them. You can find some 
+relevant measures in the [Privacy by Design chapter](#privacy-design-strategies), 
+and on the [example page in this chapter](#example-risks).
+</div></details>
+
+6. <details><summary>Determine the residual risk after implementing 
+safeguards</summary>
+<div>By implementing safeguards, you are decreasing the likelihood of the risks 
+occurring. If the risk is still unacceptably high, even after implementing 
+safeguards, you should:
+<ul>
+  <li>Modify your processing to reduce the impact of potential damages (for 
+  example, refrain from collecting specific data types), or</li>
+  <li>Implement more or better measures, reducing the likelihood of any harm 
+  occurring.</li>
+</ul>
+</div></details>
+
+:::warning
+It will always be difficult to quantify risks. Therefore, it is largely the 
+argumentation that can provide context in how the risk level was determined. 
+The same harm may in one project be very unlikely to occur, while in another 
+it may be very likely: **context matters**! 
+:::
+
+## What are high-risk operations? {#high-risk-processing}
+:::keywords
+On this page: high-risk, large risk, dpia, assessment, mandatory    
+Date of last review: 2023-04-18
+:::
+
+The GDPR requires a [Data Protection Impact Assessment](#dpia) (DPIA) to be 
+conducted when the risks in your project are high, considering "the nature, 
+scope, context and purposes" of your project 
+([art. 35(1)](https://gdpr-info.eu/art-35-gdpr/){target="_blank"}). More 
+practically, you need to do a DPIA when two or more of the criteria from the 
+[European Data Protection Board](https://ec.europa.eu/newsroom/article29/items/611236){target="_blank"} 
+apply to your project, or – if the processing occurs in the Netherlands - when 
+one or more of the criteria from the 
+[Dutch Data Protection Authority](https://www.autoriteitpersoonsgegevens.nl/sites/default/files/atoms/files/stcrt-2019-64418.pdf){target="_blank"} 
+([English UU translation](https://intranet.uu.nl/en/system/files/mandatory_dpias_unofficial_translation_of_ap_decision.pdf){target="_blank"}) 
+applies to your project. 
+
+### Examples of high-risk scenarios {#high-risk-examples}
+
+<details open="true"><summary>You systematically use automated decision making in your project 
+([art. 35(3)](https://gdpr-info.eu/art-35-gdpr/){target="_blank"})</summary>
+<div>
+For example:  
+
+  - You use an algorithm to analyse health records and predict patients' risk of 
+  complications. 
+  - You use an algorithm to analyse students' test scores and learning patterns, 
+  to make personalised recommendations for coursework or additional resources. 
+  - You use an algorithm to detect fraudulent activity.
+</div>
+</details>
+
+<details><summary>You process [special categories of personal data](#special-types-personal-data) 
+or criminal offense data on a large scale 
+([art. 35(3)](https://gdpr-info.eu/art-35-gdpr/){target="_blank"})</summary>
+<div>
+For example:  
+
+  - You amplify bodily materials into pluripotent stem cells, cell lines, germ 
+  cells or embryos (see the 
+  [Dutch Code of Conduct for health research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf#page=123){target="_blank"}). 
+  - You analyse social media data to study political opinions and religious 
+  beliefs. 
+  - You investigate criminal records from all currently incarcerated individuals 
+  (note that such a project is likely subject to additional restrictions). 
+</div>
+</details>
+
+<details><summary>You publicly monitor people on a large scale 
+([art. 35(3)](https://gdpr-info.eu/art-35-gdpr/){target="_blank"})</summary>
+<div>
+For example:  
+
+  - You use traffic data and GPS devices to monitor people’s behaviour in traffic. 
+  - You use CCTV footage to study public safety. 
+</div>
+</details>
+
+<details><summary>You collect a lot of personal data, or from a large group 
+of people 
+([EDPB, 2017](https://ec.europa.eu/newsroom/article29/items/611236/en){target="_blank"})</summary>
+<div>
+For example:  
+
+  - You collect data on psychosocial development in twins annually for over a decade. 
+  - You collect genomic data to study the genetic basis of a specific disease. 
+  - You keep a database with contact information from thousands of people. 
+</div>
+</details>
+
+<details><summary>You use new techniques or methods for which the effects on 
+data subjects or others are not yet known 
+([EDPB, 2017](https://ec.europa.eu/newsroom/article29/items/611236/en){target="_blank"})</summary>
+<div> 
+For example:  
+
+  - Machine learning algorithms.
+  - Internet of Things.
+  - Virtual or Augmented Reality.
+  - Natural Language Processing.
+  - Human-computer interaction.
+</div>
+</details>
+
+<details><summary>Your research involves groups that are vulnerable or touches 
+a vulnerable topic 
+([EDPB, 2017](https://ec.europa.eu/newsroom/article29/items/611236/en){target="_blank"})</summary>
+<div>
+For example:  
+
+  - You perform video interviews with children talking about abuse. 
+  - You interview refugees about their home country. 
+  - You perform in-depth interviews with employees about their job satisfaction. 
+  - You perform a diary study among mentally ill patients. 
+  - You collect data from homosexual individuals in a country where 
+  homosexuality is forbidden or can lead to discrimination. 
+  - You perform research among a population with (severe) distrust towards 
+  scientific research(ers) or who have difficulty understanding your research.
+</div>
+</details>
+
+<details><summary>There is a high chance of incidental findings in your research 
+  ([Dutch Code of Conduct for health research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf#page=123){target="_blank"})</summary>
+  <div>
+  For example:  
+  
+  - You collect neuroimaging data from patients who likely have a brain tumour. 
+  - You investigate genetic data from vulnerable subjects that indicates a risk 
+  for disease. 
+</div>
+</details>
+
+When you suspect that you may need a DPIA, or when you are not certain whether 
+your project needs one, please contact your [privacy officer](#support).
+
+## Data classification {#data-classification}
+:::keywords
+On this page: BIV classificatie, CIA triad, data classification, information 
+security, IT system    
+Date of last review: 2023-04-18
+:::
+
+In order to determine which IT solutions are suitable for processing personal 
+data (e.g., storage or analysis platforms), a classification of your data is 
+needed. That data classification can then be paired to the classification given 
+to IT solutions. Institutes will determine for which data classification certain 
+IT solutions are suitable. For example, at Utrecht University (UU), the 
+classification levels are: low, basic, sensitive or critical. If your data are 
+classified as "critical", you are not allowed to use an IT solution that is only 
+suitable for "sensitive" data. 
+
+To classify data, you determine how important it is to keep the data 
+Confidential, correct (Integrity), and Available. Below you can find some 
+guidance on determining the risk level for each of these. Note that this 
+guidance is based on the UU data classification, but your institute may adhere 
+to a different form of the classification.   
+
+:::note 
+Data classification can be done for all types of data, not only personal data. 
+Personal data would simply score “higher” on the Confidentiality aspect. 
+:::
+
+### Classification levels {#classification-levels}
+
+<details><summary>Confidentiality</summary>
+<div>
+How confidential are the data? 
+
+- Low:
+  - Anonymous data, or data that are already publicly available, from less than 
+  50 people. 
+  - Direct colleagues.
+  - No third parties and software involved.
+  - No reputation loss when data are lost.
+- Basic:
+  - Non-public basic personal data such as name, (email)address, etc. 
+  - Personal data obtained directly from data subjects. 
+  - Personal data from a moderate number of data subjects (> 50 - 200).
+  - Sensitive personal data from a small number of individuals. 
+  - Third parties are involved but they are located inside the EEA. 
+- Sensitive:
+  - A data leak would lead to reputation damage to you and the university. 
+  - You are bound to patents or contractual agreements. 
+  - Sensitive personal data from a moderate number of data subjects (e.g., 
+  personality data, financial data). 
+  - Non-sensitive personal data from a large number of data subjects (> 10.000). 
+  - Personal data enriched with external resources. 
+  - Far-reaching process automation. 
+  - Non-targeted monitoring. 
+  - Relatively new technology.
+- Critical:
+  - Any project that carries [high risks](#high-risk-processing) for data 
+subjects or others: 
+    - Highly sensitive personal data (e.g., biometric identification data, 
+  genetic data). 
+    - Personal data from a very large number of data subjects (> 50,000).
+    - Vulnerable subjects (e.g., minors, disabled, undocumented, persecuted groups). 
+    - Processing happens (partly) outside of the EEA without an adequacy decision. 
+  - Life-threatening research. 
+  - There are far-reaching contractual obligations. 
+  - A data leak would lead to exclusion from future grants.
+</div>
+</details>
+
+<details><summary>Integrity</summary>
+<div>
+How important is it that the data are correct and can only be modified by 
+authorised individuals? 
+
+- Low: Incorrect data would be an inconvenience and/or require some rework.
+- Basic: Incorrect data would invalidate research and/or require significant 
+rework.
+- Sensitive: Incorrect data would invalidate multiple research projects, could 
+cause reputational damage to you and the university, or lead to significant 
+contractual violations. 
+- Critical: Incorrect data could have far-reaching contractual obligations, 
+exclusion from future grants or life-threatening research. 
+</div>
+</details>
+
+<details><summary>Availability</summary>
+<div>
+How important is it that the data are available? When would it be a problem; if 
+the data are not available for an hour, a day, a week...? 
+
+- Low: Losing (access to) the data would be inconvenient and/or lead to rework. 
+- Basic: Losing (access to) the data would invalidate research and/or require 
+significant rework. Not having access to the data would cause significant delays 
+and could incur costs up to 250.000 EUR. 
+- Sensitive: Losing (access to) the data would terminate or hugely delay 
+multiple research projects, could cause significant reputational damage to you 
+and the university, lead to significant contractual violations or individuals 
+not being able to access their sensitive personal data.
+- Critical: Inaccessible data could have far-reaching contractual obligations, 
+cause damages in excess of 1.500.000 EUR, including exclusion from future grants 
+or losing/not being able to access potentially life-threatening data.
+</div>
+</details>
+
+:::warning
+Please note that a classification may be lower or higher than indicated in the 
+examples, depending on your specific context. Please contact your 
+[privacy officer](#support) to help you classify your data. You can also 
+contact [Information Security](#support) for questions about data classification 
+and security measures. 
+:::
+
+## Examples of risks and how to mitigate them {#example-risks}
+:::keywords
+On this page: risk example, safeguards, organisational and technical measures, 
+protection, protective, security, data breach    
+Date of last review: 2023-04-18
+:::
+
+Below you can find a list of common privacy and security risks in research and 
+how you can mitigate them:
+
+- [Unwarranted access to personal data](#unwarranted-access)
+- [Loss of personal data](#loss-of-personal-data)
+- [Unintended collection of personal data](#unintended-collection)
+- [Invalid legal basis](#invalid-legal-basis)
+- [Risks for data subjects](#risks-data-subjects)
+
+<!-- If you wish to edit the risks / measures or add a new one, please do so in 
+the risk-examples.csv file in the files folder of this repository -->
+
+```{r formatrisks, message=FALSE, warning=FALSE, echo=FALSE}
+# Read in risk-examples.csv
+risks <- read.csv("files/risk-examples.csv", stringsAsFactors = FALSE)
+
+# Format FAQs in HTML <details> tags - function is used in chunks below
+formatrisks <- function(risksection){
+  
+  # Select the relevant section
+  subselection <- risks[risks$section_id == risksection, ]
+  
+  formattedtext <- list()
+  
+  # Format each question in the section in html <details> tags
+  for(riskitem in 1:nrow(subselection)){
+    
+    tryCatch( { 
+      # Only include if "include" == 1
+      if(subselection$include[riskitem] == 1){
+        formattedtext[[riskitem]] <- paste0("<details><summary>**",
+                                                subselection$risk[riskitem],
+                                                "**</summary><div>",
+                                                subselection$measure[riskitem],
+                                                "</div><br></details>")
+      }
+    }, error = function(e){
+      cat("Error in row : ",riskitem,"\n")
+    }
+    )
+  } #end for
+  
+  # Remove empty list items (happens when Include == 0)
+  formattedtext <- formattedtext[!sapply(formattedtext, is.null)]#
+
+  # Concatenate the list of items into a single string
+  formattedtext_string <- paste(formattedtext, collapse="")
+  return(formattedtext_string)
+} # end function
+```
+
+### Unwarranted access to personal data {#unwarranted-access}
+
+```{r unwarranted-access, message=FALSE,warning=FALSE,echo=FALSE}
+unwarranted_access <- formatrisks("unwarranted-access")
+```
+
+`r unwarranted_access`
+  
+[Back to top](#example-risks)
+
+
+### Loss of personal data {#loss-of-personal-data}
+
+```{r data-loss, message=FALSE,warning=FALSE,echo=FALSE}
+data_loss <- formatrisks("data-loss")
+```
+
+`r data_loss`
+  
+[Back to top](#example-risks)
+
+
+### Unintended collection of personal data {#unintended-collection}
+
+```{r unintended-collection, message=FALSE,warning=FALSE,echo=FALSE}
+unintended_collection <- formatrisks("unintended-collection")
+```
+
+`r unintended_collection`
+  
+[Back to top](#example-risks)
+
+
+### Invalid legal basis {#invalid-legal-basis}
+
+```{r invalid-legal-basis, message=FALSE,warning=FALSE,echo=FALSE}
+invalid_legal_basis <- formatrisks("invalid-legal-basis")
+```
+
+`r invalid_legal_basis`
+  
+[Back to top](#example-risks)
+
+### Risks for data subjects {#risks-data-subjects}
+
+```{r risks-data-subjects, message=FALSE,warning=FALSE,echo=FALSE}
+risks_data_subjects <- formatrisks("risks-data-subjects")
+```
+
+`r risks_data_subjects`
+  
+[Back to top](#example-risks)
