@@ -1,0 +1,53 @@
+# (PART\*) Resources {-} 
+
+# Seeking help at Utrecht University {#seeking-help}
+:::keywords
+Date of last review: 2023-05-22
+:::
+
+If you work at Utrecht University, there are several ways to look for further 
+support.
+
+### Education {#education}
+
+Research Data Management Support currently offers:
+
+- Online module [Privacy basics for researchers](https://www.uu.nl/en/research/research-data-management/walk-in-hours-workshops/privacy-basics-online-training){target="_blank"}
+- In-person workshop [Handling Personal Data](https://www.uu.nl/en/research/research-data-management/training-workshops/handling-personal-data-in-research){target="_blank"}
+
+Additionally, your own faculty or department may offer workshops surrounding
+privacy, ethics and/or research integrity (see websites below).
+
+### Online information {#websites}
+
+Besides this Handbook, you can find more information on the following websites:
+
+- [RDM Support website](https://www.uu.nl/rdm){target="_blank"}
+- Intranet pages on [privacy](https://intranet.uu.nl/en/knowledge-base/privacy-at-uu){target="_blank"}, 
+[research](https://intranet.uu.nl/en/knowledgebase/research){target="_blank"} and
+[information security](https://intranet.uu.nl/en/information-security-at-the-uu){target="_blank"}
+- Faculty-specific web pages:
+  - Geosciences: [RDM and privacy](https://geo-data-support.sites.uu.nl/){target="_blank"},
+    [ethics](https://sciencegeo-erb.sites.uu.nl/){target="_blank"}
+  - Science: [RDM and privacy](https://science-data-support.sites.uu.nl/){target="_blank"},
+    [ethics](https://sciencegeo-erb.sites.uu.nl/){target="_blank"}
+  - Social and Behavioural Sciences: [tech support](https://techsupport.fss.uu.nl/){target="_blank"},
+    [ethics](https://ferb.sites.uu.nl/){target="_blank"}
+  - Humanities: [RDM and privacy](https://cdh.uu.nl/research/data-management-privacy/){target="_blank"},
+    [ethics](https://fetc-gw.wp.hum.uu.nl/){target="_blank"}
+  - Law, Economics and Governance: [ethics](https://intranet.uu.nl/en/knowledgebase/facultys-ethical-review-committee){target="_blank"}
+  - Veterinary medicine: [Research Support Office](https://www.uu.nl/en/node/589/onderzoeksbureauresearch-support-office){target="_blank"}
+  - Medicine: [ethics](https://www.metc-utrecht.nl/en/){target="_blank"}, data management-related information can be found on UMCU Connect.
+
+### In-person support {#support}
+
+The **first point of contact** about privacy is the [privacy officer](https://intranet.uu.nl/en/knowledgebase/privacyofficers){target="_blank"}
+of your faculty. 
+
+Besides the privacy officer, you can also ask for help from:
+
+- Your local data steward/data manager (see websites above) or 
+[Research Data Management Support](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}.
+- [Information security](https://intranet.uu.nl/en/security/information-security-contact-who-are-we){target="_blank"}.
+- In some faculties, the [Research Support Office](https://intranet.uu.nl/en/knowledgebase/research-support-offices){target="_blank"} 
+may be of help in drafting agreements.
