@@ -51,7 +51,8 @@ The GDPR does not prescribe *which* specific measures you should apply in your
 project, only that they should protect the personal data *effectively*. Which 
 measures will be effective, will depend on your specific project, the risks for 
 data subjects, and the current progress in technology (i.e. will the data be 
-protected on the long haul?).
+protected on the long haul?). So make sure that your protective measures are
+up-to-date as well!
 :::
 
 <div class="row" style="display: flex; flex-wrap: wrap;">
