@@ -377,7 +377,7 @@ the line of expectation from data subjects.
 :::note
 Broad consent under the GDPR needs to be distinguished from "General consent" 
 as defined by the Dutch
-[Code of Conduct for health researchers](https://www.coreon.org/wp-content/uploads/2022/01/Gedragscode-Gezondheidsonderzoek-2022.pdf){target="_blank"}, 
+[Code of Conduct for health researchers](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}, 
 that is: for medical research, different requirements may (additionally) apply.
 :::
 
