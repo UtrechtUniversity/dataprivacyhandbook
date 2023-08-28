@@ -26,7 +26,7 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2023-08-18" />
+<meta name="author" content="Utrecht University | Last updated: 2023-08-28" />
 
 
 
@@ -117,67 +117,79 @@ Support.</p>" />
     }
 </script>
 <!DOCTYPE HTML>
+<!-- Cookie banner code thanks to ChatGPT -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>We use 
+  <a href="privacy-policy.html" target="_blank" 
+  style="text-decoration:underline; color:white">cookies</a>
+  to track how you interact with the Data Privacy Handbook. Do you accept?
+  <button id="accept-cookies" class="accept-button">Accept</button>
+  <button id="reject-cookies" class="reject-button">Reject</button>
+  </p>
+</div>
 
-<!--
-Used currently https://www.cookieconsent.com/
-Does not yet work properly: we only use tracking cookies, nothing else
-so all the other options are not used. Also the pop-up seems to have no
-effect + the pop-up appears every time a new page in the handbook is loaded
-TO CHECK
-https://github.com/topics/cookie-banner
-https://github.com/grrr-amsterdam/cookie-consent
-https://github.com/dobarkod/cookie-banner
-https://github.com/manucaralmo/GlowCookies
-Info: https://www.simpleanalytics.com/blog/website-analytics-without-cookies
-and https://quarto.org/docs/websites/website-tools.html
--->
+<script>
+  const cookieBanner = document.getElementById('cookie-banner');
+  const acceptButton = document.getElementById('accept-cookies');
+  const rejectButton = document.getElementById('reject-cookies');
 
-<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-<!--<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+  function insertAnalyticsCode() {
+    const analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-80JDERE3EZ';
+    document.head.appendChild(analyticsScript);
 
-<script type="text/javascript" charset="UTF-8">
-  document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({"notice_banner_type":"simple","consent_type":"express",
-    "palette":"dark","language":"en",
-    "page_load_consent_levels":["strictly-necessary"],
-    "notice_banner_reject_button_hide":false,
-    "preferences_center_close_button_hide":false,
-    "page_refresh_confirmation_buttons":false,
-    "website_name":"Data Privacy Handbook",
-    "website_privacy_policy_url":"https://utrechtuniversity.github.io/dataprivacyhandbook/privacy-policy.html"});
+    analyticsScript.onload = function() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-80JDERE3EZ', {'anonymize_ip': true});
+    };
+  }
+
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  }
+
+  function getCookie(name) {
+    const cookieName = name + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieArray = decodedCookie.split(';');
+    for (let i = 0; i < cookieArray.length; i++) {
+      let cookie = cookieArray[i];
+      while (cookie.charAt(0) === ' ') {
+        cookie = cookie.substring(1);
+      }
+      if (cookie.indexOf(cookieName) === 0) {
+        return cookie.substring(cookieName.length, cookie.length);
+      }
+    }
+    return "";
+  }
+
+  // Check if choice is made and hide the banner
+  if (getCookie('analyticsChoice') === 'accepted') {
+    insertAnalyticsCode();
+    cookieBanner.style.display = 'none';
+  } else if (getCookie('analyticsChoice') === 'rejected') {
+    cookieBanner.style.display = 'none';
+  }
+
+  acceptButton.addEventListener('click', () => {
+    insertAnalyticsCode();
+    setCookie('analyticsChoice', 'accepted', 60);
+    console.log('Consented to analytics cookie');
+    cookieBanner.style.display = 'none';
   });
-</script>
--->
-<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 
-<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
-<!--
-<a href="#" id="open_preferences_center">Update cookies preferences</a>
--->
-
-<!-- 1. Deny ad and analytics storage -->
-<!--
-<script>
-// Define dataLayer and the gtag function.
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-
-// Default ad_storage and analytics_storage to 'denied'
-gtag('consent', 'default', {
-  'ad_storage': 'denied'
-  'analytics_storage': 'denied'
-});
-</script>
--->
-
-<!-- Google analytics tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-80JDERE3EZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
-  gtag('config', 'G-80JDERE3EZ', {'anonymize_ip': true});
+  rejectButton.addEventListener('click', () => {
+    setCookie('analyticsChoice', 'rejected', 60);
+    console.log('Rejected analytics cookie');
+    cookieBanner.style.display = 'none';
+  });
 </script>
 
 
