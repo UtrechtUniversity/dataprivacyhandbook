@@ -230,36 +230,36 @@ readers should refer to resources from their own institutions.
 ## Your own privacy {#privacy-policy}
 
 :::keywords
-This page was last updated on 2023-07-14
+This page was last updated on 2023-08-28
 :::
 
-The Data Privacy Handbook currently uses Google Analytics to track its usage. 
-We do this because we want to see how often the Data Privacy Handbook is used, 
-for whom it is useful, how users find it, and which pages are most commonly 
-visited. For this purpose, Google Analytics places a tracking cookie in your web
-browser. 
-
-We try to limit the amount of tracked details to a minimum. Currently, the 
-following information is being collected: 
+We use Google Analytics to track the usage of the (online version of the) Data 
+Privacy Handbook. We do this, because we want to see how often the Data Privacy 
+Handbook is being visited, how users find it, and which pages are most useful. 
+With your consent, Google Analytics places a tracking cookie in your web 
+browser. The amount of tracked details is limited to:
 
 - Which pages you visit and for how long
 - Generic aspects of your behaviour on the page, such as clicks and scrolls
 - How you found the page (e.g., directly or via another website)
-- From what country you are accessing the page (note: detailed location 
-information has been disabled)
+- From what country you are accessing the page
 - What language your browser is in
 - How you are accessing the page (e.g., via desktop or mobile)
+
+We do not collect your detailed location, and use IP address "anonymisation" to
+prevent other unnecessary details from being collected.
 
 This information is stored at Google for 2 months, and shared with the 
 maintainers of the Data Privacy Handbook and a selection of communication 
 professionals at Utrecht University.
 
-:::warning
-We are working on a cookie banner so that you can consent to or reject the 
-tracking cookies. In the meantime, we recommend using the 
+:::fyi
+Besides clicking Accept or Reject in the cookie banner, you can also:
+
+- use the 
 [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout){target="_blank"} 
-to prevent websites, including this one, from tracking you, or disabling or 
-blocking tracking in your browser settings.
+to prevent websites, including this one, from tracking you
+- disable or block tracking in your browser settings
 :::
 
 If you have questions or comments about tracking cookies, please consult the 
