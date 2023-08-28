@@ -296,3 +296,32 @@ details > div {
 details[open] > summary {
   background-color: #FFCD00;
 }
+
+/* -----------Cookie banner --------------------*/
+.cookie-banner {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black; /*#f0f0f0;*/
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  position: relative; /*this works but at top of page, fixed does not work */
+}
+
+.accept-button, .reject-button {
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.reject-button {
+  background-color: grey;
+}
+
+.book-header.fixed {
+  z-index: 999;
+}
