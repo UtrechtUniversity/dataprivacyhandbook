@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:wght@300&family=Open+Sans&display=swap');
+
+/* Fonts */
+body {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+  background-color: #FFFFFF;
+  font-size: 35px;
+  text-align: left;
+  color: black;
+}
+
+ h1, h2, h3, h4 {
+  font-family: 'Merriweather', Tahoma, sans-serif;
+  color: #000;
+}
+
+/* Body Links */
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #C00A35;
+  text-decoration: underline;
+}
+
+/* -----------div tips------------- */
+div.warning {
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 120px;
+  background-image: url("../../img/warning.png");
+  background-color: #FFB5C7;
+  color: black;
+  border: solid 5x #C00A35;
+}
+
+div.keywords {
+    font-size: small;
+    color: #999;
+    font-style: italic;
+    border-bottom: 1px solid #ccc; /* light grey color */
+    padding-bottom: 5px; /* space below the line */
+    margin-bottom: 10px; /* space below the div */
+  }
+
+div.keywords a {
+  text-decoration: none; /* No underlining in the links */
+}
+
+/* BUTTON */
+/* CSS adapted from button 5 at https://getcssscan.com/css-buttons-examples */
+button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #FCD000 !important;
+  border: none;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 5px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-right: 5px;
+}
+
+button:hover, button:focus {
+  background-color: #af9c3b;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #af9c3b;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  color: white;
+  transform: translateY(0);
+}
+
+/* -----------Pretty info-details tag--------------------*/
+.info-button::marker {
+  content: none; /* no details marker */
+}
+
+.info-details {
+  display: inline-block;
+}
+
+/* Style the summary (button) */
+.info-button {
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Style the image */
+.info-button img {
+  width: 30px; /* Adjust the image width */
+}
+
+/* Style the content */
+.info-content {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px; /* Adjust the spacing between button and content */
+  display: none; /* Initially hide the content */
+}
+
+/* Show the content when the details is open */
+.info-details[open] .info-content {
+  display: block;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  padding: 12px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px grey;
+}
