@@ -148,7 +148,9 @@ the data subjects.
 
 ## Which legal basis to use? {#choose-legal-basis}
 
-Content coming soon!
+```{r legal-basis-flowchart, echo=FALSE, results="asis"}
+knitr::include_url("assets/legal-bases-slides/legal-basis-slides.html")
+```
 
 ## Public interest {#public-interest}
 
