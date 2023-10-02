@@ -54,7 +54,8 @@ Which of the below purposes fits your research project best?
   <div class="info-content">
         <ul>
                 <li>Research in the <b>public interest</b> is focused primarily 
-                on societal knowledge expansion.</li>
+                on societal knowledge expansion. Most research performed at
+                the university will fall into this category.</li>
                 <li>Research with solely a <b>private interest</b> could concern 
                 commissioned research, research on behalf of a commercial party, 
                 or research focused on a private interest of the university.</li>
@@ -111,7 +112,10 @@ Do you want to give participants extra control over their personal data?
   <div class="info-content">
         In very sensitive research (for example into transgressive behaviour), 
         people sometimes only want to participate if they maintain maximum 
-        control over their personal data. The legal basis of consent then gives 
+        control over their personal data. The 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" target="_blank">legal 
+        basis of consent</a> 
+        then gives 
         them a certain degree of extra control, because the participants know 
         that it is very easy for them to withdraw that consent. You usually have 
         to comply with such a withdrawal request.
@@ -137,7 +141,9 @@ Is there an imbalance of power between the participant and the researcher?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
-        <i>legally valid</i> consent. A condition for lawful consent is that 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+        target="_blank"><i>legally valid</i> consent</a>. 
+        A condition for lawful consent is that 
         that consent is given "freely". The participant should experience no 
         benefits from granting consent and no disadvantages from refusing or 
         withdrawing consent. However, in the event of a power relationship 
@@ -216,8 +222,10 @@ Do you collect, store, analyse and/or share
 <details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
-        This is a crucial question. The processing of special categories of 
-        personal data is prohibited, unless there is an exception. The follow-up 
+        This is a crucial question. The processing of 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a> 
+        is prohibited, unless there is an exception. The follow-up 
         questions examine which exception may apply to your research. 
   </div>
 </details>
@@ -285,8 +293,10 @@ available themselves?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked because "self-disclosing" is the most obvious 
-        exception to the prohibition on processing special categories of 
-        personal data. If someone has made those data public themselves, the 
+        exception to the prohibition on processing 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a>. 
+        If someone has made those data public themselves, the 
         researcher can collect them from that public place and may in principle 
         use them, if it concerns truly public sources where no privacy is 
         expected, and the participant indeed intended to disclose the personal 
@@ -365,8 +375,12 @@ participants?
 <details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
-        UAVG Article 24 specifies that consent for using special categories of 
-        personal data can be waived if requesting consent is so difficult or 
+        <a href="https://wetten.overheid.nl/BWBR0040940/2021-07-01#Hoofdstuk3" 
+        target="_blank">UAVG Article 24</a> 
+        specifies that consent for using 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a> 
+        can be waived if requesting consent is so difficult or 
         time-consuming that it could jeopardize the entire research project. If 
         this is the case, you must substantiate this danger to your project and 
         take additional protection measures. 
@@ -450,7 +464,9 @@ Is there an imbalance of power between the participant and the researcher?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
-        <i>legally valid</i> consent. A condition for lawful consent is that 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+        target="_blank"><i>legally valid</i> consent</a>. 
+        A condition for lawful consent is that 
         that consent is given "freely". The participant should experience no 
         benefits from granting consent and no disadvantages from refusing or 
         withdrawing consent. However, in the event of a power relationship 
@@ -606,7 +622,10 @@ Was consent the legal basis for the original data collection?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
     Check the legal basis on which the personal data were originally collected. 
-    If that was consent, the strict requirements for consent also apply to your 
+    If that was 
+    <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+    target="_blank">consent</a>, 
+    the strict requirements for consent also apply to your 
     new research project. One of those requirements is that the consent must be 
     specific. The original consent statement must indicate what exactly the 
     data subjects have given consent for.
@@ -739,7 +758,10 @@ Do you want to give participants extra control over their personal data?
   <div class="info-content">
         In very sensitive research (for example into transgressive behaviour), 
         people sometimes only want to participate if they maintain maximum 
-        control over their personal data. The legal basis of consent then gives 
+        control over their personal data. The 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+        target="_blank">legal basis of consent</a> 
+        then gives 
         them a certain degree of extra control, because the participants know 
         that it is very easy for them to withdraw that consent. You usually have 
         to comply with such a withdrawal request.
@@ -767,7 +789,9 @@ Is there an imbalance of power between the participant and the researcher?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
-        <i>legally valid</i> consent. A condition for lawful consent is that 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+        target="_blank"><i>legally valid</i> consent</a>. 
+        A condition for lawful consent is that 
         that consent is given "freely". The participant should experience no 
         benefits from granting consent and no disadvantages from refusing or 
         withdrawing consent. However, in the event of a power relationship 
@@ -838,8 +862,10 @@ Do you collect, store, analyse and/or share
 <details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
-        This is a crucial question. The processing of special categories of 
-        personal data is prohibited, unless there is an exception. The follow-up 
+        This is a crucial question. The processing of 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a> 
+        is prohibited, unless there is an exception. The follow-up 
         questions examine which exception may apply to your research. 
   </div>
 </details>
@@ -902,8 +928,10 @@ available themselves?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked because "self-disclosing" is the most obvious 
-        exception to the prohibition on processing special categories of 
-        personal data. If someone has made those data public themselves, the 
+        exception to the prohibition on processing 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a>. 
+        If someone has made those data public themselves, the 
         researcher can collect them from that public place and may in principle 
         use them, if it concerns truly public sources where no privacy is 
         expected, and the participant indeed intended to disclose the personal 
@@ -952,7 +980,9 @@ Is there an imbalance of power between the participant and the researcher?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
-        <i>legally valid</i> consent. A condition for lawful consent is that 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+        target="_blank"><i>legally valid</i> consent</a>. 
+        A condition for lawful consent is that 
         that consent is given "freely". The participant should experience no 
         benefits from granting consent and no disadvantages from refusing or 
         withdrawing consent. However, in the event of a power relationship 
@@ -1156,7 +1186,10 @@ Was consent the legal basis for the original data collection?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
     Check the legal basis on which the personal data were originally collected. 
-    If that was consent, the strict requirements for consent also apply to your 
+    If that was 
+    <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" 
+    target="_blank">consent</a>, 
+    the strict requirements for consent also apply to your 
     new research project. One of those requirements is that the consent must be 
     specific. The original consent statement must indicate what exactly the 
     data subjects have given consent for.
@@ -1189,7 +1222,10 @@ Does the new research project fall within the original consent?
     research activities fall within the limits of that consent? Then the 
     consent given will not hinder your research and you can use this consent as 
     a basis for your reuse, and perhaps even as an exception for the processing 
-    of special categories of personal data. Does your research fall outside the 
+    of 
+    <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+    target="_blank">special categories of personal data</a>. 
+    Does your research fall outside the 
     limits of the original consent? Then you must still ask the people in 
     question for consent to use their personal data for your research. This 
     also applies if asking for consent is impossible or requires a 
@@ -1268,8 +1304,10 @@ Do you collect, store, analyse and/or share
 <details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
-        This is a crucial question. The processing of special categories of 
-        personal data is prohibited, unless there is an exception. The follow-up 
+        This is a crucial question. The processing of 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a> 
+        is prohibited, unless there is an exception. The follow-up 
         questions examine which exception may apply to your research. 
   </div>
 </details>
@@ -1305,8 +1343,10 @@ available themselves?
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked because "self-disclosing" is the most obvious 
-        exception to the prohibition on processing special categories of 
-        personal data. If someone has made those data public themselves, the 
+        exception to the prohibition on processing 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" 
+        target="_blank">special categories of personal data</a>. 
+        If someone has made those data public themselves, the 
         researcher can collect them from that public place and may in principle 
         use them, if it concerns truly public sources where no privacy is 
         expected, and the participant indeed intended to disclose the personal 
