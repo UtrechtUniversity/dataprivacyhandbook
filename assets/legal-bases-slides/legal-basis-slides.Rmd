@@ -23,8 +23,8 @@ It is not always clear-cut which legal basis is the best one to choose in a
 research project. You can use this flow chart to decide which legal basis is 
 most suitable for your situation.
 
-If you do not understand a question, you can click the 
-<img src="../../img/info.svg" height="25px" alt="Info icon"/> icon 
+If you do not understand a question, more elaborate information is displayed 
+under the <img src="../../img/info.svg" height="25px" alt="Info icon"/> icon 
 that appears along with the question.
 
 .center[<a href="#start" style="text-decoration: none;"><button>START FLOWCHART</button></a>]
@@ -33,7 +33,8 @@ that appears along with the question.
         This flowchart does not cover all possible research scenarios and is 
         purely meant for advisory purposes. Does your research project not fit 
         the flow chart? Is anything unclear, or ambiguous? Please contact your 
-        privacy officer for advice. 
+        <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/seeking-help.html" target="_blank">privacy officer</a> 
+        for advice. 
 </div>
 
 ---
@@ -48,7 +49,7 @@ Which of the below purposes fits your research project best?
 <a href="#private-interest" style="text-decoration: none;"><button>Solely private interest</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         <ul>
@@ -76,7 +77,7 @@ Did or will data subjects consciously choose to participate in the research proj
 <a href="#contactless-public" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether you work with participants 
@@ -105,7 +106,7 @@ Do you want to give participants extra control over their personal data?
 <a href="#no-extra-control-public" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         In very sensitive research (for example into transgressive behaviour), 
@@ -132,7 +133,7 @@ Is there an imbalance of power between the participant and the researcher?
 <a href="#no-imbalance-public" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
@@ -178,6 +179,7 @@ personal data and special categories of personal data.
 
 .center[
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" style="text-decoration: none;"><button>Read about consent</button></a>
+<a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" style="text-decoration: none;"><button>Read about special categories of personal data</button></a>
 <a href="#start" style="text-decoration: none;"><button>Back to start</button></a>
 ]
 
@@ -203,15 +205,15 @@ name: no-extra-control-public
 <a href="#contactless-public">No reuse</a>
 </div>
 
-Do you collect, store, analyse and/or share special categories of 
-personal data?
+Do you collect, store, analyse and/or share 
+[special categories of personal data](https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html)?
 
 .center[
 <a href="#sensitive-public" style="text-decoration: none;"><button>Yes</button></a>
 <a href="#normal-public" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This is a crucial question. The processing of special categories of 
@@ -279,7 +281,7 @@ available themselves?
 <a href="#public-sensitive-not-made-public" style="text-decoration: none;"><button>No, or only partly</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked because "self-disclosing" is the most obvious 
@@ -360,7 +362,7 @@ participants?
 <a href="#public-sensitive-consent" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         UAVG Article 24 specifies that consent for using special categories of 
@@ -444,7 +446,7 @@ Is there an imbalance of power between the participant and the researcher?
 <a href="#public-sensitive-noimbalance" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
@@ -490,7 +492,8 @@ name: public-sensitive-imbalance
 </div>
 
 You can only use any regular personal data in your research based on the legal 
-basis of public interest. You cannot use the special categories of personal data,
+basis of public interest. You cannot use the 
+[special categories of personal data](https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html),
 because you indicated that there is a power imbalance. This means that the
 special categories of personal data cannot be used legitimately. We recommend to:
 
@@ -567,7 +570,7 @@ Are you reusing previously collected (personal) data?
 <a href="#no-extra-control-public" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
     We speak of reusing previously collected (personal) data when you use 
@@ -599,7 +602,7 @@ Was consent the legal basis for the original data collection?
 <a href="#no-extra-control-public" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
     Check the legal basis on which the personal data were originally collected. 
@@ -626,14 +629,16 @@ Does the new research project fall within the original consent?
 <a href="#public-reuse-not-within-originalconsent" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
-    Check what exactly the people involved gave consent for at the time. Do your
+    Check what exactly the data subjects gave consent for at the time. Do your
     research activities fall within the limits of that consent? Then the 
     consent given will not hinder your research and you can use this consent as 
     a basis for your reuse, and perhaps even as an exception for the processing 
-    of special categories of personal data. Does your research fall outside the 
+    of 
+    <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" target="_blank">special categories of personal data</a>.
+    Does your research fall outside the 
     limits of the original consent? Then you must still ask the people in 
     question for consent to use their personal data for your research. This 
     also applies if asking for consent is impossible or requires a 
@@ -654,8 +659,9 @@ name: public-reuse-within-originalconsent
 
 You can reuse the personal data based on the originally provided consent of 
 data subjects. This goes for both "regular" personal data, as well as any 
-potential special categories of personal data, for which data subjects gave
-explicit consent in the original data source.
+potential 
+[special categories of personal data](https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html), 
+for which data subjects gave explicit consent in the original data source.
 
 .center[
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/share-reuse-legal-basis.html" style="text-decoration: none;"><button>Read about sharing and reusing personal data</button></a>
@@ -698,7 +704,7 @@ Did or will data subjects consciously choose to participate in the research proj
 <a href="#contactless-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether you work with participants 
@@ -728,7 +734,7 @@ Do you want to give participants extra control over their personal data?
 <a href="#no-extra-control-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         In very sensitive research (for example into transgressive behaviour), 
@@ -757,7 +763,7 @@ Is there an imbalance of power between the participant and the researcher?
 <a href="#no-imbalance-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
@@ -807,6 +813,7 @@ personal data and special categories of personal data.
 
 .center[
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" style="text-decoration: none;"><button>Read about consent</button></a>
+<a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" style="text-decoration: none;"><button>Read about special categories of personal data</button></a>
 <a href="#start" style="text-decoration: none;"><button>Back to start</button></a>
 ]
 
@@ -820,15 +827,15 @@ name: no-extra-control-private
 <a href="#conscious-choice-private">No extra control</a>
 </div>
 
-Do you collect, store, analyse and/or share special categories of 
-personal data?
+Do you collect, store, analyse and/or share 
+[special categories of personal data](https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html)?
 
 .center[
 <a href="#sensitive-private" style="text-decoration: none;"><button>Yes</button></a>
 <a href="#normal-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This is a crucial question. The processing of special categories of 
@@ -891,7 +898,7 @@ available themselves?
 <a href="#private-sensitive-not-made-public" style="text-decoration: none;"><button>No, or only partly</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked because "self-disclosing" is the most obvious 
@@ -941,7 +948,7 @@ Is there an imbalance of power between the participant and the researcher?
 <a href="#private-sensitive-noimbalance" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked to determine whether participants can give 
@@ -1003,6 +1010,7 @@ Please feel free to ask your privacy officer for help.
 .center[
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/seeking-help.html" style="text-decoration: none;"><button>Contact your privacy officer</button></a>
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/privacy-by-design.html" style="text-decoration: none;"><button>Read about project design</button></a>
+<a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" style="text-decoration: none;"><button>Read about special categories of personal data</button></a>
 <a href="#start" style="text-decoration: none;"><button>Back to start</button></a>
 ]
 
@@ -1090,7 +1098,7 @@ used for the special categories of personal data.
 
 .center[
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/legitimate-interest-assessment.html" style="text-decoration: none;"><button>Read about legitimate interest</button></a>
-<a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" style="text-decoration: none;"><button>Read about consent</button></a>
+<a href="https://utrechtuniversity.github.io/dataprivacyhandbook/informed-consent-forms.html" style="text-decoration: none;"><button>Read about consent</button></a>
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" style="text-decoration: none;"><button>Read about special categories of personal data</button></a>
 <a href="#start" style="text-decoration: none;"><button>Back to start</button></a>
 ]
@@ -1111,7 +1119,7 @@ Are you reusing previously collected (personal) data?
 <a href="#no-reuse-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
     We speak of reusing previously collected (personal) data when you use 
@@ -1144,7 +1152,7 @@ Was consent the legal basis for the original data collection?
 <a href="#no-extra-control-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
     Check the legal basis on which the personal data were originally collected. 
@@ -1174,10 +1182,10 @@ Does the new research project fall within the original consent?
 <a href="#private-reuse-not-within-originalconsent" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
-    Check what exactly the people involved gave consent for at the time. Do your
+    Check what exactly data subjects gave consent for at the time. Do your
     research activities fall within the limits of that consent? Then the 
     consent given will not hinder your research and you can use this consent as 
     a basis for your reuse, and perhaps even as an exception for the processing 
@@ -1208,6 +1216,7 @@ explicit consent in the original data source.
 
 .center[
 <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/share-reuse-legal-basis.html" style="text-decoration: none;"><button>Read about sharing and reusing personal data</button></a>
+<a href="https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html" style="text-decoration: none;"><button>Read about special categories of personal data</button></a>
 <a href="#start" style="text-decoration: none;"><button>Back to start</button></a>
 ]
 
@@ -1248,15 +1257,15 @@ name: no-reuse-private
 <a href="#contactless-private">No reuse</a>
 </div>
 
-Do you collect, store, analyse and/or share special categories of 
-personal data?
+Do you collect, store, analyse and/or share 
+[special categories of personal data](https://utrechtuniversity.github.io/dataprivacyhandbook/special-types-personal-data.html)?
 
 .center[
 <a href="#sensitive-private-noreuse" style="text-decoration: none;"><button>Yes</button></a>
 <a href="#normal-private" style="text-decoration: none;"><button>No</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This is a crucial question. The processing of special categories of 
@@ -1292,7 +1301,7 @@ available themselves?
 <a href="#private-sensitive-noreuse-notpublic" style="text-decoration: none;"><button>No, or only partly</button></a>
 ]
 
-<details class="info-details">
+<details open class="info-details">
   <summary class="info-button"><img src="../../img/info.svg" alt="Info Icon"/></summary>
   <div class="info-content">
         This question is asked because "self-disclosing" is the most obvious 
