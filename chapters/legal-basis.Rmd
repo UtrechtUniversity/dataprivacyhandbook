@@ -3,225 +3,469 @@
 :::keywords
 On this page: legal basis, legal ground, consent, public interest, legitimate
 interest, secondary use    
-Date of last review: 2023-07-11
+Date of last review: 2023-10-02
 :::
 
-You can only process personal data if you have a **legal basis** to do so, which 
-should be registered, among other information, in the 
-[processing register](#processing-register) and 
-[communicated to data subjects](#privacy-notices). There are 6 possible 
-legal bases which are outlined below. In research, the legal bases 'informed 
-consent', 'public interest' and to some extent 'legitimate interests of the 
-controller' are most often used.
+Many scientific research projects process personal data. According to the GDPR, 
+you can only process personal data if you have a "reason", or a **legal basis**, 
+to do so: why is it necessary to use these personal data? For you as a 
+researcher, it is important to know your legal basis for processing personal 
+(research) data, as this not only indicates whether the processing of your 
+research data is lawful, but also determines key actions you should take, such 
+as which [information](#privacy-notices) you need to provide to data subjects, 
+and whether you need to ask for [consent](#informed-consent-forms). There are 
+6 possible legal bases, which are outlined below. In research, the legal bases 
+"public interest", "consent", and to some extent "legitimate interest of the 
+controller or a third party" are usually most suitable. 
 
-:::fyi
-**For different purposes in your research project, a different 
-legal basis may apply**. For example, you may contact data subjects before they 
-start participating based on a legitimate interest and use informed consent for 
-collecting, storing, analysing and publishing the data.
-:::
-
-### Legal bases suitable for research
+### Legal bases suitable for research {#legal-bases-suitable-for-research}
 
 <ol>
   <li>
-    <details open="true">
-      <summary><b>Informed consent</b></summary>
-      <div>Informed consent is the most frequently used legal basis in research and 
-        is often not only a legal (GDPR-consent), but also an ethical obligation 
-        (e.g., METC informed consent). When using informed consent, you should 
-        be able to demonstrate that the data subject was informed and has given 
-        consent, and for which purpose(s) they gave their consent. In all cases, 
-        consent has to be freely given, specific, informed and unambiguous. Please 
-        refer to the [Informed consent section](#informed-consent-forms) for 
-        guidance on applying informed consent in your research.</div>
-    </details>
-  </li>
-  <li>
-    <details>
+    <details open>
       <summary><b>Public interest</b></summary>
-      <div><p>
-        Public interest is sometimes used in research when the research is shown
-        to clearly benefit the public good or fulfills a public task. In 
-        essence, public interest can be used for research that is conducted by 
-        employees of public institutions, when their research interest has been 
-        recognised by an official authority. For example, conducting research at 
-        Dutch universities has been officially recognised in the 
+      <div>Public interest can be used to perform scientific research when the 
+        research is shown to clearly benefit the public good or when it fulfills 
+        a public task. In essence, public interest can be used for research that 
+        is conducted by employees of public institutions, when their research 
+        interest has been recognised by an official authority. For example, 
+        conducting research at Dutch universities has been officially 
+        recognised in the 
         [Higher Education and Scientific Research Act](https://wetten.overheid.nl/BWBR0005682/2022-01-01){target="_blank"}
-        to be a public task. Public interest is often used when consent is not 
-        a good option. For example, it may be impossible or impractical to 
-        obtain consent when performing public observations or social media 
-        research. Or when participants actually do not have a free choice, such 
-        as in clinical trials when participants would experience significant 
-        disadvantages when not participating.
-      </p><p>If you want to use public interest as a legal basis, you 
-        need to assess the necessity and proportionality of your processing. 
-        Additionally, you need to demonstrate that the interests of data 
-        subjects do not override your research interests. To do so, please contact 
-        your [privacy officer](#support) to assess whether you can use this 
-        legal basis in your research.</p></div>
+        to be a public task. 
+        [Read more on when and how to use public interest](#public-interest).
+      </div>
+    </details>
+  </li>
+  <li>
+    <details open>
+      <summary><b>Consent</b></summary>
+      <div>Consent is a frequently used legal basis in research. Usually, 
+        GDPR-consent (i.e., consent to process personal data) is combined with 
+        ethical *informed consent* (i.e., consent to ascertain that data 
+        subjects are informed and participate voluntarily). When using consent, 
+        you should be able to demonstrate that the data subject was informed and 
+        has given consent, and for which purpose(s) they gave their consent. 
+        In all cases, consent has to be freely given, specific, informed and 
+        unambiguous. 
+        [Read more on when and how to use consent](#informed-consent-forms).
+      </div>
     </details>
   </li>
   <li>
     <details>
-      <summary><b>Legitimate interest of the controller</b></summary>
-      <div><p>
-        Legitimate interest is often used by companies to process personal data 
-        necessary for the functioning of their own company, e.g., processing 
-        user data for fraud prevention, or keeping a registration system to 
-        provide better services. In research, legitimate interest is often used 
-        for processing activities that have no direct research purpose. For 
-        example, this can be the case when you need to collect contact 
-        information to approach data subjects to participate, and you can only 
-        obtain their consent for participating in your research after contacting 
-        them. Since contacting data subjects is a prerequisite to perform your 
-        research, it can be in the university's legitimate (research) interest 
-        to process their contact information.
-      </p><p>To evaluate whether you can use legitimate interest as a legal basis, you 
-        always need to weigh the interests of the controller (e.g., Utrecht 
-        University) and the data subjects in a 
-        [Legitimate interest assessment](#legitimate-interest-assessment).
-        Please contact your [privacy officer](#support) to assess whether you 
-        can use this legal basis in your research.</p></div>
+      <summary><b>Legitimate interest of the controller or a third party</b></summary>
+      <div>Legitimate interest of the controller or a third party is a less often 
+        used legal basis to use personal data in scientific research. It is 
+        often used by companies to process personal data that are necessary for 
+        their company’s functioning. In research, legitimate interest is often 
+        used for processing activities that do not directly benefit society in 
+        general. Also, research that does not serve a public but a private 
+        interest, can be performed on this legal basis. 
+        [Read more on when and how to use legitimate interest](#legitimate-interest-assessment).
+        </div>
     </details>
   </li>
 </ol>
 
-### Legal bases not suitable for reseach
+### Legal bases generally not suitable for reseach {#legal-bases-not-suitable-for-research}
 
 <ol start="4">
   <li>
     <details>
       <summary><b>Processing is necessary because of a legal obligation of the controller</b></summary>
-      <div>This basis is not suitable for research. As an example, Utrecht 
-        University has to share tax data with the Dutch tax administration in 
-        order to comply with tax legislation.</div>
+      <div>This legal basis is rarely suitable for research. As an example, 
+        Utrecht University has to share tax data with the Dutch tax 
+        administration to comply with tax legislation. Another, research-related, 
+        example is the use of Covid-19 related legislation, where data were 
+        collected based on a legal obligation, and were consequently used for 
+        research on public health (see 
+        <a href="https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-032020-processing-data-concerning-health-purpose_en"
+        target="_blank">EDPB, 2020</a>).
+      </div>
     </details>
   </li>
   <li>
     <details>
       <summary><b>Processing is necessary for the performance of a contract</b></summary>
-      <div>This basis is not suitable for research. As an example, Utrecht 
+      <div>This legal basis is not very common in research. As an example, Utrecht 
         University has contracts with its employees, which require it to manage 
-        the employees' financial data.</div>
+        the employee' financial data. In research, this legal basis could in 
+        some cases be used when participants are recruited using a contract, 
+        i.e., they are properly hired to work on the research project. As long 
+        as the contract is valid under European law, and the processing is 
+        necessary, then this legal basis could be used.
+      </div>
     </details>
   </li>
   <li>
     <details>
-      <summary><b>Processing is necessary to protect a person's vital interests</b></summary>
-      <div>This basis is generally not suitable for research. If processing 
-        someone's personal data is crucial to their health or even life, that 
-        processing is allowed under the GDPR.</div>
+      <summary><b>Processing is necessary to protect the vital interests of the data subject or someone else</b></summary>
+      <div>This legal basis is likely not suitable for research. If processing 
+        someone's personal data is crucial to someone's health or even life, 
+        that processing is allowed under the GDPR.
+      </div>
     </details>
   </li>
 </ol>
 
+:::fyi
+**For different purposes in your research project, a different 
+legal basis may apply**. 
+
+For example:
+
+- you may use *public interest* for collecting, storing, analysing and 
+publishing the data, and ask *consent* to contact data subjects again for a 
+follow-up study. 
+- you may use *consent* for making, sharing, distributing and reusing audio or 
+video recordings of an interview, and *public interest* for transcribing and 
+analysing the interview.
+:::
 
 ### Further processing for research purposes {#further-processing}
 
 It may happen that you want to process personal data for other purposes than 
 previously specified (e.g., because you formulated an additional research 
 question), or you want to reuse previously collected personal data in your 
-research. In these cases, it may be possible to make use of 
-[article 5(1)(b)](https://gdpr-info.eu/art-5-gdpr/){target="_blank"}, 
-which states that "further processing for [...] scientific purposes shall [...] 
-not be considered to be incompatible with the initial purposes". Basically, this 
-means that you can reuse personal data, that were previously collected for other 
-purposes, for scientific research purposes. This is only allowed if you put in 
-place sufficient safeguards to protect the personal data, inform data subjects, 
-and allow them to exercise their rights 
-([art. 89](https://gdpr-info.eu/art-89-gdpr/){target="_blank"}). 
-"Further processing" is not strictly a legal basis. Instead, it functions as a 
-way to legitimise *further* processing of personal data (which was previously 
-collected for a different purpose, using one of the six legal bases) for research 
-purposes.
+research. In these cases, it may be possible to apply 
+[GDPR article 5(1)(b)](https://gdpr-info.eu/art-5-gdpr/){target="_blank"}, 
+which states:
 
-:::note
-Public interest, legitimate interest, and relying on further processing are ways 
-to meet your *legal* requirements for processing personal data, but not 
-necessarily your *ethical* requirements: you may still need consent if demanded 
-so from an ethical perspective. Before you rely on any of these, you should 
-first assess whether they are indeed suitable with your faculty [privacy officer](#support), 
-and determine whether your research interests outweigh the privacy rights of 
-the data subjects.
-:::
+> "further processing for […] scientific purposes shall […] not be considered to 
+be incompatible with the initial purposes". 
+
+Basically, this means that personal data that were previously collected for any purpose, can be 
+reused for scientific research, even when the personal data were initially 
+collected for [non-scientific research purposes](#reuse-education-data). 
+Using this exemption is only allowed if you 
+([art. 89](https://gdpr-info.eu/art-89-gdpr/){target="_blank"}):
+
+1. put in place sufficient [safeguards](#design-strategies) to protect the 
+personal data
+2. [inform data subjects](#privacy-notices) about the further processing 
+(if possible), and 
+3. allow them to exercise [their rights](#data-subject-rights). 
+
+But you need to do this anyway. 
+
+**"Further processing" is not a legal basis.** Instead, it functions as a way 
+to legitimise - for research purposes - further processing of personal data 
+that were previously collected for a different purpose. At the moment, it is 
+unclear if this further processing exemption for scientific research holds for 
+data that were originally collected based on **consent**. This is because valid 
+consent should be **specific**, suggesting that the further processing should 
+fall within the specific boundaries of the original consent (i.e, the purpose 
+of the further processing should be compatible with the original purpose, 
+[rec. 50](https://gdpr-info.eu/recitals/no-50/){target="_blank"}). 
+The European Data Protection Board has announced that it will provide guidelines 
+for reusing personal data for scientific research in the future, which should 
+make this issue more explicit. For the time being, it is better to stay on the 
+safe side and not rely on this derogation when consent was the original legal 
+basis. 
 
 ## Which legal basis to use? {#choose-legal-basis}
 
+It is not always clear-cut which legal basis is the best one to choose. Use the 
+below flowchart to decide which legal basis is most suitable for your situation. 
+
 ```{r legal-basis-flowchart, echo=FALSE, results="asis"}
-knitr::include_url("assets/legal-bases-slides/legal-basis-slides.html")
+knitr::include_url("assets/legal-bases-slides/legal-basis-slides.html",
+                   height = "600px")
 ```
+
+[Click here to see the flowchart in full-screen mode](assets/legal-bases-slides/legal-basis-slides.html){target="_blank"}.
+
 
 ## Public interest {#public-interest}
 
-Content coming soon!
+:::keywords
+On this page: public interest, general interest, legal basis, legal ground, 
+data reuse, secondary use    
+Date of last review: 2023-10-02
+:::
+
+Scientific research usually aims to increase general knowledge and improve the 
+workings of society. In the Netherlands, the 
+[Higher Education and Scientific Research Act](https://wetten.overheid.nl/BWBR0005682/2023-01-01){target="_blank"} 
+recognises conducting scientific research to be a public task of Dutch 
+universities. Research aimed at increasing knowledge is seen as a task in the 
+public interest. Therefore, Utrecht University researchers can, 
+[under certain conditions](#public-interest-obligations), use the legal basis 
+of public interest when they process personal data in the context of scientific 
+research. 
+
+:::warning 
+The use of public interest as a legal basis in scientific research does not 
+apply to all research institutions. Many institutions still use consent as the 
+default legal basis. Moreover, in the Netherlands, consent is also the go-to 
+legal basis for researchers in the 
+[health domain](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}. 
+:::
+
+### What does it mean to use public interest as a legal basis? {#public-interest-meaning}
+
+- **No consent, or only for ethical reasons**   
+  If you use public interest as a legal basis, you do not need to obtain 
+  consent for processing personal data. In many cases, you only need 
+  *ethical informed consent*, i.e., consent to ascertain that data subjects 
+  participate voluntarily.
+  <br><br>
+- **More freedom, easier reuse**   
+  Compared to using consent, you are not bound to the specific conditions 
+  set in the consent statement when you rely on public interest. You must do 
+  your best to [inform data subjects](#privacy-notices) properly, 
+  but you do not have to ask (renewed) permission to use their personal data. 
+  This is especially advantageous when 
+  [sharing personal data for reuse](#data-sharing-reuse): 
+  if you use(d) consent, you cannot use the personal data for other scientific 
+  purposes besides what was agreed with the data subject. If you use public 
+  interest, you can in principle reuse the personal data for any other 
+  scientific purposes in the public interest.
+  <br><br>
+- **Data subjects' rights**   
+  When you use consent, data subjects have the right to withdraw that 
+  consent, and when they do, in most cases you are obliged to remove their data. 
+  This can have major consequences for the integrity of your dataset. With 
+  public interest, data subjects instead have the right to *object* to your use 
+  of their personal data, but only based on their personal, specific situation 
+  ([art. 21(6)](https://gdpr-info.eu/art-21-gdpr/){target="_blank"}). 
+  If a data subject objects, you have to consider both the data subject's 
+  specific situation and the interests of your research. It may be that the 
+  interests of your research will prevail and that you can therefore continue 
+  your research the same way. In any case, always 
+  [contact your privacy officer](#support) when a data subject 
+  wants to exercise (one of) their rights.
+  <br><br>
+- **Only for scientific research**   
+  Public interest is really only suitable for research that is aimed to 
+  increase the general knowledge. If you do research on behalf of a commercial 
+  party, that research is usually not performed in the public interest.
+
+### When to use public interest as a legal basis? {#public-interest-when}
+
+Public interest is very suitable for scientific research in which:
+
+- <details><summary>it is difficult to obtain consent</summary>
+  <div>For example:
+    <ul>
+      <li>contactless research (i.e., there is no direct contact with data 
+      subjects), like public observations, web scraping research or archival 
+      research into living individuals.</li>
+      <li>research with societal groups who are wary of providing a name and/or 
+      signature for consent, such as youth in problematic areas, research in the 
+      LGBTQIA+ community, or when doing field work.</li>
+    </ul></div>
+  </details>
+- <details><summary>data subjects do not have a truly free choice to participate.</summary>
+  <div>For example:
+    <ul>
+      <li>Research into the university’s own students</li>
+      <li>Research performed at schools, in which pupils do not always have a 
+      free choice to participate (in many cases public interest is actually 
+      already used here under the term "passive consent").</li>
+    </ul></div>
+  </details>
+- <details><summary>consent cannot be (easily) demonstrated</summary>
+  <div>For example, if you pseudonymised the personal data (e.g., removed names 
+  and contact information), but the data still refer to individuals, you still 
+  need to be able to demonstrate that you obtained consent. This can lead to 
+  the storage of unnecessary personal data.</div>
+  </details>
+
+### When is public interest less suitable as a legal basis? {#public-interest-when-not}
+
+Public interest is less suitable for research in which: 
+
+- <details><summary>special categories of personal data are indispensable to 
+the dataset, even for reuse</summary>
+  <div>Sometimes, it is possible to strip a dataset from the 
+  <a href="special-types-personal-data">special categories of personal data</a> 
+  and still keep a usable dataset for reuse. In such cases, public interest 
+  can still be the legal basis used in the overall study, and data subjects 
+  are then only asked for explicit consent to process the special categories of 
+  personal data. The dataset containing "regular" personal data can then be 
+  reused after the study on the basis of public interest. However, if a dataset 
+  is useless after stripping the special categories from them (like in most 
+  health research), the reuse argument does not hold and consent for both the 
+  regular and special categories of personal data is preferable, making consent 
+  the legal basis used in the overall study.</div>
+  </details>
+- <details><summary>it is important to give data subjects a maximum amount of 
+control over their personal data</summary>
+  <div>This can be an ethical requirement, but sometimes the possibility of 
+  providing (and withdrawing) consent for processing personal data can also be 
+  an additional reason for data subjects to participate. It can tip the balance.</div>
+  </details>
+- <details><summary>agreements with data subjects need to be registered anyways</summary>
+  <div>For example, for the use and storage of audio or video recordings. It 
+  could then make more sense to use consent for all processing activities.</div>
+  </details>
+- <details><summary>personal data are collected to be (re)used for purposes 
+<i>other</i> than scientific research</summary>
+  <div>Reuse for non-scientific purposes would need its own (new) legal basis, 
+  such as consent or legitimate interest.</div>
+  </details>
+
+### What are my obligations when using public interest? {#public-interest-obligations}
+
+If you want to use public interest as a legal basis, you need to: 
+
+1. **Ascertain that you are performing scientific research**   
+   A scientific research project is "a research project set up in accordance 
+   with relevant sector-related methodological and ethical standards" 
+   ([Article 29 Working Party, 2018](https://ec.europa.eu/newsroom/article29/items/623051){target="_blank"}).       
+   Most research performed at a university and reviewed by an ethical committee 
+   meets this requirement.
+   <br><br>
+2. **Ascertain that the research project serves the public interest.**    
+  In most cases, this means that it is aimed at knowledge expansion that society 
+  can benefit from. This is in principle always the case with university research, 
+  unless it is a private party (including the university itself) that alone 
+  benefits from the results of the research. 
+   <br><br>
+3. **Inform data subjects**    
+  Inform data subjects about what data you are using and why, and about their 
+  rights (as you always need to do), but now including the right to object to 
+  your processing of their personal data. [Read how here](#privacy-notices). 
+   <br><br>
+4. **Plan your research project in line with the GDPR**    
+  Plan your research as you would for all legal bases, using the 
+  [GDPR principles](#gdpr-principles) and 
+  [Privacy by Design](#design-strategies) strategies.
+   <br><br>
+5. **Demonstrate that your use of the personal data is necessary and 
+  proportionate to your research goal.**    
+  The interests of data subjects must not override your research interests. 
+  This obligation is often fulfilled by going through *ethical review*. We also 
+  recommend performing a [privacy scan](#privacy-scan) to make sure all important 
+  [privacy risks](#risk-assessment) in your project are covered. Please contact 
+  your [privacy officer](#support) for the procedure in your faculty, and check out 
+  [this infographic](https://edps.europa.eu/sites/default/files/publication/20-01-28_edps_quickguide_en.pdf){target="_blank"} 
+  from the European Data Protection Supervisor (2020) on how to assess necessity 
+  and proportionality. 
+   <br><br>
+6. **Contact your [privacy officer](#support) when a data subject objects to your 
+  use of their personal data.**    
+  Together, you will come up with a fitting response 
+  and plan of action.  
+
 
 ## Consent {#informed-consent-forms}
 
 :::keywords
 On this page: consent, consent form, informed consent form, legal basis    
-Date of last review: 2022-11-15
+Date of last review: 2023-10-02
 :::
 
-**Of the 6 possible legal bases to process personal data, informed consent is 
-currently the one most often used in research. With the term consent, we mean 
-the process of data subjects deciding whether or not to agree to specific 
-statements, such as a statement to participate in a research project.**
+**Of the 6 possible legal bases to process personal data, consent is currently 
+the one most often used in research, although it may not always be the most 
+appropriate one. With the term consent, we mean the process of data subjects 
+deciding whether or not to agree to specific statements, such as a statement 
+to collect and analyse their data to answer the research question.** 
+
+### Different types of consent {#consent-types}
+
+The term "consent" is used both in the GDPR as well as in an ethical context:  
+
+- In the GDPR, consent can be a **legal basis**, where data subjects give 
+consent to process their personal data (e.g., "I consent to my data a, b, c 
+being used for purpose x, y, z"). Instead of this "GDPR consent", you can 
+often also use another legal basis to process personal data in your research, 
+such as public interest.
+- In the GDPR, consent can also be a way to lift the ban on processing 
+[special categories of personal data](#special-types-personal-data).
+Importantly, in some cases, you should use consent to allow the use of special
+categories of personal data, but still use public interest as the main legal 
+basis in your research project.
+- In an ethical context, *informed consent* is a [safeguard](https://edps.europa.eu/sites/default/files/publication/20-01-06_opinion_research_en.pdf#page=20){target="_blank"} 
+to make sure that data subjects participate voluntarily in the research project 
+(e.g., "I have read the information and agree to participate under the 
+conditions described"). This type of informed consent is required in most 
+types of research involving humans, irrespective of which legal basis is used.
+
+:::note
+Even if consent is not the legal basis, you may still need to ask 
+consent for processing special categories of personal data, or to ascertain 
+voluntary participation in your study. All requirements outlined below concern 
+consent as meant by the GDPR.
+:::
 
 ### Consent step-by-step {#consent-step-by-step}
 
-1. <details><summary>Determine if consent is the legal basis you need</summary>
-<div><p>Determine if consent is the [legal basis](#legal-basis) you need for your
-      research: there are other legal bases besides consent which can sometimes be 
-      more suitable in a research context.</p>
-      <p>In some situations, consent is likely the only way to process data, for 
-      example, if you want to process 
-      [special categories of personal data]{#special-types-personal-data}, 
-      or if you process personal data from people who are incapable of giving consent
-      or from children under 16 years old. In the latter 
-      case, the GDPR requires to obtain additional obtain consent from a legal 
-      representative (e.g., parent), and there are additional requirements when your 
-      research falls under the Dutch 
-      [Medical Research Involving Human Subjects Act](https://www.ccmo.nl/onderzoekers/aanvullende-informatie-over-bepaalde-soorten-onderzoek/onderzoek-bij-proefpersonen-jonger-dan-16-jaar-kinderen/toestemming){target="_blank"}.</p>
-</div></details>
-2. <details><summary>Consider if you meet all requirements for consent</summary>
-  <div>If you need to use consent as a legal basis, consider if you meet 
+1. **Determine if consent is the legal basis you need**    
+  Consent is not the only [legal basis suitable for scientific research](#consent-when). 
+  In many cases, public interest is very suitable as well (sometimes more 
+  suitable) in a research context.
+  <br><br>
+2. **Consider if you meet all requirements for consent**    
+  If you need to use consent as a legal basis, consider if you meet 
   [all requirements listed below](#consent-requirements). If you do not,
   consent is not a valid legal basis, and you should consider another one.
-  </div></details>
-3. <details><summary>Determine what you will ask consent for</summary>
-  <div>Determine what specifically you are asking consent for. If you cannot 
+  <br><br>
+3. **Determine what you will ask consent for**    
+  Determine what specifically you are asking consent for. If you cannot 
   determine a specific purpose, for instance because your research question is 
   not yet entirely clear, contact your [privacy officer](#support)
   to consider [obtaining broad consent](#broad-consent).
-  </div></details>
-4. <details><summary>Prepare information for data subjects</summary>
-  <div>Prepare a 
-  [privacy notice or information letter](#privacy-notices) 
+  <br><br>
+4. **Prepare information for data subjects**   
+  Prepare a [privacy notice or information letter](#privacy-notices) 
   for data subjects to inform them before asking for their consent.
-  </div></details>
-5. <details><summary>Obtain demonstrable consent</summary>
-  <div>Different [forms of consent](#forms-consent) are valid. Note 
+  <br><br>
+5. **Obtain demonstrable consent**   
+  Different [forms of consent](#forms-consent) are valid. Note 
   that often a [signature is not required](#to-sign-or-not-to-sign).
-  </div></details>
-6. <details><summary>Keep the consent forms available</summary>
-  <div>Treat the consent declarations as personal data: 
-  [store them](#demonstrate-consent) separately and securely from the 
-  research data, and for as long as your research data contain personal data. 
-  </div></details>
+  <br><br>
+6. **Keep the consent forms available**   
+  Treat the consent declarations as personal data: 
+  [store them](#demonstrate-consent) securely, separately from the research 
+  data, and for as long as your research data contain personal data.
 
-:::note
-Note that the term “consent” is used both in the GDPR as well as in an ethical 
-context. As a [legal basis](#legal-basis), data subjects give consent 
-to process their personal data (e.g., "I consent to my data a, b, c be used for 
-purpose x, y, z"). In an ethical context, consent is a 
-[safeguard](https://edps.europa.eu/sites/default/files/publication/20-01-06_opinion_research_en.pdf#page=20){target="_blank"}
-to give data subjects more control over their personal data, and makes sure they 
-participate voluntarily in the research project (e.g.,  "I have read the 
-information and agree to participate under the conditions described"). Thus, it 
-can happen that consent is not be the best legal basis to use, but should still 
-be used as an ethical requirement.
-:::
+### When to use consent as a legal basis? {#consent-when}
+
+Consent is mostly suitable for scientific research for which the legal basis 
+of **public interest is not suitable**, such as research in which:
+
+- <details><summary>special categories of personal data form the core data in 
+  the dataset.</summary> 
+  <div>In that case, explicit consent is often needed in order to overcome the 
+  [ban on using these types of personal data](#special-types-personal-data). 
+  When the dataset is rendered useless when stripping it of the special 
+  categories, consent is likely the best legal basis. However, when the special 
+  categories are easy to strip from the dataset, leaving a perfectly reusable 
+  dataset with "regular" personal data, [public interest](#public-interest) 
+  could still be used as a legal basis, leaving consent to only be the way to 
+  lift the ban of using special categories of personal data.</div>
+  </details>
+- <details><summary>it is important to give data subjects a maximum amount of 
+  control over their personal data</summary>
+  <div>This can be an ethical requirement, but sometimes the possibility of 
+  providing (and withdrawing) consent can also be an additional reason for 
+  data subjects to participate. It can tip the balance.</div>
+  </details>
+- <details><summary>agreements with data subjects need to be registered 
+  anyways</summary>
+  <div>For example for the use and storage of audio or video recordings. It 
+  could then make more sense to use consent for all processing activities. 
+  This especially applies if you want to use the audio and video recordings 
+  for broader purposes than just answering your research question, such as 
+  use during lectures or conferences, placement on a website or in an archive, 
+  etc.</div>
+  </details>
+- <details><summary>personal data are collected to be (re)used for purposes 
+  other than scientific research</summary>
+  <div>Reuse for non-scientific purposes would need its own (new) legal basis, 
+  such as consent or legitimate interest.</div>
+  </details>
+- <details><summary>personal data are transferred to a country outside of the 
+European Economic Area (EEA)</summary>
+  <div>Consent may be required when data are 
+  [transferred to a third country](#third-country-transfer), which does not have an 
+  [adequate level of data protection](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en){target="_blank"}, 
+  and no extra protection measures are available or possible. Please contact 
+  your [privacy officer](#support) to assess whether this situation applies to 
+  you. 
 
 ### Requirements for valid consent {#consent-requirements}
 
@@ -233,8 +477,7 @@ Under the GDPR, consent is only valid when it is **all** of the below
 [rec. 43](https://gdpr-info.eu/recitals/no-43/){target="_blank"}; 
 click to expand):
 
-<ul>
-  <li><details><summary>Freely given</summary>
+- <details><summary>Freely given</summary>
   <div>Data subjects should have an actual voluntary choice and should not experience 
   negative consequences if they don’t consent or withdraw their consent. Moreover, 
   they should not be pressured to provide consent, and so there cannot be a power 
@@ -245,14 +488,13 @@ click to expand):
       <li>Consent is not a valid legal basis when the researcher is also a 
       teacher and asks their students to participate, who depend on the teacher 
       for a good grade.</li>
-      <li>Consent in a clinical trial is not a valid legal basis when patients 
-      are asked to participate in the trial, but the choice to participate 
-      affects their treatment plan or treatment outcome.</li>
-      <li>Consent can still be used for children and persons legally incapable to 
-      provide consent when their legal representative(s) provide the consent.</li>
+      <li>Consent is not a valid legal basis when a research director 
+      investigates the employees of their own faculty.</li>
     </ul>
-  </div></details></li>
-  <li><details><summary>Specific</summary>
+    Consent can still be used for children and persons legally incapable to 
+    provide consent when their legal representative(s) provide the consent.
+  </div></details>
+- <details><summary>Specific</summary>
   <div>Data subjects should know as specifically as possible what they are asked to
   consent to. Separate processing purposes therefore require explicitly separate 
   consent ([rec. 32](https://gdpr-info.eu/recitals/no-32/){target="_blank"}, 
@@ -268,17 +510,17 @@ click to expand):
      <li>Separate consent is needed for conducting a survey vs. for conducting a 
      subsequent interview, if participation in that interview is not required for 
      your research project.</li>
-     <li>Separate consent is needed for the current research project vs. for contacting 
-     data subjects for future research projects.</li>
-     <li>Separate consent is needed to use personal data to answer a research question 
-     vs. to link different sources of data together to do so 
+     <li>Separate consent is needed for the current research project vs. for 
+     contacting data subjects for future research projects.</li>
+     <li>Separate consent is needed to use personal data to answer a research 
+     question vs. to link different sources of data together to do so 
      ([Code of Conduct Dutch Health Research, 2022](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}.</li>
-     <li>Separate consent is recommended to make the personal data 
-     [available for reuse](#data-sharing-reuse) (describe the 
-     conditions under which this will be allowed).</li>
+     <li>New consent is needed to make the personal data 
+     [available for reuse](#data-sharing-reuse) to a specific party for a 
+     specific purpose (describe the conditions under which this will be allowed).</li>
     </ul>
-  </div></details></li>
-  <li><details><summary>Informed</summary>
+  </div></details>
+- <details><summary>Informed</summary>
   <div>Data subjects need to be clearly and accessibly informed about which personal 
   data are processed and why, and about their rights (see 
   [Information to data subjects](#privacy-notices)). Data subjects should be 
@@ -292,8 +534,7 @@ click to expand):
   ([rec. 32](https://gdpr-info.eu/recitals/no-32/){target="_blank"}): 
   consent should be active.
   </div></details>
-  </li>
-  <li><details><summary>Retractable</summary>
+- <details><summary>Retractable</summary>
   <div>Data subjects have the 
   [right to withdraw their consent](#data-subject-rights), meaning 
   their personal data cannot be used for the research purpose anymore and have to 
@@ -302,8 +543,6 @@ click to expand):
   participating at any time (usually an ethical obligation), because the latter 
   implies that the data collected up until that point can still be used for the 
   research project.</div></details>
-  </li>
-</ul>
 
 ### What forms of consent are valid? {#forms-consent}
 
@@ -317,7 +556,7 @@ be demonstrable and registered in a reliable manner. Some examples:
 - Audio- or video-recorded consent (separate it from the research data!)
 - Signing a paper document (not usually necessary)
 
-#### To sign or not to sign?
+#### To sign or not to sign? {#to-sign-or-not-to-sign}
 
 Signatures in consent forms are rarely needed. In fact, if you are only 
 processing *pseudonymised* research data, you will only collect unnecessary 
@@ -371,11 +610,11 @@ the line of expectation from data subjects.
   - offer a consent withdrawal possibility before using the data for new research 
  questions. This is especially relevant when it is still possible to reliably 
  identify data subjects in the dataset.
-  - make sure the data are not transferred to countries outside of the EEA, 
- unless one of the derogations from GDPR 
- [Chapter V](https://gdpr-info.eu/chapter-5/){target="_blank"} 
- applies (e.g., adequacy decision, standard contractual clauses, explicit 
- consent for transfer).
+  - make sure the data are not transferred to 
+  [countries outside of the EEA](#third-country-transfer), unless one of the 
+  derogations from GDPR [Chapter V](https://gdpr-info.eu/chapter-5/){target="_blank"} 
+  applies (e.g., adequacy decision, standard contractual clauses, explicit 
+  consent for transfer).
   - enforce specific requirements for access the data, e.g., "research in general" 
  is not a sufficiently specific purpose for reuse of the personal data.
 - you document your considerations and ask for help from a [privacy officer](#support).
@@ -422,7 +661,7 @@ Bad example sentences:
   may confuse data subjects.</li>
   <li>"I acknowledge that the personal data collected by the researcher belongs 
   to the university and that I have no rights in the research performed on it": 
-  it is not allowed to deny data subjects their data subjects' rights.</li>
+  it is not allowed to deny data subjects all their data subjects' rights.</li>
 </ul>
 </div>
 </details>
@@ -432,49 +671,89 @@ Bad example sentences:
 ::::keywords
 On this page: proportionality, necessity, proportional, necessary, balancing 
 test, legitimate interest, legal basis    
-Date of last review: 2023-02-14
+Date of last review: 2023-10-02
 ::::
 
-:::warning
-This page will be updated on the short term. Please check back at a later time
-for an updated version of this page
-:::
+**Legitimate interest of the controller is a less frequently used legal basis 
+in research. It is often used by companies to process personal data that are 
+necessary for their company's functioning, e.g., processing user data for fraud 
+prevention, or keeping a registration system to provide better services.** 
 
-If you plan to use legitimate interest as a [legal basis](#legal-basis) in your 
-research project, the GDPR requires that you assess the balance between your 
-interests and those of your data subjects 
-([art. 6](https://gdpr-info.eu/art-6-gdpr/){target="_blank"}). In such an 
-assessment, you consider:
+### When to (not) use legitimate interest as a legal basis? {#legitimate-interest-when}
 
-- the purpose of your research: what is your interest? The interest (purpose) 
-must be real, concrete and direct. In research, enabling you to perform your 
-research is usually a legitimate purpose.
-- whether your processing is:
-  - necessary: can you reasonably achieve your goal in a more privacy-friendly 
-  way?, and
-  - proportionate: how many people will be affected, to what extent and how 
-  intrusive is your processing?
-- your interests vs. those of data subjects (balancing test), e.g., can data 
-subjects expect you to process their data this way, what is the impact of your 
-processing on data subjects, your project, and society, and which safeguards can 
-you put in place to protect data subjects’ interests? 
+In research, legitimate interest is often used for processing activities that 
+have **no direct research purpose**. For example: 
 
-### How to do a legitimate interest assessment? {#lia-how}
+- Research performed to improve the internal business operations of the 
+  university. 
+- Research performed on behalf of third (commercial) parties usually does not 
+  aim to increase the general knowledge, but instead often aims to fulfil a 
+  specific company's goal. In this case, consent or legitimate interest 
+  (depending on the specific case) are more suitable legal bases. 
 
-Assessing the legitimacy of your processing is part of the 
-[privacy scan](#privacy-scan) or, if applicable, a [DPIA](#dpia). If you do not 
-use a privacy scan or DPIA and/or you have not performed this assessment (yet), 
-but you do rely on legitimate interest, please contact your 
-[privacy officer](#support) as soon as possible to perform a privacy scan anyways.
+In almost all other cases, the legal bases of [public interest](#public-interest) 
+or [consent](#informed-consent-forms) are likely more suitable to use in 
+scientific research. 
 
-::::note
-Please note: once your interest is assessed as being "legitimate", this is not 
-a free pass to do whatever you want with the data: you still need to incorporate 
-[Privacy by design](#privacy-by-design) into your project, for example by 
-adequately informing data subjects, protecting the personal data, and allowing 
-data subjects to exercise their rights.
-::::
+### What are my obligations when using legitimate interest? {#legitimate-interest-obligations}
 
-### Examples and templates 
+1. **Ascertain that you are performing scientific research**   
+   A scientific research project is "a research project set up in accordance 
+   with relevant sector-related methodological and ethical standards" 
+   ([Article 29 Working Party, 2018](https://ec.europa.eu/newsroom/article29/items/623051){target="_blank"}).       
+   Most research performed at a university and reviewed by an ethical committee 
+   meets this requirement.
+   <br><br>
+2. **Inform data subjects**    
+  Inform data subjects about what data you are using and why, and about their 
+  rights (as you always need to do), including the right to object to 
+  your processing of their personal data. [Read how here](#privacy-notices). 
+   <br><br>
+3. **Plan your research project in line with the GDPR**    
+  Plan your research as you would for all legal bases, using the 
+  [GDPR principles](#gdpr-principles) and 
+  [Privacy by Design](#design-strategies) strategies.
+   <br><br>
+4. **Assess whether you can use legitimate interest as your legal basis**    
+  Contact your [privacy officer](#support) to do this. Together, you will weigh 
+  the interests of the controller (e.g., Utrecht University) and the data 
+  subjects in a [legitimate interest assessment](#lia-how) 
+  ([art. 6](https://gdpr-info.eu/art-6-gdpr/){target="_blank"}). You must consider:
+    - the purpose of your research: what is your interest? The interest (purpose) 
+  must be real, concrete, direct and lawful. In research, enabling you to 
+  perform your research is usually a legitimate purpose. 
+    - whether your processing is:
+      - **necessary**: is the processing really necessary to accomplish your 
+    purpose? Can you reasonably achieve your purpose in a more privacy-friendly 
+    way?, and 
+      - **proportionate**: how many people will be affected, to what extent and 
+    how intrusive is your processing?     
+  See also [this infographic](https://edps.europa.eu/sites/default/files/publication/20-01-28_edps_quickguide_en.pdf){target="_blank"} 
+  from the European Data Protection Supervisor (2020) on how to assess 
+  necessity and proportionality. 
+    - your interests vs. those of data subjects (balancing test). Can data 
+  subjects expect you to process their data this way, what is the impact of 
+  your processing on data subjects, your project, and society, and which 
+  safeguards can you put in place to protect data subjects' interests? Do the 
+  interests of your research outweigh the impact on data subjects and society?
+   <br><br>
+5. **Contact your [privacy officer](#support) when a data subject objects to your 
+  use of their personal data.**    
+  Together, you will come up with a fitting response 
+  and plan of action.  
+
+### Legitimate interest assessment {#lia-how}
+
+The above weighing of the interests of the controller against those of the 
+data subjects should be done in a legitimate interest assessment. In principle, 
+assessing the legitimacy of your processing is part of the 
+[privacy scan](#privacy-scan) or, if applicable, a [DPIA](#dpia), and in most 
+cases also of *ethical review*. If you do not use a privacy scan or DPIA 
+and/or you have not performed this assessment (yet), but you do rely on 
+legitimate interest, please contact your [privacy officer](#support) as soon as 
+possible to perform a privacy scan anyways.
+
+### Examples and templates
+
 <a href="files/Legitimate_interest_assessment_empty.pdf" target = "_blank" 
 style="text-decoration: none;"><button type="button">Template in the absence of a privacy scan/DPIA</button></a> 
