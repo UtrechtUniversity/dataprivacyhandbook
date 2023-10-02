@@ -129,6 +129,7 @@ button:active {
   border-radius: 5px;
   margin-top: 5px; /* Adjust the spacing between button and content */
   display: none; /* Initially hide the content */
+  font-size: small;
 }
 
 /* Show the content when the details is open */
