@@ -120,43 +120,96 @@ On this page: sensitive personal data, sensitive data, special category, special
 categories, politics, race, ethnicity, religion, philosophy, dna, 
 genetics, genes, fingerprint, physical condition, mental illness, sexual 
 identity, gender identity    
-Date of last review: 2022-08-23
+Date of last review: 2023-10-02
 :::
 
-There are a few special types of personal data that are worth taking note of: 
-special categories of personal data, and otherwise sensitive personal data. 
-These types of personal data have additional requirements. If you want to 
+A few special types of personal data are worth taking note of are **special 
+categories of personal data**, and **otherwise sensitive personal data**. These 
+types of personal data have additional requirements. If you want to 
 process them, please contact your [privacy officer](#support) first.
 
-### Special categories of personal data
-The GDPR explicitly defines seven ‘special categories of personal data’. It is 
-information that reveals:
+### Special categories of personal data {#special-categories-of-personal-data}
 
-- racial or ethnic origin
-- political opinions
-- religious or philosophical beliefs
+The GDPR explicitly defines eight "special categories of personal data". 
+Personal data of these types are extra sensitive, because they can be used to 
+discriminate or exclude people. The following types of personal data are defined 
+as "special categories": 
+
+- racial or ethnic origin (e.g., this could also be a combination of name and 
+  country of origin, but not necessarily pictures or videos)
+- political opinions (in the broadest sense, not only membership of a 
+  political party)
+- religious or philosophical beliefs (this does not have to be an "official" 
+  religion)
 - trade union membership
-- genetic or biometric data when meant to uniquely identify someone
-- physical or mental health conditions
-- sex life or sexual orientation
+- genetic data (e.g., DNA, 
+  [rec. 34](https://gdpr-info.eu/recitals/no-34/){target="_blank"})
+- biometric data, but only when meant to uniquely identify someone (e.g., 
+  fingerprints, iris scans) 
+- data about physical or mental health in the broadest sense (including 
+  indications, diagnoses and treatments, 
+  [rec. 35](https://gdpr-info.eu/recitals/no-35/){target="_blank"}) 
+- sex life or sexual orientation (including gender identity)
 
 It is in principle **prohibited** to process these types of personal data, 
 unless an exception applies 
 ([art. 9](https://gdpr-info.eu/art-9-gdpr/){target="_blank"}). 
-For example, it is allowed to process these if:
+For research, the following exceptions to this prohibition are the most 
+relevant:
 
-- Data subjects have provided explicit consent to process these data for a 
-specific purpose.
-- Data subjects have made the data publicly available themselves
-- Processing is necessary for scientific research purposes (incl. historical 
-and statistical purposes) and it is impossible or would take an unreasonable
-amount of effort to obtain explicit consent 
-([UAVG art. 24](https://wetten.overheid.nl/BWBR0040940/2021-07-01#Hoofdstuk3){target="_blank"}).
+- <details><summary>Data subjects have made the data publicly available themselves</summary>
+  <div><p>You can use special categories of personal data when data subjects have 
+  made those data publicly available themselves. It must concern *truly public* 
+  sources (e.g., TV, newpaper, public social media, blogs, etc.) where the data 
+  subject does not expect (some) privacy. Moreover, the data subject must have 
+  *intended* to disclose the personal data "as special categories of personal 
+  data".</p>
+  <p>An example: if someone writes in their blog that they have been voting for 
+  a certain political party all their life, they are consciously making that 
+  information public. If someone is confined to a wheelchair and posts a holiday 
+  selfie (with a wheelchair) on a social medium, it is not about their 
+  disability, but about their holiday. Special category personal data derived 
+  from this are still protected by the processing ban. The same applies, for 
+  example, to personal data that can be derived from combining various separate 
+  data sources.</p>
+  <p>Publicly accessible special personal data of well-known personalities 
+  (celebrities, politicians, etc.) may be processed, whether those data have 
+  been made public by the person in question or by someone else.</p>
+  </div>
+  </details>
+- <details><summary>Data subjects have provided explicit consent to process 
+  these data for a specific purpose</summary>
+  <div>If data subjects have provided explicit consent which satisfies the GDPR
+  [criteria for valid consent](#consent-requirements), then you can use the 
+  personal data in your research project.</div>
+  </details>
+- <details><summary>Processing is necessary for scientific research purposes 
+  and consent is impossible or unreasonably difficult</summary>
+  <div>If you are using the special categories for scientific research purposes
+  (incl. historical and statistical purposes), and it is impossible or would 
+  take an unreasonable amount of effort to obtain explicit consent 
+  ([UAVG art. 24](https://wetten.overheid.nl/BWBR0040940/2021-07-01#Hoofdstuk3){target="_blank"}),
+  you can use the data in your research. If this is the case, you must 
+  substantiate this danger to your project and take additional protection 
+  measures. Obtaining consent could take an unreasonable amount of effort, 
+  for example, in:
+    <ul>
+      <li>large-scale archival research into living people from whom you cannot 
+        obtain all or up-to-date contact details</li>
+      <li>webscraping or other big data research, in which the time investment to 
+        obtain consent is out of proportion</li>
+      <li>fieldwork outside Europe. In many non-European communities, placing a 
+        signature on a consent form is not trusted. Sometimes people also have 
+        very poor reading skills. Proving consent is then virtually impossible</li>
+      <li>research within more or less private social media groups.</li>
+    </ul>
+  </div>
+  </details>
 
-Even if you can make use of one of these exemptions, special categories of 
-personal data warrant additional security measures to make sure they are 
-protected. Always contact your [privacy officer](#support) if you intend on 
-processing these types of data.
+Even if you can invoke one of these exemptions, special categories of personal 
+data warrant additional security measures to make sure they are protected. 
+Always contact your [privacy officer](#support) if you intend on using 
+these types of data. 
 
 :::note
 The [Dutch Code of Conduct for Health Research](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}
@@ -164,8 +217,8 @@ The [Dutch Code of Conduct for Health Research](https://www.coreon.org/wp-conten
 consent for processing special categories of personal data may not be necessary.
 :::
 
+### Data that are otherwise sensitive {#data-that-are-otherwise-sensitive}
 
-### Data that are otherwise sensitive
 Other types of data can also be sensitive, because they can carry higher risks 
 for the data subjects. These types of data can either not be processed at all, 
 or only under certain circumstances. Either way, they require additional 
@@ -177,7 +230,13 @@ Examples are:
 - Financial data
 - Data about relationship problems
 - Data that can be misused for identity fraud, such as the Dutch Citizen 
-Service Number (BSN). In principle, the BSN cannot be used in research at all.
-- Criminal or justice-related data: they can only be processed under 
-governmental supervision or when a derogation exists in national legislation 
-([art. 10](https://gdpr-info.eu/art-10-gdpr/){target="_blank"}).
+  Service Number (BSN).  The BSN can only be used when legally necessary. Since 
+  this is not the case for scientific research, using BSN in research is in most 
+  cases forbidden.
+- Criminal data or data about criminal convictions. These can only be processed 
+  under governmental supervision or when a derogation exists in national 
+  legislation ([art. 10](https://gdpr-info.eu/art-10-gdpr/){target="_blank"}). 
+  For scientific research, more or less the same regime applies for these data 
+  as for special categories of personal data. This means that you are allowed 
+  to use them for your study if one of the exceptions mentioned for special 
+  categories of personal data applies. 
