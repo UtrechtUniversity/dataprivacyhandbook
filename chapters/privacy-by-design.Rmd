@@ -404,6 +404,13 @@ target = "_blank" style="text-decoration: none;"><button type="button">Template 
 </table>
 </details>
 
+:::note
+Utrecht University also has a 
+[generic privacy statement for participants of research projects](https://www.uu.nl/en/organisation/practical-matters/privacy/privacy-statements-utrecht-university/privacy-statement-participants-scientific-research){target="_blank"}. 
+This is not a replacement of your own information letter, but you can refer to 
+it in your information letter for future reference if needed. 
+:::
+
 ### Form of a privacy notice
 ::::fyi
 The format of the privacy notice is also crucial. Even if you include all 
