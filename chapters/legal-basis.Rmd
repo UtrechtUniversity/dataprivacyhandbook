@@ -202,6 +202,12 @@ legal basis for researchers in the
 [health domain](https://www.coreon.org/wp-content/uploads/2023/06/Code-of-Conduct-for-Health-Research-2022.pdf){target="_blank"}. 
 :::
 
+:::fyi
+If you work or study at Utrecht University, you can read more about the reasoning
+for using public interest for scientific research 
+[on this intranet page](https://intranet.uu.nl/kennisbank/algemeen-belang-in-plaats-van-toestemming-in-onderzoek){target="_blank"}.
+:::
+
 ### What does it mean to use public interest as a legal basis? {#public-interest-meaning}
 
 - **No consent, or only for ethical reasons**   

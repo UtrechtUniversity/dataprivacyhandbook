@@ -5,6 +5,10 @@ project, the first question to answer is: do you process personal data? To
 answer this question, we need to know: (1) What exactly are personal data, 
 and (2) how do you know if you are working with personal data in your research?
 
+The video below introduces what personal data are:
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/egVmd_QFY_o?si=STGQR7or90dcgEF3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Definition of personal data {#definition-personal-data}
 
 According to the GDPR, personal data are “any information relating to an 
