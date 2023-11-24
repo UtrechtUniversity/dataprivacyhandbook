@@ -10,10 +10,7 @@ support.
 
 ### Education {#education}
 
-Research Data Management Support currently offers:
-
-- Online module [Privacy basics for researchers](https://www.uu.nl/en/research/research-data-management/walk-in-hours-workshops/privacy-basics-online-training){target="_blank"}
-- In-person workshop [Handling Personal Data](https://www.uu.nl/en/research/research-data-management/training-workshops/handling-personal-data-in-research){target="_blank"}
+Research Data Management Support currently offers an online module [Privacy basics for researchers](https://www.uu.nl/en/research/research-data-management/walk-in-hours-workshops/privacy-basics-online-training){target="_blank"}. It is also possible to request a tailored workshop from us.
 
 Additionally, your own faculty or department may offer workshops surrounding
 privacy, ethics and/or research integrity (see websites below).
