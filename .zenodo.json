@@ -169,22 +169,22 @@
   "access_right": "open",
   "related_identifiers": [
     {
-      "identifier": "https://utrechtuniversity.github.io/dataprivacyhandbook",
-      "relation": "isAlternateIdentifier",
-      "resource_type": "other"
+      "identifier": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
+      "relation": "isIdenticalTo",
+      "resource_type": "book"
     },
     {
-      "identifier": "https://github.com/UtrechtUniversity/dataprivacyhandbook",
-      "relation": "isAlternateIdentifier",
-      "resource_type": "other"
+      "identifier": "https://github.com/UtrechtUniversity/dataprivacyhandbook/",
+      "relation": "isDocumentedBy",
+      "resource_type": "software"
     },
     {
       "identifier": "https://uu.nl/privacyhandbook/",
-      "relation": "isAlternateIdentifier",
-      "resource_type": "other"
+      "relation": "isIdenticalTo",
+      "resource_type": "book"
     },
     {
-      "identifier": "https://utrechtuniversity.github.io/dataprivacyproject",
+      "identifier": "https://utrechtuniversity.github.io/dataprivacyproject/",
       "relation": "isDescribedBy",
       "resource_type": "other"
     }
@@ -194,7 +194,8 @@
     "research",
     "gdpr",
     "academia",
-    "general data protection regulation"
+    "general data protection regulation",
+    "research data management"
   ],
   "communities": [
     {
@@ -204,15 +205,5 @@
   "license": "cc-by",
   "upload_type": "publication",
   "publication_type": "book",
-  "language": "eng",
-  "subjects": [{
-    "term": "research data management",
-    "identifier": "https://codata.org/rdm-terminology/research-data-management/",
-    "scheme": "url"
-  },
-  {
-    "term": "privacy",
-    "identifier": "https://codata.org/rdm-terminology/privacy/",
-    "scheme": "url"
-  }]
+  "language": "eng"
 }
