@@ -217,7 +217,7 @@ recommend the book
 :::keywords
 On this page: data donation, digital trace data, local processing, interactive 
 consent    
-Date of last review: 2023-05-15
+Date of last review: 2023-11-24
 :::
 
 People leave all kinds of digital traces, for example on social media, 
@@ -311,8 +311,7 @@ and one with [Whatsapp data](https://github.com/sodascience/port-whatsapp-datado
 - A more elaborate data donation platform is being developed in the
 [PDI-SSH-funded](https://pdi-ssh.nl/en/2021/11/funded-projects-2021-call/){target="_blank"} 
 Digital Data Donation Infrastructure 
-([D3I](https://www.uu.nl/en/news/the-board-of-the-pdi-ssh-foundation-honours-applications-in-the-call-digital-infrastructure-ssh){target="_blank"})
-project. 
+(D3I). All information about the project can be found [on the data donation website](https://datadonation.eu/){target="_blank"}. 
 - Read further about the 
 [framework](https://doi.org/10.5117/CCR2022.2.002.BOES){target="_blank"}, 
 the [proof of concept of the PORT software](https://doi.org/10.1016/j.patter.2022.100444){target="_blank"}, 
