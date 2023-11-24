@@ -179,13 +179,13 @@
       "resource_type": "other"
     },
     {
-      "identifier": "https://uu.nl/privacyhandbook",
+      "identifier": "https://uu.nl/privacyhandbook/",
       "relation": "isAlternateIdentifier",
       "resource_type": "other"
     },
     {
       "identifier": "https://utrechtuniversity.github.io/dataprivacyproject",
-      "relation": "describes",
+      "relation": "isDescribedBy",
       "resource_type": "other"
     }
   ],
