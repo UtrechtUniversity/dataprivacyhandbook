@@ -1,10 +1,27 @@
-# Research scenarios {#research-scenarios}
+# Get started {#research-scenarios}
+:::keywords
+On this page: privacy checklist, project design, getting started    
+Date of last review: 2023-12-21
+:::
 
-This chapter will outline typical privacy issues and design solutions for 
-several types of scientific research. 
+**So you use [personal data](#personal-data) in your research: 
+what steps do you need to take?**
 
-:::note
-These scenarios are as yet a Work In Progress. For now, please consult the rest 
-of the Data Privacy Handbook, or contact your [privacy officer](#support) if you
-cannot find the answer here.
+The one-pager below outlines the basic steps in every research project that
+uses personal data. You can use the rest of the Data Privacy Handbook to find
+more information about each of these topics:
+
+![Image with 10 steps towards privacy compliance in research: (1) Keep the GDPR in mind when designing your research: Do you need to collect personal data, why, and how much? (2) Make sure you have a legal basis to use personal data, e.g., public interest or consent (3) Document privacy risks and privacy-related decisions, e.g., in a Data Management Plan, privacy scan, or Data Protection Impact Assessment (4) Arrange ethics review. Ethics review makes sure that you have also taken ethical implications into account (5) Inform participants properly, e.g., in an information letter, oral script, privacy statement (6) Protect your data with organisational measures, e.g., access control, agreements with external parties, data protection policies, researcher training (7) Protect your data with technical measures, e.g., anonymise, pseudonymise, encrypt your data, use safe storage (8) Enable participants to exercise their rights, e.g., right to data access, correction, objection, erasure (9) FAIR data: balance risks and Open Science principles, e.g., share under restricted access, or only share metadata and materials (10) Ask for help when you need it! Contact your privacy officer or data steward for support](img/10_steps_towards_privacy_compliance_in_research.png)
+*Utrecht University RDM Support (2023). 10 steps towards privacy compliance in research. https://doi.org/10.5281/zenodo.10417513*
+
+In designing your project, you can also make use of 
+[this decision aid](https://ec.europa.eu/assets/rtd/ethics-data-protection-decision-tree/index.html){target="_blank"} 
+from the European Commission.
+
+::: note
+The rest of this chapter will outline typical privacy issues and design 
+solutions for several types of scientific research. These scenarios are as yet 
+a Work In Progress. For now, please consult the rest of the Data Privacy 
+Handbook, or contact your [privacy officer](#support) if you cannot find the 
+answer here.
 :::
