@@ -294,7 +294,7 @@ everyone will treat the data up to UU-standards.
 - Appointing someone responsible for regulating access to the data.
 - Always reporting (suspicions of) 
 [data breaches](https://intranet.uu.nl/en/knowledgebase/what-is-a-personal-data-breach){target="_blank"}. 
-At UU, contact the [Computer Emergency Response Team](https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert){target="_blank"}. 
+At UU, contact the [Service Desk](https://intranet.uu.nl/en/knowledgebase/what-do-i-have-to-do-if-there-is-a-personal-data-breach){target="_blank"}. 
 - If needed, drawing up a privacy and/or security policy that specify roles and 
 responsibilities and best practices on how personal data are handled throughout 
 a project. 
