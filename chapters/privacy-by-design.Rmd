@@ -252,7 +252,7 @@ where noise is added to individual data points to hide their true identity.
 amount of time and with the necessary authorisations (e.g., read vs. write 
 access; only the relevant selection of personal data, etc.). Remove 
 authorisations when access is no longer required.
-- Encrypting and regularly backing up data on portable storage media.
+- Encrypting and regularly backing up data that are stored on portable storage media (note that portable storage media are not recommended for use as [long-term storage and back-up](#data-storage-where)).
 - Keeping a clear desk policy: lock your screen and store paper behind lock and 
 key when you leave your desk.
 
