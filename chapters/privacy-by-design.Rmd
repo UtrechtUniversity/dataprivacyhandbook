@@ -29,6 +29,13 @@ save you time and effort. They can help you review and possibly adjust your
 plans, determine the appropriate protection measures, and determine whether you 
 need to perform a more elaborate [Data Protection Impact Assessment](#dpia).
 
+::: fyi
+The European Commission has created 
+[this interactive decision aid](https://ec.europa.eu/assets/rtd/ethics-data-protection-decision-tree/index.html){target="_blank"} 
+that can also help you think of all the necessary steps to design your project 
+with personal data.
+:::
+
 ![Privacy in the research cycle. From Conception (Hypothesis generation, ideas), to Designing the project (Grant/project proposal, Draft privacy scan, Consult with privacy officer, data manager, grant officer), to Grant/project approved (Privacy scan, possibly DPIA, Data Management Plan, Privacy notice and consent form, Ethics review, Agreements between parties) to Data acquisition (Data collection and reuse), Data Processing (Preprocessing, Analysis, Output generation), to Preservation (of data, code and documentation) and Publication (Manuscript, Data, Code and Documentation)](img/privacy-research-cycle.png "Privacy in the research cycle: a good preparation is crucial")
 
 ## Privacy scan {#privacy-scan}
