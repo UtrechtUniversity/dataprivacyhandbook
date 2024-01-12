@@ -48,3 +48,4 @@ Besides the privacy officer, you can also ask for help from:
 - [Information security](https://intranet.uu.nl/en/security/information-security-contact-who-are-we){target="_blank"}.
 - In some faculties, the [Research Support Office](https://intranet.uu.nl/en/knowledgebase/research-support-offices){target="_blank"} 
 may be of help in drafting agreements.
+- If you suspect a data leak or data breach, contact the [Service Desk](https://intranet.uu.nl/en/knowledgebase/what-do-i-have-to-do-if-there-is-a-personal-data-breach){target="_blank"} immediately.
