@@ -239,7 +239,7 @@ in the data without revealing individual data points.
 Protect personal data, or make them unlinkable or unobservable. Make sure they 
 do not become public or known. You can for example do so using a combination of:
 
-- Using [encryption](#encryption), [hashing](#pseudonymisation-anonymisation) or 
+- Using [encryption](#encryption), [hashing](#replacement) or 
 [strong passwords](https://students.uu.nl/en/practical-information/it-facilities/information-security/information-security-secure-access-choosing-a-secure-password){target="_blank"}
 to protect data. Consider using a password manager to avoid losing access to the 
 data.
