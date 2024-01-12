@@ -29,6 +29,13 @@ save you time and effort. They can help you review and possibly adjust your
 plans, determine the appropriate protection measures, and determine whether you 
 need to perform a more elaborate [Data Protection Impact Assessment](#dpia).
 
+::: fyi
+The European Commission has created 
+[this interactive decision aid](https://ec.europa.eu/assets/rtd/ethics-data-protection-decision-tree/index.html){target="_blank"} 
+that can also help you think of all the necessary steps to design your project 
+with personal data.
+:::
+
 ![Privacy in the research cycle. From Conception (Hypothesis generation, ideas), to Designing the project (Grant/project proposal, Draft privacy scan, Consult with privacy officer, data manager, grant officer), to Grant/project approved (Privacy scan, possibly DPIA, Data Management Plan, Privacy notice and consent form, Ethics review, Agreements between parties) to Data acquisition (Data collection and reuse), Data Processing (Preprocessing, Analysis, Output generation), to Preservation (of data, code and documentation) and Publication (Manuscript, Data, Code and Documentation)](img/privacy-research-cycle.png "Privacy in the research cycle: a good preparation is crucial")
 
 ## Privacy scan {#privacy-scan}
@@ -239,7 +246,7 @@ in the data without revealing individual data points.
 Protect personal data, or make them unlinkable or unobservable. Make sure they 
 do not become public or known. You can for example do so using a combination of:
 
-- Using [encryption](#encryption), [hashing](#pseudonymisation-anonymisation) or 
+- Using [encryption](#encryption), [hashing](#replacement) or 
 [strong passwords](https://students.uu.nl/en/practical-information/it-facilities/information-security/information-security-secure-access-choosing-a-secure-password){target="_blank"}
 to protect data. Consider using a password manager to avoid losing access to the 
 data.
@@ -252,7 +259,7 @@ where noise is added to individual data points to hide their true identity.
 amount of time and with the necessary authorisations (e.g., read vs. write 
 access; only the relevant selection of personal data, etc.). Remove 
 authorisations when access is no longer required.
-- Encrypting and regularly backing up data on portable storage media.
+- Encrypting and regularly backing up data that are stored on portable storage media (note that portable storage media are not recommended for use as [long-term storage and back-up](#data-storage-where)).
 - Keeping a clear desk policy: lock your screen and store paper behind lock and 
 key when you leave your desk.
 
@@ -294,7 +301,7 @@ everyone will treat the data up to UU-standards.
 - Appointing someone responsible for regulating access to the data.
 - Always reporting (suspicions of) 
 [data breaches](https://intranet.uu.nl/en/knowledgebase/what-is-a-personal-data-breach){target="_blank"}. 
-At UU, contact the [Computer Emergency Response Team](https://intranet.uu.nl/en/security/information-security-computer-misuse-or-report-incident-cert){target="_blank"}. 
+At UU, contact the [Service Desk](https://intranet.uu.nl/en/knowledgebase/what-do-i-have-to-do-if-there-is-a-personal-data-breach){target="_blank"}. 
 - If needed, drawing up a privacy and/or security policy that specify roles and 
 responsibilities and best practices on how personal data are handled throughout 
 a project. 
