@@ -35,6 +35,13 @@ local({r <- getOption("repos")
 
 # Data Privacy Handbook
 
+```{r, results='asis'}
+# Only include the DOI badge for html output (does not work with pdf)
+if(knitr::is_html_output()){
+  cat("[![DOI](https://zenodo.org/badge/329296206.svg)](https://zenodo.org/badge/latestdoi/329296206)")
+}
+```
+
 ![Illustrated cover image for the Data Privacy Handbook, showing a person sitting cross-legged with a laptop on their lap. From the laptop arise several concepts that are covered in the Data Privacy Handbook: Anonymisation (depicted as a face covered with a censor bar), Transparency (depicted as one person showing another person a checklist, informing them), Data sharing (depicted as two laptops connected to a globe), Privacy by Design (depicted as a map with a shield on it), and Personal data (depicted as a fingerprint that connects zeros and ones). The person is floating as if in meditation: happy that they achieved GDPR compliance. The left upper corner of the image shows the Utrecht University logo, and the bottom of the image says 'Data Privacy Handbook'. Image drawn by Erik van Tuijn for Utrecht University in May of 2023.](img/cover-image-dph.png "Data Privacy Handbook, image licensed under CC-BY-SA 4.0")
 
 *Last Handbook update: `r format(Sys.time(), "%d %B %Y")`*
@@ -79,8 +86,9 @@ The Data Privacy Handbook is licensed under a
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target="_blank"}. 
 You can [view the license here](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/LICENSE.md){target="_blank}.
 
-When using (parts of) the Data Privacy Handbook in your work, please cite us 
-using the citation provided in the [GitHub repository](https://github.com/UtrechtUniversity/dataprivacyhandbook){target="_blank"}.
+When using (parts of) the Data Privacy Handbook in your work, please cite us:
+
+> Research Data Management Support et al. (2023). Data Privacy Handbook (v2023.11.24). Utrecht University, https://doi.org/10.5281/zenodo.8005847. Last updated on `r Sys.Date()`.
 
 ### Contributions
 
