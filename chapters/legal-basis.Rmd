@@ -449,14 +449,17 @@ of **public interest is not suitable**, such as research in which:
   providing (and withdrawing) consent can also be an additional reason for 
   data subjects to participate. It can tip the balance.</div>
   </details>
-- <details><summary>agreements with data subjects need to be registered 
+- <details><summary>arrangements with data subjects need to be registered 
   anyways</summary>
-  <div>For example for the use and storage of audio or video recordings. It 
-  could then make more sense to use consent for all processing activities. 
-  This especially applies if you want to use the audio and video recordings 
-  for broader purposes than just answering your research question, such as 
-  use during lectures or conferences, placement on a website or in an archive, 
-  etc.</div>
+  <div>
+  For example for the use of private material (like diaries; you need consent 
+  from a copyright perspective) and for the production and publication of audio 
+  or video recordings (portrait rights). It could then make more sense to use 
+  consent for all processing activities. This is because consent is required 
+  anyways if you want to use video or audio recordings for broader purposes than
+  scientific research purposes, such as playback during lectures or conferences,
+  placement on a website, transfer to a national archive, etc.
+  </div>
   </details>
 - <details><summary>personal data are collected to be (re)used for purposes 
   other than scientific research</summary>
