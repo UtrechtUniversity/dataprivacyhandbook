@@ -80,6 +80,11 @@
       "type": "ProjectMember"
     },
     {
+      "name": "Katharina Jovic",
+      "affiliation": "Utrecht University",
+      "type": "ProjectMember"
+    },
+    {
       "name": "Leon Kessels",
       "affiliation": "Utrecht University",
       "type": "ProjectMember"
@@ -162,6 +167,12 @@
       "name": "Martine de Vos",
       "affiliation": "Utrecht University",
       "orcid": "0000-0001-5301-1713",
+      "type": "ProjectMember"
+    },
+    {
+      "name": "Felix Weijdema",
+      "affiliation": "Utrecht University",
+      "orcid": "0000-0001-5150-1102",
       "type": "ProjectMember"
     }
   ],
