@@ -15,9 +15,190 @@ more information about each of these topics:
 *Utrecht University RDM Support (2023). 10 steps towards privacy compliance in research. https://doi.org/10.5281/zenodo.10417513*
 
 ::: note
-The rest of this chapter will outline typical privacy issues and design 
-solutions for several types of scientific research. These scenarios are as yet 
-a Work In Progress. For now, please consult the rest of the Data Privacy 
-Handbook, or contact your [privacy officer](#support) if you cannot find the 
-answer here.
+The rest of this chapter outlines typical privacy issues and design 
+solutions for several types of scientific research:
+
+- [Interview studies](#interview-scenario)
+- Webscraping (WIP)
+- Sensors and mobile devices (WIP)
+- Consortia (WIP)
+- ... and possibly more
 :::
+
+## (PART\*) Typical privacy issues in... {-} 
+
+## Interview research {#interview-scenario}
+
+:::keywords
+On this page: interview study, oral archive, qualitative data, audio recording, video recording, interview transcript     
+Date of last review: 2024-05-02
+:::
+
+Interviews in scientific research are a common qualitative research method that allow researchers to gather rich and detailed information directly from participants. 
+Interviews provide an opportunity to explore participants' perspectives, experiences and attitudes on a particular topic of interest. 
+Interviews involve face-to-face, telephone, or online conversations between researchers and participants. 
+Researchers typically use interview guides or semi-structured interview protocols to ensure consistency while allowing flexibility for follow-up questions and probing.  
+
+Below, we go into the following typical privacy-related issues for interview research:
+
+- Issues when [recording the interview](#interview-recording)
+- How to [inform participants](#interview-informing-participants)
+- Legal basis: [consent or public interest](#interview-legal-basis)
+- How to deal with [collecting unasked for personal data](#interview-bycatch)
+- [Transcribing interview data](#interview-transcription)
+- [Anonymising interview data](#interview-anonymisation)
+- [Sharing interview data for reuse](#interview-data-sharing)
+
+### Recording the interview {#interview-recording}
+
+If you don't need to record audio or video, don't (data minimisation). Textual data is a lot easier to de-identify than audio or video data. If you do record the interviews, take note of the following: 
+
+- Recordings may come with automatically generated metadata, such as location and time of recording. 
+This type of metadata could be identifiable in some cases.
+- Audio or video data can become very large. 
+It may not be possible to store or process this data on your own computer. 
+In that case, find out which secure remote solutions are offered by your institute. 
+
+#### Recording devices {#interview-recording-devices}
+
+When you record your interviews, it is necessary to do so via a secure recording device. 
+There are different options that you can choose:  
+
+- <details><summary>**Laptops**</summary>
+<div>If you work at Utrecht University (UU), you can log into your Microsoft for Business account with your Solis ID, and record directly in a Microsoft Teams meeting (either with the participant or with yourself). 
+Microsoft Teams will save the recording automatically in your UU account, and also has an automatic transcription option. 
+Tips: 
+   - Make sure to turn off the video during the recording if you don't need it. 
+   - Make sure Teams uses the [correct language](https://support.microsoft.com/en-au/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b#bkmk_changetranscriptlanguage){target="_blank"} for the transcription. 
+   - Move the recording and transcript to the correct storage. 
+   If you don't, they will remain in your personal account. 
+   - Test the laptop’s audio quality beforehand, and if needed, use an external microphone.
+</div></details>
+- <details><summary>**Phones**</summary>
+<div>Some faculties or departments offer phones specifically meant for making recordings. 
+If those are not available, you can consider buying an empty phone and installing a safe voice recording app. 
+Use of a personal device is in principle a no-go. 
+In any case, take into account the following: 
+   - The recordings should not be backed up to a personal cloud environment (e.g., iCloud). 
+   - The phone should be secured with a PIN or biometric authentication. 
+   A PIN should consist of at least 5 numbers and should be specific to the device and possibly the user. 
+   Biometric authentication should be processed on the device itself (no central processing of biometric information). 
+   - Check that the phone is encrypted. 
+   IOS devices usually are already encrypted by default, and some [Android devices](https://www.androidauthority.com/how-to-encrypt-android-device-326700/){target="_blank"} as well. 
+   - Transfer (encrypted) recordings as soon as possible to UU storage (e.g., using the SURFdrive app, a Yoda integration, or just via cable) and delete them from the phone.  
+   - Check that your recording app does not transfer recordings to the app’s provider. 
+</div>
+- <details><summary>**Dictaphones**</summary>
+<div>Dictaphones are specifically meant for audio recording. 
+Take note that most dictaphones are not encrypted by default. 
+Although encrypted dictaphones may cost as much as a simple phone, they may have better audio quality and reduced chance of data breaches via the internet.
+</div>
+
+If you are uncertain about the security of your device, please contact [Information Security](#support). 
+
+### Oral or written information for participants {#interview-informing-participants}
+
+Before you start your interview, it is important to inform participants about the interview, which information you will collect, if you will record the interview, and what you will do with the interview data. 
+You can do so orally or in writing, depending on what suits your project best. 
+For example, for a short interview on-location, where you only take anonymous notes, oral information provision may be sufficient. 
+In contrast, for a longer, recorded interview, you may want to provide information in writing which participants can read in advance at their own pace.  
+
+You can read more about how to inform participants [on this page](#privacy-notices). 
+
+### Legal basis: consent or public interest {#interview-legal-basis}
+
+Many interview studies use consent as the legal basis to collect personal data in the interview.
+However, consent may not always be the most suitable legal basis to use (see below). 
+In any case, the legal basis you use should be included in [any information](#privacy-notices) given to participants beforehand. 
+You can use the [legal basis flowchart](#choose-legal-basis) to determine which legal basis may be suitable for your interview project. 
+
+In deciding whether to choose consent as your legal basis, take into account the following: 
+
+- A power imbalance between you and the interviewee may render [consent unlawful](#consent-requirements) (see also [this chapter about interview issues](https://pressbooks.bccampus.ca/jibcresearchmethods/chapter/11-4-issues-to-consider-for-all-interview-types/){target="_blank"}). 
+Some may argue that relationships between interviewees and researchers are, in general, imbalanced in nature - which raises the question of whether consent can be lawful at all in an interview setting. 
+- If you plan to *publish* audio or video recordings (in contrast to solely transcripts for example), you have to take into account [portrait rights](https://www.maastrichtuniversity.nl/support/communications-guide/images/portrait-rights){target="_blank"} (part of the Copyright act) and thus need permission for that publication. 
+In that case, it may make the most sense if you also use consent as your legal basis for processing personal data. 
+- Remember that you need to ask for explicit consent for collecting [special categories of personal data](#special-types-personal-data).
+
+<details><summary>**Consent in interviews: oral or written?**</summary>
+<div>
+If you use consent as legal basis, the next question is: how to obtain consent? 
+For some settings or audiences, it may not make sense to obtain consent on paper. 
+For example, written consent might not be suitable in research where the risk of consent forms being leaked could have severe repercussions on a participants’ personal life, or where asking for written consent could raise distrust and suspicion towards the researcher. 
+In those cases, you could obtain consent orally. 
+The easiest way to demonstrate oral consent is to record it. 
+In that case, it is recommended to use an oral consent script, and to record consent on a separate audio track as the interview, so that the consent can be stored separately from the data. 
+If you accidentally record consent on the same track as the interview, you can split the track manually (e.g., with tools such as [Audacity](https://www.audacityteam.org/){target="_blank"}). 
+</div></details>
+
+### Collecting unnecessary personal data {#interview-bycatch}
+
+It sometimes happens that data subjects disclose more information, or more sensitive information, than you need. 
+This can for example happen in interviews about personal experiences, more unstructured interviews, for participants who are not used to being listened to, in studies in which participants are interviewed multiple times, exploratory studies (where it is difficult to determine what is necessary and what isn't) and studies with small and heterogeneous samples. 
+
+Possible approaches to deal with this: 
+
+- Critically look at the interview questions and structure: are you asking about unnecessary data? 
+Can the interview be more structured to prevent participants from accidentally sharing too much? 
+- Ask participants not to disclose more information than what you asked for. 
+- Go through the interview (recording or transcript) and highlight what is not necessary for the research question. 
+Delete that from the transcript or don't transcribe that information at all. 
+- Ask participants to check the interview transcript for information that should not be used in the study. 
+
+<details><summary>**Accidental collection of *special category* personal data**</summary>
+<div>
+It is possible that participants disclose [special category personal data](#special-types-personal-data) unasked or accidentally.
+Normally, it is necessary to obtain explicit consent for collecting those types of personal data.
+However, if the accidentally disclosed special category personal data concerns that participant themselves, it is not necessary to do that.   
+
+If the information concerns special category personal data about *someone else*, you should either: 
+
+- delete/anonymise that information immediately, or 
+- inform that other person that you are using their special category personal data, if reasonably possible. 
+You may then also want to ask that person what they think about the participant's words about them. 
+- If you cannot delete/anonymise the information, but it is also unreasonably difficult to inform that person (or it threatens your research project), you are allowed to move forward without informing that person, provided that you take appropriate measures to protect that person's rights, freedoms and interests. 
+For example through publication of a privacy statement. 
+</div></details>
+
+### Transcription {#interview-transcription}
+
+If you are mainly interested in the content from the interview, it is best to transcribe the recordings, i.e. converting them into text. 
+In most cases, you can consider the transcriptions as your raw data and remove the original recordings. 
+You can transcribe manually, but there are also many [audio transcription tools](https://www.uu.nl/en/research/research-data-management/tools-services/transcription-of-audio-data){target="_blank"} or services available.
+If you use such an external tool or service, make sure there is a processing agreement in place between the provider and your institute (for Utrecht University, check the [tooladvisor](https://tools.uu.nl/tooladvisor/){target="_blank"}). 
+
+### Anonymisation {#interview-anonymisation}
+
+If you are interested in the image or sound of the recordings, e.g. for emotion or voice analysis, you will have to retain the recordings as your raw data, which can practically not be anonymised. 
+But even if you have transcribed the recordings or have just taken notes, those can still be difficult to anonymise. 
+For example because you are performing research with elites, public figures, participants who are known from the media or from the criminal justice system, or simply because participants can be recognised from their way of talking.  
+
+Potential strategies to deal with this: 
+
+- Remove unnecessary information from your transcript or video/audio data (if possible), for example by trimming the audio or video, adding noise to the audio, modifying the pitch, or blurring video. 
+- Ask participants to review their transcript and highlight publicly known information. 
+Replace that information in a way that does not result in misinterpretation or changes in interpretation when (a) confidentiality is jeopardised and (b) the data are necessary to the study (alteration, sort of like creating synthetic data). 
+For example, replace "Den Haag" with "Randstad", or "47 years old" with "in their 40s". 
+See further the [de-identification chapter](#deidentification-techniques) and [this article](https://doi.org/10.1177/1468794114550439){target="_blank"} for more information. 
+- Be careful when sharing literal quotes, as participants can sometimes be identified from their manner of speech, or from the experiences they describe. 
+
+Tools and packages for de-identifying transcripts or audio/video material can be found [in this overview](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification){target="_blank"}. 
+
+### Sharing interview data for publication and reuse {#interview-data-sharing}
+
+Due to difficulties anonymising interview data, it may not be straightforward to share the interview data with other researchers [for reuse purposes](#data-sharing-reuse) (e.g., for reproduction, follow-up, or for answering a new research question). 
+
+Potential strategies to deal with this: 
+
+- Make arrangements with participants about the way in which they want to be cited in your publication: full name, only function/position, etc. 
+Record the arrangements or write them down. 
+- Discuss with participants the possibility of sharing data. 
+If necessary, obtain their explicit consent. 
+We recommend sharing data in restricted access, except if you are building an oral history archive, in which case you should obtain consent for sharing the data publicly and think about the potential risks for the data subjects. 
+- If you cannot delete the video or audio recordings (e.g., because they contain details important for the research question that cannot be transcribed), consider providing access to the raw data under restricted conditions, such as: 
+   - The reuser will reuse the recordings for scientific research purposes only. 
+   - The reuser has a well thought-out research plan with a similar goal as the original research project. 
+   - The reuser only gets access via a restricted environment, either a [secure analysis environment](#secure-computation) (e.g., [SANE](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data){target="_blank"}) or on a physical location without internet access. 
+   - The reuser signs a confidentiality agreement or data sharing agreement. 
+
+You can read more about this topic in the guidebook "[Making Qualitative Data Reusable](https://doi.org/10.5281/zenodo.7777518){target="_blank"}".
