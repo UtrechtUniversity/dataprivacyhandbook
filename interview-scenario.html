@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>“Regular” data analysis: data-to-code | Data Privacy Handbook</title>
+  <title>Interview research | Data Privacy Handbook</title>
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="“Regular” data analysis: data-to-code | Data Privacy Handbook" />
+  <meta property="og:title" content="Interview research | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
   <meta property="og:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
@@ -19,7 +19,7 @@ Support.</p>" />
   <meta name="github-repo" content="utrechtuniversity/dataprivacyhandbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="“Regular” data analysis: data-to-code | Data Privacy Handbook" />
+  <meta name="twitter:title" content="Interview research | Data Privacy Handbook" />
   
   <meta name="twitter:description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
@@ -36,8 +36,8 @@ Support.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="secure-computation.html"/>
-<link rel="next" href="code-to-data.html"/>
+<link rel="prev" href="part-typical-privacy-issues-in.html"/>
+<link rel="next" href="faq.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -538,94 +538,207 @@ Support.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-to-code" class="section level2 hasAnchor">
-<h2>“Regular” data analysis: data-to-code<a href="data-to-code.html#data-to-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="interview-scenario" class="section level2 hasAnchor">
+<h2>Interview research<a href="interview-scenario.html#interview-scenario" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="keywords">
-<p>On this page: analysis, data-to-code, data-to-script, transfer, sharing<br />
-Date of last review: 2023-04-02</p>
+<p>On this page: interview study, oral archive, qualitative data, audio recording, video recording, interview transcript<br />
+Date of last review: 2024-05-02</p>
 </div>
-<div style="display: flex; flex-direction: row; align-items: flex-start;">
-<img src="img/data-to-code.png" title="Graphical depiction of the data-to-code 
-  scenario: the data are brought to the code (e.g., by transferring them)" 
-  style="width: 25%; max-width: 200px; margin-right: 10px;"/>
-<p>
-In this scenario, you transfer the data to a computing facility, and run an
-analysis (script) on the data.
-<br>
-<br>
-In the most basic variant, this computing facility consists of your work
-computer or faculty computing cluster, where you do not transfer the data
-outside of your organisation for the analysis. In other cases, data need to
-be transferred to a computing facility outside your organisation, such as
-<a href="https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/high-performance-and-cloud-computing" target="_blank">high-performance clusters</a>
-from SURF, Microsoft, Amazon, etc.
-</p>
-</div>
-<div id="when-to-use" class="section level3 hasAnchor">
-<h3>When to use<a href="data-to-code.html#when-to-use" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you have a relatively small dataset, the “data-to-code” scenario is the most
-common and flexible scenario:</p>
+<p>Interviews in scientific research are a common qualitative research method that allow researchers to gather rich and detailed information directly from participants.
+Interviews provide an opportunity to explore participants’ perspectives, experiences and attitudes on a particular topic of interest.
+Interviews involve face-to-face, telephone, or online conversations between researchers and participants.
+Researchers typically use interview guides or semi-structured interview protocols to ensure consistency while allowing flexibility for follow-up questions and probing.</p>
+<p>Below, we go into the following typical privacy-related issues for interview research:</p>
 <ul>
-<li>It allows you to choose a computing facility that is best suited to your
-situation.<br />
+<li>Issues when <a href="interview-scenario.html#interview-recording">recording the interview</a></li>
+<li>How to <a href="interview-scenario.html#interview-informing-participants">inform participants</a></li>
+<li>Legal basis: <a href="interview-scenario.html#interview-legal-basis">consent or public interest</a></li>
+<li>How to deal with <a href="interview-scenario.html#interview-bycatch">collecting unasked for personal data</a></li>
+<li><a href="interview-scenario.html#interview-transcription">Transcribing interview data</a></li>
+<li><a href="interview-scenario.html#interview-anonymisation">Anonymising interview data</a></li>
+<li><a href="interview-scenario.html#interview-data-sharing">Sharing interview data for reuse</a></li>
+</ul>
+<div id="interview-recording" class="section level3 hasAnchor">
+<h3>Recording the interview<a href="interview-scenario.html#interview-recording" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you don’t need to record audio or video, don’t (data minimisation). Textual data is a lot easier to de-identify than audio or video data. If you do record the interviews, take note of the following:</p>
+<ul>
+<li>Recordings may come with automatically generated metadata, such as location and time of recording.
+This type of metadata could be identifiable in some cases.</li>
+<li>Audio or video data can become very large.
+It may not be possible to store or process this data on your own computer.
+In that case, find out which secure remote solutions are offered by your institute.</li>
+</ul>
+<div id="interview-recording-devices" class="section level4 hasAnchor">
+<h4>Recording devices<a href="interview-scenario.html#interview-recording-devices" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>When you record your interviews, it is necessary to do so via a secure recording device.
+There are different options that you can choose:</p>
+<ul>
+<li><details>
+<summary>
+<strong>Laptops</strong>
+</summary>
+<div>
+If you work at Utrecht University (UU), you can log into your Microsoft for Business account with your Solis ID, and record directly in a Microsoft Teams meeting (either with the participant or with yourself).
+Microsoft Teams will save the recording automatically in your UU account, and also has an automatic transcription option.
+Tips:
+<ul>
+<li>Make sure to turn off the video during the recording if you don’t need it.</li>
+<li>Make sure Teams uses the <a href="https://support.microsoft.com/en-au/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b#bkmk_changetranscriptlanguage" target="_blank">correct language</a> for the transcription.</li>
+<li>Move the recording and transcript to the correct storage.
+If you don’t, they will remain in your personal account.</li>
+<li>Test the laptop’s audio quality beforehand, and if needed, use an external microphone.</li>
+</ul>
+</div>
+</details></li>
+<li><details>
+<summary>
+<strong>Phones</strong>
+</summary>
+<div>
+Some faculties or departments offer phones specifically meant for making recordings.
+If those are not available, you can consider buying an empty phone and installing a safe voice recording app.
+Use of a personal device is in principle a no-go.
+In any case, take into account the following:
+<ul>
+<li>The recordings should not be backed up to a personal cloud environment (e.g., iCloud).</li>
+<li>The phone should be secured with a PIN or biometric authentication.
+A PIN should consist of at least 5 numbers and should be specific to the device and possibly the user.
+Biometric authentication should be processed on the device itself (no central processing of biometric information).</li>
+<li>Check that the phone is encrypted.
+IOS devices usually are already encrypted by default, and some <a href="https://www.androidauthority.com/how-to-encrypt-android-device-326700/" target="_blank">Android devices</a> as well.</li>
+<li>Transfer (encrypted) recordings as soon as possible to UU storage (e.g., using the SURFdrive app, a Yoda integration, or just via cable) and delete them from the phone.<br />
 </li>
-<li>It allows you to interactively read, analyse, export and transport the data
-you want.</li>
+<li>Check that your recording app does not transfer recordings to the app’s provider.</li>
 </ul>
-<p>Disadvantages of this approach can be:</p>
-<ul>
-<li>When transferring the data to a computing facility, often new copies of the
-data are created, which can make it more difficult to keep track of different
-versions of the data.</li>
-<li>Transferring data always comes with additional risks of a data breach. Besides
-protection during data storage, it is therefore crucial to also protect the data
-during the transfer to the computing facility, and when used at the computing
-facility itself.<br />
-</li>
-<li>The way the data are transferred to the computing facility is not always as
-straightforward, especially if you have a large dataset.</li>
+</div></li>
+<li><details>
+<summary>
+<strong>Dictaphones</strong>
+</summary>
+<div>
+<p>Dictaphones are specifically meant for audio recording.
+Take note that most dictaphones are not encrypted by default.
+Although encrypted dictaphones may cost as much as a simple phone, they may have better audio quality and reduced chance of data breaches via the internet.</p>
+</div></li>
 </ul>
-</div>
-<div id="implications-for-research" class="section level3 hasAnchor">
-<h3>Implications for research<a href="data-to-code.html#implications-for-research" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In this scenario, you need to make sure that:</p>
-<ul>
-<li>You apply data minimisation, access control, and, if applicable,
-pseudonymisation and other protective measures to limit the amount of personal
-data that is transferred to the computing facility.</li>
-<li>The data are also protected during the transfer to the computing facility
-(e.g., your work laptop or an external solution), for example through encryption.</li>
-</ul>
-<p>Additionally, if the computing facility is provided by an external processor
-(e.g., SURF, Amazon):</p>
-<ul>
-<li>A <a href="agreements.html#data-processing-agreement">data processing agreement</a> with the provider of
-the computing facility is needed. If there is none, you cannot use the computing
-facility to analyse personal data.</li>
-<li>The computing facility should be suitable (secure enough) for the
-<a href="data-classification.html#data-classification">sensitivity level</a> of your (personal) data. For example,
-if your data are “critical” in terms of confidentiality, the computing facility
-should also have that “critical” classification.</li>
-</ul>
-</div>
-<div id="examples" class="section level3 hasAnchor">
-<h3>Examples<a href="data-to-code.html#examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>You use your faculty’s high performance cluster to analyse a dataset that you
-collected at your organisation.</li>
-<li>You use the High Performance Computing platform from SURF to analyse a large
-dataset that you collected at your organisation. In this case, a
-<a href="agreements.html#data-processing-agreement">data processing agreement</a> between your organisation
-and SURF is needed to make sure that your organisation remains in control of the
-personal data at SURF’s servers.</li>
-<li>You use Amazon Web Services (AWS) to analyse a large dataset that you
-collected at your organisation. In this case, a
-<a href="agreements.html#data-processing-agreement">data processing agreement</a> between your organisation
-and AWS is even more important, because Amazon has servers that are located
-outside of the European Economic Area.</li>
-</ul>
+<p>If you are uncertain about the security of your device, please contact <a href="seeking-help.html#support">Information Security</a>.</p>
 </div>
 </div>
+<div id="interview-informing-participants" class="section level3 hasAnchor">
+<h3>Oral or written information for participants<a href="interview-scenario.html#interview-informing-participants" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before you start your interview, it is important to inform participants about the interview, which information you will collect, if you will record the interview, and what you will do with the interview data.
+You can do so orally or in writing, depending on what suits your project best.
+For example, for a short interview on-location, where you only take anonymous notes, oral information provision may be sufficient.
+In contrast, for a longer, recorded interview, you may want to provide information in writing which participants can read in advance at their own pace.</p>
+<p>You can read more about how to inform participants <a href="privacy-notices.html#privacy-notices">on this page</a>.</p>
+</div>
+<div id="interview-legal-basis" class="section level3 hasAnchor">
+<h3>Legal basis: consent or public interest<a href="interview-scenario.html#interview-legal-basis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Many interview studies use consent as the legal basis to collect personal data in the interview.
+However, consent may not always be the most suitable legal basis to use (see below).
+In any case, the legal basis you use should be included in <a href="privacy-notices.html#privacy-notices">any information</a> given to participants beforehand.
+You can use the <a href="choose-legal-basis.html#choose-legal-basis">legal basis flowchart</a> to determine which legal basis may be suitable for your interview project.</p>
+<p>In deciding whether to choose consent as your legal basis, take into account the following:</p>
+<ul>
+<li>A power imbalance between you and the interviewee may render <a href="informed-consent-forms.html#consent-requirements">consent unlawful</a> (see also <a href="https://pressbooks.bccampus.ca/jibcresearchmethods/chapter/11-4-issues-to-consider-for-all-interview-types/" target="_blank">this chapter about interview issues</a>).
+Some may argue that relationships between interviewees and researchers are, in general, imbalanced in nature - which raises the question of whether consent can be lawful at all in an interview setting.</li>
+<li>If you plan to <em>publish</em> audio or video recordings (in contrast to solely transcripts for example), you have to take into account <a href="https://www.maastrichtuniversity.nl/support/communications-guide/images/portrait-rights" target="_blank">portrait rights</a> (part of the Copyright act) and thus need permission for that publication.
+In that case, it may make the most sense if you also use consent as your legal basis for processing personal data.</li>
+<li>Remember that you need to ask for explicit consent for collecting <a href="special-types-personal-data.html#special-types-personal-data">special categories of personal data</a>.</li>
+</ul>
+<details>
+<summary>
+<strong>Consent in interviews: oral or written?</strong>
+</summary>
+<div>
+<p>If you use consent as legal basis, the next question is: how to obtain consent?
+For some settings or audiences, it may not make sense to obtain consent on paper.
+For example, written consent might not be suitable in research where the risk of consent forms being leaked could have severe repercussions on a participants’ personal life, or where asking for written consent could raise distrust and suspicion towards the researcher.
+In those cases, you could obtain consent orally.
+The easiest way to demonstrate oral consent is to record it.
+In that case, it is recommended to use an oral consent script, and to record consent on a separate audio track as the interview, so that the consent can be stored separately from the data.
+If you accidentally record consent on the same track as the interview, you can split the track manually (e.g., with tools such as <a href="https://www.audacityteam.org/" target="_blank">Audacity</a>).</p>
+</div>
+</details>
+</div>
+<div id="interview-bycatch" class="section level3 hasAnchor">
+<h3>Collecting unnecessary personal data<a href="interview-scenario.html#interview-bycatch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It sometimes happens that data subjects disclose more information, or more sensitive information, than you need.
+This can for example happen in interviews about personal experiences, more unstructured interviews, for participants who are not used to being listened to, in studies in which participants are interviewed multiple times, exploratory studies (where it is difficult to determine what is necessary and what isn’t) and studies with small and heterogeneous samples.</p>
+<p>Possible approaches to deal with this:</p>
+<ul>
+<li>Critically look at the interview questions and structure: are you asking about unnecessary data?
+Can the interview be more structured to prevent participants from accidentally sharing too much?</li>
+<li>Ask participants not to disclose more information than what you asked for.</li>
+<li>Go through the interview (recording or transcript) and highlight what is not necessary for the research question.
+Delete that from the transcript or don’t transcribe that information at all.</li>
+<li>Ask participants to check the interview transcript for information that should not be used in the study.</li>
+</ul>
+<details>
+<summary>
+<strong>Accidental collection of <em>special category</em> personal data</strong>
+</summary>
+<div>
+<p>It is possible that participants disclose <a href="special-types-personal-data.html#special-types-personal-data">special category personal data</a> unasked or accidentally.
+Normally, it is necessary to obtain explicit consent for collecting those types of personal data.
+However, if the accidentally disclosed special category personal data concerns that participant themselves, it is not necessary to do that.</p>
+<p>If the information concerns special category personal data about <em>someone else</em>, you should either:</p>
+<ul>
+<li>delete/anonymise that information immediately, or</li>
+<li>inform that other person that you are using their special category personal data, if reasonably possible.
+You may then also want to ask that person what they think about the participant’s words about them.</li>
+<li>If you cannot delete/anonymise the information, but it is also unreasonably difficult to inform that person (or it threatens your research project), you are allowed to move forward without informing that person, provided that you take appropriate measures to protect that person’s rights, freedoms and interests.
+For example through publication of a privacy statement.</li>
+</ul>
+</div>
+</details>
+</div>
+<div id="interview-transcription" class="section level3 hasAnchor">
+<h3>Transcription<a href="interview-scenario.html#interview-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you are mainly interested in the content from the interview, it is best to transcribe the recordings, i.e. converting them into text.
+In most cases, you can consider the transcriptions as your raw data and remove the original recordings.
+You can transcribe manually, but there are also many <a href="https://www.uu.nl/en/research/research-data-management/tools-services/transcription-of-audio-data" target="_blank">audio transcription tools</a> or services available.
+If you use such an external tool or service, make sure there is a processing agreement in place between the provider and your institute (for Utrecht University, check the <a href="https://tools.uu.nl/tooladvisor/" target="_blank">tooladvisor</a>).</p>
+</div>
+<div id="interview-anonymisation" class="section level3 hasAnchor">
+<h3>Anonymisation<a href="interview-scenario.html#interview-anonymisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you are interested in the image or sound of the recordings, e.g. for emotion or voice analysis, you will have to retain the recordings as your raw data, which can practically not be anonymised.
+But even if you have transcribed the recordings or have just taken notes, those can still be difficult to anonymise.
+For example because you are performing research with elites, public figures, participants who are known from the media or from the criminal justice system, or simply because participants can be recognised from their way of talking.</p>
+<p>Potential strategies to deal with this:</p>
+<ul>
+<li>Remove unnecessary information from your transcript or video/audio data (if possible), for example by trimming the audio or video, adding noise to the audio, modifying the pitch, or blurring video.</li>
+<li>Ask participants to review their transcript and highlight publicly known information.
+Replace that information in a way that does not result in misinterpretation or changes in interpretation when (a) confidentiality is jeopardised and (b) the data are necessary to the study (alteration, sort of like creating synthetic data).
+For example, replace “Den Haag” with “Randstad”, or “47 years old” with “in their 40s”.
+See further the <a href="deidentification-techniques.html#deidentification-techniques">de-identification chapter</a> and <a href="https://doi.org/10.1177/1468794114550439" target="_blank">this article</a> for more information.</li>
+<li>Be careful when sharing literal quotes, as participants can sometimes be identified from their manner of speech, or from the experiences they describe.</li>
+</ul>
+<p>Tools and packages for de-identifying transcripts or audio/video material can be found <a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification" target="_blank">in this overview</a>.</p>
+</div>
+<div id="interview-data-sharing" class="section level3 hasAnchor">
+<h3>Sharing interview data for publication and reuse<a href="interview-scenario.html#interview-data-sharing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Due to difficulties anonymising interview data, it may not be straightforward to share the interview data with other researchers <a href="data-sharing-reuse.html#data-sharing-reuse">for reuse purposes</a> (e.g., for reproduction, follow-up, or for answering a new research question).</p>
+<p>Potential strategies to deal with this:</p>
+<ul>
+<li>Make arrangements with participants about the way in which they want to be cited in your publication: full name, only function/position, etc.
+Record the arrangements or write them down.</li>
+<li>Discuss with participants the possibility of sharing data.
+If necessary, obtain their explicit consent.
+We recommend sharing data in restricted access, except if you are building an oral history archive, in which case you should obtain consent for sharing the data publicly and think about the potential risks for the data subjects.</li>
+<li>If you cannot delete the video or audio recordings (e.g., because they contain details important for the research question that cannot be transcribed), consider providing access to the raw data under restricted conditions, such as:
+<ul>
+<li>The reuser will reuse the recordings for scientific research purposes only.</li>
+<li>The reuser has a well thought-out research plan with a similar goal as the original research project.</li>
+<li>The reuser only gets access via a restricted environment, either a <a href="secure-computation.html#secure-computation">secure analysis environment</a> (e.g., <a href="https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data" target="_blank">SANE</a>) or on a physical location without internet access.</li>
+<li>The reuser signs a confidentiality agreement or data sharing agreement.</li>
+</ul></li>
+</ul>
+<p>You can read more about this topic in the guidebook “<a href="https://doi.org/10.5281/zenodo.7777518" target="_blank">Making Qualitative Data Reusable</a>”.</p>
+
+</div>
+</div>
+<!-- </div> -->
 <div class = "footer">
 <footer>
   <hr>
@@ -669,8 +782,8 @@ outside of the European Economic Area.</li>
           </div>
         </div>
       </div>
-<a href="secure-computation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="code-to-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="part-typical-privacy-issues-in.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="faq.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -701,7 +814,7 @@ gitbook.start({
 "size": 1.5
 },
 "edit": {
-"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/secure-computing.Rmd",
+"link": "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/chapters/research-scenarios.Rmd",
 "text": "Suggest edits"
 },
 "history": {

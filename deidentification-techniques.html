@@ -8,7 +8,7 @@
   <meta name="description" content="<p>The Data Privacy Handbook is a practical guide on handling personal data in
 scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
-  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="De-identification techniques | Data Privacy Handbook" />
   <meta property="og:type" content="book" />
@@ -26,10 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2024-03-15" />
+<meta name="author" content="Utrecht University | Last updated: 2024-05-02" />
 
 
-<meta name="date" content="2024-03-15" />
+<meta name="date" content="2024-05-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -231,7 +231,20 @@ Support.</p>" />
 <li class="chapter" data-level="" data-path="disclaimer.html"><a href="disclaimer.html"><i class="fa fa-check"></i>Disclaimer</a></li>
 <li class="chapter" data-level="" data-path="privacy-policy.html"><a href="privacy-policy.html"><i class="fa fa-check"></i>Your own privacy</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="research-scenarios.html"><a href="research-scenarios.html"><i class="fa fa-check"></i>Get started</a></li>
+<li class="chapter" data-level="" data-path="research-scenarios.html"><a href="research-scenarios.html"><i class="fa fa-check"></i>Get started</a>
+<ul>
+<li class="part"><span><b>Typical privacy issues in…</b></span></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html"><i class="fa fa-check"></i>Interview research</a>
+<ul>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-recording"><i class="fa fa-check"></i>Recording the interview</a></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-informing-participants"><i class="fa fa-check"></i>Oral or written information for participants</a></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-legal-basis"><i class="fa fa-check"></i>Legal basis: consent or public interest</a></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-bycatch"><i class="fa fa-check"></i>Collecting unnecessary personal data</a></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-transcription"><i class="fa fa-check"></i>Transcription</a></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-anonymisation"><i class="fa fa-check"></i>Anonymisation</a></li>
+<li class="chapter" data-level="" data-path="interview-scenario.html"><a href="interview-scenario.html#interview-data-sharing"><i class="fa fa-check"></i>Sharing interview data for publication and reuse</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Privacy FAQs</a>
 <ul>
 <li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#general"><i class="fa fa-check"></i>General questions</a></li>
@@ -599,59 +612,30 @@ polygon or linear features).</li>
 <p>In this case, you replace sensitive details with non-sensitive ones, which are
 usually less informative, for example:</p>
 <ul>
-<li>Replacing directly identifying information that you do need with pseudonyms.
+<li>Replacing directly identifying information that you do need with <a href="deidentification-techniques.html#pseudonym">pseudonyms</a>.
 When doing this, always store the key file securely and separately from the
 research data (e.g., use access control, <a href="encryption.html#encryption">encryption</a>). If you
 do not need the links with direct identifiers anymore, remove the keyfile or
-replace the pseudonyms with random identifiers without saving the key.
-<details>
-<summary>
-A good pseudonym:
-</summary>
-<div>
-<ul>
-<li>
-Is not meaningful with respect to the data subjects: a random (unique)
-number or string is better than a code that contains parts of personal
-information, because the latter may reveal details about data subjects.
-</li>
-<li>
-Is managed securely, for example by appointing someone to be responsible
-for managing access to the keyfile.
-</li>
-<li>
-Can be a simple number, random number, cryptographic hash function, text
-string, etc.
-(<a href="https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices" target="_blank">read more</a>).
-</li>
-</ul>
-</div>
-</details></li>
+replace the pseudonyms with random identifiers without saving the key.</li>
 <li>Replacing identifiable text with “[redacted]”. When redacting changes in-text,
 never just blank out the identifying value, always put a placeholder or
 pseudonym there, e.g., in <code>[</code>square brackets<code>]</code> or <code>&lt;seg&gt;</code>segments<code>&lt;/seg&gt;</code>.</li>
 <li>Replacing unique values with a summary statistic, e.g., the mean.</li>
 <li>Rounding values, making the data less precise.</li>
-<li>Replacing one or multiple variables with a hash.
-<details>
-<summary>
-What is hashing?
-</summary>
-<div>
-<p>Hashing is a way of obscuring data with a string of seemingly random
-characters with a fixed length. It can be used to create a”hashed” pseudonym, or
-to replace multiple variables with one unique value. There are many hash
-functions which all have their own strength. It is usually quite difficult to
-reverse the hashing process, except if an attacker has knowledge about the type
-of information that was masked through hashing (e.g., for the MD5 algorithm,
-there are many lookup tables that can reverse common hashes). To prevent
-reversal, cryptographic hashing techniques add a “salt”, i.e., a random number
-or string, to the hash (the result is called a”digest”). If the “salt” is kept
-confidential or is removed (similar to a keyfile), it is almost impossible to
-reverse the hashing process.</p>
-</div>
-</details></li>
+<li>Replacing one or multiple variables with a <a href="glossary.html#glossary">hash</a>.</li>
 </ul>
+<div id="pseudonym" class="section level5 hasAnchor note">
+<h5>Creating a pseudonym<a href="deidentification-techniques.html#pseudonym" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>A good pseudonym:</p>
+<ul>
+<li>Is not meaningful with respect to the data subjects: a random (unique) number or string is better than a code that contains parts of personal information, because the latter may reveal details about data subjects.</li>
+<li>Is managed securely, for example by appointing someone to be responsible for managing access to the keyfile.</li>
+<li>Can be a simple number, random number, cryptographic hash function, text string, etc (<a href="https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices" target="_blank">read more</a>).</li>
+</ul>
+<p>Here are some example random id generation solutions for different softwares:
+<a href="https://trumpexcel.com/generate-unique-random-numbers-in-excel/" target="_blank">Excel</a>, <a href="https://forum.posit.co/t/creating-random-numbers-with-the-function-seed/67478/2" target="_blank">R</a>, <a href="https://stackoverflow.com/a/22842411" target="_blank">Python</a>,
+<a href="https://ezspss.com/how-to-generate-random-numbers-in-spss/" target="_blank">SPSS</a></p>
+</div>
 </div>
 <div id="top-bottom-coding" class="section level4 hasAnchor">
 <h4>Top- and bottom-coding<a href="deidentification-techniques.html#top-bottom-coding" class="anchor-section" aria-label="Anchor link to header"></a></h4>
