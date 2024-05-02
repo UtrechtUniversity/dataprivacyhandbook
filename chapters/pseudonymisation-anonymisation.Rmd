@@ -51,7 +51,7 @@ lead to identification *without additional information*
 removing this additional information should lead to anonymised data. 
 
 Pseudonymisation is often interpreted as replacing direct 
-identifiers (e.g., names) with pseudonyms, and storing the link between the 
+identifiers (e.g., names) with [pseudonyms](#pseudonym), and storing the link between the 
 identifiers and the pseudonyms in a key file, separated from the research data. 
 While this is a good practice (it makes sure that data are not directly 
 identifiable anymore), this interpretation of pseudonymisation does not take 
@@ -165,7 +165,7 @@ Date of last review: 2023-05-02
 
 Below is a step-by-step workflow that you can use to de-identify your data. 
 Alternatively, you could also use 
-[this de-identification plan template](https://www.fsd.tuni.fi/en/services/data-management-guidelines/anf-template.pdf){target="_blank"}
+[this de-identification plan template](https://doi.org/10.5281/zenodo.10782780){target="_blank"}
 to plan and document your de-identification steps.
 Whether or not the de-identification results in a pseudonymised or an anonymised 
 dataset is highly dependent on the characteristics of the dataset and the context 
@@ -287,47 +287,31 @@ polygon or linear features).
 In this case, you replace sensitive details with non-sensitive ones, which are 
 usually less informative, for example:
 
-- Replacing directly identifying information that you do need with pseudonyms. 
+- Replacing directly identifying information that you do need with [pseudonyms](#pseudonym). 
 When doing this, always store the key file securely and separately from the 
 research data (e.g., use access control, [encryption](#encryption)). If you 
 do not need the links with direct identifiers anymore, remove the keyfile or 
 replace the pseudonyms with random identifiers without saving the key.
-<details><summary>A good pseudonym:</summary>
-<div>
-  <ul>
-    <li>Is not meaningful with respect to the data subjects: a random (unique) 
-    number or string is better than a code that contains parts of personal 
-    information, because the latter may reveal details about data subjects.</li>
-    <li>Is managed securely, for example by appointing someone to be responsible 
-    for managing access to the keyfile.</li>
-    <li>Can be a simple number, random number, cryptographic hash function, text 
-    string, etc. 
-    ([read more](https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices){target="_blank"}).</li>
-  </ul>
-</div>
-</details>
-
 - Replacing identifiable text with "[redacted]". When redacting changes in-text, 
 never just blank out the identifying value, always put a placeholder or 
 pseudonym there, e.g., in `[`square brackets`]` or `<seg>`segments`</seg>`. 
 - Replacing unique values with a summary statistic, e.g., the mean.
 - Rounding values, making the data less precise.
-- Replacing one or multiple variables with a hash.
-<details><summary>What is hashing?</summary>
-<div>
-  Hashing is a way of obscuring data with a string of seemingly random 
-  characters with a fixed length. It can be used to create a"hashed" pseudonym, or 
-  to replace multiple variables with one unique value. There are many hash 
-  functions which all have their own strength. It is usually quite difficult to 
-  reverse the hashing process, except if an attacker has knowledge about the type 
-  of information that was masked through hashing (e.g., for the MD5 algorithm, 
-  there are many lookup tables that can reverse common hashes). To prevent 
-  reversal, cryptographic hashing techniques add a "salt", i.e., a random number 
-  or string, to the hash (the result is called a"digest"). If the "salt" is kept 
-  confidential or is removed (similar to a keyfile), it is almost impossible to 
-  reverse the hashing process.
-</div>
-</details>
+- Replacing one or multiple variables with a [hash](#glossary).
+
+:::note
+##### Creating a pseudonym {#pseudonym}
+
+A good pseudonym:
+
+- Is not meaningful with respect to the data subjects: a random (unique) number or string is better than a code that contains parts of personal information, because the latter may reveal details about data subjects.
+- Is managed securely, for example by appointing someone to be responsible for managing access to the keyfile.
+- Can be a simple number, random number, cryptographic hash function, text string, etc ([read more](https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices){target="_blank"}).
+
+Here are some example random id generation solutions for different softwares: 
+[Excel](https://trumpexcel.com/generate-unique-random-numbers-in-excel/){target="_blank"}, [R](https://forum.posit.co/t/creating-random-numbers-with-the-function-seed/67478/2){target="_blank"}, [Python](https://stackoverflow.com/a/22842411){target="_blank"},
+[SPSS](https://ezspss.com/how-to-generate-random-numbers-in-spss/){target="_blank"}
+:::
 
 #### Top- and bottom-coding {#top-bottom-coding}
 

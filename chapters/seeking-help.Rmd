@@ -32,7 +32,7 @@ Besides this Handbook, you can find more information on the following websites:
     [ethics](https://ferb.sites.uu.nl/){target="_blank"}
   - Humanities: [RDM and privacy](https://cdh.uu.nl/research/data-management-privacy/){target="_blank"},
     [ethics](https://fetc-gw.wp.hum.uu.nl/){target="_blank"}
-  - Law, Economics and Governance: [ethics](https://intranet.uu.nl/en/knowledgebase/facultys-ethical-review-committee){target="_blank"}
+  - Law, Economics and Governance: [RDM and privacy](https://intranet.uu.nl/kennisbank/omgaan-met-onderzoeksgegevens-research-data-management-privacy-en-ethische-toetsing){target="_blank"},  [ethics](https://intranet.uu.nl/en/knowledgebase/facultys-ethical-review-committee){target="_blank"}
   - Veterinary medicine: [Research Support Office](https://www.uu.nl/en/node/589/onderzoeksbureauresearch-support-office){target="_blank"}
   - Medicine: [ethics](https://www.metc-utrecht.nl/en/){target="_blank"}, data management-related information can be found on UMCU Connect.
 
