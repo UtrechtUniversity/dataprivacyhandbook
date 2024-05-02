@@ -4,9 +4,12 @@ author: "Research Data Management Support"
 date: "`r Sys.Date()`"
 output: 
         xaringan::moon_reader:
-                css: [default, slidestyles.css]
-                self_contained: TRUE
-                seal: false
+            css: [default, slidestyles.css]
+            self_contained: TRUE
+            seal: false
+            nature:
+              navigation:
+                scroll: false
 ---
 
 layout: true
