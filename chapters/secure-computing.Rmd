@@ -201,12 +201,13 @@ results back via email as well (i.e., this is possible when neither the script
 nor the results contain any sensitive details).
 </div></details>
 
-::::note
-At the moment, both the Tinker and Blind versions of this code-to-data scenario 
-are being developed as virtual research environments in the 
-[Secure ANalysis Environment](https://www.surf.nl/en/news/sane-secure-data-environment-for-social-sciences-and-humanities){target="_blank"} 
-project (SANE). 
-::::
+:::fyi
+Both the Tinker and Blind versions of this code-to-data scenario 
+are available as virtual research environments in the 
+[Secure ANalysis Environment](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data){target="_blank"} (SANE). At Utrecht University, 
+access to a SANE environment is arranged via the same way as when [requesting a 
+regular VRE](https://www.uu.nl/en/research/research-data-management/tools/software-and-computing/virtual-research-environments){target="_blank"}.
+:::
 
 ### When to use
 
