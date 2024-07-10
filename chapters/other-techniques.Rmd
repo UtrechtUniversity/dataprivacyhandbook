@@ -199,7 +199,7 @@ unrealistic distribution in the synthetic dataset.
 [tool repository on GitHub](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/synthetic-data){target="_blank"}. 
 - Here’s a [comprehensive tutorial](https://doi.org/10.5281/zenodo.7234120){target="_blank"} 
 for creating synthetic data that includes information on the Python package 
-[MetaSynth](https://github.com/sodascience/metasynth){target="_blank"} ([workshop](https://github.com/sodascience/workshop-syntheticdata-osf2022){target="_blank"}) 
+[metasyn](https://github.com/sodascience/metasyn){target="_blank"} ([workshop](https://github.com/sodascience/workshop-syntheticdata-osf2022){target="_blank"}) 
 and the R package [Synthpop](https://www.synthpop.org.uk/index.html){target="_blank"} 
 ([how-to](https://thomvolker.github.io/osf_synthetic/osf_synthetic_workshop.html){target="_blank"}). 
 - Read further about synthetic data in 
