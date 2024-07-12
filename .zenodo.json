@@ -194,7 +194,7 @@
     {
       "identifier": "https://utrechtuniversity.github.io/dataprivacyhandbook/",
       "relation": "isIdenticalTo",
-      "resource_type": "book"
+      "resource_type": "publication-book"
     },
     {
       "identifier": "https://github.com/UtrechtUniversity/dataprivacyhandbook/",
@@ -204,7 +204,7 @@
     {
       "identifier": "https://uu.nl/privacyhandbook/",
       "relation": "isIdenticalTo",
-      "resource_type": "book"
+      "resource_type": "publication-book"
     },
     {
       "identifier": "https://utrechtuniversity.github.io/dataprivacyproject/",
