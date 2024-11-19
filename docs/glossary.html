@@ -26,9 +26,10 @@ scientific research, created by Utrecht University’s Research Data Management
 Support.</p>" />
   <meta name="twitter:image" content="https://utrechtuniversity.github.io/dataprivacyhandbook/img/cover-image-dph.png" />
 
-<meta name="author" content="Utrecht University | Last updated: 2024-06-25" />
+<meta name="author" content="Utrecht University | Last updated: 2024-11-19" />
 
 
+<meta name="date" content="2024-11-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -548,7 +549,7 @@ A
 </h4>
 <details>
 <summary>
-<strong>Anonymous data</strong>
+<a id='anonymous-data'>Anonymous data</a>
 </summary>
 <div>
 Any data where an individual is irreversibly de-identified, both directly (e.g., through names and email addresses) and indirectly. The latter means that you cannot identify someone:
@@ -576,7 +577,7 @@ C
 </h4>
 <details>
 <summary>
-<strong>Controller</strong>
+<a id='controller'>Controller</a>
 </summary>
 <div>
 <p>
@@ -595,7 +596,7 @@ D
 </h4>
 <details>
 <summary>
-<strong>Data subject</strong>
+<a id='data-subject'>Data subject</a>
 </summary>
 <div>
 A living individual who can be identified directly or indirectly through personal data. In a research setting, this would be the individual whose personal data is being processed (see below for the definition of processing).
@@ -608,7 +609,7 @@ E
 </h4>
 <details>
 <summary>
-<strong>European Economic Area (EEA)</strong>
+<a id='european-economic-area-(eea)'>European Economic Area (EEA)</a>
 </summary>
 <div>
 The member states of the European Union and Iceland, Liechtenstein, and Norway. In total, the EEA now consists of 30 countries. The aim of the EEA is to enable the “free movement of goods, people, services and capital” between countries, and this includes (personal) data (source: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)" target="_blank">Eurostat</a>).
@@ -621,7 +622,7 @@ G
 </h4>
 <details>
 <summary>
-<strong>General Data Protection Regulation (GDPR)</strong>
+<a id='general-data-protection-regulation-(gdpr)'>General Data Protection Regulation (GDPR)</a>
 </summary>
 <div>
 A European data protection regulation meant to protect the personal data of individuals, and facilitates the free movement of personal data within the European Economic Area (EEA). The Dutch name of the regulation is “Algemene Verordening Gegevensbescherming” (AVG).
@@ -634,7 +635,7 @@ H
 </h4>
 <details>
 <summary>
-<strong>Hashing</strong>
+<a id='hashing'>Hashing</a>
 </summary>
 <div>
 Hashing is a way of obscuring data with a string of seemingly random characters with a fixed length. It can be used to create a ‘hashed’ pseudonym, or to replace multiple variables with one unique value. There are many hash functions which all have their own strength. It is usually quite difficult to reverse the hashing process, except if an attacker has knowledge about the type of information that was masked through hashing (e.g., for the MD5 algorithm, there are many lookup tables that can reverse common hashes). To prevent reversal, cryptographic hashing techniques add a ‘salt’, i.e., a random number or string, to the hash (the result is called a ‘digest’). If the ‘salt’ is kept confidential or is removed (similar to a keyfile), it is almost impossible to reverse the hashing process.
@@ -647,7 +648,7 @@ L
 </h4>
 <details>
 <summary>
-<strong>Legal basis</strong>
+<a id='legal-basis'>Legal basis</a>
 </summary>
 <div>
 Any processing of personal data should have a valid legal basis. Without it, you are now allowed to process personal data at all. The GDPR provides 6 legal bases: consent, public interest, legitimate interest, legal obligation, performance of a contract, and vital interest. Consent and public interest are most often used in a research context.
@@ -660,7 +661,7 @@ P
 </h4>
 <details>
 <summary>
-<strong>Personal data</strong>
+<a id='personal-data'>Personal data</a>
 </summary>
 <div>
 <p>
@@ -674,7 +675,7 @@ Of note: as soon as you collect data related to a person that is identifiable, y
 </details>
 <details>
 <summary>
-<strong>Processing</strong>
+<a id='processing'>Processing</a>
 </summary>
 <div>
 Any operation performed on personal data. This includes collection, storage, organisation, alteration, analysis, transcription, sharing, publishing, deletion, etc.
@@ -683,7 +684,7 @@ Any operation performed on personal data. This includes collection, storage, org
 </details>
 <details>
 <summary>
-<strong>Processor</strong>
+<a id='processor'>Processor</a>
 </summary>
 <div>
 A natural or legal entity that processes personal data on behalf of the controller. For example, when using a cloud transcription service, you often need to send personal data (e.g., an audio recording) to the transcription service for the purpose of your research, which is then fulfilling the role of processor. Other examples of processors are mailhouses used to send emails to data subjects, or Trusted Third Parties who hold the keyfile to link pseudonyms to personal data. When using such a third party, you must have a <a href="agreements.html#data-processing-agreement">data processing agreement</a> in place.
@@ -692,7 +693,7 @@ A natural or legal entity that processes personal data on behalf of the controll
 </details>
 <details>
 <summary>
-<strong>Pseudonymous data</strong>
+<a id='pseudonymous-data'>Pseudonymous data</a>
 </summary>
 <div>
 Personal data that cannot lead to identification <em>without additional information</em>, such as a key file linking pseudonyms to names. This additional information should be kept separately and securely and makes for de-identification that is reversible. Data are sometimes pseudonymised by replacing direct identifiers (e.g., names) with a participant code (e.g., number). However, this may not always suffice, as sometimes it is still possible to identify participants indirectly (e.g., through linkage, inference or singling out). Importantly, pseudonymous data are still personal data and therefore must be handled in accordance with the GDPR.
@@ -705,7 +706,7 @@ S
 </h4>
 <details>
 <summary>
-<strong>Special categories of personal data</strong>
+<a id='special-categories-of-personal-data'>Special categories of personal data</a>
 </summary>
 <div>
 Any information pertaining to the data subject which reveals any of the below categories:
@@ -756,7 +757,7 @@ T
 </h4>
 <details>
 <summary>
-<strong>Third-country transfer</strong>
+<a id='third-country-transfer'>Third-country transfer</a>
 </summary>
 <div>
 In legal terms, a transfer exists when personal data controlled by one party are accessible to another, irrespective of whether the data are physically sent to that party. An international/third-country transfer exists when the party that can potentially gain access is based in a country outside the European Economic Area (EEA) which does not have an adequacy decision from the European Commission.
