@@ -29,9 +29,14 @@ formatdefs <- function(letter){
       tryCatch( { 
         # Only include if "include" == 1 and there are terms there
         if(subselection$include[item] == 1 & !is.na(subselection$term[item]) & !is.na(subselection$include[item])){
-          formattedtext[[item]] <- paste0("<details><summary>**",
+          formattedtext[[item]] <- paste0("<details><summary><a id='", 
+            tolower(gsub(" ", 
+              "-", 
+              subselection$term[item])), 
+            "'>",
+            
                                           subselection$term[item],
-                                          "**</summary><div>",
+                                          "</a></summary><div>",
                                           subselection$definition[item],
                                           "</div><br></details>")
         }
