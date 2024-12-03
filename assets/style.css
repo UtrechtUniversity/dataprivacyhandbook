@@ -250,6 +250,7 @@ button {
   vertical-align: baseline;
   width: auto;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 button:hover,
