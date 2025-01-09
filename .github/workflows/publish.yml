@@ -1,0 +1,69 @@
+name: Publish Bookdown
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+    paths:
+      - 'book/**'          # Includes all files and subdirectories under 'book/'
+      - '!_book/**'        # Exclude the output directory to avoid unnecessary triggers
+
+jobs:
+  bookdown:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up R environment
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      # Step 3: Install Pandoc
+      - name: Install Pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      # Step 4: Install R dependencies
+      - name: Install R Dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            rmarkdown
+            bookdown
+            kableExtra
+          update: true
+
+      # Step 5: Configure Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v1
+
+      # Step 6: Render the Bookdown book
+      - name: Render Book
+        run: Rscript -e 'bookdown::render_book("book/index.Rmd", output_dir = "_book")'
+
+      # Step 7: Upload artifact for Pages deployment
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_book'
+
+      # Step 8: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
