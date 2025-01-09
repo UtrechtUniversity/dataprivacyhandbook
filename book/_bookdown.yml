@@ -1,0 +1,34 @@
+book_filename: "dataprivacyhandbook"
+output_dir: "docs"
+delete_merged_file: true
+rmd_subdir: "chapters"
+rmd_files:
+  - index.Rmd
+  - chapters/research-scenarios.Rmd
+  - chapters/faq.Rmd
+  # Knowledge base
+  - chapters/gdpr.Rmd
+  - chapters/personal-data.Rmd
+  - chapters/legal-basis.Rmd
+  - chapters/risk-assessment.Rmd
+  # How to
+  - chapters/privacy-by-design.Rmd
+  - chapters/data_storage.Rmd
+  - chapters/data_sharing.Rmd # combine with data_publishing.Rmd?
+  - chapters/data_publishing.Rmd
+  # Techniques & tools
+  - chapters/pseudonymisation-anonymisation.Rmd
+  - chapters/statistical-privacy.Rmd
+  - chapters/secure-computing.Rmd
+  - chapters/other-techniques.Rmd
+  - chapters/tools-and-services.Rmd
+  # Use cases
+  - chapters/use_cases.Rmd
+  # Resources
+  - chapters/seeking-help.Rmd
+  - chapters/glossary.Rmd
+  - chapters/references.Rmd
+language:
+  ui:
+    chapter_name: ""
+

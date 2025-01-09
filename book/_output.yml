@@ -1,0 +1,43 @@
+bookdown::gitbook:
+  number_sections: false
+  split_by: section
+  css: assets/style.css
+  fig_caption: false
+  includes:
+    #before_body: header.html
+    in_header: [assets/header.html, assets/analytics.html]
+    after_body: assets/footer.html
+  config:
+    edit:
+      link: "https://github.com/UtrechtUniversity/dataprivacyhandbook/edit/main/%s"
+      text: "Suggest edits"
+    toc:
+      toc_depth: 4
+      toc_float: true
+      collapse: section
+      scroll_highlight: true
+      before: |
+        <li class="toc-logo"><a href="./"><img src="img/UU_logo_2021_EN_RGB.png" alt="Utrecht University logo"></a></li>
+      after: |
+        <li><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook" target="blank">Visit the GitHub repository</a></li>
+    download: ["pdf", "epub"]
+    sharing:
+      github: yes
+      facebook: no
+      twitter: yes
+      all: no
+    fontsettings:
+      theme: white
+      family: sans
+      size: 1.5
+bookdown::pdf_book:
+  number_sections: true
+  includes:
+    in_header: assets/preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: no
+  fig_caption: false
+  highlight: default
+  urlstyle: tt
+bookdown::epub_book: default
