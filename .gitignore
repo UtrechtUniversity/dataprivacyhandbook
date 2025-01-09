@@ -7,4 +7,5 @@ docs/
 _bookdown_files/
 _book/
 
-dataprivacyhandbook.log
+book/dataprivacyhandbook.log
+book/dataprivacyhandbook_cache/
