@@ -47,6 +47,7 @@ jobs:
             rmarkdown
             bookdown
             kableExtra
+            tinytex
           update: true
 
       # Step 5: Configure Pages
