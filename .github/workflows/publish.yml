@@ -55,7 +55,9 @@ jobs:
 
       # Step 6: Render the Bookdown book
       - name: Render Book
-        run: Rscript -e 'bookdown::render_book("book/index.Rmd", output_dir = "_book", output_format = "all")'
+        run: |
+          cd book
+          Rscript -e 'bookdown::render_book("index.Rmd", output_format = "all")'
 
       # Step 7: Upload artifact for Pages deployment
       - name: Upload artifact
