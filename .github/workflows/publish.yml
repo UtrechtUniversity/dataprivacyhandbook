@@ -50,23 +50,33 @@ jobs:
             tinytex
           update: true
 
-      # Step 5: Configure Pages
+      # Step 5: Install Tinytex
+      - name: Install TinyTeX
+        run: |
+          Rscript -e 'if (!tinytex::is_tinytex()) tinytex::install_tinytex()'
+
+      # Step 6: Install LaTeX packages
+      - name: Install LaTeX Packages
+        run: |
+          Rscript -e 'tinytex::tlmgr_install(c("xetex", "fontspec", "xunicode", "upquote", "microtype", "hyperref", "amsmath", "geometry", "grffile", "longtable", "wrapfig", "epstopdf", "booktabs", "mdwtools", "multirow", "parskip", "textcomp", "enumitem", "appendix", "titling", "fancyhdr", "tabu", "varwidth"))'
+
+      # Step 7: Configure Pages
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
-      # Step 6: Render the Bookdown book
+      # Step 8: Render the Bookdown book
       - name: Render Book
         run: |
           cd book
           Rscript -e 'bookdown::render_book("index.Rmd", output_format = "all")'
 
-      # Step 7: Upload artifact for Pages deployment
+      # Step 9: Upload artifact for Pages deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '_book'
 
-      # Step 8: Deploy to GitHub Pages
+      # Step 10: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
