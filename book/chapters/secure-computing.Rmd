@@ -47,8 +47,7 @@ Python, SPSS, or any other scripting language.
 
 #### Tools and support {#computation-support}
 
-We have created an overview of secure computing software and services in this 
-[GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/secure-computing-tools.md){target="_blank"}. 
+We have created an [overview of secure computing software and services](https://utrechtuniversity.github.io/privacy-engineering-tools/secure-computing/secure-computing-tools.html){target="_blank"}. 
 Keep in mind that this is by no means a complete list! 
 
 If you work at Utrecht University, you can ask the 

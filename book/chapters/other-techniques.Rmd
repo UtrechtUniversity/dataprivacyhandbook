@@ -110,8 +110,7 @@ and if needed, re-encrypt the data.
 
 ### Tools and resources {#encryption-resources}
 
-- We have created an overview of commonly used encryption tools in our 
-[GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/blob/main/secure-computing/encryption-tools.md){target="_blank}.
+- We have created an overview of [commonly used encryption tools](https://utrechtuniversity.github.io/privacy-engineering-tools/secure-computing/encryption-tools.html){target="_blank}.
 **Note**: many institutes have institution-wide encryption software available. 
 Please consult with your [information security officer](#support) to determine 
 which tool you can best use for your situation. 
@@ -195,8 +194,7 @@ unrealistic distribution in the synthetic dataset.
 
 ### Tools and resources {#synthetic-data-resources}
 
-- We have created an overview of tools to create synthetic data in our 
-[tool repository on GitHub](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/synthetic-data){target="_blank"}. 
+- We have created an overview of [tools to create synthetic data](https://utrechtuniversity.github.io/privacy-engineering-tools/synthetic-data/){target="_blank"}. 
 - Here’s a [comprehensive tutorial](https://doi.org/10.5281/zenodo.7234120){target="_blank"} 
 for creating synthetic data that includes information on the Python package 
 [metasyn](https://github.com/sodascience/metasyn){target="_blank"} ([workshop](https://github.com/sodascience/workshop-syntheticdata-osf2022){target="_blank"}) 

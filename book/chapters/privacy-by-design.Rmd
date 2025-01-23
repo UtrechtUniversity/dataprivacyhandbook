@@ -88,7 +88,7 @@ research protocols (e.g., that of the CCMO). The privacy aspects in a privacy
 scan are just more extensive. 
 
 ### Examples and templates
-<a href="https://geo-data-support.sites.uu.nl/privacy-scan-empty-template/" target="_blank" 
+<a href="https://doi.org/10.5281/zenodo.10527708" target="_blank" 
 style="text-decoration: none;"><button type="button">Example template</button></a>
 
 ## Data Protection Impact Assessment {#dpia}

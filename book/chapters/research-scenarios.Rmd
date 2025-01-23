@@ -182,7 +182,7 @@ For example, replace "Den Haag" with "Randstad", or "47 years old" with "in thei
 See further the [de-identification chapter](#deidentification-techniques) and [this article](https://doi.org/10.1177/1468794114550439){target="_blank"} for more information. 
 - Be careful when sharing literal quotes, as participants can sometimes be identified from their manner of speech, or from the experiences they describe. 
 
-Tools and packages for de-identifying transcripts or audio/video material can be found [in this overview](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification){target="_blank"}. 
+Tools and packages for de-identifying transcripts or audio/video material can be found [in this overview](https://utrechtuniversity.github.io/privacy-engineering-tools/deidentification/){target="_blank"}. 
 
 ### Sharing interview data for publication and reuse {#interview-data-sharing}
 
