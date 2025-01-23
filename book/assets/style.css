@@ -326,3 +326,12 @@ details[open] > summary {
 .book-header.fixed {
   z-index: 999;
 }
+
+/* -----------Feedback button--------------------*/
+.feedback-button {
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 900;
+  position: absolute;
+}
