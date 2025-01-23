@@ -350,8 +350,7 @@ measure, tool, resource, reading material
 Date of last review: 2023-05-02
 :::
 
-You can find a selection of **de-identification tools** in 
-[this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification){target="_blank"}.
+You can find a selection of **de-identification tools** in [our tool overview](https://utrechtuniversity.github.io/privacy-engineering-tools/deidentification/){target="_blank"}.
 
 For further reading, we compiled a reading list on this topic in our publicly 
 accessible [Zotero library](https://www.zotero.org/groups/2554340/data_privacy_uu/collections/6HS9MPBR){target="_blank"}. 

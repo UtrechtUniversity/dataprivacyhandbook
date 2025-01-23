@@ -17,7 +17,7 @@ These approaches (or: privacy models) are not yet much used in research
 practice, because they come with some disadvantages and require resources 
 and/or expertise to be applied and interpreted correctly. However, they are 
 used in many 
-[de-identification tools](https://github.com/UtrechtUniversity/privacy-engineering-tools/tree/main/deidentification){target="_blank"} 
+[de-identification tools](https://utrechtuniversity.github.io/privacy-engineering-tools/deidentification/){target="_blank"} 
 and are useful to detect specific sensitivities in (tabular) datasets. For 
 those reasons, the techniques are introduced in this chapter. 
 

@@ -8,7 +8,7 @@ the tool you are looking for.
 In short:
 
 - If you work at Utrecht University, you can use https://tools.uu.nl to find UU-approved tools.
-- In [this GitHub repository](https://github.com/UtrechtUniversity/privacy-engineering-tools/){target="_blank"},
+- On [this webpage](https://utrechtuniversity.github.io/privacy-engineering-tools/){target="_blank"},
 you can find tools and packages to deidentify, encrypt, synthetise and otherwise
 work with personal data.
 - If you are in doubt whether you can use a specific tool, please contact your
@@ -61,7 +61,7 @@ We are creating an overview of potential privacy-related tools for
 deidentifying data, creating synthetic data, and analysing data in secure 
 environments in a GitHub repository.
 
-<a href="https://github.com/UtrechtUniversity/privacy-engineering-tools/" target="_blank" 
+<a href="https://utrechtuniversity.github.io/privacy-engineering-tools" target="_blank" 
 style="text-decoration: none;"><button type="button">To the overview</button></a>
 
 Please feel free to 
