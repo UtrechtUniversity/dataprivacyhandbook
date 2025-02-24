@@ -238,15 +238,15 @@ readers should refer to resources from their own institutions.
 ## Your own privacy {#privacy-policy}
 
 :::keywords
-This page was last updated on 2023-08-28
+This page was last updated on 2025-02-24
 :::
 
-We use Google Analytics to track the usage of the (online version of the) Data 
-Privacy Handbook. We do this, because we want to see how often the Data Privacy 
-Handbook is being visited, how users find it, and which pages are most useful. 
-With your consent, Google Analytics places a tracking cookie in your web 
-browser. The amount of tracked details is limited to:
+As of February 2025, we use Matomo to track the usage of the (online version of the) Data Privacy Handbook. 
+We do this, because we want to see how often the Data Privacy Handbook is being visited, how users find it, and which pages are most useful. 
+When you click "OK" in the cookie banner, Matomo places a tracking cookie in your web browser. 
+The following information is collected about you:
 
+<!-- This list needs to be checked! --> 
 - Which pages you visit and for how long
 - Generic aspects of your behaviour on the page, such as clicks and scrolls
 - How you found the page (e.g., directly or via another website)
@@ -255,21 +255,21 @@ browser. The amount of tracked details is limited to:
 - How you are accessing the page (e.g., via desktop or mobile)
 
 We do not collect your detailed location, and use IP address "anonymisation" to
-prevent other unnecessary details from being collected.
+prevent other unnecessary details from being collected. This ensures that we cannot directly lead your data back to you.
 
-This information is stored at Google for 2 months, and shared with the 
-maintainers of the Data Privacy Handbook and a selection of communication 
-professionals at Utrecht University.
+This information is stored at a local Matomo server in Utrecht (the Netherlands). 
+The analytics are only shared with the maintainers of the Data Privacy Handbook and communication professionals employed at Utrecht University. 
+We do not share any tracking data with external parties. 
+You are not tracked across websites.
+
+<!-- Missing: for how long is the data stored? --> 
 
 :::fyi
-Besides clicking Accept or Reject in the cookie banner, you can also:
-
-- use the 
-[Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout){target="_blank"} 
-to prevent websites, including this one, from tracking you
-- disable or block tracking in your browser settings
+If you do not wish to be tracked, you can disable or block tracking in your browser settings. 
+How you can do this depends on your specific browser. 
+Read more about preventing tracking on <http://donottrack.us/>.
 :::
 
 If you have questions or comments about tracking cookies, please consult the 
-[Google Analytics documentation](https://support.google.com/analytics/){target="_blank"} 
+[Matomo documentation](https://matomo.org/){target="_blank"} 
 or [contact us](https://www.uu.nl/en/research/research-data-management/contact-us){target="_blank"}.
