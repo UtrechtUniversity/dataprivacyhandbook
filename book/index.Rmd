@@ -251,7 +251,7 @@ The following information is collected about you:
 - How you found the page (e.g., directly or via another website)
 - From what location you are accessing the page
 - What language your browser is in
-- How you are accessing the page (e.g., which device and browser)
+- Details about your device (e.g., operating system, browser, screen size)
 
 <details><summary>See the detailed list of data collected</summary>
 1. Anonymized user IP address
@@ -272,7 +272,7 @@ The following information is collected about you:
 We do not collect your detailed location, and use IP address "anonymisation" to prevent other unnecessary details from being collected. 
 This ensures that we cannot directly lead your data back to you.
 
-This information is stored for 1 year at a university server in the Netherlands. 
+This information is stored for 1 year at a university server in the Netherlands.
 The analytics are only shared with the maintainers of the Data Privacy Handbook and communication professionals employed at Utrecht University. 
 We do not share any analytics with external parties, and you are not tracked across websites.
 
