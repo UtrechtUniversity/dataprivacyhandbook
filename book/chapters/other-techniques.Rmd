@@ -215,7 +215,7 @@ recommend the book
 :::keywords
 On this page: data donation, digital trace data, local processing, interactive 
 consent    
-Date of last review: 2023-11-24
+Date of last review: 2025-04-28
 :::
 
 People leave all kinds of digital traces, for example on social media, 
@@ -316,4 +316,4 @@ the [proof of concept of the PORT software](https://doi.org/10.1016/j.patter.202
 a [comparison with a browser plug-in](https://doi.org/10.1080/1369118X.2022.2097015){target="__blank"} approach, 
 and [promises and pitfalls of the approach for social media data](https://doi.org/10.31219/osf.io/krqb9){target="_blank"}.
 - Or read more about how Data Download Packages can be 
-[de-identified](https://doi.org/10.3233/DS-210035){target="_blank"}.
+[de-identified](https://dspace.library.uu.nl/handle/1874/415754){target="_blank"}.
