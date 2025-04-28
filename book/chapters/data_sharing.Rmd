@@ -224,7 +224,7 @@ style="text-decoration: none;"><button type="button">Example questions</button><
 ::::keywords
 On this page: agreement, contract, sharing, transfer, sharing outside EU, EEA, 
 controller, processor, provider, data owner    
-Date of last review: 2022-12-15
+Date of last review: 2025-04-28
 ::::
 
 **There are many types of agreements that can – and sometimes should – be set up 
@@ -338,7 +338,6 @@ processing of personal data are formalised (e.g., intellectual property rights,
 how data are shared, etc.).
 
 <a href="https://www.era-learn.eu/documents/examples_jca/view" target = "_blank" style="text-decoration: none;"><button type="button">Examples</button></a>
-<a href="https://surfdrive.surf.nl/files/index.php/apps/richdocuments/public?fileId=4806036408&shareToken=9cWMy7XCvblsspi" target = "_blank" style="text-decoration: none;"><button type="button">Erasmus University Rotterdam template</button></a>
 <a href="https://www.surf.nl/files/2019-01/model-gezamenlijk-verantwoordelijkenovk-1.0.pdf" target = "_blank" style="text-decoration: none;"><button type="button">SURF template</button></a>
 
 <!-- This text on the DUA may be clarified -->
@@ -354,7 +353,7 @@ DUAs are often used in data repositories (e.g., custom terms of use in
 DataverseNL) or as part of a Data Transfer Agreement, and often (but not always) 
 when an open license is not suitable (e.g., with personal data).
 
-<a href="https://data.donders.ru.nl/doc/dua/RU-RA-DUA-1.0.html?8" target = "_blank" style="text-decoration: none;"><button type="button">Example Donders Institute</button></a>
+<a href="https://data.ru.nl/api/collectionfiles/di/id/di_313574335/files/download/LICENSE.txt" target = "_blank" style="text-decoration: none;"><button type="button">Example Donders Institute</button></a>
 
 ### Standard Contractual Clauses for international transfers {#scc}
 
