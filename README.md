@@ -53,7 +53,7 @@ In short, you can:
 - Open or comment on [Issues](https://github.com/UtrechtUniversity/dataprivacyhandbook/issues)
 - Start or join a [Discussion](https://github.com/UtrechtUniversity/dataprivacyhandbook/discussions)
 - Contribute direct Handbook content by opening a Pull Request
-- If you do not have a GitHub account, leave your feedback in the feedback form linked at the bottom of each page on the Handbook: ![Feedback button "Give feedback about this page"](img/non-gh-feedback.PNG)
+- If you do not have a GitHub account, leave your feedback in the feedback form linked at the bottom of each page on the Handbook: [Give feedback](https://survey.uu.nl/jfe/form/SV_9KWLI1vODa3rxNc)
 
 When contributing to this project, we expect you to abide by our [Code of Conduct](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/CODE_OF_CONDUCT.md) and [Style guide](https://github.com/UtrechtUniversity/dataprivacyhandbook/blob/main/styleguide.md).
 

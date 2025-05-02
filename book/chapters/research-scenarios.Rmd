@@ -1,7 +1,7 @@
 # Get started {#research-scenarios}
 :::keywords
 On this page: privacy checklist, project design, getting started    
-Date of last review: 2023-12-21
+Date of last review: 2025-05-02
 :::
 
 **So you use [personal data](#personal-data) in your research: 
@@ -15,13 +15,10 @@ more information about each of these topics:
 *Utrecht University RDM Support (2023). 10 steps towards privacy compliance in research. https://doi.org/10.5281/zenodo.10417513*
 
 ::: note
-The rest of this chapter outlines typical privacy issues and design 
-solutions for several types of scientific research:
+The rest of this chapter outlines typical privacy issues and design solutions for several types of scientific research:
 
 - [Interview studies](#interview-scenario)
-- Webscraping (WIP)
-- Sensors and mobile devices (WIP)
-- Consortia (WIP)
+- [Social media research](#social-media-scenario)
 - ... and possibly more
 :::
 
@@ -202,3 +199,142 @@ We recommend sharing data in restricted access, except if you are building an or
    - The reuser signs a confidentiality agreement or data sharing agreement. 
 
 You can read more about this topic in the guidebook "[Making Qualitative Data Reusable](https://doi.org/10.5281/zenodo.7777518){target="_blank"}".
+
+## Social media research {#social-media-scenario}
+
+:::keywords
+On this page: social media, web scraping, data scraping, text and data mining, data donation, social networking     
+Date of last review: 2025-05-02
+:::
+
+A growing number of studies use data from the web to analyse human behaviour, for example from social media. 
+It has never been easier to get access to people's opinions or views about any product, topic or event. 
+Contrary to what you may expect however, the fact that social media data may be public, does not mean that you can automatically make use of them without license and/or permission: irrespective of whether information is public or private, the GDPR still applies when you use personal data. 
+
+### Typical issues in social media research {#social-media-issues}
+
+:::fyi
+**To get started, you can use the [Self-reflection guide for human-related big data research](https://doi.org/10.5281/zenodo.13990169){target="_blank"} which was developed by the Ethics Committee of the Faculty of Humanities and provides step-by-step guidance on doing big data research, which can include social media research.**
+:::
+
+Below we discuss the following typical issues in social media research that can play a role in designing your social media project:
+
+- [Ethical considerations](#social-media-ethics) concerning recruitment, data integrity, and experienced privacy on the platform 
+- [Intellectual property issues and terms of service](#social-media-tos)
+- How to [inform social media users](#social-media-informing)
+- [Legal basis](#social-media-legal-basis): consent or public interest 
+- [How to collect social media data](#collect-social-media-data)
+- [Amount and sensitivity of personal data](#social-media-data)
+- [Data subjects’ rights](#social-media-rights) in social media research 
+- [Making social media data FAIR](#fair-social-media-data) 
+
+#### Ethical considerations {#social-media-ethics}
+
+It is important to consider the risks involved for individuals who post or who are otherwise involved in social media content. Three ethical considerations: 
+
+- <details><summary>**Recruitment**</summary>
+<div>If you use social media for recruitment, it is important to think about how you recruit participants ethically. 
+The KU Leuven has written an [extensive guide](https://research.kuleuven.be/en/integrity-ethics/ethics/committees/smec/documenten-1/documents-guidance/recruitment-via-social-media-english.pdf){target="_blank"} on important considerations to be made in each type of recruitment (open, deceptive, covert).</div>
+</details>
+- <details><summary>**Data integrity**</summary>
+<div>Data from social media platforms may not be truthful or representative of reality. 
+For example, social media users may lie about their age, location, job or other personal characteristics. 
+Moreover, they may behave differently online vs. offline, can exaggerate their views, or their behaviour can be impulsive and not necessarily reflect their 'usual' state of mind ([Beninger et al., 2014](https://www.researchgate.net/profile/Kelsey-Beninger/publication/261551701_Research_using_Social_Media_Users'_Views/links/0c96053497fed9ac11000000/Research-using-Social-Media-Users-Views.pdf){target="_blank"}). 
+Finally, inequalities in terms of access to the Internet and to social media can affect the representativeness of a dataset.</div>
+</details>
+- <details><summary>**Private vs. public social media**</summary>
+<div><p>Some social media are not public to all, but require registration or membership (such as Facebook groups, private Telegram channels, etc.). 
+Content in such spaces is not *manifestly* made public, and therefore requires a different approach than when using data from public spaces. 
+For example, you could contact the site or group administrator, and/or ask consent from users in these private spaces.</p>
+<p>Even when a platform *is* public, it is possible that individuals do not *perceive* the content they share as public, for example because they believe the platform to be more private than it is. 
+Not all social media users may be aware of the risks of posting personal information online, or what the contents are of the platform’s terms of service and privacy policy. 
+And even when they do, they may still not necessarily expect their data to be used for academic purposes and could feel violated if their data were for example published or quoted without their knowing or consent. 
+For example, Telegram is often perceived among users as a private platform, though many channels are actually public. 
+When using data from such platforms, it is therefore important to consider not only how public a social media platform *de facto* is, but also which online spaces people *perceive* as 'private' or 'public'. 
+To check this, you can run a small pilot and ask data subjects (or representatives) about their expectations of privacy.</p></div></details>
+
+#### Intellectual property and terms of service {#social-media-tos}
+
+Both the social media user as well as the platform could potentially claim intellectual property on social media content. 
+What each platform claims and allows is usually described in their Terms of service. 
+They can for example forbid usage of the platform’s content by third parties or limit the amount of data that can be scraped. 
+As far as copyright goes, the EU Copyright Directive (art. 3 and 4) and the Dutch Copyright Act (art. 15n and 15o) state that usage for text and data mining research is **not** seen as a copyright infringement. 
+It is allowed to copy, use, and archive the data for such research, provided that the data was accessed lawfully (e.g., because it was publicly available) and is protected with sufficient security measures ([read more about copyright](https://www.uu.nl/en/organisation/copyright-information-office/copyright){target="_blank"}). 
+So Terms of Service statements that prohibit scraping for copyright reasons do not apply to EU researchers. 
+It is however strongly recommended to stick to other terms set by the platform, as illustrated by a recent [example on Reddit](https://www.reddit.com/r/changemyview/comments/1k8b2hj/meta_unauthorized_experiment_on_cmv_involving/){target="_blank"} where the prohibition to use AI was ignored by researchers. 
+
+
+#### Informing social media users {#social-media-informing}
+
+The GDPR requires that you do your best to inform data subjects before your research project about your project, incl. which data you are collecting, and why and how you are using the data. 
+This is not necessary if: 
+
+- informing data subjects would involve a disproportionate effort (for example because there are thousands of data subjects) and you have implemented sufficient security measures. 
+If this is the case, instead of informing data subjects individually, you can post a message about your research on the platform that you are using data from, and link to your privacy statement on a public website. 
+- informing data subjects would seriously impair your research ([art. 14(5)](https://gdpr-info.eu/art-14-gdpr/){target="_blank"}). 
+If informing data subjects beforehand could impair the research goals, you can consider providing the information *within a month after* you have collected the data. 
+If appropriate, you could even organise a "[Ask Me Anything](https://www.wikidata.org/wiki/Q109016973){target="_blank"}" (AMA) session on the platform. 
+
+Read more in the [section about informing data subjects](#privacy-notices).
+
+#### Legal basis: consent or public interest {#social-media-legal-basis}
+
+Obtaining consent from social media users can become virtually impossible when data from hundreds of thousands of social media users are used. 
+In some cases, revealing your identity as a researcher or seeking consent can interfere with research and be counterproductive - for example in the case of ‘covert’ or ‘non-intrusive’ research where researchers are primarily interested in observing interactions between users. 
+Consent is therefore usually not a suitable legal basis for this type of research, even when collecting special categories of personal data. 
+You can use the [legal basis flowchart](#choose-legal-basis) to find a suitable legal basis (usually: public interest), or contact your [privacy officer](#support) for help. 
+
+
+#### How to collect social media data {#collect-social-media-data}
+
+There are several ways to collect social media data (see also the RDM [guide on collecting data from the web](https://www.uu.nl/en/research/research-data-management/guides/during-research/collecting-data-from-the-web){target="_blank"}), for example: 
+
+- Using the API (Application Programming Interface) of the platform, possibly supplemented by your own software. 
+- Using off-the-shelf tools to automatically collect content from various social media platforms. Example: [4CAT](https://4cat.nl/){target="_blank"} (see the [Centre for Digital Humanities](https://cdh.uu.nl/portfolio/4cat-capture-and-analysis-toolkit/){target="_blank"}).
+- Using the social media platform’s own tools. Example: [Reddit4researchers](https://www.reddit.com/r/reddit4researchers/){target="_blank"}. 
+- Buying data directly from the relevant platform or from a vendor. 
+Pay specific attention to the agreements set by the vendor on what you are and are not allowed to do with the data (incl. archiving). 
+- Downloading small publicly available datasets. 
+- Getting social media users to actively donate their data for research purposes. This is called [data donation](#data-donation).
+
+#### Amount and sensitivity of personal data {#social-media-data}
+
+Social media data can consist of many different elements in many different formats, such as user information (full name, username, number of followers, etc.), post content, timestamps, geotags, videos, and images. 
+All these elements are often interrelated and can be very unstructured (or the structure may change with time), which can make the data difficult to minimise and deidentify. 
+Because most social media data are publicly available, a simple search may enable others to find the original social media post, and so simply removing a username is usually not sufficient. 
+Moreover, because social media are social in nature, it often happens that there is a lot of 'bycatch': you could collect more data, more sensitive data, or data from vulnerable groups unintendedly. 
+For example, content could concern other people besides the person posting the content as well, such as comments and likes. 
+Or if you collect data from multiple platforms, it may be possible to construct more detailed user profiles. 
+Thinking beforehand about which data you need and from which and how many individuals is crucial to apply [data minimisation](#gdpr-principles). 
+
+Example: a researcher has collected Telegram conversations about escape routes, seeking humanitarian help, and descriptions of war experiences from Ukrainian refugees. 
+Despite removing direct identifiers such as usernames and contact information, this information could still be sensitive as 1) it could be used to crack down on escape routes and 2) the Telegram channel could easily be located if the dataset became publicly available. 
+In this case, the dataset should either be fully anonymised, summarised, or only be made available under restricted access. 
+
+#### Data subjects’ rights and social media research {#social-media-rights}
+
+Data subjects have several [rights under the GDPR](#data-subject-rights) that they should be able to exercise, such as the right to be forgotten. 
+In social media research, several issues could arise: 
+
+- Granting the rights might endanger the research project or might involve an unreasonable amount of effort. 
+- If data subjects ask the social media platform to delete their data, you might still have a copy of that data even when their social media account was deleted. 
+
+In case of scientific research, it is possible to limit or exclude the rights of access ([art. 15](https://gdpr-info.eu/art-15-gdpr/){target="_blank"}), rectification ([art. 16](https://gdpr-info.eu/art-16-gdpr/){target="_blank"}), and restriction of processing ([art. 18](https://gdpr-info.eu/art-18-gdpr/){target="_blank"}) if granting those rights would endanger the research project. 
+However, an even better solution is to deidentify the data to such an extent that it is not possible anymore to find the data subject in the dataset. 
+In that case, you should inform the data subject that they cannot exercise their rights anymore ([art. 11(2)](https://gdpr-info.eu/art-11-gdpr/){target="_blank"}). 
+
+#### Making social media data FAIR {#fair-social-media-data}
+
+If the social media data you use cannot be anonymised or may not be re-published, you could still make the data Findable, Accessible, Interoperable, and Reusable (FAIR).
+For example, by publishing your methodology (including your query to extract the data, if relevant) and metadata and providing access to the data under restrictions. 
+Remember to always include the date of accessing/scraping the data, and which parameters you used to select the data, as the data on social media can change from day to day! 
+You can find more information on this topic [in this chapter](#share-reuse-legal-basis) and in the guidebook "[Making Qualitative Data Reusable](http://doi.org//10.5281/zenodo.7777518){target="_blank"}" (Verburg, Braukmann, & Mahabier, 2023).
+
+### Further reading {#social-media-reading}
+
+- Bakker, de Graaf, Prins, Schaefer & van der Weijden (2024). [Playing with Fire: How the interplay between the Dutch House of Representatives and social media fuels rage](https://dataschool.nl/en/news/playing-with-fire/){target="_blank"}. Universiteit Utrecht. 
+- Bender, Cyr, Arbuckle, & Ferris (2017). [Ethics and Privacy Implications of Using the Internet and Social Media to Recruit Participants for Health Research: A Privacy-by-Design Framework for Online Recruitment](https://doi.org/10.2196/jmir.7029){target="_blank"}. *Journal of Medical Internet Research*, *19*(4). 
+- In Dutch: Data School. [Dringende dataverhalen](https://deda.dataschool.nl/dringende-dataverhalen/){target="_blank"}. 
+- De Winkel, Gorzeman, De Wilde De Ligny, Ten Heuvel, Blekkenhorst, Prins, Schafer (2024). [The Gab Project: The Methodological, Epistomologica, and Legal Challenges of Studying the Platformized Far Right](https://doi.org/10.5070/RW3.1448){target="_blank"}. *Journal of Right-Wing Studies*, *2*(1). 
+- In Dutch: Gerritsen (2021). [Tactvol contactloos onderzoek](https://doi.org/10.33540/1874/406645){target="_blank"}. *Universiteit Utrecht*.
+- Solove & Hartzog (2024). [The Great Scrape: The Clash Between Scraping and Privacy](http://doi.org/10.2139/ssrn.4884485){target="_blank"}. *113 California Law Review*. 
