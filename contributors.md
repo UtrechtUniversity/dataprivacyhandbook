@@ -15,6 +15,7 @@ You can read all about how to contribute in the [Contributing guidelines](CONTRI
 |Johathan de Bruin|Utrecht University|0000-0002-4297-0502|ProjectMember|
 |Desiree Capel|Utrecht University| |ProjectMember|
 |Freek Dijkstra|SURF|0000-0003-2493-5225|ProjectMember|
+|Stefan Einarson|Utrecht University|0009-0007-7902-5778|ProjectMember|
 |Jonas Folkers|Utrecht University| |ProjectMember|
 |Andreas Franzke|Utrecht University|0000-0003-4535-7225|ProjectMember|
 |Joris de Graaf|Utrecht University| |ProjectMember|
@@ -31,6 +32,7 @@ You can read all about how to contribute in the [Contributing guidelines](CONTRI
 |Maisam Mohammadi Dadkan|Utrecht University|0000-0003-1102-6508|ProjectMember|
 |Pascal Pas|Utrecht University|0000-0002-2200-7591|ProjectMember|
 |Francisco Romero Pastrana|Utrecht University|0000-0002-5943-882X|ProjectMember|
+|Sander Prins|Utrecht University|0000-0002-5366-2353|ProjectMember|
 |Johanneke Siljee|Utrecht University| |ProjectMember|
 |Maarten Schermer|Utrecht University|0000-0001-6770-3155|ProjectMember|
 |Raoul Schram|Utrecht University|0000-0001-6616-230X|ProjectMember|
