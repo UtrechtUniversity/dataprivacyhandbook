@@ -97,6 +97,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kleuveld"><img src="https://avatars.githubusercontent.com/u/6230899?v=4?s=100" width="100px;" alt="kleuveld"/><br /><sub><b>kleuveld</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=kleuveld" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/S-einar"><img src="https://avatars.githubusercontent.com/u/180396504?v=4?s=100" width="100px;" alt="Stefan Einarson"/><br /><sub><b>Stefan Einarson</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3AS-einar" title="Reviewed Pull Requests">👀</a> <a href="#research-S-einar" title="Research">🔬</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/73616e646572"><img src="https://avatars.githubusercontent.com/u/6605233?v=4?s=100" width="100px;" alt="Sander Prins"/><br /><sub><b>Sander Prins</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3A73616e646572" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
