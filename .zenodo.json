@@ -1,192 +1,214 @@
 {
   "creators": [
-    {
-      "affiliation": "Utrecht University",
-      "name": "Research Data Management Support",
-      "type": "ContactPerson"
-    },
-    {
-      "name": "Dorien Huijser",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0003-3282-8083",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Neha Moopen",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0003-1412-4402",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Jacques Flores",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-4123-6111",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Mercedes Beltrán",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-5925-5348",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Kasper de Bruijn",
-      "affiliation": "Utrecht University",
-      "orcid": "0009-0002-3323-5829",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Johathan de Bruin",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-4297-0502",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Desiree Capel",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Freek Dijkstra",
-      "affiliation": "SURF",
-      "orcid": "0000-0003-2493-5225",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Jonas Folkers",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Andreas Franzke",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0003-4535-7225",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Joris de Graaf",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Saskia van den Hout",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Frans Huigen",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-9482-7679",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Rik D.T. Janssen",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-9510-0802",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Katharina Jovic",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Leon Kessels",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Sanne Kleerebezem",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Danny de Koning-van Nieuwamerongen",
-      "affiliation": "Wageningen University & Research",
-      "orcid": "0000-0002-8264-4541",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Pieter Sebastiaan de Lange",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Frans de Liagre Böhl",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0003-0800-8763",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Maisam Mohammadi Dadkan",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0003-1102-6508",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Lea Massé",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-8454-1805",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Pascal Pas",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-2200-7591",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Francisco Romero Pastrana",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-5943-882X",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Johanneke Siljee",
-      "affiliation": "Utrecht University",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Maarten Schermer",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-6770-3155",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Raoul Schram",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-6616-230X",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Ron Scholten",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-4571-8855",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Garrett Speed",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-6074-9684",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Thom Volker",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0002-2408-7820",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Martine de Vos",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-5301-1713",
-      "type": "ProjectMember"
-    },
-    {
-      "name": "Felix Weijdema",
-      "affiliation": "Utrecht University",
-      "orcid": "0000-0001-5150-1102",
-      "type": "ProjectMember"
-    }
+      {
+        "affiliation": "Utrecht University",
+        "name": "Research Data Management Support",
+        "type": "ContactPerson"
+      },
+      {
+        "name": "Huijser, Dorien",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0003-3282-8083",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Moopen, Neha",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0003-1412-4402",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Flores-Dourojeanni, Jacques",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-4123-6111",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Beltrán, Mercedes",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-5925-5348",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Bruijn, Kasper de",
+        "affiliation": "Utrecht University",
+        "orcid": "0009-0002-3323-5829",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Bruin, Johathan de",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-4297-0502",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Capel, Desiree",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Dijkstra, Freek",
+        "affiliation": "SURF",
+        "orcid": "0000-0003-2493-5225",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Einarson, Stefan",
+        "affiliation": "Utrecht University",
+        "orcid": "0009-0007-7902-5778",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Folkers, Jonas",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Franzke, Andreas",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0003-4535-7225",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Graaf, Joris de",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Hout, Saskia van den",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Huigen, Frans",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-9482-7679",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Janssen, Rik D.T.",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-9510-0802",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Jovic, Katharina",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Kessels, Leon",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Kleerebezem, Sanne",
+        "affiliation": "",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Koning-van Nieuwamerongen, Danny de",
+        "affiliation": "Wageningen University & Research",
+        "orcid": "0000-0002-8264-4541",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Lange, Pieter Sebastiaan de",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Liagre Böhl, Frans de",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0003-0800-8763",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Massé, Lea",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-8454-1805",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Mohammadi Dadkan, Maisam",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0003-1102-6508",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Pas, Pascal",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-2200-7591",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Romero Pastrana, Francisco",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-5943-882X",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Prins, Sander",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-5366-2353",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Siljee, Johanneke",
+        "affiliation": "Utrecht University",
+        "orcid": "",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Schermer, Maarten",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-6770-3155",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Schram, Raoul",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-6616-230X",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Scholten, Ron",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-4571-8855",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Speed, Garrett",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-6074-9684",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Volker, Thom",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-2408-7820",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Vos, Martine de",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-5301-1713",
+        "type": "ProjectMember"
+      },
+      {
+        "name": "Weijdema, Felix",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0001-5150-1102",
+        "type": "ProjectMember"
+      }
   ],
   "title": "Data Privacy Handbook",
   "access_right": "open",
@@ -214,9 +236,8 @@
   ],
   "keywords": [
     "privacy",
-    "research",
+    "scientific research",
     "gdpr",
-    "academia",
     "general data protection regulation",
     "research data management"
   ],
