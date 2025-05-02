@@ -96,6 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kleuveld"><img src="https://avatars.githubusercontent.com/u/6230899?v=4?s=100" width="100px;" alt="kleuveld"/><br /><sub><b>kleuveld</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/commits?author=kleuveld" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/S-einar"><img src="https://avatars.githubusercontent.com/u/180396504?v=4?s=100" width="100px;" alt="Stefan Einarson"/><br /><sub><b>Stefan Einarson</b></sub></a><br /><a href="https://github.com/UtrechtUniversity/dataprivacyhandbook/pulls?q=is%3Apr+reviewed-by%3AS-einar" title="Reviewed Pull Requests">👀</a> <a href="#research-S-einar" title="Research">🔬</a></td>
     </tr>
   </tbody>
 </table>
