@@ -173,6 +173,15 @@
         "review",
         "research"
       ]
+    },
+    {
+      "login": "73616e646572",
+      "name": "Sander Prins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6605233?v=4",
+      "profile": "https://github.com/73616e646572",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
