@@ -1,7 +1,7 @@
 # Get started {#research-scenarios}
 :::keywords
 On this page: privacy checklist, project design, getting started    
-Date of last review: 2023-12-21
+Date of last review: 2025-05-02
 :::
 
 **So you use [personal data](#personal-data) in your research: 
@@ -15,13 +15,10 @@ more information about each of these topics:
 *Utrecht University RDM Support (2023). 10 steps towards privacy compliance in research. https://doi.org/10.5281/zenodo.10417513*
 
 ::: note
-The rest of this chapter outlines typical privacy issues and design 
-solutions for several types of scientific research:
+The rest of this chapter outlines typical privacy issues and design solutions for several types of scientific research:
 
 - [Interview studies](#interview-scenario)
-- Webscraping (WIP)
-- Sensors and mobile devices (WIP)
-- Consortia (WIP)
+- [Social media research](#social-media-scenario)
 - ... and possibly more
 :::
 
