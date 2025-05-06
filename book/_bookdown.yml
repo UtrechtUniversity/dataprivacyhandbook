@@ -4,6 +4,7 @@ delete_merged_file: true
 rmd_subdir: "chapters"
 rmd_files:
   - index.Rmd
+  - chapters/get-started.Rmd
   - chapters/research-scenarios.Rmd
   - chapters/faq.Rmd
   # Knowledge base
